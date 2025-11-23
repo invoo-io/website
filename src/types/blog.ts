@@ -22,6 +22,7 @@ export interface BlogPost {
   coverImage?: string;
   tags?: string[];
   readingTime?: number;
+  featured?: boolean;
 }
 
 export interface BlogPostMetadata {
@@ -35,4 +36,5 @@ export interface BlogPostMetadata {
   coverImage?: string;
   tags?: string[];
   readingTime?: number;
+  featured?: boolean;
 }

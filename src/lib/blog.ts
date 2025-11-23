@@ -115,6 +115,7 @@ export function getAllBlogPosts(): BlogPost[] {
               coverImage: data.coverImage,
               tags: data.tags || [],
               readingTime: data.readingTime,
+              featured: data.featured || false,
               content,
             });
           } catch (error) {
@@ -190,6 +191,7 @@ export function getBlogPost(
         coverImage: data.coverImage,
         tags: data.tags || [],
         readingTime: data.readingTime,
+        featured: data.featured || false,
         content,
       };
     } catch (error) {
@@ -255,6 +257,7 @@ export function getAllBlogPostsMetadata(): BlogPostMetadata[] {
               coverImage: data.coverImage,
               tags: data.tags || [],
               readingTime: data.readingTime,
+              featured: data.featured || false,
             });
           } catch (error) {
             console.error(
@@ -287,4 +290,12 @@ export function getBlogPostsMetadataByCategory(
   category: string
 ): BlogPostMetadata[] {
   return getAllBlogPostsMetadata().filter((post) => post.category === category);
+}
+
+/**
+ * Get featured blog posts metadata
+ * Returns posts marked as featured, sorted by publication date
+ */
+export function getFeaturedBlogPostsMetadata(): BlogPostMetadata[] {
+  return getAllBlogPostsMetadata().filter((post) => post.featured === true);
 }

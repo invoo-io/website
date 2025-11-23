@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { getAllBlogPostsMetadata, getAllCategories } from "@/lib/blog";
+import { getAllBlogPostsMetadata, getAllCategories, getFeaturedBlogPostsMetadata } from "@/lib/blog";
+import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -51,6 +52,7 @@ export default async function BlogPage({
   const t = await getTranslations({ locale, namespace: "blog" });
   const posts = getAllBlogPostsMetadata();
   const categories = getAllCategories();
+  const featuredPosts = getFeaturedBlogPostsMetadata();
 
   return (
     <div className="min-h-screen bg-bg-primary">
@@ -66,6 +68,13 @@ export default async function BlogPage({
             {t("description")}
           </p>
         </div>
+
+        {/* Featured Articles Carousel */}
+        {featuredPosts.length > 0 && (
+          <div className="mb-12">
+            <BlogCarousel posts={featuredPosts} locale={locale} />
+          </div>
+        )}
 
         {/* Categories Filter - Placeholder for future component */}
         {categories.length > 0 && (

@@ -632,6 +632,10 @@
       "description": "Invoo ayuda a autónomos, PYMES y gestorías a trabajar más rápido juntos: listo para Verifactu, PDFs profesionales, compartir instantáneo y resúmenes fiscales automáticos",
       "cta": "Únete a la lista de espera"
     },
+    "featuredBlog": {
+      "title": "Artículos Destacados",
+      "subtitle": "Explora nuestros últimos artículos sobre facturación, cumplimiento normativo y gestión empresarial"
+    },
     "whyChoose": {
       "title": "Por qué autónomos, PYMES y gestorías eligen Invoo",
       "card1": {
