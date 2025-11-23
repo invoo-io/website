@@ -13,6 +13,162 @@
     display: inline-block;
   }
 
+  /* Blog Content Styling - Extends existing typography classes */
+  .blog-content {
+    & p {
+      @extend .text-body;
+      color: var(--label-primary);
+      margin-bottom: 1.5rem;
+    }
+
+    & h1 {
+      @extend .text-title1-emphasized;
+      color: var(--label-inverted);
+      margin-top: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    & h2 {
+      @extend .text-title2-emphasized;
+      color: var(--label-inverted);
+      margin-top: 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    & h3 {
+      @extend .text-title3-emphasized;
+      color: var(--label-inverted);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    & h4 {
+      @extend .text-headline;
+      color: var(--label-inverted);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    & h5, & h6 {
+      @extend .text-subheadline-emphasized;
+      color: var(--label-inverted);
+      margin-top: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    & a {
+      color: var(--accent-blue-main);
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    & a:hover {
+      color: var(--accent-blue-light);
+    }
+
+    & ul, & ol {
+      @extend .text-body;
+      color: var(--label-primary);
+      margin-bottom: 1.5rem;
+      margin-left: 1.5rem;
+    }
+
+    & ul {
+      list-style-type: disc;
+    }
+
+    & ol {
+      list-style-type: decimal;
+    }
+
+    & li {
+      margin-bottom: 0.5rem;
+    }
+
+    & blockquote {
+      @extend .text-body-italic;
+      border-left: 4px solid var(--accent-blue-main);
+      padding-left: 1.5rem;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--label-secondary);
+      background-color: var(--background-secondary);
+      border-radius: 0 0.375rem 0.375rem 0;
+    }
+
+    & code {
+      @extend .text-footnote;
+      color: var(--accent-pink-main);
+      background-color: var(--background-secondary);
+      padding: 0.125rem 0.5rem;
+      border-radius: 0.25rem;
+    }
+
+    & pre {
+      background-color: var(--background-secondary);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      overflow-x: auto;
+    }
+
+    & pre code {
+      background-color: transparent;
+      padding: 0;
+      color: var(--label-primary);
+      font-size: 14px;
+    }
+
+    & img {
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      height: auto;
+    }
+
+    & hr {
+      border-color: var(--border-primary);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    & strong, & b {
+      @extend .text-body-emphasized;
+      color: var(--label-inverted);
+    }
+
+    & em, & i {
+      @extend .text-body-italic;
+    }
+
+    & table {
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-collapse: collapse;
+    }
+
+    & th {
+      @extend .text-subheadline-emphasized;
+      color: var(--label-inverted);
+      background-color: var(--background-secondary);
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border: 1px solid var(--border-primary);
+    }
+
+    & td {
+      @extend .text-body;
+      color: var(--label-primary);
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-primary);
+    }
+  }
+
   /* Typography System - Based on Invoo Design Tokens */
 
   /* Large Title */

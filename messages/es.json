@@ -737,5 +737,20 @@
       "general": "Algo salió mal. Por favor, inténtalo de nuevo.",
       "failed": "Error al unirse a la lista de espera. Por favor, inténtalo más tarde."
     }
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog de Invoo | Guías sobre Facturación y Verifactu",
+      "description": "Consejos, guías y novedades sobre facturación electrónica, Verifactu y gestión fiscal para autónomos y gestorías en España"
+    },
+    "title": "Blog de Invoo",
+    "description": "Guías prácticas, consejos fiscales y las últimas novedades sobre facturación electrónica y Verifactu para autónomos y gestorías",
+    "noPosts": "No hay artículos disponibles en este momento",
+    "readMore": "Leer más",
+    "backToBlog": "Volver al Blog",
+    "relatedArticles": "Artículos Relacionados",
+    "categories": {
+      "all": "Todas las categorías"
+    }
   }
 }
