@@ -1,13 +1,13 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
-import { getAllBlogPostsMetadata, getAllCategories, getFeaturedBlogPostsMetadata, getEditorPickBlogPostsMetadata } from "@/lib/blog";
+import { getAllBlogPostsMetadata, getBlogPostsMetadataByCategory } from "@/lib/blog";
 import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import { EditorPicksSection } from "@/components/blog/EditorPicksSection";
 import NewsletterSection from "@/components/blog/NewsletterSection";
+import { CategoryBlock } from "@/components/blog/CategoryBlock";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -54,9 +54,21 @@ export default async function BlogPage({
 
   const t = await getTranslations({ locale, namespace: "blog" });
   const allPosts = getAllBlogPostsMetadata();
-  const categories = getAllCategories();
   const featuredPosts = allPosts.filter((post) => post.featured === true);
   const editorPickPosts = allPosts.filter((post) => post.editorPick === true);
+
+  // Get all unique categories from posts
+  const allCategories = Array.from(new Set(allPosts.map(post => post.category)));
+
+  // Get posts by category for category blocks
+  const categoryPostsMap: Record<string, typeof allPosts> = {};
+
+  allCategories.forEach((categorySlug) => {
+    const posts = getBlogPostsMetadataByCategory(categorySlug);
+    if (posts.length > 0) {
+      categoryPostsMap[categorySlug] = posts;
+    }
+  });
 
   return (
     <div className="min-h-screen bg-bg-primary">
@@ -100,65 +112,31 @@ export default async function BlogPage({
       {/* Newsletter Section */}
       <NewsletterSection />
 
-      <main className="container mx-auto px-4 pb-12 max-w-7xl">
-        {/* Categories Filter - Placeholder for future component */}
-        {categories.length > 0 && (
-          <div className="mb-8">
-            <div className="flex flex-wrap gap-3">
-              {categories.map((category) => (
-                <Link
-                  key={category.slug}
-                  href={`/${locale}/blog/${category.slug}`}
-                  className="px-4 py-2 bg-bg-secondary rounded-full text-label-primary hover:bg-opacity-80 transition-colors"
-                >
-                  {category.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
+      {/* Category Blocks Section */}
+      <section className="container mx-auto px-4 py-16 max-w-7xl">
+        {allCategories.map((categorySlug) => {
+          const posts = categoryPostsMap[categorySlug];
+          if (!posts || posts.length === 0) return null;
 
-        {/* Blog Posts Grid - Placeholder for future ArticleCard component */}
-        {allPosts.length === 0 ? (
+          return (
+            <CategoryBlock
+              key={categorySlug}
+              categoryName={t(`categories.${categorySlug}`)}
+              posts={posts}
+              locale={locale}
+            />
+          );
+        })}
+
+        {/* No posts message */}
+        {allPosts.length === 0 && (
           <div className="text-center py-12">
             <p className="text-label-secondary text-lg">
               {t("noPosts")}
             </p>
           </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allPosts.map((post) => (
-              <Link
-                key={`${post.category}-${post.slug}`}
-                href={`/${locale}/blog/${post.category}/${post.slug}`}
-                className="block bg-bg-secondary rounded-lg p-6 hover:shadow-lg transition-shadow"
-              >
-                <article>
-                  <div className="text-sm text-label-tertiary mb-2">
-                    {post.category}
-                  </div>
-                  <h2 className="text-xl font-semibold text-label-inverted mb-2">
-                    {post.title}
-                  </h2>
-                  <p className="text-label-secondary mb-4 line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-sm text-label-tertiary">
-                    <span>{post.author}</span>
-                    <time dateTime={post.publishedAt}>
-                      {new Date(post.publishedAt).toLocaleDateString("es-ES", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      })}
-                    </time>
-                  </div>
-                </article>
-              </Link>
-            ))}
-          </div>
         )}
-      </main>
+      </section>
 
       <Footer locale={locale} />
     </div>
