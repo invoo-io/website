@@ -34,7 +34,7 @@ export default function Navigation({ locale }: NavigationProps) {
 
   const resources = [
     { name: t('faq'), href: getBasePath(`/${locale}/faq`), external: false },
-    { name: t('blog'), href: "https://invoo.substack.com/", external: true },
+    { name: t('blog'), href: getBasePath(`/${locale}/blog`), external: false },
   ];
 
   const languages = [

@@ -65,7 +65,7 @@ export default function Footer({ locale }: FooterProps) {
             </h3>
             <ul className="list-none p-0 flex flex-col gap-4">
               <li><Link href={getBasePath(`/${locale}/faq`)} className="text-callout no-underline text-label-inverted-secondary hover:text-label-inverted transition-colors">{t("faqs")}</Link></li>
-              <li><a href="https://invoo.substack.com/" target="_blank" rel="noopener noreferrer" className="text-callout no-underline text-label-inverted-secondary hover:text-label-inverted transition-colors">{t("blog")}</a></li>
+              <li><Link href={getBasePath(`/${locale}/blog`)} className="text-callout no-underline text-label-inverted-secondary hover:text-label-inverted transition-colors">{t("blog")}</Link></li>
             </ul>
           </div>
         </div>

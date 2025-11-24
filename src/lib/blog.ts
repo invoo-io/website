@@ -116,6 +116,7 @@ export function getAllBlogPosts(): BlogPost[] {
               tags: data.tags || [],
               readingTime: data.readingTime,
               featured: data.featured || false,
+              editorPick: data.editorPick || false,
               content,
             });
           } catch (error) {
@@ -192,6 +193,7 @@ export function getBlogPost(
         tags: data.tags || [],
         readingTime: data.readingTime,
         featured: data.featured || false,
+        editorPick: data.editorPick || false,
         content,
       };
     } catch (error) {
@@ -258,6 +260,7 @@ export function getAllBlogPostsMetadata(): BlogPostMetadata[] {
               tags: data.tags || [],
               readingTime: data.readingTime,
               featured: data.featured || false,
+              editorPick: data.editorPick || false,
             });
           } catch (error) {
             console.error(
@@ -298,4 +301,12 @@ export function getBlogPostsMetadataByCategory(
  */
 export function getFeaturedBlogPostsMetadata(): BlogPostMetadata[] {
   return getAllBlogPostsMetadata().filter((post) => post.featured === true);
+}
+
+/**
+ * Get editor pick blog posts metadata
+ * Returns posts marked as editor picks, sorted by publication date
+ */
+export function getEditorPickBlogPostsMetadata(): BlogPostMetadata[] {
+  return getAllBlogPostsMetadata().filter((post) => post.editorPick === true);
 }
