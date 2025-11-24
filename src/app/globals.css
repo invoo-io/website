@@ -138,7 +138,7 @@
 
     & strong, & b {
       @extend .text-body-emphasized;
-      color: var(--label-inverted);
+      color: var(--label-primary);
     }
 
     & em, & i {
