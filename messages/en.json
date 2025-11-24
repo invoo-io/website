@@ -737,5 +737,20 @@
       "general": "Something went wrong. Please try again.",
       "failed": "Failed to join waiting list. Please try again later."
     }
+  },
+  "blog": {
+    "meta": {
+      "title": "Invoo Blog | Invoicing and Verifactu Guides",
+      "description": "Tips, guides and news about electronic invoicing, Verifactu and tax management for freelancers and accountants in Spain"
+    },
+    "title": "Invoo Blog",
+    "description": "Practical guides, tax tips and the latest news on electronic invoicing and Verifactu for freelancers and accountants",
+    "noPosts": "No articles available at this time",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "relatedArticles": "Related Articles",
+    "categories": {
+      "all": "All categories"
+    }
   }
 }
