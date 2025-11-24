@@ -23,6 +23,7 @@ export interface BlogPost {
   tags?: string[];
   readingTime?: number;
   featured?: boolean;
+  editorPick?: boolean;
 }
 
 export interface BlogPostMetadata {
@@ -37,4 +38,5 @@ export interface BlogPostMetadata {
   tags?: string[];
   readingTime?: number;
   featured?: boolean;
+  editorPick?: boolean;
 }
