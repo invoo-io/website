@@ -4,7 +4,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  output: "export",
+  // Removed: output: "export" to enable API routes for Vercel deployment
   trailingSlash: true,
   images: {
     unoptimized: true,

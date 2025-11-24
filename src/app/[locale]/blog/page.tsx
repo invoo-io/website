@@ -7,6 +7,7 @@ import GradientText from "@/components/ui/GradientText";
 import { getAllBlogPostsMetadata, getAllCategories, getFeaturedBlogPostsMetadata, getEditorPickBlogPostsMetadata } from "@/lib/blog";
 import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import { EditorPicksSection } from "@/components/blog/EditorPicksSection";
+import NewsletterSection from "@/components/blog/NewsletterSection";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -94,7 +95,12 @@ export default async function BlogPage({
             />
           </div>
         )}
+      </main>
 
+      {/* Newsletter Section */}
+      <NewsletterSection />
+
+      <main className="container mx-auto px-4 pb-12 max-w-7xl">
         {/* Categories Filter - Placeholder for future component */}
         {categories.length > 0 && (
           <div className="mb-8">

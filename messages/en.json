@@ -755,6 +755,25 @@
     "relatedArticles": "Related Articles",
     "categories": {
       "all": "All categories"
+    },
+    "newsletter": {
+      "title": "Stay updated with the latest insights",
+      "description": "Get practical guides, tax tips, and Verifactu updates delivered to your inbox",
+      "placeholder": "Enter your email",
+      "button": {
+        "subscribe": "Subscribe",
+        "loading": "Subscribing, please wait",
+        "success": "Subscribed!",
+        "retry": "Retry"
+      },
+      "errors": {
+        "invalidEmail": "Please enter a valid email address",
+        "alreadySubscribed": "This email is already subscribed",
+        "tooManyRequests": "Too many attempts. Please try again later",
+        "timeout": "Request timeout. Please try again",
+        "networkError": "Network error. Please check your connection",
+        "generic": "Something went wrong. Please try again"
+      }
     }
   }
 }
