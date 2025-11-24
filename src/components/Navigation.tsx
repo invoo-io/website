@@ -5,12 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { useTheme } from "next-themes";
 import { ChevronDown, Languages, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import NavigationDrawerButton from "./NavigationDrawerButton";
 import NavDropdown from "./NavDropdown";
 import MobileNavButton from "./MobileNavButton";
 import MobileNavLink from "./MobileNavLink";
+import { ThemeToggle } from "./ThemeToggle";
 import { getImagePath, getBasePath } from "@/lib/utils";
 
 interface NavigationProps {
@@ -24,8 +26,15 @@ export default function Navigation({ locale }: NavigationProps) {
   const [mobileActiveDropdown, setMobileActiveDropdown] = useState<
     string | null
   >(null);
+  const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme();
 
   const pathname = usePathname();
+
+  // Handle hydration for theme
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const services = [
     { name: t('freelancers'), href: getBasePath(`/${locale}/freelancers`) },
@@ -71,8 +80,8 @@ export default function Navigation({ locale }: NavigationProps) {
   return (
     <>
       <nav
-        className="w-full relative"
-        style={{ zIndex: 100, backgroundColor: 'var(--background-secondary-dark)' }}
+        className="w-full relative bg-bg-secondary"
+        style={{ zIndex: 100 }}
       >
         <div className="w-full">
           <div
@@ -86,7 +95,7 @@ export default function Navigation({ locale }: NavigationProps) {
             <div className="flex items-center z-50">
               <Link href={getBasePath(`/${locale}`)} className="flex items-center" prefetch={true}>
                 <Image
-                  src={getImagePath("/Logo.svg")}
+                  src={getImagePath(mounted && theme === "dark" ? "/Logo-Dark.svg" : "/Logo-White.svg")}
                   alt="invoo"
                   width={126}
                   height={32}
@@ -121,21 +130,21 @@ export default function Navigation({ locale }: NavigationProps) {
               {/* Direct Links */}
               <Link
                 href={getBasePath(`/${locale}/pricing`)}
-                className="text-label-inverted hover:text-label-inverted-secondary transition-colors text-callout"
+                className="text-text-primary hover:text-text-secondary transition-colors text-callout"
               >
                 {t('pricing')}
               </Link>
 
               <Link
                 href={getBasePath(`/${locale}/about`)}
-                className="text-label-inverted hover:text-label-inverted-secondary transition-colors text-callout"
+                className="text-text-primary hover:text-text-secondary transition-colors text-callout"
               >
                 {t('about')}
               </Link>
 
               <Link
                 href={getBasePath(`/${locale}/contact`)}
-                className="text-label-inverted hover:text-label-inverted-secondary transition-colors text-callout"
+                className="text-text-primary hover:text-text-secondary transition-colors text-callout"
               >
                 {t('contact')}
               </Link>
@@ -143,6 +152,9 @@ export default function Navigation({ locale }: NavigationProps) {
 
             {/* Right Side Actions - Desktop */}
             <div className="hidden lg:flex items-center gap-8">
+              {/* Theme Toggle */}
+              <ThemeToggle />
+
               {/* Language Selector */}
               <NavDropdown
                 id="language"
@@ -167,7 +179,7 @@ export default function Navigation({ locale }: NavigationProps) {
             <div className="lg:hidden z-50">
               <motion.button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-label-inverted-secondary hover:text-label-inverted p-2 relative"
+                className="text-text-primary hover:text-text-secondary p-2 relative"
                 whileTap={{ scale: 0.95 }}
               >
                 <AnimatePresence mode="wait">
@@ -223,14 +235,13 @@ export default function Navigation({ locale }: NavigationProps) {
                 damping: 30,
                 stiffness: 300,
               }}
-              className="fixed right-0 top-0 h-full w-[85%] max-w-[400px] z-50 lg:hidden overflow-y-auto"
-              style={{ backgroundColor: 'var(--background-secondary)' }}
+              className="fixed right-0 top-0 h-full w-[85%] max-w-[400px] z-50 lg:hidden overflow-y-auto bg-bg-secondary"
             >
               {/* Drawer Header */}
               <div className="relative border-b border-strokes-primary/20 p-6">
                 <div className="flex justify-center">
                   <Image
-                    src={getImagePath("/Logo.svg")}
+                    src={getImagePath(mounted && theme === "dark" ? "/Logo-White.svg" : "/Logo-Dark.svg")}
                     alt="invoo"
                     width={100}
                     height={28}
@@ -239,7 +250,7 @@ export default function Navigation({ locale }: NavigationProps) {
                 </div>
                 <motion.button
                   onClick={() => setMobileMenuOpen(false)}
-                  className="absolute top-6 right-6 text-label-inverted-secondary hover:text-label-inverted p-2"
+                  className="absolute top-6 right-6 text-text-primary hover:text-text-secondary p-2"
                   whileTap={{ scale: 0.9 }}
                 >
                   <X className="w-5 h-5" />
@@ -275,7 +286,7 @@ export default function Navigation({ locale }: NavigationProps) {
                     <MobileNavButton
                       onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "services" ? null : "services")}
                     >
-                      <span className="text-callout-emphasized">{t('services')}</span>
+                      <span className="text-callout text-text-primary">{t('services')}</span>
                       <motion.div
                         style={{
                           position: "absolute",
@@ -286,7 +297,7 @@ export default function Navigation({ locale }: NavigationProps) {
                         }}
                         transition={{ duration: 0.2 }}
                       >
-                        <ChevronDown className="w-4 h-4" style={{ color: 'var(--label-secondary-dark)' }} />
+                        <ChevronDown className="w-4 h-4 text-text-secondary" />
                       </motion.div>
                     </MobileNavButton>
 
@@ -337,7 +348,7 @@ export default function Navigation({ locale }: NavigationProps) {
                     <MobileNavButton
                       onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "resources" ? null : "resources")}
                     >
-                      <span className="text-callout-emphasized">{t('resources')}</span>
+                      <span className="text-callout text-text-primary">{t('resources')}</span>
                       <motion.div
                         style={{
                           position: "absolute",
@@ -349,7 +360,7 @@ export default function Navigation({ locale }: NavigationProps) {
                         }}
                         transition={{ duration: 0.2 }}
                       >
-                        <ChevronDown className="w-4 h-4" style={{ color: 'var(--label-secondary-dark)' }} />
+                        <ChevronDown className="w-4 h-4 text-text-secondary" />
                       </motion.div>
                     </MobileNavButton>
 
@@ -401,7 +412,7 @@ export default function Navigation({ locale }: NavigationProps) {
                     <MobileNavLink
                       href={getBasePath(`/${locale}/pricing`)}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="w-full px-6 py-4 text-callout-emphasized"
+                      className="w-full px-6 py-4 text-callout text-text-primary"
                     >
                       {t('pricing')}
                     </MobileNavLink>
@@ -417,7 +428,7 @@ export default function Navigation({ locale }: NavigationProps) {
                     <MobileNavLink
                       href={getBasePath(`/${locale}/about`)}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="w-full px-6 py-4 text-callout-emphasized"
+                      className="w-full px-6 py-4 text-callout text-text-primary"
                     >
                       {t('about')}
                     </MobileNavLink>
@@ -433,7 +444,7 @@ export default function Navigation({ locale }: NavigationProps) {
                     <MobileNavLink
                       href={getBasePath(`/${locale}/contact`)}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="w-full px-6 py-4 text-callout-emphasized"
+                      className="w-full px-6 py-4 text-callout text-text-primary"
                     >
                       {t('contact')}
                     </MobileNavLink>
@@ -441,6 +452,26 @@ export default function Navigation({ locale }: NavigationProps) {
 
                   {/* Divider */}
                   <div className="my-6 border-t border-strokes-primary/20" />
+
+                  {/* Theme Toggle */}
+                  <motion.div
+                    variants={{
+                      open: { opacity: 1, x: 0 },
+                      closed: { opacity: 0, x: 50 },
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className="flex items-center justify-between w-full px-6 py-4"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="text-callout text-text-primary">{t('theme')}</span>
+                      {mounted && (
+                        <span className="text-callout text-text-primary">
+                          ({theme === 'dark' ? t('themeDark') : t('themeLight')})
+                        </span>
+                      )}
+                    </div>
+                    <ThemeToggle />
+                  </motion.div>
 
                   {/* Language Dropdown */}
                   <motion.div
@@ -453,7 +484,7 @@ export default function Navigation({ locale }: NavigationProps) {
                     <MobileNavButton
                       onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "language" ? null : "language")}
                     >
-                      <Languages className="w-5 h-5 mr-2" style={{ color: 'var(--label-secondary-dark)' }} />
+                      <Languages className="w-5 h-5 mr-2 text-text-primary" />
                       <span className="text-callout-emphasized">{t('language')}</span>
                       <motion.div
                         style={{
@@ -465,7 +496,7 @@ export default function Navigation({ locale }: NavigationProps) {
                         }}
                         transition={{ duration: 0.2 }}
                       >
-                        <ChevronDown className="w-4 h-4" style={{ color: 'var(--label-secondary-dark)' }} />
+                        <ChevronDown className="w-4 h-4 text-text-secondary" />
                       </motion.div>
                     </MobileNavButton>
 

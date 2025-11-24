@@ -26,7 +26,7 @@ export default async function GestoriasPage({
       <HeroSection
         title={
           <>
-            <span style={{color: '#EFEFF5'}}>{titleParts[0]}, </span>
+            <span style={{color: 'text-text-primary'}}>{titleParts[0]}, </span>
 
             <GradientText>{titleParts[1]}</GradientText>
           </>
@@ -35,7 +35,7 @@ export default async function GestoriasPage({
         buttonText={t("header.cta")}
         buttonHref="#waitlist"
       />
-      <HeroImageSection dashboardImage="/Gestoria.png" />
+      <HeroImageSection imageBaseName="gestoria" dashboardAlt="Gestorías Dashboard" />
       <BuildForGestoriasSection
         imageSrc="/Calendar.png"
         imageWidth={350}

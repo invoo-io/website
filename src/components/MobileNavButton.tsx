@@ -16,7 +16,7 @@ export default function MobileNavButton({
   return (
     <button
       onClick={onClick}
-      className={`relative w-full text-label-inverted rounded-lg transition-colors px-6 py-4 flex items-center justify-center ${className}`}
+      className={`relative w-full text-text-primary rounded-lg transition-colors px-6 py-4 flex items-center justify-center ${className}`}
       style={{
         backgroundColor: "transparent",
       }}

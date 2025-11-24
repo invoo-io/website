@@ -104,7 +104,7 @@ const allowedOrigins = [
   "http://localhost:3000",
 ];
 
-function getCorsHeaders(origin: string | null) {
+function getCorsHeaders(origin: string | null): Record<string, string> {
   if (origin && allowedOrigins.includes(origin)) {
     return {
       "Access-Control-Allow-Origin": origin,
@@ -113,7 +113,9 @@ function getCorsHeaders(origin: string | null) {
       "Access-Control-Max-Age": "86400",
     };
   }
-  return {};
+  return {
+    "Access-Control-Allow-Origin": "*",
+  };
 }
 
 // Handle OPTIONS preflight request

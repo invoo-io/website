@@ -7,7 +7,7 @@ export default function AboutContent() {
 
   const renderParagraphs = (text: string) => {
     return text.split('\n').map((paragraph, index) => (
-      <p key={index} className="text-title3 text-label-inverted-secondary mb-4 last:mb-0" style={{ fontSize: '20px', lineHeight: '36px' }}>
+      <p key={index} className="text-body text-text-secondary mb-4 last:mb-0">
         {paragraph}
       </p>
     ));
@@ -17,11 +17,11 @@ export default function AboutContent() {
     const lines = text.split('\n');
     return (
       <div>
-        <p className="text-title3 text-label-inverted font-semibold mb-1" style={{ fontSize: '20px', lineHeight: '36px' }}>
+        <p className="text-body text-text-primary mb-1">
           {lines[0]}
         </p>
         {lines.slice(1).map((line, index) => (
-          <p key={index} className="text-title3 text-label-inverted-secondary" style={{ fontSize: '20px', lineHeight: '36px' }}>
+          <p key={index} className="text-body text-text-secondary">
             {line}
           </p>
         ))}
@@ -30,11 +30,11 @@ export default function AboutContent() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 mb-40">
+    <section className="min-h-screen flex items-center justify-center px-6 mb-32 mt-32">
       <div className="max-w-4xl w-full flex flex-col gap-10 text-left">
         {/* Block 1: Born from real experience section */}
         <div className="mb-8">
-          <h2 className="text-title1-emphasized text-label-inverted mb-6">
+          <h2 className="text-title1-emphasized text-text-primary mb-6">
             {t("block1.title")}
           </h2>
           <div>
@@ -44,7 +44,7 @@ export default function AboutContent() {
 
         {/* Block 2: Our vision section */}
         <div className="mb-8">
-          <h3 className="text-title1-emphasized text-label-inverted mb-6">
+          <h3 className="text-title1-emphasized text-text-primary mb-6">
             {t("block2.title")}
           </h3>
           <div>
@@ -54,24 +54,24 @@ export default function AboutContent() {
 
         {/* Block 3: Why Invoo section */}
         <div className="mb-8">
-          <h3 className="text-title1-emphasized text-label-inverted mb-8">
+          <h3 className="text-title1-emphasized text-text-primary mb-8">
             {t("block3.title")}
           </h3>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
-              <span className="text-2xl mt-1">🚀</span>
+              <span className="text-body mt-1">🚀</span>
               {renderItemContent(t("block3.items.item1"))}
             </div>
             <div className="flex items-start gap-4">
-              <span className="text-2xl mt-1">🧾</span>
+              <span className="text-body mt-1">🧾</span>
               {renderItemContent(t("block3.items.item2"))}
             </div>
             <div className="flex items-start gap-4">
-              <span className="text-2xl mt-1">🤝</span>
+              <span className="text-body mt-1">🤝</span>
               {renderItemContent(t("block3.items.item3"))}
             </div>
             <div className="flex items-start gap-4">
-              <span className="text-2xl mt-1">💡</span>
+              <span className="text-body mt-1">💡</span>
               {renderItemContent(t("block3.items.item4"))}
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function AboutContent() {
 
         {/* Block 4: Join us early section */}
         <div className="pt-8">
-          <h3 className="text-title1-emphasized text-label-inverted mb-6">
+          <h3 className="text-title1-emphasized text-text-primary mb-6">
             {t("block4.title")}
           </h3>
           <div>

@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { getAllBlogPostsMetadata, getBlogPostsMetadataByCategory } from "@/lib/blog";
@@ -70,36 +71,38 @@ export default async function BlogPage({
     }
   });
 
+  // Split title for gradient: "Blog de " + "Invoo"
+  const titleParts = t("title").split(" ");
+  const firstPart = titleParts.slice(0, -1).join(" "); // "Blog de"
+  const lastPart = titleParts[titleParts.length - 1]; // "Invoo"
+
   return (
     <div className="min-h-screen bg-bg-primary">
       <Navigation locale={locale} />
+      <HeroSection
+        title={
+          <>
+            <span className="text-text-primary">{firstPart} </span>
+            <GradientText>{lastPart}</GradientText>
+          </>
+        }
+        paragraph={t("description")}
+        buttonText={t("cta")}
+        buttonHref="#newsletter"
+      />
 
-      {/* Hero Section */}
-      <section className="flex items-center justify-center px-6 pt-40 max-md:pt-20 pb-12">
-        <div className="max-w-6xl mx-auto text-center">
-          <h1 className="hero-heading mb-8">
-            <span style={{color: '#EFEFF5'}}>Blog de </span>
-            <GradientText>Invoo</GradientText>
-          </h1>
-
-          <p className="text-body mb-0 max-w-3xl mx-auto text-label-inverted">
-            {t("description")}
-          </p>
-        </div>
-      </section>
-
-      <main className="container mx-auto px-4 pb-12 max-w-7xl">
+      <main className="container mx-auto px-4 pb-12 pt-32 max-w-7xl">
 
         {/* Featured Articles Carousel */}
         {featuredPosts.length > 0 && (
-          <div className="mb-12">
+          <div className="mb-24">
             <BlogCarousel posts={featuredPosts} locale={locale} />
           </div>
         )}
 
         {/* Editor Picks Section */}
         {editorPickPosts.length >= 4 && (
-          <div className="mb-12">
+          <div className="mb-24">
             <EditorPicksSection
               posts={editorPickPosts}
               locale={locale}
@@ -122,6 +125,7 @@ export default async function BlogPage({
             <CategoryBlock
               key={categorySlug}
               categoryName={t(`categories.${categorySlug}`)}
+              categorySlug={categorySlug}
               posts={posts}
               locale={locale}
             />

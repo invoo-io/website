@@ -31,9 +31,9 @@ export default function WhyChooseSection() {
   ];
 
   return (
-    <section className="py-[156px] max-md:py-10 px-6 bg-bg-inverted">
+    <section className="py-[156px] max-md:py-10 px-6 bg-bg-secondary">
       {/* Title */}
-      <h2 className="text-large-title-emphasized text-center text-label-inverted max-w-4xl mx-auto mb-16" style={{ fontSize: '48px' }}>
+      <h2 className="text-large-title-emphasized text-center text-text-primary max-w-4xl mx-auto mb-16" style={{ fontSize: '48px' }}>
         {t("title")}
       </h2>
 
@@ -53,12 +53,12 @@ export default function WhyChooseSection() {
             </div>
 
             {/* Title */}
-            <h3 className="text-title2-emphasized text-label-primary mb-3">
+            <h3 className="text-title2-emphasized text-text-primary mb-3">
               {feature.title}
             </h3>
 
             {/* Description */}
-            <p className="text-body text-label-secondary max-w-xs">
+            <p className="text-body text-text-secondary max-w-xs">
               {feature.description}
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function WhyChooseSection() {
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
         >
-          <Button variant="outline" showArrow className="!bg-bg-inverted !border-0 !text-label-inverted" href={getBasePath(`/${locale}/gestorias`)} disableHoverScale>
+          <Button variant="outline" showArrow className="!bg-bg-secondary !border-0 !text-text-primary" href={getBasePath(`/${locale}/gestorias`)} disableHoverScale>
             {t("cta1")}
           </Button>
         </motion.div>

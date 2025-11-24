@@ -16,7 +16,7 @@ export default function FocusSection() {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '96px 24px',
+      padding: '164px 24px',
       overflow: 'hidden'
     }}>
       {/* Background Image with Overlay */}
@@ -38,17 +38,18 @@ export default function FocusSection() {
         <div style={{
           position: 'absolute',
           inset: 0,
-          backgroundColor: 'var(--system-overlay)'
+          backgroundColor: '#000',
+          opacity: '.6'
         }} />
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl">
-        <h2 className="text-large-title-emphasized text-label-inverted mb-6" style={{ fontSize: '48px' }}>
+        <h2 className="text-large-title-emphasized text-system-grey100 mb-6" style={{ fontSize: '48px' }}>
           {t("title")}
         </h2>
 
-        <p className="text-callout mb-12" style={{ color: 'var(--label-secondary-dark)' }}>
+        <p className="text-callout mb-12" style={{ color: 'var(--system-grey100)' }}>
           {t("description")}
         </p>
 

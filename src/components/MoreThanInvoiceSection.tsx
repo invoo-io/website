@@ -37,40 +37,15 @@ export default function MoreThanInvoiceSection() {
       style={{
         position: "relative",
         minHeight: "634px",
-        backgroundColor: "var(--background-inverted)",
-        // overflow: "hidden",
+        backgroundColor: "var(--background-secondary)",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
       }}
     >
-      {/* Background Image - absolute positioned */}
-      <div
-        style={{
-          position: "absolute",
-          left: 0,
-          top: 0,
-          width: "auto",
-          height: "100%",
-        }}
-      >
-        <Image
-          src={getImagePath("/morethaninvoicebgimg2.png")}
-          alt="Background"
-          width={634}
-          height={634}
-          style={{
-            objectFit: "cover",
-            width: "auto",
-            height: "100%",
-          }}
-          priority
-        />
-      </div>
-
       {/* Title */}
-      <h2 className="text-large-title-emphasized text-center text-label-inverted max-w-4xl mx-auto mb-16 relative z-10" style={{ fontSize: '48px' }}>
+      <h2 className="text-large-title-emphasized text-center text-text-primary max-w-4xl mx-auto mb-16 relative z-10" style={{ fontSize: '48px' }}>
         {t("title")}
       </h2>
 
@@ -103,10 +78,10 @@ export default function MoreThanInvoiceSection() {
                 height={100}
                 style={{ objectFit: "contain", margin: "0 auto", padding: "0 0 24px 0" }}
               />
-              <h3 className="text-title3-emphasized text-label-primary mb-3" style={{ fontSize: "20px" }}>
+              <h3 className="text-title3-emphasized text-text-primary mb-3" style={{ fontSize: "20px" }}>
                 {feature.title}
               </h3>
-              <p className="text-callout text-label-secondary">
+              <p className="text-callout text-text-secondary">
                 {feature.description}
               </p>
             </div>

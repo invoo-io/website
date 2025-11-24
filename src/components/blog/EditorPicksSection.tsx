@@ -17,7 +17,7 @@ export function EditorPicksSection({ posts, locale, title }: EditorPicksSectionP
   const [largePost, ...smallPosts] = posts.slice(0, 4)
 
   return (
-    <section className="w-full" aria-labelledby="editor-picks-title">
+    <section className="w-full mt-24" aria-labelledby="editor-picks-title">
       {/* Title */}
       <h2
         id="editor-picks-title"

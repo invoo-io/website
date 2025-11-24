@@ -11,12 +11,12 @@ export function EditorPickLargeCard({ post, locale }: EditorPickLargeCardProps) 
   return (
     <Link
       href={`/${locale}/blog/${post.category}/${post.slug}`}
-      className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2 rounded-[24px]"
+      className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2"
       aria-label={`Leer artículo: ${post.title}`}
     >
-      <article className="flex flex-col h-full bg-bg-secondary rounded-[24px] overflow-hidden hover:shadow-lg transition-shadow">
+      <article className="flex flex-col h-full">
         {/* Image */}
-        <div className="relative w-full aspect-[4/3] bg-bg-tertiary">
+        <div className="relative w-full aspect-[4/3] bg-bg-tertiary rounded-[24px] overflow-hidden">
           {post.coverImage ? (
             <Image
               src={post.coverImage}
@@ -40,16 +40,16 @@ export function EditorPickLargeCard({ post, locale }: EditorPickLargeCardProps) 
         </div>
 
         {/* Content */}
-        <div className="flex-1 p-6 flex flex-col">
+        <div className="flex-1 mt-4 flex flex-col">
           {/* Category label */}
           <div className="mb-3">
-            <span className="text-caption1 text-label-secondary uppercase tracking-wide">
+            <span className="text-caption1 text-label-secondary tracking-wide">
               {post.category}
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="text-title2-emphasized text-label mb-3 line-clamp-2">
+          <h3 className="text-title3-emphasized text-label mb-3 line-clamp-2">
             {post.title}
           </h3>
 

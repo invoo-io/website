@@ -23,35 +23,35 @@
 
     & h1 {
       @extend .text-title1-emphasized;
-      color: var(--label-inverted);
+      color: var(--label-primary);
       margin-top: 2.5rem;
       margin-bottom: 1.5rem;
     }
 
     & h2 {
       @extend .text-title2-emphasized;
-      color: var(--label-inverted);
+      color: var(--label-primary);
       margin-top: 2.5rem;
       margin-bottom: 1.25rem;
     }
 
     & h3 {
       @extend .text-title3-emphasized;
-      color: var(--label-inverted);
+      color: var(--label-primary);
       margin-top: 2rem;
       margin-bottom: 1rem;
     }
 
     & h4 {
       @extend .text-headline;
-      color: var(--label-inverted);
+      color: var(--label-primary);
       margin-top: 1.5rem;
       margin-bottom: 0.75rem;
     }
 
     & h5, & h6 {
       @extend .text-subheadline-emphasized;
-      color: var(--label-inverted);
+      color: var(--label-primary);
       margin-top: 1.5rem;
       margin-bottom: 0.75rem;
     }
@@ -794,7 +794,8 @@ body {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background-primary);
+    color: var(--label-primary);
   }
 }
 
