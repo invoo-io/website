@@ -8,6 +8,7 @@ type SubmissionState = "idle" | "loading" | "success" | "error";
 
 const SUCCESS_MESSAGE_DURATION = 3000;
 const REQUEST_TIMEOUT = 10000; // 10 seconds
+const SUBMIT_DEBOUNCE_DELAY = 500; // 500ms debounce to prevent spam clicks
 
 export default function NewsletterForm() {
   const t = useTranslations("blog.newsletter");
@@ -17,6 +18,8 @@ export default function NewsletterForm() {
   const [submissionState, setSubmissionState] = useState<SubmissionState>("idle");
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
+  const debounceRef = useRef<NodeJS.Timeout | null>(null);
+  const lastSubmitTimeRef = useRef<number>(0);
 
   // Clear timeout and abort fetch on unmount
   useEffect(() => {
@@ -26,6 +29,9 @@ export default function NewsletterForm() {
       }
       if (abortControllerRef.current) {
         abortControllerRef.current.abort();
+      }
+      if (debounceRef.current) {
+        clearTimeout(debounceRef.current);
       }
     };
   }, []);
@@ -41,6 +47,14 @@ export default function NewsletterForm() {
     e.preventDefault();
     setValidationError("");
 
+    // Debounce: Prevent rapid submissions
+    const now = Date.now();
+    const timeSinceLastSubmit = now - lastSubmitTimeRef.current;
+    if (timeSinceLastSubmit < SUBMIT_DEBOUNCE_DELAY) {
+      // Too fast - ignore this submission
+      return;
+    }
+
     // Bot check - honeypot field
     if (honeypot !== "") {
       // Silently pretend to succeed for bots
@@ -55,7 +69,10 @@ export default function NewsletterForm() {
       return;
     }
 
-    // Submit email
+    // Update last submit time
+    lastSubmitTimeRef.current = now;
+
+    // Submit email with visual delay for UX
     setSubmissionState("loading");
 
     // Create abort controller for timeout
@@ -177,13 +194,17 @@ export default function NewsletterForm() {
       />
 
       <div className="flex flex-col sm:flex-row gap-3">
-        <div className="flex-1">
+        <div className="flex-1 relative">
           <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t("placeholder")}
-            className="w-full px-4 py-3 rounded-lg bg-bg-secondary border border-border-primary text-label-primary placeholder:text-label-tertiary focus:outline-none focus:ring-2 focus:ring-tint-blue transition-colors"
+            className={`w-full px-4 py-3 rounded-lg bg-bg-secondary border ${
+              validationError ? "border-red-500" : "border-border-primary"
+            } text-label-primary placeholder:text-label-tertiary focus:outline-none focus:ring-2 ${
+              validationError ? "focus:ring-red-500" : "focus:ring-tint-blue"
+            } transition-colors`}
             disabled={isButtonDisabled}
             aria-label={t("placeholder")}
             aria-invalid={!!validationError}
@@ -191,13 +212,14 @@ export default function NewsletterForm() {
             required
           />
           {validationError && (
-            <p
+            <div
               id="email-error"
-              className="text-sm text-red-500 mt-2"
+              className="absolute left-0 right-0 top-full mt-2 px-3 py-2 bg-red-500 text-white text-sm rounded-lg shadow-lg z-10 animate-fadeIn"
               role="alert"
             >
+              <div className="absolute -top-1 left-4 w-2 h-2 bg-red-500 transform rotate-45" />
               {validationError}
-            </p>
+            </div>
           )}
         </div>
         <button

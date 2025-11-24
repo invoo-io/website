@@ -21,12 +21,38 @@ if (!BLOG_AUDIENCE_ID) {
 // Initialize Resend
 const resend = new Resend(RESEND_API_KEY);
 
+// Disposable email domains blocklist
+// Common throwaway email services to prevent spam
+const DISPOSABLE_EMAIL_DOMAINS = new Set([
+  "10minutemail.com",
+  "guerrillamail.com",
+  "mailinator.com",
+  "tempmail.com",
+  "throwaway.email",
+  "yopmail.com",
+  "sjkrfsfh.com",
+  "temp-mail.org",
+  "fakeinbox.com",
+  "getnada.com",
+  "trashmail.com",
+  "maildrop.cc",
+  "sharklasers.com",
+  "guerrillamail.info",
+  "grr.la",
+  "guerrillamail.biz",
+  "guerrillamail.de",
+  "guerrillamail.net",
+  "spam4.me",
+  "mailnesia.com",
+  "trbvm.com",
+]);
+
 // Rate limiting (in-memory store)
-// NOTE: For production with multiple serverless instances, use Vercel KV, Upstash Redis, or similar
-// This simple implementation works for single-instance dev and low-traffic production
-const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+// NOTE: For single-server deployments, this in-memory implementation works perfectly
+// For multi-instance/load-balanced deployments, consider using Redis or a database
+const rateLimitMap = new Map<string, { count: number; resetTime: number; violations: number }>();
 const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
-const RATE_LIMIT_MAX_REQUESTS = 3; // 3 requests per minute
+const RATE_LIMIT_MAX_REQUESTS = 2; // 2 requests per minute (stricter)
 
 function cleanupRateLimits() {
   const now = Date.now();
@@ -47,11 +73,17 @@ function checkRateLimit(identifier: string): boolean {
     rateLimitMap.set(identifier, {
       count: 1,
       resetTime: now + RATE_LIMIT_WINDOW,
+      violations: record?.violations || 0, // Preserve violation count
     });
     return true;
   }
 
   if (record.count >= RATE_LIMIT_MAX_REQUESTS) {
+    // Increment violations for exponential backoff
+    record.violations++;
+    // Exponential backoff: double the window for each violation (max 1 hour)
+    const backoffMultiplier = Math.min(Math.pow(2, record.violations), 60);
+    record.resetTime = now + RATE_LIMIT_WINDOW * backoffMultiplier;
     return false;
   }
 
@@ -59,20 +91,55 @@ function checkRateLimit(identifier: string): boolean {
   return true;
 }
 
+function isDisposableEmail(email: string): boolean {
+  const domain = email.split("@")[1]?.toLowerCase();
+  return domain ? DISPOSABLE_EMAIL_DOMAINS.has(domain) : false;
+}
+
+// CORS configuration
+const allowedOrigins = [
+  "https://invoo.es",
+  "https://www.invoo.es",
+  "http://localhost:4200",
+  "http://localhost:3000",
+];
+
+function getCorsHeaders(origin: string | null) {
+  if (origin && allowedOrigins.includes(origin)) {
+    return {
+      "Access-Control-Allow-Origin": origin,
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type",
+      "Access-Control-Max-Age": "86400",
+    };
+  }
+  return {};
+}
+
+// Handle OPTIONS preflight request
+export async function OPTIONS(request: NextRequest) {
+  const origin = request.headers.get("origin");
+
+  if (origin && allowedOrigins.includes(origin)) {
+    return new NextResponse(null, {
+      status: 204,
+      headers: getCorsHeaders(origin),
+    });
+  }
+
+  return new NextResponse(null, { status: 403 });
+}
+
 export async function POST(request: NextRequest) {
   try {
     // 1. Verify origin for CSRF protection
     const origin = request.headers.get("origin");
-    const allowedOrigins = [
-      "https://invoo.es",
-      "https://www.invoo.es",
-      "http://localhost:4200",
-      "http://localhost:3000",
-    ];
 
     if (origin && !allowedOrigins.includes(origin)) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
+
+    const corsHeaders = getCorsHeaders(origin);
 
     // 2. Get IP for rate limiting
     const ip = request.headers.get("x-forwarded-for") ??
@@ -82,7 +149,7 @@ export async function POST(request: NextRequest) {
     if (!checkRateLimit(ip)) {
       return NextResponse.json(
         { error: "Too many requests. Please try again later." },
-        { status: 429 }
+        { status: 429, headers: corsHeaders }
       );
     }
 
@@ -91,7 +158,7 @@ export async function POST(request: NextRequest) {
     if (!contentType?.includes("application/json")) {
       return NextResponse.json(
         { error: "Content-Type must be application/json" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders }
       );
     }
 
@@ -102,7 +169,7 @@ export async function POST(request: NextRequest) {
     if (!email || typeof email !== "string") {
       return NextResponse.json(
         { error: "Email is required" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders }
       );
     }
 
@@ -116,11 +183,19 @@ export async function POST(request: NextRequest) {
     })) {
       return NextResponse.json(
         { error: "Invalid email format" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders }
       );
     }
 
-    // 7. Check length constraints (RFC 5321)
+    // 7. Block disposable email addresses
+    if (isDisposableEmail(sanitizedEmail)) {
+      return NextResponse.json(
+        { error: "Disposable email addresses are not allowed" },
+        { status: 400, headers: corsHeaders }
+      );
+    }
+
+    // 8. Check length constraints (RFC 5321)
     const [localPart, domain] = sanitizedEmail.split("@");
     if (
       localPart.length > 64 ||
@@ -129,19 +204,19 @@ export async function POST(request: NextRequest) {
     ) {
       return NextResponse.json(
         { error: "Email address is too long" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders }
       );
     }
 
-    // 8. Additional validation checks
+    // 9. Additional validation checks
     if (sanitizedEmail.includes("..")) {
       return NextResponse.json(
         { error: "Invalid email format" },
-        { status: 400 }
+        { status: 400, headers: corsHeaders }
       );
     }
 
-    // 9. Add contact to Resend audience
+    // 10. Add contact to Resend audience
     try {
       const response = await resend.contacts.create({
         email: sanitizedEmail,
@@ -154,14 +229,14 @@ export async function POST(request: NextRequest) {
         if (response.error.message?.includes("already exists")) {
           return NextResponse.json(
             { error: "This email is already subscribed" },
-            { status: 409 }
+            { status: 409, headers: corsHeaders }
           );
         }
 
         console.error("Resend API error:", response.error);
         return NextResponse.json(
           { error: "Failed to subscribe. Please try again." },
-          { status: 500 }
+          { status: 500, headers: corsHeaders }
         );
       }
 
@@ -170,7 +245,7 @@ export async function POST(request: NextRequest) {
           success: true,
           message: "Successfully subscribed to newsletter",
         },
-        { status: 200 }
+        { status: 200, headers: corsHeaders }
       );
     } catch (resendError: unknown) {
       console.error("Resend error:", resendError);
@@ -185,20 +260,22 @@ export async function POST(request: NextRequest) {
       ) {
         return NextResponse.json(
           { error: "This email is already subscribed" },
-          { status: 409 }
+          { status: 409, headers: corsHeaders }
         );
       }
 
       return NextResponse.json(
         { error: "Failed to subscribe. Please try again." },
-        { status: 500 }
+        { status: 500, headers: corsHeaders }
       );
     }
   } catch (error) {
     console.error("Newsletter subscription error:", error);
+    const origin = request.headers.get("origin");
+    const corsHeaders = getCorsHeaders(origin);
     return NextResponse.json(
       { error: "Internal server error" },
-      { status: 500 }
+      { status: 500, headers: corsHeaders }
     );
   }
 }
