@@ -29,12 +29,12 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
   return (
     <Link
       href={`/${locale}/blog/${post.category}/${post.slug}`}
-      className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2 rounded-[16px]"
+      className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2"
       aria-label={translations.readArticle}
     >
-      <article className="flex flex-col h-full bg-bg-secondary rounded-[16px] overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+      <article className="flex flex-col h-full">
         {/* Article Image */}
-        <div className="relative w-full aspect-[16/9] bg-bg-tertiary">
+        <div className="relative w-full aspect-[16/9] bg-bg-tertiary rounded-[16px] overflow-hidden">
           {post.coverImage ? (
             <Image
               src={post.coverImage}
@@ -57,14 +57,14 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
         </div>
 
         {/* Article Content */}
-        <div className="flex-1 p-6 flex flex-col">
+        <div className="flex-1 mt-4 flex flex-col">
           {/* Category Badge and Read Time */}
           <div className="flex items-center justify-between mb-3">
-            <span className="text-caption1 text-label-secondary uppercase tracking-wide">
+            <span className="text-caption1 text-label-secondary tracking-wide">
               {categoryDisplayName || post.category}
             </span>
             {post.readingTime && (
-              <span className="text-caption2 text-label-tertiary">
+              <span className="text-caption2 text-label-secondary">
                 {post.readingTime} min
               </span>
             )}
@@ -80,13 +80,6 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
             {post.excerpt}
           </p>
 
-          {/* Author and Date */}
-          <div className="flex items-center justify-between text-caption2 text-label-tertiary pt-4 border-t border-separator">
-            <span>{post.author}</span>
-            <time dateTime={post.publishedAt} aria-label={`${translations.publishedOn} ${formattedDate}`}>
-              {formattedDate}
-            </time>
-          </div>
         </div>
       </article>
     </Link>

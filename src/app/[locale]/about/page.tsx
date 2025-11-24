@@ -39,7 +39,7 @@ export default async function AboutPage({
         <HeroSection
           title={
             <>
-              <span style={{ color: "#EFEFF5" }}>
+              <span style={{ color: "text-text-primary" }}>
                 {locale === "en" ? "Helping freelancers and gestorías " : "Ayudando a autónomos y gestorías a "}
               </span>
               <GradientText>{locale === "en" ? "work better together" : "trabajar mejor juntos"}</GradientText>

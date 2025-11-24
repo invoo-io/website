@@ -28,7 +28,7 @@ export default async function FreelancersPage({
       <HeroSection
         title={
           <>
-            <span style={{color: '#EFEFF5'}}>{firstPart} </span>
+            <span style={{color: 'text-text-primary'}}>{firstPart} </span>
 
             <GradientText>{secondPart}</GradientText>
           </>
@@ -37,7 +37,7 @@ export default async function FreelancersPage({
         buttonText={t("header.cta")}
         buttonHref="#waitlist"
       />
-      <HeroImageSection dashboardImage="/FreelanceHeroImageSection.png" />
+      <HeroImageSection imageBaseName="freelancer" dashboardAlt="Freelancer Dashboard" />
       <BuildForGestoriasSection
         imageSrc="/clock.png"
         imageWidth={350}

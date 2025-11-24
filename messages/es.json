@@ -10,6 +10,11 @@
     "about": "Nosotros",
     "contact": "Contacto",
     "language": "Idioma",
+    "theme": "Tema",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "themeToggleLightMode": "Cambiar a modo claro",
+    "themeToggleDarkMode": "Cambiar a modo oscuro",
     "freelancers": "Autónomos",
     "gestorias": "Gestorías",
     "faq": "Preguntas Frecuentes",
@@ -190,6 +195,11 @@
     }
   },
   "faq": {
+    "hero": {
+      "title": "Preguntas Frecuentes",
+      "description": "Encuentra respuestas a las preguntas más comunes sobre Invoo, facturación electrónica y Verifactu",
+      "cta": "Únete a la lista de espera"
+    },
     "title": "FAQs",
     "categories": {
       "compliance": {
@@ -749,9 +759,11 @@
     },
     "title": "Blog de Invoo",
     "description": "Guías prácticas, consejos fiscales y las últimas novedades sobre facturación electrónica y Verifactu para autónomos y gestorías",
+    "cta": "Suscríbete al Newsletter",
     "editorPicks": "Selección del editor",
     "noPosts": "No hay artículos disponibles en este momento",
     "readMore": "Leer más",
+    "viewAll": "Ver todos",
     "backToBlog": "Volver al Blog",
     "relatedArticles": "Artículos Relacionados",
     "categories": {

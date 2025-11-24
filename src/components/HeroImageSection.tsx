@@ -1,40 +1,42 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import { getImagePath } from "@/lib/utils";
 
 interface HeroImageSectionProps {
-  backgroundImage?: string;
   dashboardImage?: string;
   dashboardAlt?: string;
+  imageBaseName?: string; // e.g., "homepage", "freelancer", "gestoria"
 }
 
 export default function HeroImageSection({
-  backgroundImage = "/hero-bck.png",
-  dashboardImage = "/productdashboard.png",
+  dashboardImage,
   dashboardAlt = "Invoo Dashboard",
+  imageBaseName = "homepage",
 }: HeroImageSectionProps) {
-  return (
-    <section className="relative w-full min-h-[100vh] max-lg:min-h-[80vh] max-md:min-h-[60vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image as absolute element */}
-      <div className="absolute inset-0 w-full h-full left-1/2 -translate-x-1/2">
-        <Image
-          src={getImagePath(backgroundImage)}
-          alt="Background"
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
+  const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme();
 
-      {/* Container */}
-      <div className="relative max-w-6xl mx-auto z-10 px-6 max-md:px-4">
-        {/* Dashboard Image */}
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Use provided dashboardImage or determine based on theme and imageBaseName
+  const themedImage = dashboardImage ||
+    (mounted && theme === "dark" ? `/${imageBaseName}-dark.png` : `/${imageBaseName}-light.png`);
+
+  return (
+    <section className="w-full pt-32 pb-32 max-md:pt-8 max-md:pb-24">
+      <div className="max-w-7xl mx-auto px-6 max-md:px-4">
         <div className="relative w-full">
           <Image
-            src={getImagePath(dashboardImage)}
+            src={getImagePath(themedImage)}
             alt={dashboardAlt}
             width={1350}
             height={700}
-            className="w-full h-auto rounded-lg"
+            className="w-full h-auto rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.2)]"
             priority
           />
         </div>

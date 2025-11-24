@@ -7,7 +7,7 @@ export interface ButtonProps {
   children: React.ReactNode;
   href?: string;
   onClick?: () => void;
-  variant?: 'primary' | 'secondary' | 'outline' | 'gradient';
+  variant?: 'primary' | 'secondary' | 'outline' | 'gradient' | 'tertiary';
   showArrow?: boolean;
   disabled?: boolean;
   className?: string;
@@ -29,6 +29,7 @@ export interface ButtonProps {
  * - PRIMARY: Solid button with system-grey100 text
  * - SECONDARY: Subtle background with label-primary text
  * - OUTLINE: Transparent background with label-primary text
+ * - TERTIARY: Text-only button with no border or background
  * - GRADIENT: Gradient background with white text
  */
 
@@ -36,6 +37,7 @@ const buttonVariants = {
   primary: "bg-accent-blue-main hover:bg-accent-blue-light border-accent-blue-main hover:border-accent-blue-light",
   secondary: "bg-fills-secondary hover:bg-fills-primary border-strokes-primary hover:border-strokes-secondary",
   outline: "bg-transparent hover:bg-fills-tertiary border-accent-blue-main hover:border-accent-blue-light",
+  tertiary: "bg-transparent hover:bg-fills-tertiary border-transparent hover:border-transparent",
   gradient: "" // Special handling for gradient
 };
 
@@ -54,7 +56,9 @@ export default function Button({
   const textColorClass = variant === 'primary'
     ? 'text-system-grey100'
     : variant === 'gradient'
-    ? 'text-label-inverted'
+    ? 'text-system-grey100'
+    : variant === 'tertiary'
+    ? 'text-accent-blue-main hover:text-accent-blue-dark'
     : 'text-label-primary';
 
   // Special handling for gradient variant

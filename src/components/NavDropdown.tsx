@@ -39,7 +39,7 @@ export default function NavDropdown({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <button className="flex items-center gap-1.5 text-label-inverted hover:text-label-inverted-secondary transition-colors text-callout">
+      <button className="flex items-center gap-1.5 text-text-primary hover:text-text-secondary transition-colors text-callout">
         {icon}
         <span>{label}</span>
         <ChevronDown className="w-4 h-4" />
@@ -47,36 +47,39 @@ export default function NavDropdown({
 
       {isOpen && (
         <div
-          className={`absolute top-full ${align === "right" ? "right-0" : "left-0"} before:absolute before:inset-x-0 before:top-0 before:h-2 rounded-xl overflow-hidden`}
-          style={{
-            minWidth,
-            backgroundColor: "var(--background-secondary-dark)",
-            backdropFilter: "blur(20px)",
-            animation: "slideDown 0.2s ease-out",
-          }}
+          className={`absolute top-full pt-3 ${align === "right" ? "right-0" : "left-0"}`}
         >
-          {items.map((item, index) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noopener noreferrer" : undefined}
-              className={`relative block px-6 py-3 text-footnote-emphasized text-label-inverted hover:text-label-inverted transition-all no-underline ${
-                index === 0 ? "rounded-t-xl" : ""
-              } ${index === items.length - 1 ? "rounded-b-xl" : ""}`}
+          <div
+            className="rounded-xl overflow-hidden"
+            style={{
+              minWidth,
+              backgroundColor: "var(--background-secondary)",
+              backdropFilter: "blur(20px)",
+              animation: "slideDown 0.2s ease-out",
+            }}
+          >
+            {items.map((item, index) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
+                className={`relative block px-6 py-3 text-callout text-text-secondary hover:text-text-primary transition-all no-underline whitespace-nowrap ${
+                  index === 0 ? "rounded-t-xl" : ""
+                } ${index === items.length - 1 ? "rounded-b-xl" : ""}`}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor =
-                  "var(--background-tertiary)";
-                e.currentTarget.style.color = "var(--label-inverted)";
+                e.currentTarget.style.backgroundColor = "var(--background-tertiary)";
+                e.currentTarget.style.color = "var(--label-primary)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = "transparent";
-                e.currentTarget.style.color = "var(--label-inverted)";
+                e.currentTarget.style.color = "var(--label-secondary)";
               }}
             >
               {item.name}
             </Link>
           ))}
+          </div>
         </div>
       )}
     </div>

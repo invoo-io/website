@@ -24,15 +24,16 @@ export default function PricingSection() {
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center'
+      alignItems: 'center',
+      backgroundColor: "var(--background-secondary)"
     }}>
       {/* Header */}
       <div className="text-center mb-16 max-w-3xl">
         <h1 className="text-large-title-emphasized mb-6 max-md:!text-[48px]" style={{ fontSize: '64px' }}>
           <GradientText>{titleParts[0]}.</GradientText>
-          <span className="text-label-inverted"> {titleParts[1]}</span>
+          <span className="text-text-primary"> {titleParts[1]}</span>
         </h1>
-        <p className="text-headline text-label-inverted-secondary">
+        <p className="text-headline text-text-secondary">
           {t("header.description")}
         </p>
       </div>
@@ -45,7 +46,7 @@ export default function PricingSection() {
           style={{
             background: 'none',
             border: 'none',
-            color: activeTab === "freelancer" ? 'var(--label-inverted)' : 'var(--label-secondary-dark)'
+            color: activeTab === "freelancer" ? 'var(--label-primary)' : 'var(--label-secondary)'
           }}
         >
           {t("tabs.freelancer")}
@@ -59,7 +60,7 @@ export default function PricingSection() {
           style={{
             background: 'none',
             border: 'none',
-            color: activeTab === "gestoria" ? 'var(--label-inverted)' : 'var(--label-secondary-dark)'
+            color: activeTab === "gestoria" ? 'var(--label-primary)' : 'var(--label-secondary)'
           }}
         >
           {t("tabs.gestoria")}
@@ -132,13 +133,13 @@ export default function PricingSection() {
                         width: '18px',
                         left: isAnnual ? '23px' : '3px',
                         bottom: '3px',
-                        backgroundColor: 'var(--label-inverted)',
+                        backgroundColor: 'var(--label-primary)',
                         transition: '0.4s',
                         borderRadius: '50%'
                       }} />
                     </span>
                   </label>
-                  <span className="text-footnote text-label-inverted-secondary">
+                  <span className="text-footnote text-text-secondary">
                     {t("freelancer.pro.toggle")} {isAnnual && <span className="text-accent-green-main">{t("freelancer.pro.toggleSave")}</span>}
                   </span>
                 </div>

@@ -10,8 +10,7 @@ import PricingSection from "@/components/PricingSection";
 import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
-import { FeaturedBlogSection } from "@/components/blog/FeaturedBlogSection";
-import { getImagePath, getBasePath } from "@/lib/utils";
+import { getBasePath } from "@/lib/utils";
 
 export default async function Home({
   params,
@@ -36,21 +35,16 @@ export default async function Home({
       <HeroSection
         title={
           <>
-            <span className="text-label-inverted">{firstWord} </span>
+            <span className="text-text-primary">{firstWord} </span>
             <GradientText>{middleWords}</GradientText>
-            <span className="text-label-inverted"> {lastThreeWords}</span>
+            <span className="text-text-primary"> {lastThreeWords}</span>
           </>
         }
         paragraph={t("hero.description")}
         buttonText={t("hero.cta")}
         buttonHref="#waitlist"
       />
-      <HeroImageSection dashboardImage="/Home.png" />
-      <FeaturedBlogSection
-        locale={locale}
-        title={t("featuredBlog.title")}
-        subtitle={t("featuredBlog.subtitle")}
-      />
+      <HeroImageSection />
       <WhyChooseSection />
       <InvoicingSection />
       <MoreThanInvoiceSection />
@@ -60,9 +54,9 @@ export default async function Home({
         features={t.raw("gestoriasBlock.features")}
         buttonText={t("gestoriasBlock.cta")}
         buttonHref={getBasePath(`/${locale}/gestorias`)}
-        imageSrc={getImagePath("/Gestoria.png")}
         imageAlt="Gestorías Dashboard"
         imagePosition="right"
+        applyHeroStyling={true}
       />
       <PricingSection />
       <FocusSection />

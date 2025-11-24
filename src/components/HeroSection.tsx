@@ -26,7 +26,7 @@ export default function HeroSection({
           {title}
         </h1>
 
-        <p className="text-body mb-8 max-w-3xl mx-auto text-label-inverted">
+        <p className="text-body mb-8 max-w-3xl mx-auto text-text-secondary">
           {paragraph}
         </p>
 

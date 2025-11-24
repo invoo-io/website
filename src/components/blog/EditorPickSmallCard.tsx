@@ -11,12 +11,12 @@ export function EditorPickSmallCard({ post, locale }: EditorPickSmallCardProps) 
   return (
     <Link
       href={`/${locale}/blog/${post.category}/${post.slug}`}
-      className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2 rounded-[16px]"
+      className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2"
       aria-label={`Leer artículo: ${post.title}`}
     >
-      <article className="flex gap-4 p-4 bg-bg-secondary rounded-[16px] hover:shadow-md transition-shadow h-full">
+      <article className="flex gap-4 h-full">
         {/* Thumbnail */}
-        <div className="relative w-24 h-24 flex-shrink-0 rounded-[12px] overflow-hidden bg-bg-tertiary">
+        <div className="relative w-40 h-40 flex-shrink-0 rounded-[12px] overflow-hidden bg-bg-tertiary">
           {post.coverImage ? (
             <Image
               src={post.coverImage}
@@ -42,18 +42,18 @@ export function EditorPickSmallCard({ post, locale }: EditorPickSmallCardProps) 
         <div className="flex-1 flex flex-col min-w-0">
           {/* Category label */}
           <div className="mb-2">
-            <span className="text-caption2 text-label-secondary uppercase tracking-wide">
+            <span className="text-caption2 text-label-secondary tracking-wide">
               {post.category}
             </span>
           </div>
 
           {/* Title */}
-          <h3 className="text-body-emphasized text-label mb-2 line-clamp-2">
+          <h3 className="text-headline text-label mb-2 line-clamp-2">
             {post.title}
           </h3>
 
           {/* Excerpt */}
-          <p className="text-caption1 text-label-secondary line-clamp-2">
+          <p className="text-subheadline text-label-secondary line-clamp-2">
             {post.excerpt}
           </p>
         </div>

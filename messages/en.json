@@ -10,6 +10,11 @@
     "about": "About Us",
     "contact": "Contact",
     "language": "Language",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeToggleLightMode": "Switch to light mode",
+    "themeToggleDarkMode": "Switch to dark mode",
     "freelancers": "Freelancers",
     "gestorias": "Accountants",
     "faq": "FAQ",
@@ -190,6 +195,11 @@
     }
   },
   "faq": {
+    "hero": {
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to the most common questions about Invoo, electronic invoicing and Verifactu",
+      "cta": "Join the Waitlist"
+    },
     "title": "FAQs",
     "categories": {
       "compliance": {
@@ -749,8 +759,11 @@
     },
     "title": "Invoo Blog",
     "description": "Practical guides, tax tips and the latest news on electronic invoicing and Verifactu for freelancers and accountants",
+    "cta": "Subscribe to Newsletter",
+    "editorPicks": "Editor's Picks",
     "noPosts": "No articles available at this time",
     "readMore": "Read more",
+    "viewAll": "View all",
     "backToBlog": "Back to Blog",
     "relatedArticles": "Related Articles",
     "categories": {

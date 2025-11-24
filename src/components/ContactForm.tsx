@@ -76,23 +76,23 @@ export default function ContactForm() {
   };
 
   const inputStyles: React.CSSProperties = {
-    backgroundColor: 'var(--fills-quaternary-dark)',
+    backgroundColor: 'var(--fills-quaternary)',
     border: 'none',
     borderRadius: '4px',
     padding: '11px 14px',
-    color: 'var(--label-inverted)',
+    color: 'var(--label-primary)',
     width: '100%',
     outline: 'none',
     transition: 'all 0.2s ease'
   };
 
   return (
-    <section className="min-h-screen bg-bg-inverted flex items-center justify-center px-6 py-20">
+    <section className="min-h-screen bg-bg-primary flex items-center justify-center px-6 py-20">
       <div className="max-w-3xl w-full">
-        <h1 className="text-large-title-emphasized text-label-inverted text-center mb-5" style={{ fontSize: '52px' }}>
+        <h1 className="text-large-title-emphasized text-text-primary text-center mb-5">
           Contact Invoo
         </h1>
-        <p className="text-subheadline text-label-inverted text-center mb-12">
+        <p className="text-subheadline text-text-primary text-center mb-12">
           We&apos;re here to help freelancers and gestorías. Choose the topic below or use the form
         </p>
 
@@ -100,7 +100,7 @@ export default function ContactForm() {
           {/* Desktop: all 3 in one row, Tablet: Topic on top, Name/Email below, Mobile: all stacked */}
           <div className="form-grid grid gap-4 mb-5">
             <div style={{ gridArea: 'topic' }}>
-              <label className="text-footnote text-label-inverted-secondary mb-2 block">Topic</label>
+              <label className="text-footnote text-text-secondary mb-2 block">Topic</label>
               <select
                 name="topic"
                 value={formData.topic}
@@ -116,17 +116,17 @@ export default function ContactForm() {
                   cursor: 'pointer'
                 }}
               >
-                <option value="" style={{ backgroundColor: 'var(--background-inverted)' }}>Select</option>
-                <option value="general" style={{ backgroundColor: 'var(--background-inverted)' }}>General Inquiry</option>
-                <option value="support" style={{ backgroundColor: 'var(--background-inverted)' }}>Technical Support</option>
-                <option value="pricing" style={{ backgroundColor: 'var(--background-inverted)' }}>Pricing</option>
-                <option value="partnership" style={{ backgroundColor: 'var(--background-inverted)' }}>Partnership</option>
-                <option value="feedback" style={{ backgroundColor: 'var(--background-inverted)' }}>Feedback</option>
+                <option value="" style={{ backgroundColor: 'var(--background-primary)' }}>Select</option>
+                <option value="general" style={{ backgroundColor: 'var(--background-primary)' }}>General Inquiry</option>
+                <option value="support" style={{ backgroundColor: 'var(--background-primary)' }}>Technical Support</option>
+                <option value="pricing" style={{ backgroundColor: 'var(--background-primary)' }}>Pricing</option>
+                <option value="partnership" style={{ backgroundColor: 'var(--background-primary)' }}>Partnership</option>
+                <option value="feedback" style={{ backgroundColor: 'var(--background-primary)' }}>Feedback</option>
               </select>
             </div>
 
             <div style={{ gridArea: 'name' }}>
-              <label className="text-footnote text-label-inverted-secondary mb-2 block">Name</label>
+              <label className="text-footnote text-text-secondary mb-2 block">Name</label>
               <input
                 type="text"
                 name="name"
@@ -139,7 +139,7 @@ export default function ContactForm() {
             </div>
 
             <div style={{ gridArea: 'email' }}>
-              <label className="text-footnote text-label-inverted-secondary mb-2 block">Email</label>
+              <label className="text-footnote text-text-secondary mb-2 block">Email</label>
               <input
                 type="email"
                 name="email"
@@ -179,7 +179,7 @@ export default function ContactForm() {
           `}</style>
 
           <div className="mb-6">
-            <label className="text-footnote text-label-inverted-secondary mb-2 block">Message</label>
+            <label className="text-footnote text-text-secondary mb-2 block">Message</label>
             <textarea
               name="message"
               value={formData.message}

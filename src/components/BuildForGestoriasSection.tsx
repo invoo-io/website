@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import Button from "./ui/Button";
 import { DrawerComponent } from "./DrawerComponent";
 import { Check } from "lucide-react";
@@ -20,6 +22,7 @@ interface BuildForGestoriasSectionProps {
   imageHeight?: number;
   offsetImage?: boolean;
   maxImageWidth?: number;
+  applyHeroStyling?: boolean; // Apply shadow and border radius for hero images
 }
 
 export default function BuildForGestoriasSection({
@@ -36,15 +39,26 @@ export default function BuildForGestoriasSection({
   imageWidth = 800,
   imageHeight = 700,
   offsetImage = true,
-  maxImageWidth
+  maxImageWidth,
+  applyHeroStyling = false
 }: BuildForGestoriasSectionProps) {
+  const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Use provided imageSrc or determine based on theme for Gestoria image
+  const themedImageSrc = imageSrc ||
+    (mounted && theme === "dark" ? "/gestoria-dark.png" : "/gestoria-light.png");
   const textContent = (
     <div className="max-w-full max-md:text-center" style={{ width: '500px' }}>
-      <h2 className="text-large-title-emphasized text-label-primary mb-6" style={{ fontSize: '48px' }}>
+      <h2 className="text-large-title-emphasized text-text-primary mb-6" style={{ fontSize: '48px' }}>
         {title}
       </h2>
 
-      <p className="text-callout text-label-secondary mb-8">
+      <p className="text-callout text-text-secondary mb-8">
         {paragraph}
       </p>
 
@@ -53,7 +67,7 @@ export default function BuildForGestoriasSection({
         {features.map((feature, index) => (
           <div key={index} className="flex items-center gap-3">
             <Check size={20} className="text-accent-green-main" />
-            <span className="text-callout text-label-inverted">
+            <span className="text-callout text-text-primary">
               {feature}
             </span>
           </div>
@@ -61,7 +75,7 @@ export default function BuildForGestoriasSection({
       </div>
 
       {/* Button */}
-      <div className="max-md:flex max-md:justify-center">
+      <div className="flex justify-start max-md:justify-center w-fit max-md:w-full">
         {buttonHref === "#waitlist" ? (
           <DrawerComponent
             triggerText={buttonText}
@@ -80,18 +94,20 @@ export default function BuildForGestoriasSection({
     </div>
   );
 
-  const imageContent = imageSrc ? (
-    <div style={{
-      width: 'auto',
-      maxWidth: maxImageWidth ? `${maxImageWidth}px` : undefined,
-      height: 'auto',
-      marginRight: offsetImage ? (imagePosition === 'right' ? '-300px' : '300px') : '0',
-    }}>
+  const imageContent = themedImageSrc ? (
+    <div
+      className={offsetImage ? (imagePosition === 'right' ? 'max-md:mr-0 lg:mr-[-300px]' : 'max-md:mr-0 lg:mr-[300px]') : ''}
+      style={{
+        width: 'auto',
+        maxWidth: maxImageWidth ? `${maxImageWidth}px` : undefined,
+        height: 'auto',
+      }}>
       <Image
-        src={imageSrc}
+        src={themedImageSrc}
         alt={imageAlt || ''}
         width={imageWidth}
         height={imageHeight}
+        className={applyHeroStyling ? "rounded-[24px] shadow-[0_10px_40px_rgba(0,0,0,0.1)]" : ""}
         style={{
           objectFit: 'contain',
 
@@ -110,10 +126,9 @@ export default function BuildForGestoriasSection({
   ) : null;
 
   return (
-    <section className="py-[156px] max-md:py-10" style={{
+    <section className="py-[156px] max-md:py-10 overflow-x-hidden" style={{
       position: 'relative',
       // height: '634px',
-      overflow: 'hidden',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center'
