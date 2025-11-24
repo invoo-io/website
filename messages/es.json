@@ -755,7 +755,14 @@
     "backToBlog": "Volver al Blog",
     "relatedArticles": "Artículos Relacionados",
     "categories": {
-      "all": "Todas las categorías"
+      "all": "Todas las categorías",
+      "guias": "Guías",
+      "analisis": "Análisis",
+      "comparaciones": "Comparaciones",
+      "consejos": "Consejos",
+      "formacion": "Formación",
+      "casos-de-exito": "Casos de Éxito",
+      "invoo": "Invoo"
     },
     "newsletter": {
       "title": "Mantente al día con las últimas novedades",
@@ -775,6 +782,11 @@
         "networkError": "Error de red. Por favor, comprueba tu conexión",
         "generic": "Algo salió mal. Por favor, inténtalo de nuevo"
       }
+    },
+    "article": {
+      "readArticle": "Leer artículo: {title}",
+      "coverImageAlt": "Imagen de portada del artículo: {title}",
+      "publishedOn": "Publicado el"
     }
   }
 }

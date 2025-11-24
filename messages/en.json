@@ -754,7 +754,14 @@
     "backToBlog": "Back to Blog",
     "relatedArticles": "Related Articles",
     "categories": {
-      "all": "All categories"
+      "all": "All categories",
+      "guias": "Guides",
+      "analisis": "Analysis",
+      "comparaciones": "Comparisons",
+      "consejos": "Tips",
+      "formacion": "Training",
+      "casos-de-exito": "Success Stories",
+      "invoo": "Invoo"
     },
     "newsletter": {
       "title": "Stay updated with the latest insights",
@@ -774,6 +781,11 @@
         "networkError": "Network error. Please check your connection",
         "generic": "Something went wrong. Please try again"
       }
+    },
+    "article": {
+      "readArticle": "Read article: {title}",
+      "coverImageAlt": "Cover image for article: {title}",
+      "publishedOn": "Published on"
     }
   }
 }
