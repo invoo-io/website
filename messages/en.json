@@ -632,6 +632,10 @@
       "description": "Invoo helps freelancers, SMBs and gestorías work faster together: Verifactu-ready, professional PDFs, instant sharing, and automatic tax summaries.",
       "cta": "Join the waiting list"
     },
+    "featuredBlog": {
+      "title": "Featured Articles",
+      "subtitle": "Explore our latest insights on invoicing, compliance, and business management"
+    },
     "whyChoose": {
       "title": "Why freelancers, SMBs and gestorías choose Invoo",
       "card1": {

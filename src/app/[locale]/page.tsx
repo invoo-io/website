@@ -10,6 +10,7 @@ import PricingSection from "@/components/PricingSection";
 import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
+import { FeaturedBlogSection } from "@/components/blog/FeaturedBlogSection";
 import { getImagePath, getBasePath } from "@/lib/utils";
 
 export default async function Home({
@@ -45,6 +46,11 @@ export default async function Home({
         buttonHref="#waitlist"
       />
       <HeroImageSection dashboardImage="/Home.png" />
+      <FeaturedBlogSection
+        locale={locale}
+        title={t("featuredBlog.title")}
+        subtitle={t("featuredBlog.subtitle")}
+      />
       <WhyChooseSection />
       <InvoicingSection />
       <MoreThanInvoiceSection />
