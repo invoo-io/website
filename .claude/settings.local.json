@@ -28,7 +28,8 @@
       "Bash(xargs kill -9)",
       "Bash(node -e:*)",
       "Bash(npx tsx:*)",
-      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: improve blog article detail page with new components\n\n- Add ArticleHeader, ArticleSidebar, TableOfContents components\n- Add ExploreWithAI component for ChatGPT integration\n- Add KeyTakeaways component with Spanish translation\n- Full-width header background fix\n- Add border tokens to Tailwind theme\n- Update blog page layout with two-column design\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: improve blog article detail page with new components\n\n- Add ArticleHeader, ArticleSidebar, TableOfContents components\n- Add ExploreWithAI component for ChatGPT integration\n- Add KeyTakeaways component with Spanish translation\n- Full-width header background fix\n- Add border tokens to Tailwind theme\n- Update blog page layout with two-column design\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
