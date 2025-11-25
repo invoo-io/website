@@ -108,20 +108,20 @@
      BACKGROUND COLORS
      ======================================== */
 
-  --background-primary-light: rgba(255, 255, 255, 1);
-  --background-primary-dark: rgba(18, 18, 18, 1);
+  --background-primary-light: #FAFAFD;
+  --background-primary-dark: #121212;
   --background-primary: var(--background-primary-light);
 
-  --background-secondary-light: rgba(249, 249, 249, 1);
-  --background-secondary-dark: rgba(22, 22, 22, 1);
+  --background-secondary-light: #FFFFFF;
+  --background-secondary-dark: #161616;
   --background-secondary: var(--background-secondary-light);
 
-  --background-tertiary-light: rgba(242, 242, 242, 1);
-  --background-tertiary-dark: rgba(28, 28, 28, 1);
+  --background-tertiary-light: #F7F7F7;
+  --background-tertiary-dark: #1C1C1C;
   --background-tertiary: var(--background-tertiary-light);
 
-  --background-inverted-light: rgba(14, 14, 14, 1);
-  --background-inverted-dark: rgba(255, 255, 255, 1);
+  --background-inverted-light: #0E0E0E;
+  --background-inverted-dark: #FFFFFF;
   --background-inverted: var(--background-inverted-light);
 
   /* ========================================
@@ -176,12 +176,12 @@
      STROKE/BORDER COLORS
      ======================================== */
 
-  --strokes-primary-light: rgba(223, 223, 223, 1);
-  --strokes-primary-dark: rgba(33, 33, 33, 1);
+  --strokes-primary-light: #EDEDED;
+  --strokes-primary-dark: #202020;
   --strokes-primary: var(--strokes-primary-light);
 
-  --strokes-secondary-light: rgba(223, 223, 223, 1);
-  --strokes-secondary-dark: rgba(43, 43, 43, 1);
+  --strokes-secondary-light: #DFDFDF;
+  --strokes-secondary-dark: #2B2B2B;
   --strokes-secondary: var(--strokes-secondary-light);
 
   /* ========================================

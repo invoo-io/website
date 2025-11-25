@@ -3,8 +3,13 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import KeyTakeaways from "@/components/blog/KeyTakeaways";
+import ExploreWithAI from "@/components/blog/ExploreWithAI";
+import ArticleHeader from "@/components/blog/ArticleHeader";
+import ArticleSidebar from "@/components/blog/ArticleSidebar";
 import { getAllBlogPosts, getBlogPost, getAllCategories } from "@/lib/blog";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
 export async function generateStaticParams() {
   const posts = getAllBlogPosts();
@@ -43,6 +48,7 @@ export async function generateMetadata({
   return {
     title: `${post.title} | Blog de Invoo`,
     description: post.excerpt,
+    keywords: post.tags,
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -70,82 +76,90 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     notFound();
   }
 
+  const t = await getTranslations('blog');
+
+  // Custom MDX components to add IDs to headings for anchor linking
+  const mdxComponents = {
+    h2: ({
+      children,
+      ...props
+    }: {
+      children?: ReactNode;
+      [key: string]: unknown;
+    }) => {
+      const id =
+        typeof children === "string"
+          ? children
+              .toLowerCase()
+              .replace(/\s+/g, "-")
+              .replace(/[^\w-]/g, "")
+          : "";
+      return (
+        <h2 id={id} {...props}>
+          {children}
+        </h2>
+      );
+    },
+  };
+
   return (
     <div className="min-h-screen bg-bg-primary">
       <Navigation locale={locale} />
 
-      <article className="container mx-auto px-4 py-12 max-w-4xl">
-        {/* Article Header */}
-        <header className="mb-12">
-          {/* Category Badge */}
-          <div className="inline-block px-4 py-2 bg-bg-secondary rounded-full text-label-primary text-sm mb-6">
-            {category.name}
-          </div>
+      {/* Article Header - Full Width */}
+      <ArticleHeader
+        post={post}
+        category={category}
+        locale={locale}
+        backButtonLabel={t('article.backButton')}
+        backButtonAriaLabel={t('article.backButtonAriaLabel')}
+      />
 
-          {/* Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-label-inverted mb-6">
-            {post.title}
-          </h1>
+      {/* Main Content Area - Two Column Layout */}
+      <div className="container mx-auto px-4 pb-12 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 lg:gap-12">
+          {/* Left Column - Main Content */}
+          <article className="min-w-0">
+            {/* Explore with AI */}
+            <ExploreWithAI
+              articleUrl={`https://invoo.es/${locale}/blog/${categorySlug}/${slug}`}
+              articleTitle={post.title}
+              articleExcerpt={post.excerpt}
+            />
 
-          {/* Excerpt */}
-          {post.excerpt && (
-            <p className="text-xl text-label-secondary mb-6">
-              {post.excerpt}
-            </p>
-          )}
-
-          {/* Meta Information */}
-          <div className="flex flex-wrap items-center gap-4 text-label-tertiary">
-            <span className="font-medium">{post.author}</span>
-            <span>•</span>
-            <time dateTime={post.publishedAt}>
-              {new Date(post.publishedAt).toLocaleDateString("es-ES", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </time>
-            {post.readingTime && (
-              <>
-                <span>•</span>
-                <span>{post.readingTime} min de lectura</span>
-              </>
+            {/* Key Takeaways */}
+            {post.keyTakeaways && post.keyTakeaways.length > 0 && (
+              <KeyTakeaways takeaways={post.keyTakeaways} />
             )}
-          </div>
 
-          {/* Cover Image */}
-          {post.coverImage && (
-            <div className="mt-8 rounded-lg overflow-hidden">
-              <img
-                src={post.coverImage}
-                alt={post.title}
-                className="w-full h-auto"
-              />
+            {/* Article Content - MDX Rendering with Custom Components */}
+            <div className="blog-content max-w-none">
+              <MDXRemote source={post.content} components={mdxComponents} />
             </div>
-          )}
-        </header>
 
-        {/* Article Content - MDX Rendering */}
-        <div className="blog-content max-w-none">
-          <MDXRemote source={post.content} />
+            {/* Tags */}
+            {post.tags && post.tags.length > 0 && (
+              <div className="mt-12 pt-8 border-t border-border-primary">
+                <div className="flex flex-wrap gap-2">
+                  {post.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 bg-bg-secondary rounded-full text-sm text-label-secondary"
+                    >
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </article>
+
+          {/* Right Column - Sticky Sidebar (Desktop Only) */}
+          <div className="hidden lg:block">
+            <ArticleSidebar content={post.content} title={post.title} />
+          </div>
         </div>
-
-        {/* Tags */}
-        {post.tags && post.tags.length > 0 && (
-          <div className="mt-12 pt-8 border-t border-border-primary">
-            <div className="flex flex-wrap gap-2">
-              {post.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-3 py-1 bg-bg-secondary rounded-full text-sm text-label-secondary"
-                >
-                  #{tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-      </article>
+      </div>
 
       <Footer locale={locale} />
     </div>

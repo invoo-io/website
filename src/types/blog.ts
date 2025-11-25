@@ -24,6 +24,7 @@ export interface BlogPost {
   readingTime?: number;
   featured?: boolean;
   editorPick?: boolean;
+  keyTakeaways?: string[];
 }
 
 export interface BlogPostMetadata {
@@ -39,4 +40,5 @@ export interface BlogPostMetadata {
   readingTime?: number;
   featured?: boolean;
   editorPick?: boolean;
+  keyTakeaways?: string[];
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 import { getImagePath, getBasePath } from "@/lib/utils";
 
 export default function WhyChooseSection() {

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTheme } from "next-themes";
-import Button from "./ui/Button";
+import Button from "./ui/button";
 import { DrawerComponent } from "./DrawerComponent";
 import { Check } from "lucide-react";
 
