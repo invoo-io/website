@@ -36,7 +36,7 @@ export default async function AboutPage({
   const t = await getTranslations({ locale, namespace: "about.header" });
 
   return (
-    <div className="min-h-screen bg-bg-primary relative overflow-hidden">
+    <div className="min-h-screen bg-background-primary relative overflow-hidden">
       <div className="relative z-10">
         <Navigation locale={locale} />
         <Image
@@ -57,7 +57,7 @@ export default async function AboutPage({
         <HeroSection
           title={
             <>
-              <span style={{ color: "text-text-primary" }}>
+              <span className="text-primary">
                 {locale === "en" ? "Helping freelancers and gestorías " : "Ayudando a autónomos y gestorías a "}
               </span>
               <GradientText>{locale === "en" ? "work better together" : "trabajar mejor juntos"}</GradientText>

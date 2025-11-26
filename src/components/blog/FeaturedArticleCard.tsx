@@ -14,9 +14,9 @@ export function FeaturedArticleCard({ post, locale }: FeaturedArticleCardProps) 
       className="block"
       aria-label={`Read article: ${post.title}`}
     >
-      <article className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8 min-h-[400px] md:min-h-[500px]">
+      <article className="grid grid-cols-1 lg:grid-cols-4 gap-6 md:gap-8">
         {/* Left side: Image (3/4 columns) */}
-        <div className="lg:col-span-3 relative rounded-[24px] overflow-hidden bg-bg-secondary">
+        <div className="lg:col-span-3 relative rounded-[24px] overflow-hidden bg-background-secondary aspect-[4/3] md:aspect-[16/9] lg:aspect-auto lg:min-h-[500px]">
           {post.coverImage ? (
             <Image
               src={post.coverImage}
@@ -27,7 +27,7 @@ export function FeaturedArticleCard({ post, locale }: FeaturedArticleCardProps) 
             />
           ) : (
             <div className="absolute inset-0 bg-gradient-to-br from-accent-blue-main/20 to-accent-purple-main/20 flex items-center justify-center">
-              <span className="text-6xl md:text-8xl font-bold text-label-tertiary/20">
+              <span className="text-6xl md:text-8xl font-bold text-tertiary/20">
                 {post.title.charAt(0)}
               </span>
             </div>
@@ -39,7 +39,7 @@ export function FeaturedArticleCard({ post, locale }: FeaturedArticleCardProps) 
           <div>
             {/* Article metadata tag */}
             <div className="mb-4">
-              <span className="text-caption1 text-label-secondary tracking-wide">
+              <span className="text-caption1 text-secondary tracking-wide">
                 Article - {post.readingTime ? `${post.readingTime} min read` : 'Quick read'}
               </span>
             </div>
@@ -50,7 +50,7 @@ export function FeaturedArticleCard({ post, locale }: FeaturedArticleCardProps) 
             </h3>
 
             {/* Excerpt */}
-            <p className="text-body text-label-secondary mb-6 line-clamp-3">
+            <p className="text-body text-secondary mb-6 line-clamp-3">
               {post.excerpt}
             </p>
           </div>

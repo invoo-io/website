@@ -2,54 +2,42 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import FocusButton from "./FocusButton";
+import GradientText from "./ui/GradientText";
 import { getImagePath } from "@/lib/utils";
 
 export default function FocusSection() {
   const t = useTranslations("home.focus");
+  const params = useParams();
+  const locale = params.locale as string;
 
   return (
-    <section style={{
-      position: 'relative',
-      minHeight: '400px',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '164px 24px',
-      overflow: 'hidden'
-    }}>
+    <section className="relative min-h-[400px] flex flex-col items-center justify-center py-[164px] px-4 md:px-6 overflow-hidden">
       {/* Background Image with Overlay */}
-      <div style={{
-        position: 'absolute',
-        inset: 0,
-        zIndex: 0
-      }}>
+      <div className="absolute inset-0 z-0">
         <Image
           src={getImagePath("/focussectionbgimg.jpg")}
           alt="Background"
           fill
-          style={{
-            objectFit: 'cover'
-          }}
+          className="object-cover"
           priority
         />
         {/* Black overlay with opacity */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          backgroundColor: '#000',
-          opacity: '.6'
-        }} />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl">
-        <h2 className="text-large-title-emphasized text-system-grey100 mb-6" style={{ fontSize: '48px' }}>
-          {t("title")}
+        <h2 className="text-section-title-emphasized text-system-grey100 mb-6">
+          {locale === "es" ? (
+            <><GradientText>Céntrate en tu trabajo.</GradientText> Nosotros nos encargamos del papeleo</>
+          ) : (
+            <><GradientText>Focus on your work.</GradientText> We&apos;ll handle the paperwork</>
+          )}
         </h2>
 
-        <p className="text-callout mb-12" style={{ color: 'var(--system-grey100)' }}>
+        <p className="text-callout text-system-grey100 mb-12">
           {t("description")}
         </p>
 

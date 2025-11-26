@@ -41,12 +41,12 @@ export default async function FreelancersPage({
   const secondPart = titleParts.slice(1).join(" "); // "without stress" or "sin estrés"
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <Navigation locale={locale} />
       <HeroSection
         title={
           <>
-            <span style={{color: 'text-text-primary'}}>{firstPart} </span>
+            <span className="text-primary">{firstPart} </span>
 
             <GradientText>{secondPart}</GradientText>
           </>

@@ -7,7 +7,7 @@ export default function AboutContent() {
 
   const renderParagraphs = (text: string) => {
     return text.split('\n').map((paragraph, index) => (
-      <p key={index} className="text-body text-text-secondary mb-4 last:mb-0">
+      <p key={index} className="text-body text-secondary mb-4 last:mb-0">
         {paragraph}
       </p>
     ));
@@ -17,11 +17,11 @@ export default function AboutContent() {
     const lines = text.split('\n');
     return (
       <div>
-        <p className="text-body text-text-primary mb-1">
+        <p className="text-body text-primary mb-1">
           {lines[0]}
         </p>
         {lines.slice(1).map((line, index) => (
-          <p key={index} className="text-body text-text-secondary">
+          <p key={index} className="text-body text-secondary">
             {line}
           </p>
         ))}
@@ -34,7 +34,7 @@ export default function AboutContent() {
       <div className="max-w-4xl w-full flex flex-col gap-10 text-left">
         {/* Block 1: Born from real experience section */}
         <div className="mb-8">
-          <h2 className="text-title1-emphasized text-text-primary mb-6">
+          <h2 className="text-title1-emphasized text-primary mb-6">
             {t("block1.title")}
           </h2>
           <div>
@@ -44,7 +44,7 @@ export default function AboutContent() {
 
         {/* Block 2: Our vision section */}
         <div className="mb-8">
-          <h3 className="text-title1-emphasized text-text-primary mb-6">
+          <h3 className="text-title1-emphasized text-primary mb-6">
             {t("block2.title")}
           </h3>
           <div>
@@ -54,7 +54,7 @@ export default function AboutContent() {
 
         {/* Block 3: Why Invoo section */}
         <div className="mb-8">
-          <h3 className="text-title1-emphasized text-text-primary mb-8">
+          <h3 className="text-title1-emphasized text-primary mb-8">
             {t("block3.title")}
           </h3>
           <div className="space-y-6">
@@ -79,7 +79,7 @@ export default function AboutContent() {
 
         {/* Block 4: Join us early section */}
         <div className="pt-8">
-          <h3 className="text-title1-emphasized text-text-primary mb-6">
+          <h3 className="text-title1-emphasized text-primary mb-6">
             {t("block4.title")}
           </h3>
           <div>

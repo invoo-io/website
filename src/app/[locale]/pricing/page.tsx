@@ -34,7 +34,7 @@ export default async function PricingPage({
   return (
     <>
       <JsonLd data={generateProductSchema(locale)} />
-      <div className="min-h-screen bg-bg-primary">
+      <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
         <PricingSection />
         <Footer locale={locale} />

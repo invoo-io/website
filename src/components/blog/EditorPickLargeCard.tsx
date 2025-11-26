@@ -16,7 +16,7 @@ export function EditorPickLargeCard({ post, locale }: EditorPickLargeCardProps) 
     >
       <article className="flex flex-col h-full">
         {/* Image */}
-        <div className="relative w-full aspect-[4/3] bg-bg-tertiary rounded-[24px] overflow-hidden">
+        <div className="relative w-full aspect-[4/3] bg-background-tertiary rounded-[24px] overflow-hidden">
           {post.coverImage ? (
             <Image
               src={post.coverImage}
@@ -32,7 +32,7 @@ export function EditorPickLargeCard({ post, locale }: EditorPickLargeCardProps) 
               aria-hidden="true"
               role="presentation"
             >
-              <span className="text-6xl font-bold text-label-tertiary/30">
+              <span className="text-6xl font-bold text-tertiary/30">
                 {post.title.charAt(0).toUpperCase()}
               </span>
             </div>
@@ -43,7 +43,7 @@ export function EditorPickLargeCard({ post, locale }: EditorPickLargeCardProps) 
         <div className="flex-1 mt-4 flex flex-col">
           {/* Category label */}
           <div className="mb-3">
-            <span className="text-caption1 text-label-secondary tracking-wide">
+            <span className="text-caption1 text-secondary tracking-wide">
               {post.category}
             </span>
           </div>
@@ -54,7 +54,7 @@ export function EditorPickLargeCard({ post, locale }: EditorPickLargeCardProps) 
           </h3>
 
           {/* Excerpt */}
-          <p className="text-body text-label-secondary line-clamp-3 flex-1">
+          <p className="text-body text-secondary line-clamp-3 flex-1">
             {post.excerpt}
           </p>
         </div>

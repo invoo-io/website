@@ -13,11 +13,11 @@ import type { Metadata } from "next";
 export async function generateStaticParams() {
   const categories = getAllCategories();
 
-  // Only generate Spanish paths
-  return categories.map((category) => ({
-    locale: "es",
-    category: category.slug,
-  }));
+  // Generate both locales - English will redirect to Spanish
+  return categories.flatMap((category) => [
+    { locale: "es", category: category.slug },
+    { locale: "en", category: category.slug },
+  ]);
 }
 
 interface CategoryPageProps {
@@ -81,7 +81,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <Navigation locale={locale} />
 
       {/* Category Header - Hero Style */}
@@ -99,10 +99,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               {t("backToBlog")}
             </Button>
           </div>
-          <h1 className="hero-heading mb-8 text-text-primary">
+          <h1 className="hero-heading mb-8 text-primary">
             {category.name}
           </h1>
-          <p className="text-body mb-8 max-w-3xl mx-auto text-text-secondary">
+          <p className="text-body mb-8 max-w-3xl mx-auto text-secondary">
             {category.description}
           </p>
         </div>
@@ -113,7 +113,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         {/* Blog Posts Grid */}
         {posts.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-label-secondary text-lg">
+            <p className="text-secondary text-lg">
               {t("noPosts")}
             </p>
           </div>

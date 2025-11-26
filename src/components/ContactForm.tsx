@@ -87,12 +87,12 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="min-h-screen bg-bg-primary flex items-center justify-center px-6 py-20">
+    <section className="min-h-screen bg-background-primary flex items-center justify-center px-6 py-20">
       <div className="max-w-3xl w-full">
-        <h1 className="text-large-title-emphasized text-text-primary text-center mb-5">
+        <h1 className="text-large-title-emphasized text-primary text-center mb-5">
           Contact Invoo
         </h1>
-        <p className="text-subheadline text-text-primary text-center mb-12">
+        <p className="text-subheadline text-primary text-center mb-12">
           We&apos;re here to help freelancers and gestorías. Choose the topic below or use the form
         </p>
 
@@ -100,7 +100,7 @@ export default function ContactForm() {
           {/* Desktop: all 3 in one row, Tablet: Topic on top, Name/Email below, Mobile: all stacked */}
           <div className="form-grid grid gap-4 mb-5">
             <div style={{ gridArea: 'topic' }}>
-              <label className="text-footnote text-text-secondary mb-2 block">Topic</label>
+              <label className="text-footnote text-secondary mb-2 block">Topic</label>
               <select
                 name="topic"
                 value={formData.topic}
@@ -126,7 +126,7 @@ export default function ContactForm() {
             </div>
 
             <div style={{ gridArea: 'name' }}>
-              <label className="text-footnote text-text-secondary mb-2 block">Name</label>
+              <label className="text-footnote text-secondary mb-2 block">Name</label>
               <input
                 type="text"
                 name="name"
@@ -139,7 +139,7 @@ export default function ContactForm() {
             </div>
 
             <div style={{ gridArea: 'email' }}>
-              <label className="text-footnote text-text-secondary mb-2 block">Email</label>
+              <label className="text-footnote text-secondary mb-2 block">Email</label>
               <input
                 type="email"
                 name="email"
@@ -179,7 +179,7 @@ export default function ContactForm() {
           `}</style>
 
           <div className="mb-6">
-            <label className="text-footnote text-text-secondary mb-2 block">Message</label>
+            <label className="text-footnote text-secondary mb-2 block">Message</label>
             <textarea
               name="message"
               value={formData.message}

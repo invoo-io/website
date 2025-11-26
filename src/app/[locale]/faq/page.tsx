@@ -44,13 +44,13 @@ export default async function FAQPage({
   const faqSchema = await generateFAQPageSchema(locale);
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <JsonLd data={faqSchema} />
       <Navigation locale={locale} />
       <HeroSection
         title={
           <>
-            <span className="text-text-primary">{firstPart} </span>
+            <span className="text-primary">{firstPart} </span>
             <GradientText>{lastPart}</GradientText>
           </>
         }

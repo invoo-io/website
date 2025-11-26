@@ -30,7 +30,7 @@ export default async function CookiePolicyPage({
   setRequestLocale(locale);
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <Navigation locale={locale} />
       <CookiePolicyContent />
       <Footer locale={locale} />

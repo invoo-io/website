@@ -8,7 +8,7 @@ import { DrawerComponent } from "./DrawerComponent";
 import { Check } from "lucide-react";
 
 interface BuildForGestoriasSectionProps {
-  title: string;
+  title: React.ReactNode;
   paragraph: string;
   features: string[];
   buttonText: string;
@@ -54,11 +54,11 @@ export default function BuildForGestoriasSection({
     (mounted && theme === "dark" ? "/gestoria-dark.png" : "/gestoria-light.png");
   const textContent = (
     <div className="max-w-full max-md:text-center" style={{ width: '500px' }}>
-      <h2 className="text-large-title-emphasized text-text-primary mb-6" style={{ fontSize: '48px' }}>
+      <h2 className="text-section-title-emphasized text-primary mb-6">
         {title}
       </h2>
 
-      <p className="text-callout text-text-secondary mb-8">
+      <p className="text-callout text-secondary mb-8">
         {paragraph}
       </p>
 
@@ -67,7 +67,7 @@ export default function BuildForGestoriasSection({
         {features.map((feature, index) => (
           <div key={index} className="flex items-center gap-3">
             <Check size={20} className="text-accent-green-main" />
-            <span className="text-callout text-text-primary">
+            <span className="text-callout text-primary">
               {feature}
             </span>
           </div>
@@ -126,7 +126,7 @@ export default function BuildForGestoriasSection({
   ) : null;
 
   return (
-    <section className="py-[156px] max-md:py-10 overflow-x-hidden" style={{
+    <section className="py-[156px] max-md:py-10 px-4 md:px-6 overflow-x-hidden" style={{
       position: 'relative',
       // height: '634px',
       display: 'flex',
@@ -138,13 +138,10 @@ export default function BuildForGestoriasSection({
         position: 'relative',
         zIndex: 10,
         display: 'flex',
-        
         alignItems: 'center',
         justifyContent: 'center',
         gap: '40px',
-        // maxWidth: '1200px',
         width: '100%',
-        padding: '0 24px',
         flexDirection: imagePosition === 'left' ? 'row-reverse' : 'row',
         flexWrap: 'wrap'
       }}>

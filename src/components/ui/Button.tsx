@@ -17,8 +17,8 @@ import { cn } from '@/lib/utils';
 
 const variants = {
   primary: 'bg-accent-blue-main hover:bg-accent-blue-light text-system-grey100',
-  secondary: 'bg-fills-secondary hover:bg-fills-primary border-2 border-strokes-primary hover:border-strokes-secondary text-label-primary',
-  outline: 'bg-transparent hover:bg-fills-tertiary border-2 border-accent-blue-main hover:border-accent-blue-light text-label-primary',
+  secondary: 'bg-fills-secondary hover:bg-fills-primary border-2 border-strokes-primary hover:border-strokes-secondary text-primary',
+  outline: 'bg-transparent hover:bg-fills-tertiary border-2 border-accent-blue-main hover:border-accent-blue-light text-primary',
   tertiary: 'bg-transparent text-accent-blue-main hover:text-accent-blue-dark',
   gradient: 'text-system-grey100',
 } as const;

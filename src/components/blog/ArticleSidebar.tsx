@@ -33,8 +33,8 @@ export default function ArticleSidebar({ content, title }: ArticleSidebarProps) 
   return (
     <aside className="sticky top-24 space-y-8 mt-8">
       {/* Social Share Section */}
-      <div className="bg-bg-secondary rounded-xxl p-6 border border-border-primary">
-        <h3 className="text-callout font-semibold text-text-primary mb-4">
+      <div className="bg-background-secondary rounded-xxl p-6 border border-border-primary">
+        <h3 className="text-callout font-semibold text-primary mb-4">
           Compartir artículo
         </h3>
         <div className="flex items-center gap-3">
@@ -42,7 +42,7 @@ export default function ArticleSidebar({ content, title }: ArticleSidebarProps) 
             href={shareLinks.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-primary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-primary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir en Twitter"
           >
             <Twitter className="w-5 h-5" />
@@ -51,7 +51,7 @@ export default function ArticleSidebar({ content, title }: ArticleSidebarProps) 
             href={shareLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-primary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-primary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir en LinkedIn"
           >
             <Linkedin className="w-5 h-5" />
@@ -60,14 +60,14 @@ export default function ArticleSidebar({ content, title }: ArticleSidebarProps) 
             href={shareLinks.facebook}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-primary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-primary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir en Facebook"
           >
             <Facebook className="w-5 h-5" />
           </a>
           <a
             href={shareLinks.email}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-primary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-primary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir por email"
           >
             <Mail className="w-5 h-5" />
@@ -76,7 +76,7 @@ export default function ArticleSidebar({ content, title }: ArticleSidebarProps) 
       </div>
 
       {/* Table of Contents */}
-      <div className="bg-bg-secondary rounded-xxl p-6 border border-border-primary">
+      <div className="bg-background-secondary rounded-xxl p-6 border border-border-primary">
         <TableOfContents content={content} />
       </div>
     </aside>

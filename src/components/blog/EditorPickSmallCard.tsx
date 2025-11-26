@@ -16,7 +16,7 @@ export function EditorPickSmallCard({ post, locale }: EditorPickSmallCardProps) 
     >
       <article className="flex gap-4 h-full">
         {/* Thumbnail */}
-        <div className="relative w-40 h-40 flex-shrink-0 rounded-[12px] overflow-hidden bg-bg-tertiary">
+        <div className="relative w-40 h-40 flex-shrink-0 rounded-[12px] overflow-hidden bg-background-tertiary">
           {post.coverImage ? (
             <Image
               src={post.coverImage}
@@ -31,7 +31,7 @@ export function EditorPickSmallCard({ post, locale }: EditorPickSmallCardProps) 
               aria-hidden="true"
               role="presentation"
             >
-              <span className="text-2xl font-bold text-label-tertiary/30">
+              <span className="text-2xl font-bold text-tertiary/30">
                 {post.title.charAt(0).toUpperCase()}
               </span>
             </div>
@@ -42,7 +42,7 @@ export function EditorPickSmallCard({ post, locale }: EditorPickSmallCardProps) 
         <div className="flex-1 flex flex-col min-w-0">
           {/* Category label */}
           <div className="mb-2">
-            <span className="text-caption2 text-label-secondary tracking-wide">
+            <span className="text-caption2 text-secondary tracking-wide">
               {post.category}
             </span>
           </div>
@@ -53,7 +53,7 @@ export function EditorPickSmallCard({ post, locale }: EditorPickSmallCardProps) 
           </h3>
 
           {/* Excerpt */}
-          <p className="text-subheadline text-label-secondary line-clamp-2">
+          <p className="text-subheadline text-secondary line-clamp-2">
             {post.excerpt}
           </p>
         </div>
