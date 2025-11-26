@@ -53,6 +53,8 @@ export default function Footer({ locale }: FooterProps) {
               <li><Link href={getBasePath(`/${locale}/about`)} className="text-callout no-underline text-text-secondary hover:text-text-primary transition-colors">{t("aboutUs")}</Link></li>
               <li><Link href={getBasePath(`/${locale}/terms`)} className="text-callout no-underline text-text-secondary hover:text-text-primary transition-colors">{t("terms")}</Link></li>
               <li><Link href={getBasePath(`/${locale}/privacy`)} className="text-callout no-underline text-text-secondary hover:text-text-primary transition-colors">{t("privacy")}</Link></li>
+              <li><Link href={getBasePath(`/${locale}/legal-notice`)} className="text-callout no-underline text-text-secondary hover:text-text-primary transition-colors">{t("legalNotice")}</Link></li>
+              <li><Link href={getBasePath(`/${locale}/cookies`)} className="text-callout no-underline text-text-secondary hover:text-text-primary transition-colors">{t("cookies")}</Link></li>
               <li><Link href={getBasePath(`/${locale}/contact`)} className="text-callout no-underline text-text-secondary hover:text-text-primary transition-colors">{t("contact")}</Link></li>
             </ul>
           </div>

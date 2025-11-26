@@ -38,7 +38,8 @@
       "WebFetch(domain:sede.agenciatributaria.gob.es)",
       "WebFetch(domain:www.boe.es)",
       "WebFetch(domain:localhost)",
-      "WebFetch(domain:portal.seg-social.gob.es)"
+      "WebFetch(domain:portal.seg-social.gob.es)",
+      "mcp__Linear__get_issue"
     ],
     "deny": [],
     "ask": []

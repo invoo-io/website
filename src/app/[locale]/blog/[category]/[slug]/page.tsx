@@ -1,5 +1,5 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -64,9 +64,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const { locale, category: categorySlug, slug } = await params;
   setRequestLocale(locale);
 
-  // Redirect or 404 if not Spanish
+  // Redirect to Spanish blog if not Spanish
   if (locale !== "es") {
-    notFound();
+    redirect(`/es/blog/${categorySlug}/${slug}`);
   }
 
   const post = getBlogPost(categorySlug, slug);
