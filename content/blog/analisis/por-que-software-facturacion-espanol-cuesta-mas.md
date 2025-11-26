@@ -25,15 +25,16 @@ Esta pregunta la hacen miles de autónomos españoles cada mes. Y tiene una resp
 
 La diferencia de precio entre España y el resto de Europa no es marginal. Es brutal:
 
-| País | Software popular | Precio/mes | Funcionalidad |
-|------|-----------------|------------|---------------|
-| **España** | Holded | €35-99 | Facturación + CRM + Inventario + Contabilidad |
-| **España** | Quipu | €40-80 | Facturación + Gastos + Contabilidad |
-| **España** | Billin | €29-89 | Facturación + Inventario + TPV |
-| **Alemania** | Lexoffice | €8.90-19.90 | Facturación + Contabilidad básica |
-| **Francia** | Zervant | €0-24 | Facturación (gratis hasta 10 facturas/mes) |
-| **UK** | FreeAgent | £14-29 (€16-34) | Facturación + Contabilidad + Nóminas |
-| **Holanda** | Moneybird | €9-29 | Facturación + Contabilidad |
+**En España:**
+- **[Holded](https://www.holded.com)**: €35-99/mes (Facturación + CRM + Inventario + Contabilidad)
+- **[Quipu](https://getquipu.com)**: €40-80/mes (Facturación + Gastos + Contabilidad)
+- **[Billin](https://www.billin.net)**: €29-89/mes (Facturación + Inventario + TPV)
+
+**En el resto de Europa:**
+- **[Lexoffice](https://www.lexoffice.de)** (Alemania): €8.90-19.90/mes (Facturación + Contabilidad básica)
+- **[Zervant](https://www.zervant.com)** (Francia): €0-24/mes (gratis hasta 10 facturas/mes)
+- **[FreeAgent](https://www.freeagent.com)** (UK): €16-34/mes (Facturación + Contabilidad + Nóminas)
+- **[Moneybird](https://www.moneybird.com)** (Holanda): €9-29/mes (Facturación + Contabilidad)
 
 El patrón es claro: en España pagas €30-100/mes de entrada. En Europa, entre €0-15/mes. Estamos hablando de un sobreprecio del 300-500%.
 
@@ -47,7 +48,7 @@ Antes de lanzar piedras, hay que reconocer que España tiene complejidades fisca
 
 ### Costes justificados: Verifactu y complejidad fiscal
 
-**Verifactu (RD 1007/2023)** es el elefante en la habitación. Desde enero de 2026 para sociedades y julio de 2026 para autónomos, todo software de facturación debe implementar firma digital, hash encadenado de facturas, y envío automático a la AEAT. Esto no es trivial:
+**[Verifactu (RD 1007/2023)](/es/blog/guias/verifactu-2025-2026-guia-completa-autonomos-pymes)** es el elefante en la habitación. Desde enero de 2026 para sociedades y julio de 2026 para autónomos, todo software de facturación debe implementar firma digital, hash encadenado de facturas, y envío automático a la AEAT. Esto no es trivial:
 
 - Infraestructura de firma digital con certificados cualificados
 - Sistema de hash SHA-256 encadenado para toda la serie de facturación
@@ -59,10 +60,10 @@ El coste de desarrollo e infraestructura de Verifactu para una empresa de softwa
 
 **La complejidad fiscal española** añade otra capa. No es solo IVA al 21%:
 
-- IVA multicapa: 21%, 10%, 4%, 0% según producto/servicio
+- [IVA multicapa](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos): 21%, 10%, 4%, 0% según producto/servicio
 - IVA intracomunitario con inversión del sujeto pasivo
 - Equivalencia de recargo para minoristas
-- IRPF con retención del 15% (o 7% los dos primeros años)
+- [IRPF con retención del 15% (o 7% los tres primeros años)](/es/blog/guias/retencion-irpf-factura-7-o-15-guia-autonomos)
 - Retenciones variables según actividad profesional
 - Módulos vs estimación directa
 - Recargo por morosidad automático según Ley 3/2004
@@ -107,14 +108,12 @@ El bundling permite justificar precios altos ("mira todo lo que incluye") cuando
 
 Hagamos ingeniería inversa del precio real de un software de facturación español sin rent-seeking:
 
-| Componente | Coste mensual por usuario |
-|-----------|---------------------------|
-| Infraestructura (hosting, CDN, DB) | €1-2 |
-| Verifactu (firma digital, hash, envío AEAT) | €3-5 |
-| Desarrollo y mantenimiento (amortizado) | €4-6 |
-| Soporte al cliente | €2-3 |
-| Marketing y adquisición (amortizado) | €2-3 |
-| **Total razonable** | **€12-19** |
+- **Infraestructura** (hosting, CDN, DB): €1-2
+- **Verifactu** (firma digital, hash, envío AEAT): €3-5
+- **Desarrollo y mantenimiento** (amortizado): €4-6
+- **Soporte al cliente**: €2-3
+- **Marketing y adquisición** (amortizado): €2-3
+- **Total razonable: €12-19/mes**
 
 Todo lo que pagas por encima de €19/mes es:
 
@@ -150,9 +149,10 @@ Muchas gestorías tienen acuerdos con ciertos softwares y reciben comisión. Es 
 Invoo nació precisamente para romper este modelo. Nuestra tesis es simple:
 
 - **Cumplimiento completo de Verifactu** (firma digital, hash encadenado, envío a AEAT)
-- **Solo facturación**: sin CRM, sin inventario, sin features que no usas
+- **Dashboard para gestorías**: tu gestor accede directamente a tus facturas sin intermediarios
+- **Facturación enfocada**: con gestión de clientes y servicios, sin CRM ni inventario innecesario
+- **Envío automático**: facturas a tu gestoría y clientes con un clic
 - **Precio justo**: €10.90/mes, sin trucos ni tiers escalonados
-- **Transparencia radical**: código abierto, roadmap público, pricing público
 
 No necesitas pagar €45/mes por un CRM que no usas solo para poder facturar. No necesitas un "suite empresarial" si eres freelance. Necesitas facturar bien, cumplir con Hacienda, y seguir con tu trabajo.
 
@@ -169,7 +169,7 @@ Si estás pagando más de €20/mes por facturación básica:
 3. **Pregunta a tu gestoría** - ¿Realmente necesitas ese software específico o solo XML/PDF estándar?
 4. **Prueba alternativas enfocadas** - Invoo, pero también otros players pequeños que están surgiendo
 
-El sobreprecio del software de facturación español es real, parcialmente justificado, y parcialmente abusivo. Ahora que Verifactu está aquí, ya no hay excusa para precios de €50-100/mes en facturación básica.
+El sobreprecio del software de facturación español es real, parcialmente justificado, y parcialmente abusivo. Ahora que [Verifactu está aquí](/es/blog/guias/verifactu-2025-2026-guia-completa-autonomos-pymes), ya no hay excusa para precios de €50-100/mes en facturación básica.
 
 Tú decides si sigues pagando la prima de consolidación, o si apuestas por software enfocado que hace una cosa bien a precio justo.
 

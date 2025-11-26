@@ -46,7 +46,7 @@ Pero no termina ahí. Organizar archivos contables—renombrar PDFs, moverlos a 
 
 ### Por qué lo hacen así
 
-Les pregunté directamente: "¿Por qué no automatizas esto?" Las respuestas fueron reveladoras. El 43% me dijo simplemente "siempre lo he hecho así," con ese tono de resignación de quien nunca se ha planteado que pudiera existir otra manera. Otro 28% admitió que directamente no sabía que existían herramientas mejores—estaban atrapados en Excel porque nunca habían buscado alternativas. El 19% creía, equivocadamente, que los programas de facturación eran caros e inaccesibles para su presupuesto. Y el 10% restante me soltó la ironía más grande de todas: "No tengo tiempo para aprender algo nuevo."
+Les pregunté directamente: "¿Por qué no automatizas esto?" Las respuestas fueron reveladoras. El 43% me dijo simplemente "siempre lo he hecho así," con ese tono de resignación de quien nunca se ha planteado que pudiera existir otra manera. Otro 28% admitió que directamente no sabía que existían herramientas mejores—estaban atrapados en Excel porque nunca habían buscado alternativas. El 19% creía, equivocadamente, que [los programas de facturación eran caros e inaccesibles](/es/blog/analisis/por-que-software-facturacion-espanol-cuesta-mas) para su presupuesto. Y el 10% restante me soltó la ironía más grande de todas: "No tengo tiempo para aprender algo nuevo."
 
 > "No tengo tiempo para aprender algo nuevo." Irónico, ¿verdad? No tienen tiempo para aprender algo que les ahorraría tiempo.
 
@@ -95,7 +95,7 @@ El 91% de los autónomos entrevistados usan Excel o plantillas de Word para fact
 
 ### Tiempo de creación
 
-Cada vez que creas una factura, tienes que abrir la plantilla, buscar los datos del cliente—¿dónde los guardaste? ¿en un Excel diferente? ¿en un email antiguo?—, copiarlos manualmente, calcular el IVA a mano o con calculadora, asignar el número de factura correcto recordando cuál fue el último que usaste, generar un PDF con nombre coherente, y finalmente enviarlo por email con un mensaje personalizado. Si tienes práctica y todo va bien, **15 minutos por factura**. Si algo falla—no encuentras los datos, te equivocas en el IVA, duplicas un número de factura—pueden ser 30 minutos o más.
+Cada vez que creas una factura, tienes que abrir la plantilla, buscar los datos del cliente—¿dónde los guardaste? ¿en un Excel diferente? ¿en un email antiguo?—, copiarlos manualmente, calcular el IVA a mano o con calculadora (considerando [los diferentes modelos tributarios](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos)), asignar el número de factura correcto recordando cuál fue el último que usaste, generar un PDF con nombre coherente, y finalmente enviarlo por email con un mensaje personalizado. Si tienes práctica y todo va bien, **15 minutos por factura**. Si algo falla—no encuentras los datos, te equivocas en el IVA, duplicas un número de factura—pueden ser 30 minutos o más.
 
 ### Tiempo de búsqueda
 
@@ -129,7 +129,7 @@ Los que habían automatizado veían el gasto mensual como una inversión, no com
 
 ### ✅ Integración con gestoría
 
-Los mejores sistemas les permitían compartir datos directamente con su gestoría sin intercambiar decenas de emails cada trimestre. Exportar informes en el formato exacto que la gestoría necesita. Dar acceso directo para que revisen tus facturas cuando quieran sin tener que enviárselas. Menos emails, menos malentendidos, menos tiempo perdido explicando qué factura es cuál. La gestoría dejaba de ser una fuente de fricción trimestral y se convertía en una colaboración fluida.
+Los mejores sistemas les permitían [compartir datos directamente con su gestoría](/es/blog/consejos/del-caos-whatsapp-colaboracion-gestoria-cliente) sin intercambiar decenas de emails cada trimestre. Exportar informes en el formato exacto que la gestoría necesita. Dar acceso directo para que revisen tus facturas cuando quieran sin tener que enviárselas. Menos emails, menos malentendidos, menos tiempo perdido explicando qué factura es cuál. La gestoría dejaba de ser una fuente de fricción trimestral y se convertía en una colaboración fluida.
 
 ### ✅ Control financiero real
 
@@ -154,7 +154,7 @@ Multiplica esas horas por tu tarifa horaria. Si pierdes 10 horas al mes y factur
 
 ### Paso 3: Automatiza la facturación primero
 
-Es la tarea más frecuente y repetitiva de todas, lo que significa que automatizarla te da retorno inmediato. Busca una herramienta que cree facturas en menos de un minuto, tenga plantillas personalizables que reflejen tu marca, guarde automáticamente datos de clientes para no tener que copiarlos cada vez, envíe recordatorios automáticos de pago sin que tengas que perseguir a nadie, y sea compatible con Verifactu porque va a ser obligatorio en 2026 y más vale estar preparado. **Recomendación clara**: Invoo cumple todos estos requisitos.
+Es la tarea más frecuente y repetitiva de todas, lo que significa que automatizarla te da retorno inmediato. Busca una herramienta que cree facturas en menos de un minuto, tenga plantillas personalizables que reflejen tu marca, guarde automáticamente datos de clientes para no tener que copiarlos cada vez, envíe recordatorios automáticos de pago sin que tengas que perseguir a nadie, y sea compatible con [Verifactu porque va a ser obligatorio en 2026](/es/blog/guias/verifactu-2025-2026-guia-completa-autonomos-pymes) y más vale estar preparado. **Recomendación clara**: Invoo cumple todos estos requisitos.
 
 ### Paso 4: Centraliza tu documentación
 
