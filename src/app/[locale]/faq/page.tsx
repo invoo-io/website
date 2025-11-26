@@ -7,6 +7,8 @@ import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { generateFAQPageSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -39,8 +41,11 @@ export default async function FAQPage({
   const firstPart = titleParts.slice(0, -1).join(" ");
   const lastPart = titleParts[titleParts.length - 1];
 
+  const faqSchema = await generateFAQPageSchema(locale);
+
   return (
     <div className="min-h-screen bg-bg-primary">
+      <JsonLd data={faqSchema} />
       <Navigation locale={locale} />
       <HeroSection
         title={

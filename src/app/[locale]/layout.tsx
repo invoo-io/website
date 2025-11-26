@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { locales } from "@/i18n";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
@@ -88,15 +87,17 @@ export default async function RootLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
 
+  // Note: JSON-LD structured data is injected via post-build script (scripts/inject-jsonld.mjs)
+  // This is necessary because Next.js 15 static export with client components causes a "bailout"
+  // that prevents inline scripts from being pre-rendered in the static HTML output.
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
         className={`${inter.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <Suspense fallback={null}>
-            <GoogleAnalytics />
-          </Suspense>
+          <GoogleAnalytics />
           <NextIntlClientProvider messages={messages}>
             {children}
             <CookieBanner />

@@ -11,7 +11,9 @@ import PricingSection from "@/components/PricingSection";
 import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
+import { JsonLd } from "@/components/JsonLd";
 import { getBasePath } from "@/lib/utils";
+import { generateSoftwareApplicationSchema } from "@/lib/schema";
 
 const BASE_URL = "https://invoo.es";
 
@@ -66,6 +68,7 @@ export default async function Home({
 
   return (
     <div className="min-h-screen bg-bg-primary">
+      <JsonLd data={generateSoftwareApplicationSchema(locale)} />
       <Navigation locale={locale} />
       <HeroSection
         title={
