@@ -9,7 +9,7 @@ import { DrawerComponent } from "./DrawerComponent";
 import { getBasePath } from "@/lib/utils";
 
 export default function PricingSection() {
-  const t = useTranslations("pricing");
+  const t = useTranslations("pricingPage");
   const params = useParams();
   const locale = params.locale as string;
   const [activeTab, setActiveTab] = useState<"freelancer" | "gestoria">("freelancer");

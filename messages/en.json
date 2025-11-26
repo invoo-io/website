@@ -71,6 +71,10 @@
     "getStarted": "Get Started"
   },
   "freelancersPage": {
+    "metadata": {
+      "title": "Invoicing for Freelancers",
+      "description": "Simple invoicing for Spanish freelancers - Verifactu compliant invoices, automatic AEAT submission, and seamless gestoría collaboration."
+    },
     "header": {
       "title": "Invoicing without stress",
       "description": "Professional invoices, automatic Verifactu compliance, and instant delivery to AEAT, your client, and your gestoría",
@@ -118,6 +122,10 @@
     }
   },
   "gestoriasPage": {
+    "metadata": {
+      "title": "Invoicing for Accountants",
+      "description": "Free dashboard for gestorías - real-time access to client invoices and expenses, Verifactu compliant, with one-click exports."
+    },
     "header": {
       "title": "Less paperwork, more advising",
       "description": "Invoo gives gestorías real-time access to client invoices and expenses, always Verifactu compliant, always free",
@@ -195,6 +203,10 @@
     }
   },
   "faq": {
+    "metadata": {
+      "title": "FAQs",
+      "description": "Find answers to common questions about Invoo, Verifactu compliance, pricing, and how our invoicing platform helps Spanish freelancers."
+    },
     "hero": {
       "title": "Frequently Asked Questions",
       "description": "Find answers to the most common questions about Invoo, electronic invoicing and Verifactu",
@@ -318,6 +330,10 @@
     }
   },
   "about": {
+    "metadata": {
+      "title": "About Us",
+      "description": "Learn about Invoo - the gestoría-friendly invoicing platform built to simplify compliance and strengthen collaboration for Spanish freelancers."
+    },
     "header": {
       "title": "Helping freelancers and gestorías work better together",
       "description": "Invoo is the gestoría-friendly invoicing platform built to simplify compliance, save time, and strengthen collaboration"
@@ -345,6 +361,10 @@
     }
   },
   "privacy": {
+    "metadata": {
+      "title": "Privacy Policy",
+      "description": "Invoo Privacy Policy - Learn how we collect, use, and protect your personal data in compliance with GDPR."
+    },
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: November 19, 2025",
     "intro": "This Privacy Policy explains how Roques OÜ (\"Invoo\", \"we\") processes the personal data of Users who access the Website or use the Platform accessible through https://invoo.es. We are committed to complying with Regulation (EU) 2016/679 (GDPR), Organic Law 3/2018 (LOPDGDD) and applicable Spanish tax regulations where relevant.",
@@ -453,6 +473,10 @@
     }
   },
   "terms": {
+    "metadata": {
+      "title": "Terms and Conditions",
+      "description": "Invoo Terms and Conditions - Read the legal terms governing the use of our invoicing platform and services."
+    },
     "title": "Terms and Conditions of Use of the Invoo Service",
     "lastUpdated": "Last updated: November 19, 2025",
     "intro": "These Terms and Conditions (\"Terms\") govern the access and use of the Invoo digital invoicing service, offered by Roques OÜ, a company incorporated under Estonian law, with registered address at Ahtri tn 12, 15551, Tallinn, Estonia (\"Invoo\", \"we\", \"the Company\").\n\nThe use of the Service is intended exclusively for professionals, including freelancers, small and medium-sized businesses, and accounting firms (gestorías).\n\nInvoo does not target consumers, and the user declares that they are contracting the Service for a business or professional activity.\n\nUse of the Service implies full and unreserved acceptance of these Terms. If you do not agree, you must not use Invoo.",
@@ -648,7 +672,21 @@
       "details": "legal@invoo.es\nRoques OÜ\nAhtri tn 12, 15551\nTallinn, Estonia"
     }
   },
-  "pricing": {
+  "contact": {
+    "metadata": {
+      "title": "Contact Us",
+      "description": "Get in touch with Invoo - We're here to help with your invoicing questions and support needs."
+    }
+  },
+  "verifactu": {
+    "metadata": {
+      "title": "Verifactu Compliance",
+      "description": "Learn how Invoo handles Verifactu compliance - automatic QR codes, AEAT submission, and full audit trail for Spanish invoicing."
+    }
+  },
+  "pricingPage": {
+    "title": "Pricing",
+    "description": "Simple, fair pricing for freelancers and accountants. Choose the plan that fits your needs.",
     "header": {
       "title": "Simple pricing. No surprises",
       "description": "Choose the plan that fits your needs. Switch anytime. Cancel anytime"

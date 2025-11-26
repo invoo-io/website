@@ -71,6 +71,10 @@
     "getStarted": "Empezar"
   },
   "freelancersPage": {
+    "metadata": {
+      "title": "Facturación para Autónomos",
+      "description": "Facturación simple para autónomos españoles - facturas conformes con Verifactu, envío automático a AEAT y colaboración fluida con tu gestoría."
+    },
     "header": {
       "title": "Facturación sin estrés",
       "description": "Facturas profesionales, cumplimiento Verifactu automático y envío instantáneo a Hacienda, tu cliente y tu gestoría",
@@ -118,6 +122,10 @@
     }
   },
   "gestoriasPage": {
+    "metadata": {
+      "title": "Facturación para Gestorías",
+      "description": "Panel gratuito para gestorías - acceso en tiempo real a facturas y gastos de clientes, conforme con Verifactu, con exportación en un clic."
+    },
     "header": {
       "title": "Menos papeleo, más asesoramiento",
       "description": "Invoo da a las gestorías acceso en tiempo real a facturas y gastos de clientes, siempre conforme con Verifactu, siempre gratis",
@@ -195,6 +203,10 @@
     }
   },
   "faq": {
+    "metadata": {
+      "title": "Preguntas Frecuentes",
+      "description": "Respuestas a preguntas frecuentes sobre Invoo, cumplimiento Verifactu, precios y cómo nuestra plataforma ayuda a autónomos españoles."
+    },
     "hero": {
       "title": "Preguntas Frecuentes",
       "description": "Encuentra respuestas a las preguntas más comunes sobre Invoo, facturación electrónica y Verifactu",
@@ -318,6 +330,10 @@
     }
   },
   "about": {
+    "metadata": {
+      "title": "Sobre Nosotros",
+      "description": "Conoce Invoo - la plataforma de facturación amiga de las gestorías, diseñada para simplificar el cumplimiento y fortalecer la colaboración para autónomos españoles."
+    },
     "header": {
       "title": "Ayudando a autónomos y gestorías a trabajar mejor juntos",
       "description": "Invoo es la plataforma de facturación amiga de las gestorías, diseñada para simplificar el cumplimiento, ahorrar tiempo y fortalecer la colaboración"
@@ -345,6 +361,10 @@
     }
   },
   "privacy": {
+    "metadata": {
+      "title": "Política de Privacidad",
+      "description": "Política de Privacidad de Invoo - Conoce cómo recopilamos, usamos y protegemos tus datos personales según el RGPD."
+    },
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: 19 de noviembre de 2025",
     "intro": "Esta Política de Privacidad explica cómo Roques OÜ (\"Invoo\", \"nosotros\") trata los datos personales de los Usuarios que acceden al Sitio Web o utilizan la Plataforma accesible a través del sitio web https://invoo.es. Nos comprometemos a cumplir el Reglamento (UE) 2016/679 (RGPD), la Ley Orgánica 3/2018 (LOPDGDD) y la normativa española aplicable en materia fiscal cuando corresponda.",
@@ -453,6 +473,10 @@
     }
   },
   "terms": {
+    "metadata": {
+      "title": "Términos y Condiciones",
+      "description": "Términos y Condiciones de Invoo - Lee los términos legales que rigen el uso de nuestra plataforma de facturación y servicios."
+    },
     "title": "Términos y Condiciones de Uso del Servicio Invoo",
     "lastUpdated": "Última actualización: 19 de noviembre de 2025",
     "intro": "Estos Términos y Condiciones (\"Términos\") regulan el acceso y uso del servicio de facturación digital Invoo, ofrecido por Roques OÜ, sociedad constituida conforme a la legislación de Estonia, con domicilio en Ahtri tn 12, 15551, Tallin, Estonia (\"Invoo\", \"nosotros\", \"la Empresa\").\n\nEl uso del Servicio está destinado únicamente a profesionales, incluyendo autónomos, pequeñas y medianas empresas y gestorías.\n\nInvoo no se dirige a consumidores, y el usuario declara que contrata el Servicio para una actividad empresarial o profesional.\n\nLa utilización del Servicio implica la aceptación plena y sin reservas de estos Términos. Si no estás de acuerdo, no debes utilizar Invoo.",
@@ -648,7 +672,21 @@
       "details": "legal@invoo.es\nRoques OÜ\nAhtri tn 12, 15551\nTallin, Estonia"
     }
   },
-  "pricing": {
+  "contact": {
+    "metadata": {
+      "title": "Contacto",
+      "description": "Contacta con Invoo - Estamos aquí para ayudarte con tus preguntas sobre facturación y soporte."
+    }
+  },
+  "verifactu": {
+    "metadata": {
+      "title": "Cumplimiento Verifactu",
+      "description": "Descubre cómo Invoo gestiona el cumplimiento Verifactu - códigos QR automáticos, envío a AEAT y trazabilidad completa para facturación española."
+    }
+  },
+  "pricingPage": {
+    "title": "Precios",
+    "description": "Precios simples y justos para autónomos y gestorías. Elige el plan que mejor se adapte a tus necesidades.",
     "header": {
       "title": "Precios simples. Sin sorpresas",
       "description": "Elige el plan que se ajuste a tus necesidades. Cambia cuando quieras. Cancela cuando quieras"
