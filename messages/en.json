@@ -346,241 +346,306 @@
   },
   "privacy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: July 19, 2025",
-    "section1": {
-      "title": "1. Introduction",
-      "content": "This Privacy Policy explains how Roques OÜ (\"Invoo\", \"we\", \"us\") collects, uses, and protects your personal data when you use our invoicing platform at invoo.es (\"Service\").\nWe are committed to protecting your privacy and complying with the General Data Protection Regulation (GDPR) and Spanish data protection laws (LOPDGDD).",
-      "controller": "Data Controller:\nRoques OÜ\nAhtri tn 12, 15551\nTallinn, Estonia\nEmail: legal@invoo.es"
+    "lastUpdated": "Last updated: November 19, 2025",
+    "intro": "This Privacy Policy explains how Roques OÜ (\"Invoo\", \"we\") processes the personal data of Users who access the Website or use the Platform accessible through https://invoo.es. We are committed to complying with Regulation (EU) 2016/679 (GDPR), Organic Law 3/2018 (LOPDGDD) and applicable Spanish tax regulations where relevant.",
+    "controller": {
+      "title": "Data Controller",
+      "content": "The data controller for personal data is:",
+      "details": "Roques OÜ\nAhtri tn 12\n15551, Tallinn (Estonia)\nEmail: legal@invoo.es"
     },
-    "section2": {
-      "title": "2. Data We Collect",
-      "sub1": {
-        "title": "2.1 Account Information",
-        "items": ["Full name and business name", "Email address and phone number", "NIF/NIE/CIF (Spanish tax identification)", "Business address", "Bank account details (for payments)", "Password (encrypted)"]
+    "dataWeProcess": {
+      "title": "Data We Process",
+      "intro": "The type of data processed depends on how the User uses the Platform:",
+      "registration": {
+        "title": "Data provided during registration",
+        "content": "This includes full name, email address, tax data required for invoicing (such as NIF/CIF or tax address), and in the case of paid plans, payment method data (which remains tokenized; Invoo only stores the last digits of the card)."
       },
-      "sub2": {
-        "title": "2.2 Invoice and Financial Data",
-        "items": ["Client information (name, tax ID, address)", "Invoice details (amounts, dates, descriptions)", "Expense records and receipts", "Tax calculations (Modelo 130/303)", "Verifactu compliance records"]
+      "platformUsage": {
+        "title": "Data generated through Platform use",
+        "intro": "During normal User activity, Invoo processes data that forms part of the contracted service, such as:",
+        "items": [
+          "issued invoice data",
+          "client and supplier data entered by the User",
+          "invoicing records in accordance with RD 1007/2023",
+          "expenses, receipts and uploaded documents",
+          "information necessary for generating tax estimates",
+          "gestoría dashboard activity when the User shares access"
+        ],
+        "note": "This data belongs exclusively to the User, who acts as the Data Controller regarding the content of their own invoices, clients or expenses. Invoo only processes it for the proper provision of the contracted service."
       },
-      "sub3": {
-        "title": "2.3 Usage Data",
-        "items": ["IP address (anonymized)", "Browser type and device information", "Pages visited and features used", "Access dates and times", "Error logs and performance data"]
+      "technical": {
+        "title": "Data derived from technical use",
+        "content": "We process certain technical data necessary to ensure the security and operation of the service: IP address, access logs, device or browser identifiers, performance data and error logs."
       },
-      "sub4": {
-        "title": "2.4 Cookie Data",
-        "items": ["Session cookies (essential)", "Analytics cookies (with consent)", "Preference cookies"],
-        "note": "See our Cookie Policy (Section 8) for details."
+      "cookies": {
+        "title": "Cookies and similar technologies",
+        "content": "The Website uses technical cookies and, with consent, analytics cookies. Detailed information can be found in our Cookie Policy."
       }
     },
-    "section3": {
-      "title": "3. How We Use Your Data",
-      "sub1": {
-        "title": "3.1 Legal Basis for Processing",
-        "intro": "We process your data based on:",
-        "items": ["Contract: To provide our Service", "Legal Obligation: Tax compliance and Verifactu requirements", "Consent: Marketing communications and analytics", "Legitimate Interest: Security and fraud prevention"]
-      },
-      "sub2": {
-        "title": "3.2 Purposes",
-        "items": ["Provide invoicing and expense management services", "Generate Verifactu-compliant invoices", "Submit data to AEAT via API", "Calculate tax obligations", "Process payments via Stripe", "Send service notifications", "Provide customer support", "Improve our Service (with consent)", "Send marketing communications (with consent)"]
-      }
+    "purposes": {
+      "title": "Purposes of Processing",
+      "intro": "Invoo processes User personal data to:",
+      "items": [
+        "provide the Service, enabling invoice issuance, data synchronization, generation of Invoicing Records and access to the gestoría dashboard",
+        "manage the User's account, including operational communications, technical notifications and relevant service information",
+        "bill and process payments when the User subscribes to a paid plan",
+        "comply with legal obligations, especially those derived from tax regulations",
+        "improve the Service through statistical analysis of Platform usage (only with consent for analytics cookies)",
+        "send commercial communications, only when the User has given consent or when sending is covered by legitimate interest in B2B contexts"
+      ]
     },
-    "section4": {
-      "title": "4. Data Sharing",
-      "sub1": {
-        "title": "4.1 We Share Data With:",
-        "items": ["Your Gestoría: When you authorize access", "AEAT: For Verifactu compliance", "Stripe: For payment processing", "AWS: For secure hosting (EU servers)", "Resend: For transactional emails", "Google Analytics: For usage analytics (with consent)"]
-      },
-      "sub2": {
-        "title": "4.2 We Never:",
-        "items": ["Sell your personal data", "Share data with third parties for marketing", "Transfer data outside the EU (except as noted)"]
-      },
-      "sub3": {
-        "title": "4.3 Government Requests",
-        "content": "We may disclose data if required by law or valid legal process. We will notify you unless legally prohibited."
-      }
+    "legalBasis": {
+      "title": "Legal Basis for Processing",
+      "intro": "Depending on each purpose, data processing is based on:",
+      "items": [
+        "Performance of contract, when we process data necessary to provide the Service",
+        "Legal obligation, when tax regulations require storing and processing certain data",
+        "Legitimate interest, to improve Platform performance and security or for commercial communications in B2B relationships",
+        "Consent, when we use analytics cookies or send non-essential communications"
+      ]
     },
-    "section5": {
-      "title": "5. Data Security",
-      "intro": "We implement industry-standard security measures:",
-      "items": ["Encryption in transit (TLS/SSL)", "Encryption at rest (AES-256)", "Secure password hashing (bcrypt)", "Regular security audits", "Access controls and monitoring", "Daily backups"],
-      "note": "While we strive to protect your data, no system is 100% secure. You are responsible for maintaining your account credentials."
+    "dataSharing": {
+      "title": "Disclosure of Data to Third Parties",
+      "intro": "Invoo does not sell personal data or share it with third parties for commercial purposes unrelated to the Service. Data will only be disclosed:",
+      "items": [
+        "To the external tax connectivity provider (currently Verifacti – Bilbabit, S.L.) when necessary for submitting Invoicing Records to the Tax Administration",
+        "To technology providers that provide hosting, infrastructure, transactional email or technical support services",
+        "To financial institutions or payment gateways to execute billing",
+        "To gestorías or collaborators when the User decides to grant them access",
+        "To public authorities when there is a legal obligation"
+      ],
+      "note": "All providers with data access act as data processors in accordance with Article 28 GDPR."
     },
-    "section6": {
-      "title": "6. Your Rights",
-      "intro": "Under GDPR, you have the right to:",
-      "items": ["Access: Request a copy of your data", "Rectification: Correct inaccurate data", "Erasure: Delete your data (with exceptions)", "Portability: Export your data", "Restriction: Limit processing", "Object: Opt-out of certain processing", "Withdraw Consent: For consent-based processing"],
-      "contact": "To exercise your rights, contact: legal@invoo.es",
-      "deletion": {
-        "title": "6.1 Account Deletion",
-        "intro": "You can delete your account at any time. However:",
-        "items": ["Tax records must be retained for 7 years per Spanish law", "Active invoices will be archived", "Deletion is permanent after 90-day recovery period"]
-      }
+    "internationalTransfers": {
+      "title": "International Transfers",
+      "content": "The Service's servers are located within the European Economic Area. Invoo may work with providers located outside the EEA only when they are subject to adequate safeguards such as standard contractual clauses or mechanisms recognized by the GDPR (including the Data Privacy Framework in the case of the United States)."
     },
-    "section7": {
-      "title": "7. Data Retention",
-      "items": ["Active accounts: Data retained while account is active", "After deletion: 90 days for recovery", "Tax records: 7 years (legal requirement)", "Backups: 30-day rolling retention", "Marketing data: Until consent withdrawn", "Analytics data: 26 months"]
+    "retention": {
+      "title": "Data Retention",
+      "content": "Data will be retained while the account is active. After requesting cancellation, data will remain accessible during the period indicated in the Terms and Conditions and will subsequently be deleted or blocked unless a legal obligation requires longer retention (for example, Spanish tax regulations).",
+      "cookies": "Data from analytics cookies will be retained for the period indicated in the Cookie Policy."
     },
-    "section8": {
-      "title": "8. Cookie Policy",
-      "sub1": {
-        "title": "8.1 Essential Cookies",
-        "intro": "Always active, required for Service operation:",
-        "items": ["Session management", "Security tokens", "User preferences"]
-      },
-      "sub2": {
-        "title": "8.2 Analytics Cookies (Consent Required)",
-        "intro": "Google Analytics cookies to understand usage:",
-        "items": ["_ga: 2 years", "_gid: 24 hours", "_gat: 1 minute"]
-      },
-      "sub3": {
-        "title": "8.3 Managing Cookies",
-        "intro": "You can control cookies through:",
-        "items": ["Our cookie banner (reject/accept)", "Browser settings", "Google Analytics opt-out: tools.google.com/dlpage/gaoptout"],
-        "note": "Spanish law requires explicit consent for analytics cookies. You can withdraw consent anytime."
-      }
+    "userRights": {
+      "title": "User Rights",
+      "intro": "The User may exercise the following rights:",
+      "items": [
+        "access to their personal data",
+        "rectification of inaccurate data",
+        "erasure where appropriate",
+        "restriction of processing",
+        "objection to processing based on legitimate interest",
+        "portability of their data",
+        "withdrawal of consent at any time"
+      ],
+      "contact": "These rights may be exercised by sending an email to legal@invoo.es, verifying your identity. You may also file a complaint with the competent supervisory authority, including the Spanish Data Protection Agency (AEPD)."
     },
-    "section9": {
-      "title": "9. Marketing Communications",
-      "sub1": {
-        "title": "9.1 Types",
-        "items": ["Service updates (no consent needed)", "Product announcements (consent required)", "Newsletters (consent required)"]
-      },
-      "sub2": {
-        "title": "9.2 Unsubscribe",
-        "content": "Every marketing email includes an unsubscribe link. You can also update preferences in your account settings."
-      }
+    "security": {
+      "title": "Data Security",
+      "content": "Invoo applies technical and organizational measures designed to protect personal data against unauthorized access, alteration or loss. Although no system is completely invulnerable, we adopt security standards appropriate to the nature of the data processed."
     },
-    "section10": {
-      "title": "10. Children's Privacy",
-      "content": "Our Service is for business purposes only. Users must be at least 16 years old. We do not knowingly collect data from children under 16."
+    "thirdPartyData": {
+      "title": "Third-Party Data Entered by the User",
+      "content": "The User is responsible for ensuring they have legitimacy to enter third-party personal data into the Platform, such as clients, suppliers or invoice recipients. Invoo acts solely as a data processor regarding such data, processing it under User instructions and exclusively to provide the contracted service."
     },
-    "section11": {
-      "title": "11. International Transfers",
-      "intro": "Your data is stored on AWS servers in the EU. Some services involve limited transfers:",
-      "items": ["Stripe (US): EU-US Data Privacy Framework certified", "Google Analytics (US): With your consent only"],
-      "note": "These transfers are protected by appropriate safeguards."
-    },
-    "section12": {
-      "title": "12. Spanish Data Protection Specifics",
-      "sub1": {
-        "title": "12.1 Enhanced Protection for Financial Data",
-        "content": "Spanish authorities consider financial data and NIF/NIE as requiring special protection. We implement additional safeguards for this data."
-      },
-      "sub2": {
-        "title": "12.2 Digital Rights",
-        "intro": "Under LOPDGDD, you have additional rights including:",
-        "items": ["Right to digital testament", "Right to be forgotten online", "Protection against automated profiling"]
-      },
-      "sub3": {
-        "title": "12.3 Supervisory Authority",
-        "content": "Agencia Española de Protección de Datos (AEPD)\nC/ Jorge Juan, 6\n28001 Madrid, Spain\nwww.aepd.es"
-      }
-    },
-    "section13": {
-      "title": "13. Updates to This Policy",
-      "content": "We may update this Privacy Policy. Material changes will be notified via email or Service notice 30 days before taking effect."
-    },
-    "section14": {
-      "title": "14. Contact Us",
-      "intro": "For privacy questions or concerns:",
-      "contact": "Data Protection Contact:\nEmail: legal@invoo.es\nAddress: Roques OÜ, Ahtri tn 12, 15551, Tallinn, Estonia",
-      "note": "You also have the right to lodge a complaint with the AEPD if you believe your rights have been violated."
+    "updates": {
+      "title": "Policy Updates",
+      "content": "Invoo may modify this Privacy Policy when necessary to adapt it to regulatory, technical or operational changes. The current version will always be the one published at https://invoo.es."
     }
   },
   "terms": {
-    "title": "Terms and Conditions",
-    "lastUpdated": "Last updated: July 19, 2025",
-    "section1": {
-      "title": "1. Agreement to Terms",
-      "content": "These Terms and Conditions (\"Terms\") constitute a legally binding agreement between you (\"User\", \"you\") and Roques OÜ, an Estonian company registered at Harju maakond, Tallinn, Kesklinna linnaosa, Ahtri tn 12, 15551, Estonia (\"Company\", \"we\", \"Invoo\").\nBy accessing or using our invoicing platform at invoo.es (\"Service\"), you agree to be bound by these Terms. If you disagree with any part of these terms, you may not access the Service."
-    },
-    "section2": {
-      "title": "2. Service Description",
-      "intro": "Invoo provides a cloud-based invoicing and expense management platform designed for Spanish freelancers (autónomos) and accounting firms (gestorías), including:",
-      "items": ["Invoice creation and management", "Verifactu compliance and QR code generation", "AEAT (Spanish Tax Authority) submission via third-party API", "Expense tracking", "Tax calculation (Modelo 130/303)", "Gestoría collaboration dashboard"]
-    },
-    "section3": {
-      "title": "3. Account Registration",
-      "items": ["3.1. You must provide accurate, complete, and current information during registration.", "3.2. You are responsible for maintaining the security of your account credentials.", "3.3. You must notify us immediately of any unauthorized access.", "3.4. Business accounts must be registered by an authorized representative."]
-    },
-    "section4": {
-      "title": "4. Pricing and Payment",
-      "sub1": {
-        "title": "4.1. Subscription Plans:",
-        "items": ["Free Plan: €0/month (limited features)", "Pro Plan: €9.90/month or €99/year", "Gestoría Plan: Free", "Enterprise: Custom pricing"]
+    "title": "Terms and Conditions of Use of the Invoo Service",
+    "lastUpdated": "Last updated: November 19, 2025",
+    "intro": "These Terms and Conditions (\"Terms\") govern the access and use of the Invoo digital invoicing service, offered by Roques OÜ, a company incorporated under Estonian law, with registered address at Ahtri tn 12, 15551, Tallinn, Estonia (\"Invoo\", \"we\", \"the Company\").\n\nThe use of the Service is intended exclusively for professionals, including freelancers, small and medium-sized businesses, and accounting firms (gestorías).\n\nInvoo does not target consumers, and the user declares that they are contracting the Service for a business or professional activity.\n\nUse of the Service implies full and unreserved acceptance of these Terms. If you do not agree, you must not use Invoo.",
+    "definitions": {
+      "title": "Definitions",
+      "intro": "For the purposes of these Terms, the following concepts shall have the meaning indicated:",
+      "invoo": {
+        "title": "Invoo / Platform / Service",
+        "content": "The SaaS solution for digital invoicing, expense management, and support for compliance with formal obligations offered by Roques OÜ, accessible through the domain invoo.es and its subdomains.\n\nInvoo includes functionalities for invoice issuance, generation of invoicing records, client and product management, expense recording, preliminary tax model calculations, and access panel for gestorías."
       },
-      "sub2": {
-        "title": "4.2. VAT/Tax:",
-        "items": ["Spanish businesses with valid VAT number: 0% VAT (reverse charge)", "Spanish individuals/freelancers: 21% Spanish VAT added", "Non-EU customers: 0% VAT"]
+      "user": {
+        "title": "User / Client",
+        "content": "Any natural or legal person who contracts or uses the Service for strictly professional purposes, whether as a freelancer, business, or gestoría.\n\nThe User declares and warrants that they do not act as a consumer."
       },
-      "sub3": {
-        "title": "4.3. Billing:",
-        "items": ["Payments processed via Stripe", "Monthly subscriptions charged on the same calendar day", "Annual subscriptions charged upfront", "All fees are non-refundable except as required by law"]
+      "sif": {
+        "title": "Invoicing Computer System (SIF)",
+        "content": "The invoicing software used by the User to issue invoices and manage their business activity.\n\nFor the purposes of these Terms, Invoo constitutes a SIF in accordance with the framework of Royal Decree 1007/2023 and applicable regulations."
       },
-      "sub4": {
-        "title": "4.4. Refunds:",
-        "items": ["Refunds only in cases of proven software malfunction preventing core service use", "Refund requests must be submitted within 14 days of charge", "Pro-rated refunds not available for partial months"]
+      "verifacti": {
+        "title": "Verifacti / Tax Connectivity API Provider",
+        "content": "The software solution owned by Bilbabit, S.L., integrated by Invoo via REST API to:",
+        "items": [
+          "Generate the official QR code.",
+          "Create the Invoicing Record in XML format with chaining.",
+          "Automatically submit records to the Tax Agency (AEAT) and, where applicable, to Regional Tax Authorities."
+        ],
+        "note": "Verifacti acts as a data processor regarding data transmitted by Invoo for submission to the Tax Administration.\n\nInvoo may replace Verifacti with another equivalent provider without modifying the level of compliance offered to the User."
+      },
+      "invoiceRecord": {
+        "title": "Invoicing Record",
+        "content": "The technical file in XML format containing the information of the issued invoice (including hash, chaining, and required technical metadata), generated and sent to the Tax Administration through the integrated API provider."
+      },
+      "taxAdmin": {
+        "title": "Competent Tax Administration",
+        "content": "The State Tax Administration Agency (AEAT) and, where applicable, the competent Regional Tax Authorities (TicketBAI/Navarra), recipients of the Invoicing Records."
+      },
+      "gestoria": {
+        "title": "Gestoría",
+        "content": "A professional or firm authorized by a User to access the specific panel offered by Invoo in order to consult, review, and download invoices, expenses, and preliminary calculations of their client.\n\nThe Gestoría acts under its exclusive professional responsibility."
+      },
+      "userData": {
+        "title": "User Data",
+        "content": "Any information entered by the User on the Platform, including tax data, client data, invoice content, amounts, expenses, documents, and any other data necessary for the provision of the Service."
+      },
+      "plans": {
+        "title": "Subscription Plans",
+        "content": "The access modalities to the Service (Free Plan, Pro Plan, Gestoría Plan, or Enterprise), with their associated functionalities and prices, described at https://invoo.es/en/pricing or in the equivalent section of the Platform."
+      },
+      "law": {
+        "title": "Applicable Law",
+        "content": "For contractual purposes, Estonian law.\n\nNotwithstanding the above, the operation of the Service complies with Spanish tax regulations applicable to invoicing systems and Verifactu/TicketBAI technical requirements, and the User is solely responsible for compliance with their tax obligations."
       }
     },
-    "section5": {
-      "title": "5. User Obligations",
-      "intro": "You agree to:",
-      "items": ["Use the Service in compliance with Spanish tax laws", "Provide accurate invoice data", "Not use the Service for illegal activities", "Not attempt to circumvent Verifactu requirements", "Maintain appropriate backups of critical data"]
-    },
-    "section6": {
-      "title": "6. Verifactu Compliance",
-      "items": ["6.1. Invoo implements Verifactu requirements per Royal Decree 1007/2023.", "6.2. We rely on third-party APIs for AEAT submission.", "6.3. While we ensure correct implementation, we are not liable for:", "   - Third-party API failures or downtime", "   - Changes in regulatory requirements", "   - AEAT system unavailability", "6.4. You remain responsible for tax compliance and timely filing."]
-    },
-    "section7": {
-      "title": "7. Gestoría Access",
-      "items": ["7.1. Users may grant free access to their designated gestoría.", "7.2. User is responsible for verifying gestoría legitimacy.", "7.3. Gestorías can:", "   - View client invoices and expenses", "   - Export data (CSV/XML)", "   - Generate tax summaries", "7.4. Gestorías cannot delete client data.", "7.5. Access can be revoked by the user at any time."]
-    },
-    "section8": {
-      "title": "8. Data Protection",
-      "items": ["8.1. We process personal data per our Privacy Policy and GDPR.", "8.2. Data is hosted on AWS EU servers."],
-      "retention": {
-        "title": "8.3. Data Retention:",
-        "items": ["Active account data: Retained while account is active", "After deletion: 90 days for recovery purposes", "Tax records: 7 years as required by law", "Backups: 30-day rolling retention"]
+    "object": {
+      "title": "Purpose of Contract and Service Description",
+      "contractObject": {
+        "title": "Purpose of Contract",
+        "content": "These Terms govern the conditions under which the User accesses and uses Invoo, as well as the rights and obligations of both parties. The contract comprises the use of invoicing and management software, the generation and recording of digital invoices, the submission of Invoicing Records to the Tax Administration through external tax connectivity providers, access to the panel for gestorías, and other complementary functionalities offered on the Platform. Access or use of the Service implies full acceptance of this document."
       },
-      "ownership": "8.4. You own your data and can export it at any time."
-    },
-    "section9": {
-      "title": "9. Intellectual Property",
-      "items": ["9.1. The Service and its original content remain our exclusive property.", "9.2. You retain ownership of data you input into the Service.", "9.3. You grant us license to use your data solely to provide the Service."]
-    },
-    "section10": {
-      "title": "10. Service Availability",
-      "items": ["10.1. We strive for high availability but do not guarantee specific uptime.", "10.2. Service may be temporarily unavailable for maintenance.", "10.3. We are not liable for interruptions beyond our control."]
-    },
-    "section11": {
-      "title": "11. Limitation of Liability",
-      "intro": "To the maximum extent permitted by law:",
-      "items": ["11.1. The Service is provided \"as is\" without warranties.", "11.2. We are not liable for indirect, incidental, or consequential damages.", "11.3. Our total liability shall not exceed fees paid in the past 12 months.", "11.4. We are not liable for tax penalties resulting from your use of the Service."]
-    },
-    "section12": {
-      "title": "12. Indemnification",
-      "intro": "You agree to indemnify and hold harmless Invoo from any claims arising from:",
-      "items": ["Your use of the Service", "Violation of these Terms", "Violation of any law or third-party rights", "Inaccurate data you provide"]
-    },
-    "section13": {
-      "title": "13. Termination",
-      "items": ["13.1. You may cancel your subscription at any time.", "13.2. We may terminate or suspend access for Terms violations.", "13.3. Upon termination, you can export your data for 90 days."]
-    },
-    "section14": {
-      "title": "14. Governing Law",
-      "law": "14.1. These Terms are governed by Estonian law.",
-      "disputes": {
-        "title": "14.2. Dispute Resolution:",
-        "items": ["B2B disputes: Estonian courts in Tallinn", "B2C disputes: Users may also file in their local EU courts per EU consumer protection law"]
+      "serviceDescription": {
+        "title": "Service Description",
+        "content": "Invoo is a digital platform aimed at professionals and businesses that allows issuing and managing electronic invoices, generating PDF versions, numbering them correctly, and incorporating the official QR code when the User operates under Verifactu. It also transforms each invoice into an Invoicing Record in accordance with Royal Decree 1007/2023, including the metadata, chaining, and hashes required by regulations.\n\nThe Service also enables automatic submission of these records to the Tax Administration through an external tax connectivity provider (currently Verifacti (Bilbabit, S.L.)) acting as a technical intermediary. Transmission may occur in real-time or within the timeframes permitted by regulations, and the Administration may accept or reject the submitted records, something entirely beyond Invoo's control.\n\nAdditionally, the Platform allows managing clients, products, and services, storing data and automating recurring information. It offers an expense recording system through uploading and classifying receipts or invoices, as well as exporting such data for gestorías. It also generates preliminary tax calculations such as estimates for models 130 or 303, although these calculations are merely indicative and do not constitute tax advice or a filed declaration. Finally, the User can share information with their gestoría through a secure link that allows consulting invoices, expenses, and the status of Invoicing Records."
+      },
+      "serviceNature": {
+        "title": "Nature of the Service",
+        "content": "Invoo is software provided under a SaaS model accessible entirely online without the need for local installation. It does not act as a gestoría, tax advisor, or representative of the User before the AEAT. The Service does not replace the review or analysis by the User or their advisor, nor does it guarantee by itself full compliance with all applicable tax obligations."
+      },
+      "noAdvice": {
+        "title": "No Provision of Tax, Legal, or Accounting Advice",
+        "content": "The User acknowledges that Invoo does not provide tax, legal, or accounting advice. Automatic functionalities, including tax model estimates, are merely informative in nature. The User's tax configuration (tax rates, headings, regimes, exemptions, or deductions) depends exclusively on the User themselves, who is also solely responsible for reviewing, validating, and filing their taxes, directly or through their gestoría."
+      },
+      "serviceEvolution": {
+        "title": "Service Evolution",
+        "content": "Invoo may introduce improvements or technical modifications, add functionalities, update or replace the tax connectivity provider, and implement necessary adjustments to adapt to regulatory changes, including those derived from Verifactu, TicketBAI, or future regulations. In no case will these modifications imply a reduction in the general quality level of the contracted Service."
+      },
+      "verifactuRelation": {
+        "title": "Relationship with Verifactu and Applicable Regulations",
+        "content": "The Service complies, to the extent technically available, with the requirements established by Royal Decree 1007/2023, Order HAC/1177/2024, Verifactu technical standards, and specifications published by the AEAT. Its specific application depends on the regulations in force at any given time, updates from the integrated API provider, and modifications that the Administration may introduce.\n\nInvoo does not guarantee that all submitted records will be accepted by the Administration or that future regulatory or technical updates will not affect the operation of the Service."
+      },
+      "externalProviders": {
+        "title": "Functional Limitation Derived from External Providers",
+        "content": "The submission of Invoicing Records and generation of the official QR code are performed through an external provider. Therefore, availability, response times, errors, rejections, or incidents derived from the provider or the Tax Administration are outside Invoo's scope of responsibility and may temporarily affect the operation of the Service. These situations will not give rise to any compensation except in cases expressly provided for in these Terms."
       }
     },
-    "section15": {
-      "title": "15. Changes to Terms",
-      "items": ["15.1. We may modify these Terms with 30 days notice.", "15.2. Continued use after changes constitutes acceptance.", "15.3. Material changes will be notified via email."]
+    "registration": {
+      "title": "Account Registration and Professional Use of the Service",
+      "accountCreation": {
+        "title": "Account Creation",
+        "content": "To use Invoo, it is necessary to register and create a user account through the means enabled on the Platform. During the registration process, the User must provide truthful, complete, and up-to-date information and commits to keeping it current at all times. Invoo may request additional documentation to verify the User's identity or, where appropriate, their capacity to act on behalf of a company or entity.\n\nAccess to the Service is through personal and non-transferable credentials. The User is responsible for their proper custody and confidentiality, as well as all activity carried out through their account. In case of loss, unauthorized access, or suspicion of a security breach, they must immediately notify Invoo. Until such communication takes place, any use made through the credentials will be considered as made by the User themselves."
+      },
+      "professionalNature": {
+        "title": "Professional Nature of the Service",
+        "content": "The Service is exclusively aimed at professional or business activities. By registering, the User declares that they contract and use Invoo within the framework of their professional activity and that they do not hold consumer status. This circumstance determines the application of the legal regime specific to B2B relationships and excludes the application of special consumer protection regulations."
+      },
+      "accountLimits": {
+        "title": "Limits on Account Creation and Maintenance",
+        "content": "Each User may only have one account per business or entity, unless expressly authorized by Invoo. The Company reserves the right to suspend or cancel accounts that are duplicated, that violate these Terms, or that have been created without meeting the requirements established herein."
+      },
+      "properUse": {
+        "title": "Proper Use of the Platform",
+        "content": "The User must use Invoo in accordance with its professional purpose and in compliance with the law, good faith, and public order. Any use that may cause alterations in the operation of the Service, improper access, or interference in third-party systems is prohibited. Likewise, automated information extraction techniques (screen scraping, web scraping, or other similar methods) are not permitted without express written authorization from Invoo.\n\nThe Company may temporarily or permanently suspend access to the Service when there are reasonable indications of fraudulent, illegal, or contrary use to these Terms, without prejudice to any legal actions that may correspond."
+      },
+      "paidPlans": {
+        "title": "Access to Paid Subscription Plans",
+        "content": "Access to paid plans requires providing the User's tax data and the data necessary to process the chosen payment method. The User declares that they have sufficient capacity to contract and, when acting on behalf of a company, to validly bind it to Invoo."
+      }
     },
-    "section16": {
-      "title": "16. Contact Information",
-      "contact": "Roques OÜ\nAhtri tn 12, 15551\nTallinn, Estonia\nEmail: legal@invoo.io"
+    "pricing": {
+      "title": "Pricing and Payments",
+      "plansAndFees": {
+        "title": "Subscription Plans and Fees",
+        "content": "The use of Invoo is provided through the different subscription plans available on the Platform, each with specific functionalities, limits, and economic conditions. Current fees are published in the corresponding section of the Invoo website and form an integral part of these Terms. Contracting a plan implies acceptance of the associated price and its particular conditions.\n\nFees apply for monthly or annual periods, depending on the modality selected by the User at the time of contracting. The amounts indicated do not include applicable taxes, which will be determined in accordance with the regulations in force at any given time, depending on the nature of the User and their tax situation, calculated according to the regulations of the User's country or, where applicable, the location of the permanent establishment."
+      },
+      "billingAndPayment": {
+        "title": "Billing and Payment Method",
+        "content": "The amount of the contracted plan is charged in advance at the beginning of each billing cycle. Payment is made through the payment method enabled on the Platform and selected by the User. Plan activation is subject to correct payment authorization by the issuing entity. Invoo cannot activate or maintain the Service if payment is not authorized or if it subsequently remains unpaid.\n\nThe User guarantees that they have the necessary legitimacy to use the provided payment method and commits to updating it when necessary. In case of non-payment, Invoo may temporarily suspend access to the Service until the situation is regularized."
+      },
+      "renewal": {
+        "title": "Automatic Renewal and Cancellation",
+        "content": "Subscription plans are automatically renewed for periods identical to those initially contracted, unless the User communicates their intention not to renew before the end of the current period. Cancellation affects only the following period, so the User may continue using the Service until the end date of the cycle already paid.\n\nCancellation of a plan does not generate the right to a refund for amounts already paid, without prejudice to cases where the law or these Terms provide otherwise."
+      },
+      "priceChanges": {
+        "title": "Price Changes",
+        "content": "Invoo may update or modify applicable fees. Changes will be communicated with a minimum of thirty days' notice before they take effect. The User may object to the update by communicating their decision before the date scheduled for its application, in which case they may cancel their subscription at the end of the current billing cycle. If the User continues using the Service after the notice period has elapsed without expressing their objection, they will be deemed to fully accept the new fees."
+      },
+      "refunds": {
+        "title": "Refund Policy",
+        "content": "As a general rule, amounts paid will not be refundable. A total or partial refund will only be appropriate when defective operation of the Service attributable exclusively to Invoo is proven and has substantially prevented its use. Refunds will not be accepted for unused periods, differences in User expectations, errors in tax configuration, incorrect data provided, or any incident derived from third parties external to Invoo, including the Tax Administration."
+      }
+    },
+    "userObligations": {
+      "title": "User Obligations",
+      "content": "The User commits to using Invoo diligently and in accordance with its professional nature. They will be responsible for the accuracy, completeness, and truthfulness of all data entered on the Platform, including those relating to their identity, economic activity, tax information, client data, invoiced concepts, and any other data necessary for generating invoices or Invoicing Records. Invoo is not obligated to verify the authenticity or correctness of such information, nor to supervise the tax adequacy of operations that the User registers through the Service.\n\nIt is exclusively up to the User to select tax rates, tax regimes, headings, withholdings, exemptions, and other parameters that determine the content and tax effects of their invoices. The User's tax configuration and interpretation of applicable regulations are not part of the Service, so any error derived from decisions or data entered by the User will be attributable solely to them.\n\nLikewise, the User is solely responsible for compliance with their tax, accounting, and administrative obligations, including the obligation to issue valid invoices, file declarations on time, pay corresponding taxes, retain documents required by regulations, and respond to any requirement from the Administration. The use of Invoo, including automated submission of Invoicing Records, does not exempt the User from the duty to review their invoices or verify the correct filing of their tax obligations.\n\nThe User must maintain adequate copies of their tax documentation and, when acting through a gestoría, verify that it has the necessary information to carry out its work. Invoo does not intervene in the relationship between the User and their gestoría and will not be responsible for errors, breaches, or negligence derived from such professional relationship.\n\nIt is prohibited to use the Platform for illegal, fraudulent activities or those that contravene current regulations, as well as to manipulate, distort, or attempt to breach its operation. Likewise, the User may not modify, reverse engineer, or reproduce the technical operation of the Platform for purposes other than those permitted in these Terms.\n\nThe User is obligated to keep their data and access credentials protected and to inform Invoo without delay of any unauthorized access or suspicion of a security breach. They will be responsible for damages generated by negligent use, lack of custody of their keys, or access made under their credentials.\n\nFinally, the User declares that they have the necessary authorizations to enter personal data of third parties on the Platform, complying with corresponding information obligations and keeping Invoo harmless from any claim that third parties may make in relation to such data."
+    },
+    "verifactiIntegration": {
+      "title": "Integration with Verifacti and Submission of Records to the Tax Administration",
+      "technicalIntegration": {
+        "title": "Technical Integration with Verifacti",
+        "content": "Invoo integrates in its operation the API of Verifacti, owned by Bilbabit, S.L., in order to generate the official QR code, produce the Invoicing Record required by Spanish regulations, and submit it to the Tax Administration. This integration is carried out exclusively for technical purposes and does not establish any contractual relationship between the User and Verifacti. The provision of the Service is articulated at all times between the User and Invoo.\n\nThe generation of the Invoicing Record and its submission to the Administration necessarily depend on the infrastructure and availability of the API provider. Invoo does not control the internal operation of said provider and merely integrates it under the terms provided in its own license of use. Any action, update, or technical change that Verifacti implements may temporarily affect the behavior of the Service, without this implying breach by Invoo."
+      },
+      "recordSubmission": {
+        "title": "Submission of Invoicing Records to AEAT or Other Administrations",
+        "content": "When the User issues an invoice through Invoo, the Platform generates the necessary data to produce the Invoicing Record and automatically sends it to Verifacti, which is responsible for preparing the XML file required by regulations and submitting it to the competent Tax Administration. Acceptance, rejection, or return of the record depends exclusively on the Administration and the technical criteria applicable at any given time.\n\nThe obligation to review the status of records and confirm their proper submission corresponds solely to the User. Invoo will display the available information in each case, but cannot guarantee that the Administration will accept the generated Invoicing Records, or that regulatory or interpretive changes will not affect the process. In no case will the use of Invoo be considered automatic or complete compliance with the User's tax obligations.\n\nThe User is responsible for checking whether they are required to use Verifactu in accordance with the tax regulations applicable to them."
+      },
+      "thirdPartyDependency": {
+        "title": "Third-Party Dependency and Derived Limits",
+        "content": "The operation of automatic submission requires the coordinated intervention of three elements: the SIF (Invoo), the API provider (Verifacti), and the Tax Administration. The unavailability of any of them may temporarily prevent the generation or submission of records. Such incidents may be due to service outages, scheduled maintenance, network problems, regulatory updates, or technical errors external to Invoo.\n\nIn such situations, it will be up to the User to resend, repeat, or review pending information, as well as to adopt appropriate measures to comply with their tax obligations. Invoo will not be responsible for delays, rejections, or penalties derived from incidents attributable to third parties or the Administration, nor for the impossibility of generating or sending records when the failure originates from the API provider or systems outside its control."
+      },
+      "dataQuality": {
+        "title": "Quality and Truthfulness of Transmitted Data",
+        "content": "The quality of the Invoicing Record depends entirely on the data that the User enters on the Platform. Invoo does not verify its accuracy or tax adequacy. The Administration may reject records containing material errors, inconsistencies, incomplete data, or any other defect attributable to the User. In such cases, the review and correction of information will correspond to the User themselves or the gestoría acting on their behalf."
+      },
+      "regulatoryEvolution": {
+        "title": "Regulatory Evolution and Updates",
+        "content": "The regulatory framework of the Verifactu system may evolve with technical modifications, new versions of regulations, or changes in validation requirements. Invoo will endeavor to adapt to such changes with the greatest possible diligence, implementing necessary updates in the general operation of the Platform. However, the User acknowledges that such updates may require technical adjustments, temporary revisions, or provider changes, and that such processes do not constitute non-conformity of the Service."
+      }
+    },
+    "gestoriaAccess": {
+      "title": "Gestoría Access",
+      "content": "Invoo allows the User to grant their gestoría access to a specific panel from which they can consult, review, and download the invoices, expenses, and other information that the User maintains on the Platform. Access is granted through a secure link or other mechanisms that Invoo may enable, and will remain active while the User maintains it authorized.\n\nThe gestoría acts at all times under its exclusive professional responsibility. Invoo is not part of the relationship between the User and their advisor and does not intervene in the verification, interpretation, or validation of data for tax, accounting, or administrative purposes. Nor does it respond to the advice that the gestoría may provide, or to the consequences derived from errors, delays, criteria, calculations, or breaches attributable to it.\n\nIt is up to the User to verify the legitimacy of the gestoría to which they grant access and to revoke said authorization when they consider it no longer appropriate. Invoo only provides the technical means for the gestoría to consult the data stored on the Platform, without being able to modify or delete information on behalf of the User.\n\nThe User will remain responsible at all times for the data entered in Invoo and its correct interpretation for tax purposes, regardless of whether a gestoría accesses the enabled panel or not. The intervention of an external advisor does not displace or reduce the User's legal obligations to the Tax Administration."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual and Industrial Property",
+      "content": "Invoo, its source code, architecture, design, interfaces, databases, logos, trademarks, graphic elements, and any other content or material associated with the Service are the exclusive property of Roques OÜ or are exploited under corresponding licenses. Access or use of the Service does not grant the User any intellectual or industrial property rights, nor any license beyond what is strictly necessary to use the Platform in accordance with these Terms.\n\nThe User only has a limited, non-exclusive, non-transferable, and revocable right of use, intended to allow them professional use of the Service during the term of the contract. This right does not permit reproducing, modifying, adapting, distributing, decompiling, reverse engineering, or creating derivative works from the Platform or any of its components, except in cases expressly permitted by law.\n\nLikewise, any attempt to access the internal operation of the software, manipulate technical elements, interfere with security systems, or use the Service to develop products or services that compete directly or indirectly with Invoo is prohibited.\n\nThe User retains ownership of data entered on the Platform, including invoices, expenses, client information, and any other content generated within the framework of their activity. However, they grant Invoo a limited license to store, process, and, where appropriate, transmit such data to the Tax Administration and third parties necessary for the proper provision of the Service.\n\nUnauthorized use of any element protected by intellectual or industrial property rights will allow Invoo to take corresponding legal measures and, where appropriate, suspend or cancel the User's access to the Service."
+    },
+    "serviceAvailability": {
+      "title": "Service Availability",
+      "content": "Invoo will endeavor to keep the Platform operational continuously and with a reasonable level of availability in accordance with the nature of the Service. However, the User acknowledges that temporary interruptions may occur due to maintenance tasks, technical updates, infrastructure provider incidents, or circumstances beyond Invoo's direct control. Carrying out these tasks is part of the normal operation of a cloud service and will not be considered contractual breach.\n\nCertain Invoo functionalities, especially those related to the generation of the Invoicing Record and its submission to the Tax Administration, depend on the availability and correct operation of external systems, including the integrated API provider and Administration platforms. The unavailability, outage, saturation, or irregular behavior of any of these elements may temporarily affect the Service without this being attributable to Invoo. In such cases, the User must adopt necessary measures to comply with their tax obligations, including reviewing pending records or repeating submission when possible.\n\nInvoo may perform scheduled interventions to introduce technical improvements, implement updates, or ensure Platform security. When reasonably possible, these interventions will be communicated in advance and will be carried out at times intended to minimize their impact. The Company may also carry out urgent actions when there are risks to data integrity, system security, or Service continuity.\n\nThe User accepts that not all incidents can be identified or resolved immediately, especially those related to elements external to the Company. In such cases, Invoo will act with the greatest possible diligence to restore normality and offer, within its possibilities, alternative solutions or updated information on the evolution of the incident. These situations will not, by themselves, give rise to financial compensation or additional liability other than that provided for in these Terms."
+    },
+    "liability": {
+      "title": "Limitation of Liability",
+      "content": "Invoo provides the Service in accordance with reasonable technical and organizational means for its correct operation, but does not guarantee that the Platform will be free from errors, interruptions, or occasional failures derived from the inherent complexity of computer systems and their interaction with third parties. The User acknowledges that certain functionalities depend on services external to Invoo, especially the integrated API provider and the Tax Administration itself, whose behaviors, outages, or rejections cannot be controlled by the Company.\n\nInvoo assumes no responsibility for damages derived from tax decisions adopted by the User, incorrect configuration of tax regimes or parameters, entry of inaccurate or incomplete data, or failure to review generated invoices, expenses, or records. The Platform does not replace the professional judgment of the User or their gestoría and does not guarantee the adequacy of information entered to applicable tax requirements in each case.\n\nNor will Invoo be responsible for penalties, surcharges, interest, or requirements that the Administration may impose on the User as a consequence of the content of their invoices, use of the Service, errors in transmitted data, or failure to timely comply with their legal obligations. It is up to the User to verify at all times that records have been generated and submitted correctly and that their tax situation is up to date.\n\nInvoo will not be liable for indirect damages, lost profits, loss of business opportunities, alterations in the User's activity, or any other economic damage that does not derive directly from a proven contractual breach attributable to the Company. Nor will it be responsible for damages caused by temporary unavailability of the Service, or those resulting from force majeure, actions by third parties, external technical incidents, or unforeseeable or unavoidable behaviors.\n\nIn any case, Invoo's total liability to the User for any claim derived from the use of the Service will be limited to the total amount actually paid by the User for the Service during the six (6) months prior to the moment when the event giving rise to liability occurs. This limit will apply even if the User had contracted the Service for a shorter period.\n\nNone of the limitations provided for in this clause will affect liability that, imperatively, cannot be excluded or limited under applicable law.\n\nThese limitations will apply regardless of the nature of the action exercised (contractual, extra-contractual, or any other type)."
+    },
+    "indemnification": {
+      "title": "Indemnification",
+      "content": "The User will hold Invoo harmless, as well as its directors, employees, and collaborators, from any claim, damage, penalty, liability, or cost (including reasonable attorney fees) that derives directly or indirectly from improper use of the Service, breach of these Terms, or any legal obligation corresponding to the User.\n\nThis indemnification obligation extends, among other cases, to claims that may be made by third parties whose data has been entered on the Platform without corresponding legitimacy, to damages derived from inaccurate or incomplete information provided by the User, and to damages caused by the submission of records to the Administration containing errors attributable to the User or their gestoría. It will also cover consequences derived from the use of the Service for illegal, fraudulent activities, or activities contrary to current regulations.\n\nIn no case shall Invoo assume the responsibilities that legally correspond to the User in tax, accounting, labor, or administrative matters, nor those derived from their professional relationship with third parties, including their gestoría. When these claims affect Invoo as a consequence of actions or omissions attributable to the User, the User will be fully responsible for the damages caused."
+    },
+    "termination": {
+      "title": "Contract Termination",
+      "content": "The User may terminate the contract at any time by canceling their subscription from the Platform itself. Cancellation will take effect at the end of the current billing cycle, during which the User will continue to have access to the Service without generating refunds for periods already paid. Once that period has ended, access to the Platform will be disabled and no new charges will be made.\n\nInvoo may suspend or cancel the User's account when they seriously or repeatedly breach these Terms, when there is fraudulent or illegal use of the Service, or when circumstances occur that affect the security, integrity, or stability of the Platform. Termination for cause attributable to the User will not generate any right to compensation or refund.\n\nRegardless of the cause of termination, the User may download their data for a limited period after the deactivation of their account. After that period, Invoo will proceed to delete or block the information in accordance with its Privacy Policy and applicable retention obligations, especially in tax matters. Termination of the contract will not affect the User's legal obligations, including those derived from the retention of accounting information or response to Administration requirements.\n\nTermination of the Service does not limit or extinguish the responsibilities assumed by the User under these Terms, which will continue to be enforceable to the extent compatible with contract termination. Nor will it affect indemnification obligations or clauses that, by their nature, must remain in force after the termination of this agreement."
+    },
+    "governingLaw": {
+      "title": "Governing Law and Jurisdiction",
+      "content": "These Terms shall be governed and interpreted in accordance with Estonian law, without prejudice to mandatory rules that may apply in tax matters regarding the User's obligations in Spain or other territories where they carry out their activity.\n\nAny dispute derived from the interpretation or execution of this contract shall be submitted, with express waiver of any other forum that may correspond, to the exclusive jurisdiction of the competent courts of Tallinn (Estonia).\n\nThe User expressly declares that they contract the Service within the framework of a professional or business activity and that they do not hold consumer status. Consequently, special consumer and user protection regulations will not apply, nor the rules on protective forums provided for consumer contracts."
+    },
+    "modifications": {
+      "title": "Modifications to the Terms",
+      "content": "Invoo may update or modify these Terms when necessary to adapt them to legal, technical, operational, or functional changes to the Service. Modifications will be published on the Platform and will take effect on the date indicated in the new version. When modifications substantially affect the User's rights or obligations, Invoo will endeavor to communicate them with reasonable notice through available notification means.\n\nContinued use of the Service after the new Terms come into force implies full acceptance of their content. If the User does not agree with the modifications introduced, they may cancel their subscription before the end of the current billing cycle, the contract remaining in force until that date and automatically terminating at the end of the period already paid."
+    },
+    "contact": {
+      "title": "Contact",
+      "content": "For any inquiry related to these Terms or the operation of the Service, the User may contact Invoo through the following email address:",
+      "details": "legal@invoo.es\nRoques OÜ\nAhtri tn 12, 15551\nTallinn, Estonia"
     }
   },
   "pricing": {
@@ -720,6 +785,8 @@
       "aboutUs": "About Us",
       "terms": "Terms of Use",
       "privacy": "Privacy Policy",
+      "legalNotice": "Legal Notice",
+      "cookies": "Cookie Policy",
       "contact": "Contact",
       "servicesTitle": "Services",
       "forFreelancers": "For Freelancers",
@@ -750,6 +817,152 @@
     "errors": {
       "general": "Something went wrong. Please try again.",
       "failed": "Failed to join waiting list. Please try again later."
+    }
+  },
+  "cookieBanner": {
+    "message": "We use cookies to improve your experience on our site. You can accept or reject their use.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "learnMore": "Learn more",
+    "ariaLabel": "Cookie consent banner",
+    "yourPreferences": "Your Cookie Preferences",
+    "consentStatus": {
+      "accepted": "You have accepted cookies",
+      "rejected": "You have rejected cookies",
+      "notSet": "You have not set your cookie preferences"
+    },
+    "changePreference": "You can change your preference at any time using the buttons below."
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: November 19, 2025",
+    "metaDescription": "Invoo Cookie Policy - Information about what cookies we use, what they are for, and how to manage them",
+    "intro": "This Cookie Policy explains how cookies and similar technologies are used on the website https://invoo.es (the \"Website\"), owned by Roques OÜ (\"Invoo\", \"we\"). Its purpose is to transparently inform the User about what cookies are installed, what they are for, how to manage them, and how to disable them.",
+    "whatAreCookies": {
+      "title": "What are cookies?",
+      "content": "Cookies are small files that are stored on the User's device when browsing the Website. They allow essential information to be remembered so that navigation is functional, secure, and more efficient. In some cases, they are also used to analyze the use of the Website or to personalize the experience, always with the User's consent when required by regulations."
+    },
+    "cookieTypes": {
+      "title": "Types of cookies used on this Website",
+      "intro": "The Website uses its own and third-party cookies. Their use is classified according to their purpose:",
+      "technical": {
+        "title": "Technical or necessary cookies",
+        "content": "They are essential to guarantee the basic operation of the Website and enable functions such as access to secure areas, session management, or proper content loading. These cookies do not require consent and always remain active because they are essential for the provision of the service requested by the User."
+      },
+      "preferences": {
+        "title": "Preference cookies",
+        "content": "They allow certain User configurations to be remembered, such as language or interface settings. Disabling them does not prevent the use of the Website, but may affect the experience."
+      },
+      "analytics": {
+        "title": "Analytics cookies (require consent)",
+        "content": "They allow us to understand how Users navigate the Website, what sections they visit, and for how long. This information is used exclusively for statistical purposes to improve the content, performance, and functionality of the Website.\n\nThey are only activated when the User expressly accepts them through the cookie banner configuration panel."
+      },
+      "thirdParty": {
+        "title": "Third-party cookies",
+        "content": "Certain functionalities may depend on external providers (for example, measurement tools or embedded content platforms). These cookies are managed directly by these third parties and are subject to their own privacy policies."
+      }
+    },
+    "specificCookies": {
+      "title": "Specific cookies used",
+      "intro": "The following describes the main cookies that may be installed during navigation:",
+      "technical": {
+        "title": "Technical cookies",
+        "content": "These cookies allow the User's session to be maintained, manage the cookie banner state, guarantee the security of the Website, and offer essential functionalities.\n\nExamples: session cookies, load control, browser identification."
+      },
+      "analytics": {
+        "title": "Analytics cookies",
+        "content": "Tools such as Google Analytics (Google Analytics 4) are used, which assign an anonymous identifier to each visitor to analyze Website traffic and detect usage patterns.\n\nThese cookies will only be installed if the User expressly consents.",
+        "googleLink": "For more information about the processing carried out by Google:"
+      }
+    },
+    "manageCookies": {
+      "title": "How to accept, reject, or configure cookies",
+      "intro": "When accessing the Website for the first time, a cookie banner is displayed that allows the User to:",
+      "options": [
+        "accept all cookies;",
+        "reject all (except technical ones);",
+        "configure specific preferences."
+      ],
+      "changeSettings": "The User can modify their decision at any time by accessing the configuration panel again through the link visible at the bottom of the Website (\"Configure cookies\").",
+      "browserSettings": "In addition, cookies can be managed directly from the browser. Each browser has its own tools to block, delete, or disable cookies. They can be consulted here:",
+      "warning": "Completely disabling technical cookies may prevent access or proper functioning of the Website."
+    },
+    "legalBasis": {
+      "title": "Legal basis",
+      "content": "The use of technical cookies is based on Invoo's legitimate interest in guaranteeing the operation of the Website.\n\nAnalytics or non-essential cookies are only installed with the User's prior consent."
+    },
+    "internationalTransfers": {
+      "title": "International transfers",
+      "content": "In the case of cookies managed by third parties established outside the European Economic Area, the associated data transfers will be carried out in accordance with the guarantees provided for in articles 44 and following of the GDPR (such as standard contractual clauses)."
+    },
+    "retention": {
+      "title": "Data retention",
+      "content": "The retention time depends on the type of cookie. Session cookies are automatically deleted when the browser is closed. Persistent cookies remain on the device for a period that can range from several days to several months, depending on the provider's configuration."
+    },
+    "userRights": {
+      "title": "User rights",
+      "content": "The User can exercise their rights of access, rectification, deletion, opposition, and other rights provided for in the regulations by sending an email to legal@invoo.es. They can also file a complaint with the competent authority when they deem it appropriate."
+    },
+    "modifications": {
+      "title": "Modifications to this Policy",
+      "content": "Invoo may update this Cookie Policy when new cookies are introduced, their purposes change, or it is necessary to adapt it to current regulations. The current version will always be the one published at https://invoo.es."
+    }
+  },
+  "legalNotice": {
+    "title": "Legal Notice",
+    "lastUpdated": "Last updated: November 19, 2025",
+    "metaDescription": "Legal notice for Invoo - Information about the website owner, intellectual property, proper use, and applicable jurisdiction",
+    "owner": {
+      "title": "Website Owner",
+      "content": "The website https://invoo.es (hereinafter, the \"Website\") and the platform associated with the Invoo service are owned by Roques OÜ, a company incorporated under Estonian law, with registered address at Ahtri tn 12, 15551, Tallinn (Estonia) and contact email legal@invoo.es.\n\nAccess and use of the Website and the Platform implies acceptance of what is established in this Legal Notice."
+    },
+    "scope": {
+      "title": "Purpose and Scope",
+      "content": "The Website aims to provide information about Invoo and allow access to the Platform, where registered Users can use the invoicing software, Invoice Record generation, and complementary tools intended for professionals and businesses. Any use other than that strictly permitted in this Legal Notice or in the Terms and Conditions will be considered unauthorized.\n\nThe Website and the Platform are exclusively aimed at natural or legal persons acting within the framework of their professional or business activity. Services are not provided to consumers."
+    },
+    "properUse": {
+      "title": "Proper Use of the Website",
+      "content": "The User agrees to use the Website diligently, respecting the law, good faith, public order, and basic rules of digital coexistence. Any use that may cause damage to Invoo's or third parties' systems, alter the operation of the Website, or access restricted sections without authorization is prohibited.\n\nLikewise, the use of scraping techniques, automated data extraction, mass indexing, or any similar method that allows obtaining information from the Website without prior written authorization from Invoo is prohibited."
+    },
+    "dataAccuracy": {
+      "title": "Data Accuracy and Communications",
+      "content": "If the User provides data through the Website (forms, support, or registration), they guarantee that they are accurate, complete, and up to date. Invoo assumes no responsibility for false, incomplete, or inaccurate information provided by the User or by third parties related to them."
+    },
+    "intellectualProperty": {
+      "title": "Intellectual and Industrial Property",
+      "content": "All content of the Website and the Platform (including texts, images, videos, software, designs, interfaces, logos, trademarks, and other elements) are the exclusive property of Invoo or are under valid license. Their reproduction, distribution, transformation, or public communication without express written authorization is prohibited.\n\nThe User must respect at all times any copyright or industrial property notice incorporated into the Website."
+    },
+    "availability": {
+      "title": "Website Availability",
+      "content": "Invoo makes reasonable efforts to guarantee continued access to the Website. However, the absence of interruptions caused by maintenance tasks, technical incidents, third-party actions, failures in external providers, or circumstances beyond Invoo's reasonable control is not guaranteed.\n\nWhen possible, the User will be warned of scheduled interruptions. In no case will such interruptions give rise to compensation."
+    },
+    "thirdPartyLinks": {
+      "title": "Third-Party Links",
+      "content": "The Website may contain links to third-party sites with the sole purpose of providing additional information. Invoo does not supervise, control, or endorse the content, policies, or practices of such sites, so it will not assume any responsibility for damages derived from their use.\n\nIncluding links to the Website from third-party sites without prior written authorization is not permitted."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "intro": "Invoo will not be responsible for damages derived from:",
+      "items": [
+        "Connectivity problems, electrical failures, or lack of Internet access by the User.",
+        "Use of the Website contrary to what is provided in this Legal Notice or applicable regulations.",
+        "Damage to equipment or software caused by viruses or vulnerabilities of the User's device.",
+        "Inaccurate or outdated information entered by the User or by third parties.",
+        "User interactions with the Platform that depend on external providers or the Tax Administration."
+      ],
+      "conclusion": "The User uses the Website under their sole responsibility. Invoo does not guarantee that the Website is free of security errors derived from networks or systems outside the owner's control."
+    },
+    "dataProtection": {
+      "title": "Personal Data Protection",
+      "content": "The processing of the User's personal data is regulated in the Privacy Policy available on the Website itself. It details the data processed, the applicable legal basis, the User's rights, and retention periods. Privacy Policy available on this same Website."
+    },
+    "modifications": {
+      "title": "Legal Notice Modifications",
+      "content": "Invoo may update or modify this Legal Notice when it deems necessary. The current version will be the one published on the Website at any given time."
+    },
+    "jurisdiction": {
+      "title": "Applicable Law and Jurisdiction",
+      "content": "This Legal Notice is governed by Estonian law. Any dispute related to access or use of the Website will be submitted to the competent courts of Tallinn, unless there is a mandatory rule that provides otherwise."
     }
   },
   "blog": {

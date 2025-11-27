@@ -1,5 +1,5 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Button from "@/components/ui/button";
@@ -57,9 +57,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const { locale, category: categorySlug } = await params;
   setRequestLocale(locale);
 
-  // Redirect or 404 if not Spanish
+  // Redirect to Spanish blog if not Spanish
   if (locale !== "es") {
-    notFound();
+    redirect(`/es/blog/${categorySlug}`);
   }
 
   const t = await getTranslations({ locale, namespace: "blog" });

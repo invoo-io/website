@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { locales } from "@/i18n";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieBanner from "@/components/CookieBanner";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "../globals.css";
 
@@ -61,6 +62,7 @@ export default async function RootLayout({
           </Suspense>
           <NextIntlClientProvider messages={messages}>
             {children}
+            <CookieBanner />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
