@@ -8,6 +8,7 @@ import { locales } from "@/i18n";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { BASE_URL } from "@/lib/constants";
 import "../globals.css";
 
 const inter = Inter({
@@ -27,8 +28,44 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "metadata" });
 
   return {
-    title: t("title"),
+    metadataBase: new URL(BASE_URL),
+    title: {
+      default: t("title"),
+      template: `%s | Invoo`,
+    },
     description: t("description"),
+    alternates: {
+      canonical: `${BASE_URL}/${locale}`,
+      languages: {
+        en: `${BASE_URL}/en`,
+        es: `${BASE_URL}/es`,
+        "x-default": `${BASE_URL}/es`,
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: locale === "es" ? "es_ES" : "en_US",
+      url: `${BASE_URL}/${locale}`,
+      siteName: "Invoo",
+      title: t("title"),
+      description: t("description"),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
   };
 }
 

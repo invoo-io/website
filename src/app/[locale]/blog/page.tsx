@@ -32,6 +32,13 @@ export async function generateMetadata({
   return {
     title: t("meta.title"),
     description: t("meta.description"),
+    alternates: {
+      canonical: "https://invoo.es/es/blog/",
+      languages: {
+        es: "https://invoo.es/es/blog/",
+        "x-default": "https://invoo.es/es/blog/",
+      },
+    },
     openGraph: {
       title: t("meta.title"),
       description: t("meta.description"),

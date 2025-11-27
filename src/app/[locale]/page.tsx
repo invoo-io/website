@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
@@ -11,6 +12,40 @@ import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { getBasePath } from "@/lib/utils";
+
+const BASE_URL = "https://invoo.es";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  const url = `${BASE_URL}/${locale}/`;
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: url,
+      languages: {
+        en: `${BASE_URL}/en/`,
+        es: `${BASE_URL}/es/`,
+        "x-default": `${BASE_URL}/es/`,
+      },
+    },
+    openGraph: {
+      type: "website",
+      locale: locale === "es" ? "es_ES" : "en_US",
+      url,
+      title: t("title"),
+      description: t("description"),
+      siteName: "Invoo",
+    },
+  };
+}
 
 export default async function Home({
   params,

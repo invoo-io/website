@@ -45,10 +45,19 @@ export async function generateMetadata({
     return {};
   }
 
+  const canonicalUrl = `https://invoo.es/es/blog/${category}/${slug}/`;
+
   return {
     title: `${post.title} | Blog de Invoo`,
     description: post.excerpt,
     keywords: post.tags,
+    alternates: {
+      canonical: canonicalUrl,
+      languages: {
+        es: canonicalUrl,
+        "x-default": canonicalUrl,
+      },
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,

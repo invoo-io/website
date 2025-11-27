@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import Navigation from "@/components/Navigation";
 import CookiePolicyContent from "@/components/CookiePolicyContent";
 import Footer from "@/components/Footer";
+import { generatePageMetadata } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,10 +13,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "cookiePolicy" });
 
-  return {
+  return generatePageMetadata({
+    locale,
+    path: "/cookies",
     title: t("title"),
     description: t("metaDescription"),
-  };
+  });
 }
 
 export default async function CookiePolicyPage({
