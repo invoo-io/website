@@ -39,7 +39,7 @@ export default function NavDropdown({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <button className="flex items-center gap-1.5 text-text-primary hover:text-text-secondary transition-colors text-callout">
+      <button className="flex items-center gap-1.5 text-primary hover:text-secondary transition-colors text-callout">
         {icon}
         <span>{label}</span>
         <ChevronDown className="w-4 h-4" />
@@ -64,7 +64,7 @@ export default function NavDropdown({
                 href={item.href}
                 target={item.external ? "_blank" : undefined}
                 rel={item.external ? "noopener noreferrer" : undefined}
-                className={`relative block px-6 py-3 text-callout text-text-secondary hover:text-text-primary transition-all no-underline whitespace-nowrap ${
+                className={`relative block px-6 py-3 text-callout text-secondary hover:text-primary transition-all no-underline whitespace-nowrap ${
                   index === 0 ? "rounded-t-xl" : ""
                 } ${index === items.length - 1 ? "rounded-b-xl" : ""}`}
               onMouseEnter={(e) => {

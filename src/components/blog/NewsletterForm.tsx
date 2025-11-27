@@ -200,9 +200,9 @@ export default function NewsletterForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder={t("placeholder")}
-            className={`w-full px-4 py-3 rounded-lg bg-bg-secondary border ${
+            className={`w-full px-4 py-3 rounded-lg bg-background-secondary border ${
               validationError ? "border-red-500" : "border-border-primary"
-            } text-label-primary placeholder:text-label-tertiary focus:outline-none focus:ring-2 ${
+            } text-primary placeholder:text-tertiary focus:outline-none focus:ring-2 ${
               validationError ? "focus:ring-red-500" : "focus:ring-tint-blue"
             } transition-colors`}
             disabled={isButtonDisabled}

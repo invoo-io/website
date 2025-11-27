@@ -39,7 +39,13 @@
       "WebFetch(domain:www.boe.es)",
       "WebFetch(domain:localhost)",
       "WebFetch(domain:portal.seg-social.gob.es)",
-      "mcp__Linear__get_issue"
+      "mcp__Linear__get_issue",
+      "WebFetch(domain:schema.org)",
+      "WebFetch(domain:developers.google.com)",
+      "Bash(npx tsc:*)",
+      "Bash(fold:*)",
+      "Bash(tr:*)",
+      "Bash({} ;)"
     ],
     "deny": [],
     "ask": []

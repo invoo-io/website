@@ -84,7 +84,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
 
   return (
     <nav className="space-y-4 ">
-      <h3 className="text-callout font-semibold text-text-primary">
+      <h3 className="text-callout font-semibold text-primary">
         En este artículo
       </h3>
       <ul className="space-y-2">
@@ -96,7 +96,7 @@ export default function TableOfContents({ content }: TableOfContentsProps) {
               className={`block text-footnote py-1.5 px-3 rounded-lg transition-all duration-200 ${
                 activeId === id
                   ? "bg-accent-blue-main text-system-grey100 font-medium"
-                  : "text-text-secondary hover:bg-bg-secondary hover:text-text-primary"
+                  : "text-secondary hover:bg-background-secondary hover:text-primary"
               }`}
             >
               {text}

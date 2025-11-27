@@ -20,7 +20,7 @@ export default function PricingSection() {
   const titleParts = t("header.title").split(". ");
 
   return (
-    <section className="py-[156px] max-md:py-10 px-6" style={{
+    <section className="py-[156px] max-md:py-10 px-4 md:px-6" style={{
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
@@ -28,11 +28,11 @@ export default function PricingSection() {
     }}>
       {/* Header */}
       <div className="text-center mb-16 max-w-3xl">
-        <h1 className="text-large-title-emphasized mb-6 max-md:!text-[48px]" style={{ fontSize: '64px' }}>
+        <h1 className="text-header-title-emphasized mb-6">
           <GradientText>{titleParts[0]}.</GradientText>
-          <span className="text-text-primary"> {titleParts[1]}</span>
+          <span className="text-primary"> {titleParts[1]}</span>
         </h1>
-        <p className="text-headline text-text-secondary">
+        <p className="text-headline text-secondary">
           {t("header.description")}
         </p>
       </div>
@@ -138,7 +138,7 @@ export default function PricingSection() {
                       }} />
                     </span>
                   </label>
-                  <span className="text-footnote text-text-secondary">
+                  <span className="text-footnote text-secondary">
                     {t("freelancer.pro.toggle")} {isAnnual && <span className="text-accent-green-main">{t("freelancer.pro.toggleSave")}</span>}
                   </span>
                 </div>

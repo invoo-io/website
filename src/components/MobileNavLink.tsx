@@ -24,7 +24,7 @@ export default function MobileNavLink({
       onClick={onClick}
       target={external ? "_blank" : undefined}
       rel={external ? "noopener noreferrer" : undefined}
-      className={`block text-text-primary hover:text-text-primary rounded-lg transition-all text-subheadline text-center px-5 py-3 ${className}`}
+      className={`block text-primary hover:text-primary rounded-lg transition-all text-subheadline text-center px-5 py-3 ${className}`}
       onMouseEnter={(e) => {
         e.currentTarget.style.backgroundColor = "var(--background-tertiary)";
       }}

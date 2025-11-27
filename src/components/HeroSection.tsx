@@ -20,13 +20,13 @@ export default function HeroSection({
   buttonOnClick
 }: HeroSectionProps) {
   return (
-    <section className="flex items-center justify-center px-6 pt-40 max-md:pt-20 pb-0">
+    <section className="flex items-center justify-center px-4 md:px-6 pt-40 max-md:pt-20 pb-0">
       <div className="max-w-6xl mx-auto text-center">
-        <h1 className="hero-heading mb-8">
+        <h1 className="text-header-title-emphasized text-center mb-8">
           {title}
         </h1>
 
-        <p className="text-body mb-8 max-w-3xl mx-auto text-text-secondary">
+        <p className="text-body mb-8 max-w-3xl mx-auto text-secondary">
           {paragraph}
         </p>
 

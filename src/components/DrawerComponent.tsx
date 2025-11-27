@@ -88,7 +88,7 @@ export function DrawerComponent({
           </Button>
         </DrawerTrigger>
       )}
-      <DrawerContent className="bg-bg-secondary text-text-primary flex items-center justify-center">
+      <DrawerContent className="bg-background-secondary text-primary flex items-center justify-center">
         <div
           style={{
             maxWidth: "450px",
@@ -102,22 +102,22 @@ export function DrawerComponent({
           }}
         >
           <DrawerHeader className="text-center">
-            <DrawerTitle className="text-title1-emphasized text-text-primary" style={{ fontSize: '30px' }}>
+            <DrawerTitle className="text-title1-emphasized text-primary" style={{ fontSize: '30px' }}>
               {t("title")}
             </DrawerTitle>
-            <DrawerDescription className="text-callout text-text-primary mt-2">
+            <DrawerDescription className="text-callout text-primary mt-2">
               {t("description")}
             </DrawerDescription>
           </DrawerHeader>
 
           <form onSubmit={handleSubmit} className="px-8 flex flex-col gap-6">
           <div>
-            <label className="text-footnote mb-2 block text-text-primary">{t("form.name")}</label>
+            <label className="text-footnote mb-2 block text-primary">{t("form.name")}</label>
             <input
               type="text"
               value={formData.name}
               onChange={(e) => setFormData({...formData, name: e.target.value})}
-              className="text-footnote w-full rounded outline-none transition-all text-text-primary"
+              className="text-footnote w-full rounded outline-none transition-all text-primary"
               style={{
                 padding: '11px 14px',
                 backgroundColor: 'var(--background-tertiary)',
@@ -134,12 +134,12 @@ export function DrawerComponent({
           </div>
 
           <div>
-            <label className="text-footnote mb-2 block text-text-primary">{t("form.email")}</label>
+            <label className="text-footnote mb-2 block text-primary">{t("form.email")}</label>
             <input
               type="email"
               value={formData.email}
               onChange={(e) => setFormData({...formData, email: e.target.value})}
-              className="text-footnote w-full rounded outline-none transition-all text-text-primary"
+              className="text-footnote w-full rounded outline-none transition-all text-primary"
               style={{
                 padding: '11px 14px',
                 backgroundColor: 'var(--background-tertiary)',
@@ -156,7 +156,7 @@ export function DrawerComponent({
           </div>
 
           <div>
-            <label className="text-footnote mb-2 block text-text-primary">{t("form.profile")}</label>
+            <label className="text-footnote mb-2 block text-primary">{t("form.profile")}</label>
             <div className="flex gap-4 flex-wrap">
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
@@ -172,7 +172,7 @@ export function DrawerComponent({
                     cursor: "pointer",
                   }}
                 />
-                <span className="text-footnote text-text-primary">{t("form.profileOptions.autonomo")}</span>
+                <span className="text-footnote text-primary">{t("form.profileOptions.autonomo")}</span>
               </label>
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
@@ -188,7 +188,7 @@ export function DrawerComponent({
                     cursor: "pointer",
                   }}
                 />
-                <span className="text-footnote text-text-primary">{t("form.profileOptions.pyme")}</span>
+                <span className="text-footnote text-primary">{t("form.profileOptions.pyme")}</span>
               </label>
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
@@ -204,7 +204,7 @@ export function DrawerComponent({
                     cursor: "pointer",
                   }}
                 />
-                <span className="text-footnote text-text-primary">{t("form.profileOptions.gestoria")}</span>
+                <span className="text-footnote text-primary">{t("form.profileOptions.gestoria")}</span>
               </label>
             </div>
           </div>

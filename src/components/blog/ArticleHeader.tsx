@@ -51,7 +51,7 @@ export default function ArticleHeader({
   }, [post.title]);
 
   return (
-    <header className="w-full bg-bg-secondary">
+    <header className="w-full bg-background-secondary">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_450px] gap-8 lg:gap-12">
         {/* Left Column - Metadata */}
@@ -67,12 +67,12 @@ export default function ArticleHeader({
           </div>
 
           {/* Title */}
-          <h1 className="text-large-title-emphasized text-text-primary mb-4">
+          <h1 className="text-large-title-emphasized text-primary mb-4">
             {post.title}
           </h1>
 
           {/* Excerpt */}
-          <p className="text-body text-text-secondary">
+          <p className="text-body text-secondary">
             {post.excerpt}
           </p>
 
@@ -84,10 +84,10 @@ export default function ArticleHeader({
             >
               {category.name}
             </Link>
-            <span className="text-text-tertiary">•</span>
+            <span className="text-tertiary">•</span>
             <time
               dateTime={post.publishedAt}
-              className="text-text-secondary"
+              className="text-secondary"
             >
               {new Date(post.publishedAt).toLocaleDateString("es-ES", {
                 year: "numeric",
@@ -102,7 +102,7 @@ export default function ArticleHeader({
 
         {/* Right Column - Cover Image */}
         {post.coverImage && (
-          <div className="relative aspect-video lg:aspect-[4/3] rounded-xxl overflow-hidden bg-bg-secondary">
+          <div className="relative aspect-video lg:aspect-[4/3] rounded-xxl overflow-hidden bg-background-secondary">
             <Image
               src={post.coverImage}
               alt={post.title}
@@ -120,7 +120,7 @@ export default function ArticleHeader({
             href={shareLinks.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir en Twitter"
           >
             <Twitter className="w-5 h-5" />
@@ -129,7 +129,7 @@ export default function ArticleHeader({
             href={shareLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir en LinkedIn"
           >
             <Linkedin className="w-5 h-5" />
@@ -138,14 +138,14 @@ export default function ArticleHeader({
             href={shareLinks.facebook}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir en Facebook"
           >
             <Facebook className="w-5 h-5" />
           </a>
           <a
             href={shareLinks.email}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-bg-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-text-secondary transition-all duration-200"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-background-tertiary hover:bg-accent-blue-main hover:text-system-grey100 text-secondary transition-all duration-200"
             aria-label="Compartir por email"
           >
             <Mail className="w-5 h-5" />

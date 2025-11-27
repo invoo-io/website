@@ -39,12 +39,12 @@ export default async function GestoriasPage({
   const titleParts = t("header.title").split(", ");
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <Navigation locale={locale} />
       <HeroSection
         title={
           <>
-            <span style={{color: 'text-text-primary'}}>{titleParts[0]}, </span>
+            <span className="text-primary">{titleParts[0]}, </span>
 
             <GradientText>{titleParts[1]}</GradientText>
           </>

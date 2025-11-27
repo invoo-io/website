@@ -35,7 +35,7 @@ export function ThemeToggle() {
   return (
     <motion.button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="w-10 h-10 flex items-center justify-center text-label-primary hover:text-label-secondary transition-colors rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary"
+      className="w-10 h-10 flex items-center justify-center text-primary hover:text-secondary transition-colors rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary"
       whileTap={{ scale: 0.95 }}
       aria-label={ariaLabel}
       aria-live="polite"

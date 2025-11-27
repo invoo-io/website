@@ -34,7 +34,7 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
     >
       <article className="flex flex-col h-full">
         {/* Article Image */}
-        <div className="relative w-full aspect-[16/9] bg-bg-tertiary rounded-[16px] overflow-hidden">
+        <div className="relative w-full aspect-[16/9] bg-background-tertiary rounded-[16px] overflow-hidden">
           {post.coverImage ? (
             <Image
               src={post.coverImage}
@@ -49,7 +49,7 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
               aria-hidden="true"
               role="presentation"
             >
-              <span className="text-6xl font-bold text-label-tertiary/30">
+              <span className="text-6xl font-bold text-tertiary/30">
                 {post.title.charAt(0).toUpperCase()}
               </span>
             </div>
@@ -60,11 +60,11 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
         <div className="flex-1 mt-4 flex flex-col">
           {/* Category Badge and Read Time */}
           <div className="flex items-center justify-between mb-3">
-            <span className="text-caption1 text-label-secondary tracking-wide">
+            <span className="text-caption1 text-secondary tracking-wide">
               {categoryDisplayName || post.category}
             </span>
             {post.readingTime && (
-              <span className="text-caption2 text-label-secondary">
+              <span className="text-caption2 text-secondary">
                 {post.readingTime} min
               </span>
             )}
@@ -76,7 +76,7 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
           </h3>
 
           {/* Excerpt */}
-          <p className="text-body text-label-secondary line-clamp-3 flex-1 mb-4">
+          <p className="text-body text-secondary line-clamp-3 flex-1 mb-4">
             {post.excerpt}
           </p>
 

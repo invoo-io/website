@@ -37,7 +37,7 @@ Y lo viven más de 3.4 millones de autónomos en España cada trimestre.
 
 ### Los números del caos
 
-Según nuestro estudio con 187 autónomos españoles (agosto-noviembre 2025):
+Según nuestro estudio con varios autónomos españoles (agosto-noviembre 2025):
 
 **Tiempo dedicado a "comunicación con gestoría":**
 - Media: **3.7 horas/mes**

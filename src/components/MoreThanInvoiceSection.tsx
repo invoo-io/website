@@ -2,11 +2,15 @@
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import MoreThanInvoiceButton from "./MoreThanInvoiceButton";
+import GradientText from "./ui/GradientText";
 import { getImagePath } from "@/lib/utils";
 
 export default function MoreThanInvoiceSection() {
   const t = useTranslations("home.moreThanInvoicing");
+  const params = useParams();
+  const locale = params.locale as string;
 
   const features = [
     {
@@ -32,56 +36,36 @@ export default function MoreThanInvoiceSection() {
   ];
 
   return (
-    <section
-      className="py-[156px] max-md:py-10"
-      style={{
-        position: "relative",
-        minHeight: "634px",
-        backgroundColor: "var(--background-secondary)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flexDirection: "column",
-      }}
-    >
+    <section className="py-[156px] max-md:py-10 px-4 md:px-6 relative min-h-[634px] bg-background-secondary flex items-center justify-center flex-col">
       {/* Title */}
-      <h2 className="text-large-title-emphasized text-center text-text-primary max-w-4xl mx-auto mb-16 relative z-10" style={{ fontSize: '48px' }}>
-        {t("title")}
+      <h2 className="text-section-title-emphasized text-center text-primary max-w-4xl mx-auto mb-16 relative z-10">
+        {locale === "es" ? (
+          <><GradientText>Más</GradientText> que facturación</>
+        ) : (
+          <><GradientText>More</GradientText> than invoicing</>
+        )}
       </h2>
 
       {/* Content Container */}
-      <div
-        style={{
-          position: "relative",
-          zIndex: 10,
-          padding: "0 24px",
-          maxWidth: "1000px",
-        }}
-      >
+      <div className="relative z-10 max-w-[1000px]">
         {/* 2x2 Grid of Cards */}
-        <div
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-          style={{
-            marginBottom: "0",
-          }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-bg-secondary rounded-3xl p-8 text-center"
-              style={{ minHeight: "150px" }}
+              className="bg-background-secondary rounded-3xl p-8 text-center min-h-[150px]"
             >
               <Image
                 src={feature.image}
                 alt={feature.title}
                 width={100}
                 height={100}
-                style={{ objectFit: "contain", margin: "0 auto", padding: "0 0 24px 0" }}
+                className="object-contain mx-auto pb-6"
               />
-              <h3 className="text-title3-emphasized text-text-primary mb-3" style={{ fontSize: "20px" }}>
+              <h3 className="text-title3-emphasized text-primary mb-3">
                 {feature.title}
               </h3>
-              <p className="text-callout text-text-secondary">
+              <p className="text-callout text-secondary">
                 {feature.description}
               </p>
             </div>

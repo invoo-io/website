@@ -12,8 +12,8 @@ import { CategoryBlock } from "@/components/blog/CategoryBlock";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
-  // Only generate Spanish blog paths
-  return [{ locale: "es" }];
+  // Generate both locales - English will redirect to Spanish
+  return [{ locale: "es" }, { locale: "en" }];
 }
 
 export async function generateMetadata({
@@ -84,12 +84,12 @@ export default async function BlogPage({
   const lastPart = titleParts[titleParts.length - 1]; // "Invoo"
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <Navigation locale={locale} />
       <HeroSection
         title={
           <>
-            <span className="text-text-primary">{firstPart} </span>
+            <span className="text-primary">{firstPart} </span>
             <GradientText>{lastPart}</GradientText>
           </>
         }
@@ -142,7 +142,7 @@ export default async function BlogPage({
         {/* No posts message */}
         {allPosts.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-label-secondary text-lg">
+            <p className="text-secondary text-lg">
               {t("noPosts")}
             </p>
           </div>

@@ -14,12 +14,11 @@ import type { ReactNode } from "react";
 export async function generateStaticParams() {
   const posts = getAllBlogPosts();
 
-  // Only generate Spanish paths
-  return posts.map((post) => ({
-    locale: "es",
-    category: post.category,
-    slug: post.slug,
-  }));
+  // Generate both locales - English will redirect to Spanish
+  return posts.flatMap((post) => [
+    { locale: "es", category: post.category, slug: post.slug },
+    { locale: "en", category: post.category, slug: post.slug },
+  ]);
 }
 
 interface ArticlePageProps {
@@ -112,7 +111,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   };
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <Navigation locale={locale} />
 
       {/* Article Header - Full Width */}
@@ -153,7 +152,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                   {post.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-bg-secondary rounded-full text-sm text-label-secondary"
+                      className="px-3 py-1 bg-background-secondary rounded-full text-sm text-secondary"
                     >
                       #{tag}
                     </span>

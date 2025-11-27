@@ -120,10 +120,6 @@
   --background-tertiary-dark: #1C1C1C;
   --background-tertiary: var(--background-tertiary-light);
 
-  --background-inverted-light: #0E0E0E;
-  --background-inverted-dark: #FFFFFF;
-  --background-inverted: var(--background-inverted-light);
-
   /* ========================================
      LABEL/TEXT COLORS
      ======================================== */
@@ -139,14 +135,6 @@
   --label-tertiary-light: rgba(51, 58, 69, 0.3);
   --label-tertiary-dark: rgba(159, 159, 159, 0.3);
   --label-tertiary: var(--label-tertiary-light);
-
-  --label-inverted-light: rgba(239, 239, 245, 1);
-  --label-inverted-dark: rgba(18, 18, 18, 1);
-  --label-inverted: var(--label-inverted-light);
-
-  --label-inverted-secondary-light: rgba(159, 159, 159, 0.7);
-  --label-inverted-secondary-dark: rgba(51, 58, 69, 0.65);
-  --label-inverted-secondary: var(--label-inverted-secondary-light);
 
   /* ========================================
      FILL COLORS
@@ -251,14 +239,10 @@
   --background-primary: var(--background-primary-dark);
   --background-secondary: var(--background-secondary-dark);
   --background-tertiary: var(--background-tertiary-dark);
-  --background-inverted: var(--background-inverted-dark);
-
   /* Label Colors */
   --label-primary: var(--label-primary-dark);
   --label-secondary: var(--label-secondary-dark);
   --label-tertiary: var(--label-tertiary-dark);
-  --label-inverted: var(--label-inverted-dark);
-  --label-inverted-secondary: var(--label-inverted-secondary-dark);
 
   /* Fill Colors */
   --fills-primary: var(--fills-primary-dark);
@@ -285,17 +269,15 @@
    ======================================== */
 
 :root {
-  /* Text Semantic Tokens */
+  /* Text Semantic Tokens - Use text-primary, text-secondary, text-tertiary */
   --color-text-primary: var(--label-primary);
   --color-text-secondary: var(--label-secondary);
   --color-text-tertiary: var(--label-tertiary);
-  --color-text-inverted: var(--label-inverted);
 
-  /* Background Semantic Tokens */
+  /* Background Semantic Tokens - Use bg-background-primary, bg-background-secondary, bg-background-tertiary */
   --color-bg-primary: var(--background-primary);
   --color-bg-secondary: var(--background-secondary);
   --color-bg-tertiary: var(--background-tertiary);
-  --color-bg-inverted: var(--background-inverted);
 
   /* Border Semantic Tokens */
   --color-border-primary: var(--strokes-primary);

@@ -88,10 +88,10 @@ export default function CookieBanner() {
       aria-label={t("ariaLabel")}
       className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6"
     >
-      <div className="max-w-4xl mx-auto bg-bg-secondary border border-strokes-primary rounded-2xl p-4 md:p-6 shadow-lg">
+      <div className="max-w-4xl mx-auto bg-background-secondary border border-strokes-primary rounded-2xl p-4 md:p-6 shadow-lg">
         <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
           {/* Message */}
-          <p className="flex-1 text-callout text-text-secondary">
+          <p className="flex-1 text-callout text-secondary">
             {t("message")}
           </p>
 
@@ -99,7 +99,7 @@ export default function CookieBanner() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 shrink-0">
             <button
               onClick={handleReject}
-              className="px-5 py-2.5 text-callout-emphasized text-text-secondary border border-strokes-primary rounded-full hover:bg-bg-tertiary hover:text-text-primary transition-colors"
+              className="px-5 py-2.5 text-callout-emphasized text-secondary border border-strokes-primary rounded-full hover:bg-background-tertiary hover:text-primary transition-colors"
             >
               {t("reject")}
             </button>

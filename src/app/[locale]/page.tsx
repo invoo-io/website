@@ -67,15 +67,15 @@ export default async function Home({
   const lastThreeWords = titleParts.slice(-3).join(" "); // "in 30 seconds" or "en 30 segundos"
 
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-background-primary">
       <JsonLd data={generateSoftwareApplicationSchema(locale)} />
       <Navigation locale={locale} />
       <HeroSection
         title={
           <>
-            <span className="text-text-primary">{firstWord} </span>
+            <span className="text-primary">{firstWord} </span>
             <GradientText>{middleWords}</GradientText>
-            <span className="text-text-primary"> {lastThreeWords}</span>
+            <span className="text-primary"> {lastThreeWords}</span>
           </>
         }
         paragraph={t("hero.description")}
@@ -87,7 +87,13 @@ export default async function Home({
       <InvoicingSection />
       <MoreThanInvoiceSection />
       <BuildForGestoriasSection
-        title={t("gestoriasBlock.title")}
+        title={
+          locale === "es" ? (
+            <>Diseñado para <GradientText>gestorías</GradientText></>
+          ) : (
+            <>Built for <GradientText>gestorías</GradientText></>
+          )
+        }
         paragraph={t("gestoriasBlock.description")}
         features={t.raw("gestoriasBlock.features")}
         buttonText={t("gestoriasBlock.cta")}

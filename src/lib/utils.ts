@@ -5,7 +5,7 @@ import { extendTailwindMerge } from "tailwind-merge"
  * Custom tailwind-merge configuration to handle our design system classes.
  *
  * The typography classes (text-callout-emphasized, text-body, etc.) control
- * font properties, while text-* color classes (text-label-primary, etc.)
+ * font properties, while text-* color classes (text-primary, etc.)
  * control color. These should NOT conflict with each other.
  *
  * By adding typography classes to a custom group, tailwind-merge won't
