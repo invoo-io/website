@@ -29,7 +29,16 @@
       "Bash(node -e:*)",
       "Bash(npx tsx:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nfeat: improve blog article detail page with new components\n\n- Add ArticleHeader, ArticleSidebar, TableOfContents components\n- Add ExploreWithAI component for ChatGPT integration\n- Add KeyTakeaways component with Spanish translation\n- Full-width header background fix\n- Add border tokens to Tailwind theme\n- Update blog page layout with two-column design\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git push:*)",
+      "Bash(npm run lint:*)",
+      "Bash(node /tmp/verify_article.js:*)",
+      "WebFetch(domain:www.billin.net)",
+      "WebFetch(domain:sede.agenciatributaria.gob.es)",
+      "WebFetch(domain:www.boe.es)",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:portal.seg-social.gob.es)"
     ],
     "deny": [],
     "ask": []

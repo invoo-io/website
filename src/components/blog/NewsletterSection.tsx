@@ -7,16 +7,18 @@ export default function NewsletterSection() {
   const t = useTranslations("blog.newsletter");
 
   return (
-    <section style={{
-      position: 'relative',
-      minHeight: '400px',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '164px 24px',
-      overflow: 'hidden'
-    }}>
+    <section
+      id="newsletter"
+      style={{
+        position: 'relative',
+        minHeight: '400px',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '164px 24px',
+        overflow: 'hidden'
+      }}>
       {/* Background Image with Overlay */}
       <div style={{
         position: 'absolute',

@@ -36,6 +36,20 @@ export default function HeroSection({
               <DrawerComponent
                 triggerText={buttonText}
               />
+            ) : buttonHref?.startsWith('#') ? (
+              <Button
+                onClick={() => {
+                  const targetId = buttonHref.substring(1);
+                  const targetElement = document.getElementById(targetId);
+                  if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                variant="gradient"
+                showArrow={true}
+              >
+                {buttonText}
+              </Button>
             ) : (
               <Button
                 href={buttonHref}
