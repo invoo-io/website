@@ -24,8 +24,7 @@ export default function PricingSection() {
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
-      alignItems: 'center',
-      backgroundColor: "var(--background-secondary)"
+      alignItems: 'center'
     }}>
       {/* Header */}
       <div className="text-center mb-16 max-w-3xl">

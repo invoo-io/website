@@ -1,8 +1,9 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Button from "@/components/ui/button";
+import { ArticleCard } from "@/components/blog/ArticleCard";
 import {
   getBlogPostsMetadataByCategory,
   getAllCategories,
@@ -62,6 +63,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const t = await getTranslations({ locale, namespace: "blog" });
+  const articleT = await getTranslations({ locale, namespace: "blog.article" });
   const posts = getBlogPostsMetadataByCategory(categorySlug);
   const category = getAllCategories().find((c) => c.slug === categorySlug);
 
@@ -73,21 +75,33 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     <div className="min-h-screen bg-bg-primary">
       <Navigation locale={locale} />
 
-      <main className="container mx-auto px-4 py-12 max-w-7xl">
-        {/* Category Header */}
-        <div className="mb-12">
-          <div className="inline-block px-4 py-2 bg-bg-secondary rounded-full text-label-primary mb-4">
-            {category.name}
+      {/* Category Header - Hero Style */}
+      <section className="flex items-center justify-center px-6 pt-40 max-md:pt-20 pb-12">
+        <div className="max-w-6xl mx-auto text-center">
+          <div className="mb-6">
+            <Button
+              href={`/${locale}/blog`}
+              variant="tertiary"
+              size="none"
+              showBackIcon
+              disableHoverScale
+              aria-label={t("backToBlog")}
+            >
+              {t("backToBlog")}
+            </Button>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-label-inverted mb-4">
+          <h1 className="hero-heading mb-8 text-text-primary">
             {category.name}
           </h1>
-          <p className="text-xl text-label-secondary max-w-2xl">
+          <p className="text-body mb-8 max-w-3xl mx-auto text-text-secondary">
             {category.description}
           </p>
         </div>
+      </section>
 
-        {/* Blog Posts Grid - Placeholder for future ArticleCard component */}
+      <main className="container mx-auto px-4 pb-12 max-w-7xl">
+
+        {/* Blog Posts Grid */}
         {posts.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-label-secondary text-lg">
@@ -96,32 +110,23 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map((post) => (
-            <Link
-              key={`${post.category}-${post.slug}`}
-              href={`/${locale}/blog/${post.category}/${post.slug}`}
-              className="block bg-bg-secondary rounded-lg p-6 hover:shadow-lg transition-shadow"
-            >
-              <article>
-                <h2 className="text-xl font-semibold text-label-inverted mb-2">
-                  {post.title}
-                </h2>
-                <p className="text-label-secondary mb-4 line-clamp-3">
-                  {post.excerpt}
-                </p>
-                <div className="flex items-center justify-between text-sm text-label-tertiary">
-                  <span>{post.author}</span>
-                  <time dateTime={post.publishedAt}>
-                    {new Date(post.publishedAt).toLocaleDateString("es-ES", {
-                      year: "numeric",
-                      month: "short",
-                      day: "numeric",
-                    })}
-                  </time>
-                </div>
-              </article>
-            </Link>
-          ))}
+            {posts.map((post) => {
+              const translations = {
+                readArticle: articleT("readArticle", { title: post.title }),
+                coverImageAlt: articleT("coverImageAlt", { title: post.title }),
+                publishedOn: articleT("publishedOn"),
+              };
+
+              return (
+                <ArticleCard
+                  key={`${post.category}-${post.slug}`}
+                  post={post}
+                  locale={locale}
+                  categoryDisplayName={category.name}
+                  translations={translations}
+                />
+              );
+            })}
           </div>
         )}
       </main>

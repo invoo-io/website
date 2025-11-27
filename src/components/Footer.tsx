@@ -25,7 +25,7 @@ export default function Footer({ locale }: FooterProps) {
   const logoSrc = mounted && theme === "dark" ? "/Logo-Dark.svg" : "/Logo-White.svg";
 
   return (
-    <footer className="bg-bg-primary text-text-primary px-6 pt-20 pb-10">
+    <footer className="bg-bg-secondary text-text-primary px-6 pt-20 pb-10">
       <div className="max-w-6xl mx-auto">
         {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
