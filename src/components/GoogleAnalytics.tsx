@@ -1,7 +1,7 @@
 "use client";
 
 import Script from "next/script";
-import { usePathname, useSearchParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useEffect, useState, useCallback, useRef } from "react";
 
 // Extend Window interface to include gtag and ga-disable property
@@ -73,7 +73,6 @@ function loadGAScripts(measurementId: string, onLoad: () => void): void {
 
 export default function GoogleAnalytics() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   const [hasConsent, setHasConsent] = useState<boolean | null>(null);
@@ -134,12 +133,13 @@ export default function GoogleAnalytics() {
   useEffect(() => {
     if (!window.gtag || !GA_MEASUREMENT_ID || !hasConsent || !scriptsLoaded) return;
 
-    const search = searchParams.toString();
-    const url = pathname + (search ? `?${search}` : "");
+    // Use window.location.search instead of useSearchParams to avoid static export bailout
+    const search = typeof window !== "undefined" ? window.location.search : "";
+    const url = pathname + search;
     window.gtag("config", GA_MEASUREMENT_ID, {
       page_path: url,
     });
-  }, [pathname, searchParams, GA_MEASUREMENT_ID, hasConsent, scriptsLoaded]);
+  }, [pathname, GA_MEASUREMENT_ID, hasConsent, scriptsLoaded]);
 
   // Only render scripts in production, if measurement ID exists, and consent is given on initial load
   if (

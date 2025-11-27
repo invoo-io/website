@@ -4,7 +4,7 @@ import createNextIntlPlugin from "next-intl/plugin";
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  // Dynamic rendering enabled for API routes (newsletter subscription)
+  output: "export",
   trailingSlash: true,
   images: {
     unoptimized: true,

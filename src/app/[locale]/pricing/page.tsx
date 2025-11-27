@@ -4,6 +4,8 @@ import Navigation from "@/components/Navigation";
 import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
 import { generatePageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { generateProductSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -30,10 +32,13 @@ export default async function PricingPage({
   setRequestLocale(locale);
 
   return (
-    <div className="min-h-screen bg-bg-primary">
-      <Navigation locale={locale} />
-      <PricingSection />
-      <Footer locale={locale} />
-    </div>
+    <>
+      <JsonLd data={generateProductSchema(locale)} />
+      <div className="min-h-screen bg-bg-primary">
+        <Navigation locale={locale} />
+        <PricingSection />
+        <Footer locale={locale} />
+      </div>
+    </>
   );
 }

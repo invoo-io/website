@@ -4,6 +4,8 @@ import path from "path";
 import matter from "gray-matter";
 import { BASE_URL } from "@/lib/constants";
 
+export const dynamic = "force-static";
+
 // Static pages that exist for both locales
 const staticPages = [
   "",
