@@ -26,9 +26,13 @@ export function generateOrganizationSchema(): SchemaOrg {
     "@id": ORGANIZATION_ID,
     name: "Invoo",
     legalName: "Roques OÜ",
+    description:
+      "Plataforma de facturación electrónica para autónomos y gestorías en España. Cumplimiento automático con Verifactu, envío a AEAT y colaboración gestor-cliente en tiempo real.",
     url: BASE_URL,
-    logo: `${BASE_URL}/images/invoo-logo.png`,
+    logo: `${BASE_URL}/Logo.png`,
+    image: `${BASE_URL}/Logo.png`,
     email: "legal@invoo.es",
+    foundingDate: "2025",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Ahtri tn 12",
@@ -40,9 +44,29 @@ export function generateOrganizationSchema(): SchemaOrg {
       "@type": "Country",
       name: "Spain",
     },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "hola@invoo.es",
+      contactType: "customer support",
+      availableLanguage: ["Spanish", "English"],
+    },
+    knowsAbout: [
+      "Facturación electrónica",
+      "Verifactu",
+      "AEAT",
+      "Autónomos España",
+      "Gestorías",
+      "Modelo 130",
+      "Modelo 303",
+      "IVA España",
+      "Software de facturación",
+      "Cumplimiento fiscal España",
+    ],
     sameAs: [
       "https://twitter.com/invoo_es",
-      "https://www.linkedin.com/company/invoo",
+      "https://x.com/InvooES",
+      "https://www.linkedin.com/company/invooes",
+      "https://www.facebook.com/profile.php?id=61578360993110",
     ],
   };
 }
@@ -172,9 +196,10 @@ export function generateProductSchema(locale: string): SchemaOrg {
     description,
     url: BASE_URL,
     brand: {
-      "@id": ORGANIZATION_ID,
+      "@type": "Brand",
+      name: "Invoo",
     },
-    image: `${BASE_URL}/images/invoo-logo.png`,
+    image: `${BASE_URL}/Logo.png`,
     offers: [
       {
         "@type": "Offer",
@@ -208,6 +233,7 @@ export function generateProductSchema(locale: string): SchemaOrg {
           : "Free access for accountants with client dashboard, CSV exports and notifications",
         price: "0",
         priceCurrency: "EUR",
+        priceValidUntil: "2026-12-31",
         availability: "https://schema.org/PreOrder",
         availabilityStarts: "2026-03-01",
         url: `${BASE_URL}/${locale}/pricing`,
@@ -224,7 +250,7 @@ export function generateProductSchema(locale: string): SchemaOrg {
         },
       },
     ],
-    aggregateRating: undefined, // Will be added when reviews are available
+    // aggregateRating will be added when real reviews are available
   };
 }
 
@@ -463,5 +489,70 @@ export function generateBreadcrumbListSchema(
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: generateBreadcrumbItems(locale, path, pageTitle),
+  };
+}
+
+/**
+ * Generates Article schema for blog posts
+ * Optimized for LLM discoverability with rich metadata
+ */
+export function generateArticleSchema({
+  title,
+  excerpt,
+  publishedAt,
+  updatedAt,
+  author,
+  coverImage,
+  tags,
+  category,
+  slug,
+  readingTime,
+}: {
+  title: string;
+  excerpt: string;
+  publishedAt: string;
+  updatedAt?: string;
+  author: string;
+  coverImage?: string;
+  tags?: string[];
+  category: string;
+  slug: string;
+  readingTime?: number;
+}): SchemaOrg {
+  const url = `${BASE_URL}/es/blog/${category}/${slug}/`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${url}#article`,
+    headline: title,
+    description: excerpt,
+    image: coverImage ? `${BASE_URL}${coverImage}` : `${BASE_URL}/Logo.png`,
+    datePublished: publishedAt,
+    dateModified: updatedAt || publishedAt,
+    author: {
+      "@type": "Person",
+      name: author,
+      url: `${BASE_URL}/es/about/`,
+    },
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    inLanguage: "es",
+    keywords: tags?.join(", "),
+    articleSection: category,
+    isPartOf: {
+      "@id": WEBSITE_ID,
+    },
+    wordCount: readingTime ? readingTime * 200 : undefined, // Approximate words based on reading time
+    about: {
+      "@type": "Thing",
+      name: "Facturación electrónica en España",
+      description: "Software y normativas de facturación para autónomos y pymes españolas",
+    },
   };
 }

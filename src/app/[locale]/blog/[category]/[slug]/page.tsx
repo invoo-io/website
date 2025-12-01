@@ -7,6 +7,8 @@ import KeyTakeaways from "@/components/blog/KeyTakeaways";
 import ExploreWithAI from "@/components/blog/ExploreWithAI";
 import ArticleHeader from "@/components/blog/ArticleHeader";
 import ArticleSidebar from "@/components/blog/ArticleSidebar";
+import { JsonLd } from "@/components/JsonLd";
+import { generateArticleSchema } from "@/lib/schema";
 import { getAllBlogPosts, getBlogPost, getAllCategories } from "@/lib/blog";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -110,66 +112,83 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     },
   };
 
+  // Generate Article schema for LLM discoverability
+  const articleSchema = generateArticleSchema({
+    title: post.title,
+    excerpt: post.excerpt,
+    publishedAt: post.publishedAt,
+    updatedAt: post.updatedAt,
+    author: post.author,
+    coverImage: post.coverImage,
+    tags: post.tags,
+    category: categorySlug,
+    slug,
+    readingTime: post.readingTime,
+  });
+
   return (
-    <div className="min-h-screen bg-background-primary">
-      <Navigation locale={locale} />
+    <>
+      <JsonLd data={articleSchema} id="article-schema" />
+      <div className="min-h-screen bg-background-primary">
+        <Navigation locale={locale} />
 
-      {/* Article Header - Full Width */}
-      <ArticleHeader
-        post={post}
-        category={category}
-        locale={locale}
-        backButtonLabel={t('article.backButton')}
-        backButtonAriaLabel={t('article.backButtonAriaLabel')}
-      />
+        {/* Article Header - Full Width */}
+        <ArticleHeader
+          post={post}
+          category={category}
+          locale={locale}
+          backButtonLabel={t('article.backButton')}
+          backButtonAriaLabel={t('article.backButtonAriaLabel')}
+        />
 
-      {/* Main Content Area - Two Column Layout */}
-      <div className="container mx-auto px-4 pb-12 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 lg:gap-12">
-          {/* Left Column - Main Content */}
-          <article className="min-w-0">
-            {/* Explore with AI */}
-            <ExploreWithAI
-              articleUrl={`https://invoo.es/${locale}/blog/${categorySlug}/${slug}`}
-              articleTitle={post.title}
-              articleExcerpt={post.excerpt}
-            />
+        {/* Main Content Area - Two Column Layout */}
+        <div className="container mx-auto px-4 pb-12 max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 lg:gap-12">
+            {/* Left Column - Main Content */}
+            <article className="min-w-0">
+              {/* Explore with AI */}
+              <ExploreWithAI
+                articleUrl={`https://invoo.es/${locale}/blog/${categorySlug}/${slug}`}
+                articleTitle={post.title}
+                articleExcerpt={post.excerpt}
+              />
 
-            {/* Key Takeaways */}
-            {post.keyTakeaways && post.keyTakeaways.length > 0 && (
-              <KeyTakeaways takeaways={post.keyTakeaways} />
-            )}
+              {/* Key Takeaways */}
+              {post.keyTakeaways && post.keyTakeaways.length > 0 && (
+                <KeyTakeaways takeaways={post.keyTakeaways} />
+              )}
 
-            {/* Article Content - MDX Rendering with Custom Components */}
-            <div className="blog-content max-w-none">
-              <MDXRemote source={post.content} components={mdxComponents} />
-            </div>
-
-            {/* Tags */}
-            {post.tags && post.tags.length > 0 && (
-              <div className="mt-12 pt-8 border-t border-border-primary">
-                <div className="flex flex-wrap gap-2">
-                  {post.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 bg-background-secondary rounded-full text-sm text-secondary"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
+              {/* Article Content - MDX Rendering with Custom Components */}
+              <div className="blog-content max-w-none">
+                <MDXRemote source={post.content} components={mdxComponents} />
               </div>
-            )}
-          </article>
 
-          {/* Right Column - Sticky Sidebar (Desktop Only) */}
-          <div className="hidden lg:block">
-            <ArticleSidebar content={post.content} title={post.title} />
+              {/* Tags */}
+              {post.tags && post.tags.length > 0 && (
+                <div className="mt-12 pt-8 border-t border-border-primary">
+                  <div className="flex flex-wrap gap-2">
+                    {post.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-3 py-1 bg-background-secondary rounded-full text-sm text-secondary"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </article>
+
+            {/* Right Column - Sticky Sidebar (Desktop Only) */}
+            <div className="hidden lg:block">
+              <ArticleSidebar content={post.content} title={post.title} />
+            </div>
           </div>
         </div>
-      </div>
 
-      <Footer locale={locale} />
-    </div>
+        <Footer locale={locale} />
+      </div>
+    </>
   );
 }

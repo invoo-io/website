@@ -20,16 +20,21 @@ const BASE_URL = "https://invoo.es";
 const OUT_DIR = join(__dirname, "..", "out");
 
 // Organization schema - appears on all pages
+// Enhanced for LLM discoverability with description, knowsAbout, and contactPoint
 function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
     name: "Invoo",
-    legalName: "Roques OU",
+    legalName: "Roques OÜ",
+    description:
+      "Plataforma de facturación electrónica para autónomos y gestorías en España. Cumplimiento automático con Verifactu, envío a AEAT y colaboración gestor-cliente en tiempo real.",
     url: BASE_URL,
-    logo: `${BASE_URL}/images/invoo-logo.png`,
+    logo: `${BASE_URL}/Logo.png`,
+    image: `${BASE_URL}/Logo.png`,
     email: "legal@invoo.es",
+    foundingDate: "2025",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Ahtri tn 12",
@@ -41,9 +46,29 @@ function generateOrganizationSchema() {
       "@type": "Country",
       name: "Spain",
     },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "hola@invoo.es",
+      contactType: "customer support",
+      availableLanguage: ["Spanish", "English"],
+    },
+    knowsAbout: [
+      "Facturación electrónica",
+      "Verifactu",
+      "AEAT",
+      "Autónomos España",
+      "Gestorías",
+      "Modelo 130",
+      "Modelo 303",
+      "IVA España",
+      "Software de facturación",
+      "Cumplimiento fiscal España",
+    ],
     sameAs: [
       "https://twitter.com/invoo_es",
-      "https://www.linkedin.com/company/invoo",
+      "https://x.com/InvooES",
+      "https://www.linkedin.com/company/invooes",
+      "https://www.facebook.com/profile.php?id=61578360993110",
     ],
   };
 }

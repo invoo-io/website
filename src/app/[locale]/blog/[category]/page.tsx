@@ -13,8 +13,14 @@ import type { Metadata } from "next";
 export async function generateStaticParams() {
   const categories = getAllCategories();
 
+  // Only generate categories that have published content
+  const categoriesWithContent = categories.filter((category) => {
+    const posts = getBlogPostsMetadataByCategory(category.slug);
+    return posts.length > 0;
+  });
+
   // Generate both locales - English will redirect to Spanish
-  return categories.flatMap((category) => [
+  return categoriesWithContent.flatMap((category) => [
     { locale: "es", category: category.slug },
     { locale: "en", category: category.slug },
   ]);
