@@ -2,24 +2,18 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import validator from "validator";
 
-// Validate environment variables at module load
-const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const BLOG_AUDIENCE_ID = process.env.RESEND_BLOG_AUDIENCE_ID;
+// Environment variables are validated at runtime, not build time
+// This allows the build to succeed on Vercel before env vars are configured
+function getEnvVars() {
+  const RESEND_API_KEY = process.env.RESEND_API_KEY;
+  const BLOG_AUDIENCE_ID = process.env.RESEND_BLOG_AUDIENCE_ID;
 
-if (!RESEND_API_KEY) {
-  throw new Error(
-    "RESEND_API_KEY is not configured. Please add it to your environment variables."
-  );
+  if (!RESEND_API_KEY || !BLOG_AUDIENCE_ID) {
+    return null;
+  }
+
+  return { RESEND_API_KEY, BLOG_AUDIENCE_ID };
 }
-
-if (!BLOG_AUDIENCE_ID) {
-  throw new Error(
-    "RESEND_BLOG_AUDIENCE_ID is not configured. Please add it to your environment variables."
-  );
-}
-
-// Initialize Resend
-const resend = new Resend(RESEND_API_KEY);
 
 // Disposable email domains blocklist
 // Common throwaway email services to prevent spam
@@ -134,6 +128,18 @@ export async function OPTIONS(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
+    // 0. Validate environment variables at runtime
+    const envVars = getEnvVars();
+    if (!envVars) {
+      console.error("Newsletter API: Missing RESEND_API_KEY or RESEND_BLOG_AUDIENCE_ID");
+      return NextResponse.json(
+        { error: "Service temporarily unavailable" },
+        { status: 503 }
+      );
+    }
+
+    const resend = new Resend(envVars.RESEND_API_KEY);
+
     // 1. Verify origin for CSRF protection
     const origin = request.headers.get("origin");
 
@@ -222,7 +228,7 @@ export async function POST(request: NextRequest) {
     try {
       const response = await resend.contacts.create({
         email: sanitizedEmail,
-        audienceId: BLOG_AUDIENCE_ID,
+        audienceId: envVars.BLOG_AUDIENCE_ID,
       });
 
       // Check if the response indicates success
