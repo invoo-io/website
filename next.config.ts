@@ -3,11 +3,15 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin();
 
+// Check if we're building for static export (e.g., GoDaddy) or Vercel
+const isStaticExport = process.env.STATIC_EXPORT === "true";
+
 const nextConfig: NextConfig = {
-  output: "export",
+  // Only use static export if explicitly requested (for GoDaddy deployment)
+  ...(isStaticExport && { output: "export" }),
   trailingSlash: true,
   images: {
-    unoptimized: true,
+    unoptimized: isStaticExport, // Only unoptimized for static export
   },
 };
 

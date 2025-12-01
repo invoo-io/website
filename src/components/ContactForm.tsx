@@ -29,7 +29,7 @@ export default function ContactForm() {
           'Accept': 'application/json',
         },
         body: JSON.stringify({
-          access_key: "35f97ce5-54ad-4ba5-a88d-8f29ea546366",
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           subject: `📧 Contact Form - ${formData.topic || 'General'} - ${formData.name}`,
           name: formData.name,
           email: formData.email,
