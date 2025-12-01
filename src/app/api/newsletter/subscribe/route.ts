@@ -98,8 +98,17 @@ const allowedOrigins = [
   "http://localhost:3000",
 ];
 
+// Check if origin matches Vercel preview URLs (*.vercel.app)
+function isAllowedOrigin(origin: string | null): boolean {
+  if (!origin) return false;
+  if (allowedOrigins.includes(origin)) return true;
+  // Allow Vercel preview deployments
+  if (origin.endsWith(".vercel.app")) return true;
+  return false;
+}
+
 function getCorsHeaders(origin: string | null): Record<string, string> {
-  if (origin && allowedOrigins.includes(origin)) {
+  if (origin && isAllowedOrigin(origin)) {
     return {
       "Access-Control-Allow-Origin": origin,
       "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -116,7 +125,7 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
 export async function OPTIONS(request: NextRequest) {
   const origin = request.headers.get("origin");
 
-  if (origin && allowedOrigins.includes(origin)) {
+  if (isAllowedOrigin(origin)) {
     return new NextResponse(null, {
       status: 204,
       headers: getCorsHeaders(origin),
@@ -143,7 +152,7 @@ export async function POST(request: NextRequest) {
     // 1. Verify origin for CSRF protection
     const origin = request.headers.get("origin");
 
-    if (origin && !allowedOrigins.includes(origin)) {
+    if (origin && !isAllowedOrigin(origin)) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 
