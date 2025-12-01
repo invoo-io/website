@@ -42,14 +42,29 @@ This Next.js application can be deployed on Vercel (recommended) or as a static 
 
 2. **Configure Environment Variables:**
    Add these in your Vercel project settings (Settings → Environment Variables):
-   - `RESEND_API_KEY` - Your Resend API key (required for newsletter subscription)
-   - `RESEND_BLOG_AUDIENCE_ID` - Your Resend audience ID (required for newsletter)
-   - `NEXT_PUBLIC_GA_MEASUREMENT_ID` - Google Analytics ID (optional)
+
+   | Variable | Type | Required | Description |
+   |----------|------|----------|-------------|
+   | `NEXT_PUBLIC_WEB3FORMS_KEY` | Public | Yes | Web3Forms API key for contact forms |
+   | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Public | No | Google Analytics measurement ID |
+   | `RESEND_API_KEY` | Secret | Yes | Resend API key for newsletter |
+   | `RESEND_BLOG_AUDIENCE_ID` | Secret | Yes | Resend audience ID for newsletter |
 
 3. **Deploy:**
    - Vercel will automatically build and deploy using `npm run build:vercel`
    - API routes will work as serverless functions
    - The site will be available at `your-project.vercel.app`
+
+#### Vercel Deployment Checklist
+
+- [ ] Push code to GitHub repository
+- [ ] Import repository in [Vercel Dashboard](https://vercel.com/new)
+- [ ] Add all environment variables (see table above)
+- [ ] Verify build command is `npm run build:vercel` (auto-detected from `vercel.json`)
+- [ ] Deploy and verify all pages load correctly
+- [ ] Test contact form submission
+- [ ] Test newsletter subscription
+- [ ] Verify analytics tracking (if enabled)
 
 ### Static Export (GoDaddy/Other Hosting)
 
