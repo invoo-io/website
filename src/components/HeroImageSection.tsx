@@ -25,7 +25,7 @@ export default function HeroImageSection({
 
   // Use provided dashboardImage or determine based on theme and imageBaseName
   const themedImage = dashboardImage ||
-    (mounted && theme === "dark" ? `/${imageBaseName}-dark.png` : `/${imageBaseName}-light.png`);
+    (mounted && theme === "dark" ? `/${imageBaseName}-dark.webp` : `/${imageBaseName}-light.webp`);
 
   return (
     <section className="w-full pt-32 pb-32 max-md:pt-8 max-md:pb-24">

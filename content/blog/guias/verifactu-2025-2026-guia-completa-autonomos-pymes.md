@@ -7,7 +7,7 @@ tags: ["verifactu", "autonomos", "pymes", "facturacion", "hacienda", "sif", "gui
 readingTime: 18
 featured: true
 editorPick: true
-coverImage: "/blog/verifactu-guide.png"
+coverImage: "/blog/verifactu-guide.webp"
 keyTakeaways:
   - "Verifactu obliga a tu software de facturación a generar un código QR oficial en cada factura desde 2026"
   - "Excel con fórmulas (incluso =A1*1.21 para IVA) te obliga a cumplir Verifactu desde julio 2026"

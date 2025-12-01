@@ -7,7 +7,7 @@ tags: ["gestión-autónomos", "gestoría", "colaboración", "whatsapp", "digital
 readingTime: 14
 featured: true
 editorPick: false
-coverImage: "/blog/caos-whatsapp.png"
+coverImage: "/blog/caos-whatsapp.webp"
 keyTakeaways:
   - "El 69% de autónomos usa WhatsApp para comunicarse con su gestoría, perdiendo 3-5 horas/mes en búsqueda de mensajes y documentos"
   - "Los 3 fallos estructurales: falta de contexto (todo mezclado), transcripción manual de datos y cero trazabilidad de cambios"

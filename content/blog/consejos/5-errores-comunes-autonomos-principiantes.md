@@ -7,7 +7,7 @@ tags: ["autónomos", "errores-comunes", "guia-principiantes", "consejos"]
 readingTime: 6
 featured: true
 editorPick: true
-coverImage: "/blog/errores-autonomos-principiantes.png"
+coverImage: "/blog/errores-autonomos-principiantes.webp"
 keyTakeaways:
   - "La tarifa plana de 80 €/mes puede ahorrarte hasta 2.400 € en tu primer año, pero muchos olvidan pedirla al darse de alta"
   - "El 70% de exención en el Modelo 130 elimina trámites trimestrales si tus clientes aplican retención en sus facturas"

@@ -7,7 +7,7 @@ tags: ["tarifa-plana", "autonomos", "seguridad-social", "cuotas", "nuevos-autono
 readingTime: 14
 featured: false
 editorPick: true
-coverImage: "/blog/tarifa-plana.png"
+coverImage: "/blog/tarifa-plana.webp"
 keyTakeaways:
   - "La tarifa plana en 2026 será de 80€/mes + MEI (0,9%), resultando en aproximadamente 88,72€/mes reales durante los primeros 12 meses"
   - "Debes llevar 2 años sin alta como autónomo (3 años si ya usaste la tarifa plana antes) y no tener deudas con Hacienda ni Seguridad Social"

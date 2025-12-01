@@ -7,7 +7,7 @@ tags: ["analisis", "productividad", "automatizacion", "gestion-tiempo"]
 readingTime: 12
 featured: true
 editorPick: true
-coverImage: "/blog/analisis-autonomos-tiempo.png"
+coverImage: "/blog/analisis-autonomos-tiempo.webp"
 keyTakeaways:
   - "El 82% de autónomos pierde 10+ horas mensuales en tareas administrativas que podrían automatizarse completamente."
   - "Gestionar facturas manualmente cuesta 11.8 horas al mes de media, equivalente a 300-500€ en tiempo perdido según tu tarifa."
@@ -31,7 +31,7 @@ Lo que Marta no había calculado nunca eran las interrupciones. "A veces estoy d
 
 Cuando contamos estas interrupciones a lo largo del mes, sumando el tiempo directo más el tiempo de recuperación del flow, descubrimos que **Marta estaba perdiendo 14 horas productivas cada mes**. Son 14 horas que podría estar diseñando, creando, facturando a sus clientes. A su tarifa de 25€ por hora, eso equivale a **350€ mensuales** que literalmente se evaporan en tareas administrativas.
 
-![Análisis del tiempo perdido en tareas administrativas](/blog/tiempo-perdido-grafico.png)
+![Análisis del tiempo perdido en tareas administrativas](/blog/tiempo-perdido-grafico.webp)
 *Desglose mensual del tiempo perdido por Marta en tareas administrativas*
 
 ---
@@ -66,7 +66,7 @@ Después de implementar Invoo, el cambio fue radical. Crear facturas ahora le to
 
 A su tarifa de 40€ por hora, eso se traduce en **3.072€ anuales** en valor de tiempo recuperado. "Es como si me hubieran dado un aumento," me escribió Carlos semanas después. "Pero sin tener que negociar con nadie."
 
-![Comparativa antes y después de automatizar](/blog/antes-despues-automatizacion.png)
+![Comparativa antes y después de automatizar](/blog/antes-despues-automatizacion.webp)
 *Impacto real de la automatización en las horas productivas de Carlos*
 
 ---
@@ -135,7 +135,7 @@ Los mejores sistemas les permitían [compartir datos directamente con su gestor�
 
 Cuando automatizas, obtienes algo que el Excel nunca te dio: visibilidad inmediata. ¿Cuánto he facturado este mes? ¿cuánto tengo pendiente de cobro? ¿cuáles son mis mejores clientes por volumen de facturación? ¿qué meses son más fuertes y cuáles más débiles? Estas respuestas deberían estar a un vistazo de distancia, no a dos horas de análisis de Excel. Esta información te permite tomar mejores decisiones de negocio: cuándo puedes permitirte un gasto, cuándo necesitas empujar ventas, qué clientes merecen más atención, cuándo es seguro tomarte vacaciones.
 
-![Dashboard de control financiero](/blog/dashboard-control-financiero.png)
+![Dashboard de control financiero](/blog/dashboard-control-financiero.webp)
 *Vista en tiempo real de facturación y cobros pendientes*
 
 ---

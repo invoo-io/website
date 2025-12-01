@@ -7,7 +7,7 @@ tags: ["modelo-303", "modelo-130", "iva", "irpf", "impuestos-autonomos", "hacien
 readingTime: 9
 featured: false
 editorPick: false
-coverImage: "/blog/modelo303-modelo130.png"
+coverImage: "/blog/modelo303-modelo130.webp"
 keyTakeaways:
   - "El Modelo 303 es obligatorio para todos los autónomos con IVA. El Modelo 130 solo si menos del 70% de tus ingresos tienen retención."
   - "Concepto clave: 303 es dinero que nunca fue tuyo (IVA). 130 es un adelanto de TUS impuestos (IRPF)."

@@ -7,7 +7,7 @@ tags: ["deducciones-fiscales", "autonomos", "irpf", "ahorro-fiscal", "impuestos"
 readingTime: 9
 featured: true
 editorPick: true
-coverImage: "/blog/deducciones-fiscales.png"
+coverImage: "/blog/deducciones-fiscales.webp"
 keyTakeaways:
   - "El autónomo medio podría ahorrar entre 2.000€ y 4.000€ al año aplicando correctamente todas las deducciones disponibles"
   - "La cuota de autónomos (€2.400-18.500€/año según ingresos) es 100% deducible pero muchos no la declaran completa"

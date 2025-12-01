@@ -7,7 +7,7 @@ tags: ["irpf", "retenciones", "facturacion", "autonomos", "fiscalidad"]
 readingTime: 12
 featured: false
 editorPick: false
-coverImage: "/blog/calculo-irpf.png"
+coverImage: "/blog/calculo-irpf.webp"
 keyTakeaways:
   - "El tipo general de retención IRPF es 15%, pero los nuevos profesionales pueden aplicar 7% durante 3 ejercicios fiscales"
   - "Para usar el 7% debes comunicarlo POR ESCRITO a cada cliente antes de emitir la factura, y el cliente debe conservar esa comunicación firmada"

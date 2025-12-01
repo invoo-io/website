@@ -7,7 +7,7 @@ tags: ["software-facturacion", "precios", "analisis", "autonomos", "verifactu"]
 readingTime: 9
 featured: true
 editorPick: true
-coverImage: "/blog/software-facturacion-precio-europa.png"
+coverImage: "/blog/software-facturacion-precio-europa.webp"
 keyTakeaways:
   - "El software de facturación español cuesta €30-100/mes vs €0-15 en Europa (300-500% más caro)"
   - "Los costes justificados (Verifactu, complejidad fiscal) explican €12-18/mes del precio"
@@ -143,7 +143,7 @@ Muchas gestorías tienen acuerdos con ciertos softwares y reciben comisión. Es 
 
 ## La alternativa: software enfocado sin bundling
 
-![Análisis del tiempo perdido en tareas administrativas](/blog/dashboard-control-financiero.png)
+![Análisis del tiempo perdido en tareas administrativas](/blog/dashboard-control-financiero.webp)
 *Invoo.es*
 
 Invoo nació precisamente para romper este modelo. Nuestra tesis es simple:

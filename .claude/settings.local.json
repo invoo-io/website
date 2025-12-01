@@ -50,7 +50,15 @@
       "Bash(npm --version)",
       "Bash(npm ls:*)",
       "Bash(npm audit:*)",
-      "Bash(npm run build:vercel:*)"
+      "Bash(npm run build:vercel:*)",
+      "Bash(for f in hero-bck-light.png hero-bck-dark.png hero-bck.png Bck-Main.png)",
+      "Bash(do)",
+      "Bash(if [ -f \"$f\" ])",
+      "Bash(then)",
+      "Bash(cwebp:*)",
+      "Bash(echo:*)",
+      "Bash(fi)",
+      "Bash(for:*)"
     ],
     "deny": [],
     "ask": []

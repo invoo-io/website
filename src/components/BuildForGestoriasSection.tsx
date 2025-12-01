@@ -51,7 +51,7 @@ export default function BuildForGestoriasSection({
 
   // Use provided imageSrc or determine based on theme for Gestoria image
   const themedImageSrc = imageSrc ||
-    (mounted && theme === "dark" ? "/gestoria-dark.png" : "/gestoria-light.png");
+    (mounted && theme === "dark" ? "/gestoria-dark.webp" : "/gestoria-light.webp");
   const textContent = (
     <div className="max-w-full max-md:text-center" style={{ width: '500px' }}>
       <h2 className="text-section-title-emphasized text-primary mb-6">
