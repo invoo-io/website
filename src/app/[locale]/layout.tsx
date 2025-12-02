@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
+import { Analytics } from "@vercel/analytics/next";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -97,6 +98,7 @@ export default async function RootLayout({
         className={`${inter.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <Analytics />
           <GoogleAnalytics />
           <NextIntlClientProvider messages={messages}>
             {children}
