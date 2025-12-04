@@ -38,6 +38,7 @@ export default function Navigation({ locale }: NavigationProps) {
 
   const services = [
     { name: t('freelancers'), href: getBasePath(`/${locale}/freelancers`) },
+    { name: t('pymes'), href: getBasePath(`/${locale}/pymes`) },
     { name: t('gestorias'), href: getBasePath(`/${locale}/gestorias`) },
   ];
 

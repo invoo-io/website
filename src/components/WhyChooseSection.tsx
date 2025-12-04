@@ -25,9 +25,19 @@ export default function WhyChooseSection() {
       description: t("card2.description")
     },
     {
-      image: getImagePath("/personbook.png"),
+      image: getImagePath("/Calendar.png"),
       title: t("card3.title"),
       description: t("card3.description")
+    },
+    {
+      image: getImagePath("/personbook.png"),
+      title: t("card4.title"),
+      description: t("card4.description")
+    },
+    {
+      image: getImagePath("/Note.png"),
+      title: t("card5.title"),
+      description: t("card5.description")
     }
   ];
 
@@ -47,10 +57,12 @@ export default function WhyChooseSection() {
         })()}
       </h2>
 
-      {/* Features Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-16">
-        {features.map((feature, index) => (
-          <div key={index} className="flex flex-col items-center text-center bg-background-secondary rounded-3xl p-8">
+      {/* Features Grid - First row: 3 cards, Second row: 2 cards centered */}
+      <div className="max-w-7xl mx-auto mb-16">
+        {/* First row - 3 cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          {features.slice(0, 3).map((feature, index) => (
+            <div key={index} className="flex flex-col items-center text-center bg-background-secondary rounded-3xl p-8">
             {/* Image */}
             <div className="mb-6">
               <Image
@@ -72,7 +84,36 @@ export default function WhyChooseSection() {
               {feature.description}
             </p>
           </div>
-        ))}
+          ))}
+        </div>
+
+        {/* Second row - 2 cards centered */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {features.slice(3, 5).map((feature, index) => (
+            <div key={index + 3} className="flex flex-col items-center text-center bg-background-secondary rounded-3xl p-8">
+            {/* Image */}
+            <div className="mb-6">
+              <Image
+                src={feature.image}
+                alt={feature.title}
+                width={100}
+                height={100}
+                className="object-contain"
+              />
+            </div>
+
+            {/* Title */}
+            <h3 className="text-title2-emphasized text-primary mb-3">
+              {feature.title}
+            </h3>
+
+            {/* Description */}
+            <p className="text-body text-secondary max-w-xs">
+              {feature.description}
+            </p>
+          </div>
+          ))}
+        </div>
       </div>
 
       {/* Buttons */}

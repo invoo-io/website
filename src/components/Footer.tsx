@@ -66,6 +66,7 @@ export default function Footer({ locale }: FooterProps) {
             </h3>
             <ul className="list-none p-0 flex flex-col gap-4">
               <li><Link href={getBasePath(`/${locale}/freelancers`)} className="text-callout no-underline text-secondary hover:text-primary transition-colors">{t("forFreelancers")}</Link></li>
+              <li><Link href={getBasePath(`/${locale}/pymes`)} className="text-callout no-underline text-secondary hover:text-primary transition-colors">{t("forPymes")}</Link></li>
               <li><Link href={getBasePath(`/${locale}/gestorias`)} className="text-callout no-underline text-secondary hover:text-primary transition-colors">{t("forGestorias")}</Link></li>
               <li><Link href={getBasePath(`/${locale}/pricing`)} className="text-callout no-underline text-secondary hover:text-primary transition-colors">{t("pricing")}</Link></li>
             </ul>

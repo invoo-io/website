@@ -1,0 +1,116 @@
+import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import HeroImageSection from "@/components/HeroImageSection";
+import BuildForGestoriasSection from "@/components/BuildForGestoriasSection";
+import FocusSection from "@/components/FocusSection";
+import Footer from "@/components/Footer";
+import GradientText from "@/components/ui/GradientText";
+import { generatePageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pymesPage" });
+
+  return generatePageMetadata({
+    locale,
+    path: "/pymes",
+    title: t("metadata.title"),
+    description: t("metadata.description"),
+  });
+}
+
+export default async function PymesPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const t = await getTranslations({ locale, namespace: "pymesPage" });
+
+  // Split title for gradient: "Facturación " + "en equipo" (or EN: "Team " + "invoicing")
+  const titleParts = t("header.title").split(" ");
+  const firstPart = titleParts[0]; // "Facturación" or "Team"
+  const secondPart = titleParts.slice(1).join(" "); // "en equipo" or "invoicing"
+
+  return (
+    <div className="min-h-screen bg-background-primary">
+      <Navigation locale={locale} />
+      <HeroSection
+        title={
+          <>
+            <span className="text-primary">{firstPart} </span>
+            <GradientText>{secondPart}</GradientText>
+          </>
+        }
+        paragraph={t("header.description")}
+        buttonText={t("header.cta")}
+        buttonHref="#waitlist"
+      />
+      <HeroImageSection imageBaseName="freelancer" dashboardAlt="PYMES Dashboard" />
+      <BuildForGestoriasSection
+        imageSrc="/clock.png"
+        imageWidth={350}
+        imageHeight={350}
+        offsetImage={false}
+        maxImageWidth={160}
+        title={t("block1.title")}
+        paragraph={t("block1.description")}
+        features={t.raw("block1.features")}
+        buttonText={t("block1.cta")}
+        buttonHref="#waitlist"
+      />
+      <BuildForGestoriasSection
+        imageSrc="/Doc.png"
+        imageWidth={350}
+        imageHeight={350}
+        offsetImage={false}
+        maxImageWidth={160}
+        title={t("block2.title")}
+        paragraph={t("block2.description")}
+        features={t.raw("block2.features")}
+        buttonText={t("block2.cta")}
+        buttonHref="#waitlist"
+        imagePosition="left"
+        showImagePlaceholder={true}
+      />
+      <BuildForGestoriasSection
+        imageSrc="/Screen.png"
+        imageWidth={350}
+        imageHeight={350}
+        offsetImage={false}
+        maxImageWidth={160}
+        title={t("block3.title")}
+        paragraph={t("block3.description")}
+        features={t.raw("block3.features")}
+        buttonText={t("block3.cta")}
+        buttonHref="#waitlist"
+        imagePosition="right"
+        showImagePlaceholder={true}
+      />
+      <BuildForGestoriasSection
+        imageSrc="/Book.png"
+        imageWidth={350}
+        imageHeight={350}
+        offsetImage={false}
+        maxImageWidth={160}
+        title={t("block4.title")}
+        paragraph={t("block4.description")}
+        features={t.raw("block4.features")}
+        buttonText={t("block4.cta")}
+        buttonHref="#waitlist"
+        imagePosition="left"
+        showImagePlaceholder={true}
+      />
+      <FocusSection />
+      <Footer locale={locale} />
+    </div>
+  );
+}
