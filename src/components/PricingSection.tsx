@@ -12,8 +12,7 @@ export default function PricingSection() {
   const t = useTranslations("pricingPage");
   const params = useParams();
   const locale = params.locale as string;
-  const [activeTab, setActiveTab] = useState<"freelancer" | "gestoria">("freelancer");
-  const [isAnnual, setIsAnnual] = useState(false);
+  const [activeTab, setActiveTab] = useState<"autonomos" | "pymes" | "gestoria">("autonomos");
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   // Split title at the period to apply gradient
@@ -40,16 +39,30 @@ export default function PricingSection() {
       {/* Tab Switcher */}
       <div className="flex gap-10 mb-16 border-b border-strokes-primary relative">
         <button
-          onClick={() => setActiveTab("freelancer")}
+          onClick={() => setActiveTab("autonomos")}
           className="text-callout-emphasized px-1 py-3 cursor-pointer relative transition-colors"
           style={{
             background: 'none',
             border: 'none',
-            color: activeTab === "freelancer" ? 'var(--label-primary)' : 'var(--label-secondary)'
+            color: activeTab === "autonomos" ? 'var(--label-primary)' : 'var(--label-secondary)'
           }}
         >
-          {t("tabs.freelancer")}
-          {activeTab === "freelancer" && (
+          {t("tabs.autonomos")}
+          {activeTab === "autonomos" && (
+            <div className="absolute -bottom-px left-0 right-0 h-0.5 rounded-sm" style={{ background: 'var(--accent-blue-main)' }} />
+          )}
+        </button>
+        <button
+          onClick={() => setActiveTab("pymes")}
+          className="text-callout-emphasized px-1 py-3 cursor-pointer relative transition-colors"
+          style={{
+            background: 'none',
+            border: 'none',
+            color: activeTab === "pymes" ? 'var(--label-primary)' : 'var(--label-secondary)'
+          }}
+        >
+          {t("tabs.pymes")}
+          {activeTab === "pymes" && (
             <div className="absolute -bottom-px left-0 right-0 h-0.5 rounded-sm" style={{ background: 'var(--accent-blue-main)' }} />
           )}
         </button>
@@ -72,87 +85,101 @@ export default function PricingSection() {
       {/* Pricing Cards */}
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))',
+        gridTemplateColumns: activeTab === "pymes" ? 'repeat(auto-fit, minmax(320px, 1fr))' : 'repeat(auto-fit, minmax(350px, 1fr))',
         gap: '32px',
-        maxWidth: '900px',
+        maxWidth: activeTab === "pymes" ? '1200px' : '900px',
         width: '100%'
       }}>
-        {activeTab === "freelancer" ? (
+        {activeTab === "autonomos" && (
           <>
-            {/* Free Plan */}
+            {/* Autónomos Free Plan */}
             <PricingCard
-              title={t("freelancer.free.title")}
-              description={t("freelancer.free.description")}
-              price={t("freelancer.free.price")}
-              period={t("freelancer.free.period")}
-              subtitle={t("freelancer.free.badge")}
-              buttonText={t("freelancer.free.cta")}
+              title={t("autonomos.free.title")}
+              description={t("autonomos.free.description")}
+              price={t("autonomos.free.price")}
+              period={t("autonomos.free.period")}
+              subtitle={t("autonomos.free.badge")}
+              buttonText={t("autonomos.free.cta")}
               buttonVariant="gradient"
               buttonOnClick={() => setDrawerOpen(true)}
-              features={t.raw("freelancer.free.features")}
+              features={t.raw("autonomos.free.features")}
             />
 
-            {/* Pro Plan */}
+            {/* Autónomos Pro Plan */}
             <PricingCard
-              title={t("freelancer.pro.title")}
-              description={t("freelancer.pro.description")}
-              price={isAnnual ? t("freelancer.pro.priceAnnual") : t("freelancer.pro.priceMonthly")}
-              period={t("freelancer.pro.period")}
-              badge={t("freelancer.pro.badgeMonthly")}
+              title={t("autonomos.pro.title")}
+              description={t("autonomos.pro.description")}
+              price={t("autonomos.pro.price")}
+              regularPrice={t("autonomos.pro.regularPrice")}
+              savingsText={t("autonomos.pro.savingsText")}
+              period={t("autonomos.pro.period")}
+              badge={t("autonomos.pro.badge")}
               badgeColor="#22C55E"
-              subtitle={
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <label style={{
-                    position: 'relative',
-                    display: 'inline-block',
-                    width: '44px',
-                    height: '24px'
-                  }}>
-                    <input
-                      type="checkbox"
-                      checked={isAnnual}
-                      onChange={(e) => setIsAnnual(e.target.checked)}
-                      style={{ opacity: 0, width: 0, height: 0 }}
-                    />
-                    <span style={{
-                      position: 'absolute',
-                      cursor: 'pointer',
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      backgroundColor: isAnnual ? 'var(--accent-green-main)' : 'var(--fills-tertiary)',
-                      transition: '0.4s',
-                      borderRadius: '24px'
-                    }}>
-                      <span style={{
-                        position: 'absolute',
-                        content: '',
-                        height: '18px',
-                        width: '18px',
-                        left: isAnnual ? '23px' : '3px',
-                        bottom: '3px',
-                        backgroundColor: 'var(--label-primary)',
-                        transition: '0.4s',
-                        borderRadius: '50%'
-                      }} />
-                    </span>
-                  </label>
-                  <span className="text-footnote text-secondary">
-                    {t("freelancer.pro.toggle")} {isAnnual && <span className="text-accent-green-main">{t("freelancer.pro.toggleSave")}</span>}
-                  </span>
-                </div>
-              }
-              buttonText={t("freelancer.pro.cta")}
+              subtitle={t("autonomos.pro.subtitle")}
+              buttonText={t("autonomos.pro.cta")}
               buttonVariant="gradient"
               buttonOnClick={() => setDrawerOpen(true)}
-              features={t.raw("freelancer.pro.features")}
+              features={t.raw("autonomos.pro.features")}
               isHighlighted={true}
             />
           </>
-        ) : (
+        )}
+
+        {activeTab === "pymes" && (
           <>
-            {/* Gestoria Free Plan */}
+            {/* Pymes Free Plan */}
+            <PricingCard
+              title={t("pymes.free.title")}
+              description={t("pymes.free.description")}
+              price={t("pymes.free.price")}
+              period={t("pymes.free.period")}
+              subtitle={t("pymes.free.badge")}
+              buttonText={t("pymes.free.cta")}
+              buttonVariant="gradient"
+              buttonOnClick={() => setDrawerOpen(true)}
+              features={t.raw("pymes.free.features")}
+            />
+
+            {/* Pymes Pro Plan */}
+            <PricingCard
+              title={t("pymes.pro.title")}
+              description={t("pymes.pro.description")}
+              price={t("pymes.pro.price")}
+              regularPrice={t("pymes.pro.regularPrice")}
+              savingsText={t("pymes.pro.savingsText")}
+              period={t("pymes.pro.period")}
+              badge={t("pymes.pro.badge")}
+              badgeColor="#22C55E"
+              subtitle={t("pymes.pro.subtitle")}
+              buttonText={t("pymes.pro.cta")}
+              buttonVariant="gradient"
+              buttonOnClick={() => setDrawerOpen(true)}
+              features={t.raw("pymes.pro.features")}
+              isHighlighted={true}
+            />
+
+            {/* Pymes Premium Plan */}
+            <PricingCard
+              title={t("pymes.premium.title")}
+              description={t("pymes.premium.description")}
+              price={t("pymes.premium.price")}
+              regularPrice={t("pymes.premium.regularPrice")}
+              savingsText={t("pymes.premium.savingsText")}
+              period={t("pymes.premium.period")}
+              badge={t("pymes.premium.badge")}
+              badgeColor="#22C55E"
+              subtitle={t("pymes.premium.subtitle")}
+              buttonText={t("pymes.premium.cta")}
+              buttonVariant="gradient"
+              buttonOnClick={() => setDrawerOpen(true)}
+              features={t.raw("pymes.premium.features")}
+            />
+          </>
+        )}
+
+        {activeTab === "gestoria" && (
+          <>
+            {/* Gestoría Free Plan */}
             <PricingCard
               title={t("gestoria.free.title")}
               description={t("gestoria.free.description")}
@@ -165,7 +192,7 @@ export default function PricingSection() {
               features={t.raw("gestoria.free.features")}
             />
 
-            {/* Enterprise Plan */}
+            {/* Gestoría Enterprise Plan */}
             <PricingCard
               title={t("gestoria.enterprise.title")}
               description={t("gestoria.enterprise.description")}
