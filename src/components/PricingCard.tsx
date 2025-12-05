@@ -7,6 +7,8 @@ interface PricingCardProps {
   title: string;
   description?: string;
   price: string;
+  regularPrice?: string;
+  savingsText?: string;
   period?: string;
   badge?: string;
   badgeColor?: string;
@@ -23,6 +25,8 @@ export default function PricingCard({
   title,
   description,
   price,
+  regularPrice,
+  savingsText,
   period,
   badge,
   badgeColor,
@@ -54,6 +58,20 @@ export default function PricingCard({
         )}
 
         <div className="mb-6">
+          {badge && (
+            <div className="mb-3">
+              <span
+                className="text-footnote-emphasized px-3 py-1 rounded-full inline-block"
+                style={{
+                  backgroundColor: badgeColor || 'var(--accent-green-main)',
+                  color: 'white'
+                }}
+              >
+                {badge}
+              </span>
+            </div>
+          )}
+
           <div className="flex items-baseline gap-2">
             <span className="text-large-title-emphasized text-primary" style={{ fontSize: '48px', fontWeight: 700 }}>
               {price}
@@ -63,15 +81,21 @@ export default function PricingCard({
                 {period}
               </span>
             )}
-            {badge && (
-              <span className="text-footnote-emphasized ml-2 text-accent-green-main">
-                {badge}
-              </span>
-            )}
           </div>
 
+          {regularPrice && (
+            <div className="mt-2 text-footnote text-secondary">
+              <span className="line-through">{regularPrice}</span>
+              {savingsText && (
+                <span className="ml-2 text-accent-green-main font-semibold">
+                  {savingsText}
+                </span>
+              )}
+            </div>
+          )}
+
           {subtitle && (
-            <div className="text-footnote mt-2 text-secondary">
+            <div className="text-footnote mt-3 text-secondary">
               {subtitle}
             </div>
           )}

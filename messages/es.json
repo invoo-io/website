@@ -16,6 +16,7 @@
     "themeToggleLightMode": "Cambiar a modo claro",
     "themeToggleDarkMode": "Cambiar a modo oscuro",
     "freelancers": "Autónomos",
+    "pymes": "Pymes",
     "gestorias": "Gestorías",
     "faq": "Preguntas Frecuentes",
     "blog": "Blog",
@@ -121,6 +122,57 @@
       "cta": "Únete a la lista de espera"
     }
   },
+  "pymesPage": {
+    "metadata": {
+      "title": "Software Facturación para Pymes | Invoo",
+      "description": "Software de facturación para pymes con colaboración en equipo. Gestión multiusuario, Verifactu integrado, y dashboard para tu gestoría. Prueba gratis."
+    },
+    "header": {
+      "title": "Facturación en equipo",
+      "description": "Software colaborativo con Verifactu integrado. Gestiona permisos, comparte con tu gestoría, y factura sin límites con tu equipo",
+      "cta": "Únete a la lista de espera"
+    },
+    "block1": {
+      "title": "Tu equipo, facturando juntos",
+      "description": "Factura con varios usuarios simultáneamente, asigna roles personalizados y mantén el control total sin bloqueos ni conflictos",
+      "features": [
+        "2-4 usuarios según tu plan",
+        "Roles: Admin, Editor, Solo lectura",
+        "Cambios sincronizados al instante"
+      ],
+      "cta": "Únete a la lista de espera"
+    },
+    "block2": {
+      "title": "Cumplimiento automático con Verifactu",
+      "description": "Cada factura genera el QR oficial y se envía a AEAT automáticamente. Trazabilidad completa para auditorías sin preocupaciones",
+      "features": [
+        "QR oficial en cada factura",
+        "Envío automático a AEAT",
+        "Registro de auditoría completo"
+      ],
+      "cta": "Únete a la lista de espera"
+    },
+    "block3": {
+      "title": "Tu gestoría accede cuando quiera",
+      "description": "Dashboard en tiempo real sin coste adicional. Exportaciones CSV listas y resúmenes trimestrales para contabilizar en segundos",
+      "features": [
+        "Dashboard en tiempo real sin coste",
+        "Exportaciones CSV listas para contabilizar",
+        "Resúmenes Modelo 130/303"
+      ],
+      "cta": "Únete a la lista de espera"
+    },
+    "block4": {
+      "title": "Crece sin complicaciones",
+      "description": "Añade usuarios con un clic, facturación ilimitada siempre, y escala tu negocio sin cambiar de software ni contratos de permanencia",
+      "features": [
+        "De 2 a 4 usuarios con un clic",
+        "Facturación ilimitada siempre",
+        "Sin contratos de permanencia"
+      ],
+      "cta": "Únete a la lista de espera"
+    }
+  },
   "gestoriasPage": {
     "metadata": {
       "title": "Facturación para Gestorías",
@@ -188,7 +240,7 @@
   },
   "finalCta": {
     "title": "Enfócate en tu trabajo. Nosotros nos encargamos del papeleo.",
-    "button": "Crea tu cuenta gratis"
+    "button": "Únete a la lista de espera"
   },
   "footer": {
     "company": "Plataforma moderna de gestión de facturas para empresas",
@@ -688,61 +740,96 @@
     "title": "Precios",
     "description": "Precios simples y justos para autónomos y gestorías. Elige el plan que mejor se adapte a tus necesidades.",
     "header": {
-      "title": "Precios simples. Sin sorpresas",
-      "description": "Elige el plan que se ajuste a tus necesidades. Cambia cuando quieras. Cancela cuando quieras"
+      "title": "Precios simples. Funciones potentes",
+      "description": "Elige el plan que se ajuste a tu negocio. Cambia de plan cuando quieras"
     },
     "tabs": {
-      "freelancer": "Autónomos and PYME",
-      "gestoria": "Gestoría"
+      "autonomos": "Autónomos",
+      "pymes": "Pymes",
+      "gestoria": "Gestorías"
     },
-    "freelancer": {
+    "autonomos": {
       "free": {
         "title": "Gratis",
-        "description": "Perfecto para probar Invoo sin compromiso",
+        "description": "Prueba la facturación profesional sin riesgo. Perfecto para probar Invoo o facturación de bajo volumen",
         "price": "0€",
-        "period": "al mes",
+        "period": "/mes",
         "badge": "Gratis Para Siempre",
         "cta": "Únete a la lista de espera",
-        "features": ["Facturas ilimitadas", "50 MB almacenamiento de gastos"]
+        "features": ["3 facturas al mes", "Flujo presupuesto a factura", "Catálogo de servicios", "Base de datos de clientes", "Soporte por email"]
       },
       "pro": {
         "title": "Pro",
-        "description": "Todo lo que necesitas para cumplir normativas y conectar con tu gestoría",
-        "priceMonthly": "10,90€",
-        "priceAnnual": "9,08€",
-        "period": "al mes",
-        "badgeMonthly": "7 días - Prueba gratis",
-        "badgeAnnual": "¡Ahorra 2 meses!",
-        "toggle": "Anual",
-        "toggleSave": "¡Ahorra 2 meses!",
+        "description": "Todo lo que necesitas para gestionar tu negocio freelance. Facturación ilimitada, gastos y colaboración con gestoría",
+        "price": "5,45€",
+        "regularPrice": "10,90€",
+        "period": "/mes",
+        "badge": "Primeros 100 usuarios",
+        "subtitle": "Prueba gratis de 7 días, sin tarjeta de crédito",
+        "savingsText": "Ahorra 50% para siempre",
         "cta": "Únete a la lista de espera",
-        "features": ["Facturas ilimitadas", "Registro de gastos (tickets ilimitados)", "QR Verifactu + envío a Hacienda", "Modelo 130 y 303 pre-calculados", "Exportación CSV en un clic", "Acceso panel para tu gestoría"]
+        "features": ["Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Envío de facturas por email", "Soporte prioritario por email"]
+      }
+    },
+    "pymes": {
+      "free": {
+        "title": "Gratis",
+        "description": "Prueba la facturación en equipo antes de comprometerte. Un usuario, 3 facturas al mes, sin riesgo",
+        "price": "0€",
+        "period": "/mes",
+        "badge": "Gratis Para Siempre",
+        "cta": "Únete a la lista de espera",
+        "features": ["3 facturas al mes", "1 usuario", "Flujo presupuesto a factura", "Catálogo de servicios", "Base de datos de clientes", "Soporte por email"]
+      },
+      "pro": {
+        "title": "Pro",
+        "description": "Facturación en equipo sin complicaciones. Dos usuarios, facturas ilimitadas, integración perfecta con gestoría",
+        "price": "10,45€",
+        "regularPrice": "20,90€",
+        "period": "/mes",
+        "badge": "Primeros 100 usuarios",
+        "subtitle": "Prueba gratis de 7 días, sin tarjeta de crédito",
+        "savingsText": "Ahorra 50% para siempre",
+        "cta": "Únete a la lista de espera",
+        "features": ["2 usuarios (colaboración en equipo)", "Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Permisos y roles de usuario", "Soporte prioritario por email"]
+      },
+      "premium": {
+        "title": "Premium",
+        "description": "Escala tu equipo sin esfuerzo. Cuatro usuarios, facturas ilimitadas, funciones completas de colaboración",
+        "price": "20,45€",
+        "regularPrice": "40,90€",
+        "period": "/mes",
+        "badge": "Primeros 100 usuarios",
+        "subtitle": "Prueba gratis de 7 días, sin tarjeta de crédito",
+        "savingsText": "Ahorra 50% para siempre",
+        "cta": "Únete a la lista de espera",
+        "features": ["4 usuarios (colaboración en equipo)", "Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Permisos y roles de usuario", "Soporte prioritario por email"]
       }
     },
     "gestoria": {
       "free": {
         "title": "Gratis",
-        "description": "Ofrece facturación moderna a tus clientes, recibe datos organizados en tiempo real",
+        "description": "Acceso en tiempo real a facturas y gastos de clientes. Sin coste, clientes ilimitados",
         "price": "0€",
-        "period": "al mes",
+        "period": "/mes",
         "badge": "Gratis Para Siempre",
         "cta": "Contáctanos",
-        "features": ["Clientes ilimitados", "Sincronización facturas/gastos", "Exportación CSV", "Resúmenes trimestrales", "Notificaciones de nuevos datos"]
+        "features": ["Clientes ilimitados", "Sincronización de facturas/gastos en tiempo real", "Exportación CSV en un clic", "Resúmenes trimestrales", "Notificaciones de nueva actividad"]
       },
       "enterprise": {
         "title": "Enterprise",
-        "description": "Construyamos juntos. Flujos de trabajo y paneles personalizados para tu gestoría",
-        "price": "Facturación Flexible",
-        "badge": "Planes Personalizados",
+        "description": "Soluciones personalizadas para tu despacho. Opciones white-label, acceso API y soporte dedicado",
+        "price": "Precio Personalizado",
+        "badge": "Contactar Ventas",
         "cta": "Contáctanos",
-        "features": ["Todo lo del plan Gratis incluido", "Funciones e integraciones personalizadas", "Cobertura completa del flujo de trabajo", "Soporte prioritario", "Integraciones API/ERP"]
+        "features": ["Todo lo del plan Gratis incluido", "Cuentas de clientes ilimitadas", "Vista de dashboard multicliente", "Opciones white-label", "Informes y analítica avanzados", "Acceso API para integraciones", "Soporte prioritario con gestor de cuenta dedicado", "Operaciones masivas entre clientes"]
       }
     }
   },
   "home": {
     "hero": {
       "title": "Crea facturas conformes en 30 segundos",
-      "description": "Invoo ayuda a autónomos, PYMES y gestorías a trabajar más rápido juntos: listo para Verifactu, PDFs profesionales, compartir instantáneo y resúmenes fiscales automáticos",
+      "description": "Invoo ayuda a autónomos, PYMES y gestorías a trabajar más rápido juntos: listo para Verifactu y TicketBAI, UX intuitiva, flujo de presupuesto a factura, módulo de descuentos y dashboard en vivo para tu gestoría",
       "cta": "Únete a la lista de espera"
     },
     "featuredBlog": {
@@ -753,15 +840,23 @@
       "title": "Por qué autónomos, PYMES y gestorías eligen Invoo",
       "card1": {
         "title": "Ahorra tiempo",
-        "description": "Crea y envía facturas en 30 segundos, sin Excel, sin Word"
+        "description": "Crea y envía facturas en 30 segundos, sin curva de aprendizaje"
       },
       "card2": {
         "title": "Siempre conforme",
-        "description": "Cumplimiento Verifactu automático con QR, sin estrés con Hacienda"
+        "description": "Cumplimiento automático con Verifactu y TicketBAI, sin estrés con Hacienda"
       },
       "card3": {
-        "title": "Gestoría-friendly",
-        "description": "Comparte facturas y gastos directamente con tu gestoría. Sin más reescribir"
+        "title": "Tu flujo de trabajo",
+        "description": "Convierte presupuestos en facturas al instante sin duplicar trabajo"
+      },
+      "card4": {
+        "title": "Clientes felices",
+        "description": "Aplica descuentos a nivel de partida para presupuestos flexibles y profesionales"
+      },
+      "card5": {
+        "title": "Colaboración en vivo",
+        "description": "Tu gestoría ve facturas y gastos en tiempo real desde su dashboard"
       },
       "cta1": "Gestoría",
       "cta2": "Autónomos y PYMES"
@@ -770,11 +865,11 @@
       "title": "Facturación simplificada",
       "step1": {
         "title": "Crea",
-        "description": "Introduce importe y cliente. Invoo genera tu factura profesional lista para Verifactu al instante"
+        "description": "Introduce importe, selecciona servicio y cliente, genera factura profesional lista para enviar"
       },
       "step2": {
         "title": "Envía",
-        "description": "La mandamos automáticamente a Hacienda (Verifactu), tu gestoría y tu cliente"
+        "description": "La mandamos automáticamente a Hacienda (Verifactu y TicketBAI), tu gestoría y tu cliente"
       },
       "step3": {
         "title": "Listo",
@@ -814,11 +909,11 @@
     },
     "focus": {
       "title": "Céntrate en tu trabajo. Nosotros nos encargamos del papeleo",
-      "description": "Únete a otros autónomos preparándose para Verifactu con una herramienta diseñada para España",
+      "description": "La herramienta de confianza de autónomos, pymes y gestorías que colaboran en tiempo real y recuperan horas cada semana con la plataforma de facturación más intuitiva de España.",
       "cta": "Únete a la lista de espera"
     },
     "footer": {
-      "description": "La plataforma de facturación amigable con gestorías que conecta autónomos, clientes y cumplimiento fiscal en un solo flujo",
+      "description": "Invoo ayuda a autónomos, PYMES y gestorías a trabajar más rápido juntos: listo para Verifactu y TicketBAI, UX intuitiva, flujo de presupuesto a factura, módulo de descuentos y dashboard en vivo para tu gestoría",
       "invooTitle": "Invoo",
       "aboutUs": "Sobre Nosotros",
       "terms": "Términos de Uso",
@@ -827,7 +922,8 @@
       "cookies": "Política de Cookies",
       "contact": "Contacto",
       "servicesTitle": "Servicios",
-      "forFreelancers": "Para Autónomos y PYMES",
+      "forFreelancers": "Para Autónomos",
+      "forPymes": "Para Pymes",
       "forGestorias": "Para Gestorías",
       "pricing": "Precios",
       "resourcesTitle": "Recursos",
@@ -838,7 +934,7 @@
   },
   "waitlist": {
     "title": "Únete a la lista de espera",
-    "description": "¡Regístrate para recibir notificaciones de nuestro lanzamiento! Los primeros 50 usuarios disfrutarán de 3 meses gratis.",
+    "description": "¡Regístrate para recibir notificaciones de nuestro lanzamiento! Los primeros 100 usuarios tendrán 50% de descuento para siempre.",
     "form": {
       "name": "Nombre",
       "email": "Email",

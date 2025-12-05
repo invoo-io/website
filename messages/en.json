@@ -16,6 +16,7 @@
     "themeToggleLightMode": "Switch to light mode",
     "themeToggleDarkMode": "Switch to dark mode",
     "freelancers": "Freelancers",
+    "pymes": "SMEs",
     "gestorias": "Accountants",
     "faq": "FAQ",
     "blog": "Blog",
@@ -121,6 +122,57 @@
       "cta": "Join the waiting list"
     }
   },
+  "pymesPage": {
+    "metadata": {
+      "title": "Team Invoicing Software for SMEs | Invoo",
+      "description": "Invoicing software for small businesses with team collaboration. Multi-user access, Verifactu compliance, and live gestoría dashboard. Try free."
+    },
+    "header": {
+      "title": "Team invoicing",
+      "description": "Collaborative software with integrated Verifactu. Manage permissions, share with your gestoría, and create unlimited invoices with your team",
+      "cta": "Join the waiting list"
+    },
+    "block1": {
+      "title": "Your team, invoicing together",
+      "description": "Invoice with multiple users simultaneously, assign custom roles, and maintain total control without blockages or conflicts",
+      "features": [
+        "2-4 users depending on your plan",
+        "Roles: Admin, Editor, Read-only",
+        "Changes synced instantly"
+      ],
+      "cta": "Join the waiting list"
+    },
+    "block2": {
+      "title": "Automatic Verifactu compliance",
+      "description": "Every invoice generates the official QR and is automatically submitted to AEAT. Complete traceability for audits without worries",
+      "features": [
+        "Official QR on every invoice",
+        "Automatic AEAT submission",
+        "Complete audit log"
+      ],
+      "cta": "Join the waiting list"
+    },
+    "block3": {
+      "title": "Your gestoría accesses whenever they want",
+      "description": "Real-time dashboard at no additional cost. CSV exports ready and quarterly summaries to process in seconds",
+      "features": [
+        "Real-time dashboard at no cost",
+        "CSV exports ready to process",
+        "Modelo 130/303 summaries"
+      ],
+      "cta": "Join the waiting list"
+    },
+    "block4": {
+      "title": "Grow without complications",
+      "description": "Add users with one click, unlimited invoicing always, and scale your business without changing software or lock-in contracts",
+      "features": [
+        "From 2 to 4 users with one click",
+        "Unlimited invoicing always",
+        "No lock-in contracts"
+      ],
+      "cta": "Join the waiting list"
+    }
+  },
   "gestoriasPage": {
     "metadata": {
       "title": "Invoicing for Accountants",
@@ -188,7 +240,7 @@
   },
   "finalCta": {
     "title": "Focus on your work. We'll handle the paperwork.",
-    "button": "Create your free account"
+    "button": "Join the waiting list"
   },
   "footer": {
     "company": "Modern invoice management platform for businesses",
@@ -688,61 +740,96 @@
     "title": "Pricing",
     "description": "Simple, fair pricing for freelancers and accountants. Choose the plan that fits your needs.",
     "header": {
-      "title": "Simple pricing. No surprises",
-      "description": "Choose the plan that fits your needs. Switch anytime. Cancel anytime"
+      "title": "Simple pricing. Powerful features",
+      "description": "Choose the plan that fits your business. Upgrade or downgrade anytime"
     },
     "tabs": {
-      "freelancer": "Freelancer and SMBs",
-      "gestoria": "Accountants"
+      "autonomos": "Autónomos",
+      "pymes": "Pymes",
+      "gestoria": "Gestorías"
     },
-    "freelancer": {
+    "autonomos": {
       "free": {
         "title": "Free",
-        "description": "Perfect for testing Invoo without commitment",
+        "description": "Try professional invoicing risk-free. Perfect for testing Invoo or low-volume invoicing",
         "price": "€0",
-        "period": "per month",
+        "period": "/month",
         "badge": "Free Forever",
         "cta": "Join the waiting list",
-        "features": ["Unlimited invoices", "50 MB Expense uploads"]
+        "features": ["3 invoices per month", "Quote-to-invoice flow", "Service catalogue", "Client database", "Email support"]
       },
       "pro": {
         "title": "Pro",
-        "description": "Everything you need to stay compliant and connected with your accountant",
-        "priceMonthly": "€10.90",
-        "priceAnnual": "€9.08",
-        "period": "monthly",
-        "badgeMonthly": "7 day trial",
-        "badgeAnnual": "Save 2 months!",
-        "toggle": "Annual",
-        "toggleSave": "Save 2 months!",
+        "description": "Everything you need to run your freelance business. Unlimited invoicing, expenses, and gestoría collaboration",
+        "price": "€5.45",
+        "regularPrice": "€10.90",
+        "period": "/month",
+        "badge": "First 100 users",
+        "subtitle": "7-day free trial, no credit card required",
+        "savingsText": "Save 50% forever",
         "cta": "Join the waiting list",
-        "features": ["Unlimited invoices", "Expense tracking (unlimited receipts)", "Verifactu QR + AEAT submission", "Pre-calculated Modelo 130 & 303", "One-click CSV export", "Gestoría dashboard access"]
+        "features": ["Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "Email invoices to clients", "Priority email support"]
+      }
+    },
+    "pymes": {
+      "free": {
+        "title": "Free",
+        "description": "Test team invoicing before you commit. One user, 3 invoices per month, zero risk",
+        "price": "€0",
+        "period": "/month",
+        "badge": "Free Forever",
+        "cta": "Join the waiting list",
+        "features": ["3 invoices per month", "1 user", "Quote-to-invoice flow", "Service catalogue", "Client database", "Email support"]
+      },
+      "pro": {
+        "title": "Pro",
+        "description": "Team invoicing without the complexity. Two users, unlimited invoices, seamless gestoría integration",
+        "price": "€10.45",
+        "regularPrice": "€20.90",
+        "period": "/month",
+        "badge": "First 100 users",
+        "subtitle": "7-day free trial, no credit card required",
+        "savingsText": "Save 50% forever",
+        "cta": "Join the waiting list",
+        "features": ["2 users (team collaboration)", "Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "User permissions and roles", "Priority email support"]
+      },
+      "premium": {
+        "title": "Premium",
+        "description": "Scale your team effortlessly. Four users, unlimited invoices, full collaboration features",
+        "price": "€20.45",
+        "regularPrice": "€40.90",
+        "period": "/month",
+        "badge": "First 100 users",
+        "subtitle": "7-day free trial, no credit card required",
+        "savingsText": "Save 50% forever",
+        "cta": "Join the waiting list",
+        "features": ["4 users (team collaboration)", "Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "User permissions and roles", "Priority email support"]
       }
     },
     "gestoria": {
       "free": {
         "title": "Free",
-        "description": "Give your clients modern invoicing, get organised data in real-time",
+        "description": "Real-time access to client invoices and expenses. Zero cost, unlimited clients",
         "price": "€0",
-        "period": "per month",
+        "period": "/month",
         "badge": "Free Forever",
-        "cta": "Contact Us",
-        "features": ["Unlimited clients", "Invoice/expense sync", "CSV export", "Quarterly summaries", "Notifications for new data"]
+        "cta": "Contact us",
+        "features": ["Unlimited clients", "Real-time invoice/expense sync", "One-click CSV export", "Quarterly summaries", "Notifications for new activity"]
       },
       "enterprise": {
         "title": "Enterprise",
-        "description": "Let's build together. Custom workflows and dashboards tailored to your gestoría",
-        "price": "Flexible Billing",
-        "badge": "Custom Plans",
-        "cta": "Contact Us",
-        "features": ["Everything in Free included", "Custom features & integrations", "Complete workflow coverage", "Priority support", "API/ERP integrations"]
+        "description": "Custom solutions for your accounting practice. White-label options, API access, and dedicated support",
+        "price": "Custom Pricing",
+        "badge": "Contact Sales",
+        "cta": "Contact us",
+        "features": ["Everything in Free included", "Unlimited client accounts", "Multi-client dashboard view", "White-label options", "Advanced reporting and analytics", "API access for integrations", "Priority support with dedicated account manager", "Bulk operations across clients"]
       }
     }
   },
   "home": {
     "hero": {
       "title": "Create compliant invoices in 30 seconds",
-      "description": "Invoo helps freelancers, SMBs and gestorías work faster together: Verifactu-ready, professional PDFs, instant sharing, and automatic tax summaries.",
+      "description": "Invoo helps freelancers, SMBs and gestorías work faster together: Verifactu and TicketBAI ready, intuitive UX, quote-to-invoice flow, discount module, and live dashboard for your accountant.",
       "cta": "Join the waiting list"
     },
     "featuredBlog": {
@@ -753,15 +840,23 @@
       "title": "Why freelancers, SMBs and gestorías choose Invoo",
       "card1": {
         "title": "Save time",
-        "description": "Create and send invoices in 30 seconds, no Excel, no Word templates"
+        "description": "Create and send invoices in 30 seconds with zero learning curve"
       },
       "card2": {
         "title": "Always compliant",
-        "description": "Automatic Verifactu compliance with QR codes, no stress with AEAT"
+        "description": "Automatic compliance with Verifactu and TicketBAI, stress-free with AEAT"
       },
       "card3": {
-        "title": "Gestoría-friendly",
-        "description": "Share invoices and expenses directly with your gestoría. No more retyping"
+        "title": "Your workflow",
+        "description": "Convert quotes to invoices instantly without duplicating work"
+      },
+      "card4": {
+        "title": "Happy clients",
+        "description": "Apply line-item discounts for flexible and professional quotes"
+      },
+      "card5": {
+        "title": "Live collaboration",
+        "description": "Your accountant sees invoices and expenses in real-time from their dashboard"
       },
       "cta1": "Accountant",
       "cta2": "Freelancers and SMBs"
@@ -770,11 +865,11 @@
       "title": "Invoicing made simple",
       "step1": {
         "title": "Create",
-        "description": "Enter amount and client. Invoo builds your professional, Verifactu-ready invoice instantly"
+        "description": "Enter amount, select service and client, generate professional invoice ready to send"
       },
       "step2": {
         "title": "Deliver",
-        "description": "We send it automatically to AEAT (Verifactu), your gestoría, and your client"
+        "description": "We send it automatically to AEAT (Verifactu and TicketBAI), your gestoría, and your client"
       },
       "step3": {
         "title": "Done",
@@ -814,11 +909,11 @@
     },
     "focus": {
       "title": "Focus on your work. We'll handle the paperwork",
-      "description": "Join other freelancers getting ready for Verifactu with a tool designed for Spain's autónomos",
+      "description": "Trusted by autónomos, pymes, and gestorías who collaborate in real-time and reclaim hours every week with Spain's most intuitive invoicing tool.",
       "cta": "Join the waiting list"
     },
     "footer": {
-      "description": "The gestoria-friendly invoicing platform that connects freelancers, clients, and tax compliance in one seamless flow",
+      "description": "Invoo helps freelancers, SMBs and gestorías work faster together: Verifactu and TicketBAI ready, intuitive UX, quote-to-invoice flow, discount module, and live dashboard for your accountant.",
       "invooTitle": "Invoo",
       "aboutUs": "About Us",
       "terms": "Terms of Use",
@@ -828,6 +923,7 @@
       "contact": "Contact",
       "servicesTitle": "Services",
       "forFreelancers": "For Freelancers",
+      "forPymes": "For SMEs",
       "forGestorias": "For Gestoría",
       "pricing": "Pricing",
       "resourcesTitle": "Resources",
@@ -838,7 +934,7 @@
   },
   "waitlist": {
     "title": "Join the waiting list",
-    "description": "Sign up to receive notifications for our launch! The first 50 users will enjoy 3 months free.",
+    "description": "Sign up to receive notifications for our launch! The first 100 users will get 50% off forever.",
     "form": {
       "name": "Name",
       "email": "Email",

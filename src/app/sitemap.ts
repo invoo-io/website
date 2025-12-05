@@ -18,6 +18,7 @@ const staticPages = [
   "/cookies",
   "/legal-notice",
   "/freelancers",
+  "/pymes",
   "/gestorias",
   "/verifactu",
 ];
