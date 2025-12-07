@@ -105,7 +105,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               {t("backToBlog")}
             </Button>
           </div>
-          <h1 className="hero-heading mb-8 text-primary">
+          <h1 className="text-header-title-emphasized mb-8 text-primary">
             {category.name}
           </h1>
           <p className="text-body mb-8 max-w-3xl mx-auto text-secondary">
