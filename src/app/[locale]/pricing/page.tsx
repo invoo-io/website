@@ -5,7 +5,7 @@ import PricingSection from "@/components/PricingSection";
 import Footer from "@/components/Footer";
 import { generatePageMetadata } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
-import { generateSoftwareApplicationSchema } from "@/lib/schema";
+import { generateWebApplicationSchema, generateProductSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -33,7 +33,8 @@ export default async function PricingPage({
 
   return (
     <>
-      <JsonLd data={generateSoftwareApplicationSchema(locale)} />
+      <JsonLd data={generateWebApplicationSchema(locale)} id="webapp-schema" />
+      <JsonLd data={generateProductSchema(locale)} id="product-schema" />
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
         <PricingSection />

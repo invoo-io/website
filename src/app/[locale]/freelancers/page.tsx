@@ -4,10 +4,14 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import HeroImageSection from "@/components/HeroImageSection";
 import BuildForGestoriasSection from "@/components/BuildForGestoriasSection";
+import IntroSection from "@/components/IntroSection";
+import FAQSection from "@/components/FAQSection";
 import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { generateWebApplicationSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -40,8 +44,25 @@ export default async function FreelancersPage({
   const firstPart = titleParts[0]; // "Invoicing" or "Facturación"
   const secondPart = titleParts.slice(1).join(" "); // "without stress" or "sin estrés"
 
+  // Generate WebApplication schema with freelancer audience targeting
+  const webAppSchema = generateWebApplicationSchema(locale);
+
+  // Generate FAQ schema for SEO
+  const faqData = t.raw("faq") as Record<string, { question: string; answer: string }>;
+  const faqQuestions = Object.values(faqData).map((faq) => ({
+    question: faq.question,
+    answer: faq.answer,
+  }));
+
+  const faqSchema = generateFAQPageSchemaStandalone({
+    locale,
+    questions: faqQuestions,
+  });
+
   return (
     <div className="min-h-screen bg-background-primary">
+      <JsonLd data={webAppSchema} id="webapp-schema" />
+      <JsonLd data={faqSchema} id="faq-schema-freelancers" />
       <Navigation locale={locale} />
       <HeroSection
         title={
@@ -56,6 +77,10 @@ export default async function FreelancersPage({
         buttonHref="#waitlist"
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="Freelancer Dashboard" />
+      <IntroSection
+        titleKey="freelancersPage.introTitle"
+        paragraphKey="freelancersPage.introParagraph"
+      />
       <BuildForGestoriasSection
         imageSrc="/clock.png"
         imageWidth={350}
@@ -109,6 +134,10 @@ export default async function FreelancersPage({
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}
+      />
+      <FAQSection
+        titleKey="freelancersPage.faqTitle"
+        questionsKey="freelancersPage.faq"
       />
       <FocusSection />
       <Footer locale={locale} />

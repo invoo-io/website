@@ -3,11 +3,15 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import HeroImageSection from "@/components/HeroImageSection";
+import IntroSection from "@/components/IntroSection";
 import BuildForGestoriasSection from "@/components/BuildForGestoriasSection";
+import FAQSection from "@/components/FAQSection";
 import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { generateWebApplicationSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -40,8 +44,25 @@ export default async function PymesPage({
   const firstPart = titleParts[0]; // "Facturación" or "Team"
   const secondPart = titleParts.slice(1).join(" "); // "en equipo" or "invoicing"
 
+  // Generate WebApplication schema with pymes audience targeting
+  const webAppSchema = generateWebApplicationSchema(locale);
+
+  // Generate FAQ schema for PYMEs page
+  const faqData = t.raw("faq") as Record<string, { question: string; answer: string }>;
+  const faqQuestions = Object.values(faqData).map((faq) => ({
+    question: faq.question,
+    answer: faq.answer,
+  }));
+
+  const faqSchema = generateFAQPageSchemaStandalone({
+    locale,
+    questions: faqQuestions,
+  });
+
   return (
     <div className="min-h-screen bg-background-primary">
+      <JsonLd data={webAppSchema} id="webapp-schema" />
+      <JsonLd data={faqSchema} id="faq-schema-pymes" />
       <Navigation locale={locale} />
       <HeroSection
         title={
@@ -55,6 +76,10 @@ export default async function PymesPage({
         buttonHref="#waitlist"
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="PYMES Dashboard" />
+      <IntroSection
+        titleKey="pymesPage.introTitle"
+        paragraphKey="pymesPage.introParagraph"
+      />
       <BuildForGestoriasSection
         imageSrc="/clock.png"
         imageWidth={350}
@@ -108,6 +133,10 @@ export default async function PymesPage({
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}
+      />
+      <FAQSection
+        titleKey="pymesPage.faqTitle"
+        questionsKey="pymesPage.faq"
       />
       <FocusSection />
       <Footer locale={locale} />

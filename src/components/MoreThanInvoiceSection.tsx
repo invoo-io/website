@@ -16,22 +16,26 @@ export default function MoreThanInvoiceSection() {
     {
       image: getImagePath("/Note.png"),
       title: t("card1.title"),
-      description: t("card1.description")
+      description: t("card1.description"),
+      extended: t("card1Extended")
     },
     {
       image: getImagePath("/Calendar.png"),
       title: t("card2.title"),
-      description: t("card2.description")
+      description: t("card2.description"),
+      extended: t("card2Extended")
     },
     {
       image: getImagePath("/Screen.png"),
       title: t("card3.title"),
-      description: t("card3.description")
+      description: t("card3.description"),
+      extended: t("card3Extended")
     },
     {
       image: getImagePath("/Down.png"),
       title: t("card4.title"),
-      description: t("card4.description")
+      description: t("card4.description"),
+      extended: t("card4Extended")
     },
   ];
 
@@ -45,6 +49,13 @@ export default function MoreThanInvoiceSection() {
           <><GradientText>More</GradientText> than invoicing</>
         )}
       </h2>
+
+      {/* Intro paragraph */}
+      <div className="max-w-4xl mx-auto mb-16 relative z-10">
+        <p className="text-body text-secondary text-center leading-relaxed">
+          {t("intro")}
+        </p>
+      </div>
 
       {/* Content Container */}
       <div className="relative z-10 max-w-[1000px]">
@@ -65,8 +76,8 @@ export default function MoreThanInvoiceSection() {
               <h3 className="text-title3-emphasized text-primary mb-3">
                 {feature.title}
               </h3>
-              <p className="text-callout text-secondary">
-                {feature.description}
+              <p className="text-body text-secondary leading-relaxed">
+                {feature.extended}
               </p>
             </div>
           ))}

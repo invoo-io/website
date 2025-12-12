@@ -17,27 +17,32 @@ export default function WhyChooseSection() {
     {
       image: getImagePath("/clock.png"),
       title: t("card1.title"),
-      description: t("card1.description")
+      description: t("card1.description"),
+      extended: t("card1Extended")
     },
     {
       image: getImagePath("/paper.png"),
       title: t("card2.title"),
-      description: t("card2.description")
+      description: t("card2.description"),
+      extended: t("card2Extended")
     },
     {
       image: getImagePath("/Calendar.png"),
       title: t("card3.title"),
-      description: t("card3.description")
+      description: t("card3.description"),
+      extended: t("card3Extended")
     },
     {
       image: getImagePath("/personbook.png"),
       title: t("card4.title"),
-      description: t("card4.description")
+      description: t("card4.description"),
+      extended: t("card4Extended")
     },
     {
       image: getImagePath("/Note.png"),
       title: t("card5.title"),
-      description: t("card5.description")
+      description: t("card5.description"),
+      extended: t("card5Extended")
     }
   ];
 
@@ -56,6 +61,13 @@ export default function WhyChooseSection() {
           );
         })()}
       </h2>
+
+      {/* Intro paragraph */}
+      <div className="max-w-4xl mx-auto mb-16">
+        <p className="text-body text-secondary text-center leading-relaxed">
+          {t("intro")}
+        </p>
+      </div>
 
       {/* Features Grid - First row: 3 cards, Second row: 2 cards centered */}
       <div className="max-w-7xl mx-auto mb-16">
@@ -79,9 +91,9 @@ export default function WhyChooseSection() {
               {feature.title}
             </h3>
 
-            {/* Description */}
-            <p className="text-body text-secondary max-w-xs">
-              {feature.description}
+            {/* Extended description */}
+            <p className="text-body text-secondary max-w-sm leading-relaxed">
+              {feature.extended}
             </p>
           </div>
           ))}
@@ -107,32 +119,47 @@ export default function WhyChooseSection() {
               {feature.title}
             </h3>
 
-            {/* Description */}
-            <p className="text-body text-secondary max-w-xs">
-              {feature.description}
+            {/* Extended description */}
+            <p className="text-body text-secondary max-w-sm leading-relaxed">
+              {feature.extended}
             </p>
           </div>
           ))}
         </div>
       </div>
 
-      {/* Buttons */}
-      <div className="flex justify-center gap-4 flex-wrap">
-        {/* Gestoría button with gradient border */}
-        <motion.div
-          className="gradient-border-wrapper rounded-xl p-[2px] inline-flex"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-        >
-          <Button variant="outline" showArrow className="!bg-background-secondary !border-0 !text-primary" href={getBasePath(`/${locale}/gestorias`)} disableHoverScale>
-            {t("cta1")}
-          </Button>
-        </motion.div>
+      {/* Outro card with text and buttons */}
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-background-primary rounded-3xl p-8 md:p-12">
+          {/* Outro text */}
+          <p className="text-body text-secondary text-center leading-relaxed mb-8">
+            {t("outro")}
+          </p>
 
-        {/* Freelancer button with solid gradient background */}
-        <Button variant="gradient" showArrow href={getBasePath(`/${locale}/freelancers`)}>
-          {t("cta2")}
-        </Button>
+          {/* 3 Buttons */}
+          <div className="flex justify-center gap-4 flex-wrap">
+            {/* Gestoría button with gradient border */}
+            <motion.div
+              className="gradient-border-wrapper rounded-xl p-[2px] inline-flex"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            >
+              <Button variant="outline" showArrow className="!bg-background-primary !border-0 !text-primary" href={getBasePath(`/${locale}/gestorias`)} disableHoverScale>
+                {t("cta1")}
+              </Button>
+            </motion.div>
+
+            {/* Freelancer button with solid gradient background */}
+            <Button variant="gradient" showArrow href={getBasePath(`/${locale}/freelancers`)}>
+              {t("cta2")}
+            </Button>
+
+            {/* PYMEs button */}
+            <Button variant="gradient" showArrow href={getBasePath(`/${locale}/pymes`)}>
+              {t("cta3")}
+            </Button>
+          </div>
+        </div>
       </div>
     </section>
   );

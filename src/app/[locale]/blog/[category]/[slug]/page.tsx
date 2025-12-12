@@ -8,7 +8,7 @@ import ExploreWithAI from "@/components/blog/ExploreWithAI";
 import ArticleHeader from "@/components/blog/ArticleHeader";
 import ArticleSidebar from "@/components/blog/ArticleSidebar";
 import { JsonLd } from "@/components/JsonLd";
-import { generateArticleSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbListSchema } from "@/lib/schema";
 import { getAllBlogPosts, getBlogPost, getAllCategories } from "@/lib/blog";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -126,9 +126,17 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     readingTime: post.readingTime,
   });
 
+  // Generate BreadcrumbList schema
+  const breadcrumbSchema = generateBreadcrumbListSchema(
+    locale,
+    `/blog/${categorySlug}/${slug}`,
+    post.title
+  );
+
   return (
     <>
       <JsonLd data={articleSchema} id="article-schema" />
+      <JsonLd data={breadcrumbSchema} id="breadcrumb-schema" />
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
 

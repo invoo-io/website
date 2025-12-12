@@ -33,11 +33,9 @@ export default function FAQContent() {
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqData.map((category, categoryIndex) => (
             <div key={categoryIndex} className="space-y-4">
-              {categoryIndex > 0 && (
-                <h2 className="text-title2-emphasized text-primary mt-16 mb-4">
-                  {category.category}
-                </h2>
-              )}
+              <h2 className="text-title2-emphasized text-primary mt-16 mb-4">
+                {category.category}
+              </h2>
               {category.questions.map((item, index) => (
                 <AccordionItem
                   key={`${categoryIndex}-${index}`}
@@ -45,7 +43,9 @@ export default function FAQContent() {
                   className="border-0 rounded-2xl overflow-hidden bg-background-secondary data-[state=open]:bg-background-tertiary transition-colors"
                 >
                   <AccordionTrigger className="text-headline text-primary hover:no-underline text-left px-6 py-5">
-                    {item.question}
+                    <h3 className="text-headline text-primary">
+                      {item.question}
+                    </h3>
                   </AccordionTrigger>
                   <AccordionContent className="text-body text-secondary px-6 pb-5 pt-0">
                     {item.answer}

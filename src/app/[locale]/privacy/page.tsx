@@ -4,6 +4,8 @@ import Navigation from "@/components/Navigation";
 import PrivacyContent from "@/components/PrivacyContent";
 import Footer from "@/components/Footer";
 import { generatePageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { generateWebPageSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -29,8 +31,19 @@ export default async function PrivacyPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: "privacy" });
+
+  // Generate WebPage schema
+  const webPageSchema = generateWebPageSchema({
+    locale,
+    path: "/privacy",
+    title: t("metadata.title"),
+    description: t("metadata.description"),
+  });
+
   return (
     <div className="min-h-screen bg-background-primary">
+      <JsonLd data={webPageSchema} id="webpage-schema" />
       <Navigation locale={locale} />
       <PrivacyContent />
       <Footer locale={locale} />

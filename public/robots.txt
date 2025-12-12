@@ -1,0 +1,21 @@
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: Applebot
+Allow: /
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+Sitemap: https://invoo.es/sitemap.xml

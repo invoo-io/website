@@ -44,9 +44,9 @@ export default function AboutContent() {
 
         {/* Block 2: Our vision section */}
         <div className="mb-8">
-          <h3 className="text-title1-emphasized text-primary mb-6">
+          <h2 className="text-title1-emphasized text-primary mb-6">
             {t("block2.title")}
-          </h3>
+          </h2>
           <div>
             {renderParagraphs(t("block2.description"))}
           </div>
@@ -54,9 +54,9 @@ export default function AboutContent() {
 
         {/* Block 3: Why Invoo section */}
         <div className="mb-8">
-          <h3 className="text-title1-emphasized text-primary mb-8">
+          <h2 className="text-title1-emphasized text-primary mb-8">
             {t("block3.title")}
-          </h3>
+          </h2>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <span className="text-body mt-1">🚀</span>
@@ -79,9 +79,9 @@ export default function AboutContent() {
 
         {/* Block 4: Join us early section */}
         <div className="pt-8">
-          <h3 className="text-title1-emphasized text-primary mb-6">
+          <h2 className="text-title1-emphasized text-primary mb-6">
             {t("block4.title")}
-          </h3>
+          </h2>
           <div>
             {renderParagraphs(t("block4.description"))}
           </div>

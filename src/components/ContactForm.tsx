@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 import Button from "./ui/button";
 
 export default function ContactForm() {
+  const t = useTranslations("contact");
   const [formData, setFormData] = useState({
     topic: "",
     name: "",
@@ -97,6 +99,9 @@ export default function ContactForm() {
         </p>
 
         <form onSubmit={handleSubmit}>
+          <h2 className="text-title2-emphasized text-primary mb-4 mt-8">
+            {t("sections.contactInfo")}
+          </h2>
           {/* Desktop: all 3 in one row, Tablet: Topic on top, Name/Email below, Mobile: all stacked */}
           <div className="form-grid grid gap-4 mb-5">
             <div style={{ gridArea: 'topic' }}>
@@ -178,6 +183,9 @@ export default function ContactForm() {
             }
           `}</style>
 
+          <h2 className="text-title2-emphasized text-primary mb-4 mt-8">
+            {t("sections.message")}
+          </h2>
           <div className="mb-6">
             <label className="text-footnote text-secondary mb-2 block">Message</label>
             <textarea

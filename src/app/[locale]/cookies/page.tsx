@@ -4,6 +4,8 @@ import Navigation from "@/components/Navigation";
 import CookiePolicyContent from "@/components/CookiePolicyContent";
 import Footer from "@/components/Footer";
 import { generatePageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { generateWebPageSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -29,8 +31,19 @@ export default async function CookiePolicyPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const t = await getTranslations({ locale, namespace: "cookiePolicy" });
+
+  // Generate WebPage schema
+  const webPageSchema = generateWebPageSchema({
+    locale,
+    path: "/cookies",
+    title: t("title"),
+    description: t("metaDescription"),
+  });
+
   return (
     <div className="min-h-screen bg-background-primary">
+      <JsonLd data={webPageSchema} id="webpage-schema" />
       <Navigation locale={locale} />
       <CookiePolicyContent />
       <Footer locale={locale} />

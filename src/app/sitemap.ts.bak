@@ -24,7 +24,7 @@ const staticPages = [
 ];
 
 // Blog is Spanish-only
-const blogCategories = ["guias", "consejos", "analisis"];
+const blogCategories = ["guias", "consejos", "analisis", "comparaciones"];
 
 function getBlogArticles(): { slug: string; category: string; lastModified?: Date }[] {
   const articles: { slug: string; category: string; lastModified?: Date }[] = [];
