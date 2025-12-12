@@ -8,6 +8,8 @@ import {
   getBlogPostsMetadataByCategory,
   getAllCategories,
 } from "@/lib/blog";
+import { JsonLd } from "@/components/JsonLd";
+import { generateCollectionPageSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -86,8 +88,17 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     notFound();
   }
 
+  // Generate CollectionPage schema
+  const collectionSchema = generateCollectionPageSchema({
+    locale,
+    path: `/blog/${categorySlug}`,
+    title: category.name,
+    description: category.description,
+  });
+
   return (
     <div className="min-h-screen bg-background-primary">
+      <JsonLd data={collectionSchema} id="collection-schema" />
       <Navigation locale={locale} />
 
       {/* Category Header - Hero Style */}

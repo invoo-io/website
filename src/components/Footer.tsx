@@ -92,13 +92,13 @@ export default function Footer({ locale }: FooterProps) {
 
           {/* Social icons */}
           <div className="flex gap-6">
-            <a href="https://www.linkedin.com/company/invooes" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/company/invooes" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors" aria-label="Visit Invoo on LinkedIn">
               <Linkedin size={20} />
             </a>
-            <a href="https://x.com/InvooES" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors">
+            <a href="https://x.com/InvooES" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors" aria-label="Follow Invoo on X (Twitter)">
               <X size={20} />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61578360993110" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors">
+            <a href="https://www.facebook.com/profile.php?id=61578360993110" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-primary transition-colors" aria-label="Visit Invoo on Facebook">
               <Facebook size={20} />
             </a>
           </div>

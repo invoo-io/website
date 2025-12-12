@@ -76,7 +76,12 @@
       "WebFetch(domain:www.capterra.com)",
       "WebFetch(domain:getquipu.com)",
       "WebFetch(domain:www.infoautonomos.com)",
-      "Bash(git diff:*)"
+      "Bash(git diff:*)",
+      "Bash(npm i:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "WebFetch(domain:alphaefficiency.com)",
+      "Bash(npm run generate-sitemap:*)"
     ],
     "deny": [],
     "ask": []

@@ -5,6 +5,8 @@ import ContactForm from "@/components/ContactForm";
 import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import { generatePageMetadata } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
+import { generateContactPageSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -30,8 +32,12 @@ export default async function ContactPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  // Generate ContactPage schema
+  const contactSchema = generateContactPageSchema(locale);
+
   return (
     <div className="min-h-screen bg-background-primary">
+      <JsonLd data={contactSchema} id="contact-schema" />
       <Navigation locale={locale} />
       <ContactForm />
       <FocusSection />

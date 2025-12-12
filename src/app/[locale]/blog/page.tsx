@@ -9,6 +9,8 @@ import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import { EditorPicksSection } from "@/components/blog/EditorPicksSection";
 import NewsletterSection from "@/components/blog/NewsletterSection";
 import { CategoryBlock } from "@/components/blog/CategoryBlock";
+import { JsonLd } from "@/components/JsonLd";
+import { generateCollectionPageSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -83,8 +85,17 @@ export default async function BlogPage({
   const firstPart = titleParts.slice(0, -1).join(" "); // "Blog de"
   const lastPart = titleParts[titleParts.length - 1]; // "Invoo"
 
+  // Generate CollectionPage schema
+  const collectionSchema = generateCollectionPageSchema({
+    locale,
+    path: "/blog",
+    title: t("title"),
+    description: t("description"),
+  });
+
   return (
     <div className="min-h-screen bg-background-primary">
+      <JsonLd data={collectionSchema} id="collection-schema" />
       <Navigation locale={locale} />
       <HeroSection
         title={

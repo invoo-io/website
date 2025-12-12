@@ -14,17 +14,20 @@ export default function InvoicingSection() {
     {
       number: "1",
       title: t("step1.title"),
-      description: t("step1.description")
+      description: t("step1.description"),
+      extended: t("step1Extended")
     },
     {
       number: "2",
       title: t("step2.title"),
-      description: t("step2.description")
+      description: t("step2.description"),
+      extended: t("step2Extended")
     },
     {
       number: "3",
       title: t("step3.title"),
-      description: t("step3.description")
+      description: t("step3.description"),
+      extended: t("step3Extended")
     }
   ];
 
@@ -38,6 +41,13 @@ export default function InvoicingSection() {
           <>Invoicing made <GradientText>simple</GradientText></>
         )}
       </h2>
+
+      {/* Intro paragraph */}
+      <div className="max-w-4xl mx-auto mb-16">
+        <p className="text-body text-secondary text-center leading-relaxed">
+          {t("intro")}
+        </p>
+      </div>
 
       {/* Steps Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-5xl mx-auto mb-16">
@@ -55,12 +65,22 @@ export default function InvoicingSection() {
               {step.title}
             </h3>
 
-            {/* Description */}
-            <p className="text-body text-secondary max-w-xs">
-              {step.description}
+            {/* Extended description */}
+            <p className="text-body text-secondary max-w-sm leading-relaxed">
+              {step.extended}
             </p>
           </div>
         ))}
+      </div>
+
+      {/* FAQ Snippet */}
+      <div className="max-w-3xl mx-auto mb-16 bg-background-secondary rounded-3xl p-8">
+        <h3 className="text-title2-emphasized text-primary mb-4">
+          {t("faq.question")}
+        </h3>
+        <p className="text-body text-secondary leading-relaxed">
+          {t("faq.answer")}
+        </p>
       </div>
 
       {/* Button */}

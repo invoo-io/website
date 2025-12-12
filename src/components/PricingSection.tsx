@@ -92,6 +92,7 @@ export default function PricingSection() {
       }}>
         {activeTab === "autonomos" && (
           <>
+            <h2 className="sr-only">Pricing for Freelancers (Autónomos)</h2>
             {/* Autónomos Free Plan */}
             <PricingCard
               title={t("autonomos.free.title")}
@@ -127,6 +128,7 @@ export default function PricingSection() {
 
         {activeTab === "pymes" && (
           <>
+            <h2 className="sr-only">Pricing for Small Businesses (PYMEs)</h2>
             {/* Pymes Free Plan */}
             <PricingCard
               title={t("pymes.free.title")}
@@ -179,6 +181,7 @@ export default function PricingSection() {
 
         {activeTab === "gestoria" && (
           <>
+            <h2 className="sr-only">Pricing for Accountants (Gestorías)</h2>
             {/* Gestoría Free Plan */}
             <PricingCard
               title={t("gestoria.free.title")}

@@ -23,6 +23,11 @@ interface BuildForGestoriasSectionProps {
   offsetImage?: boolean;
   maxImageWidth?: number;
   applyHeroStyling?: boolean; // Apply shadow and border radius for hero images
+  subheadingKey?: string; // Optional H3 subheading translation key
+  testimonialQuote?: string; // Optional testimonial quote
+  testimonialAuthor?: string; // Optional testimonial author
+  faqQuestion?: string; // Optional FAQ question
+  faqAnswer?: string; // Optional FAQ answer
 }
 
 export default function BuildForGestoriasSection({
@@ -40,7 +45,12 @@ export default function BuildForGestoriasSection({
   imageHeight = 700,
   offsetImage = true,
   maxImageWidth,
-  applyHeroStyling = false
+  applyHeroStyling = false,
+  subheadingKey,
+  testimonialQuote,
+  testimonialAuthor,
+  faqQuestion,
+  faqAnswer
 }: BuildForGestoriasSectionProps) {
   const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
@@ -58,9 +68,16 @@ export default function BuildForGestoriasSection({
         {title}
       </h2>
 
-      <p className="text-callout text-secondary mb-8">
+      <p className="text-callout text-secondary mb-10 leading-loose max-w-prose">
         {paragraph}
       </p>
+
+      {/* Optional H3 subheading */}
+      {subheadingKey && (
+        <h3 className="text-title2-emphasized text-primary mb-6">
+          {subheadingKey}
+        </h3>
+      )}
 
       {/* Features List */}
       <div className="flex flex-col gap-4 mb-8 max-md:mx-auto max-md:w-fit">
@@ -73,6 +90,30 @@ export default function BuildForGestoriasSection({
           </div>
         ))}
       </div>
+
+      {/* Optional testimonial */}
+      {testimonialQuote && testimonialAuthor && (
+        <div className="bg-background-secondary rounded-2xl p-6 mb-8 border-l-4 border-accent-purple-main">
+          <p className="text-callout text-secondary italic mb-3 leading-relaxed">
+            &ldquo;{testimonialQuote}&rdquo;
+          </p>
+          <p className="text-callout text-primary font-semibold">
+            — {testimonialAuthor}
+          </p>
+        </div>
+      )}
+
+      {/* Optional FAQ */}
+      {faqQuestion && faqAnswer && (
+        <div className="bg-background-secondary rounded-2xl p-6 mb-8">
+          <h3 className="text-title3-emphasized text-primary mb-3">
+            {faqQuestion}
+          </h3>
+          <p className="text-callout text-secondary leading-loose">
+            {faqAnswer}
+          </p>
+        </div>
+      )}
 
       {/* Button */}
       <div className="flex justify-start max-md:justify-center w-fit max-md:w-full">

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Invoo - Gestión de Facturas Conforme",
-    "description": "Crea y envía facturas conformes en 30 segundos. Perfecto para autónomos y gestorías."
+    "title": "Software de Facturación Verifactu en 30 Segundos | Autónomos, Pymes y Gestorías",
+    "description": "Colabora con tu gestoría en tiempo real, cero emails. Presupuesto a factura en un clic. Verifactu automático, úsalo desde tu móvil. Prueba gratis 7 días."
   },
   "nav": {
     "services": "Servicios",
@@ -73,12 +73,12 @@
   },
   "freelancersPage": {
     "metadata": {
-      "title": "Facturación para Autónomos",
-      "description": "Facturación simple para autónomos españoles - facturas conformes con Verifactu, envío automático a AEAT y colaboración fluida con tu gestoría."
+      "title": "Factura Verifactu en 30s | Colabora con Gestoría | Autónomos",
+      "description": "Úsalo desde tu móvil, rápido, intuitivo. Precios flexibles para cerrar ventas. Gestoría ve todo en tiempo real. Prueba gratis 7 días."
     },
     "header": {
       "title": "Facturación sin estrés",
-      "description": "Facturas profesionales, cumplimiento Verifactu automático y envío instantáneo a Hacienda, tu cliente y tu gestoría",
+      "description": "Facturas profesionales, cumplimiento automático con Verifactu (RD 1007/2023) y envío instantáneo a Hacienda, tu cliente y tu gestoría en tiempo real",
       "cta": "Únete a la lista de espera"
     },
     "block1": {
@@ -89,7 +89,7 @@
         "Plantillas PDF profesionales",
         "Numeración automática"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Empieza a facturar en 30 segundos"
     },
     "block2": {
       "title": "Cumplimiento gestionado por ti",
@@ -99,7 +99,7 @@
         "Envío seguro a Hacienda",
         "Trazabilidad completa con verificación de estado"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Prueba Verifactu gratis"
     },
     "block3": {
       "title": "Tus finanzas en una vista simple",
@@ -109,7 +109,7 @@
         "Resúmenes mensuales automáticos",
         "Modelo 130/303 pre-calculado"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Conecta tu gestoría ahora"
     },
     "block4": {
       "title": "Comparte sin esfuerzo con tu gestoría",
@@ -120,12 +120,41 @@
         "Gratis para gestorías"
       ],
       "cta": "Únete a la lista de espera"
+    },
+    "introTitle": "Software de facturación diseñado para autónomos en España",
+    "introParagraph": [
+      "Si eres autónomo, sabes que facturar consume más tiempo del que debería. Entre Excel, plantillas desactualizadas, dudas sobre Verifactu, y coordinación con tu gestoría, cada factura puede tomar 10-15 minutos que deberías invertir en tu negocio.",
+      "Invoo nació para resolver exactamente esto. Software de facturación que entiende la realidad española: cumplimiento automático con AEAT, integración directa con tu gestoría, y una interfaz tan simple que crearás facturas desde el móvil mientras tomas café.",
+      "Estas son las razones por las que autónomos como tú están dejando Excel y eligiendo Invoo:"
+    ],
+    "faqTitle": "Preguntas frecuentes de autónomos sobre Verifactu e Invoo",
+    "faq": {
+      "q1": {
+        "question": "¿Qué es Verifactu y por qué me afecta como autónomo?",
+        "answer": "Verifactu (RD 1007/2023) es el nuevo sistema de facturación electrónica obligatorio para autónomos y pymes en España. Desde julio 2026, todos los autónomos deben usar software homologado que genere facturas con código QR y envíe información a AEAT en tiempo real. Invoo cumple 100% con Verifactu."
+      },
+      "q2": {
+        "question": "¿Puedo usar Invoo desde mi móvil?",
+        "answer": "Sí. La interfaz web de Invoo está optimizada para móvil. Crea facturas, registra gastos con fotos de tickets, y consulta ingresos desde cualquier dispositivo. Sin necesidad de app nativa, funciona desde cualquier navegador."
+      },
+      "q3": {
+        "question": "¿Cómo comparto facturas con mi gestoría?",
+        "answer": "Tu gestoría obtiene acceso gratuito a un dashboard donde ve todas tus facturas y gastos en tiempo real. No necesitas enviar PDFs por email ni perseguir documentos. Invitas a tu gestoría una vez, y desde entonces todo se sincroniza automáticamente."
+      },
+      "q4": {
+        "question": "¿Cuánto tardo en crear mi primera factura?",
+        "answer": "Menos de 2 minutos incluyendo el registro inicial. Una vez configurado tu perfil fiscal y primer cliente, las siguientes facturas toman 30 segundos."
+      },
+      "q5": {
+        "question": "¿Invoo calcula el IVA y retenciones automáticamente?",
+        "answer": "Sí. Según tu régimen fiscal (general, recargo de equivalencia, IRPF), Invoo aplica automáticamente IVA (21%, 10%, 4%) y retenciones (15% o 7% IRPF según casos). Sin cálculos manuales, sin errores."
+      }
     }
   },
   "pymesPage": {
     "metadata": {
-      "title": "Software Facturación para Pymes | Invoo",
-      "description": "Software de facturación para pymes con colaboración en equipo. Gestión multiusuario, Verifactu integrado, y dashboard para tu gestoría. Prueba gratis."
+      "title": "Facturación en Equipo | Presupuesto a Factura en 1 Clic | Pymes",
+      "description": "2-4 usuarios, máxima colaboración. Precios flexibles para cerrar ventas. Gestoría en tiempo real, cero caos de emails. 50% dto sin permanencia."
     },
     "header": {
       "title": "Facturación en equipo",
@@ -140,7 +169,7 @@
         "Roles: Admin, Editor, Solo lectura",
         "Cambios sincronizados al instante"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Centraliza la facturación de tu equipo"
     },
     "block2": {
       "title": "Cumplimiento automático con Verifactu",
@@ -150,7 +179,7 @@
         "Envío automático a AEAT",
         "Registro de auditoría completo"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Empieza con tu PYME ahora"
     },
     "block3": {
       "title": "Tu gestoría accede cuando quiera",
@@ -160,7 +189,7 @@
         "Exportaciones CSV listas para contabilizar",
         "Resúmenes Modelo 130/303"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Prueba colaboración en tiempo real"
     },
     "block4": {
       "title": "Crece sin complicaciones",
@@ -171,12 +200,41 @@
         "Sin contratos de permanencia"
       ],
       "cta": "Únete a la lista de espera"
+    },
+    "introTitle": "Facturación colaborativa diseñada para equipos pequeños",
+    "introParagraph": [
+      "Gestionar la facturación en una pyme con 2-4 personas es un caos sin las herramientas adecuadas. Facturas creadas por distintos miembros del equipo, falta de visibilidad sobre quién facturó qué, y tu gestoría persiguiendo documentos dispersos en emails.",
+      "Invoo centraliza toda la facturación de tu equipo en una plataforma única. Cada miembro crea facturas con su usuario, todos ven el estado en tiempo real, y tu gestoría accede a todo desde su dashboard sin pedir nada.",
+      "Estas son las ventajas que equipos pyme están descubriendo con Invoo:"
+    ],
+    "faqTitle": "Preguntas frecuentes de PYMEs sobre facturación en equipo",
+    "faq": {
+      "q1": {
+        "question": "¿Cuántos usuarios puede tener mi cuenta de PYME?",
+        "answer": "El plan PYME incluye hasta 4 usuarios con acceso completo. Cada miembro del equipo tiene su propio login y puede crear facturas, registrar gastos, y consultar informes. Perfecto para equipos pequeños donde varias personas gestionan facturación."
+      },
+      "q2": {
+        "question": "¿Puedo ver quién creó cada factura en mi equipo?",
+        "answer": "Sí. Cada factura muestra quién la creó y cuándo. Esto es fundamental para equipos: sabes quién facturó cada servicio, puedes auditar internamente, y tu gestoría tiene trazabilidad completa de quién emitió qué documento."
+      },
+      "q3": {
+        "question": "¿Cómo funciona el acceso de gestoría con múltiples usuarios?",
+        "answer": "Tu gestoría ve todas las facturas y gastos de todos los usuarios de tu PYME en un único dashboard. No necesita múltiples logins ni coordinarse con cada persona. Todo centralizado, tiempo real, sin perseguir emails."
+      },
+      "q4": {
+        "question": "¿Puedo limitar qué puede hacer cada usuario de mi equipo?",
+        "answer": "Actualmente todos los usuarios tienen acceso completo (crear facturas, ver informes, exportar datos). En futuras versiones añadiremos roles personalizados (ej: \"solo ver facturas\" vs \"crear y editar\")."
+      },
+      "q5": {
+        "question": "¿Invoo cumple Verifactu para todas las facturas del equipo?",
+        "answer": "Sí. Independientemente de quién cree la factura en tu equipo, Invoo genera automáticamente el código QR Verifactu, numera correlativamente, y envía a AEAT. Cumplimiento 100% sin configuración manual por usuario."
+      }
     }
   },
   "gestoriasPage": {
     "metadata": {
-      "title": "Facturación para Gestorías",
-      "description": "Panel gratuito para gestorías - acceso en tiempo real a facturas y gastos de clientes, conforme con Verifactu, con exportación en un clic."
+      "title": "Dashboard Gestoría Gratis | Clientes Ilimitados | Invoo",
+      "description": "Menos perseguir, más asesorar. Acceso directo a facturas y gastos en tiempo real. CSV en un clic. Modelo 130/303 listo. Clientes ilimitados, sin coste."
     },
     "header": {
       "title": "Menos papeleo, más asesoramiento",
@@ -191,7 +249,7 @@
         "QR Verifactu incluido automáticamente",
         "Alertas cuando aparece nueva actividad"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Accede gratis a tu dashboard"
     },
     "block2": {
       "title": "Datos que puedes usar",
@@ -201,7 +259,7 @@
         "Descargas masivas trimestrales o mensuales",
         "Exportaciones XML alineadas con estándares AEAT"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Empieza a gestionar clientes"
     },
     "block3": {
       "title": "Periodos impositivos en segundos",
@@ -211,7 +269,7 @@
         "Desgloses claros de bases e IVA",
         "Fácil de revisar y validar"
       ],
-      "cta": "Únete a la lista de espera"
+      "cta": "Invita a tus clientes ahora"
     },
     "block4": {
       "title": "Cero coste, cero riesgo",
@@ -221,8 +279,43 @@
         "Clientes ilimitados",
         "Diseñado para colaboración, no reemplazo"
       ],
-      "cta": "Únete a la lista de espera"
-    }
+      "cta": "Únete como gestoría"
+    },
+    "introTitle": "Plataforma de colaboración gestoría-cliente en tiempo real",
+    "introParagraph": [
+      "Las gestorías pierden hasta 40% del tiempo operativo persiguiendo documentos de clientes: facturas atrasadas, emails sin respuesta, Excel mal formateados, y datos que hay que reescribir manualmente en software contable.",
+      "Invoo elimina este cuello de botella. Tus clientes facturan con nuestra plataforma (compatible Verifactu, envío automático a AEAT), y tú obtienes acceso directo a un dashboard gratuito donde ves cada factura, gasto, y documento en tiempo real. Sin perseguir, sin reescribir, sin fricciones.",
+      "Así es como gestorías profesionales están recuperando 10-15 horas semanales con Invoo:"
+    ],
+    "faqTitle": "Preguntas frecuentes de gestorías sobre Invoo",
+    "faq": {
+      "q1": {
+        "question": "¿Cuántos clientes puedo gestionar en mi dashboard de gestoría?",
+        "answer": "Ilimitados. No hay límite de clientes que puedas ver en tu dashboard. Cada cliente que use Invoo te da acceso automático a sus facturas y gastos. Sin coste adicional, sin restricciones."
+      },
+      "q2": {
+        "question": "¿Cómo invito a mis clientes autónomos a usar Invoo?",
+        "answer": "Comparte el enlace de registro con tu código de gestoría. Cuando tus clientes se registran con tu código, automáticamente aparecen en tu dashboard. Tú ves sus datos en tiempo real desde el primer día."
+      },
+      "q3": {
+        "question": "¿Puedo exportar datos de múltiples clientes a la vez?",
+        "answer": "Sí. Selecciona los clientes que quieras, elige el periodo (mes, trimestre, año), y descarga un CSV consolidado. Compatible con ContaPlus, A3, Sage y otros software contables. Sin reformatear datos."
+      },
+      "q4": {
+        "question": "¿Qué pasa si un cliente deja de usar Invoo?",
+        "answer": "Su historial permanece en tu dashboard (facturas pasadas accesibles para consultas). Si vuelve a usar Invoo, se reactiva automáticamente. No pierdes acceso a datos históricos."
+      },
+      "q5": {
+        "question": "¿Invoo reemplaza mi software contable actual?",
+        "answer": "No. Invoo complementa tu software contable, no lo reemplaza. Tus clientes facturan en Invoo, tú exportas los datos y los importas en tu ContaPlus/A3/Sage. Invoo simplifica la recopilación de datos, tu software contable sigue siendo el sistema de registro oficial."
+      }
+    },
+    "recommendTitle": "Por qué las gestorías recomiendan Invoo a sus clientes autónomos",
+    "recommendIntro": "Las gestorías son el motor de nuestra estrategia de crecimiento. Cuando recomiendas Invoo a un cliente autónomo o pyme, no solo mejoras tu propia eficiencia operativa, sino que fortaleces la relación cliente-gestoría al eliminar fricciones de coordinación.",
+    "recommendBenefit1Title": "Reduce costes operativos",
+    "recommendBenefit1Text": "Menos tiempo en entrada manual de datos = más tiempo en consultoría de valor añadido. Gestorías reportan 70% reducción en tiempo de introducción de datos fiscales al usar Invoo con sus clientes.",
+    "recommendBenefit2Title": "Mejora retención de clientes",
+    "recommendBenefit2Text": "Clientes satisfechos con la colaboración fluida son clientes que renuevan. Al recomendar Invoo, posicionas tu gestoría como innovadora y centrada en eficiencia, no solo en cumplimiento reactivo."
   },
   "gestorias": {
     "title": "Diseñado para gestorías",
@@ -256,8 +349,8 @@
   },
   "faq": {
     "metadata": {
-      "title": "Preguntas Frecuentes",
-      "description": "Respuestas a preguntas frecuentes sobre Invoo, cumplimiento Verifactu, precios y cómo nuestra plataforma ayuda a autónomos españoles."
+      "title": "Preguntas Frecuentes | Verifactu, Colaboración y Precios | Invoo",
+      "description": "¿Cómo funciona la colaboración con gestoría? ¿Cuándo es obligatorio Verifactu? ¿Cómo paso de presupuesto a factura? Respuestas claras. Prueba gratis 7 días."
     },
     "hero": {
       "title": "Preguntas Frecuentes",
@@ -383,8 +476,8 @@
   },
   "about": {
     "metadata": {
-      "title": "Sobre Nosotros",
-      "description": "Conoce Invoo - la plataforma de facturación amiga de las gestorías, diseñada para simplificar el cumplimiento y fortalecer la colaboración para autónomos españoles."
+      "title": "Por Qué Creamos Invoo | Deja de Perder Domingos en Excel",
+      "description": "Vivimos la frustración: autónomos perdiendo horas en Excel, gestorías persiguiendo facturas. Verifactu fue la oportunidad. Invoo nació para unir ambos mundos."
     },
     "header": {
       "title": "Ayudando a autónomos y gestorías a trabajar mejor juntos",
@@ -414,8 +507,8 @@
   },
   "privacy": {
     "metadata": {
-      "title": "Política de Privacidad",
-      "description": "Política de Privacidad de Invoo - Conoce cómo recopilamos, usamos y protegemos tus datos personales según el RGPD."
+      "title": "Política de Privacidad | RGPD y Protección de Datos | Invoo",
+      "description": "Cómo protegemos tus datos en Invoo: servidores UE, RGPD total, cero venta de datos. Solo tú y tu gestoría ven tus facturas. Exporta cuando quieras."
     },
     "title": "Política de Privacidad",
     "lastUpdated": "Última actualización: 19 de noviembre de 2025",
@@ -526,8 +619,8 @@
   },
   "terms": {
     "metadata": {
-      "title": "Términos y Condiciones",
-      "description": "Términos y Condiciones de Invoo - Lee los términos legales que rigen el uso de nuestra plataforma de facturación y servicios."
+      "title": "Términos y Condiciones | Uso de la Plataforma Invoo",
+      "description": "Términos legales claros de Invoo: qué incluye el servicio, tus derechos, responsabilidades, Verifactu integrado, y relación con tu gestoría. Transparencia total."
     },
     "title": "Términos y Condiciones de Uso del Servicio Invoo",
     "lastUpdated": "Última actualización: 19 de noviembre de 2025",
@@ -726,19 +819,17 @@
   },
   "contact": {
     "metadata": {
-      "title": "Contacto",
-      "description": "Contacta con Invoo - Estamos aquí para ayudarte con tus preguntas sobre facturación y soporte."
-    }
-  },
-  "verifactu": {
-    "metadata": {
-      "title": "Cumplimiento Verifactu",
-      "description": "Descubre cómo Invoo gestiona el cumplimiento Verifactu - códigos QR automáticos, envío a AEAT y trazabilidad completa para facturación española."
+      "title": "Contacto | Soporte para Autónomos, Pymes y Gestorías | Invoo",
+      "description": "¿Dudas sobre colaboración con gestoría, Verifactu o precios? ¿Tu gestoría quiere probar el dashboard? Escríbenos. Respuesta rápida en español claro."
+    },
+    "sections": {
+      "contactInfo": "Información de contacto",
+      "message": "Tu mensaje"
     }
   },
   "pricingPage": {
-    "title": "Precios",
-    "description": "Precios simples y justos para autónomos y gestorías. Elige el plan que mejor se adapte a tus necesidades.",
+    "title": "Precios Transparentes | Desde €5.45/mes con 50% Descuento",
+    "description": "Desde €5.45/mes (50% dto) con facturación ilimitada. Dashboard para gestoría incluido. Sin contratos. Ahorra €40-200/mes vs competencia.",
     "header": {
       "title": "Precios simples. Funciones potentes",
       "description": "Elige el plan que se ajuste a tu negocio. Cambia de plan cuando quieras"
@@ -838,63 +929,84 @@
     },
     "whyChoose": {
       "title": "Por qué autónomos, PYMES y gestorías eligen Invoo",
+      "intro": "Invoo es el software de facturación diseñado específicamente para el mercado español. Desde autónomos que necesitan crear facturas Verifactu en segundos hasta gestorías que gestionan múltiples clientes, nuestra plataforma simplifica el cumplimiento con AEAT mientras elimina el papeleo que consume horas cada semana.",
+      "outro": "Más de 1000 autónomos y gestorías confían en Invoo para su facturación diaria. Únete a profesionales que han recuperado un promedio de 5 horas semanales eliminando el papeleo manual y los errores de cumplimiento.",
       "card1": {
         "title": "Ahorra tiempo",
         "description": "Crea y envía facturas en 30 segundos, sin curva de aprendizaje"
       },
+      "card1Extended": "Crea y envía facturas profesionales en 30 segundos, sin curva de aprendizaje. Nuestro sistema genera automáticamente el código QR Verifactu, numeración correlativa y cumplimiento AEAT sin que tengas que pensar en ello.",
       "card2": {
         "title": "Siempre conforme",
         "description": "Cumplimiento automático con Verifactu y TicketBAI, sin estrés con Hacienda"
       },
+      "card2Extended": "Mantente siempre conforme con las últimas regulaciones fiscales. Invoo se actualiza automáticamente con cada cambio normativo, generando facturas conformes que cumplen RD 1007/2023 y enviando datos a Hacienda en tiempo real.",
       "card3": {
         "title": "Tu flujo de trabajo",
         "description": "Convierte presupuestos en facturas al instante sin duplicar trabajo"
       },
+      "card3Extended": "Accede a tu facturación desde cualquier dispositivo. Crea facturas, registra gastos con fotos de tickets, y consulta ingresos desde tu móvil mientras tomas café. Sin apps nativas, funciona desde cualquier navegador.",
       "card4": {
         "title": "Clientes felices",
         "description": "Aplica descuentos a nivel de partida para presupuestos flexibles y profesionales"
       },
+      "card4Extended": "Tu gestoría ve todas tus facturas y gastos en tiempo real desde su propio panel. Sin emails, sin perseguir documentos, sin retrasos. Colaboración real con acceso gratuito para gestorías.",
       "card5": {
         "title": "Colaboración en vivo",
         "description": "Tu gestoría ve facturas y gastos en tiempo real desde su dashboard"
       },
+      "card5Extended": "Desde presupuesto hasta factura en un solo clic. Configura descuentos por volumen, precios especiales por cliente, y términos de pago flexibles. Cierra ventas más rápido con propuestas profesionales.",
       "cta1": "Gestoría",
-      "cta2": "Autónomos y PYMES"
+      "cta2": "Autónomos",
+      "cta3": "PYMES"
     },
     "invoicing": {
       "title": "Facturación simplificada",
+      "intro": "El proceso de facturación con Invoo está diseñado para autónomos y pymes que necesitan velocidad sin sacrificar cumplimiento. Desde crear la factura hasta el envío automático a AEAT, todo ocurre en segundos con trazabilidad completa.",
       "step1": {
         "title": "Crea",
         "description": "Introduce importe, selecciona servicio y cliente, genera factura profesional lista para enviar"
       },
+      "step1Extended": "Introduce el importe, selecciona el servicio y cliente, y genera una factura profesional lista para enviar. La plataforma autocompleta datos fiscales, aplica IVA según el régimen, y numera automáticamente cada documento para cumplir con Verifactu. Compatible con presupuestos que se convierten en facturas con un solo clic.",
       "step2": {
         "title": "Envía",
         "description": "La mandamos automáticamente a Hacienda (Verifactu y TicketBAI), tu gestoría y tu cliente"
       },
+      "step2Extended": "Una vez creada, Invoo envía tu factura automáticamente a tres destinos: AEAT (cumplimiento Verifactu y TicketBAI), tu gestoría (acceso en tiempo real desde su dashboard), y tu cliente (PDF profesional por email). Sin cadenas de correos, sin duplicar trabajo.",
       "step3": {
         "title": "Listo",
         "description": "Todas las facturas guardadas y resumidas. Tú solo cobras, sin papeleo extra"
+      },
+      "step3Extended": "Todas las facturas quedan guardadas y resumidas automáticamente. Consulta ingresos mensuales, genera precálculos para Modelo 130 y 303, y exporta CSVs limpios para tu software contable. Tú solo cobras, nosotros gestionamos el papeleo.",
+      "faq": {
+        "question": "¿Cuánto tarda crear una factura en Invoo?",
+        "answer": "Menos de 30 segundos desde el primer clic hasta el envío. Usuarios reportan ahorro de 5-10 minutos por factura vs. Excel o Word."
       },
       "cta": "Únete a la lista de espera"
     },
     "moreThanInvoicing": {
       "title": "Más que facturación",
+      "intro": "Invoo no es solo un generador de facturas. Es tu plataforma completa de gestión financiera diseñada para autónomos y pymes en España. Desde el registro de gastos hasta la preparación de impuestos trimestrales, centralizamos todo lo que necesitas para mantener tus finanzas organizadas y tu gestoría informada.",
       "card1": {
         "title": "Registra tus gastos",
         "description": "Haz una foto de los tickets y deja que Invoo los organice automáticamente"
       },
+      "card1Extended": "Haz una foto de los tickets desde tu móvil y deja que Invoo los organice automáticamente. Extracción inteligente de datos, categorización por tipo de gasto, y cálculo automático de IVA deducible. Comparte con tu gestoría en tiempo real para declaraciones más precisas.",
       "card2": {
         "title": "Impuestos trimestrales listos",
         "description": "Resúmenes pre-calculados para Modelo 130 y 303, para que declares más rápido"
       },
+      "card2Extended": "Olvida las hojas de Excel para Modelo 130 y 303. Invoo genera resúmenes pre-calculados con bases imponibles, IVA repercutido y soportado, y retenciones aplicadas. Tu gestoría revisa y valida en minutos, no horas.",
       "card3": {
         "title": "Panel para gestorías",
         "description": "Tu gestoría accede en tiempo real a tus facturas y gastos, sin cadenas de emails"
       },
+      "card3Extended": "Tu gestoría accede a facturas y gastos desde su propio panel, sin cadenas de emails ni perseguir documentos. Actualización instantánea, notificaciones automáticas, y acceso gratuito para gestorías. Colaboración real, sin fricciones.",
       "card4": {
         "title": "Exportación en un clic",
         "description": "Descarga facturas y gastos en formato CSV limpio, listo para cualquier software contable"
       },
+      "card4Extended": "Descarga facturas y gastos en formato CSV limpio, compatible con cualquier software contable. Exportaciones mensuales, trimestrales o personalizadas. Formato estándar que tu gestoría puede importar sin reformatear datos.",
       "cta": "Únete a la lista de espera"
     },
     "gestoriasBlock": {

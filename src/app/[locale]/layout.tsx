@@ -10,6 +10,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { BASE_URL } from "@/lib/constants";
+import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schema";
 import "../globals.css";
 
 const inter = Inter({
@@ -89,12 +90,30 @@ export default async function RootLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
 
-  // Note: JSON-LD structured data is injected via post-build script (scripts/inject-jsonld.mjs)
-  // This is necessary because Next.js 15 static export with client components causes a "bailout"
-  // that prevents inline scripts from being pre-rendered in the static HTML output.
+  // Generate global schemas for Organization and WebSite
+  const organizationSchema = generateOrganizationSchema();
+  const websiteSchema = generateWebSiteSchema();
 
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        {/* Global Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema).replace(/</g, '\\u003c'),
+          }}
+          suppressHydrationWarning
+        />
+        {/* Global WebSite Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema).replace(/</g, '\\u003c'),
+          }}
+          suppressHydrationWarning
+        />
+      </head>
       <body
         className={`${inter.variable} antialiased`}
       >

@@ -32,5 +32,12 @@ export function generatePageMetadata({
       title,
       description,
     },
+    twitter: {
+      card: "summary_large_image",
+      site: "@invoo_es",
+      creator: "@invoo_es",
+      title,
+      description,
+    },
   };
 }

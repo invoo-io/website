@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { JsonLd } from "@/components/JsonLd";
 import { getBasePath } from "@/lib/utils";
-import { generateSoftwareApplicationSchema } from "@/lib/schema";
+import { generateWebApplicationSchema, generateHowToSchema } from "@/lib/schema";
 
 const BASE_URL = "https://invoo.es";
 
@@ -66,9 +66,33 @@ export default async function Home({
   const middleWords = titleParts.slice(1, -3).join(" "); // "compliant invoices" or "facturas conformes"
   const lastThreeWords = titleParts.slice(-3).join(" "); // "in 30 seconds" or "en 30 segundos"
 
+  // Generate HowTo schema for InvoicingSection
+  const howToSchema = generateHowToSchema({
+    locale,
+    name: t("invoicing.title"),
+    description: locale === "es"
+      ? "Aprende cómo crear y enviar facturas conformes con Verifactu en solo 3 pasos simples con Invoo"
+      : "Learn how to create and send compliant Verifactu invoices in just 3 simple steps with Invoo",
+    steps: [
+      {
+        name: t("invoicing.step1.title"),
+        text: t("invoicing.step1.description"),
+      },
+      {
+        name: t("invoicing.step2.title"),
+        text: t("invoicing.step2.description"),
+      },
+      {
+        name: t("invoicing.step3.title"),
+        text: t("invoicing.step3.description"),
+      },
+    ],
+  });
+
   return (
     <div className="min-h-screen bg-background-primary">
-      <JsonLd data={generateSoftwareApplicationSchema(locale)} />
+      <JsonLd data={generateWebApplicationSchema(locale)} />
+      <JsonLd data={howToSchema} id="howto-invoicing" />
       <Navigation locale={locale} />
       <HeroSection
         title={

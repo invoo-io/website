@@ -27,11 +27,11 @@ export function generateOrganizationSchema(): SchemaOrg {
     name: "Invoo",
     legalName: "Roques OÜ",
     description:
-      "Plataforma de facturación electrónica para autónomos y gestorías en España. Cumplimiento automático con Verifactu, envío a AEAT y colaboración gestor-cliente en tiempo real.",
+      "La plataforma de facturación Verifactu que conecta autónomos, pymes y gestorías en tiempo real. Facturación en 30 segundos, dashboard gratuito para gestorías con clientes ilimitados, cumplimiento automático con AEAT. Sin papeleo, sin Excel, sin complicaciones.",
     url: BASE_URL,
     logo: `${BASE_URL}/Logo.png`,
     image: `${BASE_URL}/Logo.png`,
-    email: "legal@invoo.es",
+    email: "hello@invoo.es",
     foundingDate: "2025",
     address: {
       "@type": "PostalAddress",
@@ -46,21 +46,30 @@ export function generateOrganizationSchema(): SchemaOrg {
     },
     contactPoint: {
       "@type": "ContactPoint",
-      email: "hola@invoo.es",
+      email: "hello@invoo.es",
       contactType: "customer support",
       availableLanguage: ["Spanish", "English"],
     },
     knowsAbout: [
       "Facturación electrónica",
       "Verifactu",
+      "TicketBAI",
+      "QR Verifactu",
       "AEAT",
       "Autónomos España",
+      "Pymes España",
       "Gestorías",
+      "Dashboard gestoría",
+      "Facturación gestoría",
+      "Facturación colaborativa",
       "Modelo 130",
       "Modelo 303",
       "IVA España",
       "Software de facturación",
       "Cumplimiento fiscal España",
+      "RD 1007/2023",
+      "Facturación en equipo",
+      "Panel gestoría tiempo real",
     ],
     sameAs: [
       "https://twitter.com/invoo_es",
@@ -98,47 +107,62 @@ export function generateWebSiteSchema(): SchemaOrg {
 }
 
 /**
- * Generates SoftwareApplication schema for the Invoo SaaS platform
- * Uses WebApplication type with PreOrder availability
+ * Generates WebApplication schema for the Invoo SaaS platform
+ * More accurate than SoftwareApplication for browser-based SaaS
  */
-export function generateSoftwareApplicationSchema(
+export function generateWebApplicationSchema(
   locale: string
 ): SchemaOrg {
   const isSpanish = locale === "es";
 
   const featureList = isSpanish
     ? [
+        "Facturación en 30 segundos",
+        "Dashboard gratuito para gestorías",
+        "Clientes ilimitados para gestorías",
         "Facturación electrónica con QR Verifactu",
         "Envío automático a AEAT",
+        "Flujo presupuesto a factura",
+        "Módulo de descuentos por partida",
         "Gestión de gastos y tickets",
         "Precálculo de Modelo 130 y 303",
         "Panel de gestoría en tiempo real",
+        "Colaboración en tiempo real",
         "Exportación CSV y XML",
         "Facturas recurrentes",
         "Multi-moneda e IVA internacional",
+        "Sin contratos de permanencia",
       ]
     : [
+        "Invoicing in 30 seconds",
+        "Free dashboard for accountants",
+        "Unlimited clients for accountants",
         "Electronic invoicing with Verifactu QR",
         "Automatic AEAT submission",
+        "Quote-to-invoice flow",
+        "Line-item discount module",
         "Expense and receipt management",
         "Pre-calculated Modelo 130 & 303",
-        "Real-time gestoría dashboard",
+        "Real-time accountant dashboard",
+        "Real-time collaboration",
         "CSV and XML export",
         "Recurring invoices",
         "Multi-currency and international VAT",
+        "No long-term contracts",
       ];
 
   const description = isSpanish
-    ? "Plataforma de facturación electrónica para autónomos, pymes y gestorías en España. Cumplimiento Verifactu automático, envío a AEAT y panel de gestoría incluido."
-    : "Electronic invoicing platform for freelancers, SMBs and accountants in Spain. Automatic Verifactu compliance, AEAT submission and gestoría dashboard included.";
+    ? "Facturación Verifactu en 30 segundos para autónomos y pymes. Dashboard gratuito para gestorías con clientes ilimitados. Colaboración en tiempo real, cumplimiento automático con AEAT, sin papeleo."
+    : "Verifactu invoicing in 30 seconds for freelancers and SMBs. Free dashboard for accountants with unlimited clients. Real-time collaboration, automatic AEAT compliance, zero paperwork.";
 
   return {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
+    "@type": "WebApplication",
     "@id": SOFTWARE_ID,
     name: "Invoo",
     description,
     url: BASE_URL,
+    inLanguage: locale,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     softwareVersion: "1.0",
@@ -167,12 +191,29 @@ export function generateSoftwareApplicationSchema(
         unitText: isSpanish ? "mes" : "month",
       },
     },
-    audience: {
-      "@type": "Audience",
-      audienceType: isSpanish
-        ? "Autónomos, pymes y gestorías en España"
-        : "Freelancers, SMBs and accountants in Spain",
-    },
+    audience: [
+      {
+        "@type": "Audience",
+        "audienceType": isSpanish ? "Autónomos en España" : "Freelancers in Spain",
+        "description": isSpanish
+          ? "Freelancers que buscan facturación Verifactu rápida (30 segundos), sin Excel ni papeleo, con colaboración directa con su gestoría"
+          : "Freelancers looking for fast Verifactu invoicing (30 seconds), without Excel or paperwork, with direct collaboration with their accountant",
+      },
+      {
+        "@type": "Audience",
+        "audienceType": isSpanish ? "Pymes en España" : "SMBs in Spain",
+        "description": isSpanish
+          ? "Pequeñas y medianas empresas que necesitan facturación en equipo (2-4 usuarios), cumplimiento Verifactu automático y dashboard para su gestoría"
+          : "Small and medium businesses that need team invoicing (2-4 users), automatic Verifactu compliance and dashboard for their accountant",
+      },
+      {
+        "@type": "Audience",
+        "audienceType": isSpanish ? "Gestorías en España" : "Accountants in Spain",
+        "description": isSpanish
+          ? "Gestorías y despachos contables que buscan acceso gratuito en tiempo real a facturas Verifactu de clientes ilimitados, con exportaciones CSV limpias"
+          : "Accountants and accounting firms looking for free real-time access to Verifactu invoices from unlimited clients, with clean CSV exports",
+      },
+    ],
     isAccessibleForFree: false,
   };
 }
@@ -185,8 +226,8 @@ export function generateProductSchema(locale: string): SchemaOrg {
   const isSpanish = locale === "es";
 
   const description = isSpanish
-    ? "Software de facturación electrónica con cumplimiento Verifactu para autónomos y gestorías en España"
-    : "Electronic invoicing software with Verifactu compliance for freelancers and accountants in Spain";
+    ? "Software de facturación Verifactu para autónomos, pymes y gestorías. La única plataforma con dashboard gratuito para gestorías y clientes ilimitados. Facturación en 30 segundos, colaboración en tiempo real."
+    : "Verifactu invoicing software for freelancers, SMBs and accountants. The only platform with free dashboard for accountants and unlimited clients. Invoicing in 30 seconds, real-time collaboration.";
 
   return {
     "@context": "https://schema.org",
@@ -195,6 +236,7 @@ export function generateProductSchema(locale: string): SchemaOrg {
     name: "Invoo",
     description,
     url: BASE_URL,
+    inLanguage: locale,
     brand: {
       "@type": "Brand",
       name: "Invoo",
@@ -229,8 +271,8 @@ export function generateProductSchema(locale: string): SchemaOrg {
         "@type": "Offer",
         name: isSpanish ? "Plan Gestoría - Gratis" : "Gestoría Plan - Free",
         description: isSpanish
-          ? "Acceso gratuito para gestorías con panel de clientes, exportaciones CSV y notificaciones"
-          : "Free access for accountants with client dashboard, CSV exports and notifications",
+          ? "Acceso 100% gratuito para gestorías con clientes ilimitados. Dashboard en tiempo real, exportaciones CSV en un clic, resúmenes Modelo 130/303 automáticos. Cero coste, cero riesgo, cero barreras de adopción."
+          : "100% free access for accountants with unlimited clients. Real-time dashboard, one-click CSV exports, automatic Modelo 130/303 summaries. Zero cost, zero risk, zero adoption barriers.",
         price: "0",
         priceCurrency: "EUR",
         priceValidUntil: "2026-12-31",
@@ -460,7 +502,7 @@ function formatSegmentName(segment: string, isSpanish: boolean): string {
 
 /**
  * Generates a combined schema graph for the homepage
- * Includes Organization, WebSite, and SoftwareApplication schemas
+ * Includes Organization, WebSite, and WebApplication schemas
  */
 export function generateHomePageSchemaGraph(locale: string): {
   "@context": "https://schema.org";
@@ -471,10 +513,16 @@ export function generateHomePageSchemaGraph(locale: string): {
     "@graph": [
       { ...generateOrganizationSchema(), "@context": undefined },
       { ...generateWebSiteSchema(), "@context": undefined },
-      { ...generateSoftwareApplicationSchema(locale), "@context": undefined },
+      { ...generateWebApplicationSchema(locale), "@context": undefined },
     ],
   };
 }
+
+/**
+ * @deprecated Use generateWebApplicationSchema instead
+ * Backward compatibility alias
+ */
+export const generateSoftwareApplicationSchema = generateWebApplicationSchema;
 
 /**
  * Generates BreadcrumbList schema standalone
@@ -489,6 +537,65 @@ export function generateBreadcrumbListSchema(
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: generateBreadcrumbItems(locale, path, pageTitle),
+  };
+}
+
+/**
+ * Generates CollectionPage schema for blog listing and category pages
+ */
+export function generateCollectionPageSchema({
+  locale,
+  path,
+  title,
+  description,
+}: {
+  locale: string;
+  path: string;
+  title: string;
+  description: string;
+}): SchemaOrg {
+  const url = `${BASE_URL}/${locale}${path}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": `${url}#collectionpage`,
+    url,
+    name: title,
+    description,
+    inLanguage: locale,
+    isPartOf: {
+      "@id": WEBSITE_ID,
+    },
+    about: {
+      "@id": SOFTWARE_ID,
+    },
+  };
+}
+
+/**
+ * Generates ContactPage schema for contact page
+ */
+export function generateContactPageSchema(locale: string): SchemaOrg {
+  const isSpanish = locale === "es";
+  const url = `${BASE_URL}/${locale}/contact`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": `${url}#contactpage`,
+    url,
+    name: isSpanish ? "Contacto" : "Contact",
+    description: isSpanish
+      ? "Contacta con el equipo de Invoo para resolver tus dudas sobre facturación electrónica"
+      : "Contact the Invoo team to resolve your questions about electronic invoicing",
+    inLanguage: locale,
+    isPartOf: {
+      "@id": WEBSITE_ID,
+    },
+    about: {
+      "@id": SOFTWARE_ID,
+    },
   };
 }
 
@@ -554,5 +661,61 @@ export function generateArticleSchema({
       name: "Facturación electrónica en España",
       description: "Software y normativas de facturación para autónomos y pymes españolas",
     },
+  };
+}
+
+/**
+ * Generates HowTo schema for step-by-step processes
+ * Perfect for InvoicingSection showing the 3-step invoicing flow
+ */
+export function generateHowToSchema({
+  locale,
+  name,
+  description,
+  steps,
+}: {
+  locale: string;
+  name: string;
+  description: string;
+  steps: Array<{ name: string; text: string }>;
+}): SchemaOrg {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name,
+    description,
+    inLanguage: locale,
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+    })),
+  };
+}
+
+/**
+ * Generates standalone FAQPage schema for FAQ sections
+ * Use this for page-specific FAQs (not the global FAQ page)
+ */
+export function generateFAQPageSchemaStandalone({
+  locale,
+  questions,
+}: {
+  locale: string;
+  questions: Array<{ question: string; answer: string }>;
+}): SchemaOrg {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: locale,
+    mainEntity: questions.map((qa) => ({
+      "@type": "Question",
+      name: qa.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: qa.answer,
+      },
+    })),
   };
 }
