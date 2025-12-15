@@ -19,13 +19,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "pymesPage" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/pymes",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("pymesPage.metadata.title"),
+    description: t("pymesPage.metadata.description"),
   });
 }
 
@@ -37,10 +37,10 @@ export default async function PymesPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "pymesPage" });
+  const t = await getTranslations({ locale });
 
   // Split title for gradient: "Facturación " + "en equipo" (or EN: "Team " + "invoicing")
-  const titleParts = t("header.title").split(" ");
+  const titleParts = t("pymesPage.header.title").split(" ");
   const firstPart = titleParts[0]; // "Facturación" or "Team"
   const secondPart = titleParts.slice(1).join(" "); // "en equipo" or "invoicing"
 
@@ -48,7 +48,7 @@ export default async function PymesPage({
   const webAppSchema = generateWebApplicationSchema(locale);
 
   // Generate FAQ schema for PYMEs page
-  const faqData = t.raw("faq") as Record<string, { question: string; answer: string }>;
+  const faqData = t.raw("pymesPage.faq") as Record<string, { question: string; answer: string }>;
   const faqQuestions = Object.values(faqData).map((faq) => ({
     question: faq.question,
     answer: faq.answer,
@@ -71,8 +71,8 @@ export default async function PymesPage({
             <GradientText>{secondPart}</GradientText>
           </>
         }
-        paragraph={t("header.description")}
-        buttonText={t("header.cta")}
+        paragraph={t("pymesPage.header.description")}
+        buttonText={t("pymesPage.header.cta")}
         buttonHref="#waitlist"
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="PYMES Dashboard" />
@@ -86,10 +86,10 @@ export default async function PymesPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block1.title")}
-        paragraph={t("block1.description")}
-        features={t.raw("block1.features")}
-        buttonText={t("block1.cta")}
+        title={t("pymesPage.block1.title")}
+        paragraph={t("pymesPage.block1.description")}
+        features={t.raw("pymesPage.block1.features")}
+        buttonText={t("pymesPage.block1.cta")}
         buttonHref="#waitlist"
       />
       <BuildForGestoriasSection
@@ -98,10 +98,10 @@ export default async function PymesPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block2.title")}
-        paragraph={t("block2.description")}
-        features={t.raw("block2.features")}
-        buttonText={t("block2.cta")}
+        title={t("pymesPage.block2.title")}
+        paragraph={t("pymesPage.block2.description")}
+        features={t.raw("pymesPage.block2.features")}
+        buttonText={t("pymesPage.block2.cta")}
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}
@@ -112,10 +112,10 @@ export default async function PymesPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block3.title")}
-        paragraph={t("block3.description")}
-        features={t.raw("block3.features")}
-        buttonText={t("block3.cta")}
+        title={t("pymesPage.block3.title")}
+        paragraph={t("pymesPage.block3.description")}
+        features={t.raw("pymesPage.block3.features")}
+        buttonText={t("pymesPage.block3.cta")}
         buttonHref="#waitlist"
         imagePosition="right"
         showImagePlaceholder={true}
@@ -126,10 +126,10 @@ export default async function PymesPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block4.title")}
-        paragraph={t("block4.description")}
-        features={t.raw("block4.features")}
-        buttonText={t("block4.cta")}
+        title={t("pymesPage.block4.title")}
+        paragraph={t("pymesPage.block4.description")}
+        features={t.raw("pymesPage.block4.features")}
+        buttonText={t("pymesPage.block4.cta")}
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}

@@ -79,8 +79,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     redirect(`/es/blog/${categorySlug}`);
   }
 
-  const t = await getTranslations({ locale, namespace: "blog" });
-  const articleT = await getTranslations({ locale, namespace: "blog.article" });
+  const t = await getTranslations({ locale });
+  const articleT = await getTranslations({ locale });
   const posts = getBlogPostsMetadataByCategory(categorySlug);
   const category = getAllCategories().find((c) => c.slug === categorySlug);
 
@@ -111,9 +111,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               size="none"
               showBackIcon
               disableHoverScale
-              aria-label={t("backToBlog")}
+              aria-label={t("blog.backToBlog")}
             >
-              {t("backToBlog")}
+              {t("blog.backToBlog")}
             </Button>
           </div>
           <h1 className="text-header-title-emphasized mb-8 text-primary">
@@ -131,16 +131,16 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         {posts.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-secondary text-lg">
-              {t("noPosts")}
+              {t("blog.noPosts")}
             </p>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => {
               const translations = {
-                readArticle: articleT("readArticle", { title: post.title }),
-                coverImageAlt: articleT("coverImageAlt", { title: post.title }),
-                publishedOn: articleT("publishedOn"),
+                readArticle: articleT("blog.article.readArticle", { title: post.title }),
+                coverImageAlt: articleT("blog.article.coverImageAlt", { title: post.title }),
+                publishedOn: articleT("blog.article.publishedOn"),
               };
 
               return (

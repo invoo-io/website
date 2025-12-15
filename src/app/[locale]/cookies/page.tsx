@@ -13,13 +13,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "cookiePolicy" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/cookies",
-    title: t("title"),
-    description: t("metaDescription"),
+    title: t("cookiePolicy.title"),
+    description: t("cookiePolicy.metaDescription"),
   });
 }
 
@@ -31,14 +31,14 @@ export default async function CookiePolicyPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "cookiePolicy" });
+  const t = await getTranslations({ locale });
 
   // Generate WebPage schema
   const webPageSchema = generateWebPageSchema({
     locale,
     path: "/cookies",
-    title: t("title"),
-    description: t("metaDescription"),
+    title: t("cookiePolicy.title"),
+    description: t("cookiePolicy.metaDescription"),
   });
 
   return (

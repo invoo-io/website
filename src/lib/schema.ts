@@ -303,7 +303,7 @@ export function generateProductSchema(locale: string): SchemaOrg {
 export async function generateFAQPageSchema(
   locale: string
 ): Promise<SchemaOrg> {
-  const t = await getTranslations({ locale, namespace: "faq" });
+  const t = await getTranslations({ locale });
 
   // FAQ categories to extract
   const categories = ["compliance", "scope", "pricing", "privacy", "operations"] as const;
@@ -325,8 +325,8 @@ export async function generateFAQPageSchema(
 
     for (const qKey of questionKeys) {
       try {
-        const question = t(`categories.${category}.questions.${qKey}.question`);
-        const answer = t(`categories.${category}.questions.${qKey}.answer`);
+        const question = t(`faq.categories.${category}.questions.${qKey}.question`);
+        const answer = t(`faq.categories.${category}.questions.${qKey}.answer`);
 
         if (question && answer) {
           mainEntity.push({

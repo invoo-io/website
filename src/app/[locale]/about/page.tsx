@@ -16,13 +16,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "about" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/about",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("about.metadata.title"),
+    description: t("about.metadata.description"),
   });
 }
 
@@ -33,7 +33,7 @@ export default async function AboutPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({ locale, namespace: "about.header" });
+  const t = await getTranslations({ locale });
 
   return (
     <div className="min-h-screen bg-background-primary relative overflow-hidden">
@@ -63,7 +63,7 @@ export default async function AboutPage({
               <GradientText>{locale === "en" ? "work better together" : "trabajar mejor juntos"}</GradientText>
             </>
           }
-          paragraph={t("description")}
+          paragraph={t("about.header.description")}
         />
         <AboutContent />
         <FocusSection />

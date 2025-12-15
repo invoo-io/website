@@ -23,13 +23,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata" });
+  const t = await getTranslations({ locale });
 
   const url = `${BASE_URL}/${locale}/`;
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: t("metadata.title"),
+    description: t("metadata.description"),
     alternates: {
       canonical: url,
       languages: {
@@ -42,8 +42,8 @@ export async function generateMetadata({
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",
       url,
-      title: t("title"),
-      description: t("description"),
+      title: t("metadata.title"),
+      description: t("metadata.description"),
       siteName: "Invoo",
     },
   };
@@ -57,11 +57,11 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "home" });
+  const t = await getTranslations({ locale });
 
   // Split title for gradient: "Create " + "compliant invoices" + " in 30 seconds"
   // ES: "Crea " + "facturas conformes" + " en 30 segundos"
-  const titleParts = t("hero.title").split(" ");
+  const titleParts = t("home.hero.title").split(" ");
   const firstWord = titleParts[0]; // "Create" or "Crea"
   const middleWords = titleParts.slice(1, -3).join(" "); // "compliant invoices" or "facturas conformes"
   const lastThreeWords = titleParts.slice(-3).join(" "); // "in 30 seconds" or "en 30 segundos"
@@ -69,22 +69,22 @@ export default async function Home({
   // Generate HowTo schema for InvoicingSection
   const howToSchema = generateHowToSchema({
     locale,
-    name: t("invoicing.title"),
+    name: t("home.invoicing.title"),
     description: locale === "es"
       ? "Aprende cómo crear y enviar facturas conformes con Verifactu en solo 3 pasos simples con Invoo"
       : "Learn how to create and send compliant Verifactu invoices in just 3 simple steps with Invoo",
     steps: [
       {
-        name: t("invoicing.step1.title"),
-        text: t("invoicing.step1.description"),
+        name: t("home.invoicing.step1.title"),
+        text: t("home.invoicing.step1.description"),
       },
       {
-        name: t("invoicing.step2.title"),
-        text: t("invoicing.step2.description"),
+        name: t("home.invoicing.step2.title"),
+        text: t("home.invoicing.step2.description"),
       },
       {
-        name: t("invoicing.step3.title"),
-        text: t("invoicing.step3.description"),
+        name: t("home.invoicing.step3.title"),
+        text: t("home.invoicing.step3.description"),
       },
     ],
   });
@@ -102,8 +102,8 @@ export default async function Home({
             <span className="text-primary"> {lastThreeWords}</span>
           </>
         }
-        paragraph={t("hero.description")}
-        buttonText={t("hero.cta")}
+        paragraph={t("home.hero.description")}
+        buttonText={t("home.hero.cta")}
         buttonHref="#waitlist"
       />
       <HeroImageSection />
@@ -118,9 +118,9 @@ export default async function Home({
             <>Built for <GradientText>gestorías</GradientText></>
           )
         }
-        paragraph={t("gestoriasBlock.description")}
-        features={t.raw("gestoriasBlock.features")}
-        buttonText={t("gestoriasBlock.cta")}
+        paragraph={t("home.gestoriasBlock.description")}
+        features={t.raw("home.gestoriasBlock.features")}
+        buttonText={t("home.gestoriasBlock.cta")}
         buttonHref={getBasePath(`/${locale}/gestorias`)}
         imageAlt="Gestorías Dashboard"
         imagePosition="right"

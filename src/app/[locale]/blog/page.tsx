@@ -29,11 +29,11 @@ export async function generateMetadata({
     return {};
   }
 
-  const t = await getTranslations({ locale, namespace: "blog" });
+  const t = await getTranslations({ locale });
 
   return {
-    title: t("meta.title"),
-    description: t("meta.description"),
+    title: t("blog.meta.title"),
+    description: t("blog.meta.description"),
     alternates: {
       canonical: "https://invoo.es/es/blog/",
       languages: {
@@ -42,8 +42,8 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: t("meta.title"),
-      description: t("meta.description"),
+      title: t("blog.meta.title"),
+      description: t("blog.meta.description"),
       type: "website",
     },
   };
@@ -62,7 +62,7 @@ export default async function BlogPage({
     redirect("/es/blog");
   }
 
-  const t = await getTranslations({ locale, namespace: "blog" });
+  const t = await getTranslations({ locale });
   const allPosts = getAllBlogPostsMetadata();
   const featuredPosts = allPosts.filter((post) => post.featured === true);
   const editorPickPosts = allPosts.filter((post) => post.editorPick === true);
@@ -81,7 +81,7 @@ export default async function BlogPage({
   });
 
   // Split title for gradient: "Blog de " + "Invoo"
-  const titleParts = t("title").split(" ");
+  const titleParts = t("blog.title").split(" ");
   const firstPart = titleParts.slice(0, -1).join(" "); // "Blog de"
   const lastPart = titleParts[titleParts.length - 1]; // "Invoo"
 
@@ -89,8 +89,8 @@ export default async function BlogPage({
   const collectionSchema = generateCollectionPageSchema({
     locale,
     path: "/blog",
-    title: t("title"),
-    description: t("description"),
+    title: t("blog.title"),
+    description: t("blog.description"),
   });
 
   return (
@@ -104,8 +104,8 @@ export default async function BlogPage({
             <GradientText>{lastPart}</GradientText>
           </>
         }
-        paragraph={t("description")}
-        buttonText={t("cta")}
+        paragraph={t("blog.description")}
+        buttonText={t("blog.cta")}
         buttonHref="#newsletter"
       />
 
@@ -124,7 +124,7 @@ export default async function BlogPage({
             <EditorPicksSection
               posts={editorPickPosts}
               locale={locale}
-              title={t("editorPicks")}
+              title={t("blog.editorPicks")}
             />
           </div>
         )}
@@ -142,7 +142,7 @@ export default async function BlogPage({
           return (
             <CategoryBlock
               key={categorySlug}
-              categoryName={t(`categories.${categorySlug}`)}
+              categoryName={t(`blog.categories.${categorySlug}`)}
               categorySlug={categorySlug}
               posts={posts}
               locale={locale}
@@ -154,7 +154,7 @@ export default async function BlogPage({
         {allPosts.length === 0 && (
           <div className="text-center py-12">
             <p className="text-secondary text-lg">
-              {t("noPosts")}
+              {t("blog.noPosts")}
             </p>
           </div>
         )}

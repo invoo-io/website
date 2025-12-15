@@ -13,13 +13,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "terms" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/terms",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("terms.metadata.title"),
+    description: t("terms.metadata.description"),
   });
 }
 
@@ -31,14 +31,14 @@ export default async function TermsPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "terms" });
+  const t = await getTranslations({ locale });
 
   // Generate WebPage schema
   const webPageSchema = generateWebPageSchema({
     locale,
     path: "/terms",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("terms.metadata.title"),
+    description: t("terms.metadata.description"),
   });
 
   return (
