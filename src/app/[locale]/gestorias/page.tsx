@@ -19,13 +19,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "gestoriasPage" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/gestorias",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("gestoriasPage.metadata.title"),
+    description: t("gestoriasPage.metadata.description"),
   });
 }
 
@@ -37,10 +37,10 @@ export default async function GestoriasPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "gestoriasPage" });
+  const t = await getTranslations({ locale });
 
   // Split title for gradient: "Less paperwork, " + "more advising" (or ES equivalent)
-  const titleParts = t("header.title").split(", ");
+  const titleParts = t("gestoriasPage.header.title").split(", ");
 
   // Generate WebApplication schema with gestoría audience targeting
   const webAppSchema = generateWebApplicationSchema(locale);
@@ -48,24 +48,24 @@ export default async function GestoriasPage({
   // Generate FAQ schema for gestoría-specific questions
   const faqQuestions = [
     {
-      question: t("faq.q1.question"),
-      answer: t("faq.q1.answer"),
+      question: t("gestoriasPage.faq.q1.question"),
+      answer: t("gestoriasPage.faq.q1.answer"),
     },
     {
-      question: t("faq.q2.question"),
-      answer: t("faq.q2.answer"),
+      question: t("gestoriasPage.faq.q2.question"),
+      answer: t("gestoriasPage.faq.q2.answer"),
     },
     {
-      question: t("faq.q3.question"),
-      answer: t("faq.q3.answer"),
+      question: t("gestoriasPage.faq.q3.question"),
+      answer: t("gestoriasPage.faq.q3.answer"),
     },
     {
-      question: t("faq.q4.question"),
-      answer: t("faq.q4.answer"),
+      question: t("gestoriasPage.faq.q4.question"),
+      answer: t("gestoriasPage.faq.q4.answer"),
     },
     {
-      question: t("faq.q5.question"),
-      answer: t("faq.q5.answer"),
+      question: t("gestoriasPage.faq.q5.question"),
+      answer: t("gestoriasPage.faq.q5.answer"),
     },
   ];
 
@@ -87,8 +87,8 @@ export default async function GestoriasPage({
             <GradientText>{titleParts[1]}</GradientText>
           </>
         }
-        paragraph={t("header.description")}
-        buttonText={t("header.cta")}
+        paragraph={t("gestoriasPage.header.description")}
+        buttonText={t("gestoriasPage.header.cta")}
         buttonHref="#waitlist"
       />
       <HeroImageSection imageBaseName="gestoria" dashboardAlt="Gestorías Dashboard" />
@@ -102,10 +102,10 @@ export default async function GestoriasPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block1.title")}
-        paragraph={t("block1.description")}
-        features={t.raw("block1.features")}
-        buttonText={t("block1.cta")}
+        title={t("gestoriasPage.block1.title")}
+        paragraph={t("gestoriasPage.block1.description")}
+        features={t.raw("gestoriasPage.block1.features")}
+        buttonText={t("gestoriasPage.block1.cta")}
         buttonHref="#waitlist"
       />
       <BuildForGestoriasSection
@@ -114,10 +114,10 @@ export default async function GestoriasPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block2.title")}
-        paragraph={t("block2.description")}
-        features={t.raw("block2.features")}
-        buttonText={t("block2.cta")}
+        title={t("gestoriasPage.block2.title")}
+        paragraph={t("gestoriasPage.block2.description")}
+        features={t.raw("gestoriasPage.block2.features")}
+        buttonText={t("gestoriasPage.block2.cta")}
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}
@@ -128,10 +128,10 @@ export default async function GestoriasPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block3.title")}
-        paragraph={t("block3.description")}
-        features={t.raw("block3.features")}
-        buttonText={t("block3.cta")}
+        title={t("gestoriasPage.block3.title")}
+        paragraph={t("gestoriasPage.block3.description")}
+        features={t.raw("gestoriasPage.block3.features")}
+        buttonText={t("gestoriasPage.block3.cta")}
         buttonHref="#waitlist"
         imagePosition="right"
         showImagePlaceholder={true}
@@ -142,10 +142,10 @@ export default async function GestoriasPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block4.title")}
-        paragraph={t("block4.description")}
-        features={t.raw("block4.features")}
-        buttonText={t("block4.cta")}
+        title={t("gestoriasPage.block4.title")}
+        paragraph={t("gestoriasPage.block4.description")}
+        features={t.raw("gestoriasPage.block4.features")}
+        buttonText={t("gestoriasPage.block4.cta")}
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}
@@ -160,10 +160,10 @@ export default async function GestoriasPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("recommendBenefit1Title")}
-        paragraph={t("recommendBenefit1Text")}
+        title={t("gestoriasPage.recommendBenefit1Title")}
+        paragraph={t("gestoriasPage.recommendBenefit1Text")}
         features={[]}
-        buttonText={t("block1.cta")}
+        buttonText={t("gestoriasPage.block1.cta")}
         buttonHref="#waitlist"
         imagePosition="right"
         showImagePlaceholder={true}
@@ -174,10 +174,10 @@ export default async function GestoriasPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("recommendBenefit2Title")}
-        paragraph={t("recommendBenefit2Text")}
+        title={t("gestoriasPage.recommendBenefit2Title")}
+        paragraph={t("gestoriasPage.recommendBenefit2Text")}
         features={[]}
-        buttonText={t("block1.cta")}
+        buttonText={t("gestoriasPage.block1.cta")}
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}

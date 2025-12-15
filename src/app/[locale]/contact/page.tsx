@@ -14,13 +14,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "contact" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/contact",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("contact.metadata.title"),
+    description: t("contact.metadata.description"),
   });
 }
 

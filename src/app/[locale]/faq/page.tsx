@@ -16,13 +16,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "faq" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/faq",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("faq.metadata.title"),
+    description: t("faq.metadata.description"),
   });
 }
 
@@ -34,10 +34,10 @@ export default async function FAQPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "faq" });
+  const t = await getTranslations({ locale });
 
   // Split title for gradient
-  const titleParts = t("hero.title").split(" ");
+  const titleParts = t("faq.hero.title").split(" ");
   const firstPart = titleParts.slice(0, -1).join(" ");
   const lastPart = titleParts[titleParts.length - 1];
 
@@ -54,8 +54,8 @@ export default async function FAQPage({
             <GradientText>{lastPart}</GradientText>
           </>
         }
-        paragraph={t("hero.description")}
-        buttonText={t("hero.cta")}
+        paragraph={t("faq.hero.description")}
+        buttonText={t("faq.hero.cta")}
         buttonHref="#waitlist"
       />
       <FAQContent />

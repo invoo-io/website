@@ -21,8 +21,8 @@ export async function CategoryBlock({ categoryName, categorySlug, posts, locale 
   const displayPosts = posts.slice(0, 3)
 
   // Get translations
-  const articleT = await getTranslations({ locale, namespace: 'blog.article' })
-  const blogT = await getTranslations({ locale, namespace: 'blog' })
+  const articleT = await getTranslations({ locale })
+  const blogT = await getTranslations({ locale })
 
   return (
     <section className="w-full mb-24" aria-labelledby={`category-${categoryName}`}>
@@ -38,7 +38,7 @@ export async function CategoryBlock({ categoryName, categorySlug, posts, locale 
           href={`/${locale}/blog/${categorySlug}`}
           className="flex items-center gap-2 text-callout-emphasized text-accent-blue-main hover:text-accent-blue-dark transition-colors"
         >
-          {blogT('viewAll')}
+          {blogT('blog.viewAll')}
           <ChevronRight className="w-4 h-4" />
         </Link>
       </div>
@@ -48,9 +48,9 @@ export async function CategoryBlock({ categoryName, categorySlug, posts, locale 
         {displayPosts.map((post) => {
           // Format translations with the specific post data
           const translations = {
-            readArticle: articleT('readArticle', { title: post.title }),
-            coverImageAlt: articleT('coverImageAlt', { title: post.title }),
-            publishedOn: articleT('publishedOn')
+            readArticle: articleT('blog.article.readArticle', { title: post.title }),
+            coverImageAlt: articleT('blog.article.coverImageAlt', { title: post.title }),
+            publishedOn: articleT('blog.article.publishedOn')
           }
 
           return (

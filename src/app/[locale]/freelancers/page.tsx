@@ -19,13 +19,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "freelancersPage" });
+  const t = await getTranslations({ locale });
 
   return generatePageMetadata({
     locale,
     path: "/freelancers",
-    title: t("metadata.title"),
-    description: t("metadata.description"),
+    title: t("freelancersPage.metadata.title"),
+    description: t("freelancersPage.metadata.description"),
   });
 }
 
@@ -37,10 +37,10 @@ export default async function FreelancersPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: "freelancersPage" });
+  const t = await getTranslations({ locale });
 
   // Split title for gradient: "Invoicing " + "without stress" (or ES: "Facturación " + "sin estrés")
-  const titleParts = t("header.title").split(" ");
+  const titleParts = t("freelancersPage.header.title").split(" ");
   const firstPart = titleParts[0]; // "Invoicing" or "Facturación"
   const secondPart = titleParts.slice(1).join(" "); // "without stress" or "sin estrés"
 
@@ -48,7 +48,7 @@ export default async function FreelancersPage({
   const webAppSchema = generateWebApplicationSchema(locale);
 
   // Generate FAQ schema for SEO
-  const faqData = t.raw("faq") as Record<string, { question: string; answer: string }>;
+  const faqData = t.raw("freelancersPage.faq") as Record<string, { question: string; answer: string }>;
   const faqQuestions = Object.values(faqData).map((faq) => ({
     question: faq.question,
     answer: faq.answer,
@@ -72,8 +72,8 @@ export default async function FreelancersPage({
             <GradientText>{secondPart}</GradientText>
           </>
         }
-        paragraph={t("header.description")}
-        buttonText={t("header.cta")}
+        paragraph={t("freelancersPage.header.description")}
+        buttonText={t("freelancersPage.header.cta")}
         buttonHref="#waitlist"
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="Freelancer Dashboard" />
@@ -87,10 +87,10 @@ export default async function FreelancersPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block1.title")}
-        paragraph={t("block1.description")}
-        features={t.raw("block1.features")}
-        buttonText={t("block1.cta")}
+        title={t("freelancersPage.block1.title")}
+        paragraph={t("freelancersPage.block1.description")}
+        features={t.raw("freelancersPage.block1.features")}
+        buttonText={t("freelancersPage.block1.cta")}
         buttonHref="#waitlist"
       />
       <BuildForGestoriasSection
@@ -99,10 +99,10 @@ export default async function FreelancersPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block2.title")}
-        paragraph={t("block2.description")}
-        features={t.raw("block2.features")}
-        buttonText={t("block2.cta")}
+        title={t("freelancersPage.block2.title")}
+        paragraph={t("freelancersPage.block2.description")}
+        features={t.raw("freelancersPage.block2.features")}
+        buttonText={t("freelancersPage.block2.cta")}
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}
@@ -113,10 +113,10 @@ export default async function FreelancersPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block3.title")}
-        paragraph={t("block3.description")}
-        features={t.raw("block3.features")}
-        buttonText={t("block3.cta")}
+        title={t("freelancersPage.block3.title")}
+        paragraph={t("freelancersPage.block3.description")}
+        features={t.raw("freelancersPage.block3.features")}
+        buttonText={t("freelancersPage.block3.cta")}
         buttonHref="#waitlist"
         imagePosition="right"
         showImagePlaceholder={true}
@@ -127,10 +127,10 @@ export default async function FreelancersPage({
         imageHeight={350}
         offsetImage={false}
         maxImageWidth={160}
-        title={t("block4.title")}
-        paragraph={t("block4.description")}
-        features={t.raw("block4.features")}
-        buttonText={t("block4.cta")}
+        title={t("freelancersPage.block4.title")}
+        paragraph={t("freelancersPage.block4.description")}
+        features={t.raw("freelancersPage.block4.features")}
+        buttonText={t("freelancersPage.block4.cta")}
         buttonHref="#waitlist"
         imagePosition="left"
         showImagePlaceholder={true}
