@@ -2,6 +2,11 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import validator from "validator";
 
+// Route configuration: Timeout protection (CVE-2025-55184 defense-in-depth)
+// Maximum execution time for this API route (in seconds)
+// Prevents long-running requests from consuming resources
+export const maxDuration = 10; // 10 seconds is generous for a simple subscription
+
 // Environment variables are validated at runtime, not build time
 // This allows the build to succeed on Vercel before env vars are configured
 function getEnvVars() {
@@ -170,7 +175,18 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 3. Parse and validate request body
+    // 3. Check Content-Length header to prevent large payload attacks (CVE-2025-55184 defense-in-depth)
+    const contentLength = request.headers.get("content-length");
+    const MAX_BODY_SIZE = 1024; // 1KB is more than enough for { email: "..." }
+
+    if (contentLength && parseInt(contentLength, 10) > MAX_BODY_SIZE) {
+      return NextResponse.json(
+        { error: "Request body too large" },
+        { status: 413, headers: corsHeaders }
+      );
+    }
+
+    // 4. Parse and validate request body with size protection
     const contentType = request.headers.get("content-type");
     if (!contentType?.includes("application/json")) {
       return NextResponse.json(
@@ -179,10 +195,28 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const body = await request.json();
+    // Read body as text first to verify size before parsing
+    const bodyText = await request.text();
+
+    if (bodyText.length > MAX_BODY_SIZE) {
+      return NextResponse.json(
+        { error: "Request body too large" },
+        { status: 413, headers: corsHeaders }
+      );
+    }
+
+    let body;
+    try {
+      body = JSON.parse(bodyText);
+    } catch {
+      return NextResponse.json(
+        { error: "Invalid JSON" },
+        { status: 400, headers: corsHeaders }
+      );
+    }
     const { email } = body;
 
-    // 4. Validate email exists
+    // 5. Validate email exists
     if (!email || typeof email !== "string") {
       return NextResponse.json(
         { error: "Email is required" },
@@ -190,10 +224,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 5. Sanitize and normalize email
+    // 6. Sanitize and normalize email
     const sanitizedEmail = email.trim().toLowerCase();
 
-    // 6. Validate email format (strong validation)
+    // 7. Validate email format (strong validation)
     if (!validator.isEmail(sanitizedEmail, {
       allow_utf8_local_part: false,
       require_tld: true,
@@ -204,7 +238,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 7. Block disposable email addresses
+    // 8. Block disposable email addresses
     if (isDisposableEmail(sanitizedEmail)) {
       return NextResponse.json(
         { error: "Disposable email addresses are not allowed" },
@@ -212,7 +246,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 8. Check length constraints (RFC 5321)
+    // 9. Check length constraints (RFC 5321)
     const [localPart, domain] = sanitizedEmail.split("@");
     if (
       localPart.length > 64 ||
@@ -225,7 +259,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 9. Additional validation checks
+    // 10. Additional validation checks
     if (sanitizedEmail.includes("..")) {
       return NextResponse.json(
         { error: "Invalid email format" },
@@ -233,7 +267,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 10. Add contact to Resend audience
+    // 11. Add contact to Resend audience
     try {
       const response = await resend.contacts.create({
         email: sanitizedEmail,
