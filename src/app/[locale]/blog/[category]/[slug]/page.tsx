@@ -10,6 +10,7 @@ import ArticleSidebar from "@/components/blog/ArticleSidebar";
 import { JsonLd } from "@/components/JsonLd";
 import { generateArticleSchema, generateBreadcrumbListSchema } from "@/lib/schema";
 import { getAllBlogPosts, getBlogPost, getAllCategories } from "@/lib/blog";
+import { BASE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -48,6 +49,10 @@ export async function generateMetadata({
 
   const canonicalUrl = `https://invoo.es/es/blog/${category}/${slug}/`;
 
+  const ogImage = post.coverImage
+    ? `${BASE_URL}${post.coverImage}`
+    : `${BASE_URL}/Logo.png`;
+
   return {
     title: `${post.title} | Blog de Invoo`,
     description: post.excerpt,
@@ -63,9 +68,29 @@ export async function generateMetadata({
       title: post.title,
       description: post.excerpt,
       type: "article",
+      url: canonicalUrl,
+      siteName: "Invoo",
+      locale: "es_ES",
       publishedTime: post.publishedAt,
+      modifiedTime: post.updatedAt || post.publishedAt,
       authors: [post.author],
-      images: post.coverImage ? [{ url: post.coverImage }] : undefined,
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+          type: "image/webp",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [ogImage],
+      creator: "@invoo_es",
+      site: "@invoo_es",
     },
   };
 }

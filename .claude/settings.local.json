@@ -81,7 +81,8 @@
       "Bash(grep:*)",
       "Bash(wc:*)",
       "WebFetch(domain:alphaefficiency.com)",
-      "Bash(npm run generate-sitemap:*)"
+      "Bash(npm run generate-sitemap:*)",
+      "Bash(git -C /Volumes/LaCie/Work/Apps/website log --oneline -20)"
     ],
     "deny": [],
     "ask": []
