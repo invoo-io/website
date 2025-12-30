@@ -6,7 +6,7 @@ author: "Equipo Invoo"
 tags: ["productividad", "autonomos", "procrastinacion", "gestion-facturas", "psicologia"]
 readingTime: 10
 featured: true
-editorPick: true
+editorPick: false
 coverImage: "/blog/procrastinacion-facturacion-autonomos.webp"
 keyTakeaways:
   - "La mayoría de autónomos deja la facturación para los últimos días del mes, y muchos admiten sufrir ansiedad específica por procrastinar facturas"
