@@ -63,3 +63,58 @@ npm run playwright:show
 - Tailwind CSS for styling with custom animations via tw-animate-css
 - Gradient buttons use inline styles with specific linear gradient patterns
 - Consistent rounded corners: `rounded-full` for standard buttons, `rounded-[12px]` for gradient buttons
+
+---
+
+## Local Agents
+
+This project uses specialized agents defined in `.claude/agents/`. These agents are automatically available and should be deployed proactively.
+
+### Available Agents
+
+| Agent | Purpose | Deploy When |
+|-------|---------|-------------|
+| `product-manager` | Linear specs, feature requirements | Feature specs needed, Linear issues/projects |
+| `compliance-regulator` | Spanish tax/legal (AEAT, Verifactu) | Invoicing, payments, regulatory questions |
+| `content-writer` | Blog articles, SEO content | Writing blog posts, guides, comparisons |
+| `nextjs-architect` | Architecture, patterns, refactoring | Architectural decisions, structural changes |
+| `nextjs-developer` | Feature implementation | Building components, pages, features |
+| `code-reviewer` | Quality, security, accessibility | Code reviews, pre-merge checks |
+| `seo-specialist` | Technical SEO, keyword strategy | SEO audits, metadata, structured data |
+| `market-intelligence` | Competitive analysis, user sentiment | Market research, competitor analysis |
+| `design-leader` | UX strategy, design systems, a11y | Design decisions, critiques, stakeholder alignment |
+
+### Deployment Rules
+
+**Always delegate:**
+- Specs/Linear work → `product-manager`
+- Spanish compliance/regulations → `compliance-regulator`
+- Blog articles/content → `content-writer`
+- Architecture decisions → `nextjs-architect`
+- Feature implementation → `nextjs-developer`
+- Code reviews → `code-reviewer`
+- Technical SEO → `seo-specialist`
+- Market/competitor research → `market-intelligence`
+- UX/design decisions → `design-leader`
+
+**Proactive triggers:**
+- Shipping invoice/payment features → `compliance-regulator`
+- Blog content needed → `content-writer`
+- Significant code changes → `nextjs-architect`
+- Before merging PRs → `code-reviewer`
+- Competitor mentioned → `market-intelligence`
+- Design inconsistencies → `design-leader`
+
+Run agents in parallel when tasks are independent.
+
+---
+
+## Guides
+
+Detailed workflow guides are in `.claude/guides/`:
+
+| Guide | Purpose |
+|-------|---------|
+| `article-creation.md` | Complete workflow for creating blog articles |
+
+Agents should read relevant guides before starting complex tasks.
