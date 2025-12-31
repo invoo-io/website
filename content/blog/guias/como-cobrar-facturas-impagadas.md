@@ -1,7 +1,7 @@
 ---
-title: "Cómo cobrar facturas impagadas: guía práctica 2025"
+title: "Cómo cobrar facturas impagadas: guía práctica 2026"
 excerpt: "Guía práctica para recuperar facturas impagadas: prevención, burofax, proceso monitorio. Costes reales, plazos y cómo recuperar el IVA."
-publishedAt: "2025-12-31"
+publishedAt: "2026-01-01"
 author: "Equipo Invoo"
 tags: ["facturas-impagadas", "proceso-monitorio", "autonomos", "morosidad", "reclamacion-deudas"]
 readingTime: 9
@@ -55,9 +55,9 @@ Vale, ya tienes la factura impagada. El plazo venció hace dos semanas y el clie
 
 Lo primero es un email o llamada de recordatorio. Muchas veces el impago no es mala fe, sino desorganización. El cliente se olvidó, el responsable de pagos estaba de vacaciones, hubo un error en contabilidad. Un email educado pero firme suele ser suficiente.
 
-El tono es importante aquí. No empieces con amenazas legales. Algo así funciona bien: "Hola [nombre], te escribo para recordarte que la factura nº 2025-042 por importe de 2.400 € venció el pasado 15 de noviembre y aún no hemos recibido el pago. ¿Podrías confirmarme cuándo está prevista la transferencia? Muchas gracias."
+El tono es importante aquí. No empieces con amenazas legales. Algo así funciona bien: "Hola [nombre], te escribo para recordarte que la factura nº 2026-042 por importe de 2.400 € venció el pasado 15 de noviembre y aún no hemos recibido el pago. ¿Podrías confirmarme cuándo está prevista la transferencia? Muchas gracias."
 
-Si no recibes respuesta en 3-5 días, manda un segundo recordatorio un poco más firme: "Hola de nuevo. No he recibido respuesta sobre mi email anterior. Necesito que me confirmes el estado del pago de la factura 2025-042 (2.400 €, vencida el 15/11). Si hay algún problema con la factura, por favor indícamelo para solucionarlo cuanto antes."
+Si no recibes respuesta en 3-5 días, manda un segundo recordatorio un poco más firme: "Hola de nuevo. No he recibido respuesta sobre mi email anterior. Necesito que me confirmes el estado del pago de la factura 2026-042 (2.400 €, vencida el 15/11). Si hay algún problema con la factura, por favor indícamelo para solucionarlo cuanto antes."
 
 ### El burofax: tu arma de reclamación formal
 
@@ -73,7 +73,7 @@ Una novedad importante: desde 2023 la Agencia Tributaria acepta el burofax como 
 
 Aquí viene algo que la mayoría de autónomos desconoce: tienes derecho a cobrar intereses de demora automáticamente por el simple hecho de que tu cliente haya pagado tarde. No necesitas ir a juicio, no necesitas que el cliente lo acepte. Es un derecho que te da la [Ley 3/2004 de lucha contra la morosidad](https://www.boe.es/buscar/act.php?id=BOE-A-2004-21830).
 
-El tipo de interés de demora se calcula sumando el tipo de interés del Banco Central Europeo más 8 puntos porcentuales. En el segundo semestre de 2025, el tipo de interés legal de demora es del 10,15% anual. Además, tienes derecho a una indemnización fija de 40 € por gastos de gestión de cobro, que se añade automáticamente a la deuda sin necesidad de justificar nada.
+El tipo de interés de demora se calcula sumando el tipo de interés del Banco Central Europeo más 8 puntos porcentuales. En el primer semestre de 2026, el tipo de interés legal de demora es del 10,15% anual. Además, tienes derecho a una indemnización fija de 40 € por gastos de gestión de cobro, que se añade automáticamente a la deuda sin necesidad de justificar nada.
 
 Para aplicar estos intereses solo tienes que calcularlos sobre el importe impagado desde la fecha de vencimiento hasta la fecha de pago efectivo, y añadirlos en tu reclamación (ya sea en el burofax o en el proceso monitorio). Si la deuda era de 2.400 € y lleva 60 días de retraso con un interés del 10% anual, los intereses serían aproximadamente 39 €, más los 40 € de indemnización fija. Total a reclamar: 2.479 €.
 
@@ -235,6 +235,6 @@ Con Invoo automatizas los recordatorios de pago y tienes toda la documentación 
 - [Correos - Servicio de Burofax](https://www.correos.es)
 - BOE Resolución 25 junio 2025 - Tipo de interés de demora H2 2025 (10,15%)
 
-*Última actualización: Diciembre 2025*
+*Última actualización: Enero 2026*
 
 *Este artículo tiene carácter informativo y no constituye asesoramiento legal. Para casos específicos, consulta con un abogado o gestor.*
