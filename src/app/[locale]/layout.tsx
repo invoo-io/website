@@ -113,6 +113,8 @@ export default async function RootLayout({
           }}
           suppressHydrationWarning
         />
+        {/* Google AdSense */}
+        <meta name="google-adsense-account" content="ca-pub-7899464715113939" />
       </head>
       <body
         className={`${inter.variable} antialiased`}
