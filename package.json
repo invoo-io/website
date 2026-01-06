@@ -4,18 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack -p 4200",
-    "generate-sitemap": "node scripts/generate-sitemap.js",
-    "prebuild": "npm run generate-sitemap",
     "build": "next build --turbopack",
     "build:vercel": "next build --turbopack",
-    "prebuild:static": "npm run generate-sitemap",
-    "build:static": "STATIC_EXPORT=true next build --turbopack",
-    "build:next": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
     "test": "playwright test",
     "test:ui": "playwright test --ui",
-    "screenshot": "node capture-screenshots.js",
     "playwright:show": "playwright show-report"
   },
   "dependencies": {

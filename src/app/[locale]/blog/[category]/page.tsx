@@ -21,11 +21,11 @@ export async function generateStaticParams() {
     return posts.length > 0;
   });
 
-  // Generate both locales - English will redirect to Spanish
-  return categoriesWithContent.flatMap((category) => [
-    { locale: "es", category: category.slug },
-    { locale: "en", category: category.slug },
-  ]);
+  // Blog is Spanish-only - don't generate EN pages to avoid redirect chains
+  return categoriesWithContent.map((category) => ({
+    locale: "es",
+    category: category.slug,
+  }));
 }
 
 interface CategoryPageProps {

@@ -17,11 +17,12 @@ import type { ReactNode } from "react";
 export async function generateStaticParams() {
   const posts = getAllBlogPosts();
 
-  // Generate both locales - English will redirect to Spanish
-  return posts.flatMap((post) => [
-    { locale: "es", category: post.category, slug: post.slug },
-    { locale: "en", category: post.category, slug: post.slug },
-  ]);
+  // Blog is Spanish-only - don't generate EN pages to avoid redirect chains
+  return posts.map((post) => ({
+    locale: "es",
+    category: post.category,
+    slug: post.slug,
+  }));
 }
 
 interface ArticlePageProps {
