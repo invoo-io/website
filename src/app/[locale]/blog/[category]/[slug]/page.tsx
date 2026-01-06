@@ -8,7 +8,7 @@ import ExploreWithAI from "@/components/blog/ExploreWithAI";
 import ArticleHeader from "@/components/blog/ArticleHeader";
 import ArticleSidebar from "@/components/blog/ArticleSidebar";
 import { JsonLd } from "@/components/JsonLd";
-import { generateArticleSchema, generateBreadcrumbListSchema } from "@/lib/schema";
+import { generateArticleSchema, generateBreadcrumbListSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
 import { getAllBlogPosts, getBlogPost, getAllCategories } from "@/lib/blog";
 import { BASE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
@@ -158,10 +158,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     post.title
   );
 
+  // Generate FAQ schema if post has FAQ data
+  const faqSchema = post.faq && post.faq.length > 0
+    ? generateFAQPageSchemaStandalone({
+        locale,
+        questions: post.faq,
+      })
+    : null;
+
   return (
     <>
       <JsonLd data={articleSchema} id="article-schema" />
       <JsonLd data={breadcrumbSchema} id="breadcrumb-schema" />
+      {faqSchema && <JsonLd data={faqSchema} id="faq-schema" />}
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
 

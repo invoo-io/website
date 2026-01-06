@@ -5,8 +5,8 @@ publishedAt: "2025-11-24"
 author: "Equipo Invoo"
 tags: ["analisis", "productividad", "automatizacion", "gestion-tiempo"]
 readingTime: 12
-featured: true
-editorPick: true
+featured: false
+editorPick: false
 coverImage: "/blog/analisis-autonomos-tiempo.webp"
 keyTakeaways:
   - "El 82% de autónomos pierde 10+ horas mensuales en tareas administrativas que podrían automatizarse completamente."

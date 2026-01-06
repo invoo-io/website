@@ -82,7 +82,22 @@
       "Bash(wc:*)",
       "WebFetch(domain:alphaefficiency.com)",
       "Bash(npm run generate-sitemap:*)",
-      "Bash(git -C /Volumes/LaCie/Work/Apps/website log --oneline -20)"
+      "Bash(git -C /Volumes/LaCie/Work/Apps/website log --oneline -20)",
+      "Bash(identify:*)",
+      "Bash(sips -g all:*)",
+      "WebFetch(domain:baronseguros.com)",
+      "WebFetch(domain:taxfix.com)",
+      "WebFetch(domain:ayudatpymes.com)",
+      "WebFetch(domain:expinterweb.inclusion.gob.es)",
+      "Bash(/opt/homebrew/bin/npm run build)",
+      "Bash(~/.nvm/versions/node/v24.12.0/bin/node --version)",
+      "Bash(~/.nvm/versions/node/v24.12.0/bin/npm --version)",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(timeout 30 npm run dev:*)",
+      "Bash(npx next:*)",
+      "Bash(gh --version:*)",
+      "Bash(gh auth login:*)"
     ],
     "deny": [],
     "ask": []

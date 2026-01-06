@@ -118,6 +118,7 @@ export function getAllBlogPosts(): BlogPost[] {
               featured: data.featured || false,
               editorPick: data.editorPick || false,
               keyTakeaways: data.keyTakeaways,
+              faq: data.faq,
               content,
             });
           } catch (error) {
@@ -196,6 +197,7 @@ export function getBlogPost(
         featured: data.featured || false,
         editorPick: data.editorPick || false,
         keyTakeaways: data.keyTakeaways,
+        faq: data.faq,
         content,
       };
     } catch (error) {
@@ -264,6 +266,7 @@ export function getAllBlogPostsMetadata(): BlogPostMetadata[] {
               featured: data.featured || false,
               editorPick: data.editorPick || false,
               keyTakeaways: data.keyTakeaways,
+              faq: data.faq,
             });
           } catch (error) {
             console.error(
