@@ -398,7 +398,7 @@ No más hojas de cálculo. No más errores de cálculo. No más olvidos de últi
 
 Porque tu tiempo vale más que pelearte con formularios de Hacienda.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)** y presenta tus próximos modelos sin estrés.
+**[Únete a la lista de espera de Invoo](https://invoo.es)** y presenta tus próximos modelos sin estrés. Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 

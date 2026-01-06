@@ -5,8 +5,8 @@ publishedAt: "2025-11-25"
 author: "Equipo Invoo"
 tags: ["verifactu", "autonomos", "pymes", "facturacion", "hacienda", "sif", "guia-completa"]
 readingTime: 18
-featured: true
-editorPick: true
+featured: false
+editorPick: false
 coverImage: "/blog/verifactu-guide.webp"
 keyTakeaways:
   - "Verifactu obliga a tu software de facturación a generar un código QR oficial en cada factura desde 2026"
@@ -696,7 +696,7 @@ La diferencia está en usar las herramientas correctas.
 
 Invoo genera tu QR automáticamente desde julio 2026. Series correlativas. Rectificativas guiadas. Dashboard en tiempo real. Sin tecnicismos. Sin sorpresas.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)** - Sin tarjeta de crédito, sin compromisos, con Verifactu incluido desde el primer día.
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre. Verifactu incluido desde el primer día.
 
 ---
 

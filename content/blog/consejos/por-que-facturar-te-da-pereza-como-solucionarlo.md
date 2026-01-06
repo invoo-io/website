@@ -5,7 +5,7 @@ publishedAt: "2025-12-08"
 author: "Equipo Invoo"
 tags: ["productividad", "autonomos", "procrastinacion", "gestion-facturas", "psicologia"]
 readingTime: 10
-featured: true
+featured: false
 editorPick: false
 coverImage: "/blog/procrastinacion-facturacion-autonomos.webp"
 keyTakeaways:
@@ -215,7 +215,7 @@ Pregúntate sobre tu sistema actual: ¿Es eficiente? No, te lleva once minutos c
 
 **Cómo superarlo:** Pregúntate: "Si pudiera recuperar diez horas al mes invirtiendo treinta y cinco minutos una vez y 10.90 euros mensuales, ¿lo haría?" Si la respuesta es sí, la única barrera real es el miedo al cambio.
 
-Prueba Invoo catorce días gratis. Sin tarjeta. Sin compromiso. Si no ves mejora tangible, vuelves a tu Excel. Cero riesgo real.
+Únete a la lista de espera de Invoo. Los primeros 100 usuarios ahorran 50% para siempre. Sin compromiso.
 
 ---
 
@@ -239,7 +239,7 @@ Crea evento recurrente en tu calendario: "FACTURAR - Revisar proyectos completad
 
 **Mejora inmediata:** Eliminas la decisión de "¿cuándo facturo?" Conviertes facturar en hábito temporal fijo. Reduces procrastinación.
 
-### Opción 3: Si estás listo para cambiar de verdad — Prueba Invoo 14 días gratis
+### Opción 3: Si estás listo para cambiar de verdad — Únete a la lista de espera de Invoo
 
 **Tiempo: 10 minutos**
 
@@ -271,9 +271,7 @@ O puedes elegir conscientemente romper el patrón. Ahora mismo. No mañana cuand
 
 ---
 
-**Prueba Invoo gratis durante 7 días. Si después de dos semanas sigues procrastinando, no es culpa nuestra. 😉**
-
-**[Empezar prueba gratuita](https://invoo.es)** — Sin tarjeta, sin compromiso, sin fricción
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre. Sin compromiso, sin fricción.
 
 ---
 

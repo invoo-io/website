@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Software de Facturación Verifactu en 30 Segundos | Autónomos, Pymes y Gestorías",
-    "description": "Colabora con tu gestoría en tiempo real, cero emails. Presupuesto a factura en un clic. Verifactu automático, úsalo desde tu móvil. Prueba gratis 7 días."
+    "description": "Colabora con tu gestoría en tiempo real, cero emails. Presupuesto a factura en un clic. Verifactu automático, úsalo desde tu móvil. Únete a la lista de espera."
   },
   "nav": {
     "services": "Servicios",
@@ -74,7 +74,7 @@
   "freelancersPage": {
     "metadata": {
       "title": "Factura Verifactu en 30s | Colabora con Gestoría | Autónomos",
-      "description": "Úsalo desde tu móvil, rápido, intuitivo. Precios flexibles para cerrar ventas. Gestoría ve todo en tiempo real. Prueba gratis 7 días."
+      "description": "Úsalo desde tu móvil, rápido, intuitivo. Precios flexibles para cerrar ventas. Gestoría ve todo en tiempo real. Únete a la lista de espera."
     },
     "header": {
       "title": "Facturación sin estrés",
@@ -329,7 +329,7 @@
     "period": "/ mes",
     "subtitle": "Autónomos incluido",
     "features": "Características:",
-    "trial": "7 días de prueba gratis"
+    "trial": "Únete a la lista de espera"
   },
   "finalCta": {
     "title": "Enfócate en tu trabajo. Nosotros nos encargamos del papeleo.",
@@ -350,7 +350,7 @@
   "faq": {
     "metadata": {
       "title": "Preguntas Frecuentes | Verifactu, Colaboración y Precios | Invoo",
-      "description": "¿Cómo funciona la colaboración con gestoría? ¿Cuándo es obligatorio Verifactu? ¿Cómo paso de presupuesto a factura? Respuestas claras. Prueba gratis 7 días."
+      "description": "¿Cómo funciona la colaboración con gestoría? ¿Cuándo es obligatorio Verifactu? ¿Cómo paso de presupuesto a factura? Respuestas claras. Únete a la lista de espera."
     },
     "hero": {
       "title": "Preguntas Frecuentes",
@@ -856,7 +856,7 @@
         "regularPrice": "10,90€",
         "period": "/mes",
         "badge": "Primeros 100 usuarios",
-        "subtitle": "Prueba gratis de 7 días, sin tarjeta de crédito",
+        "subtitle": "Los primeros 100 usuarios ahorran 50% para siempre",
         "savingsText": "Ahorra 50% para siempre",
         "cta": "Únete a la lista de espera",
         "features": ["Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Envío de facturas por email", "Soporte prioritario por email"]
@@ -879,7 +879,7 @@
         "regularPrice": "20,90€",
         "period": "/mes",
         "badge": "Primeros 100 usuarios",
-        "subtitle": "Prueba gratis de 7 días, sin tarjeta de crédito",
+        "subtitle": "Los primeros 100 usuarios ahorran 50% para siempre",
         "savingsText": "Ahorra 50% para siempre",
         "cta": "Únete a la lista de espera",
         "features": ["2 usuarios (colaboración en equipo)", "Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Permisos y roles de usuario", "Soporte prioritario por email"]
@@ -891,7 +891,7 @@
         "regularPrice": "40,90€",
         "period": "/mes",
         "badge": "Primeros 100 usuarios",
-        "subtitle": "Prueba gratis de 7 días, sin tarjeta de crédito",
+        "subtitle": "Los primeros 100 usuarios ahorran 50% para siempre",
         "savingsText": "Ahorra 50% para siempre",
         "cta": "Únete a la lista de espera",
         "features": ["4 usuarios (colaboración en equipo)", "Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Permisos y roles de usuario", "Soporte prioritario por email"]

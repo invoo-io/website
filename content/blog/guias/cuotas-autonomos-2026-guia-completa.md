@@ -115,7 +115,7 @@ Lo que no cambia es la complejidad del sistema. Calcular tu rendimiento neto, an
 
 Invoo calcula tu rendimiento neto en tiempo real, te indica en qué tramo estás y te avisa si deberías cambiar tu base de cotización. Sin sorpresas en la regularización de diciembre. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 
