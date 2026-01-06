@@ -14,8 +14,8 @@ import { generateCollectionPageSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
-  // Generate both locales - English will redirect to Spanish
-  return [{ locale: "es" }, { locale: "en" }];
+  // Blog is Spanish-only - don't generate EN pages to avoid redirect chains
+  return [{ locale: "es" }];
 }
 
 export async function generateMetadata({

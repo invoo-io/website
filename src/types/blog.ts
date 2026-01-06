@@ -29,6 +29,7 @@ export interface BlogPost {
   readingTime?: number;
   featured?: boolean;
   editorPick?: boolean;
+  draft?: boolean;
   keyTakeaways?: string[];
   faq?: FAQItem[];
 }
@@ -46,6 +47,7 @@ export interface BlogPostMetadata {
   readingTime?: number;
   featured?: boolean;
   editorPick?: boolean;
+  draft?: boolean;
   keyTakeaways?: string[];
   faq?: FAQItem[];
 }

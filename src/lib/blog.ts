@@ -104,6 +104,11 @@ export function getAllBlogPosts(): BlogPost[] {
             const fileContents = fs.readFileSync(filePath, "utf-8");
             const { data, content } = matter(fileContents);
 
+            // Skip draft posts
+            if (data.draft === true) {
+              return;
+            }
+
             posts.push({
               slug: file.replace(/\.mdx?$/, ""),
               category,
@@ -117,6 +122,7 @@ export function getAllBlogPosts(): BlogPost[] {
               readingTime: data.readingTime,
               featured: data.featured || false,
               editorPick: data.editorPick || false,
+              draft: data.draft || false,
               keyTakeaways: data.keyTakeaways,
               faq: data.faq,
               content,
@@ -252,6 +258,11 @@ export function getAllBlogPostsMetadata(): BlogPostMetadata[] {
             // Only parse frontmatter, skip content parsing for better performance
             const { data } = matter(fileContents, { excerpt: false });
 
+            // Skip draft posts
+            if (data.draft === true) {
+              return;
+            }
+
             posts.push({
               slug: file.replace(/\.mdx?$/, ""),
               category,
@@ -265,6 +276,7 @@ export function getAllBlogPostsMetadata(): BlogPostMetadata[] {
               readingTime: data.readingTime,
               featured: data.featured || false,
               editorPick: data.editorPick || false,
+              draft: data.draft || false,
               keyTakeaways: data.keyTakeaways,
               faq: data.faq,
             });

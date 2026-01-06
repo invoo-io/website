@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { BASE_URL } from "@/lib/constants";
+import { getAllCategories } from "@/lib/blog";
 
 export const dynamic = "force-static";
 
@@ -23,15 +24,13 @@ const staticPages = [
   "/verifactu",
 ];
 
-// Blog is Spanish-only
-const blogCategories = ["guias", "consejos", "analisis", "comparaciones"];
-
 function getBlogArticles(): { slug: string; category: string; lastModified?: Date }[] {
   const articles: { slug: string; category: string; lastModified?: Date }[] = [];
   const contentDir = path.join(process.cwd(), "content/blog");
+  const categories = getAllCategories();
 
-  for (const category of blogCategories) {
-    const categoryPath = path.join(contentDir, category);
+  for (const cat of categories) {
+    const categoryPath = path.join(contentDir, cat.slug);
     if (!fs.existsSync(categoryPath)) continue;
 
     const files = fs.readdirSync(categoryPath).filter((f) => f.endsWith(".md"));
@@ -48,7 +47,7 @@ function getBlogArticles(): { slug: string; category: string; lastModified?: Dat
 
         articles.push({
           slug: file.replace(".md", ""),
-          category,
+          category: cat.slug,
           lastModified: data.date ? new Date(data.date) : stat.mtime,
         });
       } catch (error) {
@@ -85,9 +84,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   });
 
-  for (const category of blogCategories) {
+  const categories = getAllCategories();
+  for (const cat of categories) {
     entries.push({
-      url: `${BASE_URL}/es/blog/${category}/`,
+      url: `${BASE_URL}/es/blog/${cat.slug}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
