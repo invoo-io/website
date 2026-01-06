@@ -5,7 +5,7 @@ publishedAt: "2025-12-02"
 author: "Equipo Invoo"
 tags: ["impuestos", "autónomos", "cierre-fiscal", "deducciones", "iva"]
 readingTime: 5
-featured: true
+featured: false
 editorPick: false
 coverImage: "/blog/cierre-fiscal-2025-checklist.webp"
 keyTakeaways:
@@ -95,7 +95,7 @@ El cierre fiscal no es un trámite burocrático más que puedes dejar para últi
 
 Invoo automatiza tu facturación, calcula tu IVA trimestral y te anticipa cuánto pagarás en cada declaración. Dashboard con todos tus números en tiempo real, exportación directa para tu gestoría. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Verifactu Invoicing in 30 Seconds | Freelancer Software",
-    "description": "Collaborate with your accountant in real-time, zero emails. Quote to invoice in one click. Automatic Verifactu, use it from your phone. 7-day free trial."
+    "description": "Collaborate with your accountant in real-time, zero emails. Quote to invoice in one click. Automatic Verifactu, use it from your phone. Join the waiting list."
   },
   "nav": {
     "services": "Services",
@@ -74,7 +74,7 @@
   "freelancersPage": {
     "metadata": {
       "title": "Verifactu Invoicing in 30s | Collaborate with Accountant",
-      "description": "Use it from your phone, fast, intuitive. Flexible pricing to close deals. Accountant sees everything in real-time. 7-day free trial."
+      "description": "Use it from your phone, fast, intuitive. Flexible pricing to close deals. Accountant sees everything in real-time. Join the waiting list."
     },
     "header": {
       "title": "Invoicing without stress",
@@ -329,7 +329,7 @@
     "period": "/ month",
     "subtitle": "Autonomos included",
     "features": "Features:",
-    "trial": "7 days free trial"
+    "trial": "Join the waiting list"
   },
   "finalCta": {
     "title": "Focus on your work. We'll handle the paperwork.",
@@ -350,7 +350,7 @@
   "faq": {
     "metadata": {
       "title": "FAQs | Verifactu, Collaboration and Pricing | Invoo",
-      "description": "How does accountant collaboration work? When is Verifactu mandatory? How do I convert quote to invoice? Clear answers. 7-day free trial."
+      "description": "How does accountant collaboration work? When is Verifactu mandatory? How do I convert quote to invoice? Clear answers. Join the waiting list."
     },
     "hero": {
       "title": "Frequently Asked Questions",
@@ -856,7 +856,7 @@
         "regularPrice": "€10.90",
         "period": "/month",
         "badge": "First 100 users",
-        "subtitle": "7-day free trial, no credit card required",
+        "subtitle": "First 100 users save 50% forever",
         "savingsText": "Save 50% forever",
         "cta": "Join the waiting list",
         "features": ["Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "Email invoices to clients", "Priority email support"]
@@ -879,7 +879,7 @@
         "regularPrice": "€20.90",
         "period": "/month",
         "badge": "First 100 users",
-        "subtitle": "7-day free trial, no credit card required",
+        "subtitle": "First 100 users save 50% forever",
         "savingsText": "Save 50% forever",
         "cta": "Join the waiting list",
         "features": ["2 users (team collaboration)", "Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "User permissions and roles", "Priority email support"]
@@ -891,7 +891,7 @@
         "regularPrice": "€40.90",
         "period": "/month",
         "badge": "First 100 users",
-        "subtitle": "7-day free trial, no credit card required",
+        "subtitle": "First 100 users save 50% forever",
         "savingsText": "Save 50% forever",
         "cta": "Join the waiting list",
         "features": ["4 users (team collaboration)", "Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "User permissions and roles", "Priority email support"]

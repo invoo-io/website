@@ -215,7 +215,7 @@ No dejes que la morosidad arruine tu negocio. Actúa, reclama, y cobra lo que es
 
 Con Invoo automatizas los recordatorios de pago y tienes toda la documentación organizada para cualquier reclamación. Facturas con todos los requisitos legales, historial completo de pagos, y exportación de datos en un clic. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 

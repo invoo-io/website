@@ -386,4 +386,4 @@ Tu yo del futuro te lo agradecerá cuando llegue la próxima declaración de la 
 
 **¿Quieres llevar el control de todas tus deducciones sin complicaciones?** Invoo te ayuda a registrar gastos, clasificarlos automáticamente y generar informes fiscales listos para tu gestoría. Empieza gratis y descubre cuánto estás dejando de ahorrar cada año.
 
-[Prueba Invoo gratis →](https://invoo.es)
+[Únete a la lista de espera de Invoo →](https://invoo.es)

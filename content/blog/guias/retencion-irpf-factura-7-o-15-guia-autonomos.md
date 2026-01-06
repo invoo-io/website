@@ -315,7 +315,7 @@ La retención es solo un anticipo. Lo que te retengan de más, te lo devuelven. 
 
 Invoo configura el tipo de retención por cliente, calcula automáticamente cada factura y exporta todo lo que tu gestoría necesita. Sin errores, sin perseguirte por datos, con Verifactu incluido desde el primer día.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)** — Sin tarjeta de crédito, sin compromisos.
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 

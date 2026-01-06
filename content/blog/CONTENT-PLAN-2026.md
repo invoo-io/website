@@ -1,6 +1,6 @@
 # Invoo Blog Content Plan 2026
 
-> **Last updated:** 2025-12-30
+> **Last updated:** 2026-01-06
 > **Status:** Active
 > **Research:** Market intelligence validated (Dec 2025)
 
@@ -13,9 +13,9 @@
 | 1 | [Invoo vs Holded: Comparativa 2026](#1-invoo-vs-holded) | comparaciones | Jan 2026 | HIGH | ✅ Published |
 | 2 | [Invoo vs Quipu: Cuál elegir](#2-invoo-vs-quipu) | comparaciones | Feb 2026 | HIGH | Pending |
 | 3 | [Cómo emitir una factura rectificativa](#3-factura-rectificativa) | guías | Mar 2026 | MEDIUM | Pending |
-| 4 | [Cómo cobrar facturas impagadas](#4-facturas-impagadas) | consejos | Apr 2026 | MEDIUM | Pending |
+| 4 | [Cómo cobrar facturas impagadas](#4-facturas-impagadas) | guías | Dec 2025 | MEDIUM | ✅ Published |
 | 5 | [Facturación internacional desde España](#5-facturacion-internacional) | formación | May 2026 | NORMAL | Pending |
-| 6 | [Elegir tu base de cotización 2026](#6-base-de-cotizacion) | guías | Jun 2026 | NORMAL | Pending |
+| 6 | [Elegir tu base de cotización 2026](#6-base-de-cotizacion) | guías | Jan 2026 | NORMAL | ✅ Published |
 
 ---
 
@@ -31,9 +31,11 @@
 
 ## Article Details
 
-### 1. Invoo vs Holded
+### 1. Invoo vs Holded ✅
 
 **File:** `content/blog/comparaciones/invoo-vs-holded-comparativa-2026.md`
+
+**Status:** Published December 2025
 
 **Target keyword:** `alternativa a holded`, `invoo vs holded`
 
@@ -108,9 +110,11 @@
 
 ---
 
-### 4. Facturas Impagadas
+### 4. Facturas Impagadas ✅
 
-**File:** `content/blog/consejos/como-cobrar-facturas-impagadas.md`
+**File:** `content/blog/guias/como-cobrar-facturas-impagadas.md`
+
+**Status:** Published December 2025
 
 **Target keyword:** `facturas impagadas`, `cómo cobrar factura`, `morosos autónomos`
 
@@ -158,9 +162,11 @@
 
 ---
 
-### 6. Base de Cotización
+### 6. Base de Cotización ✅
 
 **File:** `content/blog/guias/elegir-base-cotizacion-autonomos-2026.md`
+
+**Status:** Published January 2026
 
 **Target keyword:** `base cotización autónomos`, `elegir base cotización 2026`
 

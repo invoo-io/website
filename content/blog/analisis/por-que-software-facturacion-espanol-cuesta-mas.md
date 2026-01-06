@@ -175,4 +175,4 @@ Tú decides si sigues pagando la prima de consolidación, o si apuestas por soft
 
 ---
 
-**Prueba Invoo gratis durante 14 días** - Sin tarjeta de crédito, sin compromisos, con Verifactu incluido desde el primer día. [Empieza ahora →](https://invoo.es)
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre. Verifactu incluido desde el primer día.

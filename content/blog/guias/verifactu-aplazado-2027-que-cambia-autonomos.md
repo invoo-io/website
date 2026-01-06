@@ -109,7 +109,7 @@ Los próximos dos años no son un paréntesis para olvidarte del tema. Son una o
 
 Invoo será compatible con Verifactu desde el día uno. Código QR automático, envío a Hacienda integrado, cumplimiento garantizado sin que tengas que entender la normativa. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 

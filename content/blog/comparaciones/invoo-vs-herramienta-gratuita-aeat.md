@@ -429,7 +429,7 @@ Accede directamente a través de la [sede electrónica de la AEAT](https://sede.
 
 **Si decides que Invoo es la mejor inversión:**
 
-[Prueba Invoo gratis durante 7 días](https://invoo.es) sin tarjeta de crédito ni compromisos. Emite tu primera factura, guarda clientes, registra un gasto desde móvil, invita a tu gestoría al dashboard. Verás inmediatamente si el ahorro de tiempo es real o promesas vacías.
+[Únete a la lista de espera de Invoo](https://invoo.es) y sé de los primeros en probarlo. Emite tu primera factura, guarda clientes, registra un gasto desde móvil, invita a tu gestoría al dashboard. Los primeros 100 usuarios ahorran 50% para siempre.
 
 **La mejor manera de saber qué herramienta es correcta para ti es probarlas ambas directamente.**
 
@@ -443,6 +443,6 @@ Los datos reales de tu experiencia te dirán con claridad absoluta qué es objet
 
 **¿Listo para recuperar 8-10 horas mensuales que puedes reinvertir en crecer tu negocio?**
 
-[Empieza tu prueba gratuita de 7 días →](https://invoo.es)
+[Únete a la lista de espera →](https://invoo.es)
 
 Sin tarjeta. Sin compromiso. Sin trucos. Solo tú, tu primera factura profesional, y 30 segundos de tu tiempo.

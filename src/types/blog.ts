@@ -10,6 +10,11 @@ export interface Category {
   description: string;
 }
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export interface BlogPost {
   slug: string;
   category: string;
@@ -25,6 +30,7 @@ export interface BlogPost {
   featured?: boolean;
   editorPick?: boolean;
   keyTakeaways?: string[];
+  faq?: FAQItem[];
 }
 
 export interface BlogPostMetadata {
@@ -41,4 +47,5 @@ export interface BlogPostMetadata {
   featured?: boolean;
   editorPick?: boolean;
   keyTakeaways?: string[];
+  faq?: FAQItem[];
 }

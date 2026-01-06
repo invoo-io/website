@@ -4,6 +4,21 @@
 
 ---
 
+## ⚠️ Invoo Status: Waiting List Mode
+
+**CRITICAL:** Invoo is currently in **waiting list mode**. All CTAs must direct users to join the waiting list, NOT to try the product.
+
+| ❌ DO NOT USE | ✅ USE INSTEAD |
+|---------------|----------------|
+| "Prueba gratis X días" | "Únete a la lista de espera" |
+| "Free trial" | "Join the waiting list" |
+| "Empieza gratis hoy" | "Únete a la lista de espera de Invoo" |
+| "7/14 días gratis" | "Los primeros 100 usuarios ahorran 50% para siempre" |
+
+**When Invoo goes live:** The free trial period will be **7 days** (not 14). Update CTAs accordingly when launched.
+
+---
+
 ## Quick Reference
 
 | Item | Value |
@@ -173,7 +188,7 @@ Resume el valor entregado y proporciona siguiente paso claro.
 
 Invoo [beneficio específico relacionado con el tema]. [Segunda frase con features relevantes]. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 
@@ -191,6 +206,8 @@ Invoo [beneficio específico relacionado con el tema]. [Segunda frase con featur
 
 ### CTA Formatting Examples
 
+> ⚠️ **IMPORTANT: Invoo is currently in WAITING LIST mode.** Never mention "free trial", "7 days free", "14 days free", or similar trial messaging. When Invoo goes live, the free trial period will be 7 days (not 14).
+
 **Standard CTA (end of article):**
 ```markdown
 ---
@@ -199,7 +216,7 @@ Invoo [beneficio específico relacionado con el tema]. [Segunda frase con featur
 
 Invoo automatiza tu facturación y te mantiene al día con Verifactu. Facturas profesionales en segundos, sin complicaciones. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 ```
@@ -212,7 +229,7 @@ Invoo automatiza tu facturación y te mantiene al día con Verifactu. Facturas p
 
 Invoo genera facturas con código QR Verifactu automáticamente. Cumples la normativa desde el primer día. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Empieza gratis hoy](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 ```
@@ -640,6 +657,7 @@ See these published articles as quality references:
 | Keyword stuffing | Natural integration, 1-2% density |
 | No keyTakeaways | Always include exactly 4 |
 | Wrong image format | Use WebP, not PNG/JPG |
+| **Mentioning free trial** | Invoo is in waiting list mode - use "Únete a la lista de espera" |
 
 ---
 

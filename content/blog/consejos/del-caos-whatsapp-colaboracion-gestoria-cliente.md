@@ -719,7 +719,7 @@ Tú decides.
 
 Invoo conecta tu facturación con tu gestoría desde el primer día. Dashboard compartido, exportación automática, cumplimiento total de Verifactu. €10.90/mes para autónomos, gratis para gestorías.
 
-**[Prueba Invoo gratis durante 14 días](https://invoo.es)**
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
 
