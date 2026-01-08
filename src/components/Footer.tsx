@@ -97,6 +97,14 @@ export default function Footer({ locale }: FooterProps) {
                   {t("calculatorIVA")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorCuotaAutonomos")}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

@@ -25,6 +25,10 @@ export const CALCULATOR_PATHS: Record<string, { es: string; en: string }> = {
     es: '/es/herramientas/calculadoras/cuota-autonomos',
     en: '/en/tools/calculators/self-employed-quota',
   },
+  'self-employed-quota': {
+    es: '/es/herramientas/calculadoras/cuota-autonomos',
+    en: '/en/tools/calculators/self-employed-quota',
+  },
   factura: {
     es: '/es/herramientas/calculadoras/factura',
     en: '/en/tools/calculators/invoice',

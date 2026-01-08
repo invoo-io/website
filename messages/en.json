@@ -1043,6 +1043,7 @@
       "blog": "Blog",
       "toolsTitle": "Tools",
       "calculatorIVA": "VAT Calculator",
+      "calculatorCuotaAutonomos": "Self-Employed Quota Calculator",
       "copyright": "© 2025 Invoo.es. All rights reserved. Made with ♥ for Spanish freelancers"
     }
   },
@@ -1381,6 +1382,145 @@
         "q6": {
           "question": "What is input VAT and output VAT?",
           "answer": "Output VAT is what you charge your customers on your sales invoices. Input VAT is what you pay on invoices from your suppliers and deductible expenses. In the quarterly declaration, you subtract input from output: if the result is positive, you pay; if negative, you can offset or request a refund."
+        }
+      }
+    },
+    "cuotaAutonomos": {
+      "meta": {
+        "title": "Self-Employed Quota Calculator 2026 | Free - Invoo",
+        "description": "Calculate your Spanish self-employed social security quota based on real income. Income bracket system 2024-2026. Check Flat Rate and Zero Quota eligibility. No registration."
+      },
+      "hero": {
+        "titleHighlight": "Self-Employed Quota",
+        "titleEnd": "Calculator",
+        "description": "Calculate your Spanish self-employed social security quota based on real income. Updated contribution system for 2024-2026. Includes Flat Rate and Zero Quota benefits."
+      },
+      "inputs": {
+        "rendimientoAnual": "Annual net income",
+        "rendimientoAnualHelper": "Income minus deductible expenses per year",
+        "year": "Contribution year",
+        "yearHelper": "Select the year for calculation",
+        "primeraAlta": {
+          "label": "Are you a new self-employed?",
+          "no": "No, I'm already registered",
+          "noDesc": "I pay quota based on my income",
+          "yes": "Yes, this is my first registration",
+          "yesDesc": "I may benefit from Flat Rate or Zero Quota"
+        },
+        "ccaa": {
+          "label": "Autonomous Community",
+          "placeholder": "Select your community",
+          "helper": "Some regions offer Zero Quota"
+        }
+      },
+      "results": {
+        "title": "Your self-employed quota",
+        "rendimientoMensual": "Monthly income",
+        "tramo": "Bracket",
+        "baseCotizacion": "Contribution base",
+        "cuotaMensual": "Monthly quota",
+        "cuotaAnual": "Annual quota",
+        "bonificacion": "Discount",
+        "cuotaFinal": "Final quota to pay",
+        "tarifaPlana": "Flat Rate applied",
+        "cuotaCero": "Zero Quota applied",
+        "placeholder": "Enter your annual income to see your quota",
+        "cuotaCeroNotice": "Congratulations! Your community offers Zero Quota for new self-employed. You won't pay quota for the first {months} months."
+      },
+      "errors": {
+        "invalidNumber": "Enter a valid number",
+        "negativeNotAllowed": "Amount must be positive",
+        "amountTooLarge": "Amount exceeds maximum allowed"
+      },
+      "howTo": {
+        "title": "How to calculate your self-employed quota",
+        "schemaName": "How to calculate self-employed quota by real income",
+        "description": "The new contribution system lets you pay based on your real income. Follow these steps:",
+        "step1": {
+          "title": "Calculate your net income",
+          "description": "Subtract your deductible expenses from your gross annual income. This is your net income."
+        },
+        "step2": {
+          "title": "Select the year",
+          "description": "Choose the contribution year. Bases and rates vary each year during the transition period."
+        },
+        "step3": {
+          "title": "Indicate if you're new",
+          "description": "New self-employed can benefit from Flat Rate (€80/month) or Zero Quota depending on their region."
+        },
+        "step4": {
+          "title": "Check your quota",
+          "description": "The calculator will show your monthly and annual quota, including any applicable discounts."
+        }
+      },
+      "tramos": {
+        "title": "Income bracket system 2024-2026",
+        "description": "Since 2023, the self-employed quota is calculated based on real income, with 15 different brackets. Higher income means higher contribution base.",
+        "tramo1": {
+          "title": "Brackets 1-5: Low income",
+          "description": "For income up to €1,500/month. Reduced contribution bases to protect those starting out or with variable income."
+        },
+        "tramo2": {
+          "title": "Brackets 6-10: Medium income",
+          "description": "For income from €1,500 to €2,760/month. Bases proportional to your real income."
+        },
+        "tramo3": {
+          "title": "Brackets 11-14: Medium-high income",
+          "description": "For income from €2,760 to €6,000/month. Higher contributions but also greater social protection."
+        },
+        "tramo4": {
+          "title": "Bracket 15: High income",
+          "description": "For income above €6,000/month. Maximum contribution base that guarantees the highest benefits."
+        }
+      },
+      "whyUse": {
+        "title": "Why use our calculator?"
+      },
+      "benefits": [
+        "Pay based on what you actually earn, fairer for those starting out",
+        "You can change brackets up to 6 times per year as your income varies",
+        "Flat Rate of €80/month for the first 12 months for new self-employed",
+        "Zero Quota in many autonomous communities: €0 for the first year",
+        "Greater protection: includes business cessation and training",
+        "Annual regularization to adjust contributions to real income"
+      ],
+      "tarifaPlana": {
+        "title": "Flat Rate for new self-employed",
+        "description": "If you register for the first time (or after 2 years of being unregistered), you can apply for the Flat Rate:",
+        "months1_12": "Months 1-12: €80/month",
+        "months13_24": "Months 13-24: €80/month (if income < minimum wage)",
+        "requirement": "Requirement: not having been registered in the last 2 years"
+      },
+      "cuotaCero": {
+        "title": "Zero Quota by region",
+        "description": "Several autonomous communities subsidize 100% of the quota for the first year. Check if your region offers this benefit.",
+        "availableIn": "Available in: Madrid, Andalusia, Aragon, Cantabria, Castilla-La Mancha, Extremadura, Galicia, Murcia, La Rioja, Canary Islands, Valencian Community"
+      },
+      "faq": {
+        "title": "Frequently asked questions about self-employed quota",
+        "q1": {
+          "question": "How much does a self-employed person pay in 2026?",
+          "answer": "It depends on your real income. With the bracket system, the minimum quota is around €230/month for low income, and can reach over €500/month for high income. New self-employed pay only €80/month with Flat Rate, or €0 with Zero Quota in some regions."
+        },
+        "q2": {
+          "question": "What is net income?",
+          "answer": "It's the difference between your gross income and your deductible expenses (office rent, utilities, materials, insurance, etc.). Social Security uses your net income to determine your bracket and contribution base."
+        },
+        "q3": {
+          "question": "Can I change my contribution base?",
+          "answer": "Yes, you can modify your contribution base up to 6 times per year through the RED system or your accountant. This allows you to adjust your quota if your income varies during the year."
+        },
+        "q4": {
+          "question": "What is annual regularization?",
+          "answer": "At the end of the fiscal year, Social Security compares what you contributed with your actual income declared in your tax return. If you over-contributed, they refund the difference. If you under-contributed, you'll have to pay the difference."
+        },
+        "q5": {
+          "question": "How do I apply for the Flat Rate?",
+          "answer": "It's requested when registering as self-employed, by checking the option on form TA.0521. If you're already registered, you can request it as long as you meet the requirements (less than 12 months since registration)."
+        },
+        "q6": {
+          "question": "What does the self-employed quota cover?",
+          "answer": "The quota covers: common contingencies (healthcare, sick leave), professional contingencies (work accidents), business cessation (unemployment for self-employed) and professional training. Everything is included in the 31.30-31.50% rate."
         }
       }
     }

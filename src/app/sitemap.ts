@@ -27,7 +27,7 @@ const staticPages = [
 // Calculator pages with localized URLs
 const calculatorPages = [
   { es: "/herramientas/calculadoras/iva", en: "/tools/calculators/vat" },
-  // Add more calculators here as they are implemented
+  { es: "/herramientas/calculadoras/cuota-autonomos", en: "/tools/calculators/self-employed-quota" },
 ];
 
 function getBlogArticles(): { slug: string; category: string; lastModified?: Date }[] {

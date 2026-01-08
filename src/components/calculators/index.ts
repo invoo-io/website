@@ -9,3 +9,4 @@ export { CalculatorHowTo, CalculatorInfoGrid, CalculatorWhyUse } from './Calcula
 
 // Specific Calculators
 export { IVACalculator } from './IVACalculator';
+export { CuotaAutonomosCalculator } from './CuotaAutonomosCalculator';

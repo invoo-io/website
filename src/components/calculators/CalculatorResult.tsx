@@ -102,14 +102,14 @@ export function CalculatorResult({
         <div
           key={index}
           className={cn(
-            'group flex justify-between items-center py-4 gap-2',
+            'group flex justify-between items-start py-4 gap-4',
             index !== results.length - 1 && 'border-b border-strokes-primary',
             row.isHighlighted && 'pt-6'
           )}
         >
           <span
             className={cn(
-              'flex-shrink-0',
+              'flex-1 min-w-0',
               row.isHighlighted
                 ? 'text-headline text-primary'
                 : 'text-body text-secondary'
@@ -118,10 +118,10 @@ export function CalculatorResult({
             {row.prefix && <span className="text-tertiary">{row.prefix} </span>}
             {row.label}
           </span>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-shrink-0">
             <span
               className={cn(
-                'break-all',
+                'text-right whitespace-nowrap',
                 row.isHighlighted
                   ? 'text-title1-emphasized text-primary'
                   : 'text-body-emphasized text-primary'
