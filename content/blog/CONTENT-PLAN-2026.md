@@ -12,7 +12,7 @@
 |---|---------|----------|--------|----------|--------|
 | 1 | [Invoo vs Holded: Comparativa 2026](#1-invoo-vs-holded) | comparaciones | Jan 2026 | HIGH | ✅ Published |
 | 2 | [Invoo vs Quipu: Cuál elegir](#2-invoo-vs-quipu) | comparaciones | Feb 2026 | HIGH | Pending |
-| 3 | [Cómo emitir una factura rectificativa](#3-factura-rectificativa) | guías | Mar 2026 | MEDIUM | Pending |
+| 3 | [Cómo emitir una factura rectificativa](#3-factura-rectificativa) | guías | Jan 2026 | MEDIUM | ✅ Published |
 | 4 | [Cómo cobrar facturas impagadas](#4-facturas-impagadas) | guías | Dec 2025 | MEDIUM | ✅ Published |
 | 5 | [Facturación internacional desde España](#5-facturacion-internacional) | formación | May 2026 | NORMAL | Pending |
 | 6 | [Elegir tu base de cotización 2026](#6-base-de-cotizacion) | guías | Jan 2026 | NORMAL | ✅ Published |
