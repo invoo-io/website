@@ -1041,6 +1041,8 @@
       "resourcesTitle": "Recursos",
       "faqs": "Preguntas Frecuentes",
       "blog": "Blog",
+      "toolsTitle": "Herramientas",
+      "calculatorIVA": "Calculadora de IVA",
       "copyright": "© 2025 Invoo.es. Todos los derechos reservados. Hecho con ♥ para autónomos españoles"
     }
   },
@@ -1260,6 +1262,127 @@
       "publishedOn": "Publicado el",
       "backButton": "Volver",
       "backButtonAriaLabel": "Volver a la categoría del blog"
+    }
+  },
+  "calculators": {
+    "iva": {
+      "meta": {
+        "title": "Calculadora IVA Online 2026 | Gratis para Autónomos - Invoo",
+        "description": "Calcula el IVA de tus facturas al instante. Tipos del 21%, 10% y 4%. Calculadora gratuita y actualizada para autónomos y pymes en España. Sin registro."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora de IVA",
+        "titleEnd": "para Autónomos",
+        "description": "Calcula el IVA de tus facturas al instante. Añade IVA a una base imponible o extrae el IVA de un importe total. Gratuita, sin registro y actualizada para 2026."
+      },
+      "rates": {
+        "general": "General",
+        "reducido": "Reducido",
+        "superreducido": "Superreducido",
+        "exento": "Exento"
+      },
+      "inputs": {
+        "direction": "¿Qué quieres calcular?",
+        "baseAmount": "Importe base (sin IVA)",
+        "baseAmountHelper": "Introduce el importe antes de aplicar el IVA",
+        "totalAmount": "Importe total (con IVA)",
+        "totalAmountHelper": "Introduce el importe final incluyendo IVA",
+        "ivaRate": "Tipo de IVA",
+        "ivaRateHelper": "Selecciona el tipo de IVA aplicable"
+      },
+      "direction": {
+        "fromBase": "Calcular IVA desde base",
+        "fromBaseDesc": "Añadir IVA a un importe sin impuestos",
+        "fromTotal": "Extraer IVA del total",
+        "fromTotalDesc": "Obtener la base imponible de un precio final"
+      },
+      "results": {
+        "title": "Resultado del cálculo",
+        "base": "Base imponible",
+        "iva": "IVA",
+        "total": "Total con IVA",
+        "placeholder": "Introduce un importe para ver los resultados"
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo usar la calculadora de IVA",
+        "schemaName": "Cómo calcular el IVA de una factura",
+        "description": "Calcular el IVA de tus facturas es muy sencillo con nuestra herramienta gratuita. Sigue estos tres pasos:",
+        "step1": {
+          "title": "Elige el cálculo",
+          "description": "Selecciona si quieres añadir IVA a una base imponible o extraer el IVA de un importe que ya lo incluye."
+        },
+        "step2": {
+          "title": "Introduce el importe",
+          "description": "Escribe la cantidad en euros. Puedes usar decimales separados por coma o punto."
+        },
+        "step3": {
+          "title": "Selecciona el tipo de IVA",
+          "description": "Elige entre el 21% (general), 10% (reducido), 4% (superreducido) o 0% (exento)."
+        }
+      },
+      "ivaTypes": {
+        "title": "Tipos de IVA en España",
+        "description": "En España existen cuatro tipos de IVA según el producto o servicio. Conocer cuál aplicar es fundamental para facturar correctamente.",
+        "general": {
+          "title": "21% - IVA General",
+          "description": "Se aplica a la mayoría de productos y servicios: electrónica, ropa, servicios profesionales, hostelería."
+        },
+        "reducido": {
+          "title": "10% - IVA Reducido",
+          "description": "Para alimentos procesados, transporte de viajeros, hostelería, entradas a espectáculos y agua."
+        },
+        "superreducido": {
+          "title": "4% - IVA Superreducido",
+          "description": "Productos de primera necesidad: pan, leche, huevos, frutas, verduras, libros y medicamentos."
+        },
+        "exento": {
+          "title": "0% - Exento de IVA",
+          "description": "Servicios médicos, educación, seguros, alquiler de vivienda y operaciones financieras."
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de IVA?"
+      },
+      "benefits": [
+        "Cálculos instantáneos y precisos sin errores de redondeo",
+        "Todos los tipos de IVA españoles actualizados para 2026",
+        "Totalmente gratuita, sin registro ni límites de uso",
+        "Funciona en móvil, tablet y ordenador",
+        "Opción de calcular IVA o extraerlo de un precio final",
+        "Ideal para autónomos, pymes y cualquier profesional"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre el IVA",
+        "q1": {
+          "question": "¿Cuáles son los tipos de IVA vigentes en España en 2026?",
+          "answer": "En España hay cuatro tipos de IVA: el general del 21% que se aplica a la mayoría de productos y servicios; el reducido del 10% para alimentos, transporte y hostelería; el superreducido del 4% para productos de primera necesidad como pan, leche y medicamentos; y el 0% para servicios exentos como sanidad y educación."
+        },
+        "q2": {
+          "question": "¿Cómo calculo el IVA de una factura?",
+          "answer": "Para calcular el IVA, multiplica la base imponible por el tipo de IVA correspondiente dividido entre 100. Por ejemplo, para una base de 100€ con IVA del 21%: 100 × 0,21 = 21€ de IVA. El total de la factura sería 121€. Nuestra calculadora hace este cálculo automáticamente."
+        },
+        "q3": {
+          "question": "¿Cómo extraer el IVA de un precio que ya lo incluye?",
+          "answer": "Para extraer el IVA de un precio final, divide el total entre 1 más el tipo de IVA. Por ejemplo, para un precio de 121€ con IVA del 21%: 121 ÷ 1,21 = 100€ de base imponible. El IVA sería 21€. Selecciona 'Extraer IVA del total' en nuestra calculadora para hacer este cálculo."
+        },
+        "q4": {
+          "question": "¿Qué IVA aplico a mis servicios como autónomo?",
+          "answer": "La mayoría de servicios profesionales tributan al 21% de IVA general. Sin embargo, algunos servicios tienen tipos reducidos o están exentos. Por ejemplo, los servicios sanitarios están exentos, y la formación reglada también. Consulta con tu gestor si tienes dudas sobre tu actividad específica."
+        },
+        "q5": {
+          "question": "¿Cuándo debo presentar el IVA trimestral (modelo 303)?",
+          "answer": "Los autónomos y pymes deben presentar el modelo 303 trimestralmente: hasta el 20 de abril (1T), 20 de julio (2T), 20 de octubre (3T) y 30 de enero del año siguiente (4T). En el modelo declaras el IVA repercutido (cobrado) menos el IVA soportado (pagado), y abonas o compensas la diferencia."
+        },
+        "q6": {
+          "question": "¿Qué es el IVA soportado y el IVA repercutido?",
+          "answer": "El IVA repercutido es el que cobras a tus clientes en tus facturas de venta. El IVA soportado es el que pagas tú en las facturas de tus proveedores y gastos deducibles. En la declaración trimestral, restas el soportado del repercutido: si el resultado es positivo, pagas; si es negativo, puedes compensar o solicitar devolución."
+        }
+      }
     }
   }
 }

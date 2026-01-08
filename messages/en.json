@@ -1041,6 +1041,8 @@
       "resourcesTitle": "Resources",
       "faqs": "FAQs",
       "blog": "Blog",
+      "toolsTitle": "Tools",
+      "calculatorIVA": "VAT Calculator",
       "copyright": "© 2025 Invoo.es. All rights reserved. Made with ♥ for Spanish freelancers"
     }
   },
@@ -1260,6 +1262,127 @@
       "publishedOn": "Published on",
       "backButton": "Back",
       "backButtonAriaLabel": "Back to blog category"
+    }
+  },
+  "calculators": {
+    "iva": {
+      "meta": {
+        "title": "VAT Calculator Online 2026 | Free for Freelancers - Invoo",
+        "description": "Calculate VAT for your invoices instantly. Spanish VAT rates of 21%, 10% and 4%. Free calculator updated for freelancers and SMBs in Spain. No registration."
+      },
+      "hero": {
+        "titleHighlight": "VAT Calculator",
+        "titleEnd": "for Freelancers",
+        "description": "Calculate VAT for your invoices instantly. Add VAT to a base amount or extract VAT from a total. Free, no registration required, updated for 2026."
+      },
+      "rates": {
+        "general": "Standard",
+        "reducido": "Reduced",
+        "superreducido": "Super-reduced",
+        "exento": "Exempt"
+      },
+      "inputs": {
+        "direction": "What do you want to calculate?",
+        "baseAmount": "Base amount (without VAT)",
+        "baseAmountHelper": "Enter the amount before VAT is applied",
+        "totalAmount": "Total amount (with VAT)",
+        "totalAmountHelper": "Enter the final amount including VAT",
+        "ivaRate": "VAT Rate",
+        "ivaRateHelper": "Select the applicable VAT rate"
+      },
+      "direction": {
+        "fromBase": "Calculate VAT from base",
+        "fromBaseDesc": "Add VAT to an amount without tax",
+        "fromTotal": "Extract VAT from total",
+        "fromTotalDesc": "Get the base amount from a final price"
+      },
+      "results": {
+        "title": "Calculation result",
+        "base": "Base amount",
+        "iva": "VAT",
+        "total": "Total with VAT",
+        "placeholder": "Enter an amount to see results"
+      },
+      "errors": {
+        "invalidNumber": "Please enter a valid number",
+        "negativeNotAllowed": "Amount must be positive",
+        "amountTooLarge": "Amount exceeds maximum allowed"
+      },
+      "howTo": {
+        "title": "How to use the VAT calculator",
+        "schemaName": "How to calculate VAT for an invoice",
+        "description": "Calculating VAT for your invoices is very simple with our free tool. Follow these three steps:",
+        "step1": {
+          "title": "Choose the calculation",
+          "description": "Select whether you want to add VAT to a base amount or extract VAT from a price that already includes it."
+        },
+        "step2": {
+          "title": "Enter the amount",
+          "description": "Type the amount in euros. You can use decimals separated by comma or period."
+        },
+        "step3": {
+          "title": "Select the VAT rate",
+          "description": "Choose between 21% (standard), 10% (reduced), 4% (super-reduced) or 0% (exempt)."
+        }
+      },
+      "ivaTypes": {
+        "title": "VAT rates in Spain",
+        "description": "In Spain there are four VAT rates depending on the product or service. Knowing which one to apply is essential for correct invoicing.",
+        "general": {
+          "title": "21% - Standard VAT",
+          "description": "Applies to most products and services: electronics, clothing, professional services, hospitality."
+        },
+        "reducido": {
+          "title": "10% - Reduced VAT",
+          "description": "For processed foods, passenger transport, hospitality, event tickets and water."
+        },
+        "superreducido": {
+          "title": "4% - Super-reduced VAT",
+          "description": "Essential products: bread, milk, eggs, fruits, vegetables, books and medicines."
+        },
+        "exento": {
+          "title": "0% - VAT Exempt",
+          "description": "Medical services, education, insurance, residential rental and financial operations."
+        }
+      },
+      "whyUse": {
+        "title": "Why use our VAT calculator?"
+      },
+      "benefits": [
+        "Instant and accurate calculations without rounding errors",
+        "All Spanish VAT rates updated for 2026",
+        "Completely free, no registration or usage limits",
+        "Works on mobile, tablet and desktop",
+        "Option to calculate VAT or extract it from a final price",
+        "Ideal for freelancers, SMBs and any professional"
+      ],
+      "faq": {
+        "title": "Frequently asked questions about VAT",
+        "q1": {
+          "question": "What are the current VAT rates in Spain in 2026?",
+          "answer": "In Spain there are four VAT rates: the standard 21% which applies to most products and services; the reduced 10% for food, transport and hospitality; the super-reduced 4% for essential products such as bread, milk and medicines; and 0% for exempt services such as healthcare and education."
+        },
+        "q2": {
+          "question": "How do I calculate VAT for an invoice?",
+          "answer": "To calculate VAT, multiply the base amount by the VAT rate divided by 100. For example, for a base of €100 with 21% VAT: 100 × 0.21 = €21 VAT. The invoice total would be €121. Our calculator does this calculation automatically."
+        },
+        "q3": {
+          "question": "How do I extract VAT from a price that already includes it?",
+          "answer": "To extract VAT from a final price, divide the total by 1 plus the VAT rate. For example, for a price of €121 with 21% VAT: 121 ÷ 1.21 = €100 base amount. The VAT would be €21. Select 'Extract VAT from total' in our calculator to perform this calculation."
+        },
+        "q4": {
+          "question": "What VAT should I apply to my services as a freelancer?",
+          "answer": "Most professional services are taxed at 21% standard VAT. However, some services have reduced rates or are exempt. For example, healthcare services are exempt, as is regulated training. Consult with your accountant if you have doubts about your specific activity."
+        },
+        "q5": {
+          "question": "When do I have to file quarterly VAT (form 303)?",
+          "answer": "Freelancers and SMBs must file form 303 quarterly: by April 20 (Q1), July 20 (Q2), October 20 (Q3) and January 30 of the following year (Q4). In the form you declare the output VAT (charged) minus the input VAT (paid), and pay or offset the difference."
+        },
+        "q6": {
+          "question": "What is input VAT and output VAT?",
+          "answer": "Output VAT is what you charge your customers on your sales invoices. Input VAT is what you pay on invoices from your suppliers and deductible expenses. In the quarterly declaration, you subtract input from output: if the result is positive, you pay; if negative, you can offset or request a refund."
+        }
+      }
     }
   }
 }
