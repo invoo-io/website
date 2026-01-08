@@ -57,6 +57,9 @@ El MEI es una cotización adicional que financia el sistema de pensiones y que t
 
 Cuando termine tu periodo de tarifa plana, estas cotizaciones adicionales se activarán automáticamente desde el primer día del mes siguiente, incrementando tu cuota hasta el tramo que te corresponda según tus ingresos reales.
 
+> **🧮 Calcula tu cuota exacta**
+> ¿Quieres saber exactamente cuánto pagarás según tus ingresos? Usa nuestra [calculadora de cuota de autónomos 2026](/es/herramientas/calculadoras/cuota-autonomos/) para ver tu tramo, base de cotización y si te aplica Tarifa Plana o Cuota Cero.
+
 ---
 
 ## Los requisitos reales para acceder a la tarifa plana
@@ -223,6 +226,9 @@ Cuando acabe tu periodo de tarifa plana (12, 24 o más meses según tu caso), pa
 
 El salto de 88€ a 200€ (o más) puede ser significativo para tu flujo de caja. Planifícalo con tiempo y asegúrate de que tu negocio genera los ingresos necesarios para absorber ese incremento cuando llegue el momento.
 
+> **🧮 ¿Cuánto pagarás cuando termine la tarifa plana?**
+> Descubre en qué tramo caerás según tus ingresos previstos. Nuestra [calculadora de cuota de autónomos](/es/herramientas/calculadoras/cuota-autonomos/) te muestra tu cuota exacta, incluyendo Cuota Cero si tu comunidad autónoma lo ofrece.
+
 ---
 
 ## Errores comunes que cuestan dinero
@@ -304,4 +310,4 @@ Además, puedes compartir tus facturas y libros con tu gestoría sin tener que e
 - **BOE:** [Real Decreto-ley 13/2022](https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482) (sistema de cotización por ingresos reales y tarifa plana)
 - **Tribunal Supremo:** Sentencias 1669/2019, 286/2020 y 315/2020 (tarifa plana para autónomos societarios)
 
-*Última actualización: Noviembre 2025*
+*Última actualización: Enero 2026*
