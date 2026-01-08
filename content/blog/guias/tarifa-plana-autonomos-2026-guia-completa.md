@@ -1,7 +1,7 @@
 ---
 title: "Tarifa Plana Autónomos 2026: Requisitos, Cuánto Pagas y Cómo Solicitarla"
 excerpt: "Guía completa sobre la tarifa plana de autónomos en 2026. Requisitos reales, cuánto pagas con el MEI, prórrogas, incompatibilidades y el proceso paso a paso para no perderla."
-publishedAt: "2025-11-26"
+publishedAt: "2026-01-08"
 author: "Equipo Invoo"
 tags: ["tarifa-plana", "autonomos", "seguridad-social", "cuotas", "nuevos-autonomos"]
 readingTime: 14
