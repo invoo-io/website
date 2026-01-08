@@ -24,6 +24,12 @@ const staticPages = [
   "/verifactu",
 ];
 
+// Calculator pages with localized URLs
+const calculatorPages = [
+  { es: "/herramientas/calculadoras/iva", en: "/tools/calculators/vat" },
+  { es: "/herramientas/calculadoras/cuota-autonomos", en: "/tools/calculators/self-employed-quota" },
+];
+
 function getBlogArticles(): { slug: string; category: string; lastModified?: Date }[] {
   const articles: { slug: string; category: string; lastModified?: Date }[] = [];
   const contentDir = path.join(process.cwd(), "content/blog");
@@ -102,6 +108,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: article.lastModified,
       changeFrequency: "monthly",
       priority: 0.7,
+    });
+  }
+
+  // Calculator pages (both locales with localized URLs)
+  for (const calc of calculatorPages) {
+    entries.push({
+      url: `${BASE_URL}/es${calc.es}/`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    });
+    entries.push({
+      url: `${BASE_URL}/en${calc.en}/`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     });
   }
 

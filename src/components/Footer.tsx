@@ -28,7 +28,7 @@ export default function Footer({ locale }: FooterProps) {
     <footer className="bg-background-secondary text-primary px-6 pt-20 pb-10">
       <div className="max-w-6xl mx-auto">
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-20">
           {/* Logo and description column */}
           <div>
             <div className="mb-6">
@@ -80,6 +80,31 @@ export default function Footer({ locale }: FooterProps) {
             <ul className="list-none p-0 flex flex-col gap-4">
               <li><Link href={getBasePath(`/${locale}/faq`)} className="text-callout no-underline text-secondary hover:text-primary transition-colors">{t("faqs")}</Link></li>
               <li><Link href={getBasePath(`/${locale}/blog`)} className="text-callout no-underline text-secondary hover:text-primary transition-colors">{t("blog")}</Link></li>
+            </ul>
+          </div>
+
+          {/* Tools column */}
+          <div>
+            <h3 className="text-headline text-primary mb-6">
+              {t("toolsTitle")}
+            </h3>
+            <ul className="list-none p-0 flex flex-col gap-4">
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/iva` : `/${locale}/tools/calculators/vat`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorIVA")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorCuotaAutonomos")}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

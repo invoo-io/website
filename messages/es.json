@@ -1041,6 +1041,9 @@
       "resourcesTitle": "Recursos",
       "faqs": "Preguntas Frecuentes",
       "blog": "Blog",
+      "toolsTitle": "Herramientas",
+      "calculatorIVA": "Calculadora de IVA",
+      "calculatorCuotaAutonomos": "Calculadora Cuota Autónomos",
       "copyright": "© 2025 Invoo.es. Todos los derechos reservados. Hecho con ♥ para autónomos españoles"
     }
   },
@@ -1260,6 +1263,266 @@
       "publishedOn": "Publicado el",
       "backButton": "Volver",
       "backButtonAriaLabel": "Volver a la categoría del blog"
+    }
+  },
+  "calculators": {
+    "iva": {
+      "meta": {
+        "title": "Calculadora IVA Online 2026 | Gratis para Autónomos - Invoo",
+        "description": "Calcula el IVA de tus facturas al instante. Tipos del 21%, 10% y 4%. Calculadora gratuita y actualizada para autónomos y pymes en España. Sin registro."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora de IVA",
+        "titleEnd": "para Autónomos",
+        "description": "Calcula el IVA de tus facturas al instante. Añade IVA a una base imponible o extrae el IVA de un importe total. Gratuita, sin registro y actualizada para 2026."
+      },
+      "rates": {
+        "general": "General",
+        "reducido": "Reducido",
+        "superreducido": "Superreducido",
+        "exento": "Exento"
+      },
+      "inputs": {
+        "direction": "¿Qué quieres calcular?",
+        "baseAmount": "Importe base (sin IVA)",
+        "baseAmountHelper": "Introduce el importe antes de aplicar el IVA",
+        "totalAmount": "Importe total (con IVA)",
+        "totalAmountHelper": "Introduce el importe final incluyendo IVA",
+        "ivaRate": "Tipo de IVA",
+        "ivaRateHelper": "Selecciona el tipo de IVA aplicable"
+      },
+      "direction": {
+        "fromBase": "Calcular IVA desde base",
+        "fromBaseDesc": "Añadir IVA a un importe sin impuestos",
+        "fromTotal": "Extraer IVA del total",
+        "fromTotalDesc": "Obtener la base imponible de un precio final"
+      },
+      "results": {
+        "title": "Resultado del cálculo",
+        "base": "Base imponible",
+        "iva": "IVA",
+        "total": "Total con IVA",
+        "placeholder": "Introduce un importe para ver los resultados"
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo usar la calculadora de IVA",
+        "schemaName": "Cómo calcular el IVA de una factura",
+        "description": "Calcular el IVA de tus facturas es muy sencillo con nuestra herramienta gratuita. Sigue estos tres pasos:",
+        "step1": {
+          "title": "Elige el cálculo",
+          "description": "Selecciona si quieres añadir IVA a una base imponible o extraer el IVA de un importe que ya lo incluye."
+        },
+        "step2": {
+          "title": "Introduce el importe",
+          "description": "Escribe la cantidad en euros. Puedes usar decimales separados por coma o punto."
+        },
+        "step3": {
+          "title": "Selecciona el tipo de IVA",
+          "description": "Elige entre el 21% (general), 10% (reducido), 4% (superreducido) o 0% (exento)."
+        }
+      },
+      "ivaTypes": {
+        "title": "Tipos de IVA en España",
+        "description": "En España existen cuatro tipos de IVA según el producto o servicio. Conocer cuál aplicar es fundamental para facturar correctamente.",
+        "general": {
+          "title": "21% - IVA General",
+          "description": "Se aplica a la mayoría de productos y servicios: electrónica, ropa, servicios profesionales, hostelería."
+        },
+        "reducido": {
+          "title": "10% - IVA Reducido",
+          "description": "Para alimentos procesados, transporte de viajeros, hostelería, entradas a espectáculos y agua."
+        },
+        "superreducido": {
+          "title": "4% - IVA Superreducido",
+          "description": "Productos de primera necesidad: pan, leche, huevos, frutas, verduras, libros y medicamentos."
+        },
+        "exento": {
+          "title": "0% - Exento de IVA",
+          "description": "Servicios médicos, educación, seguros, alquiler de vivienda y operaciones financieras."
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de IVA?"
+      },
+      "benefits": [
+        "Cálculos instantáneos y precisos sin errores de redondeo",
+        "Todos los tipos de IVA españoles actualizados para 2026",
+        "Totalmente gratuita, sin registro ni límites de uso",
+        "Funciona en móvil, tablet y ordenador",
+        "Opción de calcular IVA o extraerlo de un precio final",
+        "Ideal para autónomos, pymes y cualquier profesional"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre el IVA",
+        "q1": {
+          "question": "¿Cuáles son los tipos de IVA vigentes en España en 2026?",
+          "answer": "En España hay cuatro tipos de IVA: el general del 21% que se aplica a la mayoría de productos y servicios; el reducido del 10% para alimentos, transporte y hostelería; el superreducido del 4% para productos de primera necesidad como pan, leche y medicamentos; y el 0% para servicios exentos como sanidad y educación."
+        },
+        "q2": {
+          "question": "¿Cómo calculo el IVA de una factura?",
+          "answer": "Para calcular el IVA, multiplica la base imponible por el tipo de IVA correspondiente dividido entre 100. Por ejemplo, para una base de 100€ con IVA del 21%: 100 × 0,21 = 21€ de IVA. El total de la factura sería 121€. Nuestra calculadora hace este cálculo automáticamente."
+        },
+        "q3": {
+          "question": "¿Cómo extraer el IVA de un precio que ya lo incluye?",
+          "answer": "Para extraer el IVA de un precio final, divide el total entre 1 más el tipo de IVA. Por ejemplo, para un precio de 121€ con IVA del 21%: 121 ÷ 1,21 = 100€ de base imponible. El IVA sería 21€. Selecciona 'Extraer IVA del total' en nuestra calculadora para hacer este cálculo."
+        },
+        "q4": {
+          "question": "¿Qué IVA aplico a mis servicios como autónomo?",
+          "answer": "La mayoría de servicios profesionales tributan al 21% de IVA general. Sin embargo, algunos servicios tienen tipos reducidos o están exentos. Por ejemplo, los servicios sanitarios están exentos, y la formación reglada también. Consulta con tu gestor si tienes dudas sobre tu actividad específica."
+        },
+        "q5": {
+          "question": "¿Cuándo debo presentar el IVA trimestral (modelo 303)?",
+          "answer": "Los autónomos y pymes deben presentar el modelo 303 trimestralmente: hasta el 20 de abril (1T), 20 de julio (2T), 20 de octubre (3T) y 30 de enero del año siguiente (4T). En el modelo declaras el IVA repercutido (cobrado) menos el IVA soportado (pagado), y abonas o compensas la diferencia."
+        },
+        "q6": {
+          "question": "¿Qué es el IVA soportado y el IVA repercutido?",
+          "answer": "El IVA repercutido es el que cobras a tus clientes en tus facturas de venta. El IVA soportado es el que pagas tú en las facturas de tus proveedores y gastos deducibles. En la declaración trimestral, restas el soportado del repercutido: si el resultado es positivo, pagas; si es negativo, puedes compensar o solicitar devolución."
+        }
+      }
+    },
+    "cuotaAutonomos": {
+      "meta": {
+        "title": "Calculadora Cuota de Autónomos 2026 | Gratis - Invoo",
+        "description": "Calcula tu cuota de autónomo según tus ingresos reales. Sistema de tramos 2024-2026. Descubre si aplica Tarifa Plana o Cuota Cero en tu comunidad. Sin registro."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora Cuota",
+        "titleEnd": "de Autónomos",
+        "description": "Calcula tu cuota de autónomo según tus ingresos reales. Sistema de cotización por tramos actualizado para 2024-2026. Incluye Tarifa Plana y Cuota Cero."
+      },
+      "inputs": {
+        "rendimientoAnual": "Rendimiento neto anual",
+        "rendimientoAnualHelper": "Ingresos menos gastos deducibles al año",
+        "year": "Año de cotización",
+        "yearHelper": "Selecciona el año para el cálculo",
+        "primeraAlta": {
+          "label": "¿Eres nuevo autónomo?",
+          "no": "No, ya estoy dado de alta",
+          "noDesc": "Pago cuota según mis ingresos",
+          "yes": "Sí, es mi primera alta",
+          "yesDesc": "Puedo beneficiarme de Tarifa Plana o Cuota Cero"
+        },
+        "ccaa": {
+          "label": "Comunidad Autónoma",
+          "placeholder": "Selecciona tu comunidad",
+          "helper": "Algunas comunidades ofrecen Cuota Cero"
+        }
+      },
+      "results": {
+        "title": "Tu cuota de autónomo",
+        "rendimientoMensual": "Rendimiento mensual",
+        "tramo": "Tramo",
+        "baseCotizacion": "Base de cotización",
+        "cuotaMensual": "Cuota mensual",
+        "cuotaAnual": "Cuota anual",
+        "bonificacion": "Bonificación",
+        "cuotaFinal": "Cuota final a pagar",
+        "tarifaPlana": "Tarifa Plana aplicada",
+        "cuotaCero": "Cuota Cero aplicada",
+        "placeholder": "Introduce tus ingresos anuales para ver tu cuota",
+        "cuotaCeroNotice": "¡Felicidades! Tu comunidad ofrece Cuota Cero para nuevos autónomos. No pagarás cuota durante los primeros {months} meses."
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo calcular tu cuota de autónomo",
+        "schemaName": "Cómo calcular la cuota de autónomo por ingresos reales",
+        "description": "El nuevo sistema de cotización te permite pagar según tus ingresos reales. Sigue estos pasos:",
+        "step1": {
+          "title": "Calcula tu rendimiento neto",
+          "description": "Resta tus gastos deducibles de tus ingresos brutos anuales. Ese es tu rendimiento neto."
+        },
+        "step2": {
+          "title": "Selecciona el año",
+          "description": "Elige el año de cotización. Las bases y tipos varían cada año durante el periodo transitorio."
+        },
+        "step3": {
+          "title": "Indica si eres nuevo autónomo",
+          "description": "Los nuevos autónomos pueden beneficiarse de la Tarifa Plana (80€/mes) o Cuota Cero según su comunidad."
+        },
+        "step4": {
+          "title": "Consulta tu cuota",
+          "description": "La calculadora te mostrará tu cuota mensual y anual, incluyendo bonificaciones si aplican."
+        }
+      },
+      "tramos": {
+        "title": "Sistema de tramos 2024-2026",
+        "description": "Desde 2023, la cuota de autónomos se calcula según tus ingresos reales, con 15 tramos diferentes. A más ingresos, mayor base de cotización.",
+        "tramo1": {
+          "title": "Tramos 1-5: Ingresos bajos",
+          "description": "Para rendimientos de hasta 1.500€/mes. Bases de cotización reducidas para proteger a quien empieza o tiene ingresos variables."
+        },
+        "tramo2": {
+          "title": "Tramos 6-10: Ingresos medios",
+          "description": "Para rendimientos de 1.500€ a 2.760€/mes. Bases proporcionales a tus ingresos reales."
+        },
+        "tramo3": {
+          "title": "Tramos 11-14: Ingresos medios-altos",
+          "description": "Para rendimientos de 2.760€ a 6.000€/mes. Mayor cotización pero también mayor protección social."
+        },
+        "tramo4": {
+          "title": "Tramo 15: Ingresos altos",
+          "description": "Para rendimientos superiores a 6.000€/mes. Base máxima de cotización que garantiza las prestaciones más altas."
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora?"
+      },
+      "benefits": [
+        "Pagas según lo que realmente ganas, más justo para quien empieza",
+        "Puedes cambiar de tramo hasta 6 veces al año según varíen tus ingresos",
+        "Tarifa Plana de 80€/mes los primeros 12 meses para nuevos autónomos",
+        "Cuota Cero en muchas comunidades autónomas: 0€ el primer año",
+        "Mayor protección: incluye cese de actividad y formación",
+        "Regularización anual para ajustar cotizaciones a ingresos reales"
+      ],
+      "tarifaPlana": {
+        "title": "Tarifa Plana para nuevos autónomos",
+        "description": "Si te das de alta por primera vez (o tras 2 años de baja), puedes acogerte a la Tarifa Plana:",
+        "months1_12": "Meses 1-12: 80€/mes",
+        "months13_24": "Meses 13-24: 80€/mes (si ingresos < SMI)",
+        "requirement": "Requisito: no haber estado de alta en los últimos 2 años"
+      },
+      "cuotaCero": {
+        "title": "Cuota Cero por comunidad",
+        "description": "Varias comunidades autónomas bonifican el 100% de la cuota el primer año. Consulta si tu comunidad ofrece este beneficio.",
+        "availableIn": "Disponible en: Madrid, Andalucía, Aragón, Cantabria, Castilla-La Mancha, Extremadura, Galicia, Murcia, La Rioja, Canarias, Comunidad Valenciana"
+      },
+      "faq": {
+        "title": "Preguntas frecuentes sobre la cuota de autónomos",
+        "q1": {
+          "question": "¿Cuánto paga un autónomo en 2026?",
+          "answer": "Depende de tus ingresos reales. Con el sistema de tramos, la cuota mínima ronda los 230€/mes para rendimientos bajos, y puede llegar a más de 500€/mes para ingresos altos. Los nuevos autónomos pagan solo 80€/mes con Tarifa Plana, o 0€ con Cuota Cero en algunas comunidades."
+        },
+        "q2": {
+          "question": "¿Qué es el rendimiento neto?",
+          "answer": "Es la diferencia entre tus ingresos brutos y tus gastos deducibles (alquiler de oficina, suministros, material, seguros, etc.). La Seguridad Social usa tu rendimiento neto para determinar tu tramo y base de cotización."
+        },
+        "q3": {
+          "question": "¿Puedo cambiar mi base de cotización?",
+          "answer": "Sí, puedes modificar tu base de cotización hasta 6 veces al año a través del sistema RED o tu gestoría. Esto te permite ajustar tu cuota si tus ingresos varían durante el año."
+        },
+        "q4": {
+          "question": "¿Qué es la regularización anual?",
+          "answer": "Al final del ejercicio, la Seguridad Social compara lo que cotizaste con tus ingresos reales declarados en la renta. Si cotizaste de más, te devuelven la diferencia. Si cotizaste de menos, tendrás que pagar la diferencia."
+        },
+        "q5": {
+          "question": "¿Cómo solicito la Tarifa Plana?",
+          "answer": "Se solicita al darte de alta como autónomo, marcando la opción en el modelo TA.0521. Si ya estás dado de alta, puedes solicitarla mientras cumplas los requisitos (menos de 12 meses desde el alta)."
+        },
+        "q6": {
+          "question": "¿Qué incluye la cuota de autónomo?",
+          "answer": "La cuota cubre: contingencias comunes (asistencia sanitaria, baja por enfermedad), contingencias profesionales (accidentes laborales), cese de actividad (paro del autónomo) y formación profesional. Todo está incluido en el tipo del 31,30-31,50%."
+        }
+      }
     }
   }
 }
