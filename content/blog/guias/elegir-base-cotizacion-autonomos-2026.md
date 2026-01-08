@@ -6,7 +6,7 @@ author: "Equipo Invoo"
 tags: ["base cotización", "autónomos", "cuotas 2026", "seguridad social", "jubilación"]
 readingTime: 8
 featured: false
-editorPick: true
+editorPick: false
 coverImage: "/blog/elegir-base-cotizacion-autonomos-2026.webp"
 keyTakeaways:
   - "La base de cotización no solo determina tu cuota mensual, sino también tu pensión futura y las prestaciones por baja o cese de actividad"
