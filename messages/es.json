@@ -6,6 +6,7 @@
   "nav": {
     "services": "Servicios",
     "resources": "Recursos",
+    "tools": "Herramientas",
     "pricing": "Precios",
     "about": "Nosotros",
     "contact": "Contacto",
@@ -20,6 +21,12 @@
     "gestorias": "Gestorías",
     "faq": "Preguntas Frecuentes",
     "blog": "Blog",
+    "calculatorIVA": "Calculadora de IVA",
+    "calculatorCuotaAutonomos": "Calculadora Cuota Autónomos",
+    "calculatorFactura": "Calculadora de Facturas",
+    "calculatorIRPF": "Calculadora IRPF Autónomos",
+    "calculatorSueldoNeto": "Calculadora Sueldo Neto",
+    "calculatorPrecioHora": "Calculadora Precio por Hora",
     "login": "Iniciar sesión",
     "getStarted": "Únete a la lista de espera"
   },
@@ -1044,6 +1051,10 @@
       "toolsTitle": "Herramientas",
       "calculatorIVA": "Calculadora de IVA",
       "calculatorCuotaAutonomos": "Calculadora Cuota Autónomos",
+      "calculatorFactura": "Calculadora de Facturas",
+      "calculatorIRPF": "Calculadora IRPF Autónomos",
+      "calculatorSueldoNeto": "Calculadora Sueldo Neto",
+      "calculatorPrecioHora": "Calculadora Precio por Hora",
       "copyright": "© 2025 Invoo.es. Todos los derechos reservados. Hecho con ♥ para autónomos españoles"
     }
   },
@@ -1266,6 +1277,36 @@
     }
   },
   "calculators": {
+    "common": {
+      "relatedTitle": "Otras calculadoras que te pueden interesar",
+      "useCalculator": "Usar calculadora",
+      "related": {
+        "iva": {
+          "name": "Calculadora de IVA",
+          "description": "Calcula el IVA de tus facturas con tipos del 21%, 10% y 4%"
+        },
+        "cuotaAutonomos": {
+          "name": "Calculadora Cuota Autónomos",
+          "description": "Descubre cuánto pagarás de cuota según tus ingresos reales"
+        },
+        "factura": {
+          "name": "Calculadora de Facturas",
+          "description": "Calcula el total de tu factura con IVA y retención IRPF"
+        },
+        "irpfAutonomos": {
+          "name": "Calculadora IRPF",
+          "description": "Calcula tu IRPF anual con los tramos fiscales actualizados"
+        },
+        "sueldoNetoAutonomo": {
+          "name": "Calculadora Sueldo Neto",
+          "description": "Descubre cuánto te queda realmente después de impuestos"
+        },
+        "precioHora": {
+          "name": "Calculadora Precio por Hora",
+          "description": "Calcula qué tarifa cobrar para alcanzar tu sueldo neto deseado"
+        }
+      }
+    },
     "iva": {
       "meta": {
         "title": "Calculadora IVA Online 2026 | Gratis para Autónomos - Invoo",
@@ -1521,6 +1562,587 @@
         "q6": {
           "question": "¿Qué incluye la cuota de autónomo?",
           "answer": "La cuota cubre: contingencias comunes (asistencia sanitaria, baja por enfermedad), contingencias profesionales (accidentes laborales), cese de actividad (paro del autónomo) y formación profesional. Todo está incluido en el tipo del 31,30-31,50%."
+        }
+      }
+    },
+    "factura": {
+      "meta": {
+        "title": "Calculadora de Facturas Online 2026 | IVA + IRPF Gratis - Invoo",
+        "description": "Calcula el total de tus facturas con IVA e IRPF al instante. Calculadora gratuita para autónomos y profesionales en España. Sin registro, resultados inmediatos."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora de Facturas",
+        "titleEnd": "con IVA e IRPF",
+        "description": "Calcula el importe total de tu factura, el IVA a aplicar y la retención de IRPF. Conoce cuánto vas a cobrar realmente. Gratuita, sin registro y actualizada para 2026."
+      },
+      "rates": {
+        "ivaGeneral": "General (21%)",
+        "ivaReducido": "Reducido (10%)",
+        "ivaSuperreducido": "Superreducido (4%)",
+        "ivaExento": "Exento (0%)",
+        "irpfStandard": "Estándar (15%)",
+        "irpfNuevo": "Nuevo autónomo (7%)",
+        "irpfSin": "Sin retención (0%)"
+      },
+      "inputs": {
+        "direction": "¿Desde qué importe calcular?",
+        "baseAmount": "Base imponible",
+        "baseAmountHelper": "El importe de tus servicios antes de impuestos",
+        "totalAmount": "Total factura (con IVA)",
+        "totalAmountHelper": "El importe que pagará el cliente",
+        "netoAmount": "Neto a cobrar",
+        "netoAmountHelper": "El importe que recibirás en tu cuenta",
+        "ivaRate": "Tipo de IVA",
+        "ivaRateHelper": "Selecciona el IVA aplicable a tu actividad",
+        "irpfRate": "Retención IRPF",
+        "irpfRateHelper": "Solo para profesionales que facturan a empresas"
+      },
+      "direction": {
+        "fromBase": "Desde base imponible",
+        "fromBaseDesc": "Tengo el importe sin impuestos",
+        "fromTotal": "Desde total factura",
+        "fromTotalDesc": "Tengo el importe final con IVA",
+        "fromNeto": "Desde neto a cobrar",
+        "fromNetoDesc": "Quiero cobrar un importe específico"
+      },
+      "results": {
+        "title": "Desglose de tu factura",
+        "base": "Base imponible",
+        "iva": "IVA",
+        "subtotal": "Subtotal",
+        "irpf": "Retención IRPF",
+        "total": "Total factura",
+        "neto": "Neto a cobrar",
+        "placeholder": "Introduce un importe para ver el desglose"
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo calcular el importe de tu factura",
+        "schemaName": "Cómo calcular una factura con IVA e IRPF",
+        "description": "Calcular el total de tu factura incluyendo IVA e IRPF es muy sencillo con nuestra herramienta gratuita:",
+        "step1": {
+          "title": "Elige el punto de partida",
+          "description": "Selecciona si partes de la base imponible, del total con IVA, o del importe neto que deseas cobrar."
+        },
+        "step2": {
+          "title": "Introduce el importe",
+          "description": "Escribe la cantidad en euros. Puedes usar decimales con coma (1.234,56) o punto (1234.56)."
+        },
+        "step3": {
+          "title": "Selecciona IVA e IRPF",
+          "description": "Elige el tipo de IVA según tu actividad y la retención de IRPF correspondiente."
+        },
+        "step4": {
+          "title": "Obtén el desglose",
+          "description": "Verás el desglose completo: base, IVA, total factura, retención IRPF y el neto que cobrarás."
+        }
+      },
+      "irpfTypes": {
+        "title": "¿Cuándo aplicar retención de IRPF?",
+        "description": "La retención de IRPF solo se aplica cuando facturas a empresas o profesionales, no a particulares:",
+        "standard": {
+          "title": "15% Estándar",
+          "description": "Tipo general para profesionales autónomos que facturan a empresas. Actividades de la sección 2ª del IAE."
+        },
+        "nuevo": {
+          "title": "7% Nuevos autónomos",
+          "description": "Para el año de alta y los dos siguientes. También para actividades artísticas y culturales."
+        },
+        "sin": {
+          "title": "0% Sin retención",
+          "description": "Facturas a particulares, actividades empresariales (sección 1ª IAE) o clientes extranjeros."
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de facturas?"
+      },
+      "benefits": [
+        "Cálculo instantáneo de IVA, IRPF y neto a cobrar",
+        "Actualizada con los tipos vigentes en 2026",
+        "Calcula desde base, total o neto deseado",
+        "Sin registro ni datos personales requeridos",
+        "Optimizada para autónomos y profesionales",
+        "Evita errores en tus facturas"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre facturas",
+        "q1": {
+          "question": "¿Cómo se calcula el total de una factura con IVA e IRPF?",
+          "answer": "El total de la factura es Base + IVA. El neto que cobras es: Base + IVA - IRPF. Por ejemplo: con 1.000€ de base, 21% IVA y 15% IRPF: Total = 1.000 + 210 = 1.210€. Neto = 1.210 - 150 = 1.060€."
+        },
+        "q2": {
+          "question": "¿Sobre qué importe se aplica la retención de IRPF?",
+          "answer": "La retención de IRPF se aplica sobre la base imponible, no sobre el total con IVA. Esto es importante para calcular correctamente el neto a cobrar."
+        },
+        "q3": {
+          "question": "¿Cuándo puedo aplicar el 7% de IRPF como nuevo autónomo?",
+          "answer": "Puedes aplicar el tipo reducido del 7% durante el año de inicio de actividad y los dos años siguientes, siempre que no hayas ejercido otra actividad profesional en el año anterior. Debes comunicarlo al pagador."
+        },
+        "q4": {
+          "question": "¿Tengo que poner IRPF en facturas a particulares?",
+          "answer": "No. La retención de IRPF solo se aplica cuando facturas a empresas o profesionales que actúan como tales. Las facturas a particulares no llevan retención de IRPF."
+        },
+        "q5": {
+          "question": "¿Qué tipo de IVA debo aplicar en mis facturas?",
+          "answer": "El tipo general es 21% para la mayoría de servicios profesionales. El 10% aplica a alimentos, transporte de viajeros, hostelería. El 4% a alimentos básicos, libros, medicamentos. El 0% para servicios exentos como sanidad y educación."
+        },
+        "q6": {
+          "question": "¿Quién debe aplicar retención de IRPF en sus facturas?",
+          "answer": "Los profesionales autónomos dados de alta en actividades de la sección 2ª del IAE (actividades profesionales) cuando facturan a empresas o profesionales. Los autónomos con actividades empresariales (sección 1ª) generalmente no aplican retención."
+        }
+      }
+    },
+    "irpfAutonomos": {
+      "meta": {
+        "title": "Calculadora IRPF Autónomos 2026 | Gratis - Invoo",
+        "description": "Calcula tu IRPF como autónomo con tramos fiscales 2026 actualizados. Incluye mínimo personal, gastos deducibles y retenciones. Gratis y sin registro."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora IRPF",
+        "titleEnd": "para Autónomos",
+        "description": "Calcula cuánto pagarás de IRPF como autónomo. Tramos fiscales 2024-2026 actualizados. Incluye mínimo personal, gastos deducibles y resultado en la declaración de la renta."
+      },
+      "sections": {
+        "ingresos": "Ingresos y gastos",
+        "configuracion": "Configuración fiscal",
+        "situacionPersonal": "Situación personal"
+      },
+      "inputs": {
+        "ingresosBrutos": "Ingresos brutos anuales",
+        "ingresosBrutosHelper": "Total facturado en el año antes de impuestos",
+        "gastosDeducibles": "Gastos deducibles",
+        "gastosDeduciblesHelper": "Alquiler, suministros, material, formación, etc.",
+        "seguridadSocial": "Cuota de autónomos anual",
+        "seguridadSocialHelper": "Total de cuotas pagadas a la Seguridad Social",
+        "year": "Ejercicio fiscal",
+        "regimen": {
+          "label": "Régimen de estimación",
+          "simplificada": "Estimación directa simplificada",
+          "simplificadaDesc": "Ingresos < 600.000€ - Incluye 5% gastos difícil justificación",
+          "normal": "Estimación directa normal",
+          "normalDesc": "Ingresos > 600.000€ o elección voluntaria"
+        },
+        "retencion": {
+          "label": "Retención en facturas",
+          "standard": "15% Estándar",
+          "nuevo": "7% Nuevo autónomo",
+          "sin": "0% Sin retención",
+          "helper": "Retenciones que te han practicado durante el año"
+        },
+        "edad": {
+          "label": "Edad del contribuyente",
+          "under65": "Menor de 65 años",
+          "under65Desc": "Mínimo personal: 5.550€",
+          "over65": "65 años o más",
+          "over65Desc": "Mínimo personal: 6.700€",
+          "over75": "75 años o más",
+          "over75Desc": "Mínimo personal: 8.100€"
+        },
+        "descendientes": "Hijos a cargo",
+        "menores3": "De ellos, menores de 3 años"
+      },
+      "results": {
+        "title": "Tu IRPF estimado",
+        "rendimientoNeto": "Rendimiento neto",
+        "gastosDificilJustificacion": "Gastos difícil justificación (5%)",
+        "minimoPersonal": "Mínimo personal",
+        "minimoDescendientes": "Mínimo por descendientes",
+        "cuotaIntegra": "Cuota íntegra",
+        "retenciones": "Retenciones ya pagadas",
+        "aPagar": "A pagar en la renta",
+        "aDevolver": "A devolver en la renta",
+        "tipoEfectivo": "Tipo efectivo",
+        "netoMensual": "Neto mensual",
+        "tramo": "Tramo",
+        "verDesglose": "Ver desglose por tramos",
+        "placeholder": "Introduce tus ingresos para ver el cálculo",
+        "devolucionNotice": "Las retenciones practicadas superan tu cuota de IRPF. La diferencia te será devuelta en la declaración de la renta.",
+        "pagarNotice": "Las retenciones practicadas no cubren toda tu cuota de IRPF. Deberás abonar la diferencia en la declaración de la renta.",
+        "regionalDisclaimer": "⚠️ Estimación orientativa usando la escala general (19%-47%). Los tipos REALES varían según tu Comunidad Autónoma: Madrid puede suponer entre 500€ y 2.000€ menos en rentas medias-altas; Cataluña o Valencia pueden ser superiores. Consulta con tu gestor para el cálculo exacto.",
+        "legalDisclaimer": "Esta calculadora proporciona estimaciones orientativas basadas en la normativa general del IRPF. No constituye asesoramiento fiscal profesional. Ante dudas, consulta con tu asesor fiscal."
+      },
+      "form": {
+        "ariaLabel": "Calculadora de IRPF para autónomos"
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo calcular tu IRPF de autónomo",
+        "schemaName": "Cómo calcular el IRPF para autónomos",
+        "description": "El IRPF es un impuesto progresivo que grava tus rendimientos. Sigue estos pasos para estimarlo:",
+        "step1": {
+          "title": "Introduce tus ingresos brutos",
+          "description": "Es el total facturado durante el año antes de impuestos. Suma todas tus facturas emitidas."
+        },
+        "step2": {
+          "title": "Resta los gastos deducibles",
+          "description": "Incluye alquiler de local, suministros, material, seguros, formación y otros gastos vinculados a tu actividad."
+        },
+        "step3": {
+          "title": "Indica la cuota de autónomos",
+          "description": "La cuota pagada a la Seguridad Social es 100% deducible del rendimiento neto."
+        },
+        "step4": {
+          "title": "Revisa tu situación personal",
+          "description": "El mínimo personal y familiar reduce la base sobre la que tributas. Más hijos = menos impuestos."
+        }
+      },
+      "tramos": {
+        "title": "Tramos del IRPF 2024-2026",
+        "description": "El IRPF es un impuesto progresivo con 6 tramos. Cada tramo aplica un tipo diferente sobre la parte de renta que cae en él, no sobre el total.",
+        "tramo1": {
+          "title": "Hasta 12.450€: 19%",
+          "description": "Primer tramo. Los primeros 12.450€ de base liquidable tributan al 19%. Todos los contribuyentes pasan por este tramo."
+        },
+        "tramo2": {
+          "title": "12.450€ - 20.200€: 24%",
+          "description": "Segundo tramo. La renta entre estos importes tributa al 24%. Solo la parte que excede 12.450€."
+        },
+        "tramo3": {
+          "title": "20.200€ - 35.200€: 30%",
+          "description": "Tercer tramo. Tipo del 30% para rentas medias. Aplica solo a la parte que supera los 20.200€."
+        },
+        "tramo4": {
+          "title": "Desde 35.200€: 37-47%",
+          "description": "Tramos superiores para rentas altas: 37% (35.200-60.000€), 45% (60.000-300.000€) y 47% (más de 300.000€)."
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de IRPF?"
+      },
+      "benefits": [
+        "Tramos fiscales actualizados para 2024, 2025 y 2026",
+        "Incluye el 5% de gastos de difícil justificación automáticamente",
+        "Calcula el mínimo personal según tu edad (mayor de 65 o 75)",
+        "Deducciones por hijos a cargo, incluyendo menores de 3 años",
+        "Compara retenciones practicadas vs cuota real de IRPF",
+        "Descubre si te saldrá a pagar o a devolver en la renta"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre IRPF para autónomos",
+        "q1": {
+          "question": "¿Cuánto IRPF paga un autónomo?",
+          "answer": "Depende de tus rendimientos netos. Con 30.000€ de rendimiento neto y sin deducciones especiales, el IRPF ronda los 4.500-5.500€ (tipo efectivo ~15-18%). Con hijos a cargo o más de 65 años, pagas menos gracias a los mínimos."
+        },
+        "q2": {
+          "question": "¿Qué son los gastos de difícil justificación?",
+          "answer": "Son una deducción automática del 5% sobre el rendimiento neto (máximo 2.000€/año) para autónomos en estimación directa simplificada. Cubre gastos menores sin factura. No hace falta justificarlos. Importante: esta deducción es incompatible con la reducción para autónomos económicamente dependientes (TRADE)."
+        },
+        "q3": {
+          "question": "¿Qué gastos puedo deducir como autónomo?",
+          "answer": "Son deducibles: cuota de autónomos, alquiler de oficina, suministros proporcionales, material y herramientas, formación, seguros, gestoría, publicidad, viajes de trabajo, dietas y otros vinculados a tu actividad."
+        },
+        "q4": {
+          "question": "¿Qué es el mínimo personal y familiar?",
+          "answer": "Es la parte de renta exenta de tributación por cubrir necesidades básicas. El mínimo personal es 5.550€ (6.700€ si tienes 65+ años, 8.100€ si tienes 75+). Por cada hijo se suma entre 2.400€ y 4.500€ adicionales."
+        },
+        "q5": {
+          "question": "¿Cuándo me conviene el 7% de retención en facturas?",
+          "answer": "El 7% de retención es para nuevos autónomos (año de alta + 2 siguientes). Si esperas rendimientos bajos, el 7% puede ser suficiente. Si prevés ingresos altos, quizás mejor el 15% para evitar pagar mucho en la renta."
+        },
+        "q6": {
+          "question": "¿Qué diferencia hay entre estimación directa normal y simplificada?",
+          "answer": "La simplificada es para ingresos < 600.000€, permite contabilidad básica y deduce automáticamente un 5% de gastos de difícil justificación. La normal exige contabilidad completa pero permite provisionar insolvencias específicas."
+        }
+      }
+    },
+    "sueldoNetoAutonomo": {
+      "meta": {
+        "title": "Calculadora Sueldo Neto Autónomo 2026 | Gratis - Invoo",
+        "description": "Calcula tu sueldo neto como autónomo en España. Incluye cuota, IRPF, gastos y bonificaciones. Resultados instantáneos con desglose completo. Gratis."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora Sueldo Neto",
+        "titleEnd": "para Autónomos",
+        "description": "Descubre cuánto te queda realmente después de impuestos. Calcula tu sueldo neto incluyendo cuota de autónomos, IRPF, Tarifa Plana y Cuota Cero. Actualizada para 2024-2026."
+      },
+      "sections": {
+        "ingresos": "Facturación y gastos",
+        "configuracionAutonomo": "Configuración de autónomo",
+        "situacionPersonal": "Situación personal"
+      },
+      "inputs": {
+        "facturacionAnual": "Facturación anual bruta",
+        "facturacionAnualHelper": "Total facturado en el año antes de impuestos (sin IVA)",
+        "gastosDeducibles": "Gastos deducibles",
+        "gastosDeduciblesHelper": "Alquiler, suministros, material, formación, gestoría, etc.",
+        "year": "Ejercicio fiscal",
+        "primeraAlta": {
+          "label": "¿Eres nuevo autónomo?",
+          "no": "No, ya estoy dado de alta",
+          "noDesc": "Pago cuota según mis ingresos reales",
+          "yes": "Sí, es mi primera alta",
+          "yesDesc": "Puedo beneficiarme de Tarifa Plana o Cuota Cero"
+        },
+        "ccaa": {
+          "label": "Comunidad Autónoma",
+          "placeholder": "Selecciona tu comunidad",
+          "helper": "Algunas comunidades ofrecen Cuota Cero (0€ el primer año)"
+        },
+        "regimen": {
+          "label": "Régimen de estimación",
+          "simplificada": "Estimación directa simplificada",
+          "simplificadaDesc": "Ingresos < 600.000€ - Incluye 5% gastos difícil justificación",
+          "normal": "Estimación directa normal",
+          "normalDesc": "Ingresos > 600.000€ o elección voluntaria"
+        },
+        "retencion": {
+          "label": "Retención en facturas",
+          "standard": "15% Estándar",
+          "nuevo": "7% Nuevo autónomo",
+          "sin": "0% Sin retención",
+          "helper": "Retenciones que te practican tus clientes empresas"
+        },
+        "edad": {
+          "label": "Edad del contribuyente",
+          "under65": "Menor de 65 años",
+          "under65Desc": "Mínimo personal: 5.550€",
+          "over65": "65 años o más",
+          "over65Desc": "Mínimo personal: 6.700€",
+          "over75": "75 años o más",
+          "over75Desc": "Mínimo personal: 8.100€"
+        },
+        "descendientes": "Hijos a cargo",
+        "menores3": "De ellos, menores de 3 años"
+      },
+      "results": {
+        "title": "Tu sueldo neto",
+        "sueldoNetoMensual": "Sueldo neto mensual",
+        "sueldoNetoAnual": "Sueldo neto anual",
+        "facturacionAnual": "Facturación anual",
+        "gastosDeducibles": "Gastos deducibles",
+        "cuotaAutonomos": "Cuota autónomos anual",
+        "irpfTotal": "IRPF anual",
+        "cuotaMensual": "Cuota mensual",
+        "tramo": "Tramo SS",
+        "tipoEfectivoIRPF": "Tipo efectivo IRPF",
+        "porcentajeImpuestos": "Total impuestos sobre facturación",
+        "verDesgloseIRPF": "Ver desglose por tramos IRPF",
+        "tramoIRPF": "Tramo",
+        "placeholder": "Introduce tu facturación anual para ver el resultado",
+        "cuotaCeroNotice": "¡Cuota Cero aplicada! Tu comunidad bonifica el 100% de la cuota el primer año. Ahorras {amount} en Seguridad Social.",
+        "tarifaPlanaNotice": "Tarifa Plana aplicada: solo 80€/mes los primeros 12 meses como nuevo autónomo.",
+        "devolucionNotice": "Las retenciones de tus facturas ({amount}) superan tu IRPF. Te devolverán la diferencia en la renta.",
+        "pagarNotice": "Tendrás que pagar {amount} adicionales en la declaración de la renta.",
+        "regionalDisclaimer": "⚠️ Estimación orientativa usando la escala general del IRPF. Los tipos reales varían según tu Comunidad Autónoma. Consulta con tu gestor para el cálculo exacto.",
+        "legalDisclaimer": "Esta calculadora proporciona estimaciones orientativas. No constituye asesoramiento fiscal profesional. Ante dudas, consulta con tu asesor fiscal o gestoría."
+      },
+      "form": {
+        "ariaLabel": "Calculadora de sueldo neto para autónomos"
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo calcular tu sueldo neto de autónomo",
+        "schemaName": "Cómo calcular el sueldo neto de un autónomo en España",
+        "description": "El sueldo neto de un autónomo es lo que realmente te queda después de pagar impuestos y cotizaciones. Sigue estos pasos:",
+        "step1": {
+          "title": "Introduce tu facturación",
+          "description": "Es el total facturado durante el año antes de impuestos (sin IVA). Suma todas tus facturas emitidas."
+        },
+        "step2": {
+          "title": "Resta los gastos deducibles",
+          "description": "Incluye alquiler, suministros, material, seguros, formación, gestoría y otros gastos vinculados a tu actividad."
+        },
+        "step3": {
+          "title": "Indica tu situación de autónomo",
+          "description": "Si eres nuevo autónomo puedes beneficiarte de la Tarifa Plana (80€/mes) o Cuota Cero según tu comunidad."
+        },
+        "step4": {
+          "title": "Revisa tu sueldo neto",
+          "description": "La calculadora te mostrará tu sueldo neto mensual y anual, con el desglose de cuota de autónomos e IRPF."
+        }
+      },
+      "deducciones": {
+        "title": "Qué deducciones aplican a tu sueldo neto",
+        "description": "Tu sueldo neto depende de dos grandes deducciones obligatorias: la cuota de autónomos y el IRPF. Conocerlas te ayuda a planificar mejor.",
+        "item1": {
+          "title": "Cuota de Autónomos",
+          "description": "Cotización mensual a la Seguridad Social según tus ingresos reales. Cubre sanidad, baja laboral, paro del autónomo y jubilación. En 2025 oscila entre 230€ y 500€+/mes."
+        },
+        "item2": {
+          "title": "IRPF (Impuesto sobre la Renta)",
+          "description": "Impuesto progresivo sobre tus rendimientos netos (facturación - gastos - cuota SS). Los tramos van del 19% al 47%. El tipo efectivo suele estar entre el 15% y el 30%."
+        },
+        "item3": {
+          "title": "Gastos deducibles",
+          "description": "Reducen tu base imponible: alquiler de local, suministros, material, formación, seguros, gestoría, publicidad. A más gastos deducibles, menos IRPF pagas."
+        },
+        "item4": {
+          "title": "Bonificaciones disponibles",
+          "description": "Tarifa Plana (80€/mes 12 meses) para nuevos autónomos. Cuota Cero en Madrid, Andalucía, Valencia y otras comunidades. Mínimo personal y familiar en IRPF."
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de sueldo neto?"
+      },
+      "benefits": [
+        "Calcula cuota de autónomos e IRPF en una sola herramienta",
+        "Incluye automáticamente Tarifa Plana y Cuota Cero si aplican",
+        "Tramos de cotización y fiscales actualizados para 2024-2026",
+        "Desglose completo: ves exactamente a dónde va tu dinero",
+        "Compara diferentes escenarios: con y sin gastos, nuevo vs establecido",
+        "Resultados instantáneos sin registro ni límites de uso"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre el sueldo neto de autónomos",
+        "q1": {
+          "question": "¿Cuánto gana realmente un autónomo que factura 30.000€?",
+          "answer": "Con 30.000€ de facturación anual y gastos típicos de 3.000€, un autónomo establecido tendría un sueldo neto aproximado de 17.000-19.000€ anuales (~1.500€/mes). Un nuevo autónomo con Tarifa Plana podría llegar a 20.000-21.000€ netos gracias al ahorro en cuota."
+        },
+        "q2": {
+          "question": "¿Cómo se calcula el sueldo neto de un autónomo?",
+          "answer": "Sueldo neto = Facturación - Gastos deducibles - Cuota de autónomos - IRPF. Primero restas gastos de tu facturación para obtener el rendimiento neto. Luego pagas la cuota de autónomos según tu tramo. Finalmente, el IRPF se calcula sobre lo que queda menos deducciones personales."
+        },
+        "q3": {
+          "question": "¿Qué porcentaje de mi facturación se va en impuestos?",
+          "answer": "Depende de tus ingresos, pero típicamente entre el 30% y el 45% de la facturación bruta se destina a impuestos y cotizaciones. Para facturaciones bajas (< 20.000€), el porcentaje puede ser menor (25-35%). Para rentas altas (> 60.000€), puede superar el 45%."
+        },
+        "q4": {
+          "question": "¿Merece la pena aumentar gastos para pagar menos impuestos?",
+          "answer": "Solo si son gastos reales y necesarios para tu actividad. Cada euro de gasto deducible te ahorra entre 0,19€ y 0,47€ de IRPF (según tu tramo). No tiene sentido gastar 100€ para ahorrar 25€ de impuestos. Pero sí conviene asegurarte de incluir todos los gastos legítimos."
+        },
+        "q5": {
+          "question": "¿Cuánto ahorro con la Tarifa Plana?",
+          "answer": "La Tarifa Plana te permite pagar solo 80€/mes durante los primeros 12 meses (extensible a 24 si tus ingresos son bajos). Si tu cuota normal sería de 300€/mes, ahorras 220€/mes × 12 = 2.640€ el primer año. Es un ahorro significativo para quien empieza."
+        },
+        "q6": {
+          "question": "¿Qué comunidades autónomas tienen Cuota Cero?",
+          "answer": "A fecha de enero 2026, ofrecen Cuota Cero: Madrid (24 meses), Andalucía, Aragón, Cantabria, Castilla-La Mancha (24 meses), Castilla y León, Comunidad Valenciana, Extremadura, Galicia, La Rioja, Murcia, Canarias e Islas Baleares. Los requisitos y duración varían por comunidad. Estos programas están sujetos a cambios: verifica siempre con tu comunidad autónoma antes de solicitarlo."
+        }
+      }
+    },
+    "precioHora": {
+      "meta": {
+        "title": "Calculadora Precio por Hora Autónomos 2026 | Gratis - Invoo",
+        "description": "Calcula qué precio por hora cobrar para alcanzar tu sueldo neto deseado. Incluye IRPF, cuota de autónomos y gastos. Calculadora gratuita para freelancers en España."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora Precio",
+        "titleEnd": "por Hora",
+        "description": "Descubre qué tarifa por hora necesitas cobrar para vivir dignamente de tu trabajo. Incluye IRPF, cuota de autónomos y todos los gastos. Deja de infravalorar tu esfuerzo: calcula tu precio justo en segundos."
+      },
+      "inputs": {
+        "ingresoNeto": "Sueldo neto anual deseado",
+        "ingresoNetoHelper": "¿Cuánto quieres ganar al año después de impuestos?",
+        "horasSemanales": "Horas de trabajo a la semana",
+        "horasSemanalesHelper": "Horas que trabajas cada semana (incluye tiempo no facturable: emails, gestiones, comercial...)",
+        "semanasVacaciones": "Semanas de vacaciones al año",
+        "semanasVacacionesHelper": "Tiempo que no trabajas (vacaciones, festivos, etc.)",
+        "porcentajeGastos": "Porcentaje de gastos deducibles",
+        "porcentajeGastosHelper": "% de tu facturación que destinas a gastos (alquiler, material, software, etc.)",
+        "weeks": "semanas",
+        "horasFacturablesInfo": "Trabajarás {hours} horas facturables al año"
+      },
+      "results": {
+        "title": "Tu tarifa recomendada",
+        "precioPorHora": "Precio por hora",
+        "tarifaDiaria": "Tarifa diaria (8h)",
+        "ingresoMensualBruto": "Ingresos mensuales brutos",
+        "breakdownTitle": "Desglose anual",
+        "ingresoAnualBruto": "Facturación anual necesaria",
+        "gastosDeducibles": "Gastos deducibles",
+        "cuotaAutonomos": "Cuota de autónomos (anual)",
+        "irpfEstimado": "IRPF estimado",
+        "ingresoNetoFinal": "Sueldo neto anual",
+        "placeholder": "Introduce tu sueldo neto deseado para calcular tu tarifa",
+        "disclaimer": "Estimación basada en tarifas estatales de IRPF. El resultado real puede variar según tu Comunidad Autónoma, deducciones personales y situación específica. Consulta con un asesor fiscal para cálculos precisos."
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido",
+        "invalidHours": "Introduce entre 1 y 80 horas semanales",
+        "invalidWeeks": "Introduce entre 0 y 51 semanas (mínimo 1 semana de trabajo)",
+        "invalidPercentage": "Introduce un porcentaje entre 0 y 100"
+      },
+      "howTo": {
+        "title": "Cómo calcular tu precio por hora",
+        "schemaName": "Cómo calcular el precio por hora de un autónomo",
+        "description": "Calcular tu tarifa horaria adecuada es clave para rentabilizar tu negocio como autónomo. Sigue estos pasos:",
+        "step1": {
+          "title": "Define tu sueldo neto objetivo",
+          "description": "Sé honesto contigo mismo: ¿cuánto necesitas ganar para vivir cómodamente? No te infravalores. Por ejemplo, 24.000€ netos anuales son 2.000€/mes."
+        },
+        "step2": {
+          "title": "Establece tus horas de trabajo",
+          "description": "Indica cuántas horas trabajas a la semana y cuántas semanas de vacaciones tomarás al año."
+        },
+        "step3": {
+          "title": "Estima tus gastos",
+          "description": "Calcula qué porcentaje de tus ingresos se va en gastos deducibles: alquiler, material, software, seguros, etc."
+        },
+        "step4": {
+          "title": "Obtén tu tarifa",
+          "description": "La calculadora te mostrará el precio por hora, la tarifa diaria y la facturación mensual que necesitas para alcanzar tu objetivo."
+        }
+      },
+      "factors": {
+        "title": "Factores que determinan tu precio por hora",
+        "description": "Tu tarifa horaria debe cubrir no solo tu sueldo, sino también todos los costes asociados a ser autónomo:",
+        "irpf": {
+          "title": "IRPF Progresivo",
+          "description": "El impuesto sobre la renta va del 19% al 47% según tus ingresos. A más ganas, mayor tipo marginal pagas."
+        },
+        "cuota": {
+          "title": "Cuota de Autónomos",
+          "description": "Con el sistema de cotización por ingresos reales, la Seguridad Social te cobra según tus rendimientos: de unos 300€ a más de 500€/mes."
+        },
+        "gastos": {
+          "title": "Gastos Deducibles",
+          "description": "Alquiler, material, software, formación, seguros, gestoría... Todos estos gastos reducen tu rendimiento neto."
+        },
+        "vacaciones": {
+          "title": "Tiempo No Facturable",
+          "description": "Vacaciones, festivos, bajas, formación, administración. No todo tu tiempo genera ingresos directos."
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de precio por hora?"
+      },
+      "benefits": [
+        "Cálculo realista que incluye todos los impuestos y gastos",
+        "IRPF progresivo español calculado con precisión",
+        "Considera la cuota de autónomos según tus ingresos",
+        "Tarifa diaria y mensual además de la horaria",
+        "Desglose completo: ves a dónde va cada euro que facturas",
+        "Ajusta horas, vacaciones y gastos según tu situación real"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre precio por hora",
+        "q1": {
+          "question": "¿Cuánto debería cobrar por hora como autónomo?",
+          "answer": "Depende de tu sector, experiencia y sueldo neto objetivo. Un desarrollador junior podría cobrar 30-50€/h, mientras que uno senior puede superar los 80-100€/h. Un consultor o diseñador experimentado puede facturar entre 60-150€/h. Usa esta calculadora introduciendo tu sueldo neto deseado para obtener tu tarifa óptima."
+        },
+        "q2": {
+          "question": "¿Por qué mi precio por hora debe ser tan alto?",
+          "answer": "Como autónomo, de cada euro que facturas, solo te llevas entre 50-70 céntimos netos. El resto se va en IRPF (19-47%), cuota de autónomos (~300-500€/mes), gastos deducibles (20-40%), y tiempo no facturable (vacaciones, administración, comercial). Por eso tu tarifa horaria debe ser 2-3 veces tu 'sueldo por hora' deseado. Y no, no es que estés cobrando mucho: es que ser autónomo cuesta mucho."
+        },
+        "q3": {
+          "question": "¿Cuántas horas facturables tiene un autónomo al año?",
+          "answer": "Típicamente entre 1.200-1.600 horas anuales. Si trabajas 40h/semana × 48 semanas (quitando 4 de vacaciones) = 1.920 horas totales. Pero de esas, un 20-40% se va en tareas no facturables: administración, búsqueda de clientes, formación, reuniones internas. Por eso se suelen contar 1.400-1.500 horas facturables reales."
+        },
+        "q4": {
+          "question": "¿Debo incluir el IVA en mi precio por hora?",
+          "answer": "No. El IVA (21% generalmente) se añade al precio final pero no es un ingreso tuyo, debes dárselo a Hacienda. Tu precio por hora debe cubrir: tu sueldo neto + IRPF + cuota autónomos + gastos. El IVA va aparte y es neutral (lo cobras de clientes y lo pagas a Hacienda, aunque puedes deducir el IVA de tus gastos)."
+        },
+        "q5": {
+          "question": "¿Cómo afectan los gastos deducibles a mi tarifa?",
+          "answer": "Los gastos reducen tu base imponible, por tanto pagas menos IRPF y cuota. Si gastas 20% de tu facturación en gastos deducibles, tu carga fiscal será menor que si gastas 0%. Pero cuidado: gastar por gastar no es rentable. Solo incluye gastos reales y necesarios para tu negocio. Esta calculadora tiene en cuenta ese porcentaje de gastos."
+        },
+        "q6": {
+          "question": "¿Mi tarifa debe ser igual para todos los proyectos?",
+          "answer": "No necesariamente. Puedes tener una tarifa base para proyectos estándar y ajustarla según: urgencia (urgente = más caro), complejidad técnica, duración del proyecto (contratos largos pueden tener descuento), tipo de cliente (grandes empresas vs startups), exclusividad o disponibilidad requerida. Lo importante es que tu tarifa promedio ponderada cubra tus costes totales."
         }
       }
     }

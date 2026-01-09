@@ -48,6 +48,12 @@ export async function generateMetadata({
       url: `${BASE_URL}${enPath}`,
       title: t('meta.title'),
       description: t('meta.description'),
+      images: [{
+        url: `${BASE_URL}/og/calculators/cuota-autonomos.png`,
+        width: 1200,
+        height: 630,
+        alt: t('meta.title'),
+      }],
     },
     twitter: {
       card: 'summary_large_image',

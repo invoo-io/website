@@ -47,6 +47,15 @@ export default function Navigation({ locale }: NavigationProps) {
     { name: t('blog'), href: getBasePath(`/${locale}/blog`), external: false },
   ];
 
+  const tools = [
+    { name: t('calculatorIVA'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/iva` : `/${locale}/tools/calculators/vat`) },
+    { name: t('calculatorCuotaAutonomos'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`) },
+    { name: t('calculatorFactura'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/factura` : `/${locale}/tools/calculators/invoice`) },
+    { name: t('calculatorIRPF'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/irpf-autonomos` : `/${locale}/tools/calculators/income-tax-freelancer`) },
+    { name: t('calculatorSueldoNeto'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/sueldo-neto-autonomo` : `/${locale}/tools/calculators/net-salary-freelancer`) },
+    { name: t('calculatorPrecioHora'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/precio-hora` : `/${locale}/tools/calculators/hourly-rate`) },
+  ];
+
   const languages = [
     { name: "English", code: "en" },
     { name: "Español", code: "es" },
@@ -128,19 +137,22 @@ export default function Navigation({ locale }: NavigationProps) {
                 onMouseLeave={handleMouseLeave}
               />
 
+              {/* Tools Dropdown */}
+              <NavDropdown
+                id="tools"
+                label={t('tools')}
+                items={tools}
+                isOpen={activeDropdown === "tools"}
+                onMouseEnter={() => handleMouseEnter("tools")}
+                onMouseLeave={handleMouseLeave}
+              />
+
               {/* Direct Links */}
               <Link
                 href={getBasePath(`/${locale}/pricing`)}
                 className="text-primary hover:text-secondary transition-colors text-callout"
               >
                 {t('pricing')}
-              </Link>
-
-              <Link
-                href={getBasePath(`/${locale}/about`)}
-                className="text-primary hover:text-secondary transition-colors text-callout"
-              >
-                {t('about')}
               </Link>
 
               <Link
@@ -402,6 +414,69 @@ export default function Navigation({ locale }: NavigationProps) {
                     </AnimatePresence>
                   </motion.div>
 
+                  {/* Tools Section */}
+                  <motion.div
+                    variants={{
+                      open: { opacity: 1, x: 0 },
+                      closed: { opacity: 0, x: 50 },
+                    }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <MobileNavButton
+                      onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "tools" ? null : "tools")}
+                    >
+                      <span className="text-callout text-primary">{t('tools')}</span>
+                      <motion.div
+                        style={{
+                          position: "absolute",
+                          right: "24px",
+                        }}
+                        animate={{
+                          rotate:
+                            mobileActiveDropdown === "tools" ? 180 : 0,
+                        }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        <ChevronDown className="w-4 h-4 text-secondary" />
+                      </motion.div>
+                    </MobileNavButton>
+
+                    <AnimatePresence>
+                      {mobileActiveDropdown === "tools" && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.2 }}
+                          className="overflow-hidden"
+                        >
+                          <div style={{ padding: "12px 0" }}>
+                            {tools.map((tool, index) => (
+                              <motion.div
+                                key={tool.name}
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: index * 0.05 }}
+                                style={{
+                                  marginBottom:
+                                    index < tools.length - 1 ? "8px" : "0",
+                                }}
+                              >
+                                <MobileNavLink
+                                  href={tool.href}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                  className="mx-4"
+                                >
+                                  {tool.name}
+                                </MobileNavLink>
+                              </motion.div>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
+
                   {/* Direct Links */}
                   <motion.div
                     variants={{
@@ -416,22 +491,6 @@ export default function Navigation({ locale }: NavigationProps) {
                       className="w-full px-6 py-4 text-callout text-primary"
                     >
                       {t('pricing')}
-                    </MobileNavLink>
-                  </motion.div>
-
-                  <motion.div
-                    variants={{
-                      open: { opacity: 1, x: 0 },
-                      closed: { opacity: 0, x: 50 },
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <MobileNavLink
-                      href={getBasePath(`/${locale}/about`)}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="w-full px-6 py-4 text-callout text-primary"
-                    >
-                      {t('about')}
                     </MobileNavLink>
                   </motion.div>
 

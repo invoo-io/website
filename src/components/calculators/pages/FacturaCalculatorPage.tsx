@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
-import { CuotaAutonomosCalculator } from '@/components/calculators/CuotaAutonomosCalculator';
+import { FacturaCalculator } from '@/components/calculators/FacturaCalculator';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
 import {
   CalculatorHowTo,
@@ -14,21 +14,21 @@ import {
 import { getBasePath } from '@/lib/utils';
 
 /**
- * CuotaAutonomosCalculatorPageContent - Shared content component for cuota autónomos calculator page
+ * FacturaCalculatorPageContent - Shared content component for Invoice calculator page
  * Used by both Spanish and English routes
  */
-export function CuotaAutonomosCalculatorPageContent() {
-  const t = useTranslations('calculators.cuotaAutonomos');
+export function FacturaCalculatorPageContent() {
+  const t = useTranslations('calculators.factura');
   const tc = useTranslations('calculators.common');
   const params = useParams();
   const locale = (params.locale as string) || 'es';
 
-  // Related calculators - Cuota relates to Sueldo Neto, IRPF, and Precio Hora
+  // Related calculators - Factura relates to IVA, IRPF, and Cuota
   const relatedCalculators = [
     {
-      name: tc('related.sueldoNetoAutonomo.name'),
-      description: tc('related.sueldoNetoAutonomo.description'),
-      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/sueldo-neto-autonomo` : `/${locale}/tools/calculators/net-salary-freelancer`),
+      name: tc('related.iva.name'),
+      description: tc('related.iva.description'),
+      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/iva` : `/${locale}/tools/calculators/vat`),
     },
     {
       name: tc('related.irpfAutonomos.name'),
@@ -36,9 +36,9 @@ export function CuotaAutonomosCalculatorPageContent() {
       href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/irpf-autonomos` : `/${locale}/tools/calculators/income-tax-freelancer`),
     },
     {
-      name: tc('related.precioHora.name'),
-      description: tc('related.precioHora.description'),
-      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/precio-hora` : `/${locale}/tools/calculators/hourly-rate`),
+      name: tc('related.cuotaAutonomos.name'),
+      description: tc('related.cuotaAutonomos.description'),
+      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`),
     },
   ];
 
@@ -60,12 +60,11 @@ export function CuotaAutonomosCalculatorPageContent() {
     { title: t('howTo.step4.title'), description: t('howTo.step4.description') },
   ];
 
-  // Tramos info
-  const tramosInfo = [
-    { title: t('tramos.tramo1.title'), description: t('tramos.tramo1.description') },
-    { title: t('tramos.tramo2.title'), description: t('tramos.tramo2.description') },
-    { title: t('tramos.tramo3.title'), description: t('tramos.tramo3.description') },
-    { title: t('tramos.tramo4.title'), description: t('tramos.tramo4.description') },
+  // IRPF types info
+  const irpfTypes = [
+    { title: t('irpfTypes.standard.title'), description: t('irpfTypes.standard.description') },
+    { title: t('irpfTypes.nuevo.title'), description: t('irpfTypes.nuevo.description') },
+    { title: t('irpfTypes.sin.title'), description: t('irpfTypes.sin.description') },
   ];
 
   // Benefits
@@ -88,7 +87,7 @@ export function CuotaAutonomosCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <CuotaAutonomosCalculator />
+        <FacturaCalculator />
       </section>
 
       {/* SEO Content Sections */}
@@ -101,12 +100,12 @@ export function CuotaAutonomosCalculatorPageContent() {
             steps={howToSteps}
           />
 
-          {/* Tramos Info */}
+          {/* IRPF Types */}
           <CalculatorInfoGrid
-            title={t('tramos.title')}
-            description={t('tramos.description')}
-            items={tramosInfo}
-            columns={2}
+            title={t('irpfTypes.title')}
+            description={t('irpfTypes.description')}
+            items={irpfTypes}
+            columns={3}
           />
 
           {/* Why Use */}

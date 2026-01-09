@@ -3,7 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
-import { CuotaAutonomosCalculator } from '@/components/calculators/CuotaAutonomosCalculator';
+import { IRPFAutonomosCalculator } from '@/components/calculators/IRPFAutonomosCalculator';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
 import {
   CalculatorHowTo,
@@ -14,16 +14,16 @@ import {
 import { getBasePath } from '@/lib/utils';
 
 /**
- * CuotaAutonomosCalculatorPageContent - Shared content component for cuota autónomos calculator page
+ * IRPFAutonomosCalculatorPageContent - Shared content component for IRPF autónomos calculator page
  * Used by both Spanish and English routes
  */
-export function CuotaAutonomosCalculatorPageContent() {
-  const t = useTranslations('calculators.cuotaAutonomos');
+export function IRPFAutonomosCalculatorPageContent() {
+  const t = useTranslations('calculators.irpfAutonomos');
   const tc = useTranslations('calculators.common');
   const params = useParams();
   const locale = (params.locale as string) || 'es';
 
-  // Related calculators - Cuota relates to Sueldo Neto, IRPF, and Precio Hora
+  // Related calculators - IRPF relates to Sueldo Neto, Cuota, and Factura
   const relatedCalculators = [
     {
       name: tc('related.sueldoNetoAutonomo.name'),
@@ -31,14 +31,14 @@ export function CuotaAutonomosCalculatorPageContent() {
       href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/sueldo-neto-autonomo` : `/${locale}/tools/calculators/net-salary-freelancer`),
     },
     {
-      name: tc('related.irpfAutonomos.name'),
-      description: tc('related.irpfAutonomos.description'),
-      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/irpf-autonomos` : `/${locale}/tools/calculators/income-tax-freelancer`),
+      name: tc('related.cuotaAutonomos.name'),
+      description: tc('related.cuotaAutonomos.description'),
+      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`),
     },
     {
-      name: tc('related.precioHora.name'),
-      description: tc('related.precioHora.description'),
-      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/precio-hora` : `/${locale}/tools/calculators/hourly-rate`),
+      name: tc('related.factura.name'),
+      description: tc('related.factura.description'),
+      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/factura` : `/${locale}/tools/calculators/invoice`),
     },
   ];
 
@@ -60,7 +60,7 @@ export function CuotaAutonomosCalculatorPageContent() {
     { title: t('howTo.step4.title'), description: t('howTo.step4.description') },
   ];
 
-  // Tramos info
+  // Tax brackets info
   const tramosInfo = [
     { title: t('tramos.tramo1.title'), description: t('tramos.tramo1.description') },
     { title: t('tramos.tramo2.title'), description: t('tramos.tramo2.description') },
@@ -88,7 +88,7 @@ export function CuotaAutonomosCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <CuotaAutonomosCalculator />
+        <IRPFAutonomosCalculator />
       </section>
 
       {/* SEO Content Sections */}
@@ -101,7 +101,7 @@ export function CuotaAutonomosCalculatorPageContent() {
             steps={howToSteps}
           />
 
-          {/* Tramos Info */}
+          {/* Tax Brackets Info */}
           <CalculatorInfoGrid
             title={t('tramos.title')}
             description={t('tramos.description')}
@@ -110,16 +110,10 @@ export function CuotaAutonomosCalculatorPageContent() {
           />
 
           {/* Why Use */}
-          <CalculatorWhyUse
-            title={t('whyUse.title')}
-            benefits={benefits}
-          />
+          <CalculatorWhyUse title={t('whyUse.title')} benefits={benefits} />
 
           {/* FAQ */}
-          <CalculatorFAQ
-            title={t('faq.title')}
-            items={faqItems}
-          />
+          <CalculatorFAQ title={t('faq.title')} items={faqItems} />
 
           {/* Related Calculators */}
           <CalculatorRelatedTools
