@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
-import { IVACalculatorPageContent } from '@/components/calculators/pages/IVACalculatorPage';
+import { IRPFAutonomosCalculatorPageContent } from '@/components/calculators/pages/IRPFAutonomosCalculatorPage';
 import {
   generateCalculatorSchema,
   generateCalculatorFAQSchema,
@@ -26,10 +26,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'calculators.iva' });
+  const t = await getTranslations({ locale, namespace: 'calculators.irpfAutonomos' });
 
-  const esPath = '/es/herramientas/calculadoras/iva';
-  const enPath = '/en/tools/calculators/vat';
+  const esPath = '/es/herramientas/calculadoras/irpf-autonomos';
+  const enPath = '/en/tools/calculators/income-tax-freelancer';
 
   return {
     title: t('meta.title'),
@@ -49,7 +49,7 @@ export async function generateMetadata({
       title: t('meta.title'),
       description: t('meta.description'),
       images: [{
-        url: `${BASE_URL}/og/calculators/iva.png`,
+        url: `${BASE_URL}/og/calculators/irpf-autonomos.png`,
         width: 1200,
         height: 630,
         alt: t('meta.title'),
@@ -63,7 +63,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function VATCalculatorPage({
+export default async function IncomeTaxFreelancerCalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -72,12 +72,12 @@ export default async function VATCalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/iva');
+    redirect('/es/herramientas/calculadoras/irpf-autonomos');
   }
 
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: 'calculators.iva' });
+  const t = await getTranslations({ locale, namespace: 'calculators.irpfAutonomos' });
 
   // FAQ data for schema
   const faqItems = [
@@ -94,11 +94,12 @@ export default async function VATCalculatorPage({
     locale,
     name: t('meta.title'),
     description: t('meta.description'),
-    slug: 'vat',
+    slug: 'income-tax-freelancer',
     features: [
-      'Real-time VAT calculation',
-      'All Spanish VAT rates',
-      'Calculate or extract VAT',
+      'Real-time income tax calculation for freelancers',
+      'Tax brackets for 2024, 2025, and 2026',
+      'Includes personal and family minimums',
+      'Automatic difficult-to-justify expenses',
       'Instant results',
     ],
   });
@@ -108,7 +109,7 @@ export default async function VATCalculatorPage({
   const breadcrumbSchema = generateCalculatorBreadcrumbSchema({
     locale,
     calculatorName: t('meta.title'),
-    calculatorSlug: 'vat',
+    calculatorSlug: 'income-tax-freelancer',
   });
 
   const howToSchema = generateCalculatorHowToSchema({
@@ -119,6 +120,7 @@ export default async function VATCalculatorPage({
       { name: t('howTo.step1.title'), text: t('howTo.step1.description') },
       { name: t('howTo.step2.title'), text: t('howTo.step2.description') },
       { name: t('howTo.step3.title'), text: t('howTo.step3.description') },
+      { name: t('howTo.step4.title'), text: t('howTo.step4.description') },
     ],
   });
 
@@ -131,7 +133,7 @@ export default async function VATCalculatorPage({
 
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
-        <IVACalculatorPageContent />
+        <IRPFAutonomosCalculatorPageContent />
         <Footer locale={locale} />
       </div>
     </>

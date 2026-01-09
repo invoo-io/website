@@ -105,6 +105,38 @@ export default function Footer({ locale }: FooterProps) {
                   {t("calculatorCuotaAutonomos")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/factura` : `/${locale}/tools/calculators/invoice`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorFactura")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/irpf-autonomos` : `/${locale}/tools/calculators/income-tax-freelancer`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorIRPF")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/sueldo-neto-autonomo` : `/${locale}/tools/calculators/net-salary-freelancer`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorSueldoNeto")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/precio-hora` : `/${locale}/tools/calculators/hourly-rate`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorPrecioHora")}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

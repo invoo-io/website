@@ -9,7 +9,9 @@ import {
   CalculatorHowTo,
   CalculatorInfoGrid,
   CalculatorWhyUse,
+  CalculatorRelatedTools,
 } from '@/components/calculators/CalculatorSEOContent';
+import { getBasePath } from '@/lib/utils';
 
 /**
  * IVACalculatorPageContent - Shared content component for IVA calculator page
@@ -17,8 +19,28 @@ import {
  */
 export function IVACalculatorPageContent() {
   const t = useTranslations('calculators.iva');
+  const tc = useTranslations('calculators.common');
   const params = useParams();
   const locale = (params.locale as string) || 'es';
+
+  // Related calculators - IVA relates to Factura (invoicing) and Cuota (business costs)
+  const relatedCalculators = [
+    {
+      name: tc('related.factura.name'),
+      description: tc('related.factura.description'),
+      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/factura` : `/${locale}/tools/calculators/invoice`),
+    },
+    {
+      name: tc('related.cuotaAutonomos.name'),
+      description: tc('related.cuotaAutonomos.description'),
+      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`),
+    },
+    {
+      name: tc('related.irpfAutonomos.name'),
+      description: tc('related.irpfAutonomos.description'),
+      href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/irpf-autonomos` : `/${locale}/tools/calculators/income-tax-freelancer`),
+    },
+  ];
 
   // FAQ data
   const faqItems = [
@@ -96,6 +118,13 @@ export function IVACalculatorPageContent() {
           <CalculatorFAQ
             title={t('faq.title')}
             items={faqItems}
+          />
+
+          {/* Related Calculators */}
+          <CalculatorRelatedTools
+            title={tc('relatedTitle')}
+            calculators={relatedCalculators}
+            ctaText={tc('useCalculator')}
           />
         </div>
       </div>

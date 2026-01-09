@@ -165,3 +165,84 @@ export function CalculatorWhyUse({
     </section>
   );
 }
+
+interface RelatedCalculator {
+  name: string;
+  description: string;
+  href: string;
+}
+
+interface CalculatorRelatedToolsProps {
+  title: string;
+  calculators: RelatedCalculator[];
+  ctaText?: string;
+  className?: string;
+}
+
+/**
+ * CalculatorRelatedTools - Related calculators section for internal linking
+ */
+export function CalculatorRelatedTools({
+  title,
+  calculators,
+  ctaText = 'Usar calculadora',
+  className,
+}: CalculatorRelatedToolsProps) {
+  return (
+    <section className={cn('w-full', className)}>
+      <h2 className="text-title1-emphasized text-primary mb-6">
+        {title}
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {calculators.map((calc) => (
+          <a
+            key={calc.href}
+            href={calc.href}
+            className="group flex flex-col gap-2 p-5 rounded-xl bg-background-secondary border border-strokes-primary hover:border-accent-purple-main transition-colors"
+          >
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-accent-purple-main/10 flex items-center justify-center flex-shrink-0">
+                <svg
+                  className="w-4 h-4 text-accent-purple-main"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-callout-emphasized text-primary group-hover:text-accent-purple-main transition-colors">
+                {calc.name}
+              </h3>
+            </div>
+            <p className="text-footnote text-secondary">
+              {calc.description}
+            </p>
+            <div className="flex items-center gap-1 text-caption1 text-accent-purple-main mt-auto pt-2">
+              <span>{ctaText}</span>
+              <svg
+                className="w-3 h-3 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}

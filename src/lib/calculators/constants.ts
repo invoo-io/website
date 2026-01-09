@@ -120,3 +120,86 @@ export function formatPercentage(rate: number, locale: string = 'es'): string {
     maximumFractionDigits: 0,
   }).format(rate / 100);
 }
+
+/**
+ * Input parsing and validation utilities for calculator components
+ */
+
+/**
+ * Parse amount string handling both Spanish (1.234,56) and English (1,234.56) formats.
+ * Handles thousand separators and decimal marks correctly for each locale.
+ *
+ * @param value - The string value to parse
+ * @param locale - The locale ('es' or 'en')
+ * @returns The parsed number, or 0 if parsing fails
+ *
+ * @example
+ * parseLocalizedAmount('1.234,56', 'es') // returns 1234.56
+ * parseLocalizedAmount('1,234.56', 'en') // returns 1234.56
+ */
+export function parseLocalizedAmount(value: string, locale: string): number {
+  if (!value || !value.trim()) return 0;
+
+  let normalized = value.trim();
+
+  if (locale === 'es') {
+    // Spanish: remove thousand separators (.) and convert decimal comma to period
+    normalized = normalized.replace(/\./g, '').replace(',', '.');
+  } else {
+    // English: remove thousand separators (,) and keep decimal period
+    normalized = normalized.replace(/,/g, '');
+  }
+
+  const parsed = parseFloat(normalized);
+  return isNaN(parsed) ? 0 : parsed;
+}
+
+/**
+ * Error key types for validateAmount function.
+ * These correspond to translation keys in the calculators namespace.
+ */
+export type AmountValidationError =
+  | 'errors.invalidNumber'
+  | 'errors.negativeNotAllowed'
+  | 'errors.amountTooLarge';
+
+/**
+ * Validate amount and return error message key if invalid.
+ * Returns null if the amount is valid.
+ *
+ * @param value - The raw string input value
+ * @param numericValue - The parsed numeric value
+ * @returns Error message key, or null if valid
+ */
+export function validateAmount(
+  value: string,
+  numericValue: number
+): AmountValidationError | null {
+  if (!value || !value.trim()) return null;
+
+  const validChars = /^[\d.,\s]+$/;
+  if (!validChars.test(value)) {
+    return 'errors.invalidNumber';
+  }
+
+  if (numericValue < 0) {
+    return 'errors.negativeNotAllowed';
+  }
+
+  if (numericValue > MAX_CALCULATOR_AMOUNT) {
+    return 'errors.amountTooLarge';
+  }
+
+  return null;
+}
+
+/**
+ * Filter input to only allow valid numeric characters for amount fields.
+ * Used in onChange handlers to sanitize user input before validation.
+ *
+ * @param value - The raw input value
+ * @returns Filtered string with only digits, dots, commas, and spaces
+ */
+export function filterAmountInput(value: string): string {
+  return value.replace(/[^\d.,\s]/g, '');
+}

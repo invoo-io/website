@@ -33,6 +33,34 @@ export const CALCULATOR_PATHS: Record<string, { es: string; en: string }> = {
     es: '/es/herramientas/calculadoras/factura',
     en: '/en/tools/calculators/invoice',
   },
+  invoice: {
+    es: '/es/herramientas/calculadoras/factura',
+    en: '/en/tools/calculators/invoice',
+  },
+  'irpf-autonomos': {
+    es: '/es/herramientas/calculadoras/irpf-autonomos',
+    en: '/en/tools/calculators/income-tax-freelancer',
+  },
+  'income-tax-freelancer': {
+    es: '/es/herramientas/calculadoras/irpf-autonomos',
+    en: '/en/tools/calculators/income-tax-freelancer',
+  },
+  'sueldo-neto-autonomo': {
+    es: '/es/herramientas/calculadoras/sueldo-neto-autonomo',
+    en: '/en/tools/calculators/net-salary-freelancer',
+  },
+  'net-salary-freelancer': {
+    es: '/es/herramientas/calculadoras/sueldo-neto-autonomo',
+    en: '/en/tools/calculators/net-salary-freelancer',
+  },
+  'precio-hora': {
+    es: '/es/herramientas/calculadoras/precio-hora',
+    en: '/en/tools/calculators/hourly-rate',
+  },
+  'hourly-rate': {
+    es: '/es/herramientas/calculadoras/precio-hora',
+    en: '/en/tools/calculators/hourly-rate',
+  },
 };
 
 /**

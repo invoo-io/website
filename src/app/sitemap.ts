@@ -28,6 +28,10 @@ const staticPages = [
 const calculatorPages = [
   { es: "/herramientas/calculadoras/iva", en: "/tools/calculators/vat" },
   { es: "/herramientas/calculadoras/cuota-autonomos", en: "/tools/calculators/self-employed-quota" },
+  { es: "/herramientas/calculadoras/factura", en: "/tools/calculators/invoice" },
+  { es: "/herramientas/calculadoras/irpf-autonomos", en: "/tools/calculators/income-tax-freelancer" },
+  { es: "/herramientas/calculadoras/sueldo-neto-autonomo", en: "/tools/calculators/net-salary-freelancer" },
+  { es: "/herramientas/calculadoras/precio-hora", en: "/tools/calculators/hourly-rate" },
 ];
 
 function getBlogArticles(): { slug: string; category: string; lastModified?: Date }[] {
