@@ -56,7 +56,7 @@ npm run playwright:show
 ### Testing
 - Playwright configured for E2E testing
 - Test directory: `./tests`
-- Base URL: `http://localhost:3000`
+- Base URL: `http://localhost:5200`
 - Runs dev server automatically during tests
 
 ### Styling Conventions

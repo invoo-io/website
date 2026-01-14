@@ -99,6 +99,22 @@ export default function Footer({ locale }: FooterProps) {
               </li>
               <li>
                 <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/modelo-303` : `/${locale}/tools/calculators/vat-return`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorModelo303")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/modelo-130` : `/${locale}/tools/calculators/form-130`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorModelo130")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`)}
                   className="text-callout no-underline text-secondary hover:text-primary transition-colors"
                 >
@@ -135,6 +151,22 @@ export default function Footer({ locale }: FooterProps) {
                   className="text-callout no-underline text-secondary hover:text-primary transition-colors"
                 >
                   {t("calculatorPrecioHora")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/gastos-deducibles` : `/${locale}/tools/calculators/deductible-expenses`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorGastosDeducibles")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/autonomo-vs-empresa` : `/${locale}/tools/calculators/freelancer-vs-company`)}
+                  className="text-callout no-underline text-secondary hover:text-primary transition-colors"
+                >
+                  {t("calculatorAutonomoVsEmpresa")}
                 </Link>
               </li>
             </ul>

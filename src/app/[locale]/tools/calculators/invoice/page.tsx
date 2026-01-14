@@ -34,6 +34,7 @@ export async function generateMetadata({
   return {
     title: t('meta.title'),
     description: t('meta.description'),
+    keywords: ['invoice calculator', 'Spanish invoice', 'VAT IRPF calculator', 'freelance invoice', 'invoice total calculator', 'withholding tax Spain', 'factura calculator'],
     alternates: {
       canonical: `${BASE_URL}${enPath}`,
       languages: {
@@ -42,23 +43,38 @@ export async function generateMetadata({
         'x-default': `${BASE_URL}${esPath}`,
       },
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     openGraph: {
       type: 'website',
       locale: 'en_US',
       url: `${BASE_URL}${enPath}`,
       title: t('meta.title'),
       description: t('meta.description'),
+      siteName: 'Invoo',
       images: [{
-        url: `${BASE_URL}/og/calculators/factura.png`,
+        url: `${BASE_URL}/calculators.webp`,
         width: 1200,
         height: 630,
-        alt: t('meta.title'),
+        alt: 'Invoo - Free Spanish Tax Calculators for Freelancers',
       }],
     },
     twitter: {
       card: 'summary_large_image',
+      site: '@invoo_es',
+      creator: '@invoo_es',
       title: t('meta.title'),
       description: t('meta.description'),
+      images: [`${BASE_URL}/calculators.webp`],
     },
   };
 }

@@ -626,7 +626,7 @@ Run through the pre-publication checklist (Section 10).
 
 ```bash
 npm run build  # Verify no build errors
-npm run dev    # Preview at http://localhost:4200
+npm run dev    # Preview at http://localhost:5200
 ```
 
 ---

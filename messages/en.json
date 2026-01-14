@@ -22,11 +22,15 @@
     "faq": "FAQ",
     "blog": "Blog",
     "calculatorIVA": "VAT Calculator",
+    "calculatorModelo303": "Form 303 Calculator",
+    "calculatorModelo130": "Form 130 Calculator",
     "calculatorCuotaAutonomos": "Self-Employed Quota Calculator",
     "calculatorFactura": "Invoice Calculator",
     "calculatorIRPF": "Income Tax Calculator",
     "calculatorSueldoNeto": "Net Salary Calculator",
     "calculatorPrecioHora": "Hourly Rate Calculator",
+    "calculatorGastosDeducibles": "Deductible Expenses Calculator",
+    "calculatorAutonomoVsEmpresa": "Freelancer vs Company",
     "login": "Login",
     "getStarted": "Join the waiting list"
   },
@@ -1050,11 +1054,15 @@
       "blog": "Blog",
       "toolsTitle": "Tools",
       "calculatorIVA": "VAT Calculator",
+      "calculatorModelo303": "Form 303 Calculator",
+      "calculatorModelo130": "Form 130 Calculator",
       "calculatorCuotaAutonomos": "Self-Employed Quota Calculator",
       "calculatorFactura": "Invoice Calculator",
       "calculatorIRPF": "Income Tax Calculator",
       "calculatorSueldoNeto": "Net Salary Calculator",
       "calculatorPrecioHora": "Hourly Rate Calculator",
+      "calculatorGastosDeducibles": "Deductible Expenses Calculator",
+      "calculatorAutonomoVsEmpresa": "Freelancer vs Company",
       "copyright": "© 2025 Invoo.es. All rights reserved. Made with ♥ for Spanish freelancers"
     }
   },
@@ -1304,7 +1312,53 @@
         "precioHora": {
           "name": "Hourly Rate Calculator",
           "description": "Calculate what rate to charge to reach your desired net salary"
+        },
+        "modelo303": {
+          "name": "Form 303 Calculator",
+          "description": "Calculate your quarterly VAT return for the tax authorities"
+        },
+        "modelo130": {
+          "name": "Form 130 Calculator",
+          "description": "Calculate your quarterly IRPF advance payment"
+        },
+        "gastosDeducibles": {
+          "name": "Deductible Expenses Calculator",
+          "description": "Calculate how much you save in taxes with your expenses"
+        },
+        "autonomoVsEmpresa": {
+          "name": "Freelancer vs Company",
+          "description": "Compare being a freelancer or creating an SL based on your revenue"
         }
+      }
+    },
+    "hub": {
+      "meta": {
+        "title": "Free Calculators for Freelancers in Spain 2026 - Invoo",
+        "description": "Free calculators for Spanish freelancers and SMBs: VAT, income tax, self-employed quota, forms 303 and 130, deductible expenses and more. No registration, updated for 2026."
+      },
+      "hero": {
+        "title": "Free Calculators for Freelancers",
+        "description": "All the tools you need to manage your taxes and finances as a freelancer in Spain. Updated with current regulations, no registration required, and 100% free."
+      },
+      "benefits": {
+        "title": "Why use our calculators?",
+        "free": {
+          "title": "Completely free",
+          "description": "No registration, no limits, no hidden costs. Use them whenever you want."
+        },
+        "instant": {
+          "title": "Instant results",
+          "description": "Accurate calculations in real-time without waiting or complications."
+        },
+        "updated": {
+          "title": "Always up to date",
+          "description": "Tax rates and current regulations for 2026. Official data from Spanish tax authorities."
+        }
+      },
+      "cta": {
+        "title": "Looking for more than calculators?",
+        "description": "Invoo is the complete invoicing and tax management platform for freelancers. Invoices, expenses, taxes and collaboration with your accountant in one place.",
+        "button": "Join the waiting list"
       }
     },
     "iva": {
@@ -2143,6 +2197,738 @@
         "q6": {
           "question": "Should my rate be the same for all projects?",
           "answer": "Not necessarily. You can have a base rate for standard projects and adjust based on: urgency (rush = more expensive), technical complexity, project duration (long contracts may get discounts), client type (large companies vs startups), exclusivity or required availability. The important thing is your weighted average rate covers your total costs."
+        }
+      }
+    },
+    "modelo303": {
+      "meta": {
+        "title": "VAT Form 303 Calculator 2026 | Free for Freelancers - Invoo",
+        "description": "Calculate your quarterly VAT return (Modelo 303) instantly. Output VAT vs input VAT. Result to pay or offset. Free calculator for Spain 2026."
+      },
+      "hero": {
+        "titleHighlight": "Form 303 Calculator",
+        "titleEnd": "Quarterly VAT Return",
+        "description": "Calculate your quarterly VAT return instantly. Enter your sales and expenses, the calculator tells you how much to pay the tax authorities or offset. Free, no registration required, updated for 2026."
+      },
+      "sections": {
+        "ivaRepercutido": "Output VAT (collected)",
+        "ivaRepercutidoDesc": "VAT you collected from customers on your sales invoices",
+        "ivaSoportado": "Input VAT (paid)",
+        "ivaSoportadoDesc": "VAT you paid on your deductible expense invoices",
+        "compensacion": "Compensation from previous periods"
+      },
+      "inputs": {
+        "periodo": {
+          "label": "Quarter",
+          "helper": "Select the quarter you are filing",
+          "1T": "Q1 - January to March",
+          "2T": "Q2 - April to June",
+          "3T": "Q3 - July to September",
+          "4T": "Q4 - October to December"
+        },
+        "ventasGeneral": "Sales at 21%",
+        "ventasGeneralHelper": "Tax base of your invoices with standard VAT",
+        "ventasReducido": "Sales at 10%",
+        "ventasReducidoHelper": "Tax base of your invoices with reduced VAT",
+        "ventasSuperreducido": "Sales at 4%",
+        "ventasSuperreducidoHelper": "Tax base of your invoices with super-reduced VAT",
+        "gastosGeneral": "Expenses at 21%",
+        "gastosGeneralHelper": "Tax base of your expenses with standard VAT",
+        "gastosReducido": "Expenses at 10%",
+        "gastosReducidoHelper": "Tax base of your expenses with reduced VAT",
+        "gastosSuperreducido": "Expenses at 4%",
+        "gastosSuperreducidoHelper": "Tax base of your expenses with super-reduced VAT",
+        "inversionGeneral": "Investment goods",
+        "inversionGeneralHelper": "Equipment, machinery or other assets (21% VAT)",
+        "compensacion": "Previous period compensation",
+        "compensacionHelper": "Negative balance from previous quarters to offset"
+      },
+      "results": {
+        "title": "Form 303 Result",
+        "ivaRepercutido": "Total output VAT",
+        "ivaSoportado": "Total deductible input VAT",
+        "compensacion": "Compensation applied",
+        "resultado": "Result",
+        "aIngresar": "To pay",
+        "aCompensar": "To offset/refund",
+        "ventas": "Sales base",
+        "gastos": "Expenses base",
+        "desglose": "Breakdown by rate",
+        "iva21Collected": "21% VAT collected",
+        "iva10Collected": "10% VAT collected",
+        "iva4Collected": "4% VAT collected",
+        "ivaGastosDeducible": "Deductible expense VAT",
+        "ivaInversionDeducible": "Deductible investment VAT",
+        "placeholder": "Enter your sales or expenses to calculate Form 303",
+        "aIngresarMessage": "You must pay this amount to the tax authorities before the filing deadline",
+        "aCompensarMessage": "You can offset this amount in the next quarter or request a refund in Q4",
+        "ceroMessage": "Your return is zero. You don't have to pay or offset anything"
+      },
+      "errors": {
+        "invalidNumber": "Enter a valid number",
+        "negativeNotAllowed": "Amount must be positive",
+        "amountTooLarge": "Amount exceeds maximum allowed"
+      },
+      "howTo": {
+        "title": "How to calculate your Form 303",
+        "schemaName": "How to calculate the quarterly VAT return",
+        "description": "Form 303 is the quarterly VAT self-assessment. Follow these steps to calculate it:",
+        "step1": {
+          "title": "Sum your sales by VAT rate",
+          "description": "Group the tax bases of your issued invoices by VAT rate: 21%, 10%, or 4%."
+        },
+        "step2": {
+          "title": "Sum your deductible expenses",
+          "description": "Group the bases of your expense invoices. Only include expenses related to your economic activity."
+        },
+        "step3": {
+          "title": "Add investment goods",
+          "description": "If you purchased equipment or machinery, add the input VAT as an additional deduction."
+        },
+        "step4": {
+          "title": "Apply previous compensation",
+          "description": "If you have negative balances from previous quarters, you can offset them to reduce what you pay."
+        }
+      },
+      "concepts": {
+        "title": "Key concepts of Form 303",
+        "description": "Understanding these concepts is essential for correctly filing your VAT return:",
+        "ivaRepercutido": {
+          "title": "Output VAT",
+          "description": "This is the VAT you charge customers on sales invoices. It corresponds to boxes 01-09 of the form."
+        },
+        "ivaSoportado": {
+          "title": "Deductible Input VAT",
+          "description": "This is the VAT you pay on business expenses. It's only deductible if the invoice is in your name and linked to your business."
+        },
+        "resultado": {
+          "title": "Settlement Result",
+          "description": "Output VAT - Input VAT = Result. If positive, you pay. If negative, you offset or request a refund."
+        },
+        "compensacion": {
+          "title": "Compensation",
+          "description": "If a quarter results in negative, you can carry forward that balance to reduce what you pay in subsequent quarters."
+        }
+      },
+      "deadlines": {
+        "title": "2026 Filing Deadlines",
+        "description": "Form 303 is filed quarterly. These are the deadlines for 2026:",
+        "q1": {
+          "period": "Q1 (January - March)",
+          "deadline": "April 1-20, 2026"
+        },
+        "q2": {
+          "period": "Q2 (April - June)",
+          "deadline": "July 1-20, 2026"
+        },
+        "q3": {
+          "period": "Q3 (July - September)",
+          "deadline": "October 1-20, 2026"
+        },
+        "q4": {
+          "period": "Q4 (October - December)",
+          "deadline": "January 1-30, 2027"
+        }
+      },
+      "whyUse": {
+        "title": "Why use our Form 303 calculator?"
+      },
+      "benefits": [
+        "Instant calculation of output and input VAT",
+        "Support for all three VAT rates: 21%, 10%, and 4%",
+        "Includes investment goods and compensation",
+        "Tells you if the result is to pay or offset",
+        "Detailed breakdown by operation type",
+        "Free, no registration required, updated for 2026"
+      ],
+      "faq": {
+        "title": "Frequently asked questions about Form 303",
+        "q1": {
+          "question": "When do I need to file Form 303?",
+          "answer": "Quarterly: from the 1st to the 20th of April (Q1), July (Q2), October (Q3), and from the 1st to the 30th of January of the following year (Q4). If the deadline falls on a weekend or holiday, it extends to the next business day. There's an option to direct debit the payment, which has a deadline 5 days earlier."
+        },
+        "q2": {
+          "question": "What is output VAT and input VAT?",
+          "answer": "Output VAT is what you charge your customers (you collect it for the tax authority). Input VAT is what you pay to your suppliers. In Form 303 you declare the difference: if you collected more than you paid, you pay the difference; if you paid more, you offset."
+        },
+        "q3": {
+          "question": "What expenses can I deduct in Form 303?",
+          "answer": "All expenses linked to your economic activity with an invoice in your name: office rent, utilities, materials, software, phone, accounting, insurance, advertising, business travel. You cannot deduct personal expenses or those without invoices."
+        },
+        "q4": {
+          "question": "What happens if the result is negative?",
+          "answer": "If your input VAT exceeds output VAT, you have two options: offset that balance in following quarters (box 87 → box 110 of the next quarter) or request a refund in Q4 if you've had accumulated negative balance all year."
+        },
+        "q5": {
+          "question": "Can I request a VAT refund in any quarter?",
+          "answer": "No. You can only request a refund in the Q4 return (January). In quarters Q1, Q2, and Q3, negative balances can only be offset in subsequent periods. There's an exception: companies registered in REDEME can request monthly refunds."
+        },
+        "q6": {
+          "question": "What's the difference between Form 303 and Form 390?",
+          "answer": "Form 303 is the quarterly VAT self-assessment. Form 390 is the annual informative summary presenting year totals. It doesn't involve additional payment, only information. Since 2024, many freelancers are exempt from Form 390 if they meet certain requirements."
+        }
+      }
+    },
+    "modelo130": {
+      "meta": {
+        "title": "Form 130 IRPF Calculator 2026 | Free for Freelancers - Invoo",
+        "description": "Calculate your quarterly IRPF advance payment (Form 130) instantly. 20% of quarterly net income. Deduct retentions and previous payments. Free calculator 2026."
+      },
+      "hero": {
+        "titleHighlight": "Form 130 Calculator",
+        "titleEnd": "Quarterly IRPF Payment",
+        "description": "Calculate your quarterly IRPF advance payment instantly. Enter your accumulated income and expenses, the calculator tells you how much to pay the tax authorities. Free, no registration required, updated for 2026."
+      },
+      "sections": {
+        "ingresos": "Accumulated income",
+        "ingresosDesc": "Total gross income from January to the end of the quarter",
+        "gastos": "Deductible expenses",
+        "gastosDesc": "Total deductible expenses accumulated in the same period",
+        "deducciones": "Previous deductions",
+        "deduccionesDesc": "Previous M130 payments and retentions applied on your invoices"
+      },
+      "inputs": {
+        "periodo": {
+          "label": "Quarter",
+          "helper": "Select the quarter you are filing",
+          "1T": "Q1 - January to March",
+          "2T": "Q2 - April to June",
+          "3T": "Q3 - July to September",
+          "4T": "Q4 - October to December"
+        },
+        "ingresosAcumulados": "Accumulated gross income",
+        "ingresosAcumuladosHelper": "Total invoiced from January 1st to end of quarter",
+        "gastosAcumulados": "Accumulated deductible expenses",
+        "gastosAcumuladosHelper": "Business-related expenses: rent, utilities, supplies, etc.",
+        "pagosAnteriores": "Previous payments (M130)",
+        "pagosAnterioresHelper": "Sum of Form 130 payments from previous quarters this year",
+        "retencionesFacturas": "Invoice retentions",
+        "retencionesFacturasHelper": "Total IRPF retained on your invoices (7% or 15%)"
+      },
+      "results": {
+        "title": "Form 130 Result",
+        "rendimientoNeto": "Accumulated net income",
+        "cuota20": "20% of income",
+        "pagosAnteriores": "Previous payments",
+        "retenciones": "Invoice retentions",
+        "resultado": "Result",
+        "aIngresar": "To pay",
+        "aNegativo": "No payment (negative result)",
+        "desglose": "Calculation breakdown",
+        "ingresos": "Accumulated income",
+        "gastosLabel": "Deductible expenses",
+        "rendimientoNetoLabel": "Net income",
+        "cuota20Label": "20% quota",
+        "pagosAnterioresLabel": "Previous M130 payments",
+        "retencionesLabel": "Invoice retentions",
+        "placeholder": "Enter your income to calculate Form 130",
+        "aIngresarMessage": "You must pay this amount to the tax authorities before the filing deadline",
+        "aNegativoMessage": "The result is negative. No payment due this quarter. The excess is settled in the annual income tax return.",
+        "ceroMessage": "Your return is zero. No payment due this quarter",
+        "exencionTitle": "Possible exemption:",
+        "exencionMessage": "More than {threshold}% of your income has retention ({percentage}%). You may be exempt from filing Form 130. Consult your tax advisor."
+      },
+      "errors": {
+        "invalidNumber": "Enter a valid number",
+        "negativeNotAllowed": "Amount must be positive",
+        "amountTooLarge": "Amount exceeds maximum allowed"
+      },
+      "howTo": {
+        "title": "How to calculate your Form 130",
+        "schemaName": "How to calculate quarterly IRPF advance payment",
+        "description": "Form 130 is the quarterly IRPF advance payment for freelancers. Follow these steps:",
+        "step1": {
+          "title": "Add up accumulated income",
+          "description": "Sum all invoices issued from January 1st to the end of the quarter you're filing."
+        },
+        "step2": {
+          "title": "Subtract deductible expenses",
+          "description": "Include business-related expenses: rent, utilities, supplies, self-employed quota, etc."
+        },
+        "step3": {
+          "title": "Deduct previous payments",
+          "description": "Subtract what you already paid in Form 130s from previous quarters this same year."
+        },
+        "step4": {
+          "title": "Deduct retentions",
+          "description": "Subtract the IRPF retentions applied on your invoices (7% or 15%)."
+        }
+      },
+      "concepts": {
+        "title": "Key Form 130 concepts",
+        "description": "Understanding these concepts will help you file your quarterly IRPF return correctly:",
+        "pagoFraccionado": {
+          "title": "Advance Payment",
+          "description": "A quarterly advance on the IRPF you'll pay in your annual return. Equals 20% of accumulated profit minus deductions."
+        },
+        "rendimientoNeto": {
+          "title": "Net Income",
+          "description": "Gross income minus deductible expenses. This is the base on which the 20% advance payment is calculated."
+        },
+        "retenciones": {
+          "title": "IRPF Retentions",
+          "description": "The IRPF your business clients withhold when paying you (7% or 15%). This is deducted from your advance payment."
+        },
+        "exencion": {
+          "title": "70% Exemption",
+          "description": "If more than 70% of your income has retention, you may be exempt from filing Form 130."
+        }
+      },
+      "deadlines": {
+        "title": "2026 filing deadlines",
+        "description": "Form 130 is filed quarterly. These are the deadlines for 2026:",
+        "q1": {
+          "period": "Q1 (January - March)",
+          "deadline": "April 1-20, 2026"
+        },
+        "q2": {
+          "period": "Q2 (April - June)",
+          "deadline": "July 1-20, 2026"
+        },
+        "q3": {
+          "period": "Q3 (July - September)",
+          "deadline": "October 1-20, 2026"
+        },
+        "q4": {
+          "period": "Q4 (October - December)",
+          "deadline": "January 1-30, 2027"
+        }
+      },
+      "exemption": {
+        "title": "When are you exempt from Form 130?",
+        "description": "Not all freelancers have to file Form 130. You may be exempt if you meet these requirements:",
+        "condition1": "More than 70% of your professional activity income has IRPF retention",
+        "condition2": "You're under direct estimation (simplified or normal) for professional activities"
+      },
+      "whyUse": {
+        "title": "Why use our Form 130 calculator?"
+      },
+      "benefits": [
+        "Instant calculation of quarterly IRPF advance payment",
+        "Includes deductions for previous payments and retentions",
+        "Detects if you might be exempt from filing",
+        "Shows whether you need to pay or result is zero",
+        "Detailed step-by-step calculation breakdown",
+        "Free, no registration required, updated for 2026"
+      ],
+      "faq": {
+        "title": "Frequently asked questions about Form 130",
+        "q1": {
+          "question": "Who has to file Form 130?",
+          "answer": "All freelancers under direct estimation (simplified or normal) who perform economic activities. The exception: if more than 70% of your professional income already has IRPF retention (invoices to companies with 7% or 15% retention), you may be exempt."
+        },
+        "q2": {
+          "question": "How is the Form 130 advance payment calculated?",
+          "answer": "The formula is: (Accumulated Income - Accumulated Expenses) × 20% - Previous M130 Payments - Retentions. The calculation is cumulative: in Q2 you include January to June, in Q3 January to September, etc."
+        },
+        "q3": {
+          "question": "What happens if my retentions exceed 70%?",
+          "answer": "If more than 70% of your professional activity income has IRPF retention, you may be exempt from filing Form 130. However, many tax advisors recommend filing anyway if the result is 0 to avoid issues."
+        },
+        "q4": {
+          "question": "Can I file Form 130 if the result is zero or negative?",
+          "answer": "Yes, you can and sometimes must. If it's zero, file with zero result. If negative, it doesn't generate a right to refund in this form (that balance is settled in the annual return), but you file with box 7 at zero."
+        },
+        "q5": {
+          "question": "What's the relationship between Form 130 and the annual income tax return?",
+          "answer": "Form 130 is an advance on your annual IRPF. What you pay quarterly is subtracted from your final tax in the annual return. If you paid more than owed, the tax authority refunds you; if less, you pay the difference."
+        },
+        "q6": {
+          "question": "When is Form 130 filed?",
+          "answer": "Quarterly: from 1st to 20th of April (Q1), July (Q2), October (Q3) and from 1st to 30th of January of the following year (Q4). Payment can be direct debited by filing 5 days before the deadline."
+        }
+      }
+    },
+    "gastosDeducibles": {
+      "meta": {
+        "title": "Deductible Expenses Calculator for Freelancers 2026 | Free - Invoo",
+        "description": "Calculate how much you save on taxes with your deductible expenses. Recoverable VAT, IRPF deductible and automatic 5% deduction. Free calculator for freelancers 2026."
+      },
+      "hero": {
+        "titleHighlight": "Deductible Expenses Calculator",
+        "titleEnd": "for Freelancers",
+        "description": "Discover how much you can save on taxes with your business expenses. Calculate recoverable VAT, IRPF deductible expenses and the 5% hard-to-justify expenses deduction. Free, no registration required, updated for 2026."
+      },
+      "sections": {
+        "parameters": "Calculation parameters",
+        "parametersDesc": "Enter your net income and marginal IRPF rate to calculate savings",
+        "expenses": "Expenses by category",
+        "expensesDesc": "Enter your annual expenses in each category (VAT included)",
+        "expensesAriaLabel": "List of deductible expense categories"
+      },
+      "inputs": {
+        "rendimientoNeto": {
+          "label": "Annual net income",
+          "helper": "Income minus deductible expenses (to calculate the 5% deduction)"
+        },
+        "tipoMarginal": {
+          "label": "Marginal IRPF rate",
+          "helper": "Your IRPF bracket to calculate real savings",
+          "options": {
+            "19": "19% - Up to €12,450",
+            "24": "24% - €12,451 to €20,200",
+            "30": "30% - €20,201 to €35,200",
+            "37": "37% - €35,201 to €60,000",
+            "45": "45% - Over €60,000"
+          }
+        }
+      },
+      "categories": {
+        "oficina": {
+          "label": "Office supplies",
+          "helper": "VAT: {ivaPercent}% • IRPF: {irpfPercent}% deductible"
+        },
+        "informatica": {
+          "label": "Computer equipment",
+          "helper": "VAT: {ivaPercent}% • IRPF: {irpfPercent}% deductible"
+        },
+        "software": {
+          "label": "Software and subscriptions",
+          "helper": "VAT: {ivaPercent}% • IRPF: {irpfPercent}% deductible"
+        },
+        "telefono": {
+          "label": "Phone and internet",
+          "helper": "50% mixed use (100% if exclusive professional line)"
+        },
+        "suministros": {
+          "label": "Home office utilities",
+          "helper": "VAT: {ivaPercent}% • IRPF: {irpfPercent}% of business %"
+        },
+        "alquiler": {
+          "label": "Office rent",
+          "helper": "VAT: {ivaPercent}% • IRPF: {irpfPercent}% deductible"
+        },
+        "transporte": {
+          "label": "Transportation",
+          "helper": "VAT: {ivaPercent}% • IRPF: {irpfPercent}% (mixed use)"
+        },
+        "vehiculo": {
+          "label": "Business vehicle",
+          "helper": "VAT: NOT deductible (passenger cars) • IRPF: {irpfPercent}% (mixed use)"
+        },
+        "formacion": {
+          "label": "Professional training",
+          "helper": "VAT: {ivaPercent}% • IRPF: {irpfPercent}% deductible"
+        },
+        "seguros": {
+          "label": "Insurance",
+          "helper": "No VAT • IRPF: {irpfPercent}% deductible"
+        },
+        "comidas": {
+          "label": "Business meals",
+          "helper": "VAT: {ivaPercent}% (not deductible) • IRPF: {irpfPercent}%"
+        },
+        "cuota": {
+          "label": "Self-employed contribution",
+          "helper": "No VAT • IRPF: {irpfPercent}% deductible"
+        }
+      },
+      "results": {
+        "title": "Calculation result",
+        "placeholder": "Enter your expenses to calculate tax savings",
+        "totalGastos": "Total expenses entered",
+        "ivaRecuperable": "Recoverable VAT",
+        "gastosDeduciblesIRPF": "IRPF deductible expenses",
+        "gdj": "5% automatic deduction (max €2,000)",
+        "gdjTooltip": "Hard-to-justify expenses: automatic 5% deduction of net income, capped at €2,000/year",
+        "ahorroIVA": "VAT savings",
+        "ahorroIRPF": "IRPF savings",
+        "ahorroTotal": "Total estimated savings",
+        "tipoEfectivo": "Effective deduction rate",
+        "desglose": "Breakdown by category",
+        "savingsMessage": "Your estimated tax savings"
+      },
+      "breakdown": {
+        "title": "Breakdown by category",
+        "categoria": "Category",
+        "gastoBruto": "Gross expense",
+        "baseDeducible": "Deductible base",
+        "ivaDeducible": "Deductible VAT",
+        "irpfDeducible": "IRPF deductible"
+      },
+      "info": {
+        "gdj": {
+          "title": "What is the 5% deduction?",
+          "description": "The hard-to-justify expenses deduction is an automatic 5% deduction on your net income, capped at €2,000 per year. Only applies in simplified direct estimation regime."
+        },
+        "porcentajes": {
+          "title": "Deduction percentages",
+          "description": "Percentages vary by expense type. Some expenses like phone or vehicle only allow 50% deduction if there's mixed personal/professional use."
+        }
+      },
+      "seo": {
+        "whatAre": {
+          "title": "What are deductible expenses for freelancers?",
+          "description": "Deductible expenses are those necessary costs for your professional activity that can be subtracted from your income to calculate the IRPF tax base, thus reducing the amount of taxes you pay."
+        },
+        "howCalculator": {
+          "title": "How does the deductible expenses calculator work?",
+          "description": "Our calculator allows you to enter your expenses by category and automatically calculates how much VAT you can recover in Form 303 and how much you reduce your IRPF tax base, showing you the estimated tax savings."
+        }
+      },
+      "howTo": {
+        "title": "How to use the deductible expenses calculator",
+        "schemaName": "How to calculate your deductible expenses as a freelancer",
+        "description": "Calculate how much you save on taxes with your business expenses in 4 simple steps:",
+        "step1": {
+          "title": "Enter your net income",
+          "description": "Enter your income minus expenses to calculate the 5% deduction"
+        },
+        "step2": {
+          "title": "Select your marginal rate",
+          "description": "Choose your IRPF bracket to calculate real savings"
+        },
+        "step3": {
+          "title": "Enter your expenses by category",
+          "description": "Add the amounts for each expense type (VAT included)"
+        },
+        "step4": {
+          "title": "Review the breakdown and savings",
+          "description": "See how much you save on VAT and IRPF with each expense"
+        }
+      },
+      "whyUse": {
+        "title": "Why use our deductible expenses calculator?"
+      },
+      "benefits": [
+        "Calculates recoverable VAT for each expense category",
+        "Shows IRPF deductible expenses with official percentages",
+        "Includes automatic 5% deduction calculation (max €2,000)",
+        "Detailed breakdown for each expense category",
+        "Total estimated tax savings based on your marginal rate",
+        "Free, no registration required, updated for 2026"
+      ],
+      "concepts": {
+        "title": "Key concepts for deductible expenses",
+        "description": "Understanding these concepts will help you maximize your tax deductions:",
+        "ivaDeducible": {
+          "title": "Deductible VAT",
+          "description": "VAT you pay on business expenses that can be recovered on Form 303. Only deductible if you have a complete invoice."
+        },
+        "irpfDeducible": {
+          "title": "IRPF deductible expenses",
+          "description": "Expenses that reduce your IRPF tax base. They must be necessary for your activity and properly documented."
+        },
+        "gdj": {
+          "title": "Hard-to-justify expenses",
+          "description": "Automatic 5% deduction on net income, capped at €2,000/year. Only applies in simplified direct estimation regime."
+        },
+        "proporcionalidad": {
+          "title": "Proportional use",
+          "description": "Some expenses (phone, vehicle, utilities) only allow deducting the professional use percentage, typically 50% if mixed use."
+        }
+      },
+      "faq": {
+        "title": "Frequently asked questions about deductible expenses",
+        "q1": {
+          "question": "What expenses can a freelancer deduct?",
+          "answer": "Freelancers can deduct necessary expenses for their activity: office supplies, computer equipment, software, office rent, utilities (if working from home), transportation, professional training, insurance, and the self-employed contribution itself. The key is that they're directly related to the activity."
+        },
+        "q2": {
+          "question": "What is the 5% hard-to-justify expenses deduction?",
+          "answer": "It's an automatic 5% deduction on your net income (income minus expenses), capped at €2,000 per year. Only applies in simplified direct estimation regime. It covers small expenses without invoices that are difficult to document."
+        },
+        "q3": {
+          "question": "Can I deduct my mobile phone if it's personal and professional?",
+          "answer": "Yes, but only 50% if it's mixed use. To deduct 100%, you need an exclusively professional line. The tax authority is strict about this and may reject deductions above 50% without justification."
+        },
+        "q4": {
+          "question": "What percentage of utilities can I deduct if I work from home?",
+          "answer": "30% of the percentage of home used for business. Example: if your office occupies 20% of your home, you can deduct 30% of that 20%, i.e., 6% of total utilities. You must have notified the tax authority of professional use via form 036/037."
+        },
+        "q5": {
+          "question": "Do I need an invoice to deduct an expense?",
+          "answer": "Yes, to deduct VAT you need a complete invoice with all tax details. For IRPF, in some cases a receipt or bank statement suffices, but it's recommended to always request an invoice. The self-employed contribution is justified with the bank statement."
+        },
+        "q6": {
+          "question": "Can I deduct business meals?",
+          "answer": "IMPORTANT: VAT on meals and hospitality is NOT deductible (Art. 96.1.6º LIVA). You can only deduct the base amount for IRPF purposes. The expense must be justified with an invoice, must be outside your municipality of residence, and total deductions cannot exceed 1% of your annual revenue. Always keep the invoice and note the meeting reason."
+        }
+      }
+    },
+    "autonomoVsEmpresa": {
+      "meta": {
+        "title": "Freelancer vs Limited Company 2026 | Tax Comparison - Invoo",
+        "description": "Compare tax burden between being a freelancer or creating an SL. Free calculator with IRPF, self-employed quota, Corporate Tax and break-even point. No registration."
+      },
+      "hero": {
+        "titleHighlight": "Freelancer vs Limited",
+        "titleEnd": "Company",
+        "description": "Find out whether it's better to continue as a freelancer or create a Limited Company. Complete tax comparison with IRPF, self-employed quota, Corporate Tax calculation and personalized recommendation."
+      },
+      "sections": {
+        "inputs": "Your business data"
+      },
+      "inputs": {
+        "facturacion": {
+          "label": "Expected annual revenue",
+          "helper": "Total income before expenses"
+        },
+        "gastosNegocio": {
+          "label": "Business expenses",
+          "helper": "Percentage of expenses on revenue",
+          "options": {
+            "10": "10% - Very low expenses",
+            "20": "20% - Low expenses",
+            "30": "30% - Moderate expenses",
+            "40": "40% - High expenses",
+            "50": "50% - Very high expenses"
+          }
+        },
+        "sueldoMensual": {
+          "label": "Desired monthly salary (if SL)",
+          "helper": "As company administrator"
+        },
+        "esPrimeraVez": {
+          "label": "First time entrepreneur?",
+          "helper": "Applies 15% reduced Corporate Tax rate first 2 years",
+          "options": {
+            "yes": "Yes, first time",
+            "no": "No, I've had a company before"
+          }
+        }
+      },
+      "results": {
+        "ariaLabel": "Freelancer vs Company comparison results",
+        "placeholder": "Enter data to see the comparison",
+        "recommendation": {
+          "autonomo": {
+            "title": "It's better to stay as Freelancer",
+            "description": "With your current income, the tax burden as a freelancer is more favorable. A company would add administrative complexity without significant tax benefit."
+          },
+          "sociedad": {
+            "title": "It's better to create a Limited Company",
+            "description": "With your income, the SL allows you to optimize taxes and retain profits in the company. The tax savings offset management costs."
+          },
+          "similar": {
+            "title": "Both options are similar",
+            "description": "The tax difference is small. Consider factors like administrative complexity, asset protection and reinvestment capacity.",
+            "context": "Annual difference: €{diferencia}"
+          }
+        },
+        "autonomo": {
+          "title": "As Freelancer",
+          "facturacion": "Revenue",
+          "gastos": "Deductible expenses",
+          "cuota": "Self-employed quota",
+          "irpf": "IRPF",
+          "gestion": "Accountant",
+          "neto": "Annual net salary"
+        },
+        "sociedad": {
+          "title": "As Limited Company",
+          "facturacion": "Revenue",
+          "gastos": "Business expenses",
+          "sueldo": "Gross salary",
+          "ss": "Social Security",
+          "irpf": "IRPF on salary",
+          "is": "Corporate Tax",
+          "gestion": "Accountant + Formation",
+          "sueldoNeto": "Net salary",
+          "beneficio": "Retained profit",
+          "total": "Total available"
+        },
+        "breakEven": {
+          "title": "Break-even point",
+          "description": "With your setup, the SL starts to pay off from approximately €{amount} annual revenue."
+        },
+        "razonamientos": {
+          "title": "Why this recommendation?",
+          "lowIncome": "With low income, fixed costs of an SL (accountant, formation) exceed tax savings",
+          "highIncome": "With high income, Corporate Tax (25%) is lower than high IRPF rates (37-47%)",
+          "similarTaxBurden": "Total tax burden is practically the same in both cases",
+          "lowerTaxesAutonomo": "As freelancer you pay less taxes overall",
+          "lowerTaxesSociedad": "As SL you pay less taxes overall",
+          "complexityConsideration": "Keep in mind that SL requires more administrative management (commercial accounting, annual accounts, minutes book)",
+          "liabilityProtection": "SL offers asset protection: your liability is limited to contributed capital",
+          "reinvestmentCapacity": "SL allows you to retain profits in the company to reinvest without taxing them until distributed"
+        },
+        "disclaimer": "* Indicative calculation. Salary IRPF uses simplified deductions. The 15% reduced IS rate only applies for the first 2 fiscal years. Consult a tax advisor for your specific case."
+      },
+      "errors": {
+        "invalidNumber": "Enter a valid number",
+        "negativeNotAllowed": "Amount must be positive",
+        "amountTooLarge": "Amount exceeds maximum allowed"
+      },
+      "howTo": {
+        "title": "How to use the Freelancer vs SL comparison",
+        "schemaName": "How to decide between freelancer and Limited Company",
+        "description": "Comparing both options is very simple. You only need 4 data points:",
+        "step1": {
+          "title": "Enter your annual revenue",
+          "description": "Estimate how much you'll invoice in a year. It's your business volume before subtracting expenses."
+        },
+        "step2": {
+          "title": "Select the percentage of expenses",
+          "description": "Choose what percentage of your revenue are business expenses (rent, materials, software, etc.). If unsure, use 20-30%."
+        },
+        "step3": {
+          "title": "Define your desired monthly salary",
+          "description": "If you created an SL, what salary would you like to pay yourself as administrator? This affects SS and IRPF calculation."
+        },
+        "step4": {
+          "title": "Indicate if it's your first company",
+          "description": "If you've never had an SL, you can benefit from the reduced 15% Corporate Tax rate for the first 2 years (instead of standard 25%)."
+        }
+      },
+      "concepts": {
+        "title": "Key concepts for your decision",
+        "description": "Understand the fundamental differences between being a freelancer and having a Limited Company:",
+        "autonomo": {
+          "title": "Self-Employed Regime",
+          "description": "As freelancer you pay IRPF (19-47% by brackets) on your net income and self-employed quota based on real income (2026: bracket system). Simple management but no asset separation."
+        },
+        "sociedad": {
+          "title": "Limited Company (SL)",
+          "description": "The SL pays Corporate Tax (25%, or 15% first 2 years for entrepreneurs). You receive a salary as administrator (with IRPF and General SS Regime). More complexity but asset protection."
+        },
+        "breakEven": {
+          "title": "Break-even point",
+          "description": "Approximate revenue from which SL starts to be more tax advantageous. Varies by expenses, salary and whether you apply 15% Corporate Tax. Typically between €40,000-60,000 net profit."
+        },
+        "liability": {
+          "title": "Liability",
+          "description": "As freelancer you're liable with your personal assets. In an SL, your liability is limited to contributed capital (except cases of fraudulent management or gross negligence)."
+        }
+      },
+      "whyUse": {
+        "title": "Why use this comparison tool"
+      },
+      "benefits": [
+        "Compares real tax burden between freelancer and SL",
+        "Accurate IRPF calculation with 2026 brackets",
+        "Self-employed quota based on real income system",
+        "Corporate Tax 25% (or 15% for entrepreneurs)",
+        "Includes accountant and formation costs",
+        "Shows estimated break-even point",
+        "Personalized recommendation based on your data",
+        "Free, no registration required, updated for 2026"
+      ],
+      "faq": {
+        "title": "Frequently asked questions about Freelancer vs SL",
+        "q1": {
+          "question": "From what income level is it worth creating an SL?",
+          "answer": "There's no exact figure, it depends on your desired salary and expenses. As a general rule, with net profits (after expenses) above €40,000-50,000 annually, SL is usually more advantageous due to the differential between IRPF (up to 47%) and Corporate Tax (25%). Use the calculator with your real data to know for sure."
+        },
+        "q2": {
+          "question": "What is the 15% reduced Corporate Tax rate?",
+          "answer": "If it's your first SL and you haven't been an administrator of another company in the last 5 years, you can apply 15% Corporate Tax (instead of 25%) during the first 2 fiscal years with profits, on the first €300,000. It's a tax advantage to encourage entrepreneurship."
+        },
+        "q3": {
+          "question": "How much does it cost to create and maintain an SL?",
+          "answer": "Creating an SL costs between €500-1,000 (notary, commercial registry). Annual maintenance includes accountant (€1,800-3,000/year), account filing, corporate tax. Fixed costs are significantly higher than as freelancer (accountant ~€600/year)."
+        },
+        "q4": {
+          "question": "Can I deduct more expenses in an SL than as freelancer?",
+          "answer": "Not necessarily. Deductible expenses must be related to the activity in both cases. The difference is in how they're taxed: in SL you first pay Corporate Tax on company profit, then IRPF if you distribute dividends. Allows more flexibility in tax planning."
+        },
+        "q5": {
+          "question": "What happens with Social Security in an SL?",
+          "answer": "As SL administrator you contribute to General SS Regime, not as self-employed. Contributions are higher (company pays ~36%, you ~5% of gross salary), but in return you have better coverage (unemployment, work accidents). Total quota can exceed self-employed."
+        },
+        "q6": {
+          "question": "Can I switch from freelancer to SL without deregistering?",
+          "answer": "Yes, you can create an SL and continue as freelancer temporarily to make the transition. Many entrepreneurs create the SL, gradually transfer the activity, then deregister as self-employed. You can also maintain both if you do different activities."
         }
       }
     }
