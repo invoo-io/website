@@ -22,11 +22,15 @@
     "faq": "Preguntas Frecuentes",
     "blog": "Blog",
     "calculatorIVA": "Calculadora de IVA",
+    "calculatorModelo303": "Calculadora Modelo 303",
+    "calculatorModelo130": "Calculadora Modelo 130",
     "calculatorCuotaAutonomos": "Calculadora Cuota Autónomos",
     "calculatorFactura": "Calculadora de Facturas",
     "calculatorIRPF": "Calculadora IRPF Autónomos",
     "calculatorSueldoNeto": "Calculadora Sueldo Neto",
     "calculatorPrecioHora": "Calculadora Precio por Hora",
+    "calculatorGastosDeducibles": "Calculadora Gastos Deducibles",
+    "calculatorAutonomoVsEmpresa": "Autónomo vs Empresa",
     "login": "Iniciar sesión",
     "getStarted": "Únete a la lista de espera"
   },
@@ -1050,11 +1054,15 @@
       "blog": "Blog",
       "toolsTitle": "Herramientas",
       "calculatorIVA": "Calculadora de IVA",
+      "calculatorModelo303": "Calculadora Modelo 303",
+      "calculatorModelo130": "Calculadora Modelo 130",
       "calculatorCuotaAutonomos": "Calculadora Cuota Autónomos",
       "calculatorFactura": "Calculadora de Facturas",
       "calculatorIRPF": "Calculadora IRPF Autónomos",
       "calculatorSueldoNeto": "Calculadora Sueldo Neto",
       "calculatorPrecioHora": "Calculadora Precio por Hora",
+      "calculatorGastosDeducibles": "Calculadora Gastos Deducibles",
+      "calculatorAutonomoVsEmpresa": "Autónomo vs Empresa",
       "copyright": "© 2025 Invoo.es. Todos los derechos reservados. Hecho con ♥ para autónomos españoles"
     }
   },
@@ -1304,7 +1312,53 @@
         "precioHora": {
           "name": "Calculadora Precio por Hora",
           "description": "Calcula qué tarifa cobrar para alcanzar tu sueldo neto deseado"
+        },
+        "modelo303": {
+          "name": "Calculadora Modelo 303",
+          "description": "Calcula tu declaración trimestral de IVA a Hacienda"
+        },
+        "modelo130": {
+          "name": "Calculadora Modelo 130",
+          "description": "Calcula tu pago fraccionado trimestral de IRPF"
+        },
+        "gastosDeducibles": {
+          "name": "Calculadora Gastos Deducibles",
+          "description": "Calcula cuánto ahorras en impuestos con tus gastos"
+        },
+        "autonomoVsEmpresa": {
+          "name": "Autónomo vs Sociedad",
+          "description": "Compara ser autónomo o crear una SL según tu facturación"
         }
+      }
+    },
+    "hub": {
+      "meta": {
+        "title": "Calculadoras para Autónomos 2026 | Gratis - Invoo",
+        "description": "Calculadoras gratuitas para autónomos y pymes en España: IVA, IRPF, cuota de autónomos, modelos 303 y 130, gastos deducibles y más. Sin registro, actualizadas para 2026."
+      },
+      "hero": {
+        "title": "Calculadoras Gratuitas para Autónomos",
+        "description": "Todas las herramientas que necesitas para gestionar tus impuestos y finanzas como autónomo en España. Actualizadas con la normativa vigente, sin registro y 100% gratuitas."
+      },
+      "benefits": {
+        "title": "¿Por qué usar nuestras calculadoras?",
+        "free": {
+          "title": "Totalmente gratis",
+          "description": "Sin registro, sin límites, sin costes ocultos. Úsalas cuando quieras."
+        },
+        "instant": {
+          "title": "Resultados al instante",
+          "description": "Cálculos precisos en tiempo real sin esperas ni complicaciones."
+        },
+        "updated": {
+          "title": "Siempre actualizadas",
+          "description": "Tipos impositivos y normativa vigente para 2026. Datos oficiales de Hacienda."
+        }
+      },
+      "cta": {
+        "title": "¿Buscas más que calculadoras?",
+        "description": "Invoo es la plataforma completa de facturación y gestión fiscal para autónomos. Facturas, gastos, impuestos y colaboración con tu gestoría en un solo lugar.",
+        "button": "Únete a la lista de espera"
       }
     },
     "iva": {
@@ -2143,6 +2197,738 @@
         "q6": {
           "question": "¿Mi tarifa debe ser igual para todos los proyectos?",
           "answer": "No necesariamente. Puedes tener una tarifa base para proyectos estándar y ajustarla según: urgencia (urgente = más caro), complejidad técnica, duración del proyecto (contratos largos pueden tener descuento), tipo de cliente (grandes empresas vs startups), exclusividad o disponibilidad requerida. Lo importante es que tu tarifa promedio ponderada cubra tus costes totales."
+        }
+      }
+    },
+    "modelo303": {
+      "meta": {
+        "title": "Calculadora Modelo 303 IVA 2026 | Gratis para Autónomos - Invoo",
+        "description": "Calcula tu declaración trimestral de IVA (Modelo 303) al instante. IVA repercutido vs soportado. Resultado a ingresar o compensar. Calculadora gratuita 2026."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora Modelo 303",
+        "titleEnd": "IVA Trimestral",
+        "description": "Calcula tu declaración trimestral de IVA al instante. Introduce tus ventas y gastos, la calculadora te dirá cuánto debes ingresar a Hacienda o compensar. Gratuita, sin registro y actualizada para 2026."
+      },
+      "sections": {
+        "ivaRepercutido": "IVA Repercutido (cobrado)",
+        "ivaRepercutidoDesc": "IVA que has cobrado a tus clientes en tus facturas de venta",
+        "ivaSoportado": "IVA Soportado (pagado)",
+        "ivaSoportadoDesc": "IVA que has pagado en tus facturas de gastos deducibles",
+        "compensacion": "Compensación de periodos anteriores"
+      },
+      "inputs": {
+        "periodo": {
+          "label": "Trimestre",
+          "helper": "Selecciona el trimestre que vas a declarar",
+          "1T": "1T - Enero a Marzo",
+          "2T": "2T - Abril a Junio",
+          "3T": "3T - Julio a Septiembre",
+          "4T": "4T - Octubre a Diciembre"
+        },
+        "ventasGeneral": "Ventas al 21%",
+        "ventasGeneralHelper": "Base imponible de tus facturas con IVA general",
+        "ventasReducido": "Ventas al 10%",
+        "ventasReducidoHelper": "Base imponible de tus facturas con IVA reducido",
+        "ventasSuperreducido": "Ventas al 4%",
+        "ventasSuperreducidoHelper": "Base imponible de tus facturas con IVA superreducido",
+        "gastosGeneral": "Gastos al 21%",
+        "gastosGeneralHelper": "Base imponible de tus gastos con IVA general",
+        "gastosReducido": "Gastos al 10%",
+        "gastosReducidoHelper": "Base imponible de tus gastos con IVA reducido",
+        "gastosSuperreducido": "Gastos al 4%",
+        "gastosSuperreducidoHelper": "Base imponible de tus gastos con IVA superreducido",
+        "inversionGeneral": "Bienes de inversión",
+        "inversionGeneralHelper": "Equipos, maquinaria u otros activos (IVA 21%)",
+        "compensacion": "Compensación periodos anteriores",
+        "compensacionHelper": "Saldo negativo de trimestres anteriores a compensar"
+      },
+      "results": {
+        "title": "Resultado del Modelo 303",
+        "ivaRepercutido": "Total IVA repercutido",
+        "ivaSoportado": "Total IVA soportado deducible",
+        "compensacion": "Compensación aplicada",
+        "resultado": "Resultado",
+        "aIngresar": "A ingresar",
+        "aCompensar": "A compensar/devolver",
+        "ventas": "Base ventas",
+        "gastos": "Base gastos",
+        "desglose": "Desglose por tipos",
+        "iva21Collected": "IVA 21% cobrado",
+        "iva10Collected": "IVA 10% cobrado",
+        "iva4Collected": "IVA 4% cobrado",
+        "ivaGastosDeducible": "IVA gastos deducible",
+        "ivaInversionDeducible": "IVA inversiones deducible",
+        "placeholder": "Introduce tus ventas o gastos para calcular el Modelo 303",
+        "aIngresarMessage": "Deberás ingresar este importe a Hacienda antes del plazo de presentación",
+        "aCompensarMessage": "Puedes compensar este importe en el siguiente trimestre o solicitar devolución en el 4T",
+        "ceroMessage": "Tu declaración queda a cero. No tienes que ingresar ni compensar nada"
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo calcular tu Modelo 303",
+        "schemaName": "Cómo calcular la declaración trimestral de IVA",
+        "description": "El Modelo 303 es la autoliquidación trimestral del IVA. Sigue estos pasos para calcularlo:",
+        "step1": {
+          "title": "Suma tus ventas por tipo de IVA",
+          "description": "Agrupa las bases imponibles de tus facturas emitidas según el tipo de IVA: 21%, 10% o 4%."
+        },
+        "step2": {
+          "title": "Suma tus gastos deducibles",
+          "description": "Agrupa las bases de tus facturas de gastos. Solo incluye gastos relacionados con tu actividad económica."
+        },
+        "step3": {
+          "title": "Añade bienes de inversión",
+          "description": "Si compraste equipos o maquinaria, añade el IVA soportado como deducción adicional."
+        },
+        "step4": {
+          "title": "Aplica compensaciones previas",
+          "description": "Si tienes saldo negativo de trimestres anteriores, puedes compensarlo reduciendo lo que ingresas."
+        }
+      },
+      "concepts": {
+        "title": "Conceptos clave del Modelo 303",
+        "description": "Entender estos conceptos es fundamental para presentar correctamente tu declaración de IVA:",
+        "ivaRepercutido": {
+          "title": "IVA Repercutido",
+          "description": "Es el IVA que cobras a tus clientes en las facturas de venta. Se corresponde con las casillas 01-09 del modelo."
+        },
+        "ivaSoportado": {
+          "title": "IVA Soportado Deducible",
+          "description": "Es el IVA que pagas en tus gastos de actividad. Solo es deducible si la factura está a tu nombre y vinculada a tu negocio."
+        },
+        "resultado": {
+          "title": "Resultado de la Liquidación",
+          "description": "IVA Repercutido - IVA Soportado = Resultado. Si es positivo, pagas. Si es negativo, compensas o pides devolución."
+        },
+        "compensacion": {
+          "title": "Compensación",
+          "description": "Si un trimestre te sale negativo, puedes arrastrar ese saldo para reducir lo que pagas en trimestres posteriores."
+        }
+      },
+      "deadlines": {
+        "title": "Plazos de presentación 2026",
+        "description": "El Modelo 303 se presenta trimestralmente. Estos son los plazos para el año 2026:",
+        "q1": {
+          "period": "1T (Enero - Marzo)",
+          "deadline": "1-20 de Abril 2026"
+        },
+        "q2": {
+          "period": "2T (Abril - Junio)",
+          "deadline": "1-20 de Julio 2026"
+        },
+        "q3": {
+          "period": "3T (Julio - Septiembre)",
+          "deadline": "1-20 de Octubre 2026"
+        },
+        "q4": {
+          "period": "4T (Octubre - Diciembre)",
+          "deadline": "1-30 de Enero 2027"
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de Modelo 303?"
+      },
+      "benefits": [
+        "Cálculo instantáneo de IVA repercutido y soportado",
+        "Soporte para los tres tipos de IVA: 21%, 10% y 4%",
+        "Incluye bienes de inversión y compensaciones",
+        "Te indica si el resultado es a ingresar o compensar",
+        "Desglose detallado por cada tipo de operación",
+        "Gratis, sin registro y actualizada para 2026"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre el Modelo 303",
+        "q1": {
+          "question": "¿Cuándo hay que presentar el Modelo 303?",
+          "answer": "Trimestralmente: del 1 al 20 de abril (1T), julio (2T), octubre (3T) y del 1 al 30 de enero del año siguiente (4T). Si la fecha límite cae en fin de semana o festivo, se amplía al siguiente día hábil. Existe la opción de domiciliar el pago, cuyo plazo acaba 5 días antes."
+        },
+        "q2": {
+          "question": "¿Qué es el IVA repercutido y el soportado?",
+          "answer": "El IVA repercutido es el que cobras a tus clientes (lo recaudas para Hacienda). El IVA soportado es el que pagas a tus proveedores. En el Modelo 303 declaras la diferencia: si cobraste más de lo que pagaste, ingresas la diferencia; si pagaste más, compensas."
+        },
+        "q3": {
+          "question": "¿Qué gastos puedo deducir en el Modelo 303?",
+          "answer": "Todos los gastos vinculados a tu actividad económica con factura a tu nombre: alquiler de local, suministros, material, software, teléfono, gestoría, seguros, publicidad, viajes de trabajo. No puedes deducir gastos personales ni sin factura."
+        },
+        "q4": {
+          "question": "¿Qué pasa si el resultado es negativo?",
+          "answer": "Si tu IVA soportado supera al repercutido, tienes dos opciones: compensar ese saldo en trimestres siguientes (casilla 87 → casilla 110 del próximo trimestre) o solicitar devolución en el 4T si llevas todo el año con saldo negativo acumulado."
+        },
+        "q5": {
+          "question": "¿Puedo pedir devolución del IVA en cualquier trimestre?",
+          "answer": "No. Solo puedes solicitar devolución en la declaración del 4T (enero). En los trimestres 1T, 2T y 3T, los saldos negativos solo pueden compensarse en periodos posteriores. Hay una excepción: empresas inscritas en el REDEME pueden pedir devolución mensual."
+        },
+        "q6": {
+          "question": "¿Qué diferencia hay entre el Modelo 303 y el 390?",
+          "answer": "El Modelo 303 es la autoliquidación trimestral del IVA. El Modelo 390 es el resumen anual informativo que presenta los totales del año. No supone pago adicional, solo información. Desde 2024, muchos autónomos están exentos del 390 si cumplen ciertos requisitos."
+        }
+      }
+    },
+    "modelo130": {
+      "meta": {
+        "title": "Calculadora Modelo 130 IRPF 2026 | Gratis para Autónomos - Invoo",
+        "description": "Calcula tu pago fraccionado de IRPF (Modelo 130) al instante. 20% del rendimiento neto trimestral. Deduce retenciones y pagos anteriores. Calculadora gratuita 2026."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora Modelo 130",
+        "titleEnd": "IRPF Trimestral",
+        "description": "Calcula tu pago fraccionado de IRPF al instante. Introduce tus ingresos y gastos acumulados, la calculadora te dirá cuánto debes ingresar a Hacienda. Gratuita, sin registro y actualizada para 2026."
+      },
+      "sections": {
+        "ingresos": "Ingresos acumulados",
+        "ingresosDesc": "Total de ingresos brutos desde enero hasta el final del trimestre",
+        "gastos": "Gastos deducibles",
+        "gastosDesc": "Total de gastos deducibles acumulados en el mismo periodo",
+        "deducciones": "Deducciones previas",
+        "deduccionesDesc": "Pagos anteriores de M130 y retenciones practicadas en tus facturas"
+      },
+      "inputs": {
+        "periodo": {
+          "label": "Trimestre",
+          "helper": "Selecciona el trimestre que vas a declarar",
+          "1T": "1T - Enero a Marzo",
+          "2T": "2T - Abril a Junio",
+          "3T": "3T - Julio a Septiembre",
+          "4T": "4T - Octubre a Diciembre"
+        },
+        "ingresosAcumulados": "Ingresos brutos acumulados",
+        "ingresosAcumuladosHelper": "Total facturado desde el 1 de enero hasta fin de trimestre",
+        "gastosAcumulados": "Gastos deducibles acumulados",
+        "gastosAcumuladosHelper": "Gastos vinculados a tu actividad: alquiler, suministros, material, etc.",
+        "pagosAnteriores": "Pagos anteriores (M130)",
+        "pagosAnterioresHelper": "Suma de pagos de Modelo 130 en trimestres anteriores de este año",
+        "retencionesFacturas": "Retenciones en facturas",
+        "retencionesFacturasHelper": "Total de IRPF retenido en tus facturas (7% o 15%)"
+      },
+      "results": {
+        "title": "Resultado del Modelo 130",
+        "rendimientoNeto": "Rendimiento neto acumulado",
+        "cuota20": "20% del rendimiento",
+        "pagosAnteriores": "Pagos anteriores",
+        "retenciones": "Retenciones facturas",
+        "resultado": "Resultado",
+        "aIngresar": "A ingresar",
+        "aNegativo": "Sin pago (resultado negativo)",
+        "desglose": "Desglose del cálculo",
+        "ingresos": "Ingresos acumulados",
+        "gastosLabel": "Gastos deducibles",
+        "rendimientoNetoLabel": "Rendimiento neto",
+        "cuota20Label": "Cuota 20%",
+        "pagosAnterioresLabel": "Pagos M130 anteriores",
+        "retencionesLabel": "Retenciones facturas",
+        "placeholder": "Introduce tus ingresos para calcular el Modelo 130",
+        "aIngresarMessage": "Deberás ingresar este importe a Hacienda antes del plazo de presentación",
+        "aNegativoMessage": "El resultado es negativo. No tienes que pagar este trimestre. El exceso se regulariza en la declaración de la Renta anual.",
+        "ceroMessage": "Tu declaración queda a cero. No tienes que ingresar nada este trimestre",
+        "exencionTitle": "Posible exención:",
+        "exencionMessage": "Más del {threshold}% de tus ingresos tienen retención ({percentage}%). Podrías estar exento de presentar el Modelo 130. Consulta con tu gestor."
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo calcular tu Modelo 130",
+        "schemaName": "Cómo calcular el pago fraccionado de IRPF",
+        "description": "El Modelo 130 es el pago trimestral a cuenta del IRPF para autónomos. Sigue estos pasos:",
+        "step1": {
+          "title": "Suma tus ingresos acumulados",
+          "description": "Suma todas las facturas emitidas desde el 1 de enero hasta el final del trimestre que declaras."
+        },
+        "step2": {
+          "title": "Resta tus gastos deducibles",
+          "description": "Incluye gastos vinculados a tu actividad: alquiler, suministros, material, cuota de autónomos, etc."
+        },
+        "step3": {
+          "title": "Deduce pagos anteriores",
+          "description": "Resta lo que ya pagaste en los Modelo 130 de trimestres anteriores de este mismo año."
+        },
+        "step4": {
+          "title": "Deduce retenciones",
+          "description": "Resta las retenciones de IRPF que te han practicado en tus facturas (7% o 15%)."
+        }
+      },
+      "concepts": {
+        "title": "Conceptos clave del Modelo 130",
+        "description": "Entender estos conceptos te ayudará a presentar correctamente tu declaración trimestral de IRPF:",
+        "pagoFraccionado": {
+          "title": "Pago Fraccionado",
+          "description": "Es un anticipo trimestral del IRPF que pagarás en la Renta. Equivale al 20% de tu beneficio acumulado menos deducciones."
+        },
+        "rendimientoNeto": {
+          "title": "Rendimiento Neto",
+          "description": "Ingresos brutos menos gastos deducibles. Es la base sobre la que se calcula el 20% del pago fraccionado."
+        },
+        "retenciones": {
+          "title": "Retenciones IRPF",
+          "description": "El IRPF que retienen tus clientes empresa al pagarte (7% o 15%). Se descuenta de tu pago fraccionado."
+        },
+        "exencion": {
+          "title": "Exención 70%",
+          "description": "Si más del 70% de tus ingresos tienen retención, puedes estar exento de presentar el Modelo 130."
+        }
+      },
+      "deadlines": {
+        "title": "Plazos de presentación 2026",
+        "description": "El Modelo 130 se presenta trimestralmente. Estos son los plazos para el año 2026:",
+        "q1": {
+          "period": "1T (Enero - Marzo)",
+          "deadline": "1-20 de Abril 2026"
+        },
+        "q2": {
+          "period": "2T (Abril - Junio)",
+          "deadline": "1-20 de Julio 2026"
+        },
+        "q3": {
+          "period": "3T (Julio - Septiembre)",
+          "deadline": "1-20 de Octubre 2026"
+        },
+        "q4": {
+          "period": "4T (Octubre - Diciembre)",
+          "deadline": "1-30 de Enero 2027"
+        }
+      },
+      "exemption": {
+        "title": "¿Cuándo estás exento del Modelo 130?",
+        "description": "No todos los autónomos tienen que presentar el Modelo 130. Puedes estar exento si cumples estos requisitos:",
+        "condition1": "Más del 70% de tus ingresos de actividades profesionales tienen retención de IRPF",
+        "condition2": "Tributas en estimación directa (simplificada o normal) en actividades profesionales"
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de Modelo 130?"
+      },
+      "benefits": [
+        "Cálculo instantáneo del pago fraccionado de IRPF",
+        "Incluye deducciones por pagos anteriores y retenciones",
+        "Detecta si podrías estar exento de presentarlo",
+        "Te indica el resultado a ingresar o cero",
+        "Desglose detallado del cálculo paso a paso",
+        "Gratis, sin registro y actualizada para 2026"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre el Modelo 130",
+        "q1": {
+          "question": "¿Quién tiene que presentar el Modelo 130?",
+          "answer": "Todos los autónomos en estimación directa (simplificada o normal) que desarrollen actividades económicas. La excepción: si más del 70% de tus ingresos profesionales ya tienen retención de IRPF (facturas a empresas con retención del 7% o 15%), puedes estar exento."
+        },
+        "q2": {
+          "question": "¿Cómo se calcula el pago fraccionado del Modelo 130?",
+          "answer": "La fórmula es: (Ingresos acumulados - Gastos acumulados) × 20% - Pagos anteriores M130 - Retenciones. El cálculo es acumulativo: en el 2T incluyes de enero a junio, en el 3T de enero a septiembre, etc."
+        },
+        "q3": {
+          "question": "¿Qué pasa si mis retenciones superan el 70%?",
+          "answer": "Si más del 70% de tus ingresos de actividades profesionales tienen retención IRPF, puedes quedar exento de presentar el Modelo 130. Sin embargo, muchos gestores recomiendan presentarlo igualmente si te sale a ingresar 0 para evitar problemas."
+        },
+        "q4": {
+          "question": "¿Puedo presentar el Modelo 130 si el resultado es cero o negativo?",
+          "answer": "Sí, puedes y a veces debes. Si sale cero, se presenta con resultado cero. Si sale negativo, no genera derecho a devolución en el modelo (ese saldo se regulariza en la Renta anual), pero se presenta con la casilla 7 a cero."
+        },
+        "q5": {
+          "question": "¿Qué relación tiene el Modelo 130 con la declaración de la Renta?",
+          "answer": "El Modelo 130 es un anticipo a cuenta del IRPF anual. Lo que pagas trimestralmente se resta de tu cuota final en la Renta. Si pagaste más de lo que te correspondía, Hacienda te devuelve; si pagaste menos, pagas la diferencia."
+        },
+        "q6": {
+          "question": "¿Cuándo se presenta el Modelo 130?",
+          "answer": "Trimestralmente: del 1 al 20 de abril (1T), julio (2T), octubre (3T) y del 1 al 30 de enero del año siguiente (4T). El pago se puede domiciliar presentando 5 días antes del vencimiento."
+        }
+      }
+    },
+    "gastosDeducibles": {
+      "meta": {
+        "title": "Calculadora Gastos Deducibles Autónomos 2026 | Gratis - Invoo",
+        "description": "Calcula cuánto ahorras en impuestos con tus gastos deducibles. IVA recuperable, IRPF deducible y GDJ. Calculadora gratuita para autónomos 2026."
+      },
+      "hero": {
+        "titleHighlight": "Calculadora Gastos Deducibles",
+        "titleEnd": "para Autónomos",
+        "description": "Descubre cuánto puedes ahorrar en impuestos con tus gastos de actividad. Calcula el IVA recuperable, los gastos deducibles en IRPF y el 5% de gastos de difícil justificación. Gratis, sin registro y actualizada para 2026."
+      },
+      "sections": {
+        "parameters": "Parámetros de cálculo",
+        "parametersDesc": "Indica tu rendimiento neto y tipo marginal de IRPF para calcular el ahorro",
+        "expenses": "Gastos por categoría",
+        "expensesDesc": "Introduce tus gastos anuales en cada categoría (IVA incluido)",
+        "expensesAriaLabel": "Lista de categorías de gastos deducibles"
+      },
+      "inputs": {
+        "rendimientoNeto": {
+          "label": "Rendimiento neto anual",
+          "helper": "Ingresos menos gastos deducibles (para calcular el GDJ)"
+        },
+        "tipoMarginal": {
+          "label": "Tipo marginal IRPF",
+          "helper": "Tu tramo de IRPF para calcular el ahorro real",
+          "options": {
+            "19": "19% - Hasta 12.450€",
+            "24": "24% - 12.451€ a 20.200€",
+            "30": "30% - 20.201€ a 35.200€",
+            "37": "37% - 35.201€ a 60.000€",
+            "45": "45% - Más de 60.000€"
+          }
+        }
+      },
+      "categories": {
+        "oficina": {
+          "label": "Material de oficina",
+          "helper": "IVA: {ivaPercent}% • IRPF: {irpfPercent}% deducible"
+        },
+        "informatica": {
+          "label": "Equipos informáticos",
+          "helper": "IVA: {ivaPercent}% • IRPF: {irpfPercent}% deducible"
+        },
+        "software": {
+          "label": "Software y suscripciones",
+          "helper": "IVA: {ivaPercent}% • IRPF: {irpfPercent}% deducible"
+        },
+        "telefono": {
+          "label": "Teléfono e internet",
+          "helper": "50% uso mixto (100% si línea exclusiva profesional)"
+        },
+        "suministros": {
+          "label": "Suministros teletrabajo",
+          "helper": "IVA: {ivaPercent}% • IRPF: {irpfPercent}% del % afecto"
+        },
+        "alquiler": {
+          "label": "Alquiler de local",
+          "helper": "IVA: {ivaPercent}% • IRPF: {irpfPercent}% deducible"
+        },
+        "transporte": {
+          "label": "Transporte",
+          "helper": "IVA: {ivaPercent}% • IRPF: {irpfPercent}% (uso mixto)"
+        },
+        "vehiculo": {
+          "label": "Vehículo afecto",
+          "helper": "IVA: NO deducible (turismos) • IRPF: {irpfPercent}% (uso mixto)"
+        },
+        "formacion": {
+          "label": "Formación profesional",
+          "helper": "IVA: {ivaPercent}% • IRPF: {irpfPercent}% deducible"
+        },
+        "seguros": {
+          "label": "Seguros",
+          "helper": "Sin IVA • IRPF: {irpfPercent}% deducible"
+        },
+        "comidas": {
+          "label": "Comidas con clientes",
+          "helper": "IVA: {ivaPercent}% (no deducible) • IRPF: {irpfPercent}%"
+        },
+        "cuota": {
+          "label": "Cuota autónomos",
+          "helper": "Sin IVA • IRPF: {irpfPercent}% deducible"
+        }
+      },
+      "results": {
+        "title": "Resultado del cálculo",
+        "placeholder": "Introduce tus gastos para calcular el ahorro fiscal",
+        "totalGastos": "Total gastos introducidos",
+        "ivaRecuperable": "IVA recuperable",
+        "gastosDeduciblesIRPF": "Gastos deducibles IRPF",
+        "gdj": "GDJ (5%, máx. 2.000€)",
+        "gdjTooltip": "Gastos de difícil justificación: deducción automática del 5% del rendimiento neto, con un límite de 2.000€/año",
+        "ahorroIVA": "Ahorro en IVA",
+        "ahorroIRPF": "Ahorro en IRPF",
+        "ahorroTotal": "Ahorro total estimado",
+        "tipoEfectivo": "Tipo efectivo de deducción",
+        "desglose": "Desglose por categoría",
+        "savingsMessage": "Tu ahorro fiscal estimado"
+      },
+      "breakdown": {
+        "title": "Desglose por categoría",
+        "categoria": "Categoría",
+        "gastoBruto": "Gasto bruto",
+        "baseDeducible": "Base deducible",
+        "ivaDeducible": "IVA deducible",
+        "irpfDeducible": "IRPF deducible"
+      },
+      "info": {
+        "gdj": {
+          "title": "¿Qué es el GDJ?",
+          "description": "El Gastos de Difícil Justificación (GDJ) es una deducción automática del 5% sobre tu rendimiento neto, con un máximo de 2.000€ anuales. Solo aplica en estimación directa simplificada."
+        },
+        "porcentajes": {
+          "title": "Porcentajes de deducción",
+          "description": "Los porcentajes varían según el tipo de gasto. Algunos gastos como teléfono o vehículo solo permiten deducir el 50% si hay uso mixto personal/profesional."
+        }
+      },
+      "seo": {
+        "whatAre": {
+          "title": "¿Qué son los gastos deducibles para autónomos?",
+          "description": "Los gastos deducibles son aquellos gastos necesarios para desarrollar tu actividad profesional que puedes restar de tus ingresos para calcular la base imponible del IRPF, reduciendo así la cantidad de impuestos que pagas."
+        },
+        "howCalculator": {
+          "title": "¿Cómo funciona la calculadora de gastos deducibles?",
+          "description": "Nuestra calculadora te permite introducir tus gastos por categorías y calcula automáticamente cuánto IVA puedes recuperar en el Modelo 303 y cuánto reduces tu base imponible del IRPF, mostrándote el ahorro fiscal estimado."
+        }
+      },
+      "howTo": {
+        "title": "Cómo usar la calculadora de gastos deducibles",
+        "schemaName": "Cómo calcular tus gastos deducibles como autónomo",
+        "description": "Calcula cuánto ahorras en impuestos con tus gastos de actividad en 4 sencillos pasos:",
+        "step1": {
+          "title": "Indica tu rendimiento neto",
+          "description": "Introduce tus ingresos menos gastos para calcular el GDJ"
+        },
+        "step2": {
+          "title": "Selecciona tu tipo marginal",
+          "description": "Elige tu tramo de IRPF para calcular el ahorro real"
+        },
+        "step3": {
+          "title": "Introduce tus gastos por categoría",
+          "description": "Añade los importes de cada tipo de gasto (IVA incluido)"
+        },
+        "step4": {
+          "title": "Revisa el desglose y ahorro",
+          "description": "Consulta cuánto ahorras en IVA e IRPF con cada gasto"
+        }
+      },
+      "whyUse": {
+        "title": "¿Por qué usar nuestra calculadora de gastos deducibles?"
+      },
+      "benefits": [
+        "Calcula el IVA recuperable de cada categoría de gasto",
+        "Muestra los gastos deducibles en IRPF con porcentajes oficiales",
+        "Incluye el cálculo automático del GDJ (5%, máx. 2.000€)",
+        "Desglose detallado por cada categoría de gasto",
+        "Ahorro fiscal total estimado según tu tipo marginal",
+        "Gratis, sin registro y actualizada para 2026"
+      ],
+      "concepts": {
+        "title": "Conceptos clave de gastos deducibles",
+        "description": "Entender estos conceptos te ayudará a maximizar tus deducciones fiscales:",
+        "ivaDeducible": {
+          "title": "IVA Deducible",
+          "description": "Es el IVA que pagas en tus gastos de actividad y que puedes recuperar en el Modelo 303. Solo es deducible si tienes factura completa."
+        },
+        "irpfDeducible": {
+          "title": "Gastos deducibles en IRPF",
+          "description": "Son los gastos que reducen tu base imponible del IRPF. Deben ser necesarios para tu actividad y estar correctamente justificados."
+        },
+        "gdj": {
+          "title": "Gastos de Difícil Justificación (GDJ)",
+          "description": "Deducción automática del 5% sobre el rendimiento neto, con un máximo de 2.000€/año. Solo aplica en estimación directa simplificada."
+        },
+        "proporcionalidad": {
+          "title": "Proporcionalidad de uso",
+          "description": "Algunos gastos (teléfono, vehículo, suministros) solo permiten deducir el porcentaje de uso profesional, típicamente el 50% si hay uso mixto."
+        }
+      },
+      "faq": {
+        "title": "Preguntas frecuentes sobre gastos deducibles",
+        "q1": {
+          "question": "¿Qué gastos puede deducir un autónomo?",
+          "answer": "Los autónomos pueden deducir gastos necesarios para su actividad: material de oficina, equipos informáticos, software, alquiler de local, suministros (si trabajan desde casa), transporte, formación profesional, seguros, y la propia cuota de autónomos. La clave es que estén directamente relacionados con la actividad."
+        },
+        "q2": {
+          "question": "¿Qué es el 5% de gastos de difícil justificación (GDJ)?",
+          "answer": "El GDJ es una deducción automática del 5% sobre tu rendimiento neto (ingresos menos gastos), con un límite máximo de 2.000€ al año. Solo aplica en estimación directa simplificada. Cubre pequeños gastos sin factura que son difíciles de documentar."
+        },
+        "q3": {
+          "question": "¿Puedo deducir el teléfono móvil si es personal y profesional?",
+          "answer": "Sí, pero solo el 50% si es de uso mixto. Para deducir el 100%, necesitas una línea exclusivamente profesional. Hacienda es estricta con esto y puede rechazar deducciones mayores al 50% sin justificación."
+        },
+        "q4": {
+          "question": "¿Qué porcentaje de suministros puedo deducir si trabajo desde casa?",
+          "answer": "El 30% del porcentaje de vivienda afecto a la actividad. Ejemplo: si tu despacho ocupa el 20% de tu casa, puedes deducir el 30% de ese 20%, es decir, el 6% del total de suministros. Debes haber comunicado el uso profesional a Hacienda mediante el modelo 036/037."
+        },
+        "q5": {
+          "question": "¿Necesito factura para deducir un gasto?",
+          "answer": "Sí, para deducir IVA necesitas factura completa con todos los datos fiscales. Para IRPF, en algunos casos vale un recibo o justificante bancario, pero lo recomendable es siempre solicitar factura. La cuota de autónomos se justifica con el extracto bancario."
+        },
+        "q6": {
+          "question": "¿Puedo deducir las comidas con clientes?",
+          "answer": "IMPORTANTE: El IVA de comidas y restauración NO es deducible (Art. 96.1.6º LIVA). Solo puedes deducir la base imponible en el IRPF. El gasto debe estar justificado con factura, debe ser fuera de tu municipio de residencia, y el total de estas deducciones no puede superar el 1% de tu facturación anual. Guarda siempre la factura y anota el motivo de la reunión."
+        }
+      }
+    },
+    "autonomoVsEmpresa": {
+      "meta": {
+        "title": "Autónomo vs Sociedad Limitada 2026 | Comparador Fiscal - Invoo",
+        "description": "Compara la carga fiscal entre ser autónomo o crear una SL. Calculadora gratuita con IRPF, cuota autónomos, Impuesto de Sociedades y punto de equilibrio. Sin registro."
+      },
+      "hero": {
+        "titleHighlight": "Autónomo vs Sociedad",
+        "titleEnd": "Limitada",
+        "description": "Descubre si te conviene más seguir como autónomo o crear una Sociedad Limitada. Comparador fiscal completo con cálculo de IRPF, cuota de autónomos, Impuesto de Sociedades y recomendación personalizada."
+      },
+      "sections": {
+        "inputs": "Datos de tu actividad"
+      },
+      "inputs": {
+        "facturacion": {
+          "label": "Facturación anual prevista",
+          "helper": "Ingresos totales antes de gastos"
+        },
+        "gastosNegocio": {
+          "label": "Gastos del negocio",
+          "helper": "Porcentaje de gastos sobre facturación",
+          "options": {
+            "10": "10% - Gastos muy bajos",
+            "20": "20% - Gastos bajos",
+            "30": "30% - Gastos moderados",
+            "40": "40% - Gastos altos",
+            "50": "50% - Gastos muy altos"
+          }
+        },
+        "sueldoMensual": {
+          "label": "Sueldo mensual deseado (si SL)",
+          "helper": "Como administrador de la sociedad"
+        },
+        "esPrimeraVez": {
+          "label": "¿Primera vez emprendiendo?",
+          "helper": "Aplica tasa reducida 15% IS primeros 2 años",
+          "options": {
+            "yes": "Sí, primera vez",
+            "no": "No, ya he tenido empresa"
+          }
+        }
+      },
+      "results": {
+        "ariaLabel": "Resultados de la comparación Autónomo vs Sociedad",
+        "placeholder": "Introduce los datos para ver la comparación",
+        "recommendation": {
+          "autonomo": {
+            "title": "Te conviene más seguir como Autónomo",
+            "description": "Con tus ingresos actuales, la carga fiscal como autónomo es más favorable. La sociedad añadiría complejidad administrativa sin beneficio fiscal significativo."
+          },
+          "sociedad": {
+            "title": "Te conviene más crear una Sociedad Limitada",
+            "description": "Con tus ingresos, la SL te permite optimizar impuestos y retener beneficios en la empresa. El ahorro fiscal compensa los costes de gestión."
+          },
+          "similar": {
+            "title": "Ambas opciones son similares",
+            "description": "La diferencia fiscal es pequeña. Considera factores como complejidad administrativa, protección patrimonial y capacidad de reinversión.",
+            "context": "Diferencia anual: {diferencia} €"
+          }
+        },
+        "autonomo": {
+          "title": "Como Autónomo",
+          "facturacion": "Facturación",
+          "gastos": "Gastos deducibles",
+          "cuota": "Cuota autónomos",
+          "irpf": "IRPF",
+          "gestion": "Gestoría",
+          "neto": "Sueldo neto anual"
+        },
+        "sociedad": {
+          "title": "Como Sociedad Limitada",
+          "facturacion": "Facturación",
+          "gastos": "Gastos del negocio",
+          "sueldo": "Sueldo bruto",
+          "ss": "Seguridad Social",
+          "irpf": "IRPF sueldo",
+          "is": "Impuesto Sociedades",
+          "gestion": "Gestoría + Constitución",
+          "sueldoNeto": "Sueldo neto",
+          "beneficio": "Beneficio retenido",
+          "total": "Total disponible"
+        },
+        "breakEven": {
+          "title": "Punto de equilibrio",
+          "description": "Con tu configuración, la SL empieza a compensar a partir de {amount} € de facturación anual aproximadamente."
+        },
+        "razonamientos": {
+          "title": "¿Por qué esta recomendación?",
+          "lowIncome": "Con ingresos bajos, los costes fijos de una SL (gestoría, constitución) superan el ahorro fiscal",
+          "highIncome": "Con ingresos altos, el Impuesto de Sociedades (25%) es menor que los tipos altos de IRPF (37-47%)",
+          "similarTaxBurden": "La carga fiscal total es prácticamente igual en ambos casos",
+          "lowerTaxesAutonomo": "Como autónomo pagas menos impuestos en total",
+          "lowerTaxesSociedad": "Como SL pagas menos impuestos en total",
+          "complexityConsideration": "Ten en cuenta que la SL requiere más gestión administrativa (contabilidad mercantil, cuentas anuales, libro de actas)",
+          "liabilityProtection": "La SL te ofrece protección patrimonial: tu responsabilidad está limitada al capital aportado",
+          "reinvestmentCapacity": "La SL te permite retener beneficios en la empresa para reinvertir sin tributar por ellos hasta que los distribuyas"
+        },
+        "disclaimer": "* Cálculo orientativo. El IRPF de sueldo usa deducciones simplificadas. El tipo reducido del 15% de IS aplica solo los primeros 2 ejercicios. Consulta con un asesor fiscal para tu caso concreto."
+      },
+      "errors": {
+        "invalidNumber": "Introduce un número válido",
+        "negativeNotAllowed": "El importe debe ser positivo",
+        "amountTooLarge": "El importe excede el máximo permitido"
+      },
+      "howTo": {
+        "title": "Cómo usar el comparador Autónomo vs SL",
+        "schemaName": "Cómo decidir entre autónomo y Sociedad Limitada",
+        "description": "Comparar las dos opciones es muy sencillo. Solo necesitas 4 datos:",
+        "step1": {
+          "title": "Introduce tu facturación anual",
+          "description": "Estima cuánto vas a facturar en un año. Es tu volumen de negocio antes de restar gastos."
+        },
+        "step2": {
+          "title": "Selecciona el porcentaje de gastos",
+          "description": "Elige qué porcentaje de tu facturación son gastos del negocio (alquiler, material, software, etc.). Si no estás seguro, usa 20-30%."
+        },
+        "step3": {
+          "title": "Define tu sueldo mensual deseado",
+          "description": "Si crearas una SL, ¿qué sueldo te gustaría pagar como administrador? Esto afecta al cálculo de SS e IRPF."
+        },
+        "step4": {
+          "title": "Indica si es tu primera empresa",
+          "description": "Si nunca has tenido una SL, puedes beneficiarte del tipo reducido del 15% de Impuesto de Sociedades los primeros 2 años (en vez del 25% general)."
+        }
+      },
+      "concepts": {
+        "title": "Conceptos clave para tu decisión",
+        "description": "Entiende las diferencias fundamentales entre ser autónomo y tener una Sociedad Limitada:",
+        "autonomo": {
+          "title": "Régimen de Autónomos",
+          "description": "Como autónomo pagas IRPF (19-47% según tramos) sobre tu rendimiento neto y cuota de autónomos según ingresos reales (2026: sistema de tramos). Gestión simple pero sin separación patrimonial."
+        },
+        "sociedad": {
+          "title": "Sociedad Limitada (SL)",
+          "description": "La SL paga Impuesto de Sociedades (25%, o 15% primeros 2 años para emprendedores). Tú cobras un sueldo como administrador (con IRPF y SS Régimen General). Mayor complejidad pero protección patrimonial."
+        },
+        "breakEven": {
+          "title": "Punto de equilibrio",
+          "description": "Facturación aproximada a partir de la cual la SL empieza a ser más ventajosa fiscalmente. Varía según gastos, sueldo y si aplicas el 15% de IS. Típicamente entre 40.000-60.000€ de beneficio neto."
+        },
+        "liability": {
+          "title": "Responsabilidad",
+          "description": "Como autónomo respondes con tu patrimonio personal. En una SL, tu responsabilidad está limitada al capital aportado (salvo casos de gestión fraudulenta o negligencia grave)."
+        }
+      },
+      "whyUse": {
+        "title": "Por qué usar este comparador"
+      },
+      "benefits": [
+        "Compara la carga fiscal real entre autónomo y SL",
+        "Cálculo preciso de IRPF con tramos 2026",
+        "Cuota de autónomos según sistema de ingresos reales",
+        "Impuesto de Sociedades 25% (o 15% para emprendedores)",
+        "Incluye costes de gestoría y constitución",
+        "Muestra el punto de equilibrio estimado",
+        "Recomendación personalizada según tus datos",
+        "Gratis, sin registro y actualizada para 2026"
+      ],
+      "faq": {
+        "title": "Preguntas frecuentes sobre Autónomo vs SL",
+        "q1": {
+          "question": "¿A partir de qué ingresos conviene crear una SL?",
+          "answer": "No hay una cifra exacta, depende de tu sueldo deseado y gastos. Como regla general, con beneficios netos (después de gastos) superiores a 40.000-50.000€ anuales, la SL suele ser más ventajosa por el diferencial entre IRPF (hasta 47%) e IS (25%). Usa la calculadora con tus datos reales para saberlo."
+        },
+        "q2": {
+          "question": "¿Qué es el tipo reducido del 15% del Impuesto de Sociedades?",
+          "answer": "Si es tu primera SL y no has sido administrador de otra empresa en los últimos 5 años, puedes aplicar el 15% de IS (en vez del 25%) durante los primeros 2 ejercicios fiscales con beneficios, sobre los primeros 300.000€. Es una ventaja fiscal para fomentar el emprendimiento."
+        },
+        "q3": {
+          "question": "¿Cuánto cuesta crear y mantener una SL?",
+          "answer": "Crear una SL cuesta entre 500-1.000€ (notaría, registro mercantil). El mantenimiento anual incluye gestoría (1.800-3.000€/año), depósito de cuentas, impuesto de sociedades. Los costes fijos son significativamente mayores que como autónomo (gestoría ~600€/año)."
+        },
+        "q4": {
+          "question": "¿Puedo deducir más gastos en una SL que como autónomo?",
+          "answer": "No necesariamente. Los gastos deducibles deben estar relacionados con la actividad en ambos casos. La diferencia está en cómo tributan: en SL primero pagas IS sobre el beneficio de la empresa, y luego IRPF si te distribuyes dividendos. Permite más flexibilidad en la planificación fiscal."
+        },
+        "q5": {
+          "question": "¿Qué pasa con la Seguridad Social en una SL?",
+          "answer": "Como administrador de una SL cotizas en el Régimen General de la SS, no como autónomo. Las cotizaciones son más altas (empresa paga ~36%, tú ~5% de tu sueldo bruto), pero a cambio tienes mejor cobertura (desempleo, accidentes laborales). La cuota total puede superar a la de autónomos."
+        },
+        "q6": {
+          "question": "¿Puedo pasar de autónomo a SL sin darme de baja?",
+          "answer": "Sí, puedes crear una SL y seguir siendo autónomo temporalmente para hacer la transición. Muchos emprendedores crean la SL, le traspasan la actividad gradualmente, y luego se dan de baja como autónomos. También puedes mantener ambas si realizas actividades diferentes."
         }
       }
     }

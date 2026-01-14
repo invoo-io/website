@@ -7,6 +7,14 @@
       "main": true
     }
   },
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.invoo.es" }],
+      "destination": "https://invoo.es/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/sitemap.xml",

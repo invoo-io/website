@@ -49,11 +49,15 @@ export default function Navigation({ locale }: NavigationProps) {
 
   const tools = [
     { name: t('calculatorIVA'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/iva` : `/${locale}/tools/calculators/vat`) },
+    { name: t('calculatorModelo303'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/modelo-303` : `/${locale}/tools/calculators/vat-return`) },
+    { name: t('calculatorModelo130'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/modelo-130` : `/${locale}/tools/calculators/form-130`) },
     { name: t('calculatorCuotaAutonomos'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/cuota-autonomos` : `/${locale}/tools/calculators/self-employed-quota`) },
     { name: t('calculatorFactura'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/factura` : `/${locale}/tools/calculators/invoice`) },
     { name: t('calculatorIRPF'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/irpf-autonomos` : `/${locale}/tools/calculators/income-tax-freelancer`) },
     { name: t('calculatorSueldoNeto'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/sueldo-neto-autonomo` : `/${locale}/tools/calculators/net-salary-freelancer`) },
     { name: t('calculatorPrecioHora'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/precio-hora` : `/${locale}/tools/calculators/hourly-rate`) },
+    { name: t('calculatorGastosDeducibles'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/gastos-deducibles` : `/${locale}/tools/calculators/deductible-expenses`) },
+    { name: t('calculatorAutonomoVsEmpresa'), href: getBasePath(locale === 'es' ? `/${locale}/herramientas/calculadoras/autonomo-vs-empresa` : `/${locale}/tools/calculators/freelancer-vs-company`) },
   ];
 
   const languages = [

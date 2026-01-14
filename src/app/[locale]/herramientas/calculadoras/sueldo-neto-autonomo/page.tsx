@@ -48,18 +48,31 @@ export async function generateMetadata({
       url: `${BASE_URL}${esPath}`,
       title: t('meta.title'),
       description: t('meta.description'),
+      siteName: 'Invoo',
       images: [{
-        url: `${BASE_URL}/og/calculators/sueldo-neto-autonomo.png`,
+        url: `${BASE_URL}/calculators.webp`,
         width: 1200,
         height: 630,
         alt: t('meta.title'),
+        type: 'image/webp',
       }],
     },
     twitter: {
       card: 'summary_large_image',
       title: t('meta.title'),
       description: t('meta.description'),
+      images: [`${BASE_URL}/calculators.webp`],
+      creator: '@invoo_es',
+      site: '@invoo_es',
     },
+    keywords: [
+      'sueldo neto autónomo',
+      'calculadora sueldo autónomo',
+      'cuánto gana un autónomo',
+      'IRPF autónomos',
+      'impuestos autónomos',
+      'beneficio neto autónomo',
+    ],
   };
 }
 

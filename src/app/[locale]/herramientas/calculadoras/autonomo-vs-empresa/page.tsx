@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
-import { IVACalculatorPageContent } from '@/components/calculators/pages/IVACalculatorPage';
+import { AutonomoVsEmpresaCalculatorPageContent } from '@/components/calculators/pages/AutonomoVsEmpresaCalculatorPage';
 import {
   generateCalculatorSchema,
   generateCalculatorFAQSchema,
@@ -15,9 +15,9 @@ import { BASE_URL } from '@/lib/constants';
 
 export const dynamic = 'force-static';
 
-// Only generate for English locale
+// Only generate for Spanish locale
 export async function generateStaticParams() {
-  return [{ locale: 'en' }];
+  return [{ locale: 'es' }];
 }
 
 export async function generateMetadata({
@@ -26,74 +26,73 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'calculators.iva' });
+  const t = await getTranslations({ locale, namespace: 'calculators.autonomoVsEmpresa' });
 
-  const esPath = '/es/herramientas/calculadoras/iva';
-  const enPath = '/en/tools/calculators/vat';
+  const esPath = '/es/herramientas/calculadoras/autonomo-vs-empresa';
+  const enPath = '/en/tools/calculators/freelancer-vs-company';
 
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    keywords: ['VAT calculator', 'Spanish VAT', 'IVA calculator', 'VAT rates Spain', '21% VAT', 'freelancer tools', 'invoice calculator', 'VAT calculation'],
     alternates: {
-      canonical: `${BASE_URL}${enPath}`,
+      canonical: `${BASE_URL}${esPath}`,
       languages: {
         es: `${BASE_URL}${esPath}`,
         en: `${BASE_URL}${enPath}`,
         'x-default': `${BASE_URL}${esPath}`,
       },
     },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
     openGraph: {
       type: 'website',
-      locale: 'en_US',
-      url: `${BASE_URL}${enPath}`,
+      locale: 'es_ES',
+      url: `${BASE_URL}${esPath}`,
       title: t('meta.title'),
       description: t('meta.description'),
       siteName: 'Invoo',
-      images: [{
-        url: `${BASE_URL}/calculators.webp`,
-        width: 1200,
-        height: 630,
-        alt: 'Invoo - Free Spanish Tax Calculators for Freelancers',
-      }],
+      images: [
+        {
+          url: `${BASE_URL}/calculators.webp`,
+          width: 1200,
+          height: 630,
+          alt: t('meta.title'),
+          type: 'image/webp',
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
-      site: '@invoo_es',
-      creator: '@invoo_es',
       title: t('meta.title'),
       description: t('meta.description'),
       images: [`${BASE_URL}/calculators.webp`],
+      creator: '@invoo_es',
+      site: '@invoo_es',
     },
+    keywords: [
+      'autónomo vs sociedad limitada',
+      'autónomo o SL',
+      'crear sociedad limitada',
+      'impuesto sociedades',
+      'IRPF vs IS',
+      'cuándo crear SL',
+    ],
   };
 }
 
-export default async function VATCalculatorPage({
+export default async function AutonomoVsEmpresaCalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
-  // Redirect Spanish users to the Spanish URL
-  if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/iva');
+  // Redirect English users to the English URL
+  if (locale === 'en') {
+    redirect('/en/tools/calculators/freelancer-vs-company');
   }
 
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: 'calculators.iva' });
+  const t = await getTranslations({ locale, namespace: 'calculators.autonomoVsEmpresa' });
 
   // FAQ data for schema
   const faqItems = [
@@ -110,12 +109,13 @@ export default async function VATCalculatorPage({
     locale,
     name: t('meta.title'),
     description: t('meta.description'),
-    slug: 'vat',
+    slug: 'autonomo-vs-empresa',
     features: [
-      'Real-time VAT calculation',
-      'All Spanish VAT rates',
-      'Calculate or extract VAT',
-      'Instant results',
+      'Comparación fiscal autónomo vs SL',
+      'Cálculo de IRPF y cuota autónomos',
+      'Impuesto de Sociedades (15% o 25%)',
+      'Punto de equilibrio estimado',
+      'Recomendación personalizada',
     ],
   });
 
@@ -124,7 +124,7 @@ export default async function VATCalculatorPage({
   const breadcrumbSchema = generateCalculatorBreadcrumbSchema({
     locale,
     calculatorName: t('meta.title'),
-    calculatorSlug: 'vat',
+    calculatorSlug: 'autonomo-vs-empresa',
   });
 
   const howToSchema = generateCalculatorHowToSchema({
@@ -135,6 +135,7 @@ export default async function VATCalculatorPage({
       { name: t('howTo.step1.title'), text: t('howTo.step1.description') },
       { name: t('howTo.step2.title'), text: t('howTo.step2.description') },
       { name: t('howTo.step3.title'), text: t('howTo.step3.description') },
+      { name: t('howTo.step4.title'), text: t('howTo.step4.description') },
     ],
   });
 
@@ -147,7 +148,7 @@ export default async function VATCalculatorPage({
 
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
-        <IVACalculatorPageContent />
+        <AutonomoVsEmpresaCalculatorPageContent />
         <Footer locale={locale} />
       </div>
     </>

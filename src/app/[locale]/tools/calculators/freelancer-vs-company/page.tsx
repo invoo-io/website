@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { JsonLd } from '@/components/JsonLd';
-import { IVACalculatorPageContent } from '@/components/calculators/pages/IVACalculatorPage';
+import { AutonomoVsEmpresaCalculatorPageContent } from '@/components/calculators/pages/AutonomoVsEmpresaCalculatorPage';
 import {
   generateCalculatorSchema,
   generateCalculatorFAQSchema,
@@ -26,15 +26,15 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'calculators.iva' });
+  const t = await getTranslations({ locale, namespace: 'calculators.autonomoVsEmpresa' });
 
-  const esPath = '/es/herramientas/calculadoras/iva';
-  const enPath = '/en/tools/calculators/vat';
+  const esPath = '/es/herramientas/calculadoras/autonomo-vs-empresa';
+  const enPath = '/en/tools/calculators/freelancer-vs-company';
 
   return {
     title: t('meta.title'),
     description: t('meta.description'),
-    keywords: ['VAT calculator', 'Spanish VAT', 'IVA calculator', 'VAT rates Spain', '21% VAT', 'freelancer tools', 'invoice calculator', 'VAT calculation'],
+    keywords: ['freelancer vs company', 'autonomo vs SL', 'limited company Spain', 'corporate tax Spain', 'business structure Spain', 'tax comparison calculator'],
     alternates: {
       canonical: `${BASE_URL}${enPath}`,
       languages: {
@@ -79,7 +79,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function VATCalculatorPage({
+export default async function FreelancerVsCompanyCalculatorPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -88,12 +88,12 @@ export default async function VATCalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/iva');
+    redirect('/es/herramientas/calculadoras/autonomo-vs-empresa');
   }
 
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: 'calculators.iva' });
+  const t = await getTranslations({ locale, namespace: 'calculators.autonomoVsEmpresa' });
 
   // FAQ data for schema
   const faqItems = [
@@ -110,12 +110,13 @@ export default async function VATCalculatorPage({
     locale,
     name: t('meta.title'),
     description: t('meta.description'),
-    slug: 'vat',
+    slug: 'freelancer-vs-company',
     features: [
-      'Real-time VAT calculation',
-      'All Spanish VAT rates',
-      'Calculate or extract VAT',
-      'Instant results',
+      'Tax comparison between freelancer and limited company',
+      'IRPF and self-employed quota calculation',
+      'Corporate tax (15% or 25%)',
+      'Estimated break-even point',
+      'Personalized recommendation',
     ],
   });
 
@@ -124,7 +125,7 @@ export default async function VATCalculatorPage({
   const breadcrumbSchema = generateCalculatorBreadcrumbSchema({
     locale,
     calculatorName: t('meta.title'),
-    calculatorSlug: 'vat',
+    calculatorSlug: 'freelancer-vs-company',
   });
 
   const howToSchema = generateCalculatorHowToSchema({
@@ -135,6 +136,7 @@ export default async function VATCalculatorPage({
       { name: t('howTo.step1.title'), text: t('howTo.step1.description') },
       { name: t('howTo.step2.title'), text: t('howTo.step2.description') },
       { name: t('howTo.step3.title'), text: t('howTo.step3.description') },
+      { name: t('howTo.step4.title'), text: t('howTo.step4.description') },
     ],
   });
 
@@ -147,7 +149,7 @@ export default async function VATCalculatorPage({
 
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
-        <IVACalculatorPageContent />
+        <AutonomoVsEmpresaCalculatorPageContent />
         <Footer locale={locale} />
       </div>
     </>

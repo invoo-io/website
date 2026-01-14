@@ -21,7 +21,7 @@ const staticPages = [
   "/freelancers",
   "/pymes",
   "/gestorias",
-  "/verifactu",
+  // Note: /verifactu was removed - page doesn't exist yet
 ];
 
 // Calculator pages with localized URLs
@@ -32,6 +32,10 @@ const calculatorPages = [
   { es: "/herramientas/calculadoras/irpf-autonomos", en: "/tools/calculators/income-tax-freelancer" },
   { es: "/herramientas/calculadoras/sueldo-neto-autonomo", en: "/tools/calculators/net-salary-freelancer" },
   { es: "/herramientas/calculadoras/precio-hora", en: "/tools/calculators/hourly-rate" },
+  { es: "/herramientas/calculadoras/modelo-303", en: "/tools/calculators/vat-return" },
+  { es: "/herramientas/calculadoras/modelo-130", en: "/tools/calculators/form-130" },
+  { es: "/herramientas/calculadoras/gastos-deducibles", en: "/tools/calculators/deductible-expenses" },
+  { es: "/herramientas/calculadoras/autonomo-vs-empresa", en: "/tools/calculators/freelancer-vs-company" },
 ];
 
 function getBlogArticles(): { slug: string; category: string; lastModified?: Date }[] {
@@ -114,6 +118,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     });
   }
+
+  // Calculator hub pages (both locales with localized URLs)
+  entries.push({
+    url: `${BASE_URL}/es/herramientas/calculadoras/`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.9,
+  });
+  entries.push({
+    url: `${BASE_URL}/en/tools/calculators/`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.9,
+  });
 
   // Calculator pages (both locales with localized URLs)
   for (const calc of calculatorPages) {
