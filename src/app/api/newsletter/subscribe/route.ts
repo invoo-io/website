@@ -99,7 +99,7 @@ function isDisposableEmail(email: string): boolean {
 const allowedOrigins = [
   "https://invoo.es",
   "https://www.invoo.es",
-  "http://localhost:4200",
+  "http://localhost:5200",
   "http://localhost:3000",
 ];
 

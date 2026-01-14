@@ -36,15 +36,6 @@ Comprehensive plan for building 10 SEO-optimized calculators to drive organic tr
 - **Secondary:** Convert calculator users to Invoo waiting list
 - **Tertiary:** Build topical authority in the autónomo/freelancer space
 
-### Target Metrics (12 months)
-
-| Metric | Target |
-|--------|--------|
-| Monthly organic visits | 35,000 |
-| Email capture rate | 8-12% |
-| Trial signup rate | 2-4% |
-| New customers/month | 40-120 |
-
 ### Key Differentiators
 
 1. **Verifactu-ready messaging** on all calculators

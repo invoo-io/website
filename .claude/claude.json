@@ -7,7 +7,7 @@
         "@executeautomation/playwright-mcp-server"
       ],
       "env": {
-        "DEFAULT_URL": "http://localhost:3000"
+        "DEFAULT_URL": "http://localhost:5200"
       }
     },
     "filesystem": {

@@ -17,7 +17,7 @@
 | 5 | [Facturación internacional desde España](#5-facturacion-internacional) | formación | May 2026 | NORMAL | Pending |
 | 6 | [Elegir tu base de cotización 2026](#6-base-de-cotizacion) | guías | Jan 2026 | NORMAL | ✅ Published |
 | 7 | [Cuota Cero autónomos 2026](#7-cuota-cero-autonomos) | guías | Feb 2026 | HIGH | Pending |
-| 8 | [Cuota autónomos por tramos 2026](#8-tramos-cuota-autonomos) | guías | Mar 2026 | HIGH | Pending |
+| 8 | [Cuota autónomos por tramos 2026](#8-tramos-cuota-autonomos) | guías | Jan 2026 | HIGH | ✅ Published |
 | 9 | [Cómo darse de alta como autónomo 2026](#9-alta-autonomo) | guías | Mar 2026 | MEDIUM | Pending |
 
 ---
@@ -235,9 +235,11 @@
 
 ---
 
-### 8. Tramos Cuota Autónomos 2026
+### 8. Tramos Cuota Autónomos 2026 ✅
 
 **File:** `content/blog/guias/tramos-cuota-autonomos-2026-tabla-completa.md`
+
+**Status:** Published January 2026
 
 **Target keyword:** `tramos autonomos 2026`, `tabla cuota autonomos`, `base cotizacion autonomos`
 

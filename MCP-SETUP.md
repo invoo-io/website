@@ -9,7 +9,7 @@ The MCP configuration is located in `.claude/claude.json` and includes:
 ### 1. Playwright Server
 - **Purpose**: Browser automation, screenshots, web testing
 - **Server**: `@executeautomation/playwright-mcp-server`
-- **Default URL**: http://localhost:3000
+- **Default URL**: http://localhost:5200
 
 ### 2. Filesystem Server  
 - **Purpose**: File access and manipulation
@@ -43,14 +43,14 @@ Once MCP is loaded, Claude can:
 
 ### Example Usage
 ```
-"Use playwright to navigate to http://localhost:3000/en/ and take a screenshot"
+"Use playwright to navigate to http://localhost:5200/en/ and take a screenshot"
 "Click on the Spanish language selector"
 "Fill in the contact form with test data"
 ```
 
 ## Testing Your Setup
 
-1. Ask Claude: "Can you use playwright to navigate to localhost:3000 and take a screenshot?"
+1. Ask Claude: "Can you use playwright to navigate to localhost:5200 and take a screenshot?"
 2. If MCP is working, Claude will:
    - Open a visible browser window
    - Navigate to your site
@@ -69,7 +69,7 @@ Once MCP is loaded, Claude can:
 2. Install browsers: `npx playwright install chromium`
 
 ### Connection errors?
-1. Check that localhost:3000 is accessible
+1. Check that localhost:5200 is accessible
 2. Verify no firewall is blocking the connection
 
 ## Benefits
