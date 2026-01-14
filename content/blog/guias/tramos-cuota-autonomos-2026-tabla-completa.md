@@ -10,7 +10,7 @@ editorPick: true
 coverImage: "/blog/tramos-cuota-autonomos-2026.webp"
 keyTakeaways:
   - "En 2026 existen 15 tramos de cotización: desde 200€/mes (ingresos hasta 670€/mes) hasta 590€/mes (más de 6.000€/mes de rendimientos netos)"
-  - "Los tres primeros tramos permanecen congelados respecto a 2025, protegiendo a los autónomos con menores ingresos"
+  - "Todos los tramos se mantienen congelados respecto a 2025 tras el Real Decreto-ley 16/2025"
   - "El MEI sube al 0,9% en 2026, añadiendo entre 6€ y 24€ mensuales dependiendo de tu tramo de cotización"
   - "Puedes cambiar de tramo hasta 6 veces al año para ajustarte a tus ingresos reales y evitar regularizaciones con recargos del 10-20%"
 faq:
@@ -36,7 +36,7 @@ Estás mirando tus ingresos del último trimestre y te preguntas: ¿estoy cotiza
 
 El sistema de cotización por tramos para autónomos está diseñado con un principio simple: que pagues según lo que realmente ganas, no según una cantidad fija arbitraria que tú eliges al darte de alta. Desde 2023, el modelo anterior de "elijo mi base y pago lo mismo todo el año" ha quedado atrás, sustituido por un sistema progresivo de 15 tramos basados en tus rendimientos netos mensuales. Esto significa que si ganas 1.200€ al mes de promedio, no deberías pagar la misma cuota que alguien que gana 3.000€ o que alguien que apenas llega a 600€. Parece lógico, ¿verdad? El problema es que la lógica y la burocracia española no siempre van de la mano.
 
-El Real Decreto-ley 16/2025 de 29 de diciembre prorrogó para 2026 las mismas cuotas que estaban vigentes en 2025, lo que supone una buena noticia tras las protestas masivas de autónomos en noviembre de 2025. Los tres primeros tramos (ingresos mensuales de hasta 1.166,70€) quedan completamente congelados, mientras que los tramos medios y altos experimentan incrementos muy moderados. Además, el Mecanismo de Equidad Intergeneracional (MEI) sube del 0,8% al 0,9%, añadiendo entre 6€ y 24€ adicionales al mes dependiendo de tu base de cotización. Este incremento del MEI es progresivo y continuará subiendo hasta alcanzar el 1,2% en 2029, como parte del plan para garantizar la sostenibilidad del sistema de pensiones.
+El Real Decreto-ley 16/2025 de 29 de diciembre prorrogó para 2026 las mismas cuotas que estaban vigentes en 2025, lo que supone una buena noticia tras las protestas masivas de autónomos en noviembre de 2025. Todos los 15 tramos quedan completamente congelados respecto a 2025, una victoria para las asociaciones de autónomos que rechazaron la propuesta inicial del Gobierno. Además, el Mecanismo de Equidad Intergeneracional (MEI) sube del 0,8% al 0,9%, añadiendo entre 6€ y 24€ adicionales al mes dependiendo de tu base de cotización. Este incremento del MEI es progresivo y continuará subiendo hasta alcanzar el 1,2% en 2029, como parte del plan para garantizar la sostenibilidad del sistema de pensiones.
 
 Lo que hace funcionar este sistema es el cruce de datos entre Hacienda y Seguridad Social. Cada año, la AEAT le pasa a la Tesorería General de la Seguridad Social tus rendimientos netos del ejercicio anterior, esos que declaras en tu modelo 100 (declaración de la renta) o que calculas en tus modelos 130 trimestrales si estás en estimación directa simplificada. Seguridad Social compara esos rendimientos con las bases por las que cotizaste durante el año, y si hay desajuste, te cobra o te devuelve la diferencia. Por eso es crucial entender no solo cuánto pagarás cada mes, sino cómo anticipar en qué tramo vas a caer al final del año para evitar sorpresas desagradables en forma de regularización con recargo. Si quieres entender todos los detalles del sistema de cuotas 2026, consulta nuestra [guía completa sobre las cuotas de autónomos 2026](/es/blog/guias/cuotas-autonomos-2026-guia-completa/).
 
@@ -63,9 +63,9 @@ Aquí está la tabla definitiva de los 15 tramos de cotización para 2026, con l
 - Con MEI 0,9%: ~267,64€/mes
 - Base de cotización: 900,01€ a 1.166,70€
 
-Si tus ingresos están por debajo de 1.166,70€ mensuales, tu cuota se mantiene exactamente igual que en 2025, salvo el pequeño incremento del MEI. Esta congelación fue una de las principales concesiones del Gobierno tras las manifestaciones de autónomos del 30 de noviembre de 2025.
+Todas las cuotas se mantienen exactamente igual que en 2025, salvo el pequeño incremento del MEI. Esta congelación total fue una victoria de las asociaciones de autónomos tras las manifestaciones del 30 de noviembre de 2025, que forzaron al Gobierno a abandonar su propuesta inicial de subidas.
 
-**Tramos medios (subidas moderadas de 3€ a 15€/mes):**
+**Tramos medios (congelados respecto a 2025):**
 
 **Tramo 4: De 1.166,70€ a 1.300€/mes**
 - Cuota base: 291€/mes
@@ -97,9 +97,9 @@ Si tus ingresos están por debajo de 1.166,70€ mensuales, tu cuota se mantiene
 - Con MEI 0,9%: ~329,41€/mes
 - Base de cotización: 2.030,01€ a 2.330€
 
-En estos tramos intermedios, las subidas son mínimas gracias a la rectificación del Gobierno. Estamos hablando de incrementos de entre 3€ y 15€ mensuales respecto a la propuesta inicial que planteaba subidas de hasta 50€ en algunos tramos.
+Estos tramos intermedios también quedan congelados respecto a 2025 gracias a la rectificación del Gobierno, que abandonó su propuesta inicial de subidas de hasta 50€ mensuales en algunos tramos.
 
-**Tramos altos (incrementos más significativos):**
+**Tramos altos (congelados respecto a 2025):**
 
 **Tramo 10: De 2.330€ a 2.760€/mes**
 - Cuota base: 340€/mes
