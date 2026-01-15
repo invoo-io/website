@@ -110,9 +110,20 @@ export default async function CalculadorasHubPage({
   ];
 
   const calculators = calculatorSlugs.map((slug) => {
-    const key = slug.replace(/-/g, '');
-    const camelCaseKey = key.replace(/autonomos/i, 'Autonomos').replace(/irpf/i, 'irpf');
-    const translationKey = camelCaseKey.charAt(0).toLowerCase() + camelCaseKey.slice(1);
+    // Map slugs to their translation keys
+    const slugToKeyMap: Record<string, string> = {
+      'iva': 'iva',
+      'cuota-autonomos': 'cuotaAutonomos',
+      'factura': 'factura',
+      'irpf-autonomos': 'irpfAutonomos',
+      'sueldo-neto-autonomo': 'sueldoNetoAutonomo',
+      'precio-hora': 'precioHora',
+      'modelo-303': 'modelo303',
+      'modelo-130': 'modelo130',
+      'gastos-deducibles': 'gastosDeducibles',
+      'autonomo-vs-empresa': 'autonomoVsEmpresa',
+    };
+    const translationKey = slugToKeyMap[slug] || slug.replace(/-/g, '');
 
     return {
       name: tCommon(`related.${translationKey}.name`),
