@@ -1,6 +1,6 @@
 # Invoo Blog Content Plan 2026
 
-> **Last updated:** 2026-01-08
+> **Last updated:** 2026-01-15
 > **Status:** Active
 > **Research:** Market intelligence validated (Dec 2025)
 
@@ -11,12 +11,12 @@
 | # | Article | Category | Target | Priority | Status |
 |---|---------|----------|--------|----------|--------|
 | 1 | [Invoo vs Holded: Comparativa 2026](#1-invoo-vs-holded) | comparaciones | Jan 2026 | HIGH | ✅ Published |
-| 2 | [Invoo vs Quipu: Cuál elegir](#2-invoo-vs-quipu) | comparaciones | Feb 2026 | HIGH | Pending |
+| 2 | [Invoo vs Quipu: Cuál elegir](#2-invoo-vs-quipu) | comparaciones | Feb 2026 | HIGH | ✅ Published |
 | 3 | [Cómo emitir una factura rectificativa](#3-factura-rectificativa) | guías | Jan 2026 | MEDIUM | ✅ Published |
 | 4 | [Cómo cobrar facturas impagadas](#4-facturas-impagadas) | guías | Dec 2025 | MEDIUM | ✅ Published |
 | 5 | [Facturación internacional desde España](#5-facturacion-internacional) | formación | May 2026 | NORMAL | Pending |
 | 6 | [Elegir tu base de cotización 2026](#6-base-de-cotizacion) | guías | Jan 2026 | NORMAL | ✅ Published |
-| 7 | [Cuota Cero autónomos 2026](#7-cuota-cero-autonomos) | guías | Feb 2026 | HIGH | Pending |
+| 7 | [Cuota Cero autónomos 2026](#7-cuota-cero-autonomos) | guías | Feb 2026 | HIGH | ✅ Published |
 | 8 | [Cuota autónomos por tramos 2026](#8-tramos-cuota-autonomos) | guías | Jan 2026 | HIGH | ✅ Published |
 | 9 | [Cómo darse de alta como autónomo 2026](#9-alta-autonomo) | guías | Mar 2026 | MEDIUM | Pending |
 
@@ -190,9 +190,11 @@
 
 ---
 
-### 7. Cuota Cero Autónomos 2026
+### 7. Cuota Cero Autónomos 2026 ✅
 
 **File:** `content/blog/guias/cuota-cero-autonomos-2026-comunidades-requisitos.md`
+
+**Status:** Published January 2026
 
 **Target keyword:** `cuota cero autonomos`, `cuota cero madrid`, `cuota cero andalucia`
 
