@@ -5,7 +5,7 @@ publishedAt: "2026-01-15"
 author: "Equipo Invoo"
 tags: ["comparaciones", "quipu", "software-facturacion", "autonomos", "verifactu"]
 readingTime: 10
-featured: false
+featured: true
 editorPick: false
 coverImage: "/blog/invoo-vs-quipu-comparativa.webp"
 keyTakeaways:
