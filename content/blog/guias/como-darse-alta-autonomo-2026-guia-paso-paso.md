@@ -7,7 +7,7 @@ tags: ["alta autonomo", "modelo 036", "reta", "tarifa plana", "seguridad social"
 readingTime: 12
 featured: false
 editorPick: true
-coverImage: "/blog/tarifa-plana.webp"
+coverImage: "/blog/alta-autonomo-2026.webp"
 keyTakeaways:
   - "El Modelo 037 ya no existe desde febrero 2025: todos los autónomos deben usar el Modelo 036 para darse de alta en Hacienda"
   - "Debes completar DOS altas distintas: primero Hacienda (036) y después Seguridad Social (TA.0521), siempre en ese orden y con la misma fecha"
