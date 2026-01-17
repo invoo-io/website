@@ -225,7 +225,6 @@ Workflow guides in `.claude/guides/`:
 |-------|---------|
 | [article-creation.md](.claude/guides/article-creation.md) | Blog article workflow |
 | [social-post-creation.md](.claude/guides/social-post-creation.md) | Social media posts |
-| [calculator-implementation-plan.md](.claude/guides/calculator-implementation-plan.md) | Calculator feature specs |
 
 ---
 

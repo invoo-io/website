@@ -16,6 +16,28 @@
 | "Regístrate ahora" | "Apúntate a la lista" |
 | "Empieza hoy" | "Reserva tu plaza" |
 
+### CTA Formulas with FOMO
+
+Use these patterns to increase conversion:
+
+**Social proof:**
+- "Más de 300 autónomos ya están en la lista"
+- "Únete a los 150+ que ya reservaron su plaza"
+
+**Urgency/Scarcity:**
+- "Los primeros 100 usuarios: €10.90/mes para siempre"
+- "Plazas limitadas para early adopters"
+
+**Founder pricing:**
+- "Precio fundador: €10.90/mes (después sube)"
+- "Early adopters: 50% de descuento de por vida"
+
+**Example CTA block:**
+```
+🔗 Únete a la lista → invoo.es
+   (312 autónomos ya se apuntaron)
+```
+
 ---
 
 ## Quick Reference
@@ -65,7 +87,7 @@ Based on our proven format, every post should follow this structure:
 | **Directo** | Get to the point, no fluff | "Dos preguntas que todo autónomo se hace:" |
 | **Útil** | Lead with value, not features | Show what they GET, not what you SELL |
 | **Cercano** | "Tú" form, conversational | "¿Qué calculadora te gustaría?" not "¿Qué les gustaría?" |
-| **Confiado** | Assertive without arrogance | "Acabamos de lanzar" not "Humildemente presentamos" |
+| **Empático** | Acknowledge autónomo struggles | "¿Cansado de perder horas con la facturación?" |
 | **Específico** | Numbers and concrete claims | "€10.90/mes" not "precio accesible" |
 
 ### Spanish Language Rules

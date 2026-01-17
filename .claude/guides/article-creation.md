@@ -47,31 +47,28 @@ Before writing any article:
 
 > **READ THIS FIRST.** These rules prevent the most common content mistakes.
 
-### Paragraph Structure (THE #1 MISTAKE)
+### Paragraph Structure
 
-**The #1 mistake is "blocky" content. Avoid fragmented paragraphs.**
+**Web readers scan, not read. Keep paragraphs short and focused.**
 
-❌ **BAD - Fragmented:**
+❌ **BAD - Too dense (4-6+ sentences):**
 ```markdown
-Verifactu es obligatorio desde 2025.
-
-Todas las empresas deben cumplirlo.
-
-El incumplimiento tiene multas.
-
-Las multas pueden llegar a €10,000.
+Verifactu es obligatorio desde 2025 para todas las empresas que emitan facturas en España. Esta normativa afecta a autónomos, pymes y grandes empresas por igual. Si no lo cumples, las multas pueden llegar hasta €10,000 dependiendo de la gravedad del incumplimiento. La buena noticia es que entender qué necesitas hacer es más simple de lo que parece. En este artículo te vamos a explicar exactamente cómo prepararte sin complicaciones y sin gastar más de lo necesario.
 ```
 
-✅ **GOOD - Flowing:**
+✅ **GOOD - Scannable (2-4 sentences):**
 ```markdown
-Verifactu es obligatorio desde 2025 para todas las empresas que emitan facturas en España. Si no lo cumples, las multas pueden llegar hasta €10,000 dependiendo de la gravedad del incumplimiento. Pero no te asustes: entender qué necesitas hacer es más simple de lo que parece, y en este artículo te vamos a explicar exactamente cómo prepararte sin complicaciones.
+Verifactu es obligatorio desde 2025 para todas las empresas que emitan facturas en España. Si no lo cumples, **las multas pueden llegar hasta €10,000**.
+
+Pero no te asustes. En este artículo te explicamos exactamente cómo prepararte sin complicaciones.
 ```
 
 **Rules:**
-- Paragraphs should have 4-6 sentences (not 1-2)
-- Ideas flow naturally with transitions (pero, sin embargo, además, por eso)
-- 70% long paragraphs, 30% short for emphasis
-- Lists surrounded by narrative context, not replacing it
+- **2-4 sentences per paragraph** (40-70 words max)
+- **One idea per paragraph** — if you switch topics, start a new paragraph
+- **Bold key phrases** so skimmers catch the important points
+- Use transitions between paragraphs (pero, sin embargo, además, por eso)
+- Lists break up dense information — don't avoid them
 
 ### Voice & Tone
 
@@ -91,19 +88,62 @@ Verifactu es obligatorio desde 2025 para todas las empresas que emitan facturas 
 - ✅ Common terms: factura, autónomo, IVA, IRPF, Hacienda, gestoría
 - ❌ Avoid overly formal or bureaucratic tone
 
+### Scannability Requirements
+
+**79% of users scan rather than read.** Make your content skimmable:
+
+1. **TL;DR at top** (required for articles 2000+ words)
+   ```markdown
+   > **En resumen:** [2-3 sentences with the key takeaway and action]
+   ```
+
+   **Example:**
+   > **En resumen:** Verifactu obliga a todos los autónomos que usen software de facturación a generar un código QR en cada factura desde julio 2026. **La multa por incumplimiento es de hasta 50.000€**. En esta guía te explicamos los pasos exactos para cumplir sin complicaciones.
+
+2. **Bold key phrases** in every section
+   - A skimmer reading only bold text should understand the main points
+   - Bold the **3-6 most important words** that convey the key takeaway
+
+   **Examples:**
+   ```markdown
+   ✅ GOOD: "Si no lo cumples, **las multas pueden llegar hasta €10,000**."
+   ✅ GOOD: "El alta en Hacienda debe hacerse **antes de iniciar tu actividad**."
+
+   ❌ BAD (too much): "**Si no lo cumples, las multas pueden llegar hasta €10,000.**"
+   ❌ BAD (nothing): "Si no lo cumples, las multas pueden llegar hasta 10000 euros."
+   ```
+
+3. **Headers every 200-400 words**
+   - H2 for main sections
+   - H3 for subsections
+   - Headers should make sense as a standalone outline
+
+4. **Visual breaks**
+   - Bullet lists for 3+ related items
+   - Blockquotes for key insights
+   - `---` dividers between major sections
+
+5. **Sentence length**
+   - Target: 15-20 words per sentence
+   - Max: 25 words (break longer sentences)
+   - Short sentences (8-12 words) for emphasis and CTAs
+
 ---
 
-## 3. Categories
+## 3. Categories & Word Counts
 
 | Slug | Name | Purpose | Word Count |
 |------|------|---------|------------|
-| `guias` | Guías | Step-by-step how-to guides | 1200-2000 |
-| `analisis` | Análisis | Data-driven industry analysis | 1000-1500 |
-| `comparaciones` | Comparaciones | Product/tool comparisons | 800-1200 |
-| `consejos` | Consejos | Practical tips and advice | 600-1000 |
-| `formacion` | Formación | Educational/learning content | 1200-1800 |
-| `casos-de-exito` | Casos de Éxito | Customer success stories | 600-800 |
-| `invoo` | Invoo | Product updates and news | 800-1200 |
+| `guias` | Guías | Step-by-step how-to guides | **2000-3500** |
+| `guias` | Guías (comprehensive) | Definitive guides on complex topics | **3500-5500** |
+| `analisis` | Análisis | Data-driven industry analysis | **2000-3000** |
+| `comparaciones` | Comparaciones | Product/tool comparisons | **2500-4000** |
+| `consejos` | Consejos | Practical tips and advice | **1500-2500** |
+| `formacion` | Formación | Educational/learning content | **2000-3500** |
+| `casos-de-exito` | Casos de Éxito | Customer success stories | **1500-2500** |
+| `invoo` | Invoo | Product updates and news | **1200-1800** |
+
+> **Why these ranges?** Research shows 2,000-4,000 words is the SEO sweet spot for B2B content. Shorter articles lack depth; longer articles (5,500+) risk losing readers. Never exceed 5,500 words without splitting into multiple articles.
 
 ---
 
@@ -141,7 +181,28 @@ keyTakeaways:
 - `tags` - 3-5 relevant keywords in lowercase
 - `readingTime` - Calculate at ~200 words/minute
 - `coverImage` - Path to WebP image in `/public/blog/`
-- `keyTakeaways` - Exactly 4 bullet points
+- `keyTakeaways` - Exactly 4 bullet points (see formula below)
+
+### keyTakeaways Formula
+
+Each takeaway should:
+- Start with WHAT the reader learns (not "Aprenderás que...")
+- Include a **specific number, date, or fact**
+- Be 15-25 words long
+- Be actionable or surprising
+
+**Examples:**
+```yaml
+✅ GOOD:
+- "La multa por usar software no conforme es de 50.000€ fijos por ejercicio fiscal"
+- "El Modelo 037 ya no existe desde febrero 2025: todos deben usar el 036"
+- "Si olvidas marcar la casilla de Tarifa Plana, la pierdes para siempre"
+
+❌ BAD:
+- "Conocerás las multas de Verifactu"
+- "Aprenderás sobre el modelo 036"
+- "Información importante sobre la Tarifa Plana"
+```
 
 **🟢 Optional:**
 - `updatedAt` - When article was last updated
@@ -159,13 +220,16 @@ keyTakeaways:
 [Frontmatter YAML]
 ---
 
-[Opening hook - 1-2 paragraphs that establish the problem and connect emotionally]
+> **En resumen:** [TL;DR - 2-3 sentences summarizing the key takeaway and what action to take. Required for articles 2000+ words.]
+
+[Opening hook - 1-2 short paragraphs that establish the problem and connect emotionally]
 
 ---
 
 ## Primera Sección Principal (H2)
 
-Contenido desarrollado con párrafos completos (4-6 oraciones cada uno).
+Contenido con párrafos cortos (2-4 oraciones). **Frases clave en negrita** para skimmers. Una idea por párrafo.
+
 Las ideas fluyen naturalmente entre párrafos con transiciones.
 
 ### Subsección si es necesario (H3)
@@ -303,10 +367,25 @@ Horizontal rule (section dividers)
 - Prioritize terms with search volume
 - Effective tags: `facturación`, `verifactu`, `autónomos`, `iva`, `aeat`, `gestorías`, `pymes`
 
-### Internal Links
-- Link to 2-3 related articles minimum
-- Use descriptive anchor text (not "haz clic aquí")
-- Link to product pages where genuinely relevant
+### Internal Links (2-3 minimum per article)
+
+**How to find articles to link:**
+```bash
+# Search for related articles by keyword
+grep -r "verifactu" content/blog/ --files-with-matches
+grep -r "autónomo" content/blog/ --files-with-matches
+```
+
+**Where to place links:**
+- First mention of a key concept (if we have an article explaining it)
+- Natural context: "Si quieres saber más sobre [cómo calcular tu cuota](/es/blog/guias/cuotas-autonomos-2026), lee nuestra guía"
+- NOT in CTAs or conclusions (keep those focused on Invoo)
+
+**Anchor text examples:**
+- ✅ "Descubre [cómo funciona la retención de IRPF](/es/blog/guias/retencion-irpf)"
+- ✅ "consulta nuestra [guía completa de Verifactu](/es/blog/guias/verifactu-2025-2026)"
+- ❌ "haz clic [aquí](link)"
+- ❌ "lee [este artículo](link)"
 
 ### Headers
 - One H1 per article (matches title)
@@ -341,29 +420,53 @@ coverImage: "/blog/verifactu-guide.webp"
 ## 9. Article Templates by Category
 
 ### Guías (How-To Guide)
+
+**Target: 2000-3500 words** (or 3500-5500 for comprehensive guides)
+
 ```markdown
 # Cómo [lograr objetivo] en [año/contexto]
 
-[Hook: Por qué esto importa al autónomo - 1-2 párrafos]
+> **En resumen:** [TL;DR en 2-3 oraciones con la acción clave.]
+
+[Hook: 2-4 oraciones estableciendo el problema. **Bold key pain point**.]
+
+[Segunda oración del hook: 2-4 oraciones con conexión emocional o dato impactante.]
 
 ---
 
 ## Qué necesitas antes de empezar
-- Requisito 1
-- Requisito 2
+
+[Párrafo intro: 2-4 oraciones explicando el contexto.]
+
+**Requisitos básicos:**
+- Requisito 1 con explicación breve
+- Requisito 2 con explicación breve
 
 ## Paso 1: [Acción específica]
-[Explicación detallada con contexto...]
+
+[Primer párrafo: 2-4 oraciones explicando QUÉ hacer. **Bold key action**.]
+
+[Segundo párrafo: 2-4 oraciones explicando CÓMO hacerlo con detalles.]
+
+> 💡 **Consejo:** [Insight importante en blockquote]
 
 ## Paso 2: [Siguiente acción]
-[Explicación detallada...]
+
+[Mismo patrón: párrafos de 2-4 oraciones, bold en frases clave, visual breaks.]
 
 ## Errores comunes a evitar
-- Error 1 y cómo solucionarlo
-- Error 2 y cómo solucionarlo
+
+**Error 1: [Nombre del error]**
+[2-4 oraciones sobre el error y su solución.]
+
+**Error 2: [Nombre del error]**
+[2-4 oraciones sobre el error y su solución.]
 
 ## Conclusión
-[Resumen y siguiente paso recomendado]
+
+[Resumen del valor en 2-4 oraciones.]
+
+[Siguiente paso recomendado en 1-2 oraciones.]
 
 ---
 [CTA a Invoo]
@@ -372,38 +475,45 @@ coverImage: "/blog/verifactu-guide.webp"
 ```
 
 ### Análisis (Industry Analysis)
+
+**Target: 2000-3000 words**
+
 ```markdown
 # [Tema]: Análisis del sector en [año]
 
-[Hook: Por qué este análisis importa ahora - contexto de mercado]
+> **En resumen:** [TL;DR con el hallazgo principal y qué hacer al respecto.]
+
+[Hook: 2-4 oraciones sobre por qué este análisis importa ahora. **Bold key insight**.]
 
 ---
 
 ## Situación actual
 
-[Datos y contexto del mercado español - párrafos desarrollados]
+[Párrafo 1: 2-4 oraciones con contexto del mercado español.]
+
+[Párrafo 2: 2-4 oraciones con datos concretos. **Bold key statistic**.]
 
 ## Tendencias clave
 
 ### 1. [Primera tendencia]
-[Análisis con datos, impacto para autónomos/pymes]
+
+[2-4 oraciones con análisis. **Bold key implication**.]
+
+[2-4 oraciones sobre impacto para autónomos/pymes.]
 
 ### 2. [Segunda tendencia]
-[Análisis con datos, impacto para autónomos/pymes]
 
-### 3. [Tercera tendencia]
-[Análisis con datos, impacto para autónomos/pymes]
+[Mismo patrón: párrafos cortos, bold en insights clave.]
 
 ## Qué significa esto para tu negocio
 
-[Implicaciones prácticas, acciones recomendadas]
+[2-4 oraciones con implicaciones prácticas.]
 
-## Previsiones para [próximo período]
-
-[Proyecciones fundamentadas]
+[2-4 oraciones con acciones recomendadas.]
 
 ## Conclusión
-[Síntesis y recomendación principal]
+
+[Síntesis en 2-4 oraciones con recomendación principal.]
 
 ---
 [CTA a Invoo]
@@ -412,10 +522,15 @@ coverImage: "/blog/verifactu-guide.webp"
 ```
 
 ### Comparaciones (Comparison)
+
+**Target: 2500-4000 words**
+
 ```markdown
 # [Producto A] vs [Producto B]: Comparativa [año]
 
-[Por qué comparar estas opciones - 1-2 párrafos]
+> **En resumen:** [Producto A] es mejor para [perfil]. [Producto B] gana en [aspecto]. **Nuestra elección: [recomendación]**.
+
+[Hook: 2-4 oraciones sobre por qué esta comparación importa. **Bold key differentiator**.]
 
 ---
 
@@ -434,16 +549,26 @@ coverImage: "/blog/verifactu-guide.webp"
 ## [Producto A]: Análisis detallado
 
 ### Pros
-[Desarrollado en párrafos, no solo lista]
+
+[2-4 oraciones sobre ventaja principal. **Bold key benefit**.]
+
+[2-4 oraciones sobre segunda ventaja.]
 
 ### Contras
-[Desarrollado en párrafos]
+
+[2-4 oraciones sobre limitación. Ser honesto pero justo.]
 
 ## [Producto B]: Análisis detallado
-[Misma estructura]
+
+[Misma estructura: párrafos cortos, bold en puntos clave.]
 
 ## Nuestra recomendación
-[Análisis objetivo de cuándo elegir cada uno]
+
+[2-4 oraciones con análisis objetivo.]
+
+**Elige [Producto A] si:** [criterios en 1-2 oraciones]
+
+**Elige [Producto B] si:** [criterios en 1-2 oraciones]
 
 ---
 [CTA]
@@ -452,25 +577,37 @@ coverImage: "/blog/verifactu-guide.webp"
 ```
 
 ### Consejos (Tips Article)
+
+**Target: 1500-2500 words**
+
 ```markdown
 # [Número] [elementos] para [objetivo]
 
-[Hook conectando con el dolor del autónomo - 2-3 párrafos con historia]
+> **En resumen:** [Los X consejos más importantes en una frase.]
+
+[Hook: 2-4 oraciones con historia personal o situación relatable. **Bold key emotion**.]
+
+[Segunda parte del hook: 2-4 oraciones con promesa de valor.]
 
 ---
 
 ## 1. [Primer consejo]
-[Párrafos desarrollados con contexto, ejemplo, y acción]
+
+[2-4 oraciones explicando el consejo. **Bold key action**.]
+
+[2-4 oraciones con ejemplo concreto o caso.]
 
 ## 2. [Segundo consejo]
-[Mismo patrón]
+
+[Mismo patrón: explicación + ejemplo, párrafos cortos.]
 
 [...]
 
 ## Tu checklist para empezar
-- [ ] Acción 1
-- [ ] Acción 2
-- [ ] Acción 3
+
+- [ ] Acción 1 con detalle específico
+- [ ] Acción 2 con detalle específico
+- [ ] Acción 3 con detalle específico
 
 ---
 [CTA]
@@ -479,34 +616,45 @@ coverImage: "/blog/verifactu-guide.webp"
 ```
 
 ### Casos de Éxito (Success Stories)
+
+**Target: 1500-2500 words**
+
 ```markdown
 # Cómo [nombre/tipo de cliente] [logró resultado específico]
 
-[Hook: El desafío inicial - situación relatable para el lector]
+> **En resumen:** [Resultado principal en una frase con número concreto.]
+
+[Hook: 2-4 oraciones con el desafío inicial. **Bold key challenge**.]
 
 ---
 
 ## El reto
 
-[Describir la situación inicial, los problemas concretos que enfrentaba el cliente. Usar detalles específicos que resuenen con otros autónomos/pymes.]
+[2-4 oraciones sobre la situación inicial.]
+
+[2-4 oraciones sobre los problemas concretos. **Bold key pain point**.]
 
 ## La solución
 
-[Cómo descubrió Invoo, qué le convenció, proceso de implementación. Mantener tono auténtico, no publicitario.]
+[2-4 oraciones sobre cómo descubrió Invoo. Tono auténtico.]
+
+[2-4 oraciones sobre el proceso de implementación.]
 
 ## Los resultados
 
 **En números:**
-- [Métrica 1]: [resultado cuantificable]
-- [Métrica 2]: [resultado cuantificable]
-- [Métrica 3]: [resultado cuantificable]
+- [Métrica 1]: **[resultado cuantificable]**
+- [Métrica 2]: **[resultado cuantificable]**
+- [Métrica 3]: **[resultado cuantificable]**
 
 **En sus palabras:**
 > "[Cita directa del cliente sobre su experiencia]"
 
 ## Lecciones para tu negocio
 
-[2-3 takeaways aplicables para el lector, basados en esta historia]
+[2-4 oraciones con primer takeaway aplicable.]
+
+[2-4 oraciones con segundo takeaway.]
 
 ---
 [CTA suave - "¿Te identificas con esta historia?"]
@@ -514,38 +662,53 @@ coverImage: "/blog/verifactu-guide.webp"
 ```
 
 ### Formación (Educational Content)
+
+**Target: 2000-3500 words**
+
 ```markdown
 # Qué es [concepto] y cómo afecta a los autónomos
 
-[Hook: Por qué necesitas entender esto ahora]
+> **En resumen:** [Definición en una frase + implicación principal.]
+
+[Hook: 2-4 oraciones sobre por qué esto importa ahora. **Bold key deadline or impact**.]
 
 ---
 
 ## Definición simple
 
-[Explicación accesible del concepto, sin jerga innecesaria]
+[2-4 oraciones con explicación accesible. **Bold key term**.]
+
+[2-4 oraciones con ejemplo práctico.]
 
 ## Contexto legal/normativo
 
-[Marco regulatorio en España, fechas importantes, quién debe cumplirlo]
+[2-4 oraciones sobre el marco regulatorio en España.]
+
+[2-4 oraciones sobre fechas importantes y quién debe cumplirlo. **Bold key dates**.]
 
 ## Cómo funciona en la práctica
 
-[Desglose paso a paso del proceso o mecanismo]
+[2-4 oraciones con visión general del proceso.]
 
 ### [Aspecto técnico 1]
-[Explicación detallada]
+
+[2-4 oraciones con explicación. **Bold key concept**.]
 
 ### [Aspecto técnico 2]
-[Explicación detallada]
+
+[2-4 oraciones con explicación.]
 
 ## Errores comunes y cómo evitarlos
 
-[Lista de errores frecuentes con soluciones]
+**Error 1: [Nombre]**
+[2-4 oraciones con error y solución.]
+
+**Error 2: [Nombre]**
+[2-4 oraciones con error y solución.]
 
 ## Próximos pasos
 
-[Acciones concretas que el lector puede tomar]
+[2-4 oraciones con acciones concretas ordenadas por prioridad.]
 
 ---
 [CTA]
@@ -561,26 +724,31 @@ coverImage: "/blog/verifactu-guide.webp"
 - [ ] `title` present and SEO-optimized (50-60 chars)
 - [ ] `excerpt` compelling with keyword (150-160 chars)
 - [ ] `publishedAt` in ISO format
-- [ ] Paragraphs are 4-6 sentences (not fragmented)
+- [ ] **Paragraphs are 2-4 sentences** (40-70 words max)
+- [ ] **Key phrases bolded** in each section
 - [ ] "Tú" form used consistently (Spain Spanish)
 - [ ] File in correct category folder
 - [ ] Filename is `slug-kebab-case.md`
+- [ ] Word count within category range (see Section 3)
 
 ### 🟡 Strongly Recommended
+- [ ] **TL;DR at top** (required for 2000+ word articles)
 - [ ] `author` set to "Equipo Invoo"
 - [ ] `tags` with 3-5 relevant keywords
 - [ ] `readingTime` calculated (~200 words/min)
 - [ ] `coverImage` path correct and file exists
 - [ ] `keyTakeaways` with exactly 4 points
-- [ ] Opening hook engages and establishes value
+- [ ] Opening hook engages (1-2 short paragraphs)
 - [ ] Internal links to 2-3 related articles
 - [ ] CTA at the end (not forced throughout)
 - [ ] Keyword in title (near start)
 - [ ] Alt text on all images
+- [ ] **Headers every 200-400 words**
 
 ### 🟢 Quality Polish
-- [ ] Ideas flow with transitions between paragraphs
-- [ ] Lists surrounded by narrative context
+- [ ] Sentences average 15-20 words (max 25)
+- [ ] One idea per paragraph
+- [ ] Transitions between paragraphs (pero, además, por eso)
 - [ ] At least one concrete example or story
 - [ ] Secondary keywords in H2s
 - [ ] Descriptive anchor text for links
@@ -649,7 +817,7 @@ See these published articles as quality references:
 
 | Mistake | Solution |
 |---------|----------|
-| Fragmented paragraphs (1-2 sentences) | Write 4-6 sentence paragraphs with flow |
+| Too long paragraphs (5+ sentences) | Write 2-4 sentence paragraphs, one idea each |
 | Using tables | Convert to structured lists with bold labels |
 | Generic content | Add specific examples, data, stories |
 | Missing internal links | Link to 2-3 related articles |
