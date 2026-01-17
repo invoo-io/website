@@ -18,7 +18,7 @@
 | 6 | [Elegir tu base de cotización 2026](#6-base-de-cotizacion) | guías | Jan 2026 | NORMAL | ✅ Published |
 | 7 | [Cuota Cero autónomos 2026](#7-cuota-cero-autonomos) | guías | Feb 2026 | HIGH | ✅ Published |
 | 8 | [Cuota autónomos por tramos 2026](#8-tramos-cuota-autonomos) | guías | Jan 2026 | HIGH | ✅ Published |
-| 9 | [Cómo darse de alta como autónomo 2026](#9-alta-autonomo) | guías | Mar 2026 | MEDIUM | Pending |
+| 9 | [Cómo darse de alta como autónomo 2026](#9-alta-autonomo) | guías | Mar 2026 | MEDIUM | ✅ Published |
 
 ---
 
