@@ -1,120 +1,277 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## What is Invoo?
 
-## Project Overview
+Invoicing software for Spanish freelancers, small businesses, and accounting firms.
 
-This is a Next.js 15 landing page with internationalization support (English and Spanish) built with TypeScript, Tailwind CSS, and deployed as a static site. The project uses the App Router architecture and includes integration with Radix UI components and Framer Motion for animations.
+**Two business models:**
 
-## Development Commands
+| Audience | Offer | Model |
+|----------|-------|-------|
+| Autónomos & Pymes | Invoicing + free gestoría dashboard | B2C SaaS |
+| Gestorías | Enterprise platform (white-label, API, multi-client) | B2B SaaS |
 
-```bash
-# Development server with Turbopack
-npm run dev
+**Positioning**: Simple, fast, stress-free invoicing—with your gestoría already connected.
 
-# Production build
-npm run build
-
-# Start production server
-npm run start
-
-# Run linting
-npm run lint
-
-# Run Playwright tests
-npm run test
-
-# Run Playwright tests with UI
-npm run test:ui
-
-# Show Playwright test report
-npm run playwright:show
-```
-
-## Architecture & Structure
-
-### Routing and Internationalization
-- Uses Next.js App Router with dynamic `[locale]` segments for i18n
-- Supported locales: `en` and `es` (configured in `src/i18n.ts`)
-- Translation files located in `messages/` directory
-- Pages structure: `src/app/[locale]/[page]/page.tsx`
-- Static export configuration with trailing slashes enabled
-
-### Component Architecture
-- UI components in `src/components/ui/` following a design system pattern
-- Button component has specific variants: primary, secondary, outline, and gradient (fixed dimensions: 193×47px)
-- Utility functions like `cn()` for className merging using clsx and tailwind-merge
-- Component imports use the `@/` alias for src directory
-
-### Key Configuration
-- TypeScript strict mode enabled with bundler module resolution
-- ESLint configured for Next.js and TypeScript
-- Tailwind CSS v4 with PostCSS
-- Static site generation with `output: "export"` in next.config.ts
-- Asset prefix configured for GitHub Pages deployment when in production
-
-### Testing
-- Playwright configured for E2E testing
-- Test directory: `./tests`
-- Base URL: `http://localhost:5200`
-- Runs dev server automatically during tests
-
-### Styling Conventions
-- Tailwind CSS for styling with custom animations via tw-animate-css
-- Gradient buttons use inline styles with specific linear gradient patterns
-- Consistent rounded corners: `rounded-full` for standard buttons, `rounded-[12px]` for gradient buttons
+**Differentiators**:
+- Invoicing only (no CRM, no bloat—just simple, effective invoice generation)
+- Fast, distraction-free UX
+- Real-time gestoría collaboration included in price
+- Verifactu + TicketBAI compliant
+- Clear pricing (no surprises)
+- Discount module built-in
 
 ---
 
-## Local Agents
+## This Repository
 
-This project uses specialized agents defined in `.claude/agents/`. These agents are automatically available and should be deployed proactively.
+Marketing website for SEO, LLM visibility, and user acquisition. The app is a separate repo.
 
-### Available Agents
+**Content focus**: Educational Verifactu guides, competitor comparisons, autónomo pain points.
 
-| Agent | Purpose | Deploy When |
-|-------|---------|-------------|
-| `product-manager` | Linear specs, feature requirements | Feature specs needed, Linear issues/projects |
-| `compliance-regulator` | Spanish tax/legal (AEAT, Verifactu) | Invoicing, payments, regulatory questions |
-| `content-writer` | Blog articles, SEO content | Writing blog posts, guides, comparisons |
-| `nextjs-architect` | Architecture, patterns, refactoring | Architectural decisions, structural changes |
-| `nextjs-developer` | Feature implementation | Building components, pages, features |
-| `code-reviewer` | Quality, security, accessibility | Code reviews, pre-merge checks |
-| `seo-specialist` | Technical SEO, keyword strategy | SEO audits, metadata, structured data |
-| `market-intelligence` | Competitive analysis, user sentiment | Market research, competitor analysis |
-| `design-leader` | UX strategy, design systems, a11y | Design decisions, critiques, stakeholder alignment |
+**Main competitors** (for comparison content): Holded, Quipu, Billin, Contasimple, Anfix, Factorial.
 
-### Deployment Rules
+**Voice**: Spain Spanish (tuteo). Empathetic, specific, no fluff.
 
-**Always delegate:**
-- Specs/Linear work → `product-manager`
-- Spanish compliance/regulations → `compliance-regulator`
-- Blog articles/content → `content-writer`
-- Architecture decisions → `nextjs-architect`
-- Feature implementation → `nextjs-developer`
-- Code reviews → `code-reviewer`
-- Technical SEO → `seo-specialist`
-- Market/competitor research → `market-intelligence`
-- UX/design decisions → `design-leader`
+---
 
-**Proactive triggers:**
-- Shipping invoice/payment features → `compliance-regulator`
-- Blog content needed → `content-writer`
-- Significant code changes → `nextjs-architect`
-- Before merging PRs → `code-reviewer`
-- Competitor mentioned → `market-intelligence`
-- Design inconsistencies → `design-leader`
+## Tech Stack
 
-Run agents in parallel when tasks are independent.
+- **Framework**: Next.js 15 (App Router, static export)
+- **Language**: TypeScript (strict mode)
+- **Styling**: Tailwind CSS v4
+- **UI**: Radix UI primitives, Framer Motion
+- **i18n**: next-intl (Spanish + English)
+- **Testing**: Playwright (E2E), Vitest (unit)
+- **Deployment**: GitHub Pages
+
+---
+
+## Commands
+
+```bash
+npm run dev               # Dev server on localhost:5200 (Turbopack)
+npm run build             # Production build
+npm run lint              # ESLint
+npm run test              # Playwright E2E tests
+npm run test:ui           # Playwright with UI
+npm run test:unit         # Vitest unit tests
+npm run test:unit:watch   # Vitest watch mode
+npm run test:unit:coverage # Vitest coverage
+```
+
+---
+
+## Project Structure
+
+```
+src/
+├── app/[locale]/        # Pages with i18n routing
+├── components/          # React components
+│   └── ui/              # Design system primitives
+├── hooks/               # Custom React hooks
+├── lib/                 # Utilities (cn, seo, schema, blog)
+├── styles/              # CSS variables and design tokens
+└── types/               # TypeScript types
+messages/                # Translation files (en.json, es.json)
+content/
+└── blog/                # Blog articles (markdown .md)
+public/
+└── blog/                # Blog images (WebP)
+tests/                   # Playwright E2E tests
+.claude/
+├── agents/              # Specialized agents
+└── guides/              # Workflow documentation
+```
+
+**Key dependencies**: lucide-react (icons), embla-carousel-react, class-variance-authority (cva), gray-matter, next-mdx-remote
+
+---
+
+## Key Patterns
+
+### i18n
+- Translations: `messages/es.json` and `messages/en.json`
+- Server: `const t = await getTranslations({ locale })`
+- Client: `const t = useTranslations('namespace')`
+- Always call `setRequestLocale(locale)` before using translations in server components
+- Key naming: `page.section.element` (e.g., `home.hero.title`)
+- **Always add new keys to both files** — missing keys cause runtime errors
+
+### Pages
+```typescript
+// src/app/[locale]/example/page.tsx
+import { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { generatePageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+  return generatePageMetadata({
+    locale,
+    path: "/example",
+    title: t("example.metadata.title"),
+    description: t("example.metadata.description"),
+  });
+}
+
+export default async function PageName({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations({ locale });
+
+  return (
+    <div className="min-h-screen bg-background-primary">
+      <Navigation locale={locale} />
+      {/* Content */}
+      <Footer locale={locale} />
+    </div>
+  );
+}
+```
+
+### Blog Articles
+- Location: `/content/blog/[category]/[slug].md`
+- Categories: `analisis`, `comparaciones`, `consejos`, `guias`, `formacion`, `casos-de-exito`, `invoo`
+- Images: `/public/blog/` (WebP, 16:9 ratio)
+- Spanish only—EN routes redirect to ES
+
+**Frontmatter:**
+```yaml
+---
+title: "Article Title"
+excerpt: "Brief description for SEO"
+publishedAt: "2026-01-17"
+author: "Equipo Invoo"
+tags: ["tag1", "tag2"]
+readingTime: 12
+featured: false
+editorPick: false
+coverImage: "/blog/image-name.webp"
+keyTakeaways:
+  - "Key point 1"
+  - "Key point 2"
+faq:                        # optional
+  - question: "Question?"
+    answer: "Answer text"
+---
+```
+
+### Components
+- PascalCase: `HeroSection.tsx`, `ArticleCard.tsx`
+- UI primitives: `src/components/ui/`
+- Use `cn()` for class merging: `className={cn('base', condition && 'conditional')}`
+
+### Styling
+- Tailwind CSS with semantic tokens (`bg-background-primary`, `text-label-primary`)
+- Dark mode default, uses `next-themes`
+- Typography classes: `text-title1-emphasized`, `text-body`, `text-callout`
+- Border radius: buttons `rounded-[12px]`, cards `rounded-[16px]`
+- Mobile-first: `max-md:`, `md:`, `lg:`, `xl:`
+
+### Images
+- Store in `/public/` or `/public/blog/`
+- Use `getImagePath()` utility
+- Always include descriptive `alt` text
+- Prefer WebP format
+
+### Accessibility
+- Use semantic HTML (`<main>`, `<nav>`, `<article>`, `<section>`)
+- All interactive elements must be keyboard accessible
+- Color contrast: minimum 4.5:1 for text
+- Form inputs need visible labels
+- Use `aria-label` only when visible text isn't possible
+
+---
+
+## Agents
+
+Specialized agents in `.claude/agents/`:
+
+| Agent | Use For |
+|-------|---------|
+| `product-lead` | Feature specs, roadmap planning (outside codebase) |
+| `marketing-lead` | Marketing site strategy, content calendar, conversion optimization |
+| `growth-lead` | GTM strategy, acquisition, launch planning |
+| `compliance-regulator` | Spanish tax/legal (AEAT, Verifactu, TicketBAI) |
+| `content-writer` | Blog articles, SEO content |
+| `nextjs-architect` | Architecture decisions, refactoring |
+| `nextjs-developer` | Feature implementation |
+| `code-reviewer` | Code reviews, security audits |
+| `seo-specialist` | Technical SEO, keywords |
+| `market-intelligence` | Competitor analysis, research |
+| `design-leader` | UX decisions, design systems |
+
+**Deploy proactively** when the task matches an agent's specialty. Run in parallel when independent.
 
 ---
 
 ## Guides
 
-Detailed workflow guides are in `.claude/guides/`:
+Workflow guides in `.claude/guides/`:
 
 | Guide | Purpose |
 |-------|---------|
-| `article-creation.md` | Complete workflow for creating blog articles |
+| [article-creation.md](.claude/guides/article-creation.md) | Blog article workflow |
+| [social-post-creation.md](.claude/guides/social-post-creation.md) | Social media posts |
+| [calculator-implementation-plan.md](.claude/guides/calculator-implementation-plan.md) | Calculator feature specs |
 
-Agents should read relevant guides before starting complex tasks.
+---
+
+## Workflow
+
+### Create Article
+See `article-creation.md` guide. Agents involved:
+- `seo-specialist` → keyword research, structure
+- `market-intelligence` → competitor analysis
+- `content-writer` → draft article
+- `compliance-regulator` → review (if tax/legal topic)
+- `code-reviewer` → final check
+
+### Create Calculator
+Similar to articles, plus development:
+- `seo-specialist` → keyword research
+- `market-intelligence` → competitor tools analysis
+- `nextjs-architect` → design component structure
+- `nextjs-developer` → implement calculator
+- `compliance-regulator` → validate formulas (if tax-related)
+- `code-reviewer` → final check
+
+### Update Website (pages, components, content)
+Classic development flow:
+- `market-intelligence` → research best practices
+- `design-leader` → UX decisions
+- `nextjs-architect` → plan implementation
+- `nextjs-developer` → implement changes
+- `code-reviewer` → final check
+
+---
+
+## Common Mistakes to Avoid
+
+- **Missing `setRequestLocale(locale)`** before using translations in server components
+- **Hardcoded Spanish text** instead of using translation keys
+- **Missing `alt` text** on images
+- **Wrong blog category** — must be one of the 7 defined categories
+- **Forgetting `editorPick`** in article frontmatter
+- **Using `px` values** instead of Tailwind spacing tokens
+- **Skipping `npm run build`** before committing — catches type errors early
+- **Not running agents in parallel** when tasks are independent
+
+---
+
+## Conventions
+
+- Commit messages: imperative mood, concise (`feat: add pricing section`, `fix: broken link`)
+- Run `npm run build` before committing to catch errors
