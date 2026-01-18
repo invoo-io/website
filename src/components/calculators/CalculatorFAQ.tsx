@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { cn } from '@/lib/utils';
+import { SectionHeader } from '@/components/ui/SectionHeader';
 
 interface FAQItem {
   question: string;
@@ -26,16 +27,18 @@ interface CalculatorFAQProps {
 export function CalculatorFAQ({ title, items, className }: CalculatorFAQProps) {
   return (
     <section className={cn('w-full', className)}>
-      <h2 className="text-title1-emphasized text-primary mb-8">
-        {title}
-      </h2>
+      <SectionHeader
+        size="subsection"
+        title={title}
+        marginBottom="lg"
+      />
 
       <Accordion type="single" collapsible className="w-full space-y-3">
         {items.map((item, index) => (
           <AccordionItem
             key={index}
             value={`faq-${index}`}
-            className="border-0 rounded-2xl overflow-hidden bg-background-secondary data-[state=open]:bg-background-tertiary transition-colors"
+            className="border-0 rounded-2xl overflow-hidden bg-background-secondary hover:bg-background-tertiary data-[state=open]:bg-background-tertiary transition-colors"
           >
             <AccordionTrigger className="text-headline text-primary hover:no-underline text-left px-6 py-5">
               {item.question}

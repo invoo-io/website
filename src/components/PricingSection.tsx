@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import PricingCard from "./PricingCard";
 import GradientText from "./ui/GradientText";
 import { DrawerComponent } from "./DrawerComponent";
+import { SectionHeader } from "./ui/SectionHeader";
 import { getBasePath } from "@/lib/utils";
 
 export default function PricingSection() {
@@ -26,15 +27,20 @@ export default function PricingSection() {
       alignItems: 'center'
     }}>
       {/* Header */}
-      <div className="text-center mb-16 max-w-3xl">
-        <h1 className="text-header-title-emphasized mb-6">
-          <GradientText>{titleParts[0]}.</GradientText>
-          <span className="text-primary"> {titleParts[1]}</span>
-        </h1>
-        <p className="text-headline text-secondary">
-          {t("header.description")}
-        </p>
-      </div>
+      <SectionHeader
+        size="hero"
+        align="center"
+        maxWidth="lg"
+        title={
+          <>
+            <GradientText>{titleParts[0]}.</GradientText>
+            <span className="text-primary"> {titleParts[1]}</span>
+          </>
+        }
+        description={t("header.description")}
+        descriptionClassName="text-headline"
+        className="mb-16"
+      />
 
       {/* Tab Switcher */}
       <div className="flex gap-10 mb-16 border-b border-strokes-primary relative">

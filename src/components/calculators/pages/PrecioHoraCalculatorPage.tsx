@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
+import { SectionHeader } from '@/components/ui/SectionHeader';
 import { PrecioHoraCalculator } from '@/components/calculators/PrecioHoraCalculator';
 import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
@@ -12,7 +13,6 @@ import {
   CalculatorWhyUse,
   CalculatorRelatedTools,
   CalculatorBenchmarks,
-  CalculatorMethodology,
 } from '@/components/calculators/CalculatorSEOContent';
 import { getBasePath } from '@/lib/utils';
 
@@ -96,9 +96,6 @@ export function PrecioHoraCalculatorPageContent() {
     },
   ];
 
-  // Methodology steps
-  const methodologySteps = t.raw('methodology.steps') as string[];
-
   // How-to steps
   const howToSteps = [
     { title: t('howTo.step1.title'), description: t('howTo.step1.description') },
@@ -133,16 +130,21 @@ export function PrecioHoraCalculatorPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex items-center justify-center px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-header-title-emphasized text-center mb-6">
-            <GradientText>{t('hero.titleHighlight')}</GradientText>
-            <span className="text-primary"> {t('hero.titleEnd')}</span>
-          </h1>
-          <p className="text-body text-secondary max-w-2xl mx-auto">
-            {t('hero.description')}
-          </p>
-        </div>
+      <section className="px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
+        <SectionHeader
+          size="hero"
+          align="center"
+          
+          title={
+            <>
+              <GradientText>{t('hero.titleHighlight')}</GradientText>
+              <span className="text-primary"> {t('hero.titleEnd')}</span>
+            </>
+          }
+          description={t('hero.description')}
+          marginBottom="none"
+          descriptionClassName="max-w-2xl"
+        />
       </section>
 
       {/* Calculator Section */}
@@ -166,7 +168,6 @@ export function PrecioHoraCalculatorPageContent() {
             title={t('factors.title')}
             description={t('factors.description')}
             items={keyFactors}
-            columns={4}
           />
 
           {/* Sector Benchmarks */}
@@ -175,14 +176,6 @@ export function PrecioHoraCalculatorPageContent() {
             description={t('benchmarks.description')}
             sectors={benchmarkSectors}
             footnote={t('benchmarks.note')}
-          />
-
-          {/* Methodology */}
-          <CalculatorMethodology
-            title={t('methodology.title')}
-            description={t('methodology.description')}
-            steps={methodologySteps}
-            sources={t('methodology.sources')}
           />
 
           {/* Why Use */}

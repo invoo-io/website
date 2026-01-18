@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import FocusButton from "./FocusButton";
 import GradientText from "./ui/GradientText";
+import { SectionHeader } from "./ui/SectionHeader";
 import { getImagePath } from "@/lib/utils";
 
 export default function FocusSection() {
@@ -29,17 +30,19 @@ export default function FocusSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-3xl">
-        <h2 className="text-section-title-emphasized text-system-grey100 mb-6">
-          {locale === "es" ? (
+        <SectionHeader
+          size="section"
+          align="center"
+          title={locale === "es" ? (
             <><GradientText>Céntrate en tu trabajo.</GradientText> Nosotros nos encargamos del papeleo</>
           ) : (
             <><GradientText>Focus on your work.</GradientText> We&apos;ll handle the paperwork</>
           )}
-        </h2>
-
-        <p className="text-callout text-system-grey100 mb-12">
-          {t("description")}
-        </p>
+          description={t("description")}
+          titleClassName="text-system-grey100"
+          descriptionClassName="text-callout text-system-grey100"
+          marginBottom="lg"
+        />
 
         <div className="flex justify-center">
           <FocusButton />

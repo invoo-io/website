@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { SectionHeader } from "./ui/SectionHeader";
 
 export default function AboutContent() {
   const t = useTranslations("about");
@@ -34,9 +35,12 @@ export default function AboutContent() {
       <div className="max-w-4xl w-full flex flex-col gap-10 text-left">
         {/* Block 1: Born from real experience section */}
         <div className="mb-8">
-          <h2 className="text-title1-emphasized text-primary mb-6">
-            {t("block1.title")}
-          </h2>
+          <SectionHeader
+            size="subsection"
+            align="left"
+            title={t("block1.title")}
+            marginBottom="md"
+          />
           <div>
             {renderParagraphs(t("block1.description"))}
           </div>
@@ -44,9 +48,12 @@ export default function AboutContent() {
 
         {/* Block 2: Our vision section */}
         <div className="mb-8">
-          <h2 className="text-title1-emphasized text-primary mb-6">
-            {t("block2.title")}
-          </h2>
+          <SectionHeader
+            size="subsection"
+            align="left"
+            title={t("block2.title")}
+            marginBottom="md"
+          />
           <div>
             {renderParagraphs(t("block2.description"))}
           </div>
@@ -54,9 +61,12 @@ export default function AboutContent() {
 
         {/* Block 3: Why Invoo section */}
         <div className="mb-8">
-          <h2 className="text-title1-emphasized text-primary mb-8">
-            {t("block3.title")}
-          </h2>
+          <SectionHeader
+            size="subsection"
+            align="left"
+            title={t("block3.title")}
+            marginBottom="lg"
+          />
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <span className="text-body mt-1">🚀</span>
@@ -79,9 +89,12 @@ export default function AboutContent() {
 
         {/* Block 4: Join us early section */}
         <div className="pt-8">
-          <h2 className="text-title1-emphasized text-primary mb-6">
-            {t("block4.title")}
-          </h2>
+          <SectionHeader
+            size="subsection"
+            align="left"
+            title={t("block4.title")}
+            marginBottom="md"
+          />
           <div>
             {renderParagraphs(t("block4.description"))}
           </div>

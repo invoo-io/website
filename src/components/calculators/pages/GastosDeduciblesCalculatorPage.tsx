@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
+import { SectionHeader } from '@/components/ui/SectionHeader';
 import { GastosDeduciblesCalculator } from '@/components/calculators/GastosDeduciblesCalculator';
 import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
@@ -99,16 +100,21 @@ export function GastosDeduciblesCalculatorPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex items-center justify-center px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-header-title-emphasized text-center mb-6">
-            <GradientText>{t('hero.titleHighlight')}</GradientText>
-            <span className="text-primary"> {t('hero.titleEnd')}</span>
-          </h1>
-          <p className="text-body text-secondary max-w-2xl mx-auto">
-            {t('hero.description')}
-          </p>
-        </div>
+      <section className="px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
+        <SectionHeader
+          size="hero"
+          align="center"
+          
+          title={
+            <>
+              <GradientText>{t('hero.titleHighlight')}</GradientText>
+              <span className="text-primary"> {t('hero.titleEnd')}</span>
+            </>
+          }
+          description={t('hero.description')}
+          marginBottom="none"
+          descriptionClassName="max-w-2xl"
+        />
       </section>
 
       {/* Calculator Section */}
@@ -132,7 +138,6 @@ export function GastosDeduciblesCalculatorPageContent() {
             title={t('concepts.title')}
             description={t('concepts.description')}
             items={keyConcepts}
-            columns={4}
           />
 
           {/* Why Use */}

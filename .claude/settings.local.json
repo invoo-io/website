@@ -140,7 +140,8 @@
       "WebFetch(domain:entretramites.com)",
       "WebFetch(domain:calculadora.malt.es)",
       "WebFetch(domain:www.nngroup.com)",
-      "WebFetch(domain:antoniojenaro.com)"
+      "WebFetch(domain:antoniojenaro.com)",
+      "Bash(if [ -f \"$file\" ])"
     ],
     "deny": [],
     "ask": []

@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { SectionHeader } from "./ui/SectionHeader";
 
 export default function FAQContent() {
   const t = useTranslations("faq");
@@ -33,14 +34,18 @@ export default function FAQContent() {
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqData.map((category, categoryIndex) => (
             <div key={categoryIndex} className="space-y-4">
-              <h2 className="text-title2-emphasized text-primary mt-16 mb-4">
-                {category.category}
-              </h2>
+              <SectionHeader
+                size="card"
+                align="left"
+                title={category.category}
+                marginBottom="md"
+                className="mt-16"
+              />
               {category.questions.map((item, index) => (
                 <AccordionItem
                   key={`${categoryIndex}-${index}`}
                   value={`item-${categoryIndex}-${index}`}
-                  className="border-0 rounded-2xl overflow-hidden bg-background-secondary data-[state=open]:bg-background-tertiary transition-colors"
+                  className="border-0 rounded-2xl overflow-hidden bg-background-secondary hover:bg-background-tertiary data-[state=open]:bg-background-tertiary transition-colors"
                 >
                   <AccordionTrigger className="text-headline text-primary hover:no-underline text-left px-6 py-5">
                     <h3 className="text-headline text-primary">

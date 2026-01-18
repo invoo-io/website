@@ -6,6 +6,7 @@ import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Button from "./ui/button";
 import GradientText from "./ui/GradientText";
+import { SectionHeader } from "./ui/SectionHeader";
 import { getImagePath, getBasePath } from "@/lib/utils";
 
 export default function WhyChooseSection() {
@@ -49,8 +50,10 @@ export default function WhyChooseSection() {
   return (
     <section className="py-[156px] max-md:py-10 px-4 md:px-6 bg-background-secondary">
       {/* Title - Split to apply gradient to "Invoo" */}
-      <h2 className="text-section-title-emphasized text-center text-primary max-w-4xl mx-auto mb-16">
-        {(() => {
+      <SectionHeader
+        size="section"
+        align="center"
+        title={(() => {
           const title = t("title");
           // Split at "Invoo" to apply gradient
           const parts = title.split("Invoo");
@@ -60,14 +63,8 @@ export default function WhyChooseSection() {
             </>
           );
         })()}
-      </h2>
-
-      {/* Intro paragraph */}
-      <div className="max-w-4xl mx-auto mb-16">
-        <p className="text-body text-secondary text-center leading-relaxed">
-          {t("intro")}
-        </p>
-      </div>
+        description={t("intro")}
+      />
 
       {/* Features Grid - First row: 3 cards, Second row: 2 cards centered */}
       <div className="max-w-7xl mx-auto mb-16">

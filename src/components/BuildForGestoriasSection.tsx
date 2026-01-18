@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import Button from "./ui/button";
 import { DrawerComponent } from "./DrawerComponent";
+import { SectionHeader } from "./ui/SectionHeader";
 import { Check } from "lucide-react";
 
 interface BuildForGestoriasSectionProps {
@@ -64,13 +65,15 @@ export default function BuildForGestoriasSection({
     (mounted && theme === "dark" ? "/gestoria-dark.webp" : "/gestoria-light.webp");
   const textContent = (
     <div className="max-w-full max-md:text-center" style={{ width: '500px' }}>
-      <h2 className="text-section-title-emphasized text-primary mb-6">
-        {title}
-      </h2>
-
-      <p className="text-callout text-secondary mb-10 leading-loose max-w-prose">
-        {paragraph}
-      </p>
+      <SectionHeader
+        size="section"
+        align="left"
+        title={title}
+        description={paragraph}
+        descriptionClassName="text-callout leading-loose max-w-prose"
+        marginBottom="lg"
+        className="max-md:text-center"
+      />
 
       {/* Optional H3 subheading */}
       {subheadingKey && (

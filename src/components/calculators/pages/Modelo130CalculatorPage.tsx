@@ -3,12 +3,14 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
+import { SectionHeader } from '@/components/ui/SectionHeader';
+import { ContentCardGrid } from '@/components/ui/ContentCard';
 import { Modelo130Calculator } from '@/components/calculators/Modelo130Calculator';
 import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
 import {
   CalculatorHowTo,
-  CalculatorInfoGrid,
+  CalculatorInfoAccordion,
   CalculatorWhyUse,
   CalculatorRelatedTools,
 } from '@/components/calculators/CalculatorSEOContent';
@@ -75,16 +77,21 @@ export function Modelo130CalculatorPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex items-center justify-center px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-header-title-emphasized text-center mb-6">
-            <GradientText>{t('hero.titleHighlight')}</GradientText>
-            <span className="text-primary"> {t('hero.titleEnd')}</span>
-          </h1>
-          <p className="text-body text-secondary max-w-2xl mx-auto">
-            {t('hero.description')}
-          </p>
-        </div>
+      <section className="px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
+        <SectionHeader
+          size="hero"
+          align="center"
+          
+          title={
+            <>
+              <GradientText>{t('hero.titleHighlight')}</GradientText>
+              <span className="text-primary"> {t('hero.titleEnd')}</span>
+            </>
+          }
+          description={t('hero.description')}
+          marginBottom="none"
+          descriptionClassName="max-w-2xl"
+        />
       </section>
 
       {/* Calculator Section */}
@@ -104,32 +111,35 @@ export function Modelo130CalculatorPageContent() {
           />
 
           {/* Key Concepts */}
-          <CalculatorInfoGrid
+          <CalculatorInfoAccordion
             title={t('concepts.title')}
             description={t('concepts.description')}
             items={keyConcepts}
-            columns={4}
           />
 
           {/* Filing Deadlines */}
           <section>
-            <h2 className="text-title-1 text-primary mb-4">{t('deadlines.title')}</h2>
-            <p className="text-body text-secondary mb-6">{t('deadlines.description')}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q1.period')}</div>
+            <SectionHeader
+              size="subsection"
+              title={t('deadlines.title')}
+              description={t('deadlines.description')}
+              marginBottom="lg"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q1.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q1.deadline')}</div>
               </div>
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q2.period')}</div>
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q2.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q2.deadline')}</div>
               </div>
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q3.period')}</div>
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q3.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q3.deadline')}</div>
               </div>
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q4.period')}</div>
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q4.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q4.deadline')}</div>
               </div>
             </div>
@@ -137,20 +147,19 @@ export function Modelo130CalculatorPageContent() {
 
           {/* Exemption Info */}
           <section>
-            <h2 className="text-title-1 text-primary mb-4">{t('exemption.title')}</h2>
-            <p className="text-body text-secondary mb-4">{t('exemption.description')}</p>
-            <div className="bg-background-secondary rounded-xl p-6 border border-strokes-primary">
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-accent-green-main mt-2 flex-shrink-0" />
-                  <span className="text-body text-secondary">{t('exemption.condition1')}</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-accent-green-main mt-2 flex-shrink-0" />
-                  <span className="text-body text-secondary">{t('exemption.condition2')}</span>
-                </li>
-              </ul>
-            </div>
+            <SectionHeader
+              size="subsection"
+              title={t('exemption.title')}
+              description={t('exemption.description')}
+              marginBottom="md"
+            />
+            <ContentCardGrid
+              items={[
+                { indicator: 'checkmark', title: t('exemption.condition1'), layout: 'horizontal' },
+                { indicator: 'checkmark', title: t('exemption.condition2'), layout: 'horizontal' },
+              ]}
+              columns={1}
+            />
           </section>
 
           {/* Why Use */}

@@ -16,6 +16,11 @@ const twMerge = extendTailwindMerge<'font-typography'>({
     classGroups: {
       // Typography classes - these set font-family, size, weight, letter-spacing, line-height
       'font-typography': [
+        'text-header-title',
+        'text-header-title-emphasized',
+        'text-section-title',
+        'text-section-title-emphasized',
+        'text-step-number',
         'text-large-title',
         'text-large-title-emphasized',
         'text-title1',

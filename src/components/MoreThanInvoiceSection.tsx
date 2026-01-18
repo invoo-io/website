@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import MoreThanInvoiceButton from "./MoreThanInvoiceButton";
 import GradientText from "./ui/GradientText";
+import { SectionHeader } from "./ui/SectionHeader";
 import { getImagePath } from "@/lib/utils";
 
 export default function MoreThanInvoiceSection() {
@@ -42,20 +43,17 @@ export default function MoreThanInvoiceSection() {
   return (
     <section className="py-[156px] max-md:py-10 px-4 md:px-6 relative min-h-[634px] bg-background-secondary flex items-center justify-center flex-col">
       {/* Title */}
-      <h2 className="text-section-title-emphasized text-center text-primary max-w-4xl mx-auto mb-16 relative z-10">
-        {locale === "es" ? (
+      <SectionHeader
+        size="section"
+        align="center"
+        title={locale === "es" ? (
           <><GradientText>Más</GradientText> que facturación</>
         ) : (
           <><GradientText>More</GradientText> than invoicing</>
         )}
-      </h2>
-
-      {/* Intro paragraph */}
-      <div className="max-w-4xl mx-auto mb-16 relative z-10">
-        <p className="text-body text-secondary text-center leading-relaxed">
-          {t("intro")}
-        </p>
-      </div>
+        description={t("intro")}
+        className="relative z-10"
+      />
 
       {/* Content Container */}
       <div className="relative z-10 max-w-[1000px]">

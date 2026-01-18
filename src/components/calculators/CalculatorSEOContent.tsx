@@ -1,6 +1,14 @@
 'use client';
 
 import { cn } from '@/lib/utils';
+import { ContentCardGrid, NumberIndicator } from '@/components/ui/ContentCard';
+import { SectionHeader } from '@/components/ui/SectionHeader';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 interface HowToStep {
   title: string;
@@ -25,35 +33,14 @@ export function CalculatorHowTo({
 }: CalculatorHowToProps) {
   return (
     <section className={cn('w-full', className)}>
-      <h2 className="text-title1-emphasized text-primary mb-4">
-        {title}
-      </h2>
-      <p className="text-body text-secondary mb-8">
-        {description}
-      </p>
+      <SectionHeader
+        size="subsection"
+        title={title}
+        description={description}
+        marginBottom="lg"
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {steps.map((step, index) => (
-          <div
-            key={index}
-            className="flex flex-col gap-3 p-6 rounded-2xl bg-background-secondary border border-strokes-primary"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-accent-blue-main flex items-center justify-center">
-                <span className="text-callout-emphasized text-white">
-                  {index + 1}
-                </span>
-              </div>
-              <h3 className="text-headline text-primary">
-                {step.title}
-              </h3>
-            </div>
-            <p className="text-footnote text-secondary">
-              {step.description}
-            </p>
-          </div>
-        ))}
-      </div>
+      <ContentCardGrid items={steps} columns={3} autoNumber />
     </section>
   );
 }
@@ -67,12 +54,12 @@ interface CalculatorInfoGridProps {
   title: string;
   description?: string;
   items: InfoItem[];
-  columns?: 2 | 3 | 4;
+  columns?: 2 | 3;
   className?: string;
 }
 
 /**
- * CalculatorInfoGrid - Grid of information cards
+ * CalculatorInfoGrid - Grid of information cards (max 3 columns for readability)
  */
 export function CalculatorInfoGrid({
   title,
@@ -81,38 +68,55 @@ export function CalculatorInfoGrid({
   columns = 3,
   className,
 }: CalculatorInfoGridProps) {
-  const gridCols = {
-    2: 'md:grid-cols-2',
-    3: 'md:grid-cols-3',
-    4: 'md:grid-cols-2 lg:grid-cols-4',
-  };
-
   return (
     <section className={cn('w-full', className)}>
-      <h2 className="text-title1-emphasized text-primary mb-4">
-        {title}
-      </h2>
-      {description && (
-        <p className="text-body text-secondary mb-8">
-          {description}
-        </p>
-      )}
+      <SectionHeader
+        size="subsection"
+        title={title}
+        description={description}
+        marginBottom="lg"
+      />
 
-      <div className={cn('grid grid-cols-1 gap-4', gridCols[columns])}>
+      <ContentCardGrid items={items} columns={columns} />
+    </section>
+  );
+}
+
+/**
+ * CalculatorInfoAccordion - Accordion-based info section for key concepts
+ * Reuses the same accordion styling as FAQ sections
+ */
+export function CalculatorInfoAccordion({
+  title,
+  description,
+  items,
+  className,
+}: CalculatorInfoGridProps) {
+  return (
+    <section className={cn('w-full', className)}>
+      <SectionHeader
+        size="subsection"
+        title={title}
+        description={description}
+        marginBottom="lg"
+      />
+
+      <Accordion type="single" collapsible className="w-full space-y-3">
         {items.map((item, index) => (
-          <div
+          <AccordionItem
             key={index}
-            className="flex flex-col gap-2 p-5 rounded-xl bg-background-secondary border border-strokes-primary"
+            value={`info-${index}`}
+            className="border-0 rounded-2xl overflow-hidden bg-background-secondary hover:bg-background-tertiary data-[state=open]:bg-background-tertiary transition-colors"
           >
-            <h3 className="text-callout-emphasized text-primary">
+            <AccordionTrigger className="text-headline text-primary hover:no-underline text-left px-6 py-5">
               {item.title}
-            </h3>
-            <p className="text-footnote text-secondary">
+            </AccordionTrigger>
+            <AccordionContent className="text-body text-secondary px-6 pb-5 pt-0">
               {item.description}
-            </p>
-          </div>
+            </AccordionContent>
+          </AccordionItem>
         ))}
-      </div>
+      </Accordion>
     </section>
   );
 }
@@ -120,6 +124,7 @@ export function CalculatorInfoGrid({
 interface CalculatorWhyUseProps {
   title: string;
   benefits: string[];
+  columns?: 1 | 2;
   className?: string;
 }
 
@@ -129,39 +134,25 @@ interface CalculatorWhyUseProps {
 export function CalculatorWhyUse({
   title,
   benefits,
+  columns = 1,
   className,
 }: CalculatorWhyUseProps) {
   return (
     <section className={cn('w-full', className)}>
-      <h2 className="text-title1-emphasized text-primary mb-6">
-        {title}
-      </h2>
+      <SectionHeader
+        size="subsection"
+        title={title}
+        marginBottom="md"
+      />
 
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {benefits.map((benefit, index) => (
-          <li
-            key={index}
-            className="flex items-start gap-3 p-4 rounded-xl bg-background-secondary border border-strokes-primary"
-          >
-            <div className="w-6 h-6 rounded-full bg-accent-green-main/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <svg
-                className="w-4 h-4 text-accent-green-main"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </div>
-            <span className="text-body text-primary">{benefit}</span>
-          </li>
-        ))}
-      </ul>
+      <ContentCardGrid
+        items={benefits.map(benefit => ({
+          indicator: 'checkmark' as const,
+          title: benefit,
+          layout: 'horizontal' as const,
+        }))}
+        columns={columns}
+      />
     </section>
   );
 }
@@ -207,12 +198,12 @@ export function CalculatorBenchmarks({
 }: CalculatorBenchmarksProps) {
   return (
     <section className={cn('w-full', className)}>
-      <h2 className="text-title1-emphasized text-primary mb-4">
-        {title}
-      </h2>
-      <p className="text-body text-secondary mb-8">
-        {description}
-      </p>
+      <SectionHeader
+        size="subsection"
+        title={title}
+        description={description}
+        marginBottom="lg"
+      />
 
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
@@ -273,19 +264,17 @@ export function CalculatorMethodology({
   return (
     <section className={cn('w-full', className)}>
       <div className="p-6 rounded-2xl bg-background-secondary border border-strokes-primary">
-        <h2 className="text-title2-emphasized text-primary mb-3">
-          {title}
-        </h2>
-        <p className="text-body text-secondary mb-6">
-          {description}
-        </p>
+        <SectionHeader
+          size="card"
+          title={title}
+          description={description}
+          marginBottom="md"
+        />
 
         <ol className="space-y-3">
           {steps.map((step, index) => (
             <li key={index} className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-accent-blue-main/20 flex items-center justify-center flex-shrink-0 text-caption1-emphasized text-accent-blue-main">
-                {index + 1}
-              </span>
+              <NumberIndicator number={index + 1} size="sm" variant="outline" />
               <span className="text-footnote text-secondary">{step}</span>
             </li>
           ))}
@@ -312,59 +301,37 @@ export function CalculatorRelatedTools({
 }: CalculatorRelatedToolsProps) {
   return (
     <section className={cn('w-full', className)}>
-      <h2 className="text-title1-emphasized text-primary mb-6">
-        {title}
-      </h2>
+      <SectionHeader
+        size="subsection"
+        title={title}
+        marginBottom="md"
+      />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {calculators.map((calc) => (
-          <a
-            key={calc.href}
-            href={calc.href}
-            className="group flex flex-col gap-3 p-6 rounded-2xl bg-background-secondary border border-strokes-primary hover:border-accent-blue-main/50 transition-all duration-200"
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-accent-blue-main/10 flex items-center justify-center flex-shrink-0">
-                <svg
-                  className="w-5 h-5 text-accent-blue-main"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-headline text-primary group-hover:text-accent-blue-main transition-colors">
-                {calc.name}
-              </h3>
-            </div>
-            <p className="text-footnote text-secondary flex-1">
-              {calc.description}
-            </p>
-            <div className="flex items-center gap-1.5 text-callout text-accent-blue-main pt-2">
-              <span>{ctaText}</span>
-              <svg
-                className="w-4 h-4 group-hover:translate-x-1 transition-transform"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </div>
-          </a>
-        ))}
-      </div>
+      <ContentCardGrid
+        items={calculators.map(calc => ({
+          indicator: 'icon' as const,
+          icon: (
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+              />
+            </svg>
+          ),
+          title: calc.name,
+          description: calc.description,
+          href: calc.href,
+          ctaText,
+        }))}
+        columns={3}
+      />
     </section>
   );
 }

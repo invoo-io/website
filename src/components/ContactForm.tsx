@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 import Button from "./ui/button";
+import { SectionHeader } from "./ui/SectionHeader";
 
 export default function ContactForm() {
   const t = useTranslations("contact");
@@ -89,19 +90,25 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="min-h-screen bg-background-primary flex items-center justify-center px-6 py-20">
-      <div className="max-w-3xl w-full">
-        <h1 className="text-large-title-emphasized text-primary text-center mb-5">
-          Contact Invoo
-        </h1>
-        <p className="text-subheadline text-primary text-center mb-12">
-          We&apos;re here to help freelancers and gestorías. Choose the topic below or use the form
-        </p>
+    <section className="min-h-screen bg-background-primary px-6 py-20">
+      <SectionHeader
+        size="hero"
+        align="center"
+        maxWidth="md"
+        title="Contact Invoo"
+        description="We're here to help freelancers and gestorías. Choose the topic below or use the form"
+        descriptionClassName="text-subheadline"
+        marginBottom="xl"
+      />
 
-        <form onSubmit={handleSubmit}>
-          <h2 className="text-title2-emphasized text-primary mb-4 mt-8">
-            {t("sections.contactInfo")}
-          </h2>
+      <form onSubmit={handleSubmit} className="max-w-3xl mx-auto">
+          <SectionHeader
+            size="card"
+            align="left"
+            title={t("sections.contactInfo")}
+            marginBottom="md"
+            className="mt-8"
+          />
           {/* Desktop: all 3 in one row, Tablet: Topic on top, Name/Email below, Mobile: all stacked */}
           <div className="form-grid grid gap-4 mb-5">
             <div style={{ gridArea: 'topic' }}>
@@ -183,9 +190,13 @@ export default function ContactForm() {
             }
           `}</style>
 
-          <h2 className="text-title2-emphasized text-primary mb-4 mt-8">
-            {t("sections.message")}
-          </h2>
+          <SectionHeader
+            size="card"
+            align="left"
+            title={t("sections.message")}
+            marginBottom="md"
+            className="mt-8"
+          />
           <div className="mb-6">
             <label className="text-footnote text-secondary mb-2 block">Message</label>
             <textarea
@@ -232,7 +243,6 @@ export default function ContactForm() {
             </Button>
           </div>
         </form>
-      </div>
     </section>
   );
 }

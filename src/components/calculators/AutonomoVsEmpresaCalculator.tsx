@@ -123,9 +123,9 @@ export function AutonomoVsEmpresaCalculator() {
   );
 
   return (
-    <CalculatorCard className="w-full max-w-6xl mx-auto">
-      <div className="grid grid-cols-1 gap-8">
-        {/* Inputs Section */}
+    <CalculatorCard className="w-full max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        {/* Left side - Inputs */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-accent-purple-main" />
@@ -134,87 +134,257 @@ export function AutonomoVsEmpresaCalculator() {
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <CalculatorInput
-              label={t('inputs.facturacion.label')}
-              value={facturacion}
-              onChange={createHandler(setFacturacion)}
-              type="text"
-              placeholder={placeholder}
-              suffix="€"
-              helperText={t('inputs.facturacion.helper')}
-              error={validateInput(facturacion, numericFacturacion)}
-            />
+          <CalculatorInput
+            label={t('inputs.facturacion.label')}
+            value={facturacion}
+            onChange={createHandler(setFacturacion)}
+            type="text"
+            placeholder={placeholder}
+            suffix="€"
+            helperText={t('inputs.facturacion.helper')}
+            error={validateInput(facturacion, numericFacturacion)}
+          />
 
-            <CalculatorSelect
-              label={t('inputs.gastosNegocio.label')}
-              value={gastosNegocio}
-              onChange={setGastosNegocio}
-              options={gastosOptions}
-              helperText={t('inputs.gastosNegocio.helper')}
-            />
+          <CalculatorSelect
+            label={t('inputs.gastosNegocio.label')}
+            value={gastosNegocio}
+            onChange={setGastosNegocio}
+            options={gastosOptions}
+            helperText={t('inputs.gastosNegocio.helper')}
+          />
 
-            <CalculatorInput
-              label={t('inputs.sueldoMensual.label')}
-              value={sueldoMensual}
-              onChange={createHandler(setSueldoMensual)}
-              type="text"
-              placeholder={placeholder}
-              suffix="€"
-              helperText={t('inputs.sueldoMensual.helper')}
-              error={validateInput(sueldoMensual, numericSueldo)}
-            />
+          <CalculatorInput
+            label={t('inputs.sueldoMensual.label')}
+            value={sueldoMensual}
+            onChange={createHandler(setSueldoMensual)}
+            type="text"
+            placeholder={placeholder}
+            suffix="€"
+            helperText={t('inputs.sueldoMensual.helper')}
+            error={validateInput(sueldoMensual, numericSueldo)}
+          />
 
-            <div>
-              <CalculatorRadioGroup
-                label={t('inputs.esPrimeraVez.label')}
-                value={esPrimeraVez}
-                onChange={setEsPrimeraVez}
-                options={primeraVezOptions}
-              />
-              <p className="text-footnote text-tertiary mt-2">
-                {t('inputs.esPrimeraVez.helper')}
-              </p>
-            </div>
+          <div>
+            <CalculatorRadioGroup
+              label={t('inputs.esPrimeraVez.label')}
+              value={esPrimeraVez}
+              onChange={setEsPrimeraVez}
+              options={primeraVezOptions}
+            />
+            <p className="text-footnote text-tertiary mt-2">
+              {t('inputs.esPrimeraVez.helper')}
+            </p>
           </div>
         </div>
 
-        {/* Results Section */}
-        {result && (
-          <div
-            className="flex flex-col gap-6"
-            role="region"
-            aria-label={t('results.ariaLabel')}
-            aria-live="polite"
-          >
-            {/* Recommendation Banner */}
+        {/* Right side - Results */}
+        <div className="flex flex-col gap-6">
+
+          {/* Results Section */}
+          {result && (
             <div
-              className={`p-6 rounded-2xl border ${
-                result.recomendacion === 'autonomo'
-                  ? 'bg-accent-green-main/10 border-accent-green-main/20'
-                  : result.recomendacion === 'sociedad'
-                    ? 'bg-accent-blue-main/10 border-accent-blue-main/20'
-                    : 'bg-accent-orange-main/10 border-accent-orange-main/20'
-              }`}
+              className="flex flex-col gap-6"
+              role="region"
+              aria-label={t('results.ariaLabel')}
+              aria-live="polite"
             >
-              <div className="flex items-start gap-4">
-                <div
-                  className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 ${
-                    result.recomendacion === 'autonomo'
-                      ? 'bg-accent-green-main/20'
-                      : result.recomendacion === 'sociedad'
-                        ? 'bg-accent-blue-main/20'
-                        : 'bg-accent-orange-main/20'
-                  }`}
-                >
-                  <svg
-                    className={`w-6 h-6 ${
+              {/* Recommendation Banner */}
+              <div
+                className={`p-4 rounded-2xl border ${
+                  result.recomendacion === 'autonomo'
+                    ? 'bg-accent-green-main/10 border-accent-green-main/20'
+                    : result.recomendacion === 'sociedad'
+                      ? 'bg-accent-blue-main/10 border-accent-blue-main/20'
+                      : 'bg-accent-orange-main/10 border-accent-orange-main/20'
+                }`}
+              >
+                <div className="flex items-start gap-3">
+                  <div
+                    className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
                       result.recomendacion === 'autonomo'
-                        ? 'text-accent-green-main'
+                        ? 'bg-accent-green-main/20'
                         : result.recomendacion === 'sociedad'
-                          ? 'text-accent-blue-main'
-                          : 'text-accent-orange-main'
+                          ? 'bg-accent-blue-main/20'
+                          : 'bg-accent-orange-main/20'
                     }`}
+                  >
+                    <svg
+                      className={`w-5 h-5 ${
+                        result.recomendacion === 'autonomo'
+                          ? 'text-accent-green-main'
+                          : result.recomendacion === 'sociedad'
+                            ? 'text-accent-blue-main'
+                            : 'text-accent-orange-main'
+                      }`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-callout-emphasized text-primary mb-1">
+                      {t(`results.recommendation.${result.recomendacion}.title`)}
+                    </h3>
+                    <p className="text-footnote text-secondary">
+                      {t(`results.recommendation.${result.recomendacion}.description`)}
+                    </p>
+                    {result.recomendacion === 'similar' && (
+                      <p className="text-footnote text-tertiary mt-1">
+                        {t('results.recommendation.similar.context', {
+                          diferencia: formatNumber(Math.abs(result.diferencia), locale),
+                        })}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {/* Comparison cards */}
+              <div className="grid grid-cols-1 gap-4">
+                {/* Autónomo Column */}
+                <div className="bg-background-primary rounded-2xl p-5 border border-strokes-primary">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-2 h-2 rounded-full bg-accent-green-main" />
+                    <h4 className="text-callout-emphasized text-primary">
+                      {t('results.autonomo.title')}
+                    </h4>
+                  </div>
+
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.autonomo.facturacion')}</span>
+                      <span className="text-primary font-medium">
+                        {formatNumber(result.autonomo.facturacion, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.autonomo.gastos')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.autonomo.gastos, locale)} €
+                      </span>
+                    </div>
+                    <div className="h-px bg-strokes-primary" />
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.autonomo.cuota')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.autonomo.cuotaAnual, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.autonomo.irpf')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.autonomo.irpfAnual, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.autonomo.gestion')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.autonomo.costeGestion, locale)} €
+                      </span>
+                    </div>
+                    <div className="h-px bg-strokes-primary" />
+                    <div className="flex justify-between text-callout-emphasized">
+                      <span className="text-accent-green-main">{t('results.autonomo.neto')}</span>
+                      <span className="text-accent-green-main">
+                        {formatNumber(result.autonomo.sueldoNetoAnual, locale)} €
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Sociedad Column */}
+                <div className="bg-background-primary rounded-2xl p-5 border border-strokes-primary">
+                  <div className="flex items-center gap-2 mb-3">
+                    <div className="w-2 h-2 rounded-full bg-accent-blue-main" />
+                    <h4 className="text-callout-emphasized text-primary">
+                      {t('results.sociedad.title')}
+                    </h4>
+                  </div>
+
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.facturacion')}</span>
+                      <span className="text-primary font-medium">
+                        {formatNumber(result.sociedad.facturacion, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.gastos')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.gastos, locale)} €
+                      </span>
+                    </div>
+                    <div className="h-px bg-strokes-primary" />
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.sueldo')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.sueldoBruto, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.ss')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.cuotaSS, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.irpf')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.irpfSueldo, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.is')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.impuestoSociedades, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.gestion')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.costeGestion, locale)} €
+                      </span>
+                    </div>
+                    <div className="h-px bg-strokes-primary" />
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.sueldoNeto')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.sueldoNetoAnual, locale)} €
+                      </span>
+                    </div>
+                    <div className="flex justify-between text-footnote">
+                      <span className="text-secondary">{t('results.sociedad.beneficio')}</span>
+                      <span className="text-primary">
+                        {formatNumber(result.sociedad.beneficioRetenido, locale)} €
+                      </span>
+                    </div>
+                    <div className="h-px bg-strokes-primary" />
+                    <div className="flex justify-between text-callout-emphasized">
+                      <span className="text-accent-blue-main">{t('results.sociedad.total')}</span>
+                      <span className="text-accent-blue-main">
+                        {formatNumber(
+                          result.sociedad.sueldoNetoAnual + result.sociedad.beneficioRetenido,
+                          locale
+                        )}{' '}
+                        €
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Break-even info */}
+              <div className="p-3 rounded-xl bg-background-secondary border border-strokes-primary">
+                <div className="flex items-start gap-2">
+                  <svg
+                    className="w-4 h-4 text-accent-purple-main flex-shrink-0 mt-0.5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -223,243 +393,75 @@ export function AutonomoVsEmpresaCalculator() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-callout-emphasized text-primary mb-2">
-                    {t(`results.recommendation.${result.recomendacion}.title`)}
-                  </h3>
-                  <p className="text-footnote text-secondary">
-                    {t(`results.recommendation.${result.recomendacion}.description`)}
-                  </p>
-                  {result.recomendacion === 'similar' && (
-                    <p className="text-footnote text-tertiary mt-2">
-                      {t('results.recommendation.similar.context', {
-                        diferencia: formatNumber(Math.abs(result.diferencia), locale),
+                  <div className="flex-1">
+                    <p className="text-footnote-emphasized text-primary mb-0.5">
+                      {t('results.breakEven.title')}
+                    </p>
+                    <p className="text-caption1 text-secondary">
+                      {t('results.breakEven.description', {
+                        amount: formatNumber(result.breakEvenPoint, locale),
                       })}
                     </p>
-                  )}
+                  </div>
                 </div>
+              </div>
+
+              {/* Razonamientos */}
+              {result.razonamientos.length > 0 && (
+                <div className="space-y-2">
+                  <h4 className="text-footnote-emphasized text-secondary">
+                    {t('results.razonamientos.title')}
+                  </h4>
+                  <ul className="space-y-1">
+                    {result.razonamientos.map((razon, index) => (
+                      <li key={index} className="flex items-start gap-2 text-caption1 text-tertiary">
+                        <span className="text-accent-purple-main mt-0.5">•</span>
+                        <span>{t(`results.razonamientos.${razon}`)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Disclaimer */}
+              <div className="p-2 rounded-lg bg-background-secondary/50 border border-strokes-primary/50">
+                <p className="text-caption1 text-tertiary">
+                  {t('results.disclaimer')}
+                </p>
               </div>
             </div>
+          )}
 
-            {/* Side-by-side comparison */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Autónomo Column */}
-              <div className="bg-background-primary rounded-2xl p-6 border border-strokes-primary">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-2 h-2 rounded-full bg-accent-green-main" />
-                  <h4 className="text-callout-emphasized text-primary">
-                    {t('results.autonomo.title')}
-                  </h4>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.autonomo.facturacion')}</span>
-                    <span className="text-primary font-medium">
-                      {formatNumber(result.autonomo.facturacion, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.autonomo.gastos')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.autonomo.gastos, locale)} €
-                    </span>
-                  </div>
-                  <div className="h-px bg-strokes-primary" />
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.autonomo.cuota')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.autonomo.cuotaAnual, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.autonomo.irpf')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.autonomo.irpfAnual, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.autonomo.gestion')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.autonomo.costeGestion, locale)} €
-                    </span>
-                  </div>
-                  <div className="h-px bg-strokes-primary" />
-                  <div className="flex justify-between text-callout-emphasized">
-                    <span className="text-accent-green-main">{t('results.autonomo.neto')}</span>
-                    <span className="text-accent-green-main">
-                      {formatNumber(result.autonomo.sueldoNetoAnual, locale)} €
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Sociedad Column */}
-              <div className="bg-background-primary rounded-2xl p-6 border border-strokes-primary">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-2 h-2 rounded-full bg-accent-blue-main" />
-                  <h4 className="text-callout-emphasized text-primary">
-                    {t('results.sociedad.title')}
-                  </h4>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.facturacion')}</span>
-                    <span className="text-primary font-medium">
-                      {formatNumber(result.sociedad.facturacion, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.gastos')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.gastos, locale)} €
-                    </span>
-                  </div>
-                  <div className="h-px bg-strokes-primary" />
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.sueldo')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.sueldoBruto, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.ss')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.cuotaSS, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.irpf')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.irpfSueldo, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.is')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.impuestoSociedades, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.gestion')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.costeGestion, locale)} €
-                    </span>
-                  </div>
-                  <div className="h-px bg-strokes-primary" />
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.sueldoNeto')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.sueldoNetoAnual, locale)} €
-                    </span>
-                  </div>
-                  <div className="flex justify-between text-footnote">
-                    <span className="text-secondary">{t('results.sociedad.beneficio')}</span>
-                    <span className="text-primary">
-                      {formatNumber(result.sociedad.beneficioRetenido, locale)} €
-                    </span>
-                  </div>
-                  <div className="h-px bg-strokes-primary" />
-                  <div className="flex justify-between text-callout-emphasized">
-                    <span className="text-accent-blue-main">{t('results.sociedad.total')}</span>
-                    <span className="text-accent-blue-main">
-                      {formatNumber(
-                        result.sociedad.sueldoNetoAnual + result.sociedad.beneficioRetenido,
-                        locale
-                      )}{' '}
-                      €
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Break-even info */}
-            <div className="p-4 rounded-xl bg-background-secondary border border-strokes-primary">
-              <div className="flex items-start gap-3">
+          {/* Empty state */}
+          {!result && (
+            <div
+              className="flex flex-col items-center justify-center text-center py-12 bg-background-primary rounded-2xl border border-strokes-primary"
+              role="status"
+              aria-live="polite"
+            >
+              <div className="w-12 h-12 rounded-full bg-background-secondary flex items-center justify-center mb-4">
                 <svg
-                  className="w-5 h-5 text-accent-purple-main flex-shrink-0 mt-0.5"
+                  className="w-6 h-6 text-tertiary"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    strokeWidth={1.5}
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
                   />
                 </svg>
-                <div className="flex-1">
-                  <p className="text-footnote-emphasized text-primary mb-1">
-                    {t('results.breakEven.title')}
-                  </p>
-                  <p className="text-footnote text-secondary">
-                    {t('results.breakEven.description', {
-                      amount: formatNumber(result.breakEvenPoint, locale),
-                    })}
-                  </p>
-                </div>
               </div>
+              <p className="text-body text-tertiary">{t('results.placeholder')}</p>
             </div>
-
-            {/* Razonamientos */}
-            {result.razonamientos.length > 0 && (
-              <div className="space-y-2">
-                <h4 className="text-footnote-emphasized text-secondary">
-                  {t('results.razonamientos.title')}
-                </h4>
-                <ul className="space-y-2">
-                  {result.razonamientos.map((razon, index) => (
-                    <li key={index} className="flex items-start gap-2 text-footnote text-tertiary">
-                      <span className="text-accent-purple-main mt-1">•</span>
-                      <span>{t(`results.razonamientos.${razon}`)}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* Disclaimer */}
-            <div className="p-3 rounded-lg bg-background-secondary/50 border border-strokes-primary/50">
-              <p className="text-caption text-tertiary">
-                {t('results.disclaimer')}
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Empty state */}
-        {!result && (
-          <div
-            className="flex flex-col items-center justify-center text-center py-12 bg-background-primary rounded-2xl border border-strokes-primary"
-            role="status"
-            aria-live="polite"
-          >
-            <div className="w-12 h-12 rounded-full bg-background-secondary flex items-center justify-center mb-4">
-              <svg
-                className="w-6 h-6 text-tertiary"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                />
-              </svg>
-            </div>
-            <p className="text-body text-tertiary">{t('results.placeholder')}</p>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </CalculatorCard>
   );

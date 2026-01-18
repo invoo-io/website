@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import { getBasePath } from '@/lib/utils';
 import Button from '@/components/ui/button';
+import { SectionHeader } from '@/components/ui/SectionHeader';
 
 interface CalculatorCTAProps {
   className?: string;
@@ -21,12 +22,14 @@ export function CalculatorCTA({ className }: CalculatorCTAProps) {
   return (
     <div className={className}>
       <div className="bg-gradient-to-br from-accent-blue-soft/10 to-accent-purple-soft/10 border border-strokes-primary rounded-[20px] p-8 text-center">
-        <h3 className="text-title2-emphasized text-primary mb-3">
-          {t('title')}
-        </h3>
-        <p className="text-body text-secondary mb-6 max-w-xl mx-auto">
-          {t('description')}
-        </p>
+        <SectionHeader
+          size="card"
+          align="center"
+          title={t('title')}
+          description={t('description')}
+          marginBottom="md"
+          descriptionClassName="max-w-xl"
+        />
         <Button
           variant="gradient"
           showArrow

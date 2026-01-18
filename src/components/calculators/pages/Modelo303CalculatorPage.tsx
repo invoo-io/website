@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
+import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Modelo303Calculator } from '@/components/calculators/Modelo303Calculator';
 import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
@@ -75,16 +76,21 @@ export function Modelo303CalculatorPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex items-center justify-center px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-header-title-emphasized text-center mb-6">
-            <GradientText>{t('hero.titleHighlight')}</GradientText>
-            <span className="text-primary"> {t('hero.titleEnd')}</span>
-          </h1>
-          <p className="text-body text-secondary max-w-2xl mx-auto">
-            {t('hero.description')}
-          </p>
-        </div>
+      <section className="px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
+        <SectionHeader
+          size="hero"
+          align="center"
+          
+          title={
+            <>
+              <GradientText>{t('hero.titleHighlight')}</GradientText>
+              <span className="text-primary"> {t('hero.titleEnd')}</span>
+            </>
+          }
+          description={t('hero.description')}
+          marginBottom="none"
+          descriptionClassName="max-w-2xl"
+        />
       </section>
 
       {/* Calculator Section */}
@@ -108,28 +114,27 @@ export function Modelo303CalculatorPageContent() {
             title={t('concepts.title')}
             description={t('concepts.description')}
             items={keyConcepts}
-            columns={4}
           />
 
           {/* Filing Deadlines */}
           <section>
             <h2 className="text-title-1 text-primary mb-4">{t('deadlines.title')}</h2>
             <p className="text-body text-secondary mb-6">{t('deadlines.description')}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q1.period')}</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q1.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q1.deadline')}</div>
               </div>
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q2.period')}</div>
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q2.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q2.deadline')}</div>
               </div>
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q3.period')}</div>
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q3.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q3.deadline')}</div>
               </div>
-              <div className="bg-background-secondary rounded-xl p-4 border border-strokes-primary">
-                <div className="text-callout-emphasized text-primary mb-1">{t('deadlines.q4.period')}</div>
+              <div className="bg-background-secondary rounded-2xl p-6 border border-strokes-primary">
+                <div className="text-headline text-primary mb-2">{t('deadlines.q4.period')}</div>
                 <div className="text-footnote text-secondary">{t('deadlines.q4.deadline')}</div>
               </div>
             </div>

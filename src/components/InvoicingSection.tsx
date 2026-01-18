@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import InvoicingButton from "./InvoicingButton";
 import GradientText from "./ui/GradientText";
+import { SectionHeader } from "./ui/SectionHeader";
 
 export default function InvoicingSection() {
   const t = useTranslations("home.invoicing");
@@ -34,20 +35,16 @@ export default function InvoicingSection() {
   return (
     <section className="py-[156px] max-md:py-10 px-4 md:px-6 bg-background-primary">
       {/* Title - "Facturación simplificada" / "Invoicing made simple" */}
-      <h2 className="text-section-title-emphasized text-center text-primary max-w-4xl mx-auto mb-16">
-        {locale === "es" ? (
+      <SectionHeader
+        size="section"
+        align="center"
+        title={locale === "es" ? (
           <>Facturación <GradientText>simplificada</GradientText></>
         ) : (
           <>Invoicing made <GradientText>simple</GradientText></>
         )}
-      </h2>
-
-      {/* Intro paragraph */}
-      <div className="max-w-4xl mx-auto mb-16">
-        <p className="text-body text-secondary text-center leading-relaxed">
-          {t("intro")}
-        </p>
-      </div>
+        description={t("intro")}
+      />
 
       {/* Steps Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-5xl mx-auto mb-16">
