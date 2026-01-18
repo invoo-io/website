@@ -179,6 +179,128 @@ interface CalculatorRelatedToolsProps {
   className?: string;
 }
 
+interface BenchmarkSector {
+  name: string;
+  junior: string;
+  mid: string;
+  senior: string;
+  note: string;
+}
+
+interface CalculatorBenchmarksProps {
+  title: string;
+  description: string;
+  sectors: BenchmarkSector[];
+  footnote?: string;
+  className?: string;
+}
+
+/**
+ * CalculatorBenchmarks - Sector benchmarks table for hourly rate calculator
+ */
+export function CalculatorBenchmarks({
+  title,
+  description,
+  sectors,
+  footnote,
+  className,
+}: CalculatorBenchmarksProps) {
+  return (
+    <section className={cn('w-full', className)}>
+      <h2 className="text-title1-emphasized text-primary mb-4">
+        {title}
+      </h2>
+      <p className="text-body text-secondary mb-8">
+        {description}
+      </p>
+
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse">
+          <thead>
+            <tr className="border-b border-strokes-primary">
+              <th className="text-left py-3 px-4 text-callout-emphasized text-primary">Sector</th>
+              <th className="text-left py-3 px-4 text-callout-emphasized text-primary">Junior</th>
+              <th className="text-left py-3 px-4 text-callout-emphasized text-primary">Mid</th>
+              <th className="text-left py-3 px-4 text-callout-emphasized text-primary">Senior</th>
+            </tr>
+          </thead>
+          <tbody>
+            {sectors.map((sector, index) => (
+              <tr
+                key={index}
+                className="border-b border-strokes-primary hover:bg-background-secondary/50 transition-colors"
+              >
+                <td className="py-4 px-4">
+                  <div className="text-body-emphasized text-primary">{sector.name}</div>
+                  <div className="text-caption1 text-tertiary mt-1">{sector.note}</div>
+                </td>
+                <td className="py-4 px-4 text-body text-secondary">{sector.junior}</td>
+                <td className="py-4 px-4 text-body text-secondary">{sector.mid}</td>
+                <td className="py-4 px-4 text-body-emphasized text-accent-blue-main">{sector.senior}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {footnote && (
+        <p className="text-caption1 text-tertiary mt-4 italic">
+          {footnote}
+        </p>
+      )}
+    </section>
+  );
+}
+
+interface CalculatorMethodologyProps {
+  title: string;
+  description: string;
+  steps: string[];
+  sources?: string;
+  className?: string;
+}
+
+/**
+ * CalculatorMethodology - Methodology explanation section
+ */
+export function CalculatorMethodology({
+  title,
+  description,
+  steps,
+  sources,
+  className,
+}: CalculatorMethodologyProps) {
+  return (
+    <section className={cn('w-full', className)}>
+      <div className="p-6 rounded-2xl bg-background-secondary border border-strokes-primary">
+        <h2 className="text-title2-emphasized text-primary mb-3">
+          {title}
+        </h2>
+        <p className="text-body text-secondary mb-6">
+          {description}
+        </p>
+
+        <ol className="space-y-3">
+          {steps.map((step, index) => (
+            <li key={index} className="flex items-start gap-3">
+              <span className="w-6 h-6 rounded-full bg-accent-blue-main/20 flex items-center justify-center flex-shrink-0 text-caption1-emphasized text-accent-blue-main">
+                {index + 1}
+              </span>
+              <span className="text-footnote text-secondary">{step}</span>
+            </li>
+          ))}
+        </ol>
+
+        {sources && (
+          <p className="text-caption2 text-tertiary mt-6 pt-4 border-t border-strokes-primary">
+            {sources}
+          </p>
+        )}
+      </div>
+    </section>
+  );
+}
+
 /**
  * CalculatorRelatedTools - Related calculators section for internal linking
  */
@@ -199,12 +321,12 @@ export function CalculatorRelatedTools({
           <a
             key={calc.href}
             href={calc.href}
-            className="group flex flex-col gap-2 p-5 rounded-xl bg-background-secondary border border-strokes-primary hover:border-accent-purple-main transition-colors"
+            className="group flex flex-col gap-3 p-6 rounded-2xl bg-background-secondary border border-strokes-primary hover:border-accent-blue-main/50 transition-all duration-200"
           >
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-accent-purple-main/10 flex items-center justify-center flex-shrink-0">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-accent-blue-main/10 flex items-center justify-center flex-shrink-0">
                 <svg
-                  className="w-4 h-4 text-accent-purple-main"
+                  className="w-5 h-5 text-accent-blue-main"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -212,22 +334,22 @@ export function CalculatorRelatedTools({
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    strokeWidth={2}
+                    strokeWidth={1.5}
                     d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
                   />
                 </svg>
               </div>
-              <h3 className="text-callout-emphasized text-primary group-hover:text-accent-purple-main transition-colors">
+              <h3 className="text-headline text-primary group-hover:text-accent-blue-main transition-colors">
                 {calc.name}
               </h3>
             </div>
-            <p className="text-footnote text-secondary">
+            <p className="text-footnote text-secondary flex-1">
               {calc.description}
             </p>
-            <div className="flex items-center gap-1 text-caption1 text-accent-purple-main mt-auto pt-2">
+            <div className="flex items-center gap-1.5 text-callout text-accent-blue-main pt-2">
               <span>{ctaText}</span>
               <svg
-                className="w-3 h-3 group-hover:translate-x-1 transition-transform"
+                className="w-4 h-4 group-hover:translate-x-1 transition-transform"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
