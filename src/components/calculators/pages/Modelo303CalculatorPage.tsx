@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
 import { Modelo303Calculator } from '@/components/calculators/Modelo303Calculator';
+import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
 import {
   CalculatorHowTo,
@@ -89,6 +90,7 @@ export function Modelo303CalculatorPageContent() {
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
         <Modelo303Calculator />
+        <CalculatorCTA className="max-w-4xl mx-auto mt-12" />
       </section>
 
       {/* SEO Content Sections */}

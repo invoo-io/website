@@ -92,8 +92,8 @@ export function CalculatorRadioGroup({
               onClick={() => onChange(option.value)}
               className={cn(
                 'flex items-center gap-3 p-4 rounded-xl cursor-pointer',
-                'border transition-all duration-200',
-                'focus:outline-none focus:ring-2 focus:ring-accent-blue-main focus:ring-offset-2',
+                'border-2 transition-all duration-200',
+                'focus:outline-none focus:border-accent-blue-main',
                 isSelected
                   ? 'border-accent-blue-main bg-accent-blue-main/5'
                   : 'border-strokes-primary bg-background-primary hover:border-strokes-secondary'

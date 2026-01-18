@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
 import { CuotaAutonomosCalculator } from '@/components/calculators/CuotaAutonomosCalculator';
+import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
 import {
   CalculatorHowTo,
@@ -89,6 +90,16 @@ export function CuotaAutonomosCalculatorPageContent() {
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
         <CuotaAutonomosCalculator />
+
+        {/* CTA Section */}
+        <CalculatorCTA className="max-w-4xl mx-auto mt-12" />
+
+        {/* Trust/Source indicator */}
+        <div className="max-w-4xl mx-auto mt-6 text-center">
+          <p className="text-footnote text-tertiary">
+            {t('trust.source')}
+          </p>
+        </div>
       </section>
 
       {/* SEO Content Sections */}

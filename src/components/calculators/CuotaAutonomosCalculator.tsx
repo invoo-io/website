@@ -9,41 +9,23 @@ import { CalculatorSelect } from './CalculatorSelect';
 import { CalculatorRadioGroup } from './CalculatorRadioGroup';
 import { CalculatorResult } from './CalculatorResult';
 import { calculateCuotaAutonomos, COMUNIDADES_AUTONOMAS } from '@/lib/calculators/cuota-autonomos';
-import { MAX_CALCULATOR_AMOUNT } from '@/lib/calculators/constants';
-
+import {
+  MAX_CALCULATOR_AMOUNT,
+  formatCurrency,
+  parseLocalizedAmount,
+  filterAmountInput
+} from '@/lib/calculators/constants';
 // Comunidades Autónomas with 24-month Cuota Cero (others have 12 months)
-const CUOTA_CERO_24_MONTHS = ['madrid', 'castilla-la-mancha'] as const;
-
-/**
- * Parse amount string handling both Spanish (1.234,56) and English (1,234.56) formats
- */
-function parseLocalizedAmount(value: string, locale: string): number {
-  if (!value || !value.trim()) return 0;
-
-  let normalized = value.trim();
-
-  if (locale === 'es') {
-    // Spanish: remove thousand separators (.) and convert decimal comma to period
-    normalized = normalized.replace(/\./g, '').replace(',', '.');
-  } else {
-    // English: remove thousand separators (,) and keep decimal period
-    normalized = normalized.replace(/,/g, '');
-  }
-
-  const parsed = parseFloat(normalized);
-  return isNaN(parsed) ? 0 : parsed;
-}
+// Note: Only Madrid currently has 24-month program open (January 2026)
+const CUOTA_CERO_24_MONTHS = ['madrid'] as const;
 
 /**
  * Validate amount and return error message key if invalid
  */
-function validateAmount(value: string, numericValue: number, locale: string): string | null {
+function validateAmount(value: string, numericValue: number): string | null {
   if (!value || !value.trim()) return null; // Empty is valid (shows placeholder)
 
   // Check if the string has valid characters
-  // Both locales allow same chars (digits, dots, commas, spaces) - parsing handles format differences
-  // Spanish uses: 1.234,56 (dot=thousand, comma=decimal)
-  // English uses: 1,234.56 (comma=thousand, dot=decimal)
   const validChars = /^[\d.,\s]+$/;
 
   if (!validChars.test(value)) {
@@ -64,48 +46,67 @@ function validateAmount(value: string, numericValue: number, locale: string): st
 /**
  * CuotaAutonomosCalculator - Complete cuota autónomos calculator component
  * Calculates social security quota for Spanish self-employed
+ * Uses split input pattern: monthly revenue + monthly expenses
  */
 export function CuotaAutonomosCalculator() {
   const t = useTranslations('calculators.cuotaAutonomos');
   const params = useParams();
   const locale = (params.locale as string) || 'es';
 
-  // State
-  const [rendimientoAnual, setRendimientoAnual] = useState<string>('');
-  const [year, setYear] = useState<string>('2025');
+  // State - Annual input pattern
+  const [ingresosAnuales, setIngresosAnuales] = useState<string>('');
+  const [gastosAnuales, setGastosAnuales] = useState<string>('');
+  const [year, setYear] = useState<string>('2026');
   const [esPrimeraAlta, setEsPrimeraAlta] = useState<string>('no');
   const [comunidadAutonoma, setComunidadAutonoma] = useState<string>('');
 
   // Locale-specific formatting
   const placeholder = locale === 'es' ? '0,00' : '0.00';
 
-  // Parse amount for calculation (handles both locale formats)
-  const numericRendimiento = useMemo(() => {
-    return parseLocalizedAmount(rendimientoAnual, locale);
-  }, [rendimientoAnual, locale]);
+  // Parse amounts for calculation
+  const numericIngresos = useMemo(() => {
+    return parseLocalizedAmount(ingresosAnuales, locale);
+  }, [ingresosAnuales, locale]);
 
-  // Validate input
-  const inputError = useMemo(() => {
-    const errorKey = validateAmount(rendimientoAnual, numericRendimiento, locale);
+  const numericGastos = useMemo(() => {
+    return parseLocalizedAmount(gastosAnuales, locale);
+  }, [gastosAnuales, locale]);
+
+  // Calculate rendimiento (net income) - already annual
+  const rendimientoAnual = useMemo(() => {
+    return Math.max(0, numericIngresos - numericGastos);
+  }, [numericIngresos, numericGastos]);
+
+  // Validate inputs
+  const ingresosError = useMemo(() => {
+    const errorKey = validateAmount(ingresosAnuales, numericIngresos);
     return errorKey ? t(errorKey) : undefined;
-  }, [rendimientoAnual, numericRendimiento, locale, t]);
+  }, [ingresosAnuales, numericIngresos, t]);
+
+  const gastosError = useMemo(() => {
+    const errorKey = validateAmount(gastosAnuales, numericGastos);
+    return errorKey ? t(errorKey) : undefined;
+  }, [gastosAnuales, numericGastos, t]);
+
+  const hasError = ingresosError || gastosError;
+
+  // Warning when expenses exceed income
+  const expensesExceedIncome = numericGastos > numericIngresos && numericIngresos > 0;
 
   // Handle amount change - allow locale-appropriate characters
-  const handleAmountChange = useCallback((value: string) => {
-    // Allow digits, commas, periods, and spaces (for thousand separators)
-    const filtered = value.replace(/[^\d.,\s]/g, '');
-    setRendimientoAnual(filtered);
+  const handleAmountChange = useCallback((setter: (value: string) => void) => (value: string) => {
+    setter(filterAmountInput(value));
   }, []);
 
   // Calculate results
   const result = useMemo(() => {
     return calculateCuotaAutonomos(
-      numericRendimiento,
-      parseInt(year),
+      rendimientoAnual,
+      parseInt(year, 10),
       esPrimeraAlta === 'yes',
       comunidadAutonoma || null
     );
-  }, [numericRendimiento, year, esPrimeraAlta, comunidadAutonoma]);
+  }, [rendimientoAnual, year, esPrimeraAlta, comunidadAutonoma]);
 
   // Year options
   const yearOptions = [
@@ -142,35 +143,71 @@ export function CuotaAutonomosCalculator() {
     ? 24
     : 12;
 
-  // Results for display - separate tramo info from base cotización for clarity
-  const resultsData = [
-    { label: t('results.rendimientoMensual'), value: result.rendimientoMensual },
-    { label: `${t('results.baseCotizacion')} (${t('results.tramo')} ${result.tramo})`, value: result.baseCotizacion },
-    { label: t('results.cuotaMensual'), value: result.cuotaMensual },
-    { label: t('results.cuotaAnual'), value: result.cuotaAnual },
-    ...(result.bonificacion > 0
-      ? [
-          { label: t('results.bonificacion'), value: result.bonificacion, prefix: '-' as const },
-          { label: t('results.cuotaFinal'), value: result.cuotaFinal, isHighlighted: true },
-        ]
-      : []),
-  ];
+  // Calculate annual savings for tarifa plana
+  const tarifaPlanaSavings = result.esPrimeraAlta && !result.tieneCuotaCero && result.bonificacion > 0
+    ? Math.round(result.bonificacion * 12)
+    : 0;
+
+  // Check if we have valid input to show results
+  const hasValidInput = ingresosAnuales.trim() && !hasError && numericIngresos > 0;
+
+  // Results for display - annual focus, most important value at the end (highlighted)
+  const resultsData = result.esPrimeraAlta
+    ? [
+        // Primera alta: Build up to annual quota with bonus
+        { label: `${t('results.baseCotizacion')} (${t('results.tramo')} ${result.tramo} ${t('results.tramoContext')})`, value: result.baseCotizacion },
+        { label: t('results.cuotaAnualDespuesBonificacion'), value: result.cuotaAnual },
+        {
+          label: result.tieneCuotaCero
+            ? t('results.cuotaAnualCuotaCero')
+            : t('results.cuotaAnualTarifaPlana'),
+          value: result.cuotaFinal * 12,
+          isHighlighted: true,
+        },
+      ]
+    : [
+        // Ya estoy de alta: Build up to annual quota
+        { label: `${t('results.baseCotizacion')} (${t('results.tramo')} ${result.tramo} ${t('results.tramoContext')})`, value: result.baseCotizacion },
+        { label: t('results.cuotaAnual'), value: result.cuotaAnual, isHighlighted: true },
+      ];
 
   return (
     <CalculatorCard className="w-full max-w-4xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         {/* Left side - Inputs */}
         <div className="flex flex-col gap-6">
+          {/* Annual Revenue */}
           <CalculatorInput
-            label={t('inputs.rendimientoAnual')}
-            value={rendimientoAnual}
-            onChange={handleAmountChange}
+            label={t('inputs.ingresosAnuales')}
+            value={ingresosAnuales}
+            onChange={handleAmountChange(setIngresosAnuales)}
             type="text"
             placeholder={placeholder}
             suffix="€"
-            helperText={t('inputs.rendimientoAnualHelper')}
-            error={inputError}
+            helperText={t('inputs.ingresosAnualesHelper')}
+            error={ingresosError}
           />
+
+          {/* Annual Expenses */}
+          <CalculatorInput
+            label={t('inputs.gastosAnuales')}
+            value={gastosAnuales}
+            onChange={handleAmountChange(setGastosAnuales)}
+            type="text"
+            placeholder={placeholder}
+            suffix="€"
+            helperText={t('inputs.gastosAnualesHelper')}
+            error={gastosError}
+          />
+
+          {/* Warning when expenses exceed income */}
+          {expensesExceedIncome && (
+            <div className="p-3 bg-amber-500/10 border border-amber-500/30 rounded-lg" role="alert">
+              <p className="text-footnote text-amber-600 dark:text-amber-400">
+                {t('warnings.expensesExceedIncome')}
+              </p>
+            </div>
+          )}
 
           <CalculatorSelect
             label={t('inputs.year')}
@@ -212,8 +249,8 @@ export function CuotaAutonomosCalculator() {
             aria-live="polite"
             aria-atomic="true"
           >
-            {!rendimientoAnual.trim() || inputError ? (
-              // Empty state placeholder with accessible description
+            {!hasValidInput ? (
+              // Empty state placeholder
               <div
                 className="flex flex-col items-center justify-center text-center py-8"
                 role="status"
@@ -241,6 +278,16 @@ export function CuotaAutonomosCalculator() {
               </div>
             ) : (
               <>
+                {/* Net Income Summary - Annual focus */}
+                <div className="flex justify-between items-center pb-4 mb-4 border-b border-strokes-secondary">
+                  <span className="text-body text-secondary">
+                    {t('results.rendimientoAnual')}
+                  </span>
+                  <span className="text-body-emphasized text-primary">
+                    {formatCurrency(rendimientoAnual, locale)}
+                  </span>
+                </div>
+
                 <CalculatorResult
                   results={resultsData}
                   locale={locale}
@@ -252,10 +299,24 @@ export function CuotaAutonomosCalculator() {
                     </p>
                   </div>
                 )}
+                {tarifaPlanaSavings > 0 && !result.tieneCuotaCero && (
+                  <div className="mt-4 p-3 bg-accent-blue-soft/10 border border-accent-blue-soft rounded-lg" role="alert">
+                    <p className="text-footnote text-accent-blue-main">
+                      {t('results.tarifaPlanaNotice', { savings: tarifaPlanaSavings.toLocaleString(locale) })}
+                    </p>
+                  </div>
+                )}
               </>
             )}
           </div>
         </div>
+      </div>
+
+      {/* Disclaimer */}
+      <div className="mt-6 pt-4 border-t border-strokes-secondary">
+        <p className="text-footnote text-secondary">
+          {t('disclaimer')}
+        </p>
       </div>
     </CalculatorCard>
   );

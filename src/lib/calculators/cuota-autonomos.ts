@@ -25,7 +25,7 @@ export interface CuotaCalculationResult {
 }
 
 // Official 2024 tramos - Real Decreto-ley 13/2022 (Sistema de Cotización por Ingresos Reales)
-// Source: Seguridad Social - Tabla de bases de cotización 2024
+// Source: BOE-A-2024-1691, Orden PJC/51/2024
 // 15 tramos based on monthly net income (rendimiento neto mensual)
 export const CUOTA_TRAMOS_2024: CuotaTramo[] = [
   { min: 0, max: 670, baseMin: 735.29, baseMax: 816.98 },
@@ -34,15 +34,15 @@ export const CUOTA_TRAMOS_2024: CuotaTramo[] = [
   { min: 1166.70, max: 1300, baseMin: 950.98, baseMax: 1300 },
   { min: 1300, max: 1500, baseMin: 960.78, baseMax: 1500 },
   { min: 1500, max: 1700, baseMin: 960.78, baseMax: 1700 },
-  { min: 1700, max: 1850, baseMin: 1013.07, baseMax: 1850 },
-  { min: 1850, max: 2030, baseMin: 1029.41, baseMax: 2030 },
-  { min: 2030, max: 2330, baseMin: 1045.75, baseMax: 2330 },
-  { min: 2330, max: 2760, baseMin: 1078.43, baseMax: 2760 },
-  { min: 2760, max: 3190, baseMin: 1143.79, baseMax: 3190 },
-  { min: 3190, max: 3620, baseMin: 1209.15, baseMax: 3620 },
-  { min: 3620, max: 4050, baseMin: 1274.51, baseMax: 4050 },
-  { min: 4050, max: 6000, baseMin: 1372.55, baseMax: 4495.50 },
-  { min: 6000, max: null, baseMin: 1633.99, baseMax: 4495.50 },
+  { min: 1700, max: 1850, baseMin: 1045.75, baseMax: 1850 },
+  { min: 1850, max: 2030, baseMin: 1062.09, baseMax: 2030 },
+  { min: 2030, max: 2330, baseMin: 1078.43, baseMax: 2330 },
+  { min: 2330, max: 2760, baseMin: 1111.11, baseMax: 2760 },
+  { min: 2760, max: 3190, baseMin: 1176.47, baseMax: 3190 },
+  { min: 3190, max: 3620, baseMin: 1241.83, baseMax: 3620 },
+  { min: 3620, max: 4050, baseMin: 1307.19, baseMax: 4050 },
+  { min: 4050, max: 6000, baseMin: 1454.25, baseMax: 4720.50 },
+  { min: 6000, max: null, baseMin: 1732.03, baseMax: 4720.50 },
 ];
 
 // Official 2025 tramos - BOE-A-2025-3780, Orden PJC/178/2025
@@ -110,23 +110,15 @@ export const CUOTA_RATES = {
 // Note: Use getRateByYear(year) to get the correct rate for a specific year
 // CUOTA_RATE constant removed - always use year-specific rates via getRateByYear()
 
-// Comunidades Autónomas with active Cuota Cero programs (2024-2026)
+// Comunidades Autónomas with active Cuota Cero programs (January 2026)
 // Cuota Cero = 100% bonification of cuota for first 12-24 months
-// Note: Programs vary by region - some require specific conditions
+// IMPORTANT: Regional programs change frequently. Last verified: January 2026
+// Note: Other communities (Canarias, Castilla-La Mancha) may reopen programs during 2026
 export const CUOTA_CERO_CCAA = [
-  'andalucia',     // Active - 12 months
-  'aragon',        // Active - 12 months
-  'baleares',      // Active - 12 months
-  'cantabria',     // Active - 12 months
-  'canarias',      // Active - 12 months
-  'castilla-la-mancha', // Active - 24 months
-  'castilla-y-leon', // Active - 12 months
-  'comunidad-valenciana', // Active - 12 months
-  'extremadura',   // Active - 12 months
-  'galicia',       // Active - 12 months
-  'la-rioja',      // Active - 12 months
-  'madrid',        // Active - 24 months
-  'murcia',        // Active - 12 months
+  'andalucia',     // OPEN until Sept 30, 2026 - 12 months
+  'aragon',        // OPEN until Oct 30, 2026 - 12 months
+  'cantabria',     // OPEN - 12 months
+  'madrid',        // OPEN - 24 months
 ] as const;
 
 // List of all Comunidades Autónomas for dropdown
@@ -237,6 +229,10 @@ function calculateBaseCotizacion(rendimientoMensual: number, tramo: CuotaTramo):
 
   // Calculate proportional base within the tramo
   const incomeRange = tramo.max - tramo.min;
+  // Guard against division by zero (edge case: single-value tramo)
+  if (incomeRange === 0) {
+    return tramo.baseMin;
+  }
   const baseRange = tramo.baseMax - tramo.baseMin;
   const incomePosition = rendimientoMensual - tramo.min;
   const proportion = incomePosition / incomeRange;

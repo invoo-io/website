@@ -1288,6 +1288,11 @@
     "common": {
       "relatedTitle": "Otras calculadoras que te pueden interesar",
       "useCalculator": "Usar calculadora",
+      "cta": {
+        "title": "Deja de calcular. Empieza a facturar.",
+        "description": "Facturas rápidas, gestoría conectada y cumplimiento Verifactu. Todo incluido, sin estrés.",
+        "button": "Únete a la lista de espera"
+      },
       "related": {
         "iva": {
           "name": "Calculadora de IVA",
@@ -1482,17 +1487,33 @@
     },
     "cuotaAutonomos": {
       "meta": {
-        "title": "Calculadora Cuota de Autónomos 2026 | Gratis - Invoo",
-        "description": "Calcula tu cuota de autónomo según tus ingresos reales. Sistema de tramos 2024-2026. Descubre si aplica Tarifa Plana o Cuota Cero en tu comunidad. Sin registro."
+        "title": "Calculadora Cuota Autónomos 2026 por Tramos | Gratis + Tarifa Plana - Invoo",
+        "description": "Calcula tu cuota de autónomo 2026 por ingresos reales. Sistema de tramos actualizado. Tarifa Plana 80€. Cuota Cero disponible. Gratis, sin registro. Resultados al instante."
       },
       "hero": {
-        "titleHighlight": "Calculadora Cuota",
-        "titleEnd": "de Autónomos",
-        "description": "Calcula tu cuota de autónomo según tus ingresos reales. Sistema de cotización por tramos actualizado para 2024-2026. Incluye Tarifa Plana y Cuota Cero."
+        "titleHighlight": "Calculadora Cuota de Autónomos 2026",
+        "titleEnd": "por Tramos de Ingresos Reales",
+        "description": "Calcula tu cuota de autónomo según tus ingresos reales. Sistema de cotización por tramos actualizado para 2026. Incluye Tarifa Plana y Cuota Cero.",
+        "badges": {
+          "free": "100% gratis",
+          "noSignup": "Sin registro",
+          "updated": "Actualizado 2026"
+        }
+      },
+      "trust": {
+        "source": "Datos oficiales BOE 2026",
+        "disclaimer": "Esta calculadora proporciona estimaciones orientativas basadas en la normativa vigente. Consulta con tu gestoría para el cálculo definitivo."
       },
       "inputs": {
-        "rendimientoAnual": "Rendimiento neto anual",
-        "rendimientoAnualHelper": "Ingresos menos gastos deducibles al año",
+        "ingresosAnuales": "Ingresos anuales esperados",
+        "ingresosAnualesHelper": "Lo que esperas facturar en un año (sin IVA)",
+        "gastosAnuales": "Gastos deducibles anuales",
+        "gastosAnualesHelper": "Alquiler, material, seguros, gestoría, etc.",
+        "useExpenseEstimate": "No estoy seguro de mis gastos",
+        "expenseEstimateHelper": "Usaremos un 25% de tus ingresos (típico para servicios)",
+        "calculatedNet": "Rendimiento neto calculado",
+        "calculatedNetMonthly": "{amount}/mes",
+        "calculatedNetAnnual": "{amount}/año",
         "year": "Año de cotización",
         "yearHelper": "Selecciona el año para el cálculo",
         "primeraAlta": {
@@ -1515,18 +1536,39 @@
         "baseCotizacion": "Base de cotización",
         "cuotaMensual": "Cuota mensual",
         "cuotaAnual": "Cuota anual",
+        "cuotaMensualTarifaPlana": "Cuota mensual (Tarifa Plana)",
+        "cuotaAnualTarifaPlana": "Cuota anual (Tarifa Plana)",
+        "cuotaMensualCuotaCero": "Cuota mensual (Cuota Cero)",
+        "cuotaAnualCuotaCero": "Cuota anual (Cuota Cero)",
+        "cuotaDespuesBonificacion": "Cuota después del periodo bonificado",
+        "cuotaAnualDespuesBonificacion": "Cuota anual después del periodo bonificado",
+        "rendimientoAnual": "Rendimiento neto anual",
         "bonificacion": "Bonificación",
         "cuotaFinal": "Cuota final a pagar",
         "tarifaPlana": "Tarifa Plana aplicada",
         "cuotaCero": "Cuota Cero aplicada",
-        "placeholder": "Introduce tus ingresos anuales para ver tu cuota",
-        "cuotaCeroNotice": "¡Felicidades! Tu comunidad ofrece Cuota Cero para nuevos autónomos. No pagarás cuota durante los primeros {months} meses."
+        "placeholder": "Introduce tus ingresos mensuales para ver tu cuota",
+        "cuotaCeroNotice": "¡Felicidades! Tu comunidad ofrece Cuota Cero para nuevos autónomos. No pagarás cuota durante los primeros {months} meses.",
+        "tarifaPlanaNotice": "Con Tarifa Plana, pagas solo 80€/mes los primeros 12 meses. Ahorras {savings}€ al año.",
+        "tramoContext": "de 15",
+        "savingsLabel": "Ahorras",
+        "perMonth": "/mes",
+        "perYear": "/año"
+      },
+      "cta": {
+        "title": "¿Quieres ayuda con tus cuotas y facturas?",
+        "description": "Con Invoo, tu gestoría ve tus cuotas en tiempo real. Calcula automáticamente, cambia de tramo con 1 clic.",
+        "button": "Únete a la lista de espera"
       },
       "errors": {
         "invalidNumber": "Introduce un número válido",
         "negativeNotAllowed": "El importe debe ser positivo",
         "amountTooLarge": "El importe excede el máximo permitido"
       },
+      "warnings": {
+        "expensesExceedIncome": "Tus gastos superan tus ingresos. El rendimiento neto será 0€ y pagarás la cuota mínima."
+      },
+      "disclaimer": "Cálculo orientativo basado en la normativa vigente (enero 2026). La Seguridad Social ajustará tu cuota según tus ingresos reales declarados. Consulta con tu gestoría para asesoramiento personalizado.",
       "howTo": {
         "title": "Cómo calcular tu cuota de autónomo",
         "schemaName": "Cómo calcular la cuota de autónomo por ingresos reales",
@@ -1549,7 +1591,7 @@
         }
       },
       "tramos": {
-        "title": "Sistema de tramos 2024-2026",
+        "title": "Tabla de Tramos de Autónomos 2026",
         "description": "Desde 2023, la cuota de autónomos se calcula según tus ingresos reales, con 15 tramos diferentes. A más ingresos, mayor base de cotización.",
         "tramo1": {
           "title": "Tramos 1-5: Ingresos bajos",

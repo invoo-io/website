@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
 import { PrecioHoraCalculator } from '@/components/calculators/PrecioHoraCalculator';
+import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
 import {
   CalculatorHowTo,
@@ -101,6 +102,7 @@ export function PrecioHoraCalculatorPageContent() {
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
         <PrecioHoraCalculator />
+        <CalculatorCTA className="max-w-4xl mx-auto mt-12" />
       </section>
 
       {/* SEO Content Sections */}

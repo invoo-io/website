@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import GradientText from '@/components/ui/GradientText';
 import { SueldoNetoAutonomoCalculator } from '@/components/calculators/SueldoNetoAutonomoCalculator';
+import { CalculatorCTA } from '@/components/calculators/CalculatorCTA';
 import { CalculatorErrorBoundary } from '@/components/calculators/CalculatorErrorBoundary';
 import { CalculatorFAQ } from '@/components/calculators/CalculatorFAQ';
 import {
@@ -92,6 +93,7 @@ export function SueldoNetoAutonomoCalculatorPageContent() {
         <CalculatorErrorBoundary>
           <SueldoNetoAutonomoCalculator />
         </CalculatorErrorBoundary>
+        <CalculatorCTA className="max-w-4xl mx-auto mt-12" />
       </section>
 
       {/* SEO Content Sections */}

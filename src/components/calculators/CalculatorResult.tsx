@@ -82,8 +82,8 @@ export function CalculatorResult({
       await navigator.clipboard.writeText(textToCopy);
       setCopiedIndex(index);
       setTimeout(() => setCopiedIndex(null), 2000);
-    } catch (err) {
-      console.error('Failed to copy:', err);
+    } catch {
+      // Silent fail - clipboard API may not be available in all contexts
     }
   }, []);
 
