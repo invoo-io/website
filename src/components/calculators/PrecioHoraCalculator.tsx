@@ -134,7 +134,7 @@ export function PrecioHoraCalculator() {
         suffix: '/mes',
       },
     ],
-    [t, result.precioPorHora, result.tarifaDiaria, result.ingresoMensualBruto]
+    [t, result]
   );
 
   // Memoized breakdown results
@@ -147,17 +147,14 @@ export function PrecioHoraCalculator() {
       {
         label: t('results.gastosDeducibles'),
         value: result.gastosDeducibles,
-        prefix: '-',
       },
       {
         label: t('results.cuotaAutonomos'),
         value: result.cuotaAutonomosAnual,
-        prefix: '-',
       },
       {
         label: t('results.irpfEstimado'),
         value: result.irpfEstimado,
-        prefix: '-',
       },
       {
         label: t('results.ingresoNetoFinal'),
@@ -165,14 +162,7 @@ export function PrecioHoraCalculator() {
         isHighlighted: true,
       },
     ],
-    [
-      t,
-      result.ingresoAnualBruto,
-      result.gastosDeducibles,
-      result.cuotaAutonomosAnual,
-      result.irpfEstimado,
-      result.ingresoNetoDeseado,
-    ]
+    [t, result]
   );
 
   return (

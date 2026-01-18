@@ -135,7 +135,12 @@
       "WebFetch(domain:cuentica.com)",
       "WebFetch(domain:mundocontabilidad.es)",
       "WebFetch(domain:taxscouts.es)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:www.calculadorafreelance.com)",
+      "WebFetch(domain:entretramites.com)",
+      "WebFetch(domain:calculadora.malt.es)",
+      "WebFetch(domain:www.nngroup.com)",
+      "WebFetch(domain:antoniojenaro.com)"
     ],
     "deny": [],
     "ask": []

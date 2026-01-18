@@ -9,6 +9,7 @@ export interface ResultRow {
   value: number;
   isHighlighted?: boolean;
   prefix?: string;
+  suffix?: string;
 }
 
 interface CalculatorResultProps {
@@ -128,6 +129,7 @@ export function CalculatorResult({
               )}
             >
               {formatCurrency(row.value, locale)}
+              {row.suffix && <span className="text-tertiary ml-1">{row.suffix}</span>}
             </span>
             <button
               onClick={() => handleCopy(row.value, index)}

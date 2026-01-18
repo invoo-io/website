@@ -34,6 +34,16 @@ export async function generateMetadata({
   return {
     title: t('meta.title'),
     description: t('meta.description'),
+    keywords: [
+      'calcular precio hora autónomo',
+      'calculadora tarifa freelance',
+      'cuánto cobrar por hora',
+      'tarifa horaria autónomo España',
+      'precio hora freelance 2026',
+      'calculadora tarifa horaria',
+      'calcular tarifa freelance',
+      'precio por hora autónomo IRPF',
+    ],
     alternates: {
       canonical: `${BASE_URL}${esPath}`,
       languages: {
@@ -42,23 +52,38 @@ export async function generateMetadata({
         'x-default': `${BASE_URL}${esPath}`,
       },
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     openGraph: {
       type: 'website',
       locale: 'es_ES',
       url: `${BASE_URL}${esPath}`,
       title: t('meta.title'),
       description: t('meta.description'),
+      siteName: 'Invoo',
       images: [{
-        url: `${BASE_URL}/og/calculators/precio-hora.png`,
+        url: `${BASE_URL}/calculators.webp`,
         width: 1200,
         height: 630,
-        alt: t('meta.title'),
+        alt: 'Invoo - Calculadoras Gratis para Autónomos en España',
       }],
     },
     twitter: {
       card: 'summary_large_image',
+      site: '@invoo_es',
+      creator: '@invoo_es',
       title: t('meta.title'),
       description: t('meta.description'),
+      images: [`${BASE_URL}/calculators.webp`],
     },
   };
 }
@@ -87,6 +112,8 @@ export default async function PrecioHoraCalculatorPage({
     { question: t('faq.q4.question'), answer: t('faq.q4.answer') },
     { question: t('faq.q5.question'), answer: t('faq.q5.answer') },
     { question: t('faq.q6.question'), answer: t('faq.q6.answer') },
+    { question: t('faq.q7.question'), answer: t('faq.q7.answer') },
+    { question: t('faq.q8.question'), answer: t('faq.q8.answer') },
   ];
 
   // Schema data

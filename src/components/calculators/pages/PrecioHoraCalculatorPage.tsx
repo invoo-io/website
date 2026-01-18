@@ -11,6 +11,8 @@ import {
   CalculatorInfoGrid,
   CalculatorWhyUse,
   CalculatorRelatedTools,
+  CalculatorBenchmarks,
+  CalculatorMethodology,
 } from '@/components/calculators/CalculatorSEOContent';
 import { getBasePath } from '@/lib/utils';
 
@@ -51,7 +53,51 @@ export function PrecioHoraCalculatorPageContent() {
     { question: t('faq.q4.question'), answer: t('faq.q4.answer') },
     { question: t('faq.q5.question'), answer: t('faq.q5.answer') },
     { question: t('faq.q6.question'), answer: t('faq.q6.answer') },
+    { question: t('faq.q7.question'), answer: t('faq.q7.answer') },
+    { question: t('faq.q8.question'), answer: t('faq.q8.answer') },
   ];
+
+  // Benchmark sectors data
+  const benchmarkSectors = [
+    {
+      name: t('benchmarks.sectors.dev.name'),
+      junior: t('benchmarks.sectors.dev.junior'),
+      mid: t('benchmarks.sectors.dev.mid'),
+      senior: t('benchmarks.sectors.dev.senior'),
+      note: t('benchmarks.sectors.dev.note'),
+    },
+    {
+      name: t('benchmarks.sectors.design.name'),
+      junior: t('benchmarks.sectors.design.junior'),
+      mid: t('benchmarks.sectors.design.mid'),
+      senior: t('benchmarks.sectors.design.senior'),
+      note: t('benchmarks.sectors.design.note'),
+    },
+    {
+      name: t('benchmarks.sectors.marketing.name'),
+      junior: t('benchmarks.sectors.marketing.junior'),
+      mid: t('benchmarks.sectors.marketing.mid'),
+      senior: t('benchmarks.sectors.marketing.senior'),
+      note: t('benchmarks.sectors.marketing.note'),
+    },
+    {
+      name: t('benchmarks.sectors.consulting.name'),
+      junior: t('benchmarks.sectors.consulting.junior'),
+      mid: t('benchmarks.sectors.consulting.mid'),
+      senior: t('benchmarks.sectors.consulting.senior'),
+      note: t('benchmarks.sectors.consulting.note'),
+    },
+    {
+      name: t('benchmarks.sectors.content.name'),
+      junior: t('benchmarks.sectors.content.junior'),
+      mid: t('benchmarks.sectors.content.mid'),
+      senior: t('benchmarks.sectors.content.senior'),
+      note: t('benchmarks.sectors.content.note'),
+    },
+  ];
+
+  // Methodology steps
+  const methodologySteps = t.raw('methodology.steps') as string[];
 
   // How-to steps
   const howToSteps = [
@@ -121,6 +167,22 @@ export function PrecioHoraCalculatorPageContent() {
             description={t('factors.description')}
             items={keyFactors}
             columns={4}
+          />
+
+          {/* Sector Benchmarks */}
+          <CalculatorBenchmarks
+            title={t('benchmarks.title')}
+            description={t('benchmarks.description')}
+            sectors={benchmarkSectors}
+            footnote={t('benchmarks.note')}
+          />
+
+          {/* Methodology */}
+          <CalculatorMethodology
+            title={t('methodology.title')}
+            description={t('methodology.description')}
+            steps={methodologySteps}
+            sources={t('methodology.sources')}
           />
 
           {/* Why Use */}

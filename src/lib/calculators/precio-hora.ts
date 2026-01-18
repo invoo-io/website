@@ -95,7 +95,7 @@ const TAX_ADJUSTMENT_FACTOR = 1.4;
 const MAX_SAFE_AMOUNT = 999999999999.99;
 
 /** Default calculation year for cuota autónomos */
-const DEFAULT_CALCULATION_YEAR = 2025;
+const DEFAULT_CALCULATION_YEAR = 2026;
 
 // ============================================================================
 // UTILITY FUNCTIONS
