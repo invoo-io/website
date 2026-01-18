@@ -6,7 +6,7 @@
   "nav": {
     "services": "Servicios",
     "resources": "Recursos",
-    "tools": "Herramientas",
+    "tools": "Calculadoras",
     "pricing": "Precios",
     "about": "Nosotros",
     "contact": "Contacto",
@@ -21,15 +21,15 @@
     "gestorias": "Gestorías",
     "faq": "Preguntas Frecuentes",
     "blog": "Blog",
-    "calculatorIVA": "Calculadora de IVA",
-    "calculatorModelo303": "Calculadora Modelo 303",
-    "calculatorModelo130": "Calculadora Modelo 130",
-    "calculatorCuotaAutonomos": "Calculadora Cuota Autónomos",
-    "calculatorFactura": "Calculadora de Facturas",
-    "calculatorIRPF": "Calculadora IRPF Autónomos",
-    "calculatorSueldoNeto": "Calculadora Sueldo Neto",
-    "calculatorPrecioHora": "Calculadora Precio por Hora",
-    "calculatorGastosDeducibles": "Calculadora Gastos Deducibles",
+    "calculatorIVA": "IVA",
+    "calculatorModelo303": "Modelo 303",
+    "calculatorModelo130": "Modelo 130",
+    "calculatorCuotaAutonomos": "Cuota Autónomos",
+    "calculatorFactura": "Facturas",
+    "calculatorIRPF": "IRPF Autónomos",
+    "calculatorSueldoNeto": "Sueldo Neto",
+    "calculatorPrecioHora": "Precio por Hora",
+    "calculatorGastosDeducibles": "Gastos Deducibles",
     "calculatorAutonomoVsEmpresa": "Autónomo vs Empresa",
     "login": "Iniciar sesión",
     "getStarted": "Únete a la lista de espera"
@@ -1052,16 +1052,16 @@
       "resourcesTitle": "Recursos",
       "faqs": "Preguntas Frecuentes",
       "blog": "Blog",
-      "toolsTitle": "Herramientas",
-      "calculatorIVA": "Calculadora de IVA",
-      "calculatorModelo303": "Calculadora Modelo 303",
-      "calculatorModelo130": "Calculadora Modelo 130",
-      "calculatorCuotaAutonomos": "Calculadora Cuota Autónomos",
-      "calculatorFactura": "Calculadora de Facturas",
-      "calculatorIRPF": "Calculadora IRPF Autónomos",
-      "calculatorSueldoNeto": "Calculadora Sueldo Neto",
-      "calculatorPrecioHora": "Calculadora Precio por Hora",
-      "calculatorGastosDeducibles": "Calculadora Gastos Deducibles",
+      "toolsTitle": "Calculadoras",
+      "calculatorIVA": "IVA",
+      "calculatorModelo303": "Modelo 303",
+      "calculatorModelo130": "Modelo 130",
+      "calculatorCuotaAutonomos": "Cuota Autónomos",
+      "calculatorFactura": "Facturas",
+      "calculatorIRPF": "IRPF Autónomos",
+      "calculatorSueldoNeto": "Sueldo Neto",
+      "calculatorPrecioHora": "Precio por Hora",
+      "calculatorGastosDeducibles": "Gastos Deducibles",
       "calculatorAutonomoVsEmpresa": "Autónomo vs Empresa",
       "copyright": "© 2025 Invoo.es. Todos los derechos reservados. Hecho con ♥ para autónomos españoles"
     }
@@ -2120,39 +2120,41 @@
     },
     "precioHora": {
       "meta": {
-        "title": "Calculadora Precio por Hora Autónomos 2026 | Gratis - Invoo",
-        "description": "Calcula qué precio por hora cobrar para alcanzar tu sueldo neto deseado. Incluye IRPF, cuota de autónomos y gastos. Calculadora gratuita para freelancers en España."
+        "title": "Calcular Precio Hora Autónomo 2026 | Tarifa Freelance Gratis - Invoo",
+        "description": "Calcula tu precio por hora como autónomo en 30 segundos. Incluye IRPF progresivo real, cuota de autónomos por tramos y gastos. Gratis, sin registro. La calculadora más precisa de España."
       },
       "hero": {
         "titleHighlight": "Calculadora Precio",
         "titleEnd": "por Hora",
-        "description": "Descubre qué tarifa por hora necesitas cobrar para vivir dignamente de tu trabajo. Incluye IRPF, cuota de autónomos y todos los gastos. Deja de infravalorar tu esfuerzo: calcula tu precio justo en segundos."
+        "description": "¿Cobras menos de lo que mereces? Descubre qué tarifa por hora necesitas para cubrir impuestos, cuota de autónomos, gastos y vivir dignamente. La única calculadora con IRPF progresivo real de España.",
+        "badge": "✓ Normativa fiscal 2026 verificada"
       },
       "inputs": {
         "ingresoNeto": "Sueldo neto anual deseado",
-        "ingresoNetoHelper": "¿Cuánto quieres ganar al año después de impuestos?",
+        "ingresoNetoHelper": "Lo que quieres ganar después de todos los impuestos. Por ejemplo: 24.000€ = 2.000€/mes netos. Sé ambicioso: los empleados de tu sector probablemente ganan esto o más.",
         "horasSemanales": "Horas de trabajo a la semana",
-        "horasSemanalesHelper": "Horas que trabajas cada semana (incluye tiempo no facturable: emails, gestiones, comercial...)",
+        "horasSemanalesHelper": "Cuenta TODAS las horas: facturables + emails + gestiones + comercial. La mayoría de autónomos trabajan 35-45h/semana.",
         "semanasVacaciones": "Semanas de vacaciones al año",
-        "semanasVacacionesHelper": "Tiempo que no trabajas (vacaciones, festivos, etc.)",
+        "semanasVacacionesHelper": "Vacaciones + festivos + enfermedad + formación. Los empleados tienen ~5 semanas. Tú también mereces descansar.",
         "porcentajeGastos": "Porcentaje de gastos deducibles",
-        "porcentajeGastosHelper": "% de tu facturación que destinas a gastos (alquiler, material, software, etc.)",
+        "porcentajeGastosHelper": "Típico: 15-20% servicios digitales, 25-35% con oficina. Incluye: alquiler, software, gestoría, seguros, material, formación.",
         "weeks": "semanas",
-        "horasFacturablesInfo": "Trabajarás {hours} horas facturables al año"
+        "horasFacturablesInfo": "Trabajarás {hours} horas al año. Cada hora debe cubrir todos tus costes."
       },
       "results": {
-        "title": "Tu tarifa recomendada",
-        "precioPorHora": "Precio por hora",
-        "tarifaDiaria": "Tarifa diaria (8h)",
-        "ingresoMensualBruto": "Ingresos mensuales brutos",
-        "breakdownTitle": "Desglose anual",
+        "title": "Tu tarifa recomendada (sin IVA)",
+        "precioPorHora": "Precio por hora (sin IVA)",
+        "tarifaDiaria": "Tarifa diaria 8h (sin IVA)",
+        "ingresoMensualBruto": "Facturación mensual necesaria",
+        "breakdownTitle": "¿A dónde va cada euro que facturas?",
         "ingresoAnualBruto": "Facturación anual necesaria",
         "gastosDeducibles": "Gastos deducibles",
         "cuotaAutonomos": "Cuota de autónomos (anual)",
-        "irpfEstimado": "IRPF estimado",
+        "irpfEstimado": "IRPF estimado (19-47%)",
         "ingresoNetoFinal": "Sueldo neto anual",
         "placeholder": "Introduce tu sueldo neto deseado para calcular tu tarifa",
-        "disclaimer": "Estimación basada en tarifas estatales de IRPF. El resultado real puede variar según tu Comunidad Autónoma, deducciones personales y situación específica. Consulta con un asesor fiscal para cálculos precisos."
+        "disclaimer": "Cálculo orientativo con IRPF estatal (puede variar ±500-2.000€ según tu Comunidad Autónoma) y cuota de autónomos por tramos 2026. No incluye deducciones personales ni familiares. Consulta con tu asesor fiscal para el cálculo definitivo.",
+        "confidenceNote": "¿Te parece alto? Este precio cubre TODOS tus costes reales como autónomo. Cobrar menos significa trabajar por debajo del salario mínimo efectivo."
       },
       "errors": {
         "invalidNumber": "Introduce un número válido",
@@ -2163,45 +2165,87 @@
         "invalidPercentage": "Introduce un porcentaje entre 0 y 100"
       },
       "howTo": {
-        "title": "Cómo calcular tu precio por hora",
-        "schemaName": "Cómo calcular el precio por hora de un autónomo",
-        "description": "Calcular tu tarifa horaria adecuada es clave para rentabilizar tu negocio como autónomo. Sigue estos pasos:",
+        "title": "Cómo calcular tu precio por hora (sin quedarte corto)",
+        "schemaName": "Cómo calcular el precio por hora de un autónomo en España",
+        "description": "Calcular tu tarifa horaria es la diferencia entre tener un negocio rentable o trabajar más que un empleado por menos dinero. Evita el error #1 de los autónomos: calcular solo 'lo que necesito para vivir'.",
         "step1": {
-          "title": "Define tu sueldo neto objetivo",
-          "description": "Sé honesto contigo mismo: ¿cuánto necesitas ganar para vivir cómodamente? No te infravalores. Por ejemplo, 24.000€ netos anuales son 2.000€/mes."
+          "title": "Define tu sueldo neto objetivo (sin infravalorarte)",
+          "description": "Piensa como empleado: ¿cuánto ganarías trabajando para otro? Ahora añade +20% por asumir riesgos. Por ejemplo, si un empleado de tu sector gana 30.000€ brutos (≈22.000€ netos), tú deberías aspirar a 24.000-26.000€ netos."
         },
         "step2": {
-          "title": "Establece tus horas de trabajo",
-          "description": "Indica cuántas horas trabajas a la semana y cuántas semanas de vacaciones tomarás al año."
+          "title": "Cuenta TODAS tus horas (no solo las facturables)",
+          "description": "Si trabajas 40h/semana, probablemente solo 25-30h son facturables. El resto es emails, reuniones, comercial, administración. Indica tus horas TOTALES de trabajo."
         },
         "step3": {
-          "title": "Estima tus gastos",
-          "description": "Calcula qué porcentaje de tus ingresos se va en gastos deducibles: alquiler, material, software, seguros, etc."
+          "title": "Estima tus gastos reales",
+          "description": "Alquiler/coworking, software, gestoría (60-100€/mes), seguros, material, formación, marketing. Servicios digitales: 15-25%. Con oficina: 30-50%. Si no estás seguro, pon 20-25%."
         },
         "step4": {
-          "title": "Obtén tu tarifa",
-          "description": "La calculadora te mostrará el precio por hora, la tarifa diaria y la facturación mensual que necesitas para alcanzar tu objetivo."
+          "title": "Obtén tu tarifa mínima (y negocia por encima)",
+          "description": "La calculadora te muestra el precio MÍNIMO. Este es tu 'no puedo bajar de aquí'. Idealmente factura 10-20% por encima para tener margen. Si un cliente no puede pagar tu tarifa mínima, no es tu cliente ideal."
         }
       },
       "factors": {
-        "title": "Factores que determinan tu precio por hora",
-        "description": "Tu tarifa horaria debe cubrir no solo tu sueldo, sino también todos los costes asociados a ser autónomo:",
+        "title": "Por qué tu precio por hora debe ser tan alto",
+        "description": "De cada euro que facturas, solo te llevas 50-65 céntimos netos. El resto desaparece antes de llegar a tu bolsillo:",
         "irpf": {
-          "title": "IRPF Progresivo",
-          "description": "El impuesto sobre la renta va del 19% al 47% según tus ingresos. A más ganas, mayor tipo marginal pagas."
+          "title": "IRPF Progresivo (19-47%)",
+          "description": "Hacienda se lleva entre el 19% y el 47% de tus beneficios según cuánto ganes. A más facturas, más pagas. Por eso muchos autónomos se sorprenden en la declaración anual."
         },
         "cuota": {
-          "title": "Cuota de Autónomos",
-          "description": "Con el sistema de cotización por ingresos reales, la Seguridad Social te cobra según tus rendimientos: de unos 300€ a más de 500€/mes."
+          "title": "Cuota de Autónomos (230-530€/mes)",
+          "description": "Con el sistema de cotización por tramos 2026, pagas entre 2.760€ y 6.360€ al año. Un empleado no paga esto: su empresa lo cubre. Tú eres tu propia empresa."
         },
         "gastos": {
-          "title": "Gastos Deducibles",
-          "description": "Alquiler, material, software, formación, seguros, gestoría... Todos estos gastos reducen tu rendimiento neto."
+          "title": "Gastos Deducibles (15-50%)",
+          "description": "Alquiler, software, gestoría, seguros, material, formación, marketing. Los empleados no pagan esto de su nómina. Tú sí. Y si no los tienes en cuenta, trabajas gratis."
         },
         "vacaciones": {
-          "title": "Tiempo No Facturable",
-          "description": "Vacaciones, festivos, bajas, formación, administración. No todo tu tiempo genera ingresos directos."
+          "title": "Tiempo No Facturable (20-40%)",
+          "description": "Emails, reuniones, propuestas, administración, búsqueda de clientes, formación. ¿Cuánto cobras por esto? 0€. Los empleados cobran por estas horas. Tú no."
         }
+      },
+      "benchmarks": {
+        "title": "Tarifas por hora según sector en España (2026)",
+        "description": "Usa estos rangos como referencia. Tu tarifa depende de experiencia, especialización y tipo de cliente:",
+        "sectors": {
+          "dev": {
+            "name": "Desarrollo Web y Software",
+            "junior": "30-50€/h",
+            "mid": "50-80€/h",
+            "senior": "80-150€/h",
+            "note": "DevOps, arquitectos y especialistas (React, Node, IA) pueden superar 120€/h"
+          },
+          "design": {
+            "name": "Diseño Gráfico y UX/UI",
+            "junior": "25-40€/h",
+            "mid": "45-70€/h",
+            "senior": "75-120€/h",
+            "note": "Branding y producto digital pagan más. Motion design también"
+          },
+          "marketing": {
+            "name": "Marketing Digital y SEO",
+            "junior": "30-45€/h",
+            "mid": "50-80€/h",
+            "senior": "85-150€/h",
+            "note": "Especialistas con casos de éxito demostrables superan 100€/h"
+          },
+          "consulting": {
+            "name": "Consultoría y Estrategia",
+            "junior": "40-60€/h",
+            "mid": "70-120€/h",
+            "senior": "130-250€/h",
+            "note": "El valor se paga por resultados, no por horas"
+          },
+          "content": {
+            "name": "Redacción y Contenidos",
+            "junior": "20-35€/h",
+            "mid": "35-55€/h",
+            "senior": "55-90€/h",
+            "note": "Nichos técnicos (legal, médico, finanzas) pagan más"
+          }
+        },
+        "note": "Madrid y Barcelona suelen pagar 20-30% más. Clientes internacionales (UK, Alemania, EEUU) pueden pagar 2-3× más."
       },
       "whyUse": {
         "title": "¿Por qué usar nuestra calculadora de precio por hora?"
@@ -2222,7 +2266,7 @@
         },
         "q2": {
           "question": "¿Por qué mi precio por hora debe ser tan alto?",
-          "answer": "Como autónomo, de cada euro que facturas, solo te llevas entre 50-70 céntimos netos. El resto se va en IRPF (19-47%), cuota de autónomos (~300-500€/mes), gastos deducibles (20-40%), y tiempo no facturable (vacaciones, administración, comercial). Por eso tu tarifa horaria debe ser 2-3 veces tu 'sueldo por hora' deseado. Y no, no es que estés cobrando mucho: es que ser autónomo cuesta mucho."
+          "answer": "Como autónomo, de cada euro que facturas, solo te llevas entre 50-70 céntimos netos. El resto se va en IRPF (19-47%), cuota de autónomos (~230-530€/mes en 2026), gastos deducibles (20-40%), y tiempo no facturable (vacaciones, administración, comercial). Por eso tu tarifa horaria debe ser 2-3 veces tu 'sueldo por hora' deseado. Y no, no es que estés cobrando mucho: es que ser autónomo cuesta mucho."
         },
         "q3": {
           "question": "¿Cuántas horas facturables tiene un autónomo al año?",
@@ -2239,7 +2283,28 @@
         "q6": {
           "question": "¿Mi tarifa debe ser igual para todos los proyectos?",
           "answer": "No necesariamente. Puedes tener una tarifa base para proyectos estándar y ajustarla según: urgencia (urgente = más caro), complejidad técnica, duración del proyecto (contratos largos pueden tener descuento), tipo de cliente (grandes empresas vs startups), exclusividad o disponibilidad requerida. Lo importante es que tu tarifa promedio ponderada cubra tus costes totales."
+        },
+        "q7": {
+          "question": "¿Y si mis clientes me dicen que es muy caro?",
+          "answer": "Primero, verifica que sean tu público objetivo. Si facturas B2B (empresas), tu tarifa de 50-80€/h es normal y rentable para ellos (evitas que contraten un empleado de 40.000-50.000€/año). Segundo, justifica el valor: no vendas 'horas', vende resultados. En lugar de '40€/h', di 'este proyecto te ahorrará X€ al año'. Tercero, si después de todo siguen diciendo que es caro, no son tu cliente: busca otro."
+        },
+        "q8": {
+          "question": "¿Esta calculadora usa los datos fiscales correctos de 2026?",
+          "answer": "Sí. Usamos los tramos de IRPF estatal vigentes (19-47% progresivo), la cuota de autónomos por tramos de ingresos reales según el Real Decreto-ley 13/2022, y el mínimo personal de 5.550€. Ten en cuenta que el IRPF puede variar según tu Comunidad Autónoma (±500-2.000€), y que no incluimos deducciones personales ni familiares específicas."
         }
+      },
+      "methodology": {
+        "title": "¿Cómo funciona esta calculadora?",
+        "description": "Usamos matemática fiscal española real, no fórmulas simplificadas:",
+        "steps": [
+          "Calculamos tus horas facturables: (52 - semanas vacaciones) × horas semanales",
+          "Aplicamos IRPF progresivo real por tramos (19%, 24%, 30%, 37%, 45%, 47%)",
+          "Calculamos tu cuota de autónomos según tramos de ingresos 2026",
+          "Restamos el mínimo personal de 5.550€ (exento de IRPF)",
+          "Usamos algoritmo iterativo para encontrar la facturación exacta que te deja tu sueldo neto deseado",
+          "Dividimos entre horas para obtener tu precio por hora"
+        ],
+        "sources": "Datos oficiales: AEAT (IRPF), Seguridad Social (cuota autónomos), BOE 2026"
       }
     },
     "modelo303": {

@@ -6,7 +6,7 @@
   "nav": {
     "services": "Services",
     "resources": "Resources",
-    "tools": "Tools",
+    "tools": "Calculators",
     "pricing": "Pricing",
     "about": "About Us",
     "contact": "Contact",
@@ -21,15 +21,15 @@
     "gestorias": "Accountants",
     "faq": "FAQ",
     "blog": "Blog",
-    "calculatorIVA": "VAT Calculator",
-    "calculatorModelo303": "Form 303 Calculator",
-    "calculatorModelo130": "Form 130 Calculator",
-    "calculatorCuotaAutonomos": "Self-Employed Quota Calculator",
-    "calculatorFactura": "Invoice Calculator",
-    "calculatorIRPF": "Income Tax Calculator",
-    "calculatorSueldoNeto": "Net Salary Calculator",
-    "calculatorPrecioHora": "Hourly Rate Calculator",
-    "calculatorGastosDeducibles": "Deductible Expenses Calculator",
+    "calculatorIVA": "VAT",
+    "calculatorModelo303": "Form 303",
+    "calculatorModelo130": "Form 130",
+    "calculatorCuotaAutonomos": "Self-Employed Quota",
+    "calculatorFactura": "Invoice",
+    "calculatorIRPF": "Income Tax",
+    "calculatorSueldoNeto": "Net Salary",
+    "calculatorPrecioHora": "Hourly Rate",
+    "calculatorGastosDeducibles": "Deductible Expenses",
     "calculatorAutonomoVsEmpresa": "Freelancer vs Company",
     "login": "Login",
     "getStarted": "Join the waiting list"
@@ -1052,16 +1052,16 @@
       "resourcesTitle": "Resources",
       "faqs": "FAQs",
       "blog": "Blog",
-      "toolsTitle": "Tools",
-      "calculatorIVA": "VAT Calculator",
-      "calculatorModelo303": "Form 303 Calculator",
-      "calculatorModelo130": "Form 130 Calculator",
-      "calculatorCuotaAutonomos": "Self-Employed Quota Calculator",
-      "calculatorFactura": "Invoice Calculator",
-      "calculatorIRPF": "Income Tax Calculator",
-      "calculatorSueldoNeto": "Net Salary Calculator",
-      "calculatorPrecioHora": "Hourly Rate Calculator",
-      "calculatorGastosDeducibles": "Deductible Expenses Calculator",
+      "toolsTitle": "Calculators",
+      "calculatorIVA": "VAT",
+      "calculatorModelo303": "Form 303",
+      "calculatorModelo130": "Form 130",
+      "calculatorCuotaAutonomos": "Self-Employed Quota",
+      "calculatorFactura": "Invoice",
+      "calculatorIRPF": "Income Tax",
+      "calculatorSueldoNeto": "Net Salary",
+      "calculatorPrecioHora": "Hourly Rate",
+      "calculatorGastosDeducibles": "Deductible Expenses",
       "calculatorAutonomoVsEmpresa": "Freelancer vs Company",
       "copyright": "© 2025 Invoo.es. All rights reserved. Made with ♥ for Spanish freelancers"
     }
@@ -2120,39 +2120,41 @@
     },
     "precioHora": {
       "meta": {
-        "title": "Freelancer Hourly Rate Calculator 2026 | Free - Invoo",
-        "description": "Calculate what hourly rate to charge to reach your desired net salary. Includes income tax, social security, and expenses. Free calculator for freelancers in Spain."
+        "title": "Calculate Freelancer Hourly Rate Spain 2026 | Free - Invoo",
+        "description": "Calculate your hourly rate as a freelancer in Spain in 30 seconds. Includes real progressive income tax, social security by brackets, and expenses. Free, no registration. Spain's most accurate calculator."
       },
       "hero": {
         "titleHighlight": "Hourly Rate",
         "titleEnd": "Calculator",
-        "description": "Discover what hourly rate you need to charge to make a dignified living from your work. Stop undervaluing your effort: include all taxes, social security, and expenses in your rate."
+        "description": "Charging less than you deserve? Discover the hourly rate you need to cover taxes, social security, expenses, and live well. The only calculator with real Spanish progressive income tax.",
+        "badge": "✓ 2026 Spanish tax rates verified"
       },
       "inputs": {
         "ingresoNeto": "Desired annual net salary",
-        "ingresoNetoHelper": "How much do you want to earn per year after taxes?",
+        "ingresoNetoHelper": "What you want to earn after all taxes. E.g., €24,000 = €2,000/month net. Be ambitious: employees in your sector probably earn this or more.",
         "horasSemanales": "Working hours per week",
-        "horasSemanalesHelper": "Hours you work each week (includes non-billable time: admin, sales, etc.)",
+        "horasSemanalesHelper": "Count ALL hours: billable + emails + admin + sales. Most freelancers work 35-45h/week.",
         "semanasVacaciones": "Vacation weeks per year",
-        "semanasVacacionesHelper": "Time you don't work (vacation, holidays, etc.)",
+        "semanasVacacionesHelper": "Vacation + holidays + sick leave + training. Employees get ~5 weeks. You deserve rest too.",
         "porcentajeGastos": "Deductible expenses percentage",
-        "porcentajeGastosHelper": "% of your billing spent on expenses (rent, materials, software, etc.)",
+        "porcentajeGastosHelper": "Typical: 15-20% digital services, 25-35% with office. Includes: rent, software, accounting, insurance, materials, training.",
         "weeks": "weeks",
-        "horasFacturablesInfo": "You'll work {hours} billable hours per year"
+        "horasFacturablesInfo": "You'll work {hours} hours per year. Each hour must cover all your costs."
       },
       "results": {
-        "title": "Your recommended rate",
-        "precioPorHora": "Hourly rate",
-        "tarifaDiaria": "Daily rate (8h)",
-        "ingresoMensualBruto": "Monthly gross income",
-        "breakdownTitle": "Annual breakdown",
+        "title": "Your recommended rate (before VAT)",
+        "precioPorHora": "Hourly rate (before VAT)",
+        "tarifaDiaria": "Daily rate 8h (before VAT)",
+        "ingresoMensualBruto": "Monthly billing needed",
+        "breakdownTitle": "Where does each euro you bill go?",
         "ingresoAnualBruto": "Required annual billing",
         "gastosDeducibles": "Deductible expenses",
         "cuotaAutonomos": "Social security (annual)",
-        "irpfEstimado": "Estimated income tax",
+        "irpfEstimado": "Income tax estimate (19-47%)",
         "ingresoNetoFinal": "Annual net salary",
         "placeholder": "Enter your desired net salary to calculate your rate",
-        "disclaimer": "Estimate based on national income tax rates. Actual results may vary depending on your Autonomous Community, personal deductions, and specific situation. Consult a tax advisor for precise calculations."
+        "disclaimer": "Estimate with national income tax (may vary ±€500-2,000 by Autonomous Community) and 2026 social security brackets. Does not include personal or family deductions. Consult your tax advisor for final calculations.",
+        "confidenceNote": "Think this is high? This rate covers ALL your real costs as a freelancer. Charging less means working below effective minimum wage."
       },
       "errors": {
         "invalidNumber": "Enter a valid number",
@@ -2163,45 +2165,87 @@
         "invalidPercentage": "Enter a percentage between 0 and 100"
       },
       "howTo": {
-        "title": "How to calculate your hourly rate",
-        "schemaName": "How to calculate a freelancer's hourly rate",
-        "description": "Calculating your proper hourly rate is key to making your freelance business profitable. Follow these steps:",
+        "title": "How to calculate your hourly rate (without selling yourself short)",
+        "schemaName": "How to calculate a freelancer's hourly rate in Spain",
+        "description": "Calculating your proper hourly rate is the difference between having a profitable business or working more than an employee for less money. Avoid freelancers' #1 mistake: calculating only 'what I need to survive'.",
         "step1": {
-          "title": "Define your net salary goal",
-          "description": "Be honest with yourself: how much do you actually need to cover your expenses, save, and live well? Don't undervalue yourself. €24,000 net annually is €2,000/month."
+          "title": "Define your net salary goal (without undervaluing yourself)",
+          "description": "Think like an employee: what would you earn working for someone else? Now add +20% for taking on risk. E.g., if employees in your sector earn €30,000 gross (≈€22,000 net), you should aim for €24,000-26,000 net."
         },
         "step2": {
-          "title": "Set your working hours",
-          "description": "Indicate how many hours you work per week and how many vacation weeks you'll take per year."
+          "title": "Count ALL your hours (not just billable ones)",
+          "description": "If you work 40h/week, probably only 25-30h are billable. The rest is emails, meetings, sales, admin. Enter your TOTAL working hours."
         },
         "step3": {
-          "title": "Estimate your expenses",
-          "description": "Calculate what percentage of your income goes to deductible expenses: rent, materials, software, insurance, etc."
+          "title": "Estimate your real expenses",
+          "description": "Rent/coworking, software, accounting (€60-100/month), insurance, materials, training, marketing. Digital services: 15-25%. With office: 30-50%. If unsure, use 20-25%."
         },
         "step4": {
-          "title": "Get your rate",
-          "description": "The calculator will show you the hourly rate, daily rate, and monthly billing you need to reach your goal."
+          "title": "Get your minimum rate (and negotiate above it)",
+          "description": "The calculator shows your MINIMUM rate. This is your 'I can't go below this'. Ideally bill 10-20% above for buffer. If a client can't pay your minimum rate, they're not your ideal client."
         }
       },
       "factors": {
-        "title": "Factors that determine your hourly rate",
-        "description": "Your hourly rate must cover not just your salary, but also all costs associated with being self-employed:",
+        "title": "Why your hourly rate needs to be so high",
+        "description": "Of every euro you bill, you only take home 50-65 cents net. The rest disappears before reaching your pocket:",
         "irpf": {
-          "title": "Progressive Income Tax",
-          "description": "Income tax ranges from 19% to 47% depending on your income. The more you earn, the higher marginal rate you pay."
+          "title": "Progressive Income Tax (19-47%)",
+          "description": "The tax authorities take between 19% and 47% of your profits depending on how much you earn. The more you bill, the more you pay. That's why many freelancers are surprised at annual tax time."
         },
         "cuota": {
-          "title": "Social Security Contributions",
-          "description": "Social security contributions based on real income brackets (2025 system). The more you earn, the more you contribute, but you also get better coverage."
+          "title": "Social Security (€230-530/month)",
+          "description": "With the 2026 bracket system, you pay between €2,760 and €6,360/year. Employees don't pay this: their company covers it. You are your own company."
         },
         "gastos": {
-          "title": "Deductible Expenses",
-          "description": "Rent, materials, software, training, insurance, accounting... All these expenses reduce your net income."
+          "title": "Deductible Expenses (15-50%)",
+          "description": "Rent, software, accounting, insurance, materials, training, marketing. Employees don't pay this from their paycheck. You do. And if you don't account for them, you're working for free."
         },
         "vacaciones": {
-          "title": "Non-Billable Time",
-          "description": "Vacation, holidays, sick leave, training, administration. Not all your time generates direct income."
+          "title": "Non-Billable Time (20-40%)",
+          "description": "Emails, meetings, proposals, admin, client hunting, training. How much do you charge for this? €0. Employees get paid for these hours. You don't."
         }
+      },
+      "benchmarks": {
+        "title": "Hourly rates by sector in Spain (2026)",
+        "description": "Use these ranges as reference. Your rate depends on experience, specialization, and client type:",
+        "sectors": {
+          "dev": {
+            "name": "Web & Software Development",
+            "junior": "€30-50/h",
+            "mid": "€50-80/h",
+            "senior": "€80-150/h",
+            "note": "DevOps, architects and specialists (React, Node, AI) can exceed €120/h"
+          },
+          "design": {
+            "name": "Graphic & UX/UI Design",
+            "junior": "€25-40/h",
+            "mid": "€45-70/h",
+            "senior": "€75-120/h",
+            "note": "Branding and digital product pay more. Motion design too"
+          },
+          "marketing": {
+            "name": "Digital Marketing & SEO",
+            "junior": "€30-45/h",
+            "mid": "€50-80/h",
+            "senior": "€85-150/h",
+            "note": "Specialists with proven case studies exceed €100/h"
+          },
+          "consulting": {
+            "name": "Consulting & Strategy",
+            "junior": "€40-60/h",
+            "mid": "€70-120/h",
+            "senior": "€130-250/h",
+            "note": "Value is paid for results, not hours"
+          },
+          "content": {
+            "name": "Writing & Content",
+            "junior": "€20-35/h",
+            "mid": "€35-55/h",
+            "senior": "€55-90/h",
+            "note": "Technical niches (legal, medical, finance) pay more"
+          }
+        },
+        "note": "Madrid and Barcelona typically pay 20-30% more. International clients (UK, Germany, USA) may pay 2-3× more."
       },
       "whyUse": {
         "title": "Why use our hourly rate calculator?"
@@ -2222,7 +2266,7 @@
         },
         "q2": {
           "question": "Why does my hourly rate need to be so high?",
-          "answer": "As a freelancer, out of every euro you bill, you only take home 50-70 cents net... And no, it's not that you're charging too much: it's that being self-employed costs a lot. The rest goes to income tax (19-47%), social security (~€300-500/month), deductible expenses (20-40%), and non-billable time (vacation, administration, sales). That's why your hourly rate must be 2-3 times your desired 'hourly salary'."
+          "answer": "As a freelancer, out of every euro you bill, you only take home 50-70 cents net. The rest goes to income tax (19-47%), social security (~€230-530/month in 2026), deductible expenses (20-40%), and non-billable time (vacation, administration, sales). That's why your hourly rate must be 2-3 times your desired 'hourly salary'. And no, it's not that you're charging too much: it's that being self-employed costs a lot."
         },
         "q3": {
           "question": "How many billable hours does a freelancer have per year?",
@@ -2239,7 +2283,28 @@
         "q6": {
           "question": "Should my rate be the same for all projects?",
           "answer": "Not necessarily. You can have a base rate for standard projects and adjust based on: urgency (rush = more expensive), technical complexity, project duration (long contracts may get discounts), client type (large companies vs startups), exclusivity or required availability. The important thing is your weighted average rate covers your total costs."
+        },
+        "q7": {
+          "question": "What if my clients say I'm too expensive?",
+          "answer": "First, verify they're your target audience. If you bill B2B (companies), your €50-80/h rate is normal and profitable for them (you're saving them hiring a €40,000-50,000/year employee). Second, justify the value: don't sell 'hours', sell results. Instead of '€40/h', say 'this project will save you €X per year'. Third, if they still say it's expensive, they're not your client: find another one."
+        },
+        "q8": {
+          "question": "Does this calculator use correct 2026 Spanish tax data?",
+          "answer": "Yes. We use current national income tax brackets (19-47% progressive), real income social security brackets per Royal Decree-law 13/2022, and the €5,550 personal allowance. Note that income tax may vary by Autonomous Community (±€500-2,000), and we don't include specific personal or family deductions."
         }
+      },
+      "methodology": {
+        "title": "How does this calculator work?",
+        "description": "We use real Spanish tax math, not simplified formulas:",
+        "steps": [
+          "Calculate your billable hours: (52 - vacation weeks) × weekly hours",
+          "Apply real progressive income tax by brackets (19%, 24%, 30%, 37%, 45%, 47%)",
+          "Calculate your social security based on 2026 income brackets",
+          "Subtract the €5,550 personal allowance (tax-exempt)",
+          "Use iterative algorithm to find the exact billing that leaves your desired net salary",
+          "Divide by hours to get your hourly rate"
+        ],
+        "sources": "Official data: AEAT (income tax), Social Security (contributions), BOE 2026"
       }
     },
     "modelo303": {
