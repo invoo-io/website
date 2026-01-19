@@ -1,10 +1,16 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import Link from "next/link";
 import { SectionHeader } from "./ui/SectionHeader";
+import { BookOpen, CheckCircle, FileText } from "lucide-react";
+import { getBasePath } from "@/lib/utils";
 
 export default function AboutContent() {
   const t = useTranslations("about");
+  const params = useParams();
+  const locale = params.locale as string;
 
   const renderParagraphs = (text: string) => {
     return text.split('\n').map((paragraph, index) => (
@@ -98,6 +104,55 @@ export default function AboutContent() {
           <div>
             {renderParagraphs(t("block4.description"))}
           </div>
+        </div>
+
+        {/* Block 5: Editorial approach section */}
+        <div className="pt-8 mt-8 border-t border-border-primary">
+          <SectionHeader
+            size="subsection"
+            align="left"
+            title={t("editorial.title")}
+            marginBottom="md"
+          />
+          <div className="mb-6">
+            {renderParagraphs(t("editorial.description"))}
+          </div>
+
+          {/* Editorial highlights */}
+          <div className="bg-background-secondary rounded-[16px] p-6 border border-border-primary mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="flex items-start gap-3">
+                <FileText className="w-5 h-5 text-accent-blue-main flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-body-emphasized text-primary mb-1">{t("editorial.sources.title")}</p>
+                  <p className="text-callout text-secondary">{t("editorial.sources.description")}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-accent-green-main flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-body-emphasized text-primary mb-1">{t("editorial.verification.title")}</p>
+                  <p className="text-callout text-secondary">{t("editorial.verification.description")}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <BookOpen className="w-5 h-5 text-accent-purple-main flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-body-emphasized text-primary mb-1">{t("editorial.updates.title")}</p>
+                  <p className="text-callout text-secondary">{t("editorial.updates.description")}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Link to full methodology */}
+          <Link
+            href={getBasePath(`/${locale}/metodologia`)}
+            className="inline-flex items-center gap-2 text-accent-blue-main hover:text-accent-blue-hover transition-colors text-body-emphasized"
+          >
+            {t("editorial.cta")}
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
     </section>

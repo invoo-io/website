@@ -514,6 +514,83 @@
     "block4": {
       "title": "Únete Pronto",
       "description": "Invoo se lanza pronto. Ahora mismo, estamos trabajando mano a mano con autónomos pioneros y gestorías innovadoras para perfeccionar cada detalle.\n¿Quieres estar entre los primeros en escapar del caos de facturación? Únete a nuestra lista de espera y obtén acceso anticipado cuando lancemos.\nEl futuro de la facturación en España empieza aquí. Y empieza contigo."
+    },
+    "editorial": {
+      "title": "Nuestro Enfoque Editorial",
+      "description": "En nuestro blog publicamos guías, comparativas y consejos sobre facturación y fiscalidad para autónomos. Todo nuestro contenido se basa en fuentes oficiales españolas y sigue un proceso riguroso de verificación.",
+      "sources": {
+        "title": "Fuentes oficiales",
+        "description": "AEAT, BOE y Seguridad Social"
+      },
+      "verification": {
+        "title": "Verificación",
+        "description": "Cada dato contrastado con legislación vigente"
+      },
+      "updates": {
+        "title": "Actualizaciones",
+        "description": "Contenido revisado cuando cambia la normativa"
+      },
+      "cta": "Conoce nuestra metodología completa"
+    }
+  },
+  "methodology": {
+    "metadata": {
+      "title": "Nuestra Metodología Editorial | Cómo Creamos Contenido | Invoo",
+      "description": "Descubre cómo creamos contenido fiable sobre fiscalidad y facturación: fuentes oficiales (AEAT, BOE), verificación rigurosa y actualizaciones constantes."
+    },
+    "header": {
+      "titleStart": "Contenido basado en ",
+      "titleGradient": "fuentes oficiales",
+      "description": "En Invoo, cada artículo sigue un proceso riguroso de investigación y verificación. Nuestro contenido se basa exclusivamente en fuentes oficiales españolas para garantizar precisión y fiabilidad."
+    },
+    "block1": {
+      "title": "Cómo creamos nuestro contenido",
+      "description": "Cada artículo que publicamos sigue un proceso estructurado diseñado para garantizar precisión y utilidad. No publicamos contenido genérico ni copiamos de otras fuentes — todo nuestro material se construye desde documentación oficial."
+    },
+    "process": {
+      "research": {
+        "title": "Investigación",
+        "description": "Consultamos fuentes oficiales: AEAT, BOE, Seguridad Social y normativa autonómica vigente."
+      },
+      "writing": {
+        "title": "Redacción",
+        "description": "Traducimos la normativa técnica a lenguaje claro y práctico, con ejemplos reales."
+      },
+      "verification": {
+        "title": "Verificación",
+        "description": "Contrastamos cada dato con la legislación vigente antes de publicar."
+      },
+      "update": {
+        "title": "Actualización",
+        "description": "Revisamos y actualizamos cuando hay cambios normativos relevantes."
+      }
+    },
+    "block2": {
+      "title": "Nuestras fuentes principales",
+      "description": "Todo nuestro contenido sobre fiscalidad y facturación se basa en documentación oficial. No utilizamos fuentes secundarias ni información sin verificar."
+    },
+    "sources": {
+      "aeat": "Sede electrónica de la Agencia Tributaria. Normativa fiscal, modelos tributarios y consultas vinculantes.",
+      "boe": "Boletín Oficial del Estado. Legislación vigente, reales decretos y órdenes ministeriales.",
+      "seguridadSocial": "Tesorería General de la Seguridad Social. Cotizaciones, bases y prestaciones para autónomos.",
+      "autonomicTitle": "Normativa Autonómica",
+      "autonomic": "Legislación específica por comunidad autónoma, incluyendo TicketBAI (País Vasco) y otros sistemas regionales."
+    },
+    "block3": {
+      "title": "Nuestro compromiso",
+      "description": "Nos tomamos en serio la responsabilidad de informar correctamente. Los autónomos y pymes confían en nuestro contenido para tomar decisiones importantes sobre su negocio."
+    },
+    "commitment": {
+      "items": {
+        "accuracy": "Precisión sobre velocidad — preferimos tardar más y publicar información correcta",
+        "sources": "Fuentes oficiales siempre citadas y enlazadas cuando es posible",
+        "dates": "Fechas de verificación visibles en cada artículo",
+        "updates": "Actualizaciones proactivas cuando cambia la normativa"
+      }
+    },
+    "block4": {
+      "title": "Limitaciones importantes",
+      "description": "Nuestro contenido es informativo y educativo. Aunque nos esforzamos por ser precisos, la normativa fiscal es compleja y cambia frecuentemente.\nCada situación empresarial es única. Para decisiones que afecten a tu negocio, recomendamos consultar con un asesor fiscal o gestoría profesional que conozca tu caso específico.\nInvoo no ofrece asesoramiento fiscal, legal ni contable personalizado."
     }
   },
   "privacy": {
@@ -1044,6 +1121,7 @@
       "legalNotice": "Aviso Legal",
       "cookies": "Política de Cookies",
       "contact": "Contacto",
+      "methodology": "Metodología Editorial",
       "servicesTitle": "Servicios",
       "forFreelancers": "Para Autónomos",
       "forPymes": "Para Pymes",

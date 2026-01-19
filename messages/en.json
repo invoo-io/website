@@ -514,6 +514,83 @@
     "block4": {
       "title": "Join Us Early",
       "description": "Invoo launches soon. Right now, we're working hand-in-hand with pioneering freelancers and forward-thinking gestorías to perfect every detail.\nWant to be among the first to escape invoicing chaos? Join our waiting list and get early access when we launch.\nThe future of invoicing in Spain starts here. And it starts with you."
+    },
+    "editorial": {
+      "title": "Our Editorial Approach",
+      "description": "On our blog we publish guides, comparisons, and tips about invoicing and taxes for freelancers. All our content is based on official Spanish sources and follows a rigorous verification process.",
+      "sources": {
+        "title": "Official sources",
+        "description": "AEAT, BOE, and Social Security"
+      },
+      "verification": {
+        "title": "Verification",
+        "description": "Every fact checked against current legislation"
+      },
+      "updates": {
+        "title": "Updates",
+        "description": "Content revised when regulations change"
+      },
+      "cta": "Learn about our full methodology"
+    }
+  },
+  "methodology": {
+    "metadata": {
+      "title": "Our Editorial Methodology | How We Create Content | Invoo",
+      "description": "Discover how we create reliable content about taxes and invoicing: official sources (AEAT, BOE), rigorous verification, and constant updates."
+    },
+    "header": {
+      "titleStart": "Content based on ",
+      "titleGradient": "official sources",
+      "description": "At Invoo, every article follows a rigorous research and verification process. Our content is based exclusively on official Spanish sources to ensure accuracy and reliability."
+    },
+    "block1": {
+      "title": "How we create our content",
+      "description": "Every article we publish follows a structured process designed to ensure accuracy and usefulness. We don't publish generic content or copy from other sources — all our material is built from official documentation."
+    },
+    "process": {
+      "research": {
+        "title": "Research",
+        "description": "We consult official sources: AEAT, BOE, Social Security, and current regional regulations."
+      },
+      "writing": {
+        "title": "Writing",
+        "description": "We translate technical regulations into clear, practical language with real examples."
+      },
+      "verification": {
+        "title": "Verification",
+        "description": "We verify every piece of data against current legislation before publishing."
+      },
+      "update": {
+        "title": "Update",
+        "description": "We review and update when there are relevant regulatory changes."
+      }
+    },
+    "block2": {
+      "title": "Our main sources",
+      "description": "All our content about taxes and invoicing is based on official documentation. We don't use secondary sources or unverified information."
+    },
+    "sources": {
+      "aeat": "Spanish Tax Agency electronic office. Tax regulations, tax forms, and binding consultations.",
+      "boe": "Official State Gazette. Current legislation, royal decrees, and ministerial orders.",
+      "seguridadSocial": "General Treasury of Social Security. Contributions, bases, and benefits for freelancers.",
+      "autonomicTitle": "Regional Regulations",
+      "autonomic": "Specific legislation by autonomous community, including TicketBAI (Basque Country) and other regional systems."
+    },
+    "block3": {
+      "title": "Our commitment",
+      "description": "We take seriously the responsibility of informing correctly. Freelancers and SMBs rely on our content to make important decisions about their business."
+    },
+    "commitment": {
+      "items": {
+        "accuracy": "Accuracy over speed — we prefer to take longer and publish correct information",
+        "sources": "Official sources always cited and linked when possible",
+        "dates": "Verification dates visible on every article",
+        "updates": "Proactive updates when regulations change"
+      }
+    },
+    "block4": {
+      "title": "Important limitations",
+      "description": "Our content is informative and educational. Although we strive to be accurate, tax regulations are complex and change frequently.\nEvery business situation is unique. For decisions that affect your business, we recommend consulting with a tax advisor or professional accountant who knows your specific case.\nInvoo does not offer personalized tax, legal, or accounting advice."
     }
   },
   "privacy": {
@@ -1044,6 +1121,7 @@
       "legalNotice": "Legal Notice",
       "cookies": "Cookie Policy",
       "contact": "Contact",
+      "methodology": "Editorial Methodology",
       "servicesTitle": "Services",
       "forFreelancers": "For Freelancers",
       "forPymes": "For SMEs",
