@@ -8,6 +8,22 @@ readingTime: 9
 featured: false
 editorPick: true
 coverImage: "/blog/cobrar-facturas-impagadas.webp"
+sources:
+  - name: "Ley 3/2004, de 29 de diciembre, de lucha contra la morosidad"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2004-21830"
+  - name: "Ley de Enjuiciamiento Civil, artículos 812 a 818"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2000-323"
+  - name: "Código Civil, artículos 1964 y 1973"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763"
+  - name: "Ley 37/1992 del IVA, artículo 80"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"
+  - name: "AEAT - Modificación base imponible facturas impagadas"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/necesito-rectificar-iva-repercutido_iva-soportado/puedo-recuperar-iva-impagado-clientes.html"
+  - name: "AEAT - Contenido obligatorio facturas"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/contenido-facturas.html"
+  - name: "Correos - Servicio de Burofax"
+    url: "https://www.correos.es"
+lastVerified: "Enero 2026"
 keyTakeaways:
   - "El 30% de autónomos ha sufrido impagos que ponen en riesgo su tesorería. La prevención con contratos claros y anticipos reduce el riesgo hasta un 70%"
   - "La Ley 3/2004 te da derecho automático a intereses de demora (BCE + 8 puntos, actualmente ~10%) más 40€ de indemnización fija sin necesidad de reclamación judicial"
@@ -216,25 +232,5 @@ No dejes que la morosidad arruine tu negocio. Actúa, reclama, y cobra lo que es
 Con Invoo automatizas los recordatorios de pago y tienes toda la documentación organizada para cualquier reclamación. Facturas con todos los requisitos legales, historial completo de pagos, y exportación de datos en un clic. €10.90/mes para autónomos, gratis para gestorías.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
-
----
-
-## Fuentes y metodología
-
-**Normativa oficial consultada:**
-- [Ley 3/2004, de 29 de diciembre, de lucha contra la morosidad](https://www.boe.es/buscar/act.php?id=BOE-A-2004-21830) - BOE
-- [Ley de Enjuiciamiento Civil, artículos 812 a 818](https://www.boe.es/buscar/act.php?id=BOE-A-2000-323) - Proceso monitorio
-- [Código Civil, artículos 1964 y 1973](https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763) - Prescripción
-- [Ley 37/1992 del IVA, artículo 80](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740) - Créditos incobrables
-- [AEAT - Modificación base imponible facturas impagadas](https://sede.agenciatributaria.gob.es/Sede/iva/necesito-rectificar-iva-repercutido_iva-soportado/puedo-recuperar-iva-impagado-clientes.html)
-- [AEAT - Contenido obligatorio facturas](https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/contenido-facturas.html)
-
-**Fuentes secundarias:**
-- Ministerio de Industria, Comercio y Turismo - Datos sobre morosidad en autónomos
-- Consejo General del Poder Judicial - Estadísticas proceso monitorio
-- [Correos - Servicio de Burofax](https://www.correos.es)
-- BOE Resolución 25 junio 2025 - Tipo de interés de demora H2 2025 (10,15%)
-
-*Última actualización: Enero 2026*
 
 *Este artículo tiene carácter informativo y no constituye asesoramiento legal. Para casos específicos, consulta con un abogado o gestor.*

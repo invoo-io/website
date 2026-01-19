@@ -8,6 +8,22 @@ readingTime: 10
 featured: false
 editorPick: true
 coverImage: "/blog/tramos-cuota-autonomos-2026.webp"
+sources:
+  - name: "Real Decreto-ley 16/2025 de 23 de diciembre"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26458"
+  - name: "Real Decreto-ley 13/2022"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482"
+  - name: "Seguridad Social - Bases y tipos de cotización 2026"
+    url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537"
+  - name: "Tesorería General de la Seguridad Social - Simulador de cuotas RETA"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico/inicio/"
+  - name: "Cuota de autónomos 2026 - Infoautónomos"
+    url: "https://www.infoautonomos.com/seguridad-social/cuota-de-autonomos-cuanto-se-paga/"
+  - name: "Bases y tipos de cotización 2026 - AFINOM"
+    url: "https://afinom.es/bases-y-tipos-de-cotizacion-2026/"
+  - name: "Novedades 2026 para autónomos - Wolters Kluwer"
+    url: "https://www.wolterskluwer.com/es-es/expert-insights/cuotas-autonomos-2026"
+lastVerified: "Enero 2026"
 keyTakeaways:
   - "En 2026 existen 15 tramos de cotización: desde 200€/mes (ingresos hasta 670€/mes) hasta 590€/mes (más de 6.000€/mes de rendimientos netos)"
   - "Todos los tramos se mantienen congelados respecto a 2025 tras el Real Decreto-ley 16/2025"
@@ -303,23 +319,3 @@ Todas las prestaciones se calculan sobre tu base de cotización. Si cotizas por 
 Invoo calcula automáticamente en qué tramo te encuentras basándose en tus rendimientos netos reales. Sin sorpresas en la regularización. €10.90/mes para autónomos, gratis para gestorías.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
-
----
-
-## Fuentes y metodología
-
-**Datos oficiales:**
-- [Real Decreto-ley 16/2025 de 23 de diciembre](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-26458) - Prórroga de cuotas de autónomos 2026 (Artículo 9.4)
-- [Real Decreto-ley 13/2022](https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482) - Sistema de cotización por ingresos reales (2023-2032)
-- [Seguridad Social - Bases y tipos de cotización 2026](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537)
-- [Tesorería General de la Seguridad Social - Simulador de cuotas RETA](https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico/inicio/)
-
-**Fuentes secundarias verificadas:**
-- [Cuota de autónomos 2026 - Infoautónomos](https://www.infoautonomos.com/seguridad-social/cuota-de-autonomos-cuanto-se-paga/)
-- [Bases y tipos de cotización 2026 - AFINOM](https://afinom.es/bases-y-tipos-de-cotizacion-2026/)
-- [Novedades 2026 para autónomos - Wolters Kluwer](https://www.wolterskluwer.com/es-es/expert-insights/cuotas-autonomos-2026)
-
-**Metodología de cálculo:**
-Los rendimientos netos se calculan como: (Ingresos brutos - Gastos deducibles) × 95% (reducción del 5% por gastos de difícil justificación en estimación directa simplificada, con máximo de 2.000€ anuales). El MEI 2026 del 0,9% se aplica sobre la base de cotización elegida.
-
-*Última actualización: Enero 2026*

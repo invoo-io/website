@@ -13,6 +13,18 @@ keyTakeaways:
   - "Revisa facturas pendientes de emitir y cobrar antes de fin de año"
   - "Modelos 130 y 303 del Q4: plazo hasta el 30 de enero (no el 20)"
   - "Anticipa tu cuota de autónomo 2026 con los nuevos tramos"
+sources:
+  - name: "AEAT - Calendario del contribuyente 2025-2026"
+    url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/contenidos-lectura-facil/calendario-contribuyente-2025-simplificado-personas-fisicas/calendario-anual/enero-2026.html"
+  - name: "AEAT - Modelo 303 plazos de presentación"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/presentar-declaracion-iva-modelo-303/plazo-presentacion-modelo-303.html"
+  - name: "AEAT - Modelo 390 plazos de presentación"
+    url: "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-390-iva-declaracion-resumen-anual_/plazos-presentacion.html"
+  - name: "BOE - Ley 58/2003 General Tributaria"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
+  - name: "Real Decreto-ley 13/2022 - Sistema de cotización por ingresos reales"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482"
+lastVerified: "2025-12-01"
 ---
 
 # Cierre Fiscal 2025: Checklist Definitiva para Autónomos
@@ -96,18 +108,3 @@ El cierre fiscal no es un trámite burocrático más que puedes dejar para últi
 Invoo automatiza tu facturación, calcula tu IVA trimestral y te anticipa cuánto pagarás en cada declaración. Dashboard con todos tus números en tiempo real, exportación directa para tu gestoría. €10.90/mes para autónomos, gratis para gestorías.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
-
----
-
-## Fuentes y metodología
-
-**Fuentes oficiales:**
-- [AEAT - Calendario del contribuyente 2025-2026](https://sede.agenciatributaria.gob.es/Sede/ayuda/contenidos-lectura-facil/calendario-contribuyente-2025-simplificado-personas-fisicas/calendario-anual/enero-2026.html)
-- [AEAT - Modelo 303 plazos de presentación](https://sede.agenciatributaria.gob.es/Sede/iva/presentar-declaracion-iva-modelo-303/plazo-presentacion-modelo-303.html)
-- [AEAT - Modelo 390 plazos de presentación](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-390-iva-declaracion-resumen-anual_/plazos-presentacion.html)
-- [BOE - Ley 58/2003 General Tributaria](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) - Régimen sancionador
-
-**Normativa de cotización:**
-- [Real Decreto-ley 13/2022](https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482) - Sistema de cotización por ingresos reales
-
-*Última actualización: Diciembre 2025*

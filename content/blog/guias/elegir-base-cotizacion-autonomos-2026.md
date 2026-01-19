@@ -8,6 +8,14 @@ readingTime: 8
 featured: false
 editorPick: false
 coverImage: "/blog/elegir-base-cotizacion-autonomos-2026.webp"
+sources:
+  - name: "Seguridad Social - Bases y tipos de cotización RETA"
+    url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537"
+  - name: "BOE - Real Decreto-ley 13/2022 (Sistema por ingresos reales)"
+    url: "https://www.boe.es/eli/es/rdl/2022/07/26/13"
+  - name: "Seguridad Social - Pensión de jubilación"
+    url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10963/28393"
+lastVerified: "Enero 2026"
 keyTakeaways:
   - "La base de cotización no solo determina tu cuota mensual, sino también tu pensión futura y las prestaciones por baja o cese de actividad"
   - "Puedes cambiar tu base hasta 6 veces al año para adaptarla a tus ingresos reales y evitar regularizaciones"
@@ -126,14 +134,3 @@ Invoo calcula automáticamente tus ingresos y gastos deducibles, para que siempr
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
----
-
-## Fuentes y metodología
-
-**Datos secundarios:**
-- Real Decreto-ley 16/2025 de 29 de diciembre (congelación de tablas de cotización 2026)
-- Seguridad Social: Bases y tipos de cotización del Régimen Especial de Trabajadores Autónomos (RETA) 2026
-- Ley 31/2022 de Presupuestos Generales del Estado (sistema de cotización por tramos)
-- Sede electrónica de la Tesorería General de la Seguridad Social (Import@ss y TA.0521)
-
-*Última actualización: Enero 2026*

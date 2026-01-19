@@ -935,7 +935,13 @@
         "period": "/mes",
         "badge": "Gratis Para Siempre",
         "cta": "Únete a la lista de espera",
-        "features": ["3 facturas al mes", "Flujo presupuesto a factura", "Catálogo de servicios", "Base de datos de clientes", "Soporte por email"]
+        "features": [
+          "3 facturas al mes",
+          "Flujo presupuesto a factura",
+          "Catálogo de servicios",
+          "Base de datos de clientes",
+          "Soporte por email"
+        ]
       },
       "pro": {
         "title": "Pro",
@@ -947,7 +953,18 @@
         "subtitle": "Los primeros 100 usuarios ahorran 50% para siempre",
         "savingsText": "Ahorra 50% para siempre",
         "cta": "Únete a la lista de espera",
-        "features": ["Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Envío de facturas por email", "Soporte prioritario por email"]
+        "features": [
+          "Facturas ilimitadas",
+          "Flujo presupuesto a factura",
+          "Gestión de gastos",
+          "Catálogo de servicios",
+          "Base de datos de clientes",
+          "Módulo de descuentos",
+          "Dashboard en vivo para gestoría",
+          "Cumplimiento Verifactu y TicketBAI",
+          "Envío de facturas por email",
+          "Soporte prioritario por email"
+        ]
       }
     },
     "pymes": {
@@ -958,7 +975,14 @@
         "period": "/mes",
         "badge": "Gratis Para Siempre",
         "cta": "Únete a la lista de espera",
-        "features": ["3 facturas al mes", "1 usuario", "Flujo presupuesto a factura", "Catálogo de servicios", "Base de datos de clientes", "Soporte por email"]
+        "features": [
+          "3 facturas al mes",
+          "1 usuario",
+          "Flujo presupuesto a factura",
+          "Catálogo de servicios",
+          "Base de datos de clientes",
+          "Soporte por email"
+        ]
       },
       "pro": {
         "title": "Pro",
@@ -970,7 +994,19 @@
         "subtitle": "Los primeros 100 usuarios ahorran 50% para siempre",
         "savingsText": "Ahorra 50% para siempre",
         "cta": "Únete a la lista de espera",
-        "features": ["2 usuarios (colaboración en equipo)", "Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Permisos y roles de usuario", "Soporte prioritario por email"]
+        "features": [
+          "2 usuarios (colaboración en equipo)",
+          "Facturas ilimitadas",
+          "Flujo presupuesto a factura",
+          "Gestión de gastos",
+          "Catálogo de servicios",
+          "Base de datos de clientes",
+          "Módulo de descuentos",
+          "Dashboard en vivo para gestoría",
+          "Cumplimiento Verifactu y TicketBAI",
+          "Permisos y roles de usuario",
+          "Soporte prioritario por email"
+        ]
       },
       "premium": {
         "title": "Premium",
@@ -982,7 +1018,19 @@
         "subtitle": "Los primeros 100 usuarios ahorran 50% para siempre",
         "savingsText": "Ahorra 50% para siempre",
         "cta": "Únete a la lista de espera",
-        "features": ["4 usuarios (colaboración en equipo)", "Facturas ilimitadas", "Flujo presupuesto a factura", "Gestión de gastos", "Catálogo de servicios", "Base de datos de clientes", "Módulo de descuentos", "Dashboard en vivo para gestoría", "Cumplimiento Verifactu y TicketBAI", "Permisos y roles de usuario", "Soporte prioritario por email"]
+        "features": [
+          "4 usuarios (colaboración en equipo)",
+          "Facturas ilimitadas",
+          "Flujo presupuesto a factura",
+          "Gestión de gastos",
+          "Catálogo de servicios",
+          "Base de datos de clientes",
+          "Módulo de descuentos",
+          "Dashboard en vivo para gestoría",
+          "Cumplimiento Verifactu y TicketBAI",
+          "Permisos y roles de usuario",
+          "Soporte prioritario por email"
+        ]
       }
     },
     "gestoria": {
@@ -993,7 +1041,13 @@
         "period": "/mes",
         "badge": "Gratis Para Siempre",
         "cta": "Contáctanos",
-        "features": ["Clientes ilimitados", "Sincronización de facturas/gastos en tiempo real", "Exportación CSV en un clic", "Resúmenes trimestrales", "Notificaciones de nueva actividad"]
+        "features": [
+          "Clientes ilimitados",
+          "Sincronización de facturas/gastos en tiempo real",
+          "Exportación CSV en un clic",
+          "Resúmenes trimestrales",
+          "Notificaciones de nueva actividad"
+        ]
       },
       "enterprise": {
         "title": "Enterprise",
@@ -1001,7 +1055,16 @@
         "price": "Precio Personalizado",
         "badge": "Contactar Ventas",
         "cta": "Contáctanos",
-        "features": ["Todo lo del plan Gratis incluido", "Cuentas de clientes ilimitadas", "Vista de dashboard multicliente", "Opciones white-label", "Informes y analítica avanzados", "Acceso API para integraciones", "Soporte prioritario con gestor de cuenta dedicado", "Operaciones masivas entre clientes"]
+        "features": [
+          "Todo lo del plan Gratis incluido",
+          "Cuentas de clientes ilimitadas",
+          "Vista de dashboard multicliente",
+          "Opciones white-label",
+          "Informes y analítica avanzados",
+          "Acceso API para integraciones",
+          "Soporte prioritario con gestor de cuenta dedicado",
+          "Operaciones masivas entre clientes"
+        ]
       }
     }
   },
@@ -1360,6 +1423,15 @@
       "publishedOn": "Publicado el",
       "backButton": "Volver",
       "backButtonAriaLabel": "Volver a la categoría del blog"
+    },
+    "disclaimer": {
+      "title": "Aviso importante",
+      "content": "Este artículo tiene un propósito educativo e informativo. La información proporcionada no constituye asesoramiento fiscal, legal o profesional. Las normativas fiscales pueden cambiar y cada situación es única.",
+      "recommendation": "Para decisiones específicas sobre tu negocio, consulta siempre con un asesor fiscal o gestor profesional que pueda analizar tu caso particular."
+    },
+    "sources": {
+      "title": "Fuentes y referencias",
+      "lastVerified": "Última verificación: {date}"
     }
   },
   "calculators": {

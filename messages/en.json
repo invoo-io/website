@@ -1360,6 +1360,15 @@
       "publishedOn": "Published on",
       "backButton": "Back",
       "backButtonAriaLabel": "Back to blog category"
+    },
+    "disclaimer": {
+      "title": "Important Notice",
+      "content": "This article is for educational and informational purposes only. The information provided does not constitute tax, legal, or professional advice. Tax regulations can change and every situation is unique.",
+      "recommendation": "For specific decisions about your business, always consult with a tax advisor or professional accountant who can analyze your particular case."
+    },
+    "sources": {
+      "title": "Sources and References",
+      "lastVerified": "Last verified: {date}"
     }
   },
   "calculators": {

@@ -13,6 +13,14 @@ keyTakeaways:
   - "Concepto clave: 303 es dinero que nunca fue tuyo (IVA). 130 es un adelanto de TUS impuestos (IRPF)."
   - "Plazos críticos: 1-20 abril, julio y octubre para trimestres 1-3. Del 1 al 30 de enero para el cuarto trimestre."
   - "Presentar fuera de plazo tiene un recargo del 1% + 1% por mes de retraso (máx. 15%). Si Hacienda te requiere primero, la sanción sube al 50-150%."
+sources:
+  - name: "Agencia Tributaria - Modelo 303"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/modelo-303-autoliquidacion-impuesto-valor-anidido-iva.html"
+  - name: "Agencia Tributaria - Modelo 130"
+    url: "https://sede.agenciatributaria.gob.es/Sede/irpf/pagos-fraccionados-estimacion-directa.html"
+  - name: "Plazos de presentación de autoliquidaciones - AEAT"
+    url: "https://sede.agenciatributaria.gob.es/Sede/calendario-contribuyente.html"
+lastVerified: "Noviembre 2025"
 ---
 
 **Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios y cada situación empresarial es única. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado.
@@ -399,13 +407,3 @@ No más hojas de cálculo. No más errores de cálculo. No más olvidos de últi
 Porque tu tiempo vale más que pelearte con formularios de Hacienda.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** y presenta tus próximos modelos sin estrés. Los primeros 100 usuarios ahorran 50% para siempre.
-
----
-
-## Fuentes y referencias
-
-- [Agencia Tributaria - Modelo 303](https://sede.agenciatributaria.gob.es/Sede/iva/modelo-303-autoliquidacion-impuesto-valor-anidido-iva.html)
-- [Agencia Tributaria - Modelo 130](https://sede.agenciatributaria.gob.es/Sede/irpf/pagos-fraccionados-estimacion-directa.html)
-- [Plazos de presentación de autoliquidaciones - AEAT](https://sede.agenciatributaria.gob.es/Sede/calendario-contribuyente.html)
-
-*Última actualización: Noviembre 2025*

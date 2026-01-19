@@ -7,6 +7,8 @@ import KeyTakeaways from "@/components/blog/KeyTakeaways";
 import ExploreWithAI from "@/components/blog/ExploreWithAI";
 import ArticleHeader from "@/components/blog/ArticleHeader";
 import ArticleSidebar from "@/components/blog/ArticleSidebar";
+import { ArticleSources } from "@/components/blog/ArticleSources";
+import { ArticleDisclaimer } from "@/components/blog/ArticleDisclaimer";
 import { JsonLd } from "@/components/JsonLd";
 import { generateArticleSchema, generateBreadcrumbListSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
 import { getAllBlogPosts, getBlogPost, getAllCategories } from "@/lib/blog";
@@ -221,6 +223,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                   </div>
                 </div>
               )}
+
+              {/* Sources - only show if article has sources */}
+              {post.sources && post.sources.length > 0 && (
+                <ArticleSources
+                  sources={post.sources}
+                  lastVerified={post.lastVerified}
+                />
+              )}
+
+              {/* Educational Disclaimer */}
+              <div className="mt-8">
+                <ArticleDisclaimer />
+              </div>
             </article>
 
             {/* Right Column - Sticky Sidebar (Desktop Only) */}

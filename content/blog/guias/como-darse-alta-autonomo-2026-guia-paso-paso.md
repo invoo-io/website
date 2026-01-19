@@ -8,6 +8,32 @@ readingTime: 12
 featured: false
 editorPick: true
 coverImage: "/blog/alta-autonomo-2026.webp"
+sources:
+  - name: "Agencia Tributaria - Modelo 036 Declaración Censal"
+    url: "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G322.shtml"
+  - name: "Seguridad Social - Alta como autónomo"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/afiliate/altaAutonomo"
+  - name: "Seguridad Social - Tarifa Plana autónomos"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Afiliacion%2C%2Baltas%2By%2Bbajas/Tarifa_plana_autonomos"
+  - name: "BOE - Orden HAC/1526/2024 eliminación Modelo 037"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-00409"
+  - name: "Real Decreto-ley 13/2022 - Sistema de cotización por ingresos reales"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482"
+  - name: "Infoautónomos - Diferencias entre Modelo 036 y 037"
+    url: "https://www.infoautonomos.com/blog/autonomos/alta-hacienda-modelo-036-modelo-037-diferencias/"
+  - name: "Quipu - Cómo darse de alta como autónomo 2026"
+    url: "https://getquipu.com/blog/como-darse-de-alta-como-autonomo-paso-a-paso/"
+  - name: "Declarando - Alta como autónomo sin errores"
+    url: "https://declarando.es/alta-como-autonomo"
+  - name: "Infoautónomos - Errores comunes nuevos autónomos"
+    url: "https://www.infoautonomos.com/blog/errores-que-pueden-salirte-muy-caros-si-eres-nuevo-autonomo/"
+  - name: "Quipu - Perder la bonificación de tarifa plana"
+    url: "https://getquipu.com/blog/se-puede-perder-la-bonificacion-de-tarifa-plana/"
+  - name: "Epígrafes IAE - Listado completo"
+    url: "http://www.epigrafesiae.com/"
+  - name: "Holded - Epígrafes IAE qué son y cómo funcionan"
+    url: "https://www.holded.com/es/blog/epigrafes-iae"
+lastVerified: "Enero 2026"
 keyTakeaways:
   - "El Modelo 037 ya no existe desde febrero 2025: todos los autónomos deben usar el Modelo 036 para darse de alta en Hacienda"
   - "Debes completar DOS altas distintas: primero Hacienda (036) y después Seguridad Social (TA.0521), siempre en ese orden y con la misma fecha"
@@ -420,25 +446,3 @@ Invoo te permite crear facturas con todos los requisitos legales en segundos, si
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
-
-## Fuentes y metodología
-
-**Fuentes oficiales:**
-
-- [Agencia Tributaria - Modelo 036 Declaración Censal](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G322.shtml)
-- [Seguridad Social - Alta como autónomo](https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/afiliate/altaAutonomo)
-- [Seguridad Social - Tarifa Plana autónomos](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Afiliacion%2C%2Baltas%2By%2Bbajas/Tarifa_plana_autonomos)
-- [BOE - Orden HAC/1526/2024 eliminación Modelo 037](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-00409)
-- [Real Decreto-ley 13/2022 - Sistema de cotización por ingresos reales](https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482)
-
-**Fuentes secundarias verificadas:**
-
-- [Infoautónomos - Diferencias entre Modelo 036 y 037](https://www.infoautonomos.com/blog/autonomos/alta-hacienda-modelo-036-modelo-037-diferencias/)
-- [Quipu - Cómo darse de alta como autónomo 2026](https://getquipu.com/blog/como-darse-de-alta-como-autonomo-paso-a-paso/)
-- [Declarando - Alta como autónomo sin errores](https://declarando.es/alta-como-autonomo)
-- [Infoautónomos - Errores comunes nuevos autónomos](https://www.infoautonomos.com/blog/errores-que-pueden-salirte-muy-caros-si-eres-nuevo-autonomo/)
-- [Quipu - Perder la bonificación de tarifa plana](https://getquipu.com/blog/se-puede-perder-la-bonificacion-de-tarifa-plana/)
-- [Epígrafes IAE - Listado completo](http://www.epigrafesiae.com/)
-- [Holded - Epígrafes IAE qué son y cómo funcionan](https://www.holded.com/es/blog/epigrafes-iae)
-
-*Última actualización: Enero 2026*

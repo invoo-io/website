@@ -13,6 +13,14 @@ keyTakeaways:
   - "Los 3 fallos estructurales: falta de contexto (todo mezclado), transcripción manual de datos y cero trazabilidad de cambios"
   - "Las gestorías avanzadas ya trabajan con acceso directo a datos del cliente, reduciendo el tiempo administrativo en un 78%"
   - "Verifactu 2026 obliga a digitalizar, pero la clave está en rediseñar el flujo completo gestoría-cliente, no solo añadir un QR"
+sources:
+  - name: "BOE - Real Decreto 1007/2023 (Verifactu)"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-24840"
+  - name: "BOE - Real Decreto 254/2025 (plazos actualizados)"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600"
+  - name: "DGT - Consulta Vinculante V2653-24 (Obligatoriedad de Excel con fórmulas)"
+    url: "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2653-24"
+lastVerified: "2025-11-01"
 ---
 
 **Aviso:** Este artículo refleja la experiencia de gestorías y autónomos reales entrevistados entre agosto y noviembre de 2025.
@@ -720,19 +728,3 @@ Tú decides.
 Invoo conecta tu facturación con tu gestoría desde el primer día. Dashboard compartido, exportación automática, cumplimiento total de Verifactu. €10.90/mes para autónomos, gratis para gestorías.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
-
----
-
-## Fuentes y metodología
-
-**Datos primarios:**
-- Encuesta a autónomos españoles (agosto-noviembre 2025) sobre tiempo dedicado a gestión administrativa y comunicación con gestoría
-- Entrevistas con 12 gestorías españolas (Madrid, Barcelona, Valencia, Sevilla) que han implementado sistemas de acceso compartido
-
-**Datos secundarios:**
-- INE - Encuesta de Población Activa (EPA): Datos sobre autónomos en España
-- Estudio ATA 2024: Porcentaje de autónomos con gestoría
-- BOE: [Real Decreto 1007/2023](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-24840) (Verifactu), [Real Decreto 254/2025](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600) (plazos actualizados)
-- [Consulta Vinculante V2653-24](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2653-24) (DGT): Obligatoriedad de Excel con fórmulas
-
-*Última actualización: Noviembre 2025*

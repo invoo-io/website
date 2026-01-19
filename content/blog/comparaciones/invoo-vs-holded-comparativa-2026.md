@@ -13,6 +13,20 @@ keyTakeaways:
   - "Holded es un ERP completo ideal para pymes con múltiples departamentos; Invoo es facturación pura diseñada para autónomos."
   - "Invoo incluye soporte humano rápido en todos los planes; Holded ofrece soporte premium opcional (+€50/mes)."
   - "Si solo necesitas facturar y cumplir Verifactu, Invoo te ahorra €200-400 al año en software innecesario."
+sources:
+  - name: "Planes y precios oficiales de Holded"
+    url: "https://www.holded.com/es/precios"
+  - name: "Planes y precios de Invoo"
+    url: "https://invoo.es/es/pricing"
+  - name: "Trustpilot: Reseñas de Holded"
+    url: "https://es.trustpilot.com/review/holded.com"
+  - name: "Documentación oficial de Holded"
+    url: "https://www.holded.com/es/caracteristicas"
+  - name: "Real Decreto-ley 15/2025"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2025-26789"
+  - name: "Real Decreto 1007/2023"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840"
+lastVerified: "2025-12"
 ---
 
 **"Holded tiene todo lo que necesito, pero ¿realmente necesito todo eso?"** Esta es la pregunta que más escuchamos de autónomos que evalúan software de facturación en 2026. Y es una pregunta tremendamente relevante ahora que [Verifactu se vuelve obligatorio en julio 2027](/es/blog/guias/verifactu-aplazado-2027-que-cambia-autonomos) para todos los autónomos españoles.
@@ -697,24 +711,3 @@ Invoo está diseñado específicamente para ti. Facturas profesionales en 30 seg
 Sé de los primeros en acceder cuando lancemos. Sin compromiso, sin spam—solo la oportunidad de facturar más rápido y mejor.
 
 ---
-
-## Fuentes y metodología
-
-**Datos primarios:**
-- [Planes y precios oficiales de Holded](https://www.holded.com/es/precios) (consultado diciembre 2025)
-- [Planes y precios de Invoo](https://invoo.es/es/pricing) (diciembre 2025)
-- Pruebas directas de funcionalidades en ambas plataformas
-
-**Datos secundarios:**
-- [Trustpilot: Reseñas de Holded](https://es.trustpilot.com/review/holded.com) - 2,238+ reseñas verificadas (consultadas diciembre 2025)
-- [Documentación oficial de Holded](https://www.holded.com/es/caracteristicas) sobre funcionalidades y módulos
-- [Real Decreto-ley 15/2025](https://www.boe.es/buscar/act.php?id=BOE-A-2025-26789) sobre Verifactu (aplazamiento a enero/julio 2027)
-- [Real Decreto 1007/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840) sobre especificaciones técnicas Verifactu
-
-**Metodología de cálculos:**
-- Cálculos de ahorro basados en tarifa horaria conservadora de €25-30/hora para autónomos profesionales
-- Estimaciones de tiempo basadas en experiencia documentada de 100+ autónomos migrando entre herramientas
-- Todos los precios verificados en webs oficiales en diciembre 2025
-- Costes totales incluyen software + soporte necesario + coste de tiempo
-
-*Última actualización: Diciembre 2025*

@@ -13,6 +13,18 @@ keyTakeaways:
   - "Para usar el 7% debes comunicarlo POR ESCRITO a cada cliente antes de emitir la factura, y el cliente debe conservar esa comunicación firmada"
   - "Las facturas a particulares y clientes extranjeros NO llevan retención, pero sí debes declarar esos ingresos en el Modelo 130"
   - "La retención es un anticipo de tu IRPF: si te retuvieron de más, lo recuperas en la declaración de la renta"
+sources:
+  - name: "Real Decreto 439/2007 - Reglamento del IRPF (BOE)"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820"
+  - name: "Real Decreto 31/2023 - Modificación retenciones artistas (BOE)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-2023"
+  - name: "AEAT - Tabla de retenciones IRPF 2025"
+    url: "https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2025/Cuadro_tipos_retenciones_IRPF2025.pdf"
+  - name: "AEAT - Modelo 111 Retenciones"
+    url: "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G328.shtml"
+  - name: "AEAT - Información para autónomos"
+    url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas.html"
+lastVerified: "Noviembre 2025"
 ---
 
 **Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado. Información actualizada a noviembre de 2025.
@@ -317,14 +329,3 @@ Invoo configura el tipo de retención por cliente, calcula automáticamente cada
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
----
-
-## Fuentes oficiales consultadas
-
-- [Real Decreto 439/2007 - Reglamento del IRPF (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820)
-- [Real Decreto 31/2023 - Modificación retenciones artistas (BOE)](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-2023)
-- [AEAT - Tabla de retenciones IRPF 2025](https://sede.agenciatributaria.gob.es/static_files/Sede/Programas_ayuda/Retenciones/2025/Cuadro_tipos_retenciones_IRPF2025.pdf)
-- [AEAT - Modelo 111 Retenciones](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G328.shtml)
-- [AEAT - Información para autónomos](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas.html)
-
-*Última actualización: Noviembre 2025*

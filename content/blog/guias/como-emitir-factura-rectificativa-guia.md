@@ -8,6 +8,16 @@ readingTime: 7
 featured: false
 editorPick: false
 coverImage: "/blog/factura-rectificativa-guia.webp"
+sources:
+  - name: "Agencia Tributaria - Facturas rectificativas"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/facturas-rectificativas.html"
+  - name: "Manual IVA 2024 - Facturas de rectificación"
+    url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2024/capitulo-10-obligac-formales-suj-registro/obligaciones-materia-facturacion/facturas-rectificacion.html"
+  - name: "Real Decreto 1619/2012 - Obligaciones de facturación"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696"
+  - name: "FAQ Verifactu - Procedimientos de facturación"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/procedimientos-facturacion.html"
+lastVerified: "Enero 2026"
 keyTakeaways:
   - "Una factura rectificativa corrige errores sin borrar la original: usa códigos R1-R5 según el motivo"
   - "Bajo Verifactu no puedes eliminar ni modificar facturas emitidas; la sanción por manipular el sistema es €50.000"
@@ -135,14 +145,3 @@ Invoo implementa validaciones automáticas antes de cada factura: comprueba NIFs
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
----
-
-## Fuentes y metodología
-
-**Normativa oficial consultada:**
-- [Agencia Tributaria - Facturas rectificativas](https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/facturas-rectificativas.html)
-- [Manual IVA 2024 - Facturas de rectificación](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2024/capitulo-10-obligac-formales-suj-registro/obligaciones-materia-facturacion/facturas-rectificacion.html)
-- [Real Decreto 1619/2012 - Obligaciones de facturación](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696)
-- [FAQ Verifactu - Procedimientos de facturación](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/procedimientos-facturacion.html)
-
-*Última actualización: Enero 2026*

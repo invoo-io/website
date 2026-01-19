@@ -8,6 +8,16 @@ readingTime: 7
 featured: false
 editorPick: true
 coverImage: "/blog/cuotas-autonomos-2026.webp"
+sources:
+  - name: "BOE - Real Decreto-ley 13/2022 (Cotización por ingresos reales)"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482"
+  - name: "Seguridad Social - Bases y tipos de cotización 2025"
+    url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537"
+  - name: "Infoautónomos - Gobierno rectifica propuesta cuotas"
+    url: "https://www.infoautonomos.com/blog/gobierno-rectifica-propuesta-cuotas-autonomos/"
+  - name: "El Economista - Congelación cuotas 40% autónomos"
+    url: "https://www.eleconomista.es/economia/noticias/13630602/11/25/la-congelacion-de-cuotas-alcanzara-al-40-de-los-autonomos-en-2026.html"
+lastVerified: "Diciembre 2025"
 keyTakeaways:
   - "Cuotas 2026: desde €200/mes (ingresos bajos) hasta €605/mes (>€6.000/mes)"
   - "Si facturas menos de €1.166/mes, tu cuota se congela respecto a 2025"
@@ -117,20 +127,3 @@ Invoo calcula tu rendimiento neto en tiempo real, te indica en qué tramo estás
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
----
-
-## Fuentes y metodología
-
-**Fuentes oficiales:**
-- [Real Decreto-ley 13/2022](https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482) - Sistema de cotización por ingresos reales (2023-2032)
-- [Seguridad Social - Bases y tipos de cotización 2025](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/36537)
-- Ministerio de Inclusión, Seguridad Social y Migraciones - Propuesta de cuotas 2026 (octubre-noviembre 2025)
-
-**Datos y estudios:**
-- [Infoautónomos - Gobierno rectifica propuesta cuotas](https://www.infoautonomos.com/blog/gobierno-rectifica-propuesta-cuotas-autonomos/)
-- [El Economista - Congelación cuotas 40% autónomos](https://www.eleconomista.es/economia/noticias/13630602/11/25/la-congelacion-de-cuotas-alcanzara-al-40-de-los-autonomos-en-2026.html)
-- Manifestaciones de autónomos 30 de noviembre 2025 - Plataforma por la Dignidad de los Autónomos
-
-**Nota:** Las cuotas indicadas corresponden a la propuesta revisada del Gobierno (octubre 2025). La aprobación definitiva se espera antes del 31 de diciembre de 2025 mediante publicación en el BOE.
-
-*Última actualización: Diciembre 2025*

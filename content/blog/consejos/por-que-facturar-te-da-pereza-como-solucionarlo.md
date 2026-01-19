@@ -13,6 +13,10 @@ keyTakeaways:
   - "Cada paso adicional en tu proceso de facturación reduce la probabilidad de completar la tarea en un 20%—más fricción = más procrastinación"
   - "La procrastinación no es falta de voluntad: es una respuesta racional de tu cerebro a un sistema con demasiada fricción cognitiva"
   - "Reducir el proceso de 9 pasos a 2 clicks recupera 10+ horas mensuales y elimina la ansiedad trimestral de facturación"
+sources:
+  - name: "Gloria Mark, UC Irvine - The Cost of Interrupted Work: More Speed and Stress (2008)"
+    url: "https://www.ics.uci.edu/~gmark/chi08-mark.pdf"
+lastVerified: "2025-12-01"
 ---
 
 Son las 23:47 del día 30. Otra vez. Estás haciendo facturas del mes entero mientras el café se enfría a tu lado. Has tenido treinta días para esto, pero aquí estás, a trece minutos del cierre de mes, con Excel abierto, calculando IVA e IRPF manualmente, prometiéndote que el mes que viene será diferente.
@@ -272,18 +276,3 @@ O puedes elegir conscientemente romper el patrón. Ahora mismo. No mañana cuand
 ---
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre. Sin compromiso, sin fricción.
-
----
-
-## Fuentes
-
-**Investigación:**
-- Gloria Mark, UC Irvine: ["The Cost of Interrupted Work: More Speed and Stress"](https://www.ics.uci.edu/~gmark/chi08-mark.pdf) (2008)
-- Conversaciones con usuarios de Invoo y autónomos españoles (2024-2025)
-- [Análisis de 100+ autónomos sobre pérdida de tiempo en gestión administrativa](/es/blog/analisis/analice-100-autonomos-perdida-tiempo)
-
-**Legislación citada:**
-- [Verifactu y sistemas informáticos de facturación](/es/blog/guias/verifactu-2025-2026-guia-completa-autonomos-pymes) — Real Decreto 1007/2023, entrada en vigor enero 2027 para sociedades, julio 2027 para autónomos según RDL 15/2025
-- [Retenciones IRPF para autónomos](/es/blog/guias/retencion-irpf-factura-7-o-15-guia-autonomos)
-
-*Última actualización: Diciembre 2025*

@@ -8,6 +8,16 @@ readingTime: 6
 featured: true
 editorPick: true
 coverImage: "/blog/verifactu-aplazado-2027.webp"
+sources:
+  - name: "Ministerio de Hacienda - Anuncio oficial del aplazamiento (2 diciembre 2025)"
+    url: "https://www.hacienda.gob.es/"
+  - name: "Real Decreto 1007/2023 - Reglamento Verifactu"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-24840"
+  - name: "Real Decreto 254/2025 - Plazos actualizados"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600"
+  - name: "AEAT - Preguntas frecuentes Verifactu"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/sistemas-verifactu.html"
+lastVerified: "Diciembre 2025"
 keyTakeaways:
   - "Verifactu se retrasa: sociedades en enero 2027, autónomos en julio 2027"
   - "Hacienda ofrece 6 meses de gracia sin sanciones para los que adopten antes"
@@ -110,19 +120,3 @@ Los próximos dos años no son un paréntesis para olvidarte del tema. Son una o
 Invoo será compatible con Verifactu desde el día uno. Código QR automático, envío a Hacienda integrado, cumplimiento garantizado sin que tengas que entender la normativa. €10.90/mes para autónomos, gratis para gestorías.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
-
----
-
-## Fuentes y metodología
-
-**Fuentes oficiales:**
-- [Ministerio de Hacienda - Anuncio oficial del aplazamiento (2 diciembre 2025)](https://www.hacienda.gob.es/)
-- [Real Decreto 1007/2023](https://www.boe.es/buscar/doc.php?id=BOE-A-2023-24840) - Reglamento Verifactu
-- [Real Decreto 254/2025](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600) - Plazos actualizados
-- [AEAT - Preguntas frecuentes Verifactu](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/sistemas-verifactu.html)
-
-**Estudios y datos:**
-- VI Estudio Nacional del Autónomo (Infoautónomos/Universidad de Granada) - Datos de preparación para Verifactu
-- Declaraciones de ATA (Asociación de Trabajadores Autónomos) - Lorenzo Amor, presidente
-
-*Última actualización: Diciembre 2025*

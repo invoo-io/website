@@ -15,6 +15,11 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface Source {
+  name: string;
+  url?: string;
+}
+
 export interface BlogPost {
   slug: string;
   category: string;
@@ -32,6 +37,8 @@ export interface BlogPost {
   draft?: boolean;
   keyTakeaways?: string[];
   faq?: FAQItem[];
+  sources?: Source[];
+  lastVerified?: string;
 }
 
 export interface BlogPostMetadata {
@@ -50,4 +57,6 @@ export interface BlogPostMetadata {
   draft?: boolean;
   keyTakeaways?: string[];
   faq?: FAQItem[];
+  sources?: Source[];
+  lastVerified?: string;
 }

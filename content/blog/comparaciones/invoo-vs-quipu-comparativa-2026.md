@@ -13,6 +13,20 @@ keyTakeaways:
   - "Quipu limita OCR a 30-350 escaneos/mes según plan; Invoo incluye gestión de gastos con OCR sin costes extra por uso."
   - "Invoo incluye dashboard gratuito para gestorías en tiempo real; Quipu cobra €5/mes adicionales por acceso de gestor."
   - "Quipu añade sincronización bancaria y contabilidad oficial completa; Invoo optimiza velocidad y colaboración con gestoría."
+sources:
+  - name: "Planes y precios oficiales de Quipu"
+    url: "https://getquipu.com/es/pricing"
+  - name: "Planes y precios de Invoo"
+    url: "https://invoo.es/es/pricing"
+  - name: "Trustpilot: Reseñas de Quipu"
+    url: "https://es.trustpilot.com/review/getquipu.com"
+  - name: "Documentación oficial de Quipu"
+    url: "https://getquipu.com/es/caracteristicas"
+  - name: "Real Decreto-ley 15/2025"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2025-26789"
+  - name: "Real Decreto 1007/2023"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840"
+lastVerified: "2026-01"
 ---
 
 **"Quipu es una herramienta sólida, pero ¿realmente necesito pagar €30/mes por funcionalidades que apenas uso?"** Esta es la pregunta que muchos autónomos se hacen después de seis meses usando Quipu. La herramienta funciona bien para lo que hace, pero la realidad es que el 80% de autónomos solo necesitan facturar profesionalmente y cumplir con [Verifactu sin complicaciones](/es/blog/guias/verifactu-aplazado-2027-que-cambia-autonomos/).
@@ -601,23 +615,3 @@ Invoo está diseñado específicamente para ti. Facturas profesionales en 30 seg
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
 ---
-
-## Fuentes y metodología
-
-**Datos primarios:**
-- [Planes y precios oficiales de Quipu](https://getquipu.com/es/pricing) (consultado enero 2026)
-- [Planes y precios de Invoo](https://invoo.es/es/pricing) (enero 2026)
-- Pruebas directas de funcionalidades en ambas plataformas
-
-**Datos secundarios:**
-- [Trustpilot: Reseñas de Quipu](https://es.trustpilot.com/review/getquipu.com) - 254 reseñas verificadas (consultadas enero 2026)
-- [Documentación oficial de Quipu](https://getquipu.com/es/caracteristicas) sobre funcionalidades
-- [Real Decreto-ley 15/2025](https://www.boe.es/buscar/act.php?id=BOE-A-2025-26789) sobre Verifactu (aplazamiento a enero/julio 2027)
-- [Real Decreto 1007/2023](https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840) sobre especificaciones técnicas Verifactu
-
-**Verificación de datos:**
-- Límites de OCR verificados en página oficial de precios de Quipu
-- Todos los precios verificados en webs oficiales en enero 2026
-- Cálculos de ahorro basados en configuraciones reales comparables
-
-*Última actualización: Enero 2026*

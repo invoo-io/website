@@ -13,6 +13,26 @@ keyTakeaways:
   - "Excel con fórmulas (incluso =A1*1.21 para IVA) te obliga a cumplir Verifactu desde julio 2026"
   - "Fechas clave: 29 julio 2025 (software listo), 1 enero 2026 (sociedades), 1 julio 2026 (autónomos)"
   - "La multa por usar software no conforme es de 50.000€ fijos por ejercicio fiscal, independientemente de tu facturación"
+sources:
+  - name: "Real Decreto 1007/2023 (BOE)"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840"
+  - name: "Real Decreto 254/2025 (BOE)"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600"
+  - name: "Orden HAC/1177/2024 (BOE)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-22138"
+  - name: "Consulta Vinculante V2653-24 (DGT)"
+    url: "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2653-24"
+  - name: "AEAT - Sistemas Verifactu"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html"
+  - name: "AEAT - Preguntas Frecuentes Verifactu"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/sistemas-verifactu.html"
+  - name: "AEAT - FAQ Ámbitos de aplicación"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/cuestiones-generales-ambitos-aplicacion.html"
+  - name: "Artículo 201 bis LGT"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
+  - name: "Ley 11/2021 Antifraude"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11473"
+lastVerified: "Noviembre 2025"
 ---
 
 **Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado. Información actualizada a noviembre de 2025.
@@ -698,18 +718,3 @@ Invoo genera tu QR automáticamente desde julio 2026. Series correlativas. Recti
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre. Verifactu incluido desde el primer día.
 
----
-
-## Fuentes oficiales consultadas
-
-- [Real Decreto 1007/2023 (BOE)](https://www.boe.es/buscar/act.php?id=BOE-A-2023-24840) - Reglamento Verifactu
-- [Real Decreto 254/2025 (BOE)](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600) - Modificación de plazos
-- [Orden HAC/1177/2024 (BOE)](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-22138) - Especificaciones técnicas
-- [Consulta Vinculante V2653-24 (DGT)](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2653-24) - Excel/Word como SIF
-- [AEAT - Sistemas Verifactu](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html) - Información oficial
-- [AEAT - Preguntas Frecuentes Verifactu](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/sistemas-verifactu.html)
-- [AEAT - FAQ Ámbitos de aplicación](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu/preguntas-frecuentes/cuestiones-generales-ambitos-aplicacion.html)
-- [Artículo 201 bis LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) - Régimen sancionador
-- [Ley 11/2021 Antifraude](https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11473) - Origen de Verifactu
-
-*Última actualización: Noviembre 2025*

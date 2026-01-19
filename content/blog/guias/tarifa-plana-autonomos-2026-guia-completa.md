@@ -13,6 +13,20 @@ keyTakeaways:
   - "Debes llevar 2 años sin alta como autónomo (3 años si ya usaste la tarifa plana antes) y no tener deudas con Hacienda ni Seguridad Social"
   - "Si no marcas la casilla de tarifa plana al darte de alta en el modelo TA.0521, la pierdes para siempre: no se puede solicitar después"
   - "Los autónomos societarios SÍ pueden acceder a la tarifa plana desde 2020 tras las sentencias del Tribunal Supremo"
+sources:
+  - name: "Seguridad Social - Tarifa plana autónomos"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Afiliacion%2C%2Baltas%2By%2Bbajas/Tarifa_plana_autonomos"
+  - name: "Seguridad Social - Prórroga tarifa plana"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Bajas%2By%2Bmodificaciones/Prorroga_tarifa_plana"
+  - name: "Seguridad Social - Alta autónomo online"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/afiliate/altaAutonomo"
+  - name: "Seguridad Social - Simulador de cuota"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico/inicio/"
+  - name: "Agencia Tributaria - Modelo 036 declaración censal"
+    url: "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G322.shtml"
+  - name: "BOE - Real Decreto-ley 13/2022"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482"
+lastVerified: "Enero 2026"
 ---
 
 **Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado. Información actualizada a noviembre de 2025.
@@ -300,14 +314,3 @@ Sí, desde las sentencias del Tribunal Supremo de 2019-2020. Si cumples los requ
 Darte de alta como autónomo ya tiene suficiente papeleo. Lo último que necesitas es complicarte la vida con la facturación. [**Invoo**](https://invoo.es) está diseñado para autónomos que quieren **emitir facturas correctas desde el minuto 1**, con todos los requisitos legales incluidos (retenciones IRPF, IVA, numeración correlativa) y preparado para cumplir **Verifactu** cuando entre en vigor.
 
 Además, puedes compartir tus facturas y libros con tu gestoría sin tener que enviar PDFs por WhatsApp, y te recordamos los plazos de presentación del modelo 303 y 130 para que nunca se te pase una fecha importante. Menos errores administrativos significa más tiempo para lo que realmente importa: hacer crecer tu negocio.
-
----
-
-## Fuentes oficiales
-
-- **Seguridad Social (TGSS):** [Tarifa plana autónomos](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Afiliacion%2C%2Caltas%2By%2Bbajas/Tarifa_plana_autonomos) · [Prórroga tarifa plana](https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Bajas%2By%2Bmodificaciones/Prorroga_tarifa_plana) · [Alta autónomo online](https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/afiliate/altaAutonomo) · [Simulador de cuota](https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico/inicio/)
-- **Agencia Tributaria (AEAT):** [Modelo 036 declaración censal](https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G322.shtml)
-- **BOE:** [Real Decreto-ley 13/2022](https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482) (sistema de cotización por ingresos reales y tarifa plana)
-- **Tribunal Supremo:** Sentencias 1669/2019, 286/2020 y 315/2020 (tarifa plana para autónomos societarios)
-
-*Última actualización: Enero 2026*

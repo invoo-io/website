@@ -8,6 +8,30 @@ readingTime: 10
 featured: false
 editorPick: true
 coverImage: "/blog/cuota-cero-autonomos-2026.webp"
+sources:
+  - name: "Infoautonomos - Cuota Cero autónomos: qué es y cómo solicitarla"
+    url: "https://www.infoautonomos.com/seguridad-social/cuota-cero-autonomos/"
+  - name: "Infoautonomos - Cuota cero Madrid: requisitos, solicitud y plazos"
+    url: "https://www.infoautonomos.com/seguridad-social/cuota-cero-autonomos-madrid/"
+  - name: "Infoautonomos - Cuota cero Andalucía: requisitos, solicitud y plazos"
+    url: "https://www.infoautonomos.com/seguridad-social/cuota-cero-autonomos-andalucia/"
+  - name: "El Español - Confirmado por la Junta de Andalucía: así es la cuota cero para nuevos autónomos en 2026"
+    url: "https://www.elespanol.com/malaga/economia/20251209/confirmado-junta-andalucia-cuota-cero-nuevos-autonomos-trt/1003744047690_0.html"
+  - name: "Autónomos y Emprendedor - Varias comunidades autónomas anuncian la cuota cero de autónomos para 2026"
+    url: "https://www.autonomosyemprendedor.es/articulo/autonomos/varias-comunidades-autonomas-anuncian-cuota-cero-autonomos-2026/20251117172714046571.html"
+  - name: "Quipu - Cuota cero de autónomos de Madrid en 2026"
+    url: "https://getquipu.com/blog/cuota-cero-autonomos-madrid/"
+  - name: "Quipu - Cuota cero de autónomos de Andalucía en 2026"
+    url: "https://getquipu.com/blog/cuota-cero-autonomos-andalucia/"
+  - name: "Declarando - Cuota cero para autónomos: guía para solicitarla 2025"
+    url: "https://declarando.es/cuota-cero-autonomos"
+  - name: "STEL Order - Cuota cero para autónomos por comunidades"
+    url: "https://www.stelorder.com/blog/cuota-cero-por-comunidades/"
+  - name: "Comunidad de Madrid - Ayudas Tarifa Cero"
+    url: "https://sede.comunidad.madrid/ayudas-becas-subvenciones/ayudas-tarifa-cero"
+  - name: "Junta de Andalucía - Subvenciones para el fomento del trabajo autónomo. Línea 1: Cuota cero"
+    url: "https://www.juntadeandalucia.es/organismos/empleoempresaytrabajoautonomo/areas/trabajo-autonomo/fomento-trabajo-autonomo/paginas/subv-fomento-cuota-cero.html"
+lastVerified: "Enero 2026"
 keyTakeaways:
   - "La Cuota Cero no es estatal sino autonómica: solo algunas comunidades la ofrecen, y cada una tiene requisitos y plazos diferentes"
   - "En Madrid y Andalucía puedes empezar sin pagar nada durante 12-24 meses, pero debes solicitarla después de cumplir tu primer año de Tarifa Plana"
@@ -489,25 +513,3 @@ Invoo tiene una calculadora integrada que te muestra tu cuota exacta según tus 
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
 
----
-
-## Fuentes y metodología
-
-**Datos secundarios:**
-
-- [Infoautonomos - Cuota Cero autónomos: qué es y cómo solicitarla](https://www.infoautonomos.com/seguridad-social/cuota-cero-autonomos/)
-- [Infoautonomos - Cuota cero Madrid: requisitos, solicitud y plazos](https://www.infoautonomos.com/seguridad-social/cuota-cero-autonomos-madrid/)
-- [Infoautonomos - Cuota cero Andalucía: requisitos, solicitud y plazos](https://www.infoautonomos.com/seguridad-social/cuota-cero-autonomos-andalucia/)
-- [El Español - Confirmado por la Junta de Andalucía: así es la cuota cero para nuevos autónomos en 2026](https://www.elespanol.com/malaga/economia/20251209/confirmado-junta-andalucia-cuota-cero-nuevos-autonomos-trt/1003744047690_0.html)
-- [Autónomos y Emprendedor - Varias comunidades autónomas anuncian la cuota cero de autónomos para 2026](https://www.autonomosyemprendedor.es/articulo/autonomos/varias-comunidades-autonomas-anuncian-cuota-cero-autonomos-2026/20251117172714046571.html)
-- [Quipu - Cuota cero de autónomos de Madrid en 2026](https://getquipu.com/blog/cuota-cero-autonomos-madrid/)
-- [Quipu - Cuota cero de autónomos de Andalucía en 2026](https://getquipu.com/blog/cuota-cero-autonomos-andalucia/)
-- [Declarando - Cuota cero para autónomos: guía para solicitarla 2025](https://declarando.es/cuota-cero-autonomos)
-- [STEL Order - Cuota cero para autónomos por comunidades](https://www.stelorder.com/blog/cuota-cero-por-comunidades/)
-- [Comunidad de Madrid - Ayudas Tarifa Cero](https://sede.comunidad.madrid/ayudas-becas-subvenciones/ayudas-tarifa-cero)
-- [Junta de Andalucía - Subvenciones para el fomento del trabajo autónomo. Línea 1: Cuota cero](https://www.juntadeandalucia.es/organismos/empleoempresaytrabajoautonomo/areas/trabajo-autonomo/fomento-trabajo-autonomo/paginas/subv-fomento-cuota-cero.html)
-- Seguridad Social (TGSS): Tarifa plana autónomos y sistema de cotización por tramos 2026
-- Real Decreto-ley 13/2022 (sistema de cotización por ingresos reales)
-- Tribunal Supremo: Sentencias 1669/2019, 286/2020 y 315/2020 (tarifa plana para autónomos societarios)
-
-*Última actualización: Enero 2026*
