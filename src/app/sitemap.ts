@@ -21,7 +21,7 @@ const staticPages = [
   "/freelancers",
   "/pymes",
   "/gestorias",
-  // Note: /verifactu was removed - page doesn't exist yet
+  "/metodologia",
 ];
 
 // Calculator pages with localized URLs
@@ -90,7 +90,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Blog articles (Spanish only)
+  const articles = getBlogArticles();
+
   // Blog index and categories (Spanish only)
+  // Only include categories that have at least one article
   entries.push({
     url: `${BASE_URL}/es/blog/`,
     lastModified: new Date(),
@@ -99,7 +103,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   const categories = getAllCategories();
+  const categoriesWithArticles = new Set(articles.map((a) => a.category));
   for (const cat of categories) {
+    // Skip empty categories to avoid thin content in sitemap
+    if (!categoriesWithArticles.has(cat.slug)) continue;
     entries.push({
       url: `${BASE_URL}/es/blog/${cat.slug}/`,
       lastModified: new Date(),
@@ -107,9 +114,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     });
   }
-
-  // Blog articles (Spanish only)
-  const articles = getBlogArticles();
   for (const article of articles) {
     entries.push({
       url: `${BASE_URL}/es/blog/${article.category}/${article.slug}/`,
