@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack -p 5200",
+    "dev:stable": "next dev -p 5200",
+    "dev:resilient": "./scripts/dev-server.sh 5200",
     "build": "next build --turbopack",
     "build:vercel": "next build --turbopack",
     "start": "next start",
