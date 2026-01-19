@@ -1,12 +1,12 @@
 ---
-title: "Modelo 303 vs Modelo 130: Guía Definitiva para Autónomos (2025)"
+title: "Modelo 303 vs Modelo 130: Guía Definitiva para Autónomos (2026)"
 excerpt: "El Modelo 303 es el IVA que nunca fue tuyo. El Modelo 130 es un adelanto de TUS impuestos. Descubre cuándo presentar cada uno, cómo calcularlos y evita sanciones de hasta el 150%."
 publishedAt: "2025-11-25"
 author: "Equipo Invoo"
 tags: ["modelo-303", "modelo-130", "iva", "irpf", "impuestos-autonomos", "hacienda"]
 readingTime: 9
 featured: false
-editorPick: false
+editorPick: true
 coverImage: "/blog/modelo303-modelo130.webp"
 keyTakeaways:
   - "El Modelo 303 es obligatorio para todos los autónomos con IVA. El Modelo 130 solo si menos del 70% de tus ingresos tienen retención."
@@ -21,6 +21,17 @@ sources:
   - name: "Plazos de presentación de autoliquidaciones - AEAT"
     url: "https://sede.agenciatributaria.gob.es/Sede/calendario-contribuyente.html"
 lastVerified: "Noviembre 2025"
+faq:
+  - question: "¿Cuál es la diferencia entre el Modelo 303 y el Modelo 130?"
+    answer: "El Modelo 303 es la declaración trimestral del IVA (dinero que nunca fue tuyo). El Modelo 130 es un pago fraccionado del IRPF (adelanto de tus propios impuestos). El 303 lo presentan todos los autónomos con IVA, mientras que el 130 solo quienes tienen menos del 70% de ingresos con retención."
+  - question: "¿Qué pasa si tengo IVA a devolver en el Modelo 303?"
+    answer: "Tienes dos opciones: solicitar la devolución a Hacienda (tarda 3-6 meses) o compensar el saldo a favor en los próximos trimestres. La mayoría de autónomos eligen compensar porque es más rápido y evita trámites."
+  - question: "¿Tengo que presentar el Modelo 130 si tuve pérdidas?"
+    answer: "Sí, siempre que cumplas los requisitos (estimación directa + menos del 70% con retención). Si tuviste pérdidas, el resultado será 0€ o negativo y no pagas nada, pero debes presentar el modelo igualmente."
+  - question: "¿Cuáles son los plazos para presentar el 303 y el 130?"
+    answer: "Ambos modelos comparten los mismos plazos: del 1 al 20 de abril (Q1), julio (Q2) y octubre (Q3). Para el cuarto trimestre, el plazo es del 1 al 30 de enero del año siguiente."
+  - question: "¿Qué sanciones hay por presentar fuera de plazo?"
+    answer: "Si presentas tarde por iniciativa propia: recargo del 1% + 1% por cada mes de retraso. Si Hacienda te requiere primero: multa del 50% al 150% de la cantidad no ingresada, más intereses de demora."
 ---
 
 **Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios y cada situación empresarial es única. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado.
