@@ -141,6 +141,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   };
 
   // Generate Article schema for LLM discoverability
+  // Includes Organization author for E-E-A-T and citations from sources
   const articleSchema = generateArticleSchema({
     title: post.title,
     excerpt: post.excerpt,
@@ -152,6 +153,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
     category: categorySlug,
     slug,
     readingTime: post.readingTime,
+    sources: post.sources,
+    lastVerified: post.lastVerified,
   });
 
   // Generate BreadcrumbList schema

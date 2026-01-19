@@ -614,6 +614,8 @@ export function generateArticleSchema({
   category,
   slug,
   readingTime,
+  sources,
+  lastVerified,
 }: {
   title: string;
   excerpt: string;
@@ -625,8 +627,19 @@ export function generateArticleSchema({
   category: string;
   slug: string;
   readingTime?: number;
+  sources?: Array<{ name: string; url?: string }>;
+  lastVerified?: string;
 }): SchemaOrg {
   const url = `${BASE_URL}/es/blog/${category}/${slug}/`;
+
+  // Build citation array from sources for schema.org
+  const citations = sources
+    ?.filter((s) => s.url)
+    .map((s) => ({
+      "@type": "CreativeWork" as const,
+      name: s.name,
+      url: s.url,
+    }));
 
   return {
     "@context": "https://schema.org",
@@ -637,10 +650,26 @@ export function generateArticleSchema({
     image: coverImage ? `${BASE_URL}${coverImage}` : `${BASE_URL}/Logo.png`,
     datePublished: publishedAt,
     dateModified: updatedAt || publishedAt,
+    // Use Organization instead of Person for editorial team authorship
+    // This strengthens E-E-A-T signals for YMYL content
     author: {
-      "@type": "Person",
-      name: author,
-      url: `${BASE_URL}/es/about/`,
+      "@type": "Organization",
+      "@id": ORGANIZATION_ID,
+      name: author === "Equipo Invoo" ? "Invoo" : author,
+      url: `${BASE_URL}/es/metodologia-editorial/`,
+      description:
+        "Equipo editorial especializado en facturación electrónica, Verifactu, normativa fiscal española y gestión de autónomos y pymes.",
+      knowsAbout: [
+        "Facturación electrónica",
+        "Verifactu",
+        "TicketBAI",
+        "AEAT",
+        "IVA España",
+        "Autónomos España",
+        "Modelo 130",
+        "Modelo 303",
+        "Normativa fiscal española",
+      ],
     },
     publisher: {
       "@id": ORGANIZATION_ID,
@@ -659,8 +688,13 @@ export function generateArticleSchema({
     about: {
       "@type": "Thing",
       name: "Facturación electrónica en España",
-      description: "Software y normativas de facturación para autónomos y pymes españolas",
+      description:
+        "Software y normativas de facturación para autónomos y pymes españolas",
     },
+    // Add citations from article sources for credibility
+    ...(citations && citations.length > 0 && { citation: citations }),
+    // Add review date if sources were verified
+    ...(lastVerified && { lastReviewed: lastVerified }),
   };
 }
 
