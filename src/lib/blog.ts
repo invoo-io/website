@@ -345,11 +345,16 @@ export function getRelatedBlogPosts(
 ): BlogPostMetadata[] {
   const allPosts = getAllBlogPostsMetadata();
 
-  // Exclude the current post
+  // Exclude the current post (keep if slug OR category differs)
   const otherPosts = allPosts.filter(
     (post) =>
       post.slug !== currentPost.slug || post.category !== currentPost.category
   );
+
+  // Pre-compute values used in scoring loop
+  const now = Date.now();
+  const msPerDay = 1000 * 60 * 60 * 24;
+  const currentTags = (currentPost.tags || []).map((t) => t.toLowerCase());
 
   // Calculate relevance score for each post
   const postsWithScore = otherPosts.map((post) => {
@@ -360,9 +365,8 @@ export function getRelatedBlogPosts(
       score += 10;
     }
 
-    // Calculate shared tags
-    const currentTags = currentPost.tags || [];
-    const postTags = post.tags || [];
+    // Calculate shared tags (case-insensitive)
+    const postTags = (post.tags || []).map((t) => t.toLowerCase());
     const sharedTagsCount = currentTags.filter((tag) =>
       postTags.includes(tag)
     ).length;
@@ -381,10 +385,7 @@ export function getRelatedBlogPosts(
     }
 
     // Recency bonus: more recent posts get slight priority
-    const daysDiff =
-      (new Date().getTime() - new Date(post.publishedAt).getTime()) /
-      (1000 * 60 * 60 * 24);
-    // Posts within last 30 days: +1 point, last 60 days: +0.5 points
+    const daysDiff = (now - new Date(post.publishedAt).getTime()) / msPerDay;
     if (daysDiff < 30) {
       score += 1;
     } else if (daysDiff < 60) {

@@ -18,9 +18,15 @@ export function RelatedArticles({ posts, locale }: RelatedArticlesProps) {
   }
 
   return (
-    <section className="py-12 md:py-16 bg-background-secondary">
+    <section
+      aria-labelledby="related-articles-heading"
+      className="py-12 md:py-16 bg-background-secondary"
+    >
       <div className="container mx-auto px-4 max-w-7xl">
-        <h2 className="text-title1-emphasized text-label-primary mb-8">
+        <h2
+          id="related-articles-heading"
+          className="text-title1-emphasized text-label-primary mb-8"
+        >
           {t('relatedArticles')}
         </h2>
 
