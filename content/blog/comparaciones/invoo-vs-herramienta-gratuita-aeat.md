@@ -13,6 +13,14 @@ keyTakeaways:
   - "Invoo cuesta €10.90/mes (36 céntimos al día) pero ahorra 8-10 horas mensuales valoradas en €200-300 según tu tarifa."
   - "La herramienta AEAT no rastrea gastos deducibles, no colabora con gestorías en tiempo real, y solo funciona desde escritorio."
   - "Si facturas más de €25/hora, Invoo se paga solo en 26 minutos de tiempo ahorrado—el resto del mes es beneficio puro."
+sources:
+  - name: "AEAT - Sede Electrónica (Herramienta de facturación)"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html"
+  - name: "BOE - Real Decreto-ley 15/2025 (Verifactu)"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2025-15"
+  - name: "AEAT - Normativa IVA y facturación"
+    url: "https://sede.agenciatributaria.gob.es/"
+lastVerified: "Enero 2026"
 ---
 
 **"¿Para qué pagar por Invoo si ahora la AEAT ofrece facturación gratis?"** Es la pregunta que nos llega constantemente desde octubre de 2025, cuando la Agencia Tributaria lanzó su herramienta gratuita de facturación. Y es una pregunta completamente legítima que merece una respuesta honesta.

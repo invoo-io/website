@@ -13,6 +13,20 @@ keyTakeaways:
   - "El 70% de exención en el Modelo 130 elimina trámites trimestrales si tus clientes aplican retención en sus facturas"
   - "Mezclar gastos personales y profesionales te hace perder hasta un 30% en deducciones fiscales legítimas"
   - "Las facturas incompletas pueden generar multas de hasta 150 € por cada una según la normativa vigente"
+sources:
+  - name: "Seguridad Social - Simulador de cuota RETA"
+    url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico/inicio/"
+  - name: "Seguridad Social - Tarifa plana autónomos"
+    url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/Afiliacion/10548/31190"
+  - name: "AEAT - Modelos 303 y 130"
+    url: "https://sede.agenciatributaria.gob.es/"
+  - name: "AEAT - Requisitos de facturación"
+    url: "https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/contenido-facturas.html"
+  - name: "BOE - Real Decreto 1007/2023 (Verifactu)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-24481"
+  - name: "BOE - Orden Ministerial 28 octubre 2024 (desarrollo Verifactu)"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-22138"
+lastVerified: "Enero 2026"
 ---
 
 La semana pasada, Pablo me escribió desesperado. Llevaba seis meses como autónomo y acababa de recibir una notificación de Hacienda: 847 € de sanción por presentar tarde el Modelo 303. "Nadie me dijo que había que hacerlo cada trimestre", me contó. Y tiene razón. Cuando te das de alta, nadie te sienta a explicarte las reglas del juego.

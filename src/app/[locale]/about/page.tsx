@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import Image from "next/image";
+import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import AboutContent from "@/components/AboutContent";
 import FocusSection from "@/components/FocusSection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
-import { getImagePath } from "@/lib/utils";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { getImagePath, getBasePath } from "@/lib/utils";
 import { generatePageMetadata } from "@/lib/seo";
+import { FileText, CheckCircle, BookOpen } from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -67,6 +70,73 @@ export default async function AboutPage({
         />
         <AboutContent />
         <FocusSection />
+
+        {/* Editorial Team Section */}
+        <section className="py-16 md:py-24 px-6">
+          <div className="max-w-4xl mx-auto">
+            <SectionHeader
+              size="section"
+              align="left"
+              title={t("about.editorial.title")}
+              marginBottom="md"
+            />
+
+            <div className="mb-8">
+              <p className="text-body text-secondary">
+                {t("about.editorial.description")}
+              </p>
+            </div>
+
+            {/* Editorial highlights */}
+            <div className="bg-background-secondary rounded-[16px] p-6 border border-border-primary mb-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex items-start gap-3">
+                  <FileText className="w-5 h-5 text-accent-blue-main flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="text-body-emphasized text-primary mb-1">
+                      {t("about.editorial.sources.title")}
+                    </p>
+                    <p className="text-callout text-secondary">
+                      {t("about.editorial.sources.description")}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-accent-green-main flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="text-body-emphasized text-primary mb-1">
+                      {t("about.editorial.verification.title")}
+                    </p>
+                    <p className="text-callout text-secondary">
+                      {t("about.editorial.verification.description")}
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <BookOpen className="w-5 h-5 text-accent-purple-main flex-shrink-0 mt-1" />
+                  <div>
+                    <p className="text-body-emphasized text-primary mb-1">
+                      {t("about.editorial.updates.title")}
+                    </p>
+                    <p className="text-callout text-secondary">
+                      {t("about.editorial.updates.description")}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Link to full methodology */}
+            <Link
+              href={getBasePath(`/${locale}/metodologia`)}
+              className="inline-flex items-center gap-2 text-accent-blue-main hover:text-accent-blue-hover transition-colors text-body-emphasized"
+            >
+              {t("about.editorial.cta")}
+              <span aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </section>
+
         <Footer locale={locale} />
       </div>
     </div>

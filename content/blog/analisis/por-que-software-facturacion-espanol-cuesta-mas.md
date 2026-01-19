@@ -13,6 +13,20 @@ keyTakeaways:
   - "Los costes justificados (Verifactu, complejidad fiscal) explican €12-18/mes del precio"
   - "El sobreprecio restante viene de consolidación de mercado y bundling forzado de features"
   - "Invoo ofrece cumplimiento completo con Verifactu por €10.90/mes sin features innecesarias"
+sources:
+  - name: "Ministerio de Trabajo y Economía Social - Datos de autónomos"
+    url: "https://www.mites.gob.es/"
+  - name: "BOE - Real Decreto 1007/2023 (Verifactu)"
+    url: "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-24481"
+  - name: "Holded - Precios oficiales"
+    url: "https://www.holded.com/es/precios"
+  - name: "Quipu - Precios oficiales"
+    url: "https://getquipu.com/precios"
+  - name: "Billin - Precios oficiales"
+    url: "https://www.billin.net/precios"
+  - name: "Lexoffice - Precios oficiales (Alemania)"
+    url: "https://www.lexoffice.de/preise/"
+lastVerified: "Enero 2026"
 ---
 
 María es autónoma en Madrid. Diseñadora gráfica, factura unos €1,800 al mes. Cuando buscó un software de facturación, encontró Holded a €35/mes, Quipu a €40/mes, y Billin a €29/mes. Le pareció razonable hasta que habló con un cliente en Berlín que usa Lexoffice por €8.90/mes. "¿Por qué yo pago cuatro veces más por hacer lo mismo?", se preguntó.

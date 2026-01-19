@@ -13,6 +13,18 @@ keyTakeaways:
   - "La cuota de autónomos (€2.400-18.500€/año según ingresos) es 100% deducible pero muchos no la declaran completa"
   - "Los gastos de hogar (luz, agua, internet) son deducibles al 30% de la parte proporcional si trabajas desde casa"
   - "Gastos pequeños como café con clientes o material de oficina suman miles de euros al año y son 100% deducibles"
+sources:
+  - name: "AEAT - Ley 35/2006 del IRPF"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
+  - name: "AEAT - Reglamento del IRPF"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2007-4034"
+  - name: "Asociación de Trabajadores Autónomos (ATA)"
+    url: "https://www.ata.es/"
+  - name: "BOE - Real Decreto-ley 13/2022"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2022-13039"
+  - name: "Seguridad Social - Sistema de cotización RETA"
+    url: "https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/CotizacionRecaudacionTrabajadores/10721/31190"
+lastVerified: "Enero 2026"
 ---
 
 Maggie lleva 4 años como autónomo. Diseña páginas web desde su casa en Madrid, factura unos 45.000€ al año, y siempre ha confiado ciegamente en su gestoría para la declaración del IRPF.
