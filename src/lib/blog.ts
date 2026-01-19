@@ -334,3 +334,77 @@ export function getFeaturedBlogPostsMetadata(): BlogPostMetadata[] {
 export function getEditorPickBlogPostsMetadata(): BlogPostMetadata[] {
   return getAllBlogPostsMetadata().filter((post) => post.editorPick === true);
 }
+
+/**
+ * Get related blog posts based on category and tag similarity
+ * Returns posts most relevant to the current post, excluding the current post itself
+ */
+export function getRelatedBlogPosts(
+  currentPost: BlogPostMetadata,
+  limit: number = 3
+): BlogPostMetadata[] {
+  const allPosts = getAllBlogPostsMetadata();
+
+  // Exclude the current post
+  const otherPosts = allPosts.filter(
+    (post) =>
+      post.slug !== currentPost.slug || post.category !== currentPost.category
+  );
+
+  // Calculate relevance score for each post
+  const postsWithScore = otherPosts.map((post) => {
+    let score = 0;
+
+    // Same category: +10 points
+    if (post.category === currentPost.category) {
+      score += 10;
+    }
+
+    // Calculate shared tags
+    const currentTags = currentPost.tags || [];
+    const postTags = post.tags || [];
+    const sharedTagsCount = currentTags.filter((tag) =>
+      postTags.includes(tag)
+    ).length;
+
+    // Each shared tag: +5 points
+    score += sharedTagsCount * 5;
+
+    // Featured bonus: +3 points
+    if (post.featured) {
+      score += 3;
+    }
+
+    // Editor pick bonus: +2 points
+    if (post.editorPick) {
+      score += 2;
+    }
+
+    // Recency bonus: more recent posts get slight priority
+    const daysDiff =
+      (new Date().getTime() - new Date(post.publishedAt).getTime()) /
+      (1000 * 60 * 60 * 24);
+    // Posts within last 30 days: +1 point, last 60 days: +0.5 points
+    if (daysDiff < 30) {
+      score += 1;
+    } else if (daysDiff < 60) {
+      score += 0.5;
+    }
+
+    return { post, score };
+  });
+
+  // Sort by score (highest first), then by publication date (newest first)
+  const sortedPosts = postsWithScore.sort((a, b) => {
+    if (b.score !== a.score) {
+      return b.score - a.score;
+    }
+    return (
+      new Date(b.post.publishedAt).getTime() -
+      new Date(a.post.publishedAt).getTime()
+    );
+  });
+
+  // Return top N posts
+  return sortedPosts.slice(0, limit).map((item) => item.post);
+}

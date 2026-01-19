@@ -9,9 +9,10 @@ import ArticleHeader from "@/components/blog/ArticleHeader";
 import ArticleSidebar from "@/components/blog/ArticleSidebar";
 import { ArticleSources } from "@/components/blog/ArticleSources";
 import { ArticleDisclaimer } from "@/components/blog/ArticleDisclaimer";
+import { RelatedArticles } from "@/components/blog/RelatedArticles";
 import { JsonLd } from "@/components/JsonLd";
 import { generateArticleSchema, generateBreadcrumbListSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
-import { getAllBlogPosts, getBlogPost, getAllCategories } from "@/lib/blog";
+import { getAllBlogPosts, getBlogPost, getAllCategories, getRelatedBlogPosts } from "@/lib/blog";
 import { BASE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
@@ -115,6 +116,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   }
 
   const t = await getTranslations('blog');
+
+  // Get related blog posts
+  const relatedPosts = getRelatedBlogPosts(post, 3);
 
   // Custom MDX components to add IDs to headings for anchor linking
   const mdxComponents = {
@@ -247,6 +251,9 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
           </div>
         </div>
+
+        {/* Related Articles */}
+        <RelatedArticles posts={relatedPosts} locale={locale} />
 
         <Footer locale={locale} />
       </div>
