@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
-import { X } from "lucide-react";
+import { useMemo } from "react";
 
 interface ExploreWithAIProps {
   articleUrl: string;
@@ -22,8 +21,6 @@ export default function ExploreWithAI({
   articleTitle,
   articleExcerpt,
 }: ExploreWithAIProps) {
-  const [isVisible, setIsVisible] = useState(true);
-
   const prompt = useMemo(() => {
     // Truncate long titles and excerpts to avoid URL length limits
     const truncatedTitle =
@@ -37,10 +34,6 @@ export default function ExploreWithAI({
 
     return `Basándome en el artículo "${truncatedTitle}" de Invoo (${articleUrl}): ${truncatedExcerpt}. ¿Cuáles son los puntos más importantes que debo tener en cuenta y cómo puedo aplicarlos a mi situación como autónomo o pyme en España? Siéntete libre de hacerme preguntas para personalizar mejor tu respuesta.`;
   }, [articleTitle, articleUrl, articleExcerpt]);
-
-  if (!isVisible) {
-    return null;
-  }
 
   const aiOptions: AIOption[] = [
     {
@@ -145,18 +138,10 @@ export default function ExploreWithAI({
   return (
     <div className="bg-background-secondary rounded-2xl p-6 mt-8 border border-strokes-primary">
       {/* Header */}
-      <div className="flex items-center justify-between mb-4">
+      <div className="mb-4">
         <h3 className="text-subheadline-emphasized text-label-primary">
           Explora este tema con IA
         </h3>
-        <button
-          type="button"
-          onClick={() => setIsVisible(false)}
-          className="p-1 text-label-tertiary hover:text-label-primary transition-colors duration-200"
-          aria-label="Cerrar"
-        >
-          <X className="w-5 h-5" />
-        </button>
       </div>
 
       {/* AI Options Grid */}

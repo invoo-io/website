@@ -23,11 +23,12 @@
 
 | Item | Value |
 |------|-------|
-| Content location | `/content/blog/[category]/[slug].md` |
+| Content location | `/content/blog/[category]/[slug].md` or `.mdx` |
 | Images location | `/public/blog/[image-name].webp` |
 | Type definitions | `src/types/blog.ts` |
 | Blog loader | `src/lib/blog.ts` |
-| Supported format | Markdown (`.md`) or MDX (`.mdx`) |
+| Supported format | Markdown (`.md`) or MDX (`.mdx`) for components |
+| MDX components | PullQuote, InfoCard, AccordionGroup (see Section 6.5) |
 
 ---
 
@@ -51,24 +52,35 @@ Before writing any article:
 
 **Web readers scan, not read. Keep paragraphs short and focused.**
 
-❌ **BAD - Too dense (4-6+ sentences):**
+❌ **BAD - Too dense (5+ sentences, 100+ words):**
 ```markdown
 Verifactu es obligatorio desde 2025 para todas las empresas que emitan facturas en España. Esta normativa afecta a autónomos, pymes y grandes empresas por igual. Si no lo cumples, las multas pueden llegar hasta €10,000 dependiendo de la gravedad del incumplimiento. La buena noticia es que entender qué necesitas hacer es más simple de lo que parece. En este artículo te vamos a explicar exactamente cómo prepararte sin complicaciones y sin gastar más de lo necesario.
 ```
 
-✅ **GOOD - Scannable (2-4 sentences):**
+✅ **GOOD - Scannable (2-3 sentences, 40-60 words):**
 ```markdown
 Verifactu es obligatorio desde 2025 para todas las empresas que emitan facturas en España. Si no lo cumples, **las multas pueden llegar hasta €10,000**.
 
 Pero no te asustes. En este artículo te explicamos exactamente cómo prepararte sin complicaciones.
 ```
 
-**Rules:**
-- **2-4 sentences per paragraph** (40-70 words max)
+✅ **EVEN BETTER - Vary paragraph length for rhythm:**
+```markdown
+Verifactu es obligatorio desde 2025. **Las multas pueden llegar hasta €10,000**.
+
+Pero aquí está lo que nadie te cuenta: cumplir es más simple de lo que parece. No necesitas entender tecnología. No necesitas contratar consultores. Solo necesitas un software actualizado y saber qué fechas importan.
+
+En esta guía te explicamos todo sin tecnicismos.
+```
+
+**Critical Rules:**
+- **2-3 sentences per paragraph** (40-60 words ideal, 70 max)
+- **Vary paragraph length deliberately**: 1 sentence for emphasis, 2-3 for development
+- **Maximum 60 words per paragraph** — break longer blocks into multiple paragraphs
 - **One idea per paragraph** — if you switch topics, start a new paragraph
-- **Bold key phrases** so skimmers catch the important points
-- Use transitions between paragraphs (pero, sin embargo, además, por eso)
-- Lists break up dense information — don't avoid them
+- **Bold the key insight** in each paragraph (3-6 words max)
+- **Use transitions** to create flow between paragraphs (pero, sin embargo, además, por eso, lo que muchos no saben)
+- **White space is a feature** — embrace short paragraphs with breathing room
 
 ### Voice & Tone
 
@@ -118,15 +130,130 @@ Pero no te asustes. En este artículo te explicamos exactamente cómo prepararte
    - H3 for subsections
    - Headers should make sense as a standalone outline
 
-4. **Visual breaks**
-   - Bullet lists for 3+ related items
-   - Blockquotes for key insights
+4. **Visual breaks** (but avoid checklist overload)
+   - Bullet lists for **lists only** (3+ related items)
+   - **NOT for explanations** that need narrative flow
+   - Blockquotes for key insights or quotes
    - `---` dividers between major sections
+   - **Never stack 3+ bullet sections** without prose breaks
 
 5. **Sentence length**
    - Target: 15-20 words per sentence
    - Max: 25 words (break longer sentences)
    - Short sentences (8-12 words) for emphasis and CTAs
+   - Vary sentence length to create rhythm
+
+6. **Content rhythm** (critical for readability)
+   - **Mix prose with lists** — avoid "bullet fatigue"
+   - Pattern: 2-3 paragraphs → visual break → 2-3 paragraphs
+   - Use **storytelling to explain**, not just bullet points
+   - Example: Instead of "✅ Ventaja 1", write "La mayor ventaja es X. Esto significa que..."
+
+---
+
+## 2.5. Common Readability Mistakes (AVOID THESE)
+
+### Mistake 1: Checklist Overload
+
+❌ **BAD - Feels like a to-do app, not editorial content:**
+```markdown
+## Tareas fiscales
+
+✅ **Revisa todas las facturas emitidas.** Abre tu software y comprueba...
+✅ **Identifica facturas pendientes.** Si tienes clientes morosos...
+✅ **Comprueba las retenciones.** Si aplicas el 7%...
+✅ **Registra todos los gastos.** Esto incluye la cuota mensual...
+✅ **Aprovecha deducciones.** Si estabas pensando en comprar...
+✅ **Revisa gastos proporcionales.** Si trabajas desde casa...
+```
+
+✅ **BETTER - Mix narrative with actionable steps:**
+```markdown
+## Tareas fiscales: qué revisar antes del 31 de diciembre
+
+El primer paso es hacer inventario completo de facturas. Abre tu software y revisa que no falta ninguna por registrar. **Si tienes trabajos terminados que aún no has facturado**, decide estratégicamente: facturar en diciembre significa que cuenta para tu IRPF 2025.
+
+Luego identifica facturas pendientes de cobro. Este dato es esencial para tu tesorería de enero.
+
+**En gastos deducibles**, registra todo ahora:
+- Cuota mensual de autónomos
+- Seguro de salud y formación profesional
+- Software y herramientas digitales
+- Material de oficina y equipos
+
+Si estabas pensando en comprar un ordenador nuevo o renovar tu móvil profesional, **hazlo antes del 31 de diciembre**. Esos gastos se deducen en 2025.
+```
+
+**Why it's better:** Narrative flow explains the "why", bullets organize the "what". Readers understand context, not just tasks.
+
+### Mistake 2: Dense Comparison Blocks
+
+❌ **BAD - 120+ word paragraphs explaining pricing:**
+```markdown
+El Plan Basic a 29€/mes es donde realmente empieza la propuesta seria de Holded para autónomos profesionales. Incluye 2 usuarios, 1,000 facturas al año (83 mensuales), 5 bancos sincronizados, y acceso a los módulos principales de la plataforma. Para la mayoría de autónomos serios que superan el volumen mínimo, este es el verdadero punto de entrada, no el Plus que aparece destacado en la página de precios. La diferencia de 14€ mensuales entre Plus y Basic representa 168€ anuales que muchos terminan pagando cuando descubren las limitaciones del plan inicial.
+```
+
+✅ **BETTER - Break into 2-3 focused paragraphs:**
+```markdown
+El **Plan Basic a €29/mes** es el verdadero punto de entrada. Incluye 2 usuarios, 1,000 facturas anuales (83/mes), y 5 bancos sincronizados.
+
+La mayoría descubre que el Plus no es suficiente. **La diferencia de €14 mensuales representa €168 anuales** que terminas pagando cuando chocas con las limitaciones.
+
+Para autónomos con volumen medio-alto, Basic es el mínimo realista.
+```
+
+### Mistake 3: Bullet Density Without Flow
+
+❌ **BAD - Back-to-back bullet sections:**
+```markdown
+**Ventajas de Holded:**
+- Ecosistema todo-en-uno con CRM, facturación e inventario integrados
+- Sincronización bancaria automática con más de 300 entidades
+- Módulos de proyectos y RRHH para equipos en crecimiento
+
+**Desventajas de Holded:**
+- Precio alto para autónomos simples que solo necesitan facturar
+- Curva de aprendizaje pronunciada por la cantidad de funcionalidades
+- Soporte premium cuesta €50/mes adicionales
+```
+
+✅ **BETTER - Mix prose with bullets:**
+```markdown
+## Las ventajas reales de Holded
+
+La mayor fortaleza es su ecosistema todo-en-uno. En lugar de cinco herramientas diferentes, tienes todo centralizado. **Esto elimina duplicación de datos** y reduce errores de sincronización.
+
+Para pymes con múltiples departamentos, esta integración es transformadora:
+- El equipo de ventas actualiza el CRM
+- Automáticamente se genera la factura
+- El inventario se actualiza solo
+- Contabilidad recibe los asientos en tiempo real
+
+**Pero hay un coste menos visible:** la complejidad. Si solo necesitas facturar, aprender a navegar un ERP completo puede ser frustante. Muchos autónomos nos dicen que se sienten abrumados por las opciones.
+
+El precio también escala rápidamente. El plan Basic a €29/mes es solo el inicio—añade inventario avanzado (€25), soporte premium (€50), y llegas a **€104/mes**. Para una pyme que usa todas esas funcionalidades, tiene sentido. Para un autónomo simple, no.
+```
+
+**Why it's better:** Readers understand the trade-offs through storytelling, not just feature lists. The narrative builds context that pure bullets can't provide.
+
+### Mistake 4: Over-Bolding or Under-Bolding
+
+❌ **BAD - Whole sentences bolded:**
+```markdown
+**Si no cumples con Verifactu, las multas pueden llegar hasta €50,000.**
+```
+
+❌ **BAD - Nothing bolded:**
+```markdown
+Si no cumples con Verifactu, las multas pueden llegar hasta 50000 euros según la normativa vigente.
+```
+
+✅ **GOOD - Bold the key insight (3-6 words):**
+```markdown
+Si no cumples con Verifactu, **las multas pueden llegar hasta €50,000**.
+```
+
+**Rule:** A skimmer reading only bold text should understand 70% of your article.
 
 ---
 
@@ -183,6 +310,10 @@ keyTakeaways:
 - `coverImage` - Path to WebP image in `/public/blog/`
 - `keyTakeaways` - Exactly 4 bullet points (see formula below)
 
+**🔴 Required for Content Quality:**
+- `sources` - Array of official sources with `name` and `url` (minimum 3 sources - see Section 5)
+- `lastVerified` - Date string for regulatory content (e.g., "Enero 2026")
+
 ### keyTakeaways Formula
 
 Each takeaway should:
@@ -211,13 +342,497 @@ Each takeaway should:
 
 ---
 
-## 5. Content Structure
+## 5. Sources & Legal Disclaimer
+
+### ⚠️ IMPORTANT: Dedicated Components
+
+The blog has **dedicated components** that render automatically at the bottom of each article. **DO NOT** add these sections inside the article content:
+
+1. **Sources Component** - Renders sources from frontmatter
+2. **Legal Disclaimer Component** - Displays standard legal disclaimer for tax/regulatory content
+
+### Sources (REQUIRED for all articles)
+
+**Every article MUST have sources in frontmatter.** This is not optional.
+
+**Frontmatter format:**
+```yaml
+sources:
+  - name: "AEAT - Modelo 347"
+    url: "https://sede.agenciatributaria.gob.es/..."
+  - name: "BOE - Real Decreto 1065/2007"
+    url: "https://www.boe.es/..."
+lastVerified: "Enero 2026"
+```
+
+**Source requirements:**
+- **Minimum 3 sources** for every article
+- Prioritize official sources (AEAT, BOE, Seguridad Social, INE, etc.)
+- Use descriptive names, not just URLs
+- Verify all URLs are working before publishing
+- Add `lastVerified` date for regulatory content
+
+**In-text citations:**
+When referencing a source in the article body, link directly to it:
+```markdown
+Según la [Orden HAC/1431/2025](https://www.boe.es/...), debes incluir el campo BDNS.
+```
+
+### Legal Disclaimer
+
+**DO NOT add "Aviso legal" text inside the article content.** The Legal Disclaimer component handles this automatically for all articles.
+
+DO NOT include:
+```markdown
+❌ **Aviso legal:** Esta guía tiene carácter informativo y no constituye...
+❌ ## Fuentes y metodología
+❌ **Datos primarios:**
+```
+
+The component will display the appropriate disclaimer at the bottom of the article page.
+
+---
+
+## 6. Article Formatting Rules
+
+### Overall Page Structure
+
+Every article page follows this structure (most sections handled by components):
+
+1. **Hero/Header Section** - Component renders title, author, date, reading time
+2. **Right Sidebar Navigation** - Component generates from H2 headings
+3. **LLM Share Buttons** - Component for sharing to ChatGPT/Claude
+4. **Social Share** - Component for social media sharing
+5. **Key Takeaways / Puntos Clave** - Component renders from frontmatter `keyTakeaways`
+6. **Article Content** - Your markdown content begins here
+7. **Sources** - Component renders from frontmatter `sources` array
+8. **Legal Disclaimer** - Component renders automatically for regulatory content
+
+**You write:** Only the article content (item 6). Everything else is automated.
+
+---
+
+## 6.5. Content Formatting Rules
+
+### H2 Block Rules (Main Sections)
+
+- **Maximum 5 H2 sections** per article (excluding FAQ)
+- Each H2 can have **maximum 1 custom component** (Quote, Accordion, InfoCard, or numbered list)
+- Each H2 can have simple bullet lists if needed for listing items
+- H2s should be spaced 200-400 words apart
+- **REQUIRED: Every article must have a "Preguntas frecuentes" H2 section** (see FAQ section below)
+
+### H3 Block Rules (Subsections)
+
+- **Maximum 5 H3 subsections** per H2 section
+- Each H3 block can have **maximum 4 paragraphs**
+- Use H3s to break up long sections and improve scannability
+
+### Paragraph Rhythm & Length
+
+**Critical for readability:** Vary paragraph length deliberately to create visual rhythm.
+
+**The Pattern:**
+- Long (45-55 words) → Short (30-40 words) → Long → Short → etc.
+- This creates visual rhythm and keeps readers engaged
+- Short paragraphs provide breathing room
+- Long paragraphs deliver detailed information
+
+**Rules:**
+- **Maximum 3-4 lines per paragraph** (40-70 words)
+- **Vary length intentionally**: Long (4-5 lines) → Short (2 lines) → Long → Short
+- **Break every 4-5 paragraphs** with either:
+  - Sub-heading (H3 or H4)
+  - Design component (InfoCard, PullQuote, etc.)
+  - Bullet list
+  - Horizontal rule `---`
+
+## Paragraph Rhythm Examples
+
+**Long paragraph (~45-50 words, 3-4 lines):**
+> En esta guía vamos a desmontar el Modelo 347 pieza por pieza. Vamos a explicar qué es, quién debe presentarlo, qué operaciones se incluyen, cómo trabajar con tu gestoría para prepararlo sin estrés y cómo evitar los errores que disparan las sanciones.
+
+**Short paragraph (~35-40 words, 2-3 lines):**
+> Si te ha pasado alguna vez, bienvenido al club. El Modelo 347 es la declaración informativa que más confunde a los autónomos porque no pagas nada cuando la presentas, pero las sanciones por no hacerlo son brutales.
+
+**Long paragraph (~50-55 words, 3-4 lines):**
+> Desde 2026, existe una novedad importante: debes incluir el número de referencia de la Base de Datos Nacional de Subvenciones (BDNS) si la operación corresponde a una ayuda o subvención pública. Este campo es obligatorio según la Orden HAC/1431/2025. Si no lo incluyes, la declaración puede ser rechazada o dar lugar a requerimientos de Hacienda.
+
+### Custom Components (MDX)
+
+> **IMPORTANT:** To use any MDX components, your file MUST have `.md` extension inside `/content/blog/`. Components are automatically available.
+
+Use these components **sparingly** - they add visual interest but should enhance content, not replace it.
+
+#### 1. PullQuote - Highlight Key Insights
+
+Use for memorable insights, quotes, or testimonials.
+
+**Basic usage:**
+```mdx
+<PullQuote>
+Quote text here without quotation marks
+</PullQuote>
+```
+
+**With attribution:**
+```mdx
+<PullQuote author="María González" source="Diseñadora freelance, Barcelona">
+Invoo me ahorra 3 horas semanales en facturación y me mantiene tranquila con Verifactu
+</PullQuote>
+```
+
+**Props:**
+- `children` (required): Quote text without quotation marks
+- `author` (optional): Person being quoted
+- `source` (optional): Context or title of person
+
+**When to use:**
+- Key insights you want readers to remember
+- Client testimonials with attribution
+- Expert opinions or industry quotes
+- Surprising statistics worth highlighting
+
+**Don't use for:**
+- General information that belongs in paragraphs
+- Multiple quotes (use QuoteList instead)
+- Warnings or tips (use InfoCard instead)
+
+#### 2. QuoteList & QuoteItem - Multiple Short Quotes
+
+Use for displaying multiple related quotes or testimonials together.
+
+```mdx
+<QuoteList title="Lo que dicen los autónomos">
+<QuoteItem>
+Me ahorra 3 horas cada semana
+</QuoteItem>
+<QuoteItem>
+La integración con mi gestoría es perfecta
+</QuoteItem>
+<QuoteItem>
+Nunca había sido tan fácil cumplir con Verifactu
+</QuoteItem>
+</QuoteList>
+```
+
+**QuoteList Props:**
+- `children` (required): QuoteItem components
+- `title` (optional): Section title
+
+**QuoteItem Props:**
+- `children` (required): Short quote text (1-2 sentences)
+
+**When to use:**
+- Multiple short testimonials (3-5 items)
+- User feedback compilation
+- Quick insights from different sources
+
+**Don't use for:**
+- Long quotes (use PullQuote instead)
+- Single quote (use PullQuote instead)
+- More than 5 items (gets overwhelming)
+
+#### 3. Accordion Components - Collapsible Content
+
+**Two variants available:**
+
+**A) Single Accordion** - One standalone collapsible item
+
+```mdx
+<Accordion title="Caso de estudio: María, diseñadora freelance">
+María facturaba unos €3,000 mensuales usando Excel. Pasaba 2 horas semanales
+copiando datos entre plantillas. Con Invoo redujo ese tiempo a 15 minutos.
+
+**Resultados:**
+- 85% menos tiempo en facturación
+- Cero errores de cálculo
+- Cumplimiento automático de Verifactu
+</Accordion>
+```
+
+**Props:**
+- `title` (required): Header text
+- `children` (required): Collapsible content
+- `value` (optional): Unique ID (defaults to "item")
+- `defaultOpen` (optional): Set `true` to start expanded (avoid using)
+
+**B) AccordionGroup** - Multiple items, only one open at a time
+
+```mdx
+<AccordionGroup>
+<AccordionGroupItem title="¿Necesito Verifactu si facturo poco?" value="item-1">
+Sí. Verifactu es obligatorio para cualquier autónomo que use software de
+facturación, independientemente del volumen de facturación.
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Cuál es la multa por incumplimiento?" value="item-2">
+La multa es de hasta €50,000 por ejercicio fiscal según la Ley General Tributaria.
+</AccordionGroupItem>
+</AccordionGroup>
+```
+
+**AccordionGroup Props:**
+- `children` (required): AccordionGroupItem components
+- `defaultValue` (optional): Value of item to open by default (avoid using)
+
+**AccordionGroupItem Props:**
+- `title` (required): Header text
+- `value` (required): Unique ID (must be unique within group)
+- `children` (required): Collapsible content
+
+**Default behavior:** Accordions start **closed by default** for best UX. Readers consciously expand what interests them. Avoid using `defaultOpen` or `defaultValue`.
+
+**When to use:**
+- **Single Accordion**: One case study or deep-dive example
+- **AccordionGroup**: Multiple FAQ items, case studies, or examples
+- Optional content that adds value but isn't essential to main flow
+- Technical details that might overwhelm some readers
+
+**Don't use for:**
+- Essential information (keep in main flow - accordions hide content from SEO)
+- Single short item (use InfoCard instead)
+- More than 4-5 items in a group (gets overwhelming)
+
+#### 4. InfoCard - Tips, Warnings, Important Notes
+
+Available variants: `info`, `tip`, `warning`, `success`, `important`
+
+```mdx
+<InfoCard variant="tip" title="Consejo profesional">
+Si facturas más de €6,000 anuales a un mismo cliente, deberás incluirlo en el Modelo 347.
+</InfoCard>
+
+<InfoCard variant="warning" title="Atención">
+La fecha límite para Verifactu es julio 2026. No hay prórrogas.
+</InfoCard>
+
+<InfoCard variant="important">
+Content here (title is optional)
+</InfoCard>
+```
+
+**Props:**
+- `variant` (optional): `info` | `tip` | `warning` | `success` | `important` (defaults to `info`)
+- `title` (optional): Card header (uses default title if omitted)
+- `children` (required): Card content (2-4 sentences max)
+- `icon` (optional): Custom Lucide icon (advanced usage)
+
+**Convenience components:**
+- `<TipCard>` - Same as `<InfoCard variant="tip">`
+- `<WarningCard>` - Same as `<InfoCard variant="warning">`
+- `<ImportantCard>` - Same as `<InfoCard variant="important">`
+
+**Content length:** Maximum 2-4 sentences (60-80 words). If longer, consider using Accordion or breaking into paragraphs.
+
+**When to use:**
+- Important reminders or warnings
+- Pro tips that add value
+- Critical deadlines or requirements
+
+**Don't use for:**
+- General information (use paragraphs)
+- Long explanations (keep cards concise)
+
+#### 4. Numbered Lists - Styled with Blue Circles
+
+Use standard markdown numbered lists - they'll render with styled blue circular numbers:
+
+```markdown
+1. Primer paso con explicación
+2. Segundo paso con detalles
+3. Tercer paso con contexto
+```
+
+**When to use:**
+- Sequential steps or instructions
+- Ranked items (top 5, 3 best practices)
+- Chronological processes
+
+#### 5. Bullet Lists - Styled with Blue Dots
+
+Use standard markdown bullets - they'll render with styled blue dots:
+
+```markdown
+- Primer elemento
+- Segundo elemento
+- Tercer elemento
+```
+
+**When to use:**
+- Unordered lists of features, benefits, requirements
+- Non-sequential items
+- 3+ related items that need grouping
+
+**Don't use for:**
+- Explanations that need narrative flow
+- Single items (use paragraph)
+
+### Component Usage Guidelines
+
+**Article-level limits:**
+- **Maximum 1 InfoCard** (TipCard/WarningCard/ImportantCard) per article - high-impact visual breaks, more than 1 dilutes importance
+- **PullQuotes, QuoteList, Accordions** - use as needed, no strict limit
+
+**General guidance:**
+- Components are supplementary - good writing should carry the article
+- Use components when they genuinely add value, not for decoration
+
+**Section-level rules:**
+- **Maximum 1 component per H2 section** - Don't overload sections
+- **Components should add value**, not just decoration
+- **Don't stack components back-to-back** - Separate with prose (1-2 paragraphs minimum)
+- **Most sections shouldn't have components** - Prefer good paragraph writing
+
+**Component composition rules:**
+
+✅ **Allowed:**
+- Accordion content can include bullet lists, bold text, links
+- QuoteList must contain only QuoteItem children
+- InfoCard can contain bold, links, short lists
+
+❌ **Not allowed:**
+- InfoCard inside Accordion
+- PullQuote inside InfoCard or Accordion
+- Accordion inside Accordion
+- AccordionGroupItem outside AccordionGroup
+- QuoteItem outside QuoteList
+
+**Component decision tree:**
+```
+Does this add essential value?
+├─ No → Write it as a paragraph
+└─ Yes → Is it optional/supplementary?
+    ├─ Yes → Use Accordion
+    └─ No → Is it a warning/tip?
+        ├─ Yes → Use InfoCard
+        └─ No → Is it a memorable quote?
+            ├─ Yes (single) → Use PullQuote
+            ├─ Yes (multiple short) → Use QuoteList
+            └─ No → Write as paragraph
+```
+
+### FAQ Section (REQUIRED)
+
+**Every article MUST have a "Preguntas frecuentes" H2 section** before the final CTA. This section:
+- Improves SEO (FAQ schema in frontmatter + visible content)
+- Answers common reader questions directly in the article
+- Provides quick answers for scanners who skip to the bottom
+- Uses AccordionGroup for clean, collapsible UX
+
+**Structure:**
+
+```markdown
+## Preguntas frecuentes
+
+<AccordionGroup>
+
+<AccordionGroupItem title="¿[Question 1]?" value="faq-1">
+
+[Answer in 2-3 sentences, expand slightly from frontmatter]
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿[Question 2]?" value="faq-2">
+
+[Answer]
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿[Question 3]?" value="faq-3">
+
+[Answer]
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿[Question 4]?" value="faq-4">
+
+[Answer]
+
+</AccordionGroupItem>
+
+</AccordionGroup>
+
+---
+
+**[CTA section follows]**
+```
+
+**Rules:**
+- Use `## Preguntas frecuentes` as the H2 (exact wording)
+- **MUST use AccordionGroup** with AccordionGroupItem for each question
+- Use `value="faq-1"`, `value="faq-2"`, etc. for unique IDs
+- Answers should be 2-4 sentences (slightly expanded from frontmatter)
+- Include 3-5 questions (match the frontmatter `faq` array)
+- Place this section AFTER all main content, BEFORE the final CTA
+- The FAQ section uses its own AccordionGroup (separate from content accordions)
+- This section does NOT count toward the "max 5 H2 sections" limit
+
+**Frontmatter FAQ vs Content FAQ:**
+- **Frontmatter `faq`**: Used for FAQ schema (SEO/structured data)
+- **Content FAQ section**: Visible to readers using AccordionGroup, slightly expanded answers
+- Both should cover the same questions, content version can be more detailed
+
+### Content Flow for Scannability
+
+**Goal:** Create visual rhythm so readers can scan and engage easily.
+
+**Ideal flow pattern:**
+```markdown
+## H2 Section Title
+
+[2-3 paragraphs introducing topic - vary length]
+
+### H3 Subsection (optional)
+
+[2-4 paragraphs explaining concept]
+
+**Optional:** Bullet list if listing 3+ items
+
+**Optional:** 1 component (InfoCard/PullQuote/Accordion) if it adds value
+
+[1-2 paragraphs transitioning to next section]
+
+## Next H2 Section
+
+[Repeat pattern]
+```
+
+**Example - Good flow:**
+```markdown
+## Qué es Verifactu y por qué importa
+
+Verifactu es el nuevo sistema de verificación de facturas que la AEAT implementa en 2025. **Todas las empresas que emitan facturas electrónicas deben cumplirlo**. Esto incluye autónomos, pymes y grandes corporaciones sin excepción.
+
+La multa por incumplimiento es de hasta €50,000 por ejercicio fiscal.
+
+### Quién debe cumplir Verifactu
+
+Si emites facturas usando cualquier tipo de software (no papel), estás obligado. **Esto incluye:**
+- Software de facturación (Invoo, Holded, Quipu, etc.)
+- Hojas de cálculo con plantillas (Excel, Google Sheets)
+- Sistemas ERP o CRM que generen facturas
+
+<WarningCard title="Importante">
+Verifactu no aplica solo a grandes empresas. Si eres autónomo con 5 facturas al año, también debes cumplir.
+</WarningCard>
+
+La fecha límite es **julio 2026**. No hay prórrogas confirmadas hasta la fecha.
+
+## Cómo prepararte para Verifactu
+
+[Next section continues...]
+```
+
+---
+
+## 7. Content Structure
 
 ### Anatomy of a Great Article
 
 ```markdown
 ---
-[Frontmatter YAML]
+[Frontmatter YAML including sources array - see Section 5]
 ---
 
 > **En resumen:** [TL;DR - 2-3 sentences summarizing the key takeaway and what action to take. Required for articles 2000+ words.]
@@ -253,20 +868,9 @@ Resume el valor entregado y proporciona siguiente paso claro.
 Invoo [beneficio específico relacionado con el tema]. [Segunda frase con features relevantes]. €10.90/mes para autónomos, gratis para gestorías.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
-
----
-
-## Fuentes y metodología
-
-**Datos primarios:**
-- [Fuentes propias si aplica]
-
-**Datos secundarios:**
-- [Fuentes oficiales: BOE, AEAT, Seguridad Social]
-- [Enlaces a normativa citada]
-
-*Última actualización: [Mes Año]*
 ```
+
+> ⚠️ **NOTE:** Sources are rendered automatically from frontmatter. Do NOT add a "Fuentes y metodología" section in the content body. See Section 5.
 
 ### CTA Formatting Examples
 
@@ -300,28 +904,30 @@ Invoo genera facturas con código QR Verifactu automáticamente. Cumples la norm
 
 ---
 
-## 6. Supported Markdown Elements
+## 8. Supported Markdown & MDX Elements
 
-### ✅ USE THESE
+### ✅ Standard Markdown
 
 ```markdown
 # H1 (only one, matches title)
-## H2 (main sections, include keywords)
-### H3 (subsections)
+## H2 (main sections, include keywords, max 5 per article)
+### H3 (subsections, max 5 per H2)
 #### H4-H6 (rarely needed)
 
-**Bold text** for emphasis
+**Bold text** for emphasis (3-6 words per paragraph)
 *Italic text* for soft emphasis
 
-- Bullet lists (with emojis when useful)
+- Bullet lists for items and features (use sparingly)
   - ✅ Correct action
   - ❌ Error to avoid
   - 💡 Tip or insight
   - ⚠️ Warning
 
-1. Numbered lists (for steps)
+1. Numbered lists for sequential steps (styled with blue circles)
 2. Second step
 3. Third step
+
+**IMPORTANT:** Use bullets for **lists only**, not explanations. If you're explaining "why" or "how", use prose paragraphs. If you're listing "what", use bullets.
 
 > Blockquotes for key points or quotes
 > (blue left border, italic style)
@@ -337,6 +943,43 @@ Invoo genera facturas con código QR Verifactu automáticamente. Cumples la norm
 Horizontal rule (section dividers)
 ```
 
+### ✅ MDX Components (Use Sparingly)
+
+**Available components** - See Section 6.5 for detailed usage guidelines:
+
+```mdx
+<!-- PullQuote - For memorable insights -->
+<PullQuote>
+Quote text without quotation marks
+</PullQuote>
+
+<!-- InfoCard - For tips, warnings, important notes -->
+<InfoCard variant="tip" title="Optional Title">
+Content here
+</InfoCard>
+
+<!-- Variants: info, tip, warning, success, important -->
+<TipCard title="Consejo">Content</TipCard>
+<WarningCard title="Atención">Content</WarningCard>
+<ImportantCard>Content</ImportantCard>
+
+<!-- AccordionGroup - For collapsible content (always starts closed) -->
+<AccordionGroup>
+<AccordionGroupItem title="Title here" value="item-1">
+Content here
+</AccordionGroupItem>
+<AccordionGroupItem title="Another title" value="item-2">
+More content
+</AccordionGroupItem>
+</AccordionGroup>
+```
+
+**Component rules:**
+- Maximum 1 component per H2 section
+- Components should enhance, not replace good writing
+- Don't stack components back-to-back
+- If file extension is `.md`, rename to `.mdx` to use components
+
 ### ❌ DO NOT USE
 
 - **Tables** - Don't render well on mobile. Use structured lists instead:
@@ -344,13 +987,14 @@ Horizontal rule (section dividers)
   **Primer trimestre (Q1):** Enero - Marzo → Presentación del **1 al 20 de abril**
   **Segundo trimestre (Q2):** Abril - Junio → Presentación del **1 al 20 de julio**
   ```
-- Custom React/JSX components
+- Custom React/JSX components (only approved MDX components above)
 - Advanced code syntax highlighting
-- Any element not in the "USE THESE" list
+- Multiple components stacked together
+- Any element not in the "USE THESE" lists
 
 ---
 
-## 7. SEO Requirements
+## 9. SEO Requirements
 
 ### Title (50-60 characters)
 - Keyword at or near the beginning
@@ -395,7 +1039,7 @@ grep -r "autónomo" content/blog/ --files-with-matches
 
 ---
 
-## 8. Image Guidelines
+## 10. Image Guidelines
 
 ### Technical Specs
 - **Format**: WebP (smaller file size)
@@ -417,62 +1061,80 @@ coverImage: "/blog/verifactu-guide.webp"
 
 ---
 
-## 9. Article Templates by Category
+## 11. Article Templates by Category
 
 ### Guías (How-To Guide)
 
 **Target: 2000-3500 words** (or 3500-5500 for comprehensive guides)
 
-```markdown
+```mdx
 # Cómo [lograr objetivo] en [año/contexto]
 
 > **En resumen:** [TL;DR en 2-3 oraciones con la acción clave.]
 
-[Hook: 2-4 oraciones estableciendo el problema. **Bold key pain point**.]
+[Hook: 4-5 líneas estableciendo el problema. **Bold key pain point**.]
 
-[Segunda oración del hook: 2-4 oraciones con conexión emocional o dato impactante.]
+[Segundo párrafo: 2 líneas con conexión emocional o dato impactante.]
+
+[Tercer párrafo: 4-5 líneas con promesa de valor.]
 
 ---
 
 ## Qué necesitas antes de empezar
 
-[Párrafo intro: 2-4 oraciones explicando el contexto.]
+[Párrafo intro: 4-5 líneas explicando el contexto.]
 
 **Requisitos básicos:**
 - Requisito 1 con explicación breve
 - Requisito 2 con explicación breve
 
+[Párrafo de transición: 2 líneas.]
+
 ## Paso 1: [Acción específica]
 
-[Primer párrafo: 2-4 oraciones explicando QUÉ hacer. **Bold key action**.]
+[Primer párrafo: 4-5 líneas explicando QUÉ hacer. **Bold key action**.]
 
-[Segundo párrafo: 2-4 oraciones explicando CÓMO hacerlo con detalles.]
+[Segundo párrafo: 2 líneas puntualizando aspecto clave.]
 
-> 💡 **Consejo:** [Insight importante en blockquote]
+[Tercer párrafo: 4-5 líneas explicando CÓMO hacerlo con detalles.]
+
+<TipCard title="Consejo profesional">
+[Insight importante en 2-3 oraciones]
+</TipCard>
 
 ## Paso 2: [Siguiente acción]
 
-[Mismo patrón: párrafos de 2-4 oraciones, bold en frases clave, visual breaks.]
+[Mismo patrón: variar longitud de párrafos, bold en frases clave, max 1 component por H2.]
+
+### [Subsección si se necesita detallar]
+
+[Max 4 párrafos por H3. Variar longitud.]
 
 ## Errores comunes a evitar
 
 **Error 1: [Nombre del error]**
-[2-4 oraciones sobre el error y su solución.]
+[4-5 líneas sobre el error y su contexto.]
+
+[2 líneas con la solución.]
 
 **Error 2: [Nombre del error]**
-[2-4 oraciones sobre el error y su solución.]
+[4-5 líneas sobre el error y su solución.]
 
 ## Conclusión
 
-[Resumen del valor en 2-4 oraciones.]
+[Resumen del valor en 4-5 líneas.]
 
-[Siguiente paso recomendado en 1-2 oraciones.]
+[Siguiente paso recomendado en 2 líneas.]
 
 ---
 [CTA a Invoo]
----
-[Fuentes]
 ```
+
+> ⚠️ **Tips:**
+> - Save as `.mdx` if using components (TipCard, WarningCard, etc.)
+> - Vary paragraph length deliberately for visual rhythm
+> - Sources go in frontmatter, not in content body (see Section 5)
+> - Max 5 H2 sections, max 1 component per H2
 
 ### Análisis (Industry Analysis)
 
@@ -517,9 +1179,9 @@ coverImage: "/blog/verifactu-guide.webp"
 
 ---
 [CTA a Invoo]
----
-[Fuentes - CRÍTICO: citar fuentes oficiales (INE, AEAT, Eurostat)]
 ```
+
+> ⚠️ Add official sources (INE, AEAT, Eurostat) to frontmatter. See Section 5.
 
 ### Comparaciones (Comparison)
 
@@ -572,8 +1234,6 @@ coverImage: "/blog/verifactu-guide.webp"
 
 ---
 [CTA]
----
-[Fuentes]
 ```
 
 ### Consejos (Tips Article)
@@ -591,28 +1251,35 @@ coverImage: "/blog/verifactu-guide.webp"
 
 ---
 
-## 1. [Primer consejo]
+## 1. [Primer consejo con título descriptivo]
 
-[2-4 oraciones explicando el consejo. **Bold key action**.]
+[Párrafo 1: 2-3 oraciones explicando QUÉ es el consejo. **Bold key action**.]
 
-[2-4 oraciones con ejemplo concreto o caso.]
+[Párrafo 2: 2-3 oraciones explicando POR QUÉ importa.]
+
+[Párrafo 3: 2-3 oraciones con ejemplo concreto o historia.]
+
+> 💡 **Consejo práctico:** [Insight específico en blockquote]
 
 ## 2. [Segundo consejo]
 
-[Mismo patrón: explicación + ejemplo, párrafos cortos.]
+[Mismo patrón: QUÉ → POR QUÉ → EJEMPLO. Párrafos cortos, cada uno con una idea.]
 
 [...]
 
-## Tu checklist para empezar
+## Cómo empezar hoy mismo
 
-- [ ] Acción 1 con detalle específico
-- [ ] Acción 2 con detalle específico
-- [ ] Acción 3 con detalle específico
+Ya conoces los X consejos que marcan la diferencia. Ahora el siguiente paso es implementarlos sin parálisis por análisis.
+
+**Empieza por lo más impactante:**
+- Acción 1 con contexto breve (no solo checkbox)
+- Acción 2 con beneficio claro
+- Acción 3 con plazo específico
+
+[Párrafo final: 2-3 oraciones con motivación y recordatorio del valor.]
 
 ---
 [CTA]
----
-[Fuentes si aplica]
 ```
 
 ### Casos de Éxito (Success Stories)
@@ -712,23 +1379,27 @@ coverImage: "/blog/verifactu-guide.webp"
 
 ---
 [CTA]
----
-[Fuentes - normativa oficial]
 ```
 
+> ⚠️ Formación articles require official regulatory sources in frontmatter. See Section 5.
+
 ---
 
-## 10. Pre-Publication Checklist
+## 12. Pre-Publication Checklist
 
 ### 🔴 Required (Must Pass)
 - [ ] `title` present and SEO-optimized (50-60 chars)
 - [ ] `excerpt` compelling with keyword (150-160 chars)
 - [ ] `publishedAt` in ISO format
 - [ ] **Paragraphs are 2-4 sentences** (40-70 words max)
-- [ ] **Key phrases bolded** in each section
+- [ ] **Paragraph length varies deliberately** (4-5 lines → 2 lines → repeat)
+- [ ] **Key phrases bolded** in each section (3-6 words per paragraph)
+- [ ] **Maximum 5 H2 sections** in article (excluding FAQ)
+- [ ] **"Preguntas frecuentes" H2 section** present before CTA (uses AccordionGroup)
+- [ ] **Frontmatter `faq` array** with 3-5 questions
 - [ ] "Tú" form used consistently (Spain Spanish)
 - [ ] File in correct category folder
-- [ ] Filename is `slug-kebab-case.md`
+- [ ] Filename is `slug-kebab-case.md` or `.mdx` (if using components)
 - [ ] Word count within category range (see Section 3)
 
 ### 🟡 Strongly Recommended
@@ -738,12 +1409,16 @@ coverImage: "/blog/verifactu-guide.webp"
 - [ ] `readingTime` calculated (~200 words/min)
 - [ ] `coverImage` path correct and file exists
 - [ ] `keyTakeaways` with exactly 4 points
+- [ ] `sources` array with minimum 3 sources in frontmatter
 - [ ] Opening hook engages (1-2 short paragraphs)
 - [ ] Internal links to 2-3 related articles
 - [ ] CTA at the end (not forced throughout)
 - [ ] Keyword in title (near start)
 - [ ] Alt text on all images
 - [ ] **Headers every 200-400 words**
+- [ ] **Visual breaks every 4-5 paragraphs** (H3, component, list, or HR)
+- [ ] **Maximum 5 H3 subsections per H2**
+- [ ] **Maximum 4 paragraphs per H3 block**
 
 ### 🟢 Quality Polish
 - [ ] Sentences average 15-20 words (max 25)
@@ -752,7 +1427,11 @@ coverImage: "/blog/verifactu-guide.webp"
 - [ ] At least one concrete example or story
 - [ ] Secondary keywords in H2s
 - [ ] Descriptive anchor text for links
-- [ ] Only supported markdown elements used
+- [ ] Only supported markdown/MDX elements used
+- [ ] **Max 1 InfoCard** (TipCard/WarningCard/ImportantCard) per article
+- [ ] **Components used sparingly** (max 1 per H2 section)
+- [ ] **No component stacking** (separate with prose)
+- [ ] Components add real value (not decoration)
 - [ ] No tables (use structured lists)
 - [ ] Images optimized (WebP, < 200KB)
 - [ ] Technical terms explained
@@ -760,7 +1439,7 @@ coverImage: "/blog/verifactu-guide.webp"
 
 ---
 
-## 11. File Creation Workflow
+## 13. File Creation Workflow
 
 ### Step 1: Create the file
 
@@ -799,33 +1478,80 @@ npm run dev    # Preview at http://localhost:5200
 
 ---
 
-## 12. Example Articles
+## 14. Example Articles (Study These)
 
-See these published articles as quality references:
+See these published articles as quality references for readability patterns:
 
-1. **Guía completa**: `/content/blog/guias/verifactu-2025-2026-guia-completa-autonomos-pymes.md`
-   - Excellent structure, flowing paragraphs, comprehensive coverage
+### Excellent Readability Examples
 
-2. **Consejos con storytelling**: `/content/blog/consejos/5-errores-comunes-autonomos-principiantes.md`
-   - Great opening hook with real story, emotional connection
+1. **Análisis con storytelling**: `/content/blog/analisis/analice-100-autonomos-perdida-tiempo.md`
+   - **Study:** Lines 30-43 (Marta's story) - Perfect paragraph rhythm: 2-3 sentences each, bold on key numbers
+   - **Study:** Lines 47-62 - Data section with prose narrative, not just bullet lists
+   - **Study:** Lines 66-78 (Carlos case) - Mix of story, numbers, and concrete results
 
-3. **Internal linking**: Both examples show proper internal link usage
+2. **Guía técnica simplificada**: `/content/blog/guias/verifactu-2025-2026-guia-completa-autonomos-pymes.md`
+   - **Study:** Lines 38-50 - Strong emotional hook with short paragraphs
+   - **Study:** Lines 54-67 - Complex topic explained simply with strategic bolding
+   - **Study:** Lines 150-196 - "La trampa de Excel" section - Technical content made scannable
+
+3. **Consejos con hooks emocionales**: `/content/blog/consejos/5-errores-comunes-autonomos-principiantes.md`
+   - **Study:** Lines 32-34 - Opening story with real consequences (Pablo's €847 sanction)
+   - **Study:** Lines 63-72 - Laura's story mixed with actionable advice
+   - **Study:** Lines 100-112 - Final checklist with narrative context, not just checkboxes
+
+### Readability Anti-Patterns (Learn What NOT to Do)
+
+1. **Checklist overload**: `/content/blog/consejos/cierre-fiscal-2025-checklist-autonomos.md`
+   - **Problem:** Lines 50-76 have 26 consecutive checkboxes - reads like a to-do app
+   - **Fix:** Mix narrative prose explaining WHY with bullets listing WHAT
+
+2. **Dense comparison blocks**: `/content/blog/comparaciones/invoo-vs-holded-comparativa-2026.md`
+   - **Problem:** Lines 100-120 have 100+ word paragraphs explaining pricing
+   - **Fix:** Break into 2-3 shorter paragraphs with bold on key prices and insights
 
 ---
 
-## 13. Common Mistakes
+## 15. Common Mistakes
+
+### Content Structure Mistakes
 
 | Mistake | Solution |
 |---------|----------|
-| Too long paragraphs (5+ sentences) | Write 2-4 sentence paragraphs, one idea each |
-| Using tables | Convert to structured lists with bold labels |
-| Generic content | Add specific examples, data, stories |
-| Missing internal links | Link to 2-3 related articles |
+| **Too long paragraphs (5+ sentences, 100+ words)** | Write 2-4 sentence paragraphs (40-70 words max), one idea each |
+| **No paragraph rhythm** (all paragraphs same length) | Vary deliberately: 4-5 lines → 2 lines → 4-5 lines → 2 lines |
+| **More than 5 H2 sections** | Keep to max 5 H2s per article for focus |
+| **More than 5 H3s per H2** | Limit subsections to max 5 per H2 |
+| **More than 4 paragraphs per H3** | Break H3 blocks at 4 paragraphs max |
+| **No visual breaks** | Add H3, component, list, or HR every 4-5 paragraphs |
+| **Checklist overload** (10+ consecutive checkboxes) | Mix narrative prose with actionable bullets. Explain WHY, then list WHAT |
+| **Bullet density** (3+ bullet sections back-to-back) | Alternate prose paragraphs with bullet lists. Use bullets for lists only, not explanations |
+| **Dense comparison blocks** (120+ word paragraphs) | Break into 2-3 focused paragraphs with bold on key insights |
+| **Over-bolding** (whole sentences bolded) | Bold only the key 3-6 words per paragraph that convey the insight |
+| **Under-bolding** (no bold text) | Every paragraph should have one bolded phrase for skimmers |
+| **Generic content without examples** | Add specific Spanish examples, real numbers, relatable stories |
+| **Using tables** | Convert to structured lists with bold labels (tables don't work on mobile) |
+| **Component overload** (multiple per section) | Max 1 component per H2 section |
+| **Stacking components** (back-to-back without prose) | Separate components with at least 1-2 paragraphs |
+| **Components as decoration** (not adding value) | Only use components when they enhance understanding |
+
+### Technical Mistakes
+
+| Mistake | Solution |
+|---------|----------|
+| Missing internal links | Link to 2-3 related articles naturally in context |
 | Hardcoded URLs to invoo.es | Use relative paths like `/es/pricing/` |
 | Keyword stuffing | Natural integration, 1-2% density |
 | No keyTakeaways | Always include exactly 4 |
 | Wrong image format | Use WebP, not PNG/JPG |
+
+### Policy Mistakes
+
+| Mistake | Solution |
+|---------|----------|
 | **Mentioning free trial** | Invoo is in waiting list mode - use "Únete a la lista de espera" |
+| **Adding "Fuentes" section to content** | Put sources in frontmatter, not content body (see Section 5) |
+| **Adding "Aviso legal" disclaimer** | Legal disclaimer component handles this automatically - don't add in content |
+| **Missing sources in frontmatter** | Every article MUST have minimum 3 sources in frontmatter |
 
 ---
 
@@ -833,14 +1559,18 @@ See these published articles as quality references:
 
 1. **Receive topic** → Identify category, keyword, angle
 2. **Research** → Check existing articles, find unique value
-3. **Outline** → Plan H2 structure with key points
-4. **Write** → Follow Section 2 critical rules, flowing paragraphs
-5. **Add frontmatter** → Complete all 🔴 Required fields
-6. **Insert images** → WebP in `/public/blog/`
-7. **Internal links** → Add 2-3 links to related content
-8. **Verify** → Run through Section 10 checklist
-9. **Deliver** → Full MD file ready for publication
+3. **Outline** → Plan H2 structure (max 5 H2s) with key points
+4. **Write** → Follow Section 2 critical rules and Section 6.5 formatting rules
+   - Vary paragraph length: Long (4-5 lines) → Short (2 lines) → repeat
+   - Max 1 component per H2 section
+   - Break every 4-5 paragraphs with heading or visual element
+5. **Add frontmatter** → Complete all 🔴 Required fields (Section 4)
+6. **Insert images** → WebP in `/public/blog/` (Section 10)
+7. **Internal links** → Add 2-3 links to related content (Section 9)
+8. **Components** → Add MDX components sparingly if they add value (Section 6.5)
+9. **Verify** → Run through Section 12 checklist
+10. **Deliver** → Full `.md` or `.mdx` file ready for publication
 
 ---
 
-*Last updated: December 2025*
+*Last updated: January 2026 (formatting and component rules added)*

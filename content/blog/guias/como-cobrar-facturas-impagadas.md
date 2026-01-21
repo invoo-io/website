@@ -29,7 +29,18 @@ keyTakeaways:
   - "La Ley 3/2004 te da derecho automático a intereses de demora (BCE + 8 puntos, actualmente ~10%) más 40€ de indemnización fija sin necesidad de reclamación judicial"
   - "El proceso monitorio no tiene límite de cuantía y es gratuito para autónomos persona física. El burofax cuesta ~31€ y sirve como prueba fehaciente de reclamación"
   - "Puedes recuperar el IVA de facturas impagadas tras 6 meses (si eres PYME) emitiendo factura rectificativa y notificándolo a Hacienda en el modelo 952"
+faq:
+  - question: "¿Cuánto cuesta enviar un burofax para reclamar una deuda?"
+    answer: "Un burofax cuesta aproximadamente 31€ dependiendo del número de páginas. Es importante solicitar el certificado de texto y el acuse de recibo, porque sin esos dos documentos no sirve como prueba judicial."
+  - question: "¿Es obligatorio contratar abogado para el proceso monitorio?"
+    answer: "No siempre. Si la deuda es inferior a 2.000€, puedes presentar tú mismo la demanda monitoria sin abogado ni procurador. Si supera los 2.000€, es obligatorio tener abogado si el deudor se opone (en la fase inicial puedes presentarla sin abogado)."
+  - question: "¿Cuánto tiempo tengo para reclamar una factura impagada?"
+    answer: "Para deudas entre empresas o autónomos (B2B) tienes 5 años desde la fecha de vencimiento. Para deudas a particulares (B2C) el plazo es de 3 años. En Cataluña pueden aplicar plazos distintos según el Código Civil catalán."
+  - question: "¿Puedo recuperar el IVA de una factura que no me han pagado?"
+    answer: "Sí. Si eres PYME (facturas menos de 6 millones anuales), puedes recuperar el IVA tras 6 meses desde el vencimiento. Debes emitir factura rectificativa y notificarlo a Hacienda mediante el modelo 952 en un plazo de 1 mes."
 ---
+
+> **En resumen:** La mejor estrategia es prevenir con contratos claros y anticipos del 30-50%. Si ya tienes el impago, reclama con burofax (~31€) y luego proceso monitorio (gratuito para autónomos). Puedes recuperar el IVA tras 6 meses emitiendo factura rectificativa (modelo 952).
 
 Son las 10 de la noche. Abres el extracto bancario y haces números por tercera vez esta semana. La factura de 2.400 € que tu cliente prometió pagar "en unos días" lleva ya dos meses vencida. Has mandado tres emails. Dos WhatsApp. Incluso llamaste por teléfono. Siempre la misma respuesta: "La semana que viene sin falta". Mientras tanto, tú tienes que pagar la Seguridad Social, el alquiler del local, los proveedores. Y esa factura sigue sin aparecer en tu cuenta.
 
@@ -95,95 +106,53 @@ Para aplicar estos intereses solo tienes que calcularlos sobre el importe impaga
 
 ---
 
-## El proceso monitorio: tu vía rápida para cobrar judicialmente
+## El proceso monitorio y otras vías judiciales
 
 Si el burofax tampoco funciona y tu cliente sigue sin pagar ni dar explicaciones, es momento de ir a la vía judicial. Pero tranquilo, no es tan complicado ni caro como parece. El proceso monitorio está diseñado específicamente para reclamar deudas de forma rápida y sin necesidad de abogado (en muchos casos).
 
-### Qué es el proceso monitorio y cuándo usarlo
+### Qué es el proceso monitorio y cuánto cuesta
 
 El proceso monitorio es un procedimiento judicial regulado en los artículos 812 a 818 de la [Ley de Enjuiciamiento Civil](https://www.boe.es/buscar/act.php?id=BOE-A-2000-323). Su objetivo es permitir que los acreedores recuperen deudas dinerarias (es decir, dinero) de forma ágil cuando existe una prueba documental clara de la deuda. Es perfecto para facturas impagadas, porque la factura en sí misma es esa prueba documental.
 
-Para poder iniciar un proceso monitorio necesitas cumplir tres requisitos: primero, que la deuda sea dineraria, líquida (una cantidad concreta), vencida y exigible. Segundo, que tengas un documento que acredite la deuda (factura, contrato, presupuesto aceptado, correos electrónicos). Tercero, y esto es importante, el proceso monitorio no tiene límite de cuantía desde la Ley 4/2011 (antes estaba limitado a 250.000 €). Puedes reclamar cualquier importe.
+Para poder iniciar un proceso monitorio necesitas cumplir tres requisitos: primero, que la deuda sea dineraria, líquida (una cantidad concreta), vencida y exigible. Segundo, que tengas un documento que acredite la deuda (factura, contrato, presupuesto aceptado, correos electrónicos). Tercero, y esto es importante, **el proceso monitorio no tiene límite de cuantía** desde la Ley 4/2011. Puedes reclamar cualquier importe.
 
-### Cuánto cuesta un proceso monitorio
+Esta es la parte buena: el proceso monitorio es muy económico comparado con otros procedimientos judiciales. **Si eres autónomo persona física (no sociedad), no tienes que pagar tasas judiciales**. Si eres autónomo societario (S.L.), solo pagas 100 € de tasas fijas más un 0,5% del importe reclamado si la deuda supera los 2.000 €.
 
-Esta es la parte buena: el proceso monitorio es muy económico comparado con otros procedimientos judiciales. Si eres autónomo persona física (no sociedad), no tienes que pagar tasas judiciales. Si eres autónomo societario (S.L.), solo pagas 100 € de tasas fijas más un 0,5% del importe reclamado si la deuda supera los 2.000 €. Si es inferior a 2.000 €, tampoco pagas tasas.
+Respecto a abogado y procurador: si la deuda es inferior a 2.000 €, **no es obligatorio contratar abogado ni procurador**. Puedes presentar tú mismo la demanda monitoria. Si la deuda supera los 2.000 €, entonces sí es obligatorio tener abogado si el deudor se opone (en la fase inicial puedes presentarla sin abogado). Los honorarios pueden oscilar entre 300 € y 800 € según el caso.
 
-Respecto a abogado y procurador: si la deuda es inferior a 2.000 €, no es obligatorio contratar abogado ni procurador. Puedes presentar tú mismo la demanda monitoria. Si la deuda supera los 2.000 €, entonces sí es obligatorio tener abogado y procurador si el deudor se opone (en la fase inicial puedes presentarla sin abogado). Los honorarios pueden oscilar entre 300 € y 800 € según el caso.
-
-### Cómo funciona el proceso: los tres escenarios posibles
+### Los tres escenarios posibles del proceso monitorio
 
 Una vez presentas la demanda monitoria en el juzgado (puedes hacerlo online a través de [LexNET](https://lexnet.justicia.es) o presencialmente), el juzgado requiere al deudor para que pague o se oponga en un plazo de 20 días hábiles. A partir de ahí pueden pasar tres cosas:
 
-**Escenario 1: El deudor paga.** Este es el escenario ideal y el que pasa en aproximadamente el 40% de los casos. El simple hecho de recibir un requerimiento judicial asusta a muchos deudores y pagan inmediatamente. Si paga dentro de los 20 días, el proceso termina aquí. Tú recuperas tu dinero (más los intereses de demora y las costas del proceso) y asunto cerrado.
+**Escenario 1: El deudor paga.** Este es el escenario ideal y el que pasa en aproximadamente el 40% de los casos. **El simple hecho de recibir un requerimiento judicial asusta a muchos deudores** y pagan inmediatamente. Si paga dentro de los 20 días, el proceso termina aquí. Tú recuperas tu dinero (más los intereses de demora y las costas del proceso) y asunto cerrado.
 
-**Escenario 2: El deudor no responde.** Este es el escenario más común, ocurre en el 50% de los casos. Si el deudor ni paga ni presenta oposición en esos 20 días, el juzgado dicta automáticamente un auto despachando ejecución. Esto significa que pasas directamente a la fase de embargo: el juzgado puede embargar cuentas bancarias, nóminas, bienes del deudor hasta cubrir la deuda. Esta es la gran ventaja del proceso monitorio: si no hay oposición, no hay juicio, solo ejecución directa.
+**Escenario 2: El deudor no responde.** Este es el escenario más común, ocurre en el 50% de los casos. Si el deudor ni paga ni presenta oposición en esos 20 días, **el juzgado dicta automáticamente un auto despachando ejecución**. Esto significa que pasas directamente a la fase de embargo: el juzgado puede embargar cuentas bancarias, nóminas, bienes del deudor hasta cubrir la deuda. Esta es la gran ventaja del proceso monitorio: si no hay oposición, no hay juicio, solo ejecución directa.
 
 **Escenario 3: El deudor se opone.** Este es el escenario más complicado. Si el deudor presenta oposición (alegando que no debe nada, que ya pagó, que la factura es incorrecta, etc.), entonces el proceso monitorio se transforma en un juicio verbal u ordinario según el importe. Desde marzo de 2024, el umbral del juicio verbal se elevó a 15.000 € (antes era 6.000 €). Si la deuda es inferior a 15.000 €, será un juicio verbal. Si supera esa cantidad, será juicio ordinario. En este punto sí necesitas abogado obligatoriamente y el proceso se alarga varios meses.
 
----
+### Otras opciones: juicio verbal y cuándo contratar abogado
 
-## Otras opciones legales: juicio verbal y cuándo contratar abogado
+El proceso monitorio no es la única vía judicial, aunque sí es la más rápida y económica para facturas impagadas. Si tu deuda es inferior a 15.000 € y por alguna razón no puedes usar el proceso monitorio (por ejemplo, porque no tienes prueba documental suficiente), puedes acudir directamente a un juicio verbal. Este es un procedimiento más tradicional donde presentas una demanda, se celebra una vista oral ante el juez, y el juez dicta sentencia.
 
-El proceso monitorio no es la única vía judicial, aunque sí es la más rápida y económica para facturas impagadas. Dependiendo del importe y las circunstancias, hay otras alternativas que conviene conocer.
+El problema del juicio verbal es que es más lento (puede tardar entre 6 y 12 meses), más complejo, y si la deuda supera 2.000 € requiere abogado y procurador desde el principio. **Para facturas impagadas con documentación clara, el monitorio es siempre mejor opción**.
 
-### Juicio verbal para deudas hasta 15.000 €
+La pregunta del millón: ¿cuándo merece la pena contratar un abogado especializado? Contratar uno cuesta entre 300 € y 1.200 € según la complejidad del caso.
 
-Si tu deuda es inferior a 15.000 € y por alguna razón no puedes usar el proceso monitorio (por ejemplo, porque no tienes prueba documental suficiente), puedes acudir directamente a un juicio verbal. Este es un procedimiento más tradicional donde presentas una demanda, se celebra una vista oral ante el juez, y el juez dicta sentencia.
-
-El problema del juicio verbal es que es más lento (puede tardar entre 6 y 12 meses), más complejo, y si la deuda supera 2.000 € requiere abogado y procurador desde el principio. Para facturas impagadas con documentación clara, el monitorio es siempre mejor opción.
-
-### Cuándo merece la pena contratar un abogado
-
-La pregunta del millón. Contratar un abogado especializado en reclamaciones de deuda cuesta entre 300 € y 1.200 € según la complejidad del caso. ¿Cuándo merece la pena gastarse ese dinero?
-
-Como regla general: si la deuda es inferior a 1.000 €, probablemente no merece la pena contratar abogado. El coste del profesional puede comerse gran parte de lo que recuperes. Si la deuda está entre 1.000 € y 2.000 €, depende de tu situación y de si te ves capaz de gestionar tú mismo el proceso monitorio (que es bastante simple). Si la deuda supera los 2.000 €, entonces sí es muy recomendable contratar abogado, porque es obligatorio si hay oposición, y un profesional puede acelerar mucho el proceso y evitar errores que te cuesten caro.
+Como regla general: si la deuda es inferior a 1.000 €, probablemente no merece la pena contratar abogado. El coste del profesional puede comerse gran parte de lo que recuperes. Si la deuda está entre 1.000 € y 2.000 €, depende de tu situación y de si te ves capaz de gestionar tú mismo el proceso monitorio (que es bastante simple). **Si la deuda supera los 2.000 €, entonces sí es muy recomendable contratar abogado**, porque es obligatorio si hay oposición, y un profesional puede acelerar mucho el proceso y evitar errores que te cuesten caro.
 
 Hay abogados especializados en reclamaciones de deuda que trabajan con honorarios por éxito: solo cobran si recuperas el dinero, y su fee es un porcentaje de lo recuperado (normalmente entre el 15% y el 30%). Esta puede ser una buena opción si tienes una deuda importante pero no quieres asumir el riesgo de pagar un abogado por adelantado.
 
 ---
 
-## Aspectos prácticos: documentación, plazos y cuándo rendirse
+## Recuperar el IVA y aspectos fiscales de las facturas impagadas
 
-Más allá de los procedimientos legales, hay consideraciones prácticas que debes tener en cuenta antes de lanzarte a reclamar una deuda. No todas las facturas impagadas merecen el esfuerzo de un proceso judicial.
+Aquí viene una parte que muy pocos autónomos conocen y que puede ahorrarte un dinero considerable. Cuando emites una factura con IVA, tienes que ingresar ese IVA en Hacienda aunque tu cliente no te haya pagado. **Es decir, estás pagando de tu bolsillo el IVA de una factura que no has cobrado**. Pero existe un mecanismo legal para recuperar ese IVA si la factura resulta finalmente incobrable.
 
-### Qué documentación necesitas conservar
-
-Para cualquier reclamación judicial necesitas tener toda la documentación ordenada y accesible. Como mínimo debes conservar: la factura original (con todos los datos obligatorios que exige [Hacienda](https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/contenido-facturas.html)), el contrato o presupuesto aceptado por el cliente, los correos electrónicos o WhatsApp donde el cliente aceptó el trabajo o confirmó las condiciones, el albarán de entrega si es un producto físico, y todas las comunicaciones de reclamación que hayas enviado (emails, burofax, etc.).
-
-Esta documentación es tu munición en el juicio. Si un cliente se opone alegando que no aceptó el trabajo o que la factura es incorrecta, necesitas poder demostrar lo contrario con pruebas. Por eso es tan importante tener un sistema de facturación organizado que guarde automáticamente toda esta información. Si estás [emitiendo facturas incompletas o chapuceras](/es/blog/consejos/5-errores-comunes-autonomos-principiantes), estás en desventaja porque no tienes un registro automático de todo el historial.
-
-### Plazos de prescripción: cuánto tiempo tienes para reclamar
-
-Este es un punto crítico que muchos autónomos descubren cuando ya es tarde. Las deudas prescriben, es decir, llega un momento en que legalmente ya no las puedes reclamar. Los plazos de prescripción en España según el artículo 1964 del Código Civil son los siguientes:
-
-**Deudas entre empresas o autónomos (operaciones comerciales B2B): 5 años.** Esto significa que tienes 5 años desde la fecha de vencimiento de la factura para reclamar judicialmente. Pasado ese plazo, el deudor puede alegar prescripción y tú pierdes el derecho a cobrar.
-
-**Deudas a particulares (consumidores finales B2C): 3 años.** Si tu cliente es un particular, el plazo se reduce a 3 años según el artículo 1967 del Código Civil.
-
-> **Atención en Cataluña:** El Código Civil catalán establece plazos distintos. Para remuneración de servicios y ventas al consumo, el plazo es de 3 años (art 121-21 CCCat). Para otras acciones, el plazo general es de 10 años. Si tu deudor está domiciliado en Cataluña, consulta con un abogado para determinar qué plazo aplica a tu caso.
-
-Pero ojo, estos plazos se interrumpen cada vez que reclamas formalmente la deuda (artículo 1973 del Código Civil). Si mandas un burofax reclamando, el plazo de prescripción vuelve a cero desde ese momento. Por eso es importante dejar constancia escrita de todas tus reclamaciones: no solo te sirven como prueba, también interrumpen la prescripción.
-
-### El análisis coste-beneficio: cuándo no merece la pena
-
-Hay facturas que simplemente no merece la pena reclamar judicialmente. Es duro aceptarlo, pero a veces tienes que asumir la pérdida y pasar página. ¿Cuándo? Cuando el coste (económico y de tiempo) de reclamar supera lo que vas a recuperar.
-
-Por ejemplo: factura de 300 €, cliente que está en otra ciudad, necesitas abogado porque se va a oponer, el abogado te cobra 500 € mínimo. No tiene sentido. O factura de 1.500 € pero el cliente está en concurso de acreedores (ha declarado quiebra). Las posibilidades de recuperar algo son casi nulas, y entrarías en una lista de acreedores que cobran céntimos por euro en el mejor de los casos.
-
-Mi consejo: si la deuda es inferior a 500 € y el cliente no responde ni al burofax, probablemente no merece la pena ir a juicio. Dedica ese tiempo y energía a conseguir nuevos clientes buenos en lugar de perseguir morosos. Si la deuda supera los 1.000 € y tienes pruebas claras, entonces sí merece la pena seguir adelante con el proceso monitorio.
-
----
-
-## Recuperar el IVA de facturas impagadas
-
-Aquí viene una parte que muy pocos autónomos conocen y que puede ahorrarte un dinero considerable. Cuando emites una factura con IVA, tienes que ingresar ese IVA en Hacienda aunque tu cliente no te haya pagado. Es decir, estás pagando de tu bolsillo el IVA de una factura que no has cobrado. Pero existe un mecanismo legal para recuperar ese IVA si la factura resulta finalmente incobrable.
-
-### Requisitos para modificar la base imponible
+### Requisitos para modificar la base imponible y recuperar el IVA
 
 La normativa del IVA (artículo 80 de la Ley del IVA, modificado en 2023) permite modificar la base imponible de facturas impagadas cumpliendo ciertos requisitos. Según la [información oficial de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/necesito-rectificar-iva-repercutido_iva-soportado/puedo-recuperar-iva-impagado-clientes.html), necesitas cumplir cuatro condiciones:
 
-**Primera:** Que haya transcurrido el plazo legal para considerar la factura como incobrable. Si eres PYME (facturación anual inferior a 6.010.121,04 €), puedes considerar la factura incobrable a los 6 meses desde el vencimiento. Si facturas más de esa cantidad, el plazo es de 1 año.
+**Primera:** Que haya transcurrido el plazo legal para considerar la factura como incobrable. **Si eres PYME (facturación anual inferior a 6.010.121,04 €), puedes considerar la factura incobrable a los 6 meses desde el vencimiento**. Si facturas más de esa cantidad, el plazo es de 1 año.
 
 **Segunda:** Que hayas reclamado formalmente el cobro. Esto puede ser mediante reclamación judicial, requerimiento notarial o, desde 2023, mediante cualquier medio que acredite fehacientemente la reclamación (como un burofax). Este es uno de los motivos por los que el burofax es tan útil: te sirve para el proceso monitorio y también para justificar ante Hacienda que has reclamado.
 
@@ -191,39 +160,87 @@ La normativa del IVA (artículo 80 de la Ley del IVA, modificado en 2023) permit
 
 **Cuarta:** Que el destinatario de la factura sea empresario o profesional (B2B), o si es particular, que la base imponible (sin IVA) supere los 50 € (umbral reducido desde 2023, antes era 100 €).
 
-### Procedimiento para recuperar el IVA
+### Procedimiento paso a paso para recuperar el IVA
 
-Una vez cumples todos los requisitos, el procedimiento es el siguiente: emites una factura rectificativa reduciendo la base imponible y el IVA al importe realmente cobrado (que es cero). Esta factura rectificativa debe expedirse en los 6 meses siguientes desde que consideras la factura como incobrable.
+Una vez cumples todos los requisitos, el procedimiento es el siguiente: emites una factura rectificativa reduciendo la base imponible y el IVA al importe realmente cobrado (que es cero). **Esta factura rectificativa debe expedirse en los 6 meses siguientes desde que consideras la factura como incobrable**.
 
 Después, tienes que notificar a la Agencia Tributaria mediante el modelo 952 en el plazo de 1 mes desde la fecha de la factura rectificativa. En este modelo incluyes los datos de la factura original impagada, los datos de la factura rectificativa, y adjuntas la documentación que acredita la reclamación (el burofax, por ejemplo).
 
-Si Hacienda acepta la modificación (normalmente lo hacen si cumples todos los requisitos), te devuelven el IVA ingresado de más en tu próxima declaración trimestral del IVA ([modelo 303](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos)). Es un proceso un poco burocrático, pero merece la pena si la factura impagada tiene un IVA considerable.
-
-### Casos en los que NO puedes recuperar el IVA
+Si Hacienda acepta la modificación (normalmente lo hacen si cumples todos los requisitos), **te devuelven el IVA ingresado de más en tu próxima declaración trimestral del IVA** ([modelo 303](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos)). Es un proceso un poco burocrático, pero merece la pena si la factura impagada tiene un IVA considerable.
 
 Hay situaciones en las que aunque la factura sea incobrable no puedes modificar la base imponible. No procede la modificación cuando el crédito esté garantizado con garantía real (hipoteca, prenda), esté afianzado por entidad de crédito o sociedad de garantía recíproca, esté cubierto por un seguro de crédito, o cuando se trate de operaciones entre personas o entidades vinculadas fiscalmente.
 
-En la práctica esto significa que si has trabajado para un familiar directo o para otra empresa de la que eres socio, no puedes recuperar el IVA aunque no cobres. Hacienda considera que en esas situaciones hay un conflicto de interés y no permite la modificación.
+### Deducibilidad fiscal de las deudas incobrables
 
----
-
-## Deducibilidad fiscal de las deudas incobrables
-
-Además de recuperar el IVA, también puedes deducirte fiscalmente las facturas impagadas como gasto en tu declaración del IRPF (si eres autónomo en estimación directa) o en el Impuesto de Sociedades (si eres S.L.). Esto reduce tu base imponible y por tanto pagas menos impuestos.
+Además de recuperar el IVA, también puedes deducirte fiscalmente las facturas impagadas como gasto en tu declaración del IRPF (si eres autónomo en estimación directa) o en el Impuesto de Sociedades (si eres S.L.). **Esto reduce tu base imponible y por tanto pagas menos impuestos**.
 
 Para que Hacienda acepte la deducción de una deuda incobrable como gasto fiscalmente deducible necesitas demostrar que has agotado todos los medios razonables para cobrarla. Esto implica haber enviado reclamaciones, haber iniciado proceso judicial, y en definitiva haber hecho un esfuerzo real por recuperar el dinero. No vale con decir "mi cliente no me paga" y apuntarlo como gasto sin más.
 
 La recomendación es que antes de deducirte una deuda incobrable consultes con tu gestoría o asesor fiscal, porque los criterios de Hacienda son estrictos y en caso de inspección te van a pedir toda la documentación que acredite que realmente intentaste cobrar y que la deuda es irrecuperable.
 
+### Plazos de prescripción: cuánto tiempo tienes para reclamar
+
+Este es un punto crítico que muchos autónomos descubren cuando ya es tarde. Las deudas prescriben, es decir, llega un momento en que legalmente ya no las puedes reclamar. Los plazos de prescripción en España según el artículo 1964 del Código Civil son los siguientes:
+
+**Deudas entre empresas o autónomos (operaciones comerciales B2B): 5 años.** Esto significa que **tienes 5 años desde la fecha de vencimiento de la factura** para reclamar judicialmente. Pasado ese plazo, el deudor puede alegar prescripción y tú pierdes el derecho a cobrar.
+
+**Deudas a particulares (consumidores finales B2C): 3 años.** Si tu cliente es un particular, el plazo se reduce a 3 años según el artículo 1967 del Código Civil.
+
+> **Atención en Cataluña:** El Código Civil catalán establece plazos distintos. Para remuneración de servicios y ventas al consumo, el plazo es de 3 años (art 121-21 CCCat). Para otras acciones, el plazo general es de 10 años. Si tu deudor está domiciliado en Cataluña, consulta con un abogado para determinar qué plazo aplica a tu caso.
+
+Pero ojo, estos plazos se interrumpen cada vez que reclamas formalmente la deuda (artículo 1973 del Código Civil). Si mandas un burofax reclamando, el plazo de prescripción vuelve a cero desde ese momento. **Por eso es importante dejar constancia escrita de todas tus reclamaciones**: no solo te sirven como prueba, también interrumpen la prescripción.
+
+### Documentación necesaria y análisis coste-beneficio
+
+Para cualquier reclamación judicial necesitas tener toda la documentación ordenada y accesible. Como mínimo debes conservar: la factura original (con todos los datos obligatorios que exige [Hacienda](https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/contenido-facturas.html)), el contrato o presupuesto aceptado por el cliente, los correos electrónicos o WhatsApp donde el cliente aceptó el trabajo o confirmó las condiciones, el albarán de entrega si es un producto físico, y todas las comunicaciones de reclamación que hayas enviado (emails, burofax, etc.).
+
+Esta documentación es tu munición en el juicio. Si un cliente se opone alegando que no aceptó el trabajo o que la factura es incorrecta, necesitas poder demostrar lo contrario con pruebas. Por eso es tan importante tener un sistema de facturación organizado que guarde automáticamente toda esta información. Si estás [emitiendo facturas incompletas o chapuceras](/es/blog/consejos/5-errores-comunes-autonomos-principiantes), estás en desventaja porque no tienes un registro automático de todo el historial.
+
+Hay facturas que simplemente no merece la pena reclamar judicialmente. Es duro aceptarlo, pero a veces tienes que asumir la pérdida y pasar página. ¿Cuándo? **Cuando el coste (económico y de tiempo) de reclamar supera lo que vas a recuperar**.
+
+Por ejemplo: factura de 300 €, cliente que está en otra ciudad, necesitas abogado porque se va a oponer, el abogado te cobra 500 € mínimo. No tiene sentido. O factura de 1.500 € pero el cliente está en concurso de acreedores (ha declarado quiebra). Las posibilidades de recuperar algo son casi nulas.
+
+Mi consejo: si la deuda es inferior a 500 € y el cliente no responde ni al burofax, probablemente no merece la pena ir a juicio. Dedica ese tiempo y energía a conseguir nuevos clientes buenos en lugar de perseguir morosos. **Si la deuda supera los 1.000 € y tienes pruebas claras, entonces sí merece la pena seguir adelante con el proceso monitorio**.
+
 ---
 
-## Conclusión: cobrar lo que te deben es tu derecho
+## Preguntas frecuentes
 
-Trabajar gratis no es una opción. Cuando prestas un servicio o vendes un producto, tienes todo el derecho legal y moral a cobrar por ello. Y si tu cliente no paga, tienes herramientas legales a tu disposición para reclamar. La clave está en actuar de forma ordenada, empezando siempre por la prevención (contratos claros, anticipos), siguiendo por la reclamación amistosa (recordatorios, burofax), y solo si es necesario llegar a la vía judicial (proceso monitorio).
+<AccordionGroup>
 
-La mayoría de facturas impagadas se resuelven en las primeras fases, sin necesidad de juicio. Pero cuando un cliente ignora tus reclamaciones amistosas, no dudes en usar el proceso monitorio. Es rápido, económico, y en la mayoría de casos funciona. Y recuerda que además de recuperar la deuda principal, puedes reclamar los intereses de demora, la indemnización de 40 €, recuperar el IVA ante Hacienda, y deducirte fiscalmente la pérdida si finalmente no cobras.
+<AccordionGroupItem title="¿Cuánto cuesta enviar un burofax para reclamar una deuda?" value="faq-1">
 
-No dejes que la morosidad arruine tu negocio. Actúa, reclama, y cobra lo que es tuyo.
+Un burofax cuesta aproximadamente **31€ dependiendo del número de páginas**. Es importante solicitar expresamente el certificado de texto y el acuse de recibo, porque sin esos dos documentos el burofax no sirve como prueba judicial.
+
+Puedes enviarlo desde cualquier oficina de Correos o hacerlo online desde la web de Correos. Desde 2023, la Agencia Tributaria también acepta el burofax como medio fehaciente de reclamación para recuperar el IVA de facturas impagadas, lo que hace que sea aún más útil.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Es obligatorio contratar abogado para el proceso monitorio?" value="faq-2">
+
+No siempre. **Si la deuda es inferior a 2.000€, puedes presentar tú mismo la demanda monitoria** sin abogado ni procurador. El proceso es relativamente sencillo y está diseñado para ser accesible.
+
+Si la deuda supera los 2.000€, en la fase inicial puedes presentar la demanda sin abogado, pero si el deudor se opone, entonces sí es obligatorio tener abogado y procurador. Los honorarios suelen oscilar entre 300€ y 800€ según la complejidad del caso.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Cuánto tiempo tengo para reclamar una factura impagada?" value="faq-3">
+
+Para **deudas entre empresas o autónomos (B2B) tienes 5 años** desde la fecha de vencimiento de la factura. Para **deudas a particulares (B2C) el plazo es de 3 años** según el Código Civil.
+
+En Cataluña pueden aplicar plazos distintos según el Código Civil catalán: 3 años para remuneración de servicios y ventas al consumo, o 10 años para otras acciones. Además, estos plazos se interrumpen cada vez que reclamas formalmente la deuda (mediante burofax o demanda judicial), volviendo a cero desde ese momento.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Puedo recuperar el IVA de una factura que no me han pagado?" value="faq-4">
+
+Sí. **Si eres PYME (facturas menos de 6 millones anuales), puedes recuperar el IVA tras 6 meses** desde el vencimiento de la factura. Si facturas más de esa cantidad, el plazo es de 1 año.
+
+Debes emitir una factura rectificativa reduciendo la base imponible y el IVA a cero, y notificarlo a Hacienda mediante el modelo 952 en un plazo de 1 mes. Es importante que hayas reclamado formalmente el cobro (mediante burofax o vía judicial) y que tengas documentado el impago en tus libros registro del IVA.
+
+</AccordionGroupItem>
+
+</AccordionGroup>
 
 ---
 
@@ -232,5 +249,3 @@ No dejes que la morosidad arruine tu negocio. Actúa, reclama, y cobra lo que es
 Con Invoo automatizas los recordatorios de pago y tienes toda la documentación organizada para cualquier reclamación. Facturas con todos los requisitos legales, historial completo de pagos, y exportación de datos en un clic. €10.90/mes para autónomos, gratis para gestorías.
 
 **[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
-
-*Este artículo tiene carácter informativo y no constituye asesoramiento legal. Para casos específicos, consulta con un abogado o gestor.*

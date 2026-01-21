@@ -267,6 +267,7 @@ Classic development flow:
 - **Using `px` values** instead of Tailwind spacing tokens
 - **Skipping `npm run build`** before committing — catches type errors early
 - **Not running agents in parallel** when tasks are independent
+- **Not relaunching the dev server** after completing a task — always restart to verify changes
 
 ---
 
@@ -274,3 +275,4 @@ Classic development flow:
 
 - Commit messages: imperative mood, concise (`feat: add pricing section`, `fix: broken link`)
 - Run `npm run build` before committing to catch errors
+- **Always relaunch the dev server** after finishing a task to verify changes work correctly

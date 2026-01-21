@@ -128,8 +128,8 @@
   --label-primary-dark: rgba(239, 239, 245, 1);
   --label-primary: var(--label-primary-light);
 
-  --label-secondary-light: rgba(51, 58, 69, 0.7);
-  --label-secondary-dark: rgba(159, 159, 159, 0.7);
+  --label-secondary-light: rgba(51, 58, 69, 0.8);
+  --label-secondary-dark: rgba(175, 175, 175, 0.8);
   --label-secondary: var(--label-secondary-light);
 
   --label-tertiary-light: rgba(51, 58, 69, 0.3);

@@ -19,7 +19,7 @@ export function ArticleSources({ sources, lastVerified }: ArticleSourcesProps) {
   return (
     <section
       aria-label={t("title")}
-      className="bg-background-secondary rounded-[16px] p-6 mt-8 mb-8 border border-stroke-primary"
+      className="bg-background-secondary rounded-[16px] p-6 mt-8 mb-8 border border-border-primary"
     >
       {/* Header */}
       <div className="flex items-center gap-3 mb-4">
@@ -60,7 +60,7 @@ export function ArticleSources({ sources, lastVerified }: ArticleSourcesProps) {
 
       {/* Last Verified */}
       {lastVerified && (
-        <p className="text-caption1 text-label-tertiary mt-4 pt-4 border-t border-stroke-primary">
+        <p className="text-caption1 text-label-tertiary mt-4 pt-4 border-t border-border-primary">
           {t("lastVerified", { date: lastVerified })}
         </p>
       )}

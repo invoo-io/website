@@ -10,6 +10,9 @@ import ArticleSidebar from "@/components/blog/ArticleSidebar";
 import { ArticleSources } from "@/components/blog/ArticleSources";
 import { ArticleDisclaimer } from "@/components/blog/ArticleDisclaimer";
 import { RelatedArticles } from "@/components/blog/RelatedArticles";
+import { Accordion, AccordionGroup, AccordionGroupItem } from "@/components/blog/Accordion";
+import { PullQuote, QuoteList, QuoteItem } from "@/components/blog/PullQuote";
+import { InfoCard, TipCard, WarningCard, ImportantCard } from "@/components/blog/InfoCard";
 import { JsonLd } from "@/components/JsonLd";
 import { generateArticleSchema, generateBreadcrumbListSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
 import { getAllBlogPosts, getBlogPost, getAllCategories, getRelatedBlogPosts } from "@/lib/blog";
@@ -121,6 +124,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
   const relatedPosts = getRelatedBlogPosts(post, 3);
 
   // Custom MDX components to add IDs to headings for anchor linking
+  // and provide reusable content components for better readability
   const mdxComponents = {
     h2: ({
       children,
@@ -142,6 +146,17 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </h2>
       );
     },
+    // Content components for better article readability
+    Accordion,
+    AccordionGroup,
+    AccordionGroupItem,
+    PullQuote,
+    QuoteList,
+    QuoteItem,
+    InfoCard,
+    TipCard,
+    WarningCard,
+    ImportantCard,
   };
 
   // Generate Article schema for LLM discoverability
@@ -211,7 +226,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               )}
 
               {/* Article Content - MDX Rendering with Custom Components */}
-              <div className="blog-content max-w-none">
+              <div className="blog-content">
                 <MDXRemote source={post.content} components={mdxComponents} />
               </div>
 

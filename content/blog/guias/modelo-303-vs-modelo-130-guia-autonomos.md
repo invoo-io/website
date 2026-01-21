@@ -20,7 +20,7 @@ sources:
     url: "https://sede.agenciatributaria.gob.es/Sede/irpf/pagos-fraccionados-estimacion-directa.html"
   - name: "Plazos de presentación de autoliquidaciones - AEAT"
     url: "https://sede.agenciatributaria.gob.es/Sede/calendario-contribuyente.html"
-lastVerified: "Noviembre 2025"
+lastVerified: "Enero 2026"
 faq:
   - question: "¿Cuál es la diferencia entre el Modelo 303 y el Modelo 130?"
     answer: "El Modelo 303 es la declaración trimestral del IVA (dinero que nunca fue tuyo). El Modelo 130 es un pago fraccionado del IRPF (adelanto de tus propios impuestos). El 303 lo presentan todos los autónomos con IVA, mientras que el 130 solo quienes tienen menos del 70% de ingresos con retención."
@@ -30,13 +30,9 @@ faq:
     answer: "Sí, siempre que cumplas los requisitos (estimación directa + menos del 70% con retención). Si tuviste pérdidas, el resultado será 0€ o negativo y no pagas nada, pero debes presentar el modelo igualmente."
   - question: "¿Cuáles son los plazos para presentar el 303 y el 130?"
     answer: "Ambos modelos comparten los mismos plazos: del 1 al 20 de abril (Q1), julio (Q2) y octubre (Q3). Para el cuarto trimestre, el plazo es del 1 al 30 de enero del año siguiente."
-  - question: "¿Qué sanciones hay por presentar fuera de plazo?"
-    answer: "Si presentas tarde por iniciativa propia: recargo del 1% + 1% por cada mes de retraso. Si Hacienda te requiere primero: multa del 50% al 150% de la cantidad no ingresada, más intereses de demora."
 ---
 
-**Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios y cada situación empresarial es única. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado.
-
----
+> **En resumen:** El Modelo 303 (IVA) es obligatorio para todos los autónomos que facturan con IVA. El Modelo 130 (IRPF) solo si menos del 70% de tus ingresos tienen retención. Ambos se presentan trimestralmente: del 1 al 20 de abril, julio y octubre. Para el cuarto trimestre, del 1 al 30 de enero del año siguiente.
 
 Son las 23:00 del 20 de abril. Abres el ordenador porque sabes que hay algo que deberías haber hecho hoy. Algo con números. Algo con Hacienda.
 
@@ -89,11 +85,11 @@ Si estás dado de alta en un régimen con IVA, **presentas el 303**. Siempre. Ca
 
 Hay algunas excepciones importantes:
 
-1. **Actividades exentas de IVA**: Profesionales sanitarios (médicos, psicólogos, enfermeros), docentes con actividades educativas regladas, y ciertas actividades culturales no presentan 303 porque sus servicios están exentos de IVA según la Ley del IVA.
+1. **Actividades exentas de IVA**: Profesionales sanitarios (médicos, psicólogos, enfermeros), docentes con actividades educativas regladas, y ciertas actividades culturales **no presentan 303**. Sus servicios están exentos de IVA según la Ley del IVA.
 
-2. **Régimen de recargo de equivalencia**: Comerciantes minoristas en este régimen no presentan 303. El IVA lo liquida el proveedor.
+2. **Régimen de recargo de equivalencia**: Comerciantes minoristas en este régimen **no presentan 303**. El IVA lo liquida el proveedor.
 
-3. **Régimen de criterio de caja**: Si estás en este régimen especial, SÍ presentas el 303 pero con reglas diferentes sobre cuándo computar el IVA (cuando cobras, no cuando facturas).
+3. **Régimen de criterio de caja**: Si estás en este régimen especial, **SÍ presentas el 303** pero con reglas diferentes. Computas el IVA cuando cobras, no cuando facturas.
 
 ### Cómo se calcula: ejemplo real
 
@@ -203,7 +199,9 @@ Por eso se llama "pago fraccionado". No es un nuevo impuesto, es fraccionar el I
 
 ---
 
-## Los plazos: cuándo se presenta cada modelo
+## Plazos, errores comunes y sanciones
+
+### Cuándo se presenta cada modelo
 
 Ambos modelos se presentan **trimestralmente** y comparten los mismos plazos:
 
@@ -237,13 +235,11 @@ Si el último día del plazo cae en **sábado, domingo o festivo nacional**, el 
 
 Ejemplo: Si el 20 de abril de 2025 cae en domingo, el plazo real sería hasta el 21 de abril.
 
----
-
-## Errores comunes (y cómo evitarlos)
+### Errores comunes (y cómo evitarlos)
 
 Si acabas de empezar como autónomo, consulta nuestra guía sobre [los 5 errores que cometen los autónomos principiantes](/es/blog/consejos/5-errores-comunes-autonomos-principiantes).
 
-### Error 1: Confundir "cuándo declarar" con "cuándo cobrar"
+**Error 1: Confundir "cuándo declarar" con "cuándo cobrar"**
 
 **El error:**
 "Solo facturo en marzo, así que solo declaro el Q1."
@@ -255,7 +251,7 @@ Esto se llama **criterio de devengo**. El IVA se devenga cuando nace el derecho 
 
 (Excepción: Si estás en el régimen de criterio de caja, declaras cuando cobras. Pero esto es un régimen especial que hay que solicitar.)
 
-### Error 2: Declarar solo el trimestre actual en el 130
+**Error 2: Declarar solo el trimestre actual en el 130**
 
 **El error:**
 En el segundo trimestre calculas el 20% solo de abril-junio.
@@ -265,7 +261,7 @@ El Modelo 130 se calcula sobre **acumulado del año**, no solo del trimestre. Ca
 
 Si no lo haces así, estarás pagando de menos y Hacienda te reclamará diferencias con intereses.
 
-### Error 3: "No facturé nada, no presento el 303"
+**Error 3: "No facturé nada, no presento el 303"**
 
 **El error:**
 "Este trimestre no tuve actividad, así que no tengo que presentar nada."
@@ -275,7 +271,7 @@ Si estás dado de alta como autónomo con IVA, **presentas el 303 aunque no haya
 
 La única forma de no presentar el 303 es darte de baja como autónomo.
 
-### Error 4: Mezclar IVA e IRPF en la cabeza
+**Error 4: Mezclar IVA e IRPF en la cabeza**
 
 **El error:**
 "Gano poco, así que no tengo que pagar IVA."
@@ -285,7 +281,7 @@ El IVA no tiene nada que ver con cuánto ganes. Es un impuesto sobre las transac
 
 El IRPF (Modelo 130 o Renta) sí depende de tus beneficios. Pero el IVA lo pagas siempre, ganes o pierdas.
 
-### Error 5: No separar el IVA del dinero operativo
+**Error 5: No separar el IVA del dinero operativo**
 
 **El error:**
 Cobras una factura de 12.100€ (10.000€ + 2.100€ IVA) y gastas los 12.100€.
@@ -295,13 +291,11 @@ Cuando llegue el 303, debes pagar 2.100€ a Hacienda. Si te lo gastaste todo, t
 
 **Solución:** Abre una cuenta bancaria separada y transfiere el IVA de cada factura inmediatamente. Trata ese dinero como si no existiera.
 
----
-
-## Sanciones por no presentar a tiempo
+### Sanciones por no presentar a tiempo
 
 Hacienda no perdona. Las sanciones son progresivas y pueden ser devastadoras para un autónomo.
 
-### Presentación fuera de plazo SIN requerimiento
+**Presentación fuera de plazo SIN requerimiento:**
 
 Si te das cuenta del error y presentas tarde por iniciativa propia (presentación extemporánea sin requerimiento):
 
@@ -311,7 +305,7 @@ Si te das cuenta del error y presentas tarde por iniciativa propia (presentació
 
 **No hay sanción adicional** si presentas voluntariamente antes de que Hacienda te requiera. Solo pagas el recargo.
 
-### Presentación fuera de plazo CON requerimiento
+**Presentación fuera de plazo CON requerimiento:**
 
 Si Hacienda tiene que requerirte porque no presentaste:
 
@@ -329,18 +323,16 @@ Intereses de demora: ~40€ (si han pasado meses)
 Total a pagar: 1.540€ - 2.540€
 ```
 
-### Cómo evitar sanciones
+**Cómo evitar sanciones:**
 
 1. **Configura recordatorios automáticos** para los días 15 de abril, julio, octubre y 25 de enero
 2. **Usa software de facturación** que te avise de los plazos (como Invoo). Consulta nuestra guía sobre [Verifactu 2025-2026](/es/blog/guias/verifactu-2025-2026-guia-completa-autonomos-pymes) para conocer los requisitos de software.
 3. **Si lo olvidas, presenta inmediatamente** en cuanto te des cuenta. Cada día cuenta.
 4. **Si no puedes pagar, presenta igualmente**. Puedes aplazar o fraccionar la deuda, pero la no presentación tiene sanciones mucho peores.
 
----
+### Casos especiales y dudas frecuentes
 
-## Casos especiales y dudas frecuentes
-
-### ¿Qué pasa si tengo IVA a devolver?
+**¿Qué pasa si tengo IVA a devolver?**
 
 Si en el Modelo 303 el IVA soportado es mayor que el repercutido (resultado negativo), tienes dos opciones:
 
@@ -349,48 +341,44 @@ Si en el Modelo 303 el IVA soportado es mayor que el repercutido (resultado nega
 
 La mayoría de autónomos eligen compensar porque es más rápido y evita trámites.
 
-### ¿Presento el 130 si tuve pérdidas?
+**¿Presento el 130 si tuve pérdidas?**
 
 Sí, siempre que cumplas los requisitos (estimación directa + menos del 70% con retención).
 
 Si tuviste pérdidas, el resultado será 0€ o negativo. En ese caso, no pagas nada, pero **debes presentar el modelo igualmente** para dejar constancia.
 
-### ¿Puedo presentar ambos modelos el mismo día?
+**¿Puedo presentar ambos modelos el mismo día?**
 
 Sí, y de hecho es lo más común. Muchos autónomos dedican una mañana cada trimestre a "cerrar números" y presentan el 303 y el 130 seguidos.
 
-### ¿Qué hago si me di de alta a mitad de trimestre?
+**¿Qué hago si me di de alta a mitad de trimestre?**
 
 Presentas el modelo correspondiente al trimestre completo, pero solo declaras la actividad desde tu fecha de alta.
 
 Ejemplo: Te diste de alta el 15 de febrero. En abril presentas el 303 del Q1, pero solo incluyes facturas desde el 15 de febrero en adelante.
 
-### ¿Cómo afecta esto a la Declaración de la Renta?
+**¿Cómo afecta esto a la Declaración de la Renta?**
 
 - **El 303 no se declara en la Renta**. El IVA y el IRPF son impuestos separados.
 - **El 130 sí afecta a la Renta**. Todo lo que pagaste en el 130 durante el año se resta de lo que debes en la Renta. Si pagaste de más, Hacienda te devuelve.
 
----
+### Resumen rápido
 
-## Resumen ejecutivo: la guía rápida
-
-### Modelo 303 (IVA)
+**Modelo 303 (IVA):**
 
 - **¿Quién?** Todos los autónomos con IVA
 - **¿Qué?** IVA cobrado menos IVA pagado
 - **¿Cuándo?** 1-20 abril, julio, octubre | 1-30 enero
 - **Truco mental:** Dinero que nunca fue tuyo
 
-### Modelo 130 (IRPF)
+**Modelo 130 (IRPF):**
 
 - **¿Quién?** Solo si estás en estimación directa Y menos del 70% de ingresos tienen retención
 - **¿Qué?** 20% de beneficios acumulados menos pagos anteriores
 - **¿Cuándo?** 1-20 abril, julio, octubre | 1-30 enero
 - **Truco mental:** Adelanto de TUS impuestos
 
-### Checklist trimestral
-
-**Antes del día 15 de cada mes de presentación:**
+**Checklist trimestral (antes del día 15 de cada mes de presentación):**
 
 - [ ] Revisa todas las facturas emitidas del trimestre (o acumulado para el 130)
 - [ ] Revisa todos los gastos con IVA deducible
@@ -407,14 +395,60 @@ Ejemplo: Te diste de alta el 15 de febrero. En abril presentas el 303 del Q1, pe
 
 ---
 
-## Automatiza y olvídate
+## Preguntas frecuentes
 
-La realidad es que recordar plazos, calcular porcentajes y navegar la web de la AEAT es un trabajo tedioso que no genera valor a tu negocio.
+<AccordionGroup>
 
-**Invoo calcula automáticamente tus Modelos 303 y 130** a partir de tus facturas y gastos. El sistema te avisa con antelación cuando se acerca un plazo, genera los cálculos correctos y te permite presentar directamente desde la plataforma.
+<AccordionGroupItem title="¿Cuál es la diferencia entre el Modelo 303 y el Modelo 130?" value="faq-1">
 
-No más hojas de cálculo. No más errores de cálculo. No más olvidos de última hora.
+El Modelo 303 es la declaración trimestral del IVA. **Declaras el IVA que cobraste menos el IVA que pagaste**. Es dinero que nunca fue tuyo, solo lo guardas temporalmente para Hacienda.
 
-Porque tu tiempo vale más que pelearte con formularios de Hacienda.
+El Modelo 130 es un pago fraccionado del IRPF. **Adelantas el 20% de tus beneficios** como pago a cuenta del impuesto que pagarás en la Renta.
 
-**[Únete a la lista de espera de Invoo](https://invoo.es)** y presenta tus próximos modelos sin estrés. Los primeros 100 usuarios ahorran 50% para siempre.
+**La clave:** El 303 lo presentan todos los autónomos con IVA. El 130 solo quienes tienen menos del 70% de ingresos con retención.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Qué pasa si tengo IVA a devolver en el Modelo 303?" value="faq-2">
+
+Cuando el IVA que pagaste es mayor que el IVA que cobraste, **Hacienda te debe dinero**. Tienes dos opciones:
+
+1. **Solicitar devolución**: Hacienda te ingresa la diferencia (tarda 3-6 meses)
+2. **Compensar en próximos trimestres**: Arrastras el saldo a favor para el siguiente 303
+
+La mayoría de autónomos eligen compensar porque es más rápido y evita trámites. Es especialmente común cuando haces inversiones grandes (ordenador, mobiliario) que generan mucho IVA deducible.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Tengo que presentar el Modelo 130 si tuve pérdidas?" value="faq-3">
+
+**Sí, siempre que cumplas los requisitos** (estimación directa + menos del 70% de ingresos con retención).
+
+Si tuviste pérdidas, el resultado será 0€ o negativo. En ese caso, **no pagas nada**, pero debes presentar el modelo igualmente para dejar constancia ante Hacienda.
+
+No presentarlo puede generar requerimientos y sanciones, aunque no debas pagar cantidad alguna.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Cuáles son los plazos para presentar el 303 y el 130?" value="faq-4">
+
+Ambos modelos comparten los mismos plazos:
+
+- **Q1 (enero-marzo):** Del 1 al 20 de abril
+- **Q2 (abril-junio):** Del 1 al 20 de julio
+- **Q3 (julio-septiembre):** Del 1 al 20 de octubre
+- **Q4 (octubre-diciembre):** Del 1 al 30 de enero del año siguiente
+
+**El cuarto trimestre tiene 10 días extra** (hasta el 30 en lugar del 20). Si el último día cae en fin de semana o festivo, se prorroga al siguiente día hábil.
+
+</AccordionGroupItem>
+
+</AccordionGroup>
+
+---
+
+**¿Cansado de calcular el 303 y el 130 cada trimestre?**
+
+Invoo automatiza tus Modelos 303 y 130 a partir de tus facturas y gastos. Te avisa cuando se acerca un plazo, genera los cálculos correctos y facilita la colaboración con tu gestoría. €10.90/mes para autónomos, gratis para gestorías.
+
+**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.

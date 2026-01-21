@@ -34,27 +34,39 @@ faq:
     answer: "No. Los rendimientos netos son tus ingresos menos tus gastos deducibles, y además se les aplica una reducción del 5% por gastos de difícil justificación (máximo 2.000€ anuales). Por ejemplo, si facturas 30.000€ al año pero tienes 8.000€ en gastos deducibles, tus rendimientos netos finales son aproximadamente 20.900€ anuales."
   - question: "¿Puedo estar en un tramo distinto cada mes si mis ingresos varían mucho?"
     answer: "No exactamente. El tramo se determina por tus rendimientos netos anuales divididos entre 12, no por tus ingresos de cada mes específico. Al final del año, Seguridad Social suma todos tus rendimientos netos anuales, los divide entre 12, y determina en qué tramo deberías haber estado durante todo el año."
-  - question: "¿Qué pasa si tengo varios meses sin ingresos?"
-    answer: "Si tienes meses sin facturar nada, eso reduce tus rendimientos netos anuales y por tanto puede situarte en un tramo inferior. Por ejemplo, si solo trabajas 8 meses al año y ganas 2.000€/mes en esos meses, tus rendimientos anuales son 16.000€ = 1.333€/mes de promedio, situándote en el tramo 5."
   - question: "¿Puedo cotizar voluntariamente en un tramo superior para mejorar mi pensión?"
     answer: "Sí, pero solo dentro del rango de tu tramo de ingresos. Si tus rendimientos te sitúan en el tramo 6 (1.500€ a 1.700€/mes), puedes elegir cotizar por una base superior dentro de ese rango, pero no puedes saltar al tramo 10 si tus ingresos no lo justifican."
   - question: "¿Los autónomos societarios tienen tramos diferentes?"
     answer: "No, los tramos son los mismos para todos los autónomos. La diferencia es que los autónomos societarios (administradores de SL) tienen una base mínima obligatoria de 1.000€/mes, lo que les coloca automáticamente con una cuota mínima de aproximadamente 315€/mes (incluyendo MEI)."
-  - question: "¿Cómo afectan los tramos a las prestaciones (baja, maternidad, cese de actividad)?"
-    answer: "Todas las prestaciones se calculan sobre tu base de cotización. Si cotizas por la base mínima de tu tramo, tus prestaciones serán las mínimas. Si cotizas por bases superiores, cobrarás más en caso de baja por enfermedad, maternidad o paternidad, o si solicitas el cese de actividad."
 ---
 
-Estás mirando tus ingresos del último trimestre y te preguntas: ¿estoy cotizando en el tramo correcto? Es una pregunta que 3,3 millones de autónomos en España se hacen cada año, especialmente desde que en 2023 entró en vigor el sistema de cotización por ingresos reales. Y la respuesta importa más de lo que parece, porque elegir mal tu tramo puede costarte cientos de euros en regularizaciones con recargo, o dejarte pagando de más durante meses sin necesidad. En esta guía te voy a explicar exactamente cómo funcionan los 15 tramos de cotización en 2026, cuánto pagarás en cada uno, y lo más importante: cómo elegir el tuyo sin equivocarte. Con tabla completa, casos prácticos reales y estrategias según tu perfil de ingresos.
+> **En resumen:** En 2026 existen 15 tramos de cotización que van desde 200€/mes (ingresos hasta 670€/mes) hasta 590€/mes (más de 6.000€/mes). Todos los tramos se mantienen congelados respecto a 2025, aunque el MEI sube al 0,9% añadiendo entre 6€ y 24€ mensuales. Puedes cambiar de tramo hasta 6 veces al año para ajustarte a tus ingresos reales y evitar regularizaciones con recargos del 10-20%.
+
+Estás mirando tus ingresos del último trimestre y te preguntas: ¿estoy cotizando en el tramo correcto? Es una pregunta que **3,3 millones de autónomos** en España se hacen cada año, especialmente desde que en 2023 entró en vigor el sistema de cotización por ingresos reales.
+
+Y la respuesta importa más de lo que parece. Elegir mal tu tramo puede costarte **cientos de euros en regularizaciones con recargo**, o dejarte pagando de más durante meses sin necesidad.
+
+En esta guía te explicamos exactamente cómo funcionan los 15 tramos de cotización en 2026, cuánto pagarás en cada uno, y lo más importante: cómo elegir el tuyo sin equivocarte. Con tabla completa, casos prácticos reales y estrategias según tu perfil de ingresos.
 
 ---
 
 ## Cómo funciona el sistema de tramos 2026
 
-El sistema de cotización por tramos para autónomos está diseñado con un principio simple: que pagues según lo que realmente ganas, no según una cantidad fija arbitraria que tú eliges al darte de alta. Desde 2023, el modelo anterior de "elijo mi base y pago lo mismo todo el año" ha quedado atrás, sustituido por un sistema progresivo de 15 tramos basados en tus rendimientos netos mensuales. Esto significa que si ganas 1.200€ al mes de promedio, no deberías pagar la misma cuota que alguien que gana 3.000€ o que alguien que apenas llega a 600€. Parece lógico, ¿verdad? El problema es que la lógica y la burocracia española no siempre van de la mano.
+El sistema de cotización por tramos está diseñado con un principio simple: **que pagues según lo que realmente ganas**, no según una cantidad fija arbitraria que tú eliges al darte de alta. Desde 2023, el modelo anterior de "elijo mi base y pago lo mismo todo el año" ha quedado atrás.
 
-El Real Decreto-ley 16/2025 de 29 de diciembre prorrogó para 2026 las mismas cuotas que estaban vigentes en 2025, lo que supone una buena noticia tras las protestas masivas de autónomos en noviembre de 2025. Todos los 15 tramos quedan completamente congelados respecto a 2025, una victoria para las asociaciones de autónomos que rechazaron la propuesta inicial del Gobierno. Además, el Mecanismo de Equidad Intergeneracional (MEI) sube del 0,8% al 0,9%, añadiendo entre 6€ y 24€ adicionales al mes dependiendo de tu base de cotización. Este incremento del MEI es progresivo y continuará subiendo hasta alcanzar el 1,2% en 2029, como parte del plan para garantizar la sostenibilidad del sistema de pensiones.
+Ahora tenemos un sistema progresivo de 15 tramos basados en tus rendimientos netos mensuales. Esto significa que si ganas 1.200€ al mes de promedio, no deberías pagar la misma cuota que alguien que gana 3.000€ o que apenas llega a 600€.
 
-Lo que hace funcionar este sistema es el cruce de datos entre Hacienda y Seguridad Social. Cada año, la AEAT le pasa a la Tesorería General de la Seguridad Social tus rendimientos netos del ejercicio anterior, esos que declaras en tu modelo 100 (declaración de la renta) o que calculas en tus modelos 130 trimestrales si estás en estimación directa simplificada. Seguridad Social compara esos rendimientos con las bases por las que cotizaste durante el año, y si hay desajuste, te cobra o te devuelve la diferencia. Por eso es crucial entender no solo cuánto pagarás cada mes, sino cómo anticipar en qué tramo vas a caer al final del año para evitar sorpresas desagradables en forma de regularización con recargo. Si quieres entender todos los detalles del sistema de cuotas 2026, consulta nuestra [guía completa sobre las cuotas de autónomos 2026](/es/blog/guias/cuotas-autonomos-2026-guia-completa/).
+Parece lógico, ¿verdad? El problema es que la lógica y la burocracia española no siempre van de la mano.
+
+El Real Decreto-ley 16/2025 de 29 de diciembre prorrogó para 2026 las mismas cuotas que estaban vigentes en 2025. **Todos los 15 tramos quedan completamente congelados** respecto a 2025, una victoria para las asociaciones de autónomos tras las protestas masivas de noviembre de 2025.
+
+Además, el Mecanismo de Equidad Intergeneracional (MEI) sube del 0,8% al 0,9%, **añadiendo entre 6€ y 24€ adicionales al mes** dependiendo de tu base de cotización. Este incremento del MEI es progresivo y continuará subiendo hasta alcanzar el 1,2% en 2029.
+
+Lo que hace funcionar este sistema es el cruce de datos entre Hacienda y Seguridad Social. Cada año, la AEAT le pasa a la Tesorería General de la Seguridad Social tus rendimientos netos del ejercicio anterior, esos que declaras en tu modelo 100 o que calculas en tus modelos 130 trimestrales.
+
+Seguridad Social compara esos rendimientos con las bases por las que cotizaste durante el año. **Si hay desajuste, te cobra o te devuelve la diferencia.** Por eso es crucial entender no solo cuánto pagarás cada mes, sino cómo anticipar en qué tramo vas a caer al final del año.
+
+Si quieres entender todos los detalles del sistema de cuotas 2026, consulta nuestra [guía completa sobre las cuotas de autónomos 2026](/es/blog/guias/cuotas-autonomos-2026-guia-completa/).
 
 ---
 
@@ -151,21 +163,11 @@ Los autónomos con ingresos más altos asumen las cuotas más elevadas del siste
 
 ---
 
-## Diferencias vs sistema anterior (2022 vs 2026)
+## Cómo elegir tu tramo y cambios permitidos
 
-Antes de 2023, el sistema de cotización para autónomos funcionaba de forma radicalmente distinta. Tú elegías libremente una base de cotización dentro de un rango amplio (entre aproximadamente 944€ y 4.070€ en 2022), y pagabas la misma cuota todos los meses del año independientemente de si ganabas mucho, poco o nada. Era un modelo de "cuota fija" que te daba previsibilidad financiera, pero que generaba dos problemas graves: inequidad y rigidez.
+Elegir el tramo correcto no es solo cuestión de calcular tus ingresos actuales y cotizar por la base mínima de ese tramo. **Es una decisión estratégica** que depende de tu edad, estabilidad financiera, objetivos de pensión futura y tolerancia al riesgo de regularizaciones.
 
-La inequidad era brutal. Un autónomo que facturaba 12.000€ al año podía estar pagando exactamente lo mismo que otro que facturaba 60.000€ anuales, simplemente porque ambos habían elegido la misma base de cotización al darse de alta. El resultado era que el 80% de los autónomos cotizaban por la base mínima (unos 294€/mes en 2022) para minimizar costes, lo que a su vez resultaba en pensiones futuras muy bajas. Estábamos construyendo un sistema insostenible donde millones de personas iban a llegar a la jubilación con pensiones de 700-900€ mensuales, insuficientes para vivir dignamente.
-
-La rigidez también era un problema. Si tenías un año malo y tus ingresos caían, seguías pagando la misma cuota alta que habías elegido en enero, sin posibilidad de ajustarla hasta el año siguiente. Y si tenías un año bueno, podías estar pagando de menos sin saberlo, enfrentándote a regularizaciones retroactivas de hasta 4 años que podían arruinarte. El sistema actual de tramos soluciona ambos problemas: pagas según lo que ganas (equidad) y puedes cambiar tu base hasta 6 veces al año (flexibilidad).
-
-Pero el cambio también tiene desventajas. La principal es la complejidad administrativa. Ahora tienes que calcular tus rendimientos netos cada trimestre, anticipar en qué tramo vas a caer, y ajustar tu cotización proactivamente si ves que tus previsiones no se cumplen. Muchos autónomos se sienten desbordados por este seguimiento continuo y prefieren delegar en su gestoría, lo que añade un coste adicional. Además, la regularización anual sigue existiendo: si cotizaste en un tramo inferior al que te correspondía según tus ingresos reales, Seguridad Social te cobra la diferencia más un recargo del 10-20%. Por eso es tan importante entender cómo funcionan estos tramos y usar herramientas que te ayuden a estar siempre en el correcto. Si necesitas profundizar en cómo elegir tu base de cotización estratégicamente, consulta nuestra [guía para elegir tu base de cotización en 2026](/es/blog/guias/elegir-base-cotizacion-autonomos-2026/).
-
----
-
-## Cómo elegir tu tramo: estrategias por perfil
-
-Elegir el tramo correcto no es solo cuestión de calcular tus ingresos actuales y cotizar por la base mínima de ese tramo. Es una decisión estratégica que depende de tu edad, tu estabilidad financiera, tus objetivos de pensión futura y tu tolerancia al riesgo de regularizaciones. Aquí están las estrategias probadas según cada perfil.
+### Estrategias por perfil de edad y situación
 
 **Si tienes menos de 35 años y estás empezando:** La prioridad absoluta en esta etapa es la liquidez. Cada euro cuenta para reinvertirlo en tu negocio, en marketing, en formación o simplemente para sobrevivir mientras tu actividad despega. En este caso, cotizar por la base mínima de tu tramo tiene todo el sentido del mundo. Si tus rendimientos están en el tramo 3 (900€ a 1.166€/mes), no te fuerces a cotizar por una base más alta para mejorar tu pensión futura, porque faltan 40 años para jubilarte y necesitas ese dinero ahora. Eso sí, asegúrate de estar en el tramo correcto: cotizar de menos puede parecer un ahorro a corto plazo, pero la regularización con recargo del 20% te va a doler mucho más. Y si acabas de darte de alta, no olvides revisar la [tarifa plana de autónomos 2026](/es/blog/guias/tarifa-plana-autonomos-2026-guia-completa/) para maximizar el ahorro en tus primeros 12-24 meses.
 
@@ -177,9 +179,7 @@ Elegir el tramo correcto no es solo cuestión de calcular tus ingresos actuales 
 
 **Casos especiales - autónomos societarios y colaboradores:** Si eres administrador de una SL (autónomo societario) o autónomo colaborador familiar, tu base mínima obligatoria es de 1.000€ mensuales, lo que te coloca automáticamente en el tramo 3 con una cuota mínima de aproximadamente 315€/mes (incluyendo MEI). No puedes bajar de ahí aunque tus rendimientos sean cero o aunque la empresa esté perdiendo dinero. Es el precio de tener una sociedad: más protección patrimonial y flexibilidad fiscal, pero menos margen de maniobra en cotizaciones.
 
----
-
-## Casos prácticos: tres perfiles reales
+### Casos prácticos: tres perfiles reales
 
 Nada aclara mejor el sistema de tramos que ver ejemplos concretos con números reales. Vamos a analizar tres perfiles típicos de autónomos y calcular exactamente en qué tramo caen, cuánto pagan y cuál sería su estrategia óptima.
 
@@ -222,25 +222,9 @@ Con 2.818€/mes de rendimientos netos, Ana cae en el **tramo 11** (2.760€ a 3
 
 **Estrategia recomendada para Ana:** Ana tiene dos opciones estratégicas. Primera opción: cotizar por la base mínima del tramo 10 (340€/mes), ahorrando 40€ al mes, si es conservadora con sus proyecciones de ingresos y cree que puede acabar el año en el tramo inferior. Segunda opción: cotizar por una base media-alta del tramo 11 (digamos 400€/mes) para mejorar significativamente su pensión futura, ya que con sus ingresos puede permitírselo. Si tiene más de 45 años, la segunda opción es claramente superior: la diferencia de 60€/mes (720€ al año) es marginal para su nivel de ingresos, pero el impacto en su pensión puede ser de 200-300€ más al mes cuando se jubile.
 
----
+### Calendario y procedimiento para cambiar de tramo
 
-## Qué pasa si te equivocas de tramo
-
-Equivocarte de tramo no es un error administrativo menor: puede costarte cientos o incluso miles de euros en regularizaciones con recargo. Pero tranquilo, no es el fin del mundo si sabes cómo funciona el proceso y actúas a tiempo. Aquí está exactamente qué ocurre si cotizas en el tramo incorrecto y cómo minimizar el daño.
-
-**El proceso de regularización anual:** Entre mayo y junio de cada año, la Agencia Tributaria (AEAT) le pasa a la Seguridad Social los datos de tus rendimientos netos del año anterior, esos que declaraste en tu modelo 100 (renta) o que resultan de la suma de tus modelos 130 trimestrales. Seguridad Social compara esos rendimientos con las bases por las que cotizaste durante el año, y calcula si has pagado de más o de menos. Si cotizaste de menos (es decir, estabas en un tramo inferior al que te correspondía), recibirás una carta entre octubre y diciembre con una factura que incluye: 1) la diferencia de cuota que deberías haber pagado, y 2) un recargo que puede ser del 10% si pagas en el plazo voluntario (30 días) o del 20% si llega a vía ejecutiva.
-
-Imagina que durante todo 2025 cotizaste como si estuvieras en el tramo 6 (cuota de 302€/mes), pero al hacer la declaración de la renta resulta que tus rendimientos netos reales te situaron en el tramo 8 (cuota de 324€/mes). La diferencia son 22€ al mes durante 12 meses = 264€. Con el recargo del 10% si pagas rápido, el total sería 290€. Si ignoras la carta y llega a ejecutiva, el recargo sube al 20%, y el total sería 316€ más los intereses de demora. No es una cantidad que te arruine, pero es dinero que sale de golpe y que probablemente no tenías presupuestado.
-
-**Si cotizaste de más:** El proceso es el mismo pero a la inversa. Seguridad Social te devuelve la diferencia automáticamente, sin que tengas que solicitarla. El problema es que no te pagan intereses: básicamente le has hecho un préstamo gratis a la administración durante un año. Por ejemplo, si cotizaste en el tramo 9 (320€/mes) pero tus ingresos reales solo justificaban el tramo 7 (310€/mes), has pagado 10€ de más cada mes. En diciembre de 2026 te devolverán 120€ correspondientes a 2025, pero sin compensación por tener tu dinero bloqueado durante meses.
-
-**Cómo evitar regularizaciones dolorosas:** La clave es el seguimiento trimestral. Cada vez que presentes tus impuestos trimestrales (modelo 303 de IVA o modelo 130 de IRPF), tómate 10 minutos para calcular tus rendimientos netos acumulados hasta ese momento. Proyecta el año completo multiplicando por 4 si vas por el primer trimestre, por 2 si vas por el segundo, etc. Si ves que te estás desviando significativamente de tus previsiones iniciales, cambia tu base de cotización en la siguiente ventana de cambio (recuerda que puedes hacerlo hasta 6 veces al año, cada dos meses). Esta disciplina trimestral te ahorra sorpresas y te da control total sobre tus cotizaciones. Si necesitas ayuda con los modelos fiscales, consulta nuestra [guía comparativa del modelo 303 vs modelo 130](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos/).
-
----
-
-## Cambios de tramo: cuándo y cómo
-
-Una de las grandes ventajas del sistema actual de cotización por tramos es la flexibilidad para cambiar tu base hasta 6 veces al año. Esto te permite adaptar tu cotización a la realidad de tu negocio sin estar atado todo el año a una decisión que tomaste en enero. Pero esta flexibilidad solo funciona si sabes exactamente cuándo y cómo hacer los cambios.
+Una de las grandes ventajas del sistema actual de cotización por tramos es la flexibilidad para cambiar tu base hasta 6 veces al año. **Esto te permite adaptar tu cotización** a la realidad de tu negocio sin estar atado todo el año a una decisión que tomaste en enero.
 
 **El calendario de cambios:** Los cambios de base de cotización se hacen en ventanas de dos meses, con efectividad dos meses después de la solicitud. El calendario funciona así:
 - Solicitas entre **1 de enero y 28/29 de febrero** → Efectivo el **1 de marzo**
@@ -250,15 +234,41 @@ Una de las grandes ventajas del sistema actual de cotización por tramos es la f
 - Solicitas entre **1 de septiembre y 31 de octubre** → Efectivo el **1 de noviembre**
 - Solicitas entre **1 de noviembre y 31 de diciembre** → Efectivo el **1 de enero del año siguiente**
 
-Esto significa que necesitas anticipar tus cambios con dos meses de margen. Si sabes que agosto y septiembre van a ser flojos (típico en muchos negocios), tienes que solicitar la bajada de base en junio para que sea efectiva en julio. Si prevés un pico de ingresos en el último trimestre, solicita la subida en septiembre para que sea efectiva en noviembre.
+Esto significa que necesitas anticipar tus cambios con dos meses de margen. Si sabes que agosto y septiembre van a ser flojos (típico en muchos negocios), tienes que solicitar la bajada de base en junio para que sea efectiva en julio.
 
-**Cómo hacer el cambio (paso a paso):** El proceso es sorprendentemente sencillo, mucho más de lo que era antes de 2023. Tienes dos opciones: la app Import@ss o la sede electrónica de la Seguridad Social. **Opción A - Import@ss (la más rápida):** Descarga la app Import@ss en tu móvil, identifícate con certificado digital, Cl@ve o huella dactilar si lo tienes configurado, ve a "Modificar datos", selecciona "Base de cotización", introduce la nueva base que quieres (asegúrate de que está dentro del rango de tu tramo de ingresos), confirma y envía. En 24-48 horas hábiles recibirás la confirmación. **Opción B - Sede electrónica:** Entra en la sede electrónica de la TGSS (sede.seg-social.gob.es), identifícate con certificado digital o Cl@ve, busca el trámite "Modificación de bases de cotización - TA.0521", rellena el formulario con tu nueva base elegida, y envía. Confirmación en 2-3 días laborables.
+**Cómo hacer el cambio (paso a paso):** El proceso es sorprendentemente sencillo. Tienes dos opciones: la app Import@ss o la sede electrónica de la Seguridad Social. **Opción A - Import@ss:** Descarga la app en tu móvil, identifícate con certificado digital, Cl@ve o huella dactilar, ve a "Modificar datos", selecciona "Base de cotización", introduce la nueva base, confirma y envía. Confirmación en 24-48 horas. **Opción B - Sede electrónica:** Entra en sede.seg-social.gob.es, identifícate, busca el trámite "Modificación de bases de cotización - TA.0521", rellena el formulario y envía.
 
-**Errores comunes al cambiar de tramo:** El error más frecuente es elegir una base que está fuera del rango permitido para tus ingresos declarados. Por ejemplo, si tus rendimientos netos están en el tramo 5 (1.300€ a 1.500€/mes), no puedes cotizar por una base de 2.000€ aunque quieras mejorar tu pensión futura, porque esa base corresponde al tramo 9. Seguridad Social puede rechazar tu solicitud o, peor aún, aceptarla temporalmente y luego regularizarte con recargo cuando crucen datos con Hacienda. Otro error típico es olvidar que el cambio tarda dos meses en ser efectivo: si solicitas una bajada el 15 de julio, no será efectiva hasta el 1 de septiembre, así que pagarás agosto y septiembre con la cuota antigua.
+**Errores comunes al cambiar de tramo:** El error más frecuente es elegir una base que está fuera del rango permitido para tus ingresos declarados. Por ejemplo, si tus rendimientos netos están en el tramo 5 (1.300€ a 1.500€/mes), no puedes cotizar por una base de 2.000€ porque esa base corresponde al tramo 9. **Seguridad Social puede rechazar tu solicitud** o, peor aún, aceptarla temporalmente y luego regularizarte con recargo cuando crucen datos con Hacienda.
+
+### Diferencias vs el sistema anterior (2022 vs 2026)
+
+Antes de 2023, el sistema de cotización funcionaba de forma radicalmente distinta. Tú elegías libremente una base de cotización dentro de un rango amplio (entre aproximadamente 944€ y 4.070€ en 2022), y **pagabas la misma cuota todos los meses del año** independientemente de si ganabas mucho, poco o nada.
+
+La inequidad era brutal. Un autónomo que facturaba 12.000€ al año podía estar pagando exactamente lo mismo que otro que facturaba 60.000€ anuales, simplemente porque ambos habían elegido la misma base de cotización al darse de alta. El resultado era que **el 80% de los autónomos cotizaban por la base mínima** (unos 294€/mes en 2022) para minimizar costes, lo que a su vez resultaba en pensiones futuras muy bajas.
+
+La rigidez también era un problema. Si tenías un año malo y tus ingresos caían, seguías pagando la misma cuota alta que habías elegido en enero, sin posibilidad de ajustarla hasta el año siguiente. El sistema actual de tramos soluciona ambos problemas: pagas según lo que ganas (equidad) y puedes cambiar tu base hasta 6 veces al año (flexibilidad).
+
+Pero el cambio también tiene desventajas. La principal es la complejidad administrativa. Ahora tienes que calcular tus rendimientos netos cada trimestre, anticipar en qué tramo vas a caer, y ajustar tu cotización proactivamente. Muchos autónomos se sienten desbordados por este seguimiento continuo y prefieren delegar en su gestoría. Si necesitas profundizar en cómo elegir tu base de cotización estratégicamente, consulta nuestra [guía para elegir tu base de cotización en 2026](/es/blog/guias/elegir-base-cotizacion-autonomos-2026/).
 
 ---
 
-## Sanciones por cotizar en tramo incorrecto
+## Qué pasa si te equivocas: regularizaciones y sanciones
+
+Equivocarte de tramo no es un error administrativo menor: **puede costarte cientos o incluso miles de euros** en regularizaciones con recargo. Pero tranquilo, no es el fin del mundo si sabes cómo funciona el proceso y actúas a tiempo.
+
+### El proceso de regularización anual
+
+Entre mayo y junio de cada año, la Agencia Tributaria (AEAT) le pasa a la Seguridad Social los datos de tus rendimientos netos del año anterior, esos que declaraste en tu modelo 100 (renta) o que resultan de la suma de tus modelos 130 trimestrales. Seguridad Social compara esos rendimientos con las bases por las que cotizaste durante el año, y calcula si has pagado de más o de menos. Si cotizaste de menos (es decir, estabas en un tramo inferior al que te correspondía), recibirás una carta entre octubre y diciembre con una factura que incluye: 1) la diferencia de cuota que deberías haber pagado, y 2) un recargo que puede ser del 10% si pagas en el plazo voluntario (30 días) o del 20% si llega a vía ejecutiva.
+
+Imagina que durante todo 2025 cotizaste como si estuvieras en el tramo 6 (cuota de 302€/mes), pero al hacer la declaración de la renta resulta que tus rendimientos netos reales te situaron en el tramo 8 (cuota de 324€/mes). La diferencia son 22€ al mes durante 12 meses = 264€. Con el recargo del 10% si pagas rápido, el total sería 290€. Si ignoras la carta y llega a ejecutiva, el recargo sube al 20%, y el total sería 316€ más los intereses de demora. No es una cantidad que te arruine, pero es dinero que sale de golpe y que probablemente no tenías presupuestado.
+
+**Si cotizaste de más:** El proceso es el mismo pero a la inversa. Seguridad Social te devuelve la diferencia automáticamente, sin que tengas que solicitarla. El problema es que no te pagan intereses: básicamente le has hecho un préstamo gratis a la administración durante un año. Por ejemplo, si cotizaste en el tramo 9 (320€/mes) pero tus ingresos reales solo justificaban el tramo 7 (310€/mes), has pagado 10€ de más cada mes. En diciembre de 2026 te devolverán 120€ correspondientes a 2025, pero sin compensación por tener tu dinero bloqueado durante meses.
+
+**Cómo evitar regularizaciones dolorosas:** La clave es el seguimiento trimestral. Cada vez que presentes tus impuestos trimestrales (modelo 303 de IVA o modelo 130 de IRPF), tómate 10 minutos para calcular tus rendimientos netos acumulados hasta ese momento. **Proyecta el año completo** multiplicando por 4 si vas por el primer trimestre, por 2 si vas por el segundo, etc.
+
+Si ves que te estás desviando significativamente de tus previsiones iniciales, cambia tu base de cotización en la siguiente ventana de cambio. Esta disciplina trimestral te ahorra sorpresas y te da control total sobre tus cotizaciones. Si necesitas ayuda con los modelos fiscales, consulta nuestra [guía comparativa del modelo 303 vs modelo 130](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos/).
+
+### Sanciones: cuándo son aplicables y cómo protegerte
 
 Cotizar en el tramo incorrecto no es solo un error que te cuesta dinero en regularizaciones: en algunos casos puede ser considerado una infracción grave con sanciones administrativas importantes. Aquí está exactamente qué riesgos corres y cuándo se activan las sanciones.
 
@@ -270,11 +280,11 @@ Cotizar en el tramo incorrecto no es solo un error que te cuesta dinero en regul
 
 **Cuándo se activan las sanciones (y cuándo no):** La inmensa mayoría de autónomos que acaban cotizando en el tramo incorrecto lo hacen por error de cálculo, no por mala fe. Proyectaron mal sus ingresos, no restaron correctamente sus gastos deducibles, o simplemente no entendieron bien el sistema. En estos casos, Seguridad Social aplica el recargo del 10-20% y punto, no abre expediente sancionador. Las sanciones se reservan para casos donde hay evidencia de intencionalidad: por ejemplo, declaraste 18.000€ a Hacienda pero cotizaste todo el año como si ganaras 10.000€, y además no respondiste a los requerimientos previos de Seguridad Social pidiéndote explicaciones.
 
-**Cómo protegerte:** La mejor protección es la transparencia y el seguimiento riguroso. Lleva un control mensual de tus ingresos y gastos, ajusta tu base de cotización proactivamente cuando veas desviaciones en tus previsiones, y guarda documentación de todos tus cálculos. Si recibes una carta de Seguridad Social con una regularización, págala en el plazo voluntario (primeros 30 días) para minimizar el recargo, y si consideras que el cálculo es incorrecto, presenta alegaciones con la documentación que respalde tu posición. Nunca ignores una carta de Seguridad Social: el silencio se interpreta como conformidad y las sanciones se multiplican.
+**Cómo protegerte:** La mejor protección es la transparencia y el seguimiento riguroso. **Lleva un control mensual** de tus ingresos y gastos, ajusta tu base de cotización proactivamente cuando veas desviaciones en tus previsiones, y guarda documentación de todos tus cálculos.
 
----
+Si recibes una carta de Seguridad Social con una regularización, págala en el plazo voluntario (primeros 30 días) para minimizar el recargo. Si consideras que el cálculo es incorrecto, presenta alegaciones con la documentación que respalde tu posición. **Nunca ignores una carta de Seguridad Social:** el silencio se interpreta como conformidad y las sanciones se multiplican.
 
-## Herramientas: calculadora de tramos Invoo
+### Herramientas para calcular tu tramo correctamente
 
 Calcular manualmente en qué tramo caes cada trimestre es tedioso y propenso a errores. Tienes que sumar todos tus ingresos, restar gastos deducibles, aplicar la reducción del 5% por gastos de difícil justificación, dividir entre 12 meses, y luego buscar en qué tramo caes. Y si te equivocas en algún paso, acabas cotizando mal durante meses sin darte cuenta hasta que llega la regularización.
 
@@ -286,31 +296,43 @@ Además, si estás usando Invoo como tu software de facturación, el cálculo se
 
 ---
 
-## FAQs: preguntas frecuentes sobre tramos de autónomos
+## Preguntas frecuentes
 
-**¿Los rendimientos netos son lo mismo que la facturación bruta?**
+<AccordionGroup>
 
-No. Los rendimientos netos son tus ingresos menos tus gastos deducibles, y además se les aplica una reducción del 5% por gastos de difícil justificación (máximo 2.000€ anuales). Por ejemplo, si facturas 30.000€ al año pero tienes 8.000€ en gastos deducibles, tus rendimientos brutos serían 22.000€. Aplicando el 5% (1.100€), tus rendimientos netos finales son 20.900€ anuales = 1.741,67€ mensuales.
+<AccordionGroupItem title="¿Los rendimientos netos son lo mismo que la facturación bruta?" value="faq-1">
 
-**¿Puedo estar en un tramo distinto cada mes si mis ingresos varían mucho?**
+No. Los rendimientos netos son tus ingresos menos tus gastos deducibles, y además se les aplica una reducción del 5% por gastos de difícil justificación (máximo 2.000€ anuales).
 
-No exactamente. El tramo se determina por tus rendimientos netos **anuales** divididos entre 12, no por tus ingresos de cada mes específico. Si en enero ganas 500€ y en febrero ganas 3.000€, no cambias de tramo cada mes. Al final del año, Seguridad Social suma todos tus rendimientos netos anuales, los divide entre 12, y determina en qué tramo deberías haber estado durante todo el año.
+Por ejemplo, si facturas 30.000€ al año pero tienes 8.000€ en gastos deducibles, tus rendimientos brutos serían 22.000€. **Aplicando el 5% de reducción (1.100€), tus rendimientos netos finales son 20.900€ anuales = 1.741,67€ mensuales.**
 
-**¿Qué pasa si tengo varios meses sin ingresos?**
+</AccordionGroupItem>
 
-Si tienes meses sin facturar nada, eso reduce tus rendimientos netos anuales y por tanto puede situarte en un tramo inferior. Por ejemplo, si solo trabajas 8 meses al año y ganas 2.000€/mes en esos meses, tus rendimientos anuales son 16.000€ = 1.333€/mes de promedio. Estarías en el tramo 5, no en el tramo 9 donde estarías si trabajaras los 12 meses.
+<AccordionGroupItem title="¿Puedo estar en un tramo distinto cada mes si mis ingresos varían mucho?" value="faq-2">
 
-**¿Puedo cotizar voluntariamente en un tramo superior para mejorar mi pensión?**
+No exactamente. El tramo se determina por tus rendimientos netos **anuales** divididos entre 12, no por tus ingresos de cada mes específico.
 
-Sí, pero solo dentro del rango de tu tramo de ingresos. Si tus rendimientos te sitúan en el tramo 6 (1.500€ a 1.700€/mes), puedes elegir cotizar por una base de 1.600€ en lugar de la mínima de 1.500€, lo que mejorará tus prestaciones futuras. Pero no puedes saltar al tramo 10 y cotizar por 2.500€ si tus ingresos no lo justifican.
+Si en enero ganas 500€ y en febrero ganas 3.000€, no cambias de tramo cada mes. Al final del año, **Seguridad Social suma todos tus rendimientos netos anuales, los divide entre 12**, y determina en qué tramo deberías haber estado durante todo el año.
 
-**¿Los autónomos societarios tienen tramos diferentes?**
+</AccordionGroupItem>
 
-No, los tramos son los mismos para todos los autónomos. La diferencia es que los autónomos societarios (administradores de SL) tienen una base mínima obligatoria de 1.000€/mes, lo que les coloca automáticamente con una cuota mínima de aproximadamente 315€/mes (incluyendo MEI). No pueden bajar de ahí aunque sus rendimientos sean inferiores.
+<AccordionGroupItem title="¿Puedo cotizar voluntariamente en un tramo superior para mejorar mi pensión?" value="faq-3">
 
-**¿Cómo afectan los tramos a las prestaciones (baja, maternidad, cese de actividad)?**
+Sí, pero solo dentro del rango de tu tramo de ingresos. Si tus rendimientos te sitúan en el tramo 6 (1.500€ a 1.700€/mes), puedes elegir cotizar por una base de 1.600€ en lugar de la mínima de 1.500€, lo que mejorará tus prestaciones futuras.
 
-Todas las prestaciones se calculan sobre tu base de cotización. Si cotizas por la base mínima de tu tramo, tus prestaciones serán las mínimas. Si cotizas por bases superiores, cobrarás más en caso de baja por enfermedad, maternidad o paternidad, o si solicitas el cese de actividad (el "paro" de los autónomos).
+**Pero no puedes saltar al tramo 10** y cotizar por 2.500€ si tus ingresos no lo justifican. Seguridad Social puede rechazar la solicitud o regularizarte después.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Los autónomos societarios tienen tramos diferentes?" value="faq-4">
+
+No, los tramos son los mismos para todos los autónomos. La diferencia es que **los autónomos societarios (administradores de SL) tienen una base mínima obligatoria de 1.000€/mes**, lo que les coloca automáticamente con una cuota mínima de aproximadamente 315€/mes (incluyendo MEI).
+
+No pueden bajar de ahí aunque sus rendimientos sean inferiores o la empresa esté perdiendo dinero.
+
+</AccordionGroupItem>
+
+</AccordionGroup>
 
 ---
 

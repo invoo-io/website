@@ -39,50 +39,60 @@ keyTakeaways:
   - "Debes completar DOS altas distintas: primero Hacienda (036) y después Seguridad Social (TA.0521), siempre en ese orden y con la misma fecha"
   - "Si olvidas marcar la casilla de Tarifa Plana en el TA.0521 al darte de alta, la pierdes para siempre y pagarás más de 1.000€ extra en tu primer año"
   - "El alta en Hacienda debe hacerse ANTES de iniciar tu actividad: si te registras tarde, la multa es de 200€ automáticos sin excepciones"
+faq:
+  - question: "¿Qué documentos necesito para darme de alta como autónomo?"
+    answer: "Necesitas tu DNI o NIE en vigor, número de Seguridad Social (NUSS), certificado digital o Cl@ve, y tener clara tu actividad económica para elegir el epígrafe IAE correcto. También es recomendable verificar que estás al corriente de pagos con Hacienda y Seguridad Social antes de iniciar el proceso."
+  - question: "¿Cuánto cuesta darse de alta como autónomo en 2026?"
+    answer: "El alta en sí es gratuita (no pagas tasas por presentar el Modelo 036 ni el TA.0521). Lo que sí pagarás es la cuota mensual de autónomo desde el día que te des de alta. Con Tarifa Plana son 80€/mes más 8,72€ de Mutua (88,72€ total) durante los primeros 12 meses. Sin Tarifa Plana, la cuota depende de tu base de cotización pero ronda los 200€/mes."
+  - question: "¿Puedo perder la Tarifa Plana si olvido marcar la casilla?"
+    answer: "Sí, y es irrecuperable. La Tarifa Plana solo se puede solicitar al darte de alta en el RETA marcando la casilla correspondiente en el formulario TA.0521. Si olvidas marcarla, no se aplica automáticamente y no puedes solicitarla después. Esto significa que pagarás la cuota completa (unos 200€/mes) en lugar de 88€/mes, perdiendo más de 1.300€ en tu primer año."
+  - question: "¿Cuál es el mejor día del mes para darse de alta?"
+    answer: "El último día del mes anterior a cuando quieres empezar a facturar. Por ejemplo, si quieres trabajar desde febrero, date de alta el 31 de enero. La cuota se prorratea por días, así que al darte de alta el día 31 solo pagas 1/30 de la cuota mensual (unos 3€), y ya en febrero empiezas con el mes completo bonificado. Esto te ahorra 80-85€ en tu primer mes, aunque debes asegurarte de que la fecha coincida con la que declaraste en Hacienda."
 ---
 
-**Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado. Información actualizada a enero de 2026.
+> **En resumen:** Darte de alta como autónomo requiere dos trámites distintos: Modelo 036 en Hacienda y TA.0521 en Seguridad Social, siempre con la misma fecha de inicio. No olvides marcar la casilla de Tarifa Plana al darte de alta o perderás más de 1.000€ en bonificaciones, y recuerda que la multa por alta fuera de plazo es de 200€ automáticos.
+
+Tienes tu primer cliente esperando, sabes exactamente qué vas a cobrar, y solo te falta un último paso antes de poder emitir tu primera factura legal: darte de alta como autónomo. Parece un trámite sencillo hasta que te enfrentas a formularios con 50 campos, siglas incomprensibles (IAE, CNAE, RETA, TA.0521) y decisiones que si tomas mal pueden costarte miles de euros sin que te des cuenta hasta meses después.
+
+**Cada año, miles de nuevos autónomos pierden la Tarifa Plana porque olvidaron marcar una casilla**, pagan multas de 200€ porque se dieron de alta un día tarde, o eligen el epígrafe IAE equivocado y acaban con obligaciones fiscales que no les corresponden.
+
+Esta guía te explica exactamente cómo darte de alta como autónomo en 2026 sin cometer ninguno de estos errores. Te voy a llevar paso a paso por todo el proceso, desde los documentos que necesitas preparar antes de empezar hasta la confirmación final de que todo está correcto y tu Tarifa Plana se ha aplicado.
+
+Vamos a cubrir **las dos altas que debes hacer** (Hacienda y Seguridad Social), cómo elegir tu epígrafe IAE sin equivocarte, cuál es el mejor día del mes para darte de alta si quieres ahorrar en tu primera cuota, y qué hacer inmediatamente después de completar el registro para verificar que todo funciona bien.
 
 ---
 
-Tienes tu primer cliente esperando, sabes exactamente qué vas a cobrar, y solo te falta un último paso antes de poder emitir tu primera factura legal: darte de alta como autónomo. Parece un trámite sencillo hasta que te enfrentas a formularios con 50 campos, siglas incomprensibles (IAE, CNAE, RETA, TA.0521) y decisiones que si tomas mal pueden costarte miles de euros sin que te des cuenta hasta meses después. Cada año, miles de nuevos autónomos pierden la Tarifa Plana porque olvidaron marcar una casilla, pagan multas de 200€ porque se dieron de alta un día tarde, o eligen el epígrafe IAE equivocado y acaban con obligaciones fiscales que no les corresponden.
+## Qué preparar antes de empezar
 
-Esta guía te explica exactamente cómo darte de alta como autónomo en 2026 sin cometer ninguno de estos errores. Te voy a llevar paso a paso por todo el proceso, desde los documentos que necesitas preparar antes de empezar hasta la confirmación final de que todo está correcto y tu Tarifa Plana se ha aplicado. Vamos a cubrir las dos altas que debes hacer (Hacienda y Seguridad Social), cómo elegir tu epígrafe IAE sin equivocarte, cuál es el mejor día del mes para darte de alta si quieres ahorrar en tu primera cuota, y qué hacer inmediatamente después de completar el registro para verificar que todo funciona bien. Al final de esta guía, sabrás exactamente qué hacer en cada paso, cuánto tiempo toma cada trámite, y cómo asegurarte de que no pierdes ni un euro por despiste.
+Antes de abrir ningún formulario ni entrar en ninguna web de la administración, necesitas tener clara cierta información y reunir algunos documentos. **Hacer este trabajo previo te ahorrará tener que abandonar formularios a medio rellenar** porque te falta un dato.
 
----
-
-**En esta guía:**
-
-1. [Antes de empezar: qué preparar](#antes-de-empezar-qué-necesitas-preparar)
-2. [Paso 1: Alta en Hacienda (Modelo 036)](#paso-1-alta-en-hacienda-modelo-036)
-3. [Paso 2: Alta en Seguridad Social (RETA)](#paso-2-alta-en-la-seguridad-social-reta)
-4. [Paso 3: Comunicaciones adicionales](#paso-3-comunicaciones-adicionales-mutua-y-otros)
-5. [Errores comunes y cómo evitarlos](#errores-comunes-que-cuestan-dinero)
-6. [Checklist final: qué debes tener](#checklist-final-qué-debes-tener-tras-darte-de-alta)
-7. [Próximos pasos: tu primera factura](#próximos-pasos-emitir-tu-primera-factura-con-invoo)
-8. [Preguntas frecuentes](#preguntas-frecuentes)
-
----
-
-## Antes de empezar: qué necesitas preparar
-
-Antes de abrir ningún formulario ni entrar en ninguna web de la administración, necesitas tener clara cierta información y reunir algunos documentos. Hacer este trabajo previo te ahorrará tener que abandonar formularios a medio rellenar porque te falta un dato, y además te permitirá tomar decisiones informadas sobre aspectos clave de tu alta que afectarán a tu fiscalidad durante todo el año.
+Además te permitirá tomar decisiones informadas sobre aspectos clave de tu alta que afectarán a tu fiscalidad durante todo el año.
 
 **Documentación imprescindible que debes tener a mano:**
 
-Tu DNI o NIE en vigor, porque lo vas a necesitar en ambas altas y además te servirá para identificarte en las sedes electrónicas si no tienes certificado digital. Si eres extranjero, asegúrate de que tu NIE no ha caducado, porque la administración no te dejará completar el trámite con un documento vencido. También necesitarás tu número de Seguridad Social (NUSS) o número de afiliación (NAF), que es el que te asignaron cuando trabajaste por primera vez por cuenta ajena. Si nunca has trabajado en España, deberás solicitar este número antes de poder darte de alta como autónomo, lo cual añade unos días al proceso.
+Tu **DNI o NIE en vigor**, porque lo vas a necesitar en ambas altas y además te servirá para identificarte en las sedes electrónicas si no tienes certificado digital. Si eres extranjero, asegúrate de que tu NIE no ha caducado, porque **la administración no te dejará completar el trámite con un documento vencido**.
+
+También necesitarás tu **número de Seguridad Social (NUSS)** o número de afiliación (NAF), que es el que te asignaron cuando trabajaste por primera vez por cuenta ajena. Si nunca has trabajado en España, deberás solicitar este número antes de poder darte de alta como autónomo, lo cual añade unos días al proceso.
 
 **Certificado digital, Cl@ve o DNI electrónico:**
 
-Aunque técnicamente puedes hacer los trámites de forma presencial, en 2026 el proceso online es mucho más rápido y te permite ver exactamente qué estás rellenando sin depender de que un funcionario lo haga por ti. El certificado digital de la FNMT (Fábrica Nacional de Moneda y Timbre) es la opción más versátil porque te sirve para todas las administraciones y lo puedes usar desde cualquier ordenador. Si no tienes certificado digital, puedes usar Cl@ve Permanente (se solicita online y te dan las claves en 10 días por correo postal) o el DNI electrónico si tu DNI tiene chip y dispones de un lector compatible.
+Aunque técnicamente puedes hacer los trámites de forma presencial, **en 2026 el proceso online es mucho más rápido** y te permite ver exactamente qué estás rellenando sin depender de que un funcionario lo haga por ti.
+
+El **certificado digital de la FNMT** (Fábrica Nacional de Moneda y Timbre) es la opción más versátil porque te sirve para todas las administraciones y lo puedes usar desde cualquier ordenador. Si no tienes certificado digital, puedes usar Cl@ve Permanente (se solicita online y te dan las claves en 10 días por correo postal) o el DNI electrónico si tu DNI tiene chip y dispones de un lector compatible.
 
 **Información sobre tu actividad económica:**
 
-Aquí viene la parte donde muchos autónomos se atascan. Necesitas saber exactamente qué actividad vas a desarrollar, no en términos genéricos ("voy a hacer diseño gráfico"), sino lo suficientemente específico como para elegir el epígrafe IAE correcto. El epígrafe IAE es un código numérico que clasifica tu actividad según la normativa fiscal española, y de él dependerán cosas como tu régimen de IVA, tus obligaciones de retención de IRPF, y en algunos casos tu acceso a ciertos incentivos fiscales. Si vas a hacer varias actividades diferentes (por ejemplo, diseño gráfico Y formación online), necesitas identificar todos los epígrafes que te aplican porque debes declarar todas tus actividades desde el principio. Más adelante en esta guía te explico cómo elegir el epígrafe correcto sin morir en el intento.
+Aquí viene la parte donde muchos autónomos se atascan. Necesitas saber exactamente qué actividad vas a desarrollar, no en términos genéricos ("voy a hacer diseño gráfico"), sino **lo suficientemente específico como para elegir el epígrafe IAE correcto**.
+
+El epígrafe IAE es un código numérico que clasifica tu actividad según la normativa fiscal española, y **de él dependerán cosas como tu régimen de IVA, tus obligaciones de retención de IRPF**, y en algunos casos tu acceso a ciertos incentivos fiscales.
+
+Si vas a hacer varias actividades diferentes (por ejemplo, diseño gráfico Y formación online), necesitas identificar todos los epígrafes que te aplican porque debes declarar todas tus actividades desde el principio. Más adelante en esta guía te explico cómo elegir el epígrafe correcto sin morir en el intento.
 
 **Fecha de inicio de actividad:**
 
-Esta fecha es crítica y debe ser coherente en todos tus trámites. Legalmente, la fecha de inicio de actividad es el día en el que empiezas a desarrollar tu trabajo como autónomo, no el día en que se te ocurrió la idea ni el día en que emites tu primera factura. Si ya has empezado a trabajar sin estar dado de alta, técnicamente estás cometiendo una infracción, y cuando te des de alta deberás declarar la fecha real de inicio incluso si es anterior al alta. Esto puede generar una multa de 200€ por alta fuera de plazo, pero es mejor asumir esa multa que ocultar la fecha real, porque Hacienda puede cruzar datos y las sanciones por falsedad son mucho más graves.
+**Esta fecha es crítica y debe ser coherente en todos tus trámites.** Legalmente, la fecha de inicio de actividad es el día en el que empiezas a desarrollar tu trabajo como autónomo, no el día en que se te ocurrió la idea ni el día en que emites tu primera factura.
+
+Si ya has empezado a trabajar sin estar dado de alta, técnicamente estás cometiendo una infracción, y cuando te des de alta deberás declarar la fecha real de inicio incluso si es anterior al alta. Esto puede generar una multa de 200€ por alta fuera de plazo, pero **es mejor asumir esa multa que ocultar la fecha real**, porque Hacienda puede cruzar datos y las sanciones por falsedad son mucho más graves.
 
 **Decisiones previas que debes tomar:**
 
@@ -93,7 +103,7 @@ Esta fecha es crítica y debe ser coherente en todos tus trámites. Legalmente, 
 
 ---
 
-## Paso 1: Alta en Hacienda (Modelo 036)
+## Alta en Hacienda: Modelo 036
 
 El primer trámite que debes completar es comunicar a la Agencia Tributaria que vas a iniciar una actividad económica. Esto se hace mediante el Modelo 036 de declaración censal. Hasta febrero de 2025 existía una versión simplificada llamada Modelo 037, pero ese formulario ya no existe, así que en 2026 todos los autónomos usan el mismo Modelo 036 independientemente de la complejidad de su actividad.
 
@@ -182,7 +192,7 @@ Elegirlo "a ojo" sin consultar el listado oficial, copiando el de otro autónomo
 
 ---
 
-## Paso 2: Alta en la Seguridad Social (RETA)
+## Alta en Seguridad Social: RETA y Tarifa Plana
 
 Una vez completado el alta en Hacienda, el siguiente paso es darte de alta en el Régimen Especial de Trabajadores Autónomos (RETA) de la Seguridad Social. Este es el trámite que realmente activa tu cuota mensual de autónomo y te da cobertura para prestaciones (baja por enfermedad, maternidad/paternidad, jubilación, etc.). Sin este alta, aunque tengas alta censal en Hacienda, no puedes trabajar legalmente como autónomo.
 
@@ -258,13 +268,11 @@ Ya hemos hablado de la importancia de marcar la casilla de Tarifa Plana en el fo
 
 Las comunidades que ofrecen Cuota Cero en 2026 incluyen Madrid, Andalucía, Aragón, Cantabria, Extremadura y Castilla-La Mancha (que reactivó su programa "Tarifa Plana Plus" con ayudas adicionales), entre otras. Ten en cuenta que los programas de Cuota Cero abren y cierran convocatorias periódicamente, por lo que es fundamental consultar el estado actual en tu comunidad. Si vives en una de estas regiones, puedes ahorrarte más de 1.000€ adicionales durante tu primer año. Consulta nuestra [guía completa de Cuota Cero 2026](/es/blog/guias/cuota-cero-autonomos-2026-comunidades-requisitos/) para saber si tu comunidad la ofrece y cómo solicitarla correctamente.
 
----
-
-## Paso 3: Comunicaciones adicionales (mutua y otros)
+### Comunicaciones adicionales: mutua y otros trámites
 
 Una vez completadas las dos altas principales (Hacienda y RETA), hay algunos trámites adicionales que pueden aplicarte según tu situación específica. No todos son obligatorios para todos, pero es importante que sepas cuándo necesitas hacerlos.
 
-### Mutua colaboradora: qué es y para qué sirve
+**Mutua colaboradora: qué es y para qué sirve**
 
 Ya elegiste una mutua al rellenar el formulario TA.0521, pero ¿qué hace exactamente esa mutua? Las mutuas colaboradoras con la Seguridad Social son entidades privadas que gestionan las prestaciones por contingencias profesionales (accidentes de trabajo y enfermedades profesionales) y, opcionalmente, pueden gestionar también la prestación por cese de actividad (el "paro" de los autónomos).
 
@@ -276,7 +284,7 @@ Normalmente no. Al elegirla en el formulario TA.0521, la Seguridad Social comuni
 
 Si más adelante quieres cambiar de mutua (por ejemplo, porque otra te ofrece mejores servicios), puedes hacerlo presentando una modificación en Import@ss. Tienes derecho a cambiar de mutua una vez al año.
 
-### Autónomo colaborador: si trabajas con tu pareja o familia
+**Autónomo colaborador: si trabajas con tu pareja o familia**
 
 Si tu cónyuge, pareja de hecho, o familiares hasta segundo grado (padres, hijos, hermanos, abuelos, nietos) van a trabajar contigo en tu actividad de forma habitual, pueden darse de alta como **autónomos colaboradores**. Este régimen tiene bonificaciones específicas: 50% de reducción en la cuota los primeros 18 meses y 25% hasta el mes 36.
 
@@ -284,7 +292,7 @@ Para que puedan acogerse a este régimen, deben cumplir ciertos requisitos: conv
 
 **Importante:** El autónomo colaborador no puede tener Tarifa Plana (tiene sus propias bonificaciones), y su cuota es independiente de la tuya. Es decir, si tu pareja se da de alta como autónoma colaboradora, tú pagarás tu cuota y ella pagará la suya (con el 50% de descuento los primeros 18 meses).
 
-### Comunicación de apertura de centro de trabajo (si aplica)
+**Comunicación de apertura de centro de trabajo (si aplica)**
 
 Si vas a trabajar desde un local, oficina o centro de trabajo que no es tu domicilio particular, es obligatorio comunicar la apertura de ese centro a la autoridad laboral de tu comunidad autónoma. Esto se hace mediante un formulario específico que varía según la comunidad, generalmente llamado "Comunicación de apertura de centro de trabajo" o similar.
 
@@ -292,7 +300,7 @@ Esta comunicación es necesaria aunque trabajes solo, sin empleados. El objetivo
 
 El plazo para presentarla suele ser "antes del inicio de la actividad en el centro" o "dentro de los 30 días siguientes a la apertura", dependiendo de la comunidad. Las sanciones por no comunicarlo son variables, pero pueden llegar hasta 2.000€ en caso de inspección.
 
-### Licencias de actividad y otros permisos locales
+**Licencias de actividad y otros permisos locales**
 
 Dependiendo de tu actividad y ubicación, puede que necesites licencias municipales específicas:
 
@@ -306,7 +314,7 @@ Consulta con el ayuntamiento de tu municipio qué licencias te aplican. Este es 
 
 ---
 
-## Errores comunes que cuestan dinero
+## Errores que cuestan dinero y cómo evitarlos
 
 Después de ayudar a cientos de autónomos con su alta y revisar decenas de casos de errores que han costado multas, regularizaciones o pérdida de ayudas, he identificado los errores más frecuentes que se repiten una y otra vez. Aquí están, junto con cómo evitarlos.
 
@@ -352,9 +360,7 @@ Tienes una idea de negocio, crees que va a funcionar, y te das de alta como aut�
 
 **Solución:** No te des de alta hasta que tengas al menos un cliente confirmado o ingresos razonablemente seguros en las semanas siguientes. Puedes hacer toda la preparación previa (elegir nombre comercial, diseñar tu web, preparar tus servicios) sin estar dado de alta. Y cuando tengas tu primer cliente real listo para pagarte, entonces te das de alta y empiezas a facturar. Así aprovechas al máximo tus 12 meses de Tarifa Plana cuando realmente los necesitas.
 
----
-
-## Checklist final: qué debes tener tras darte de alta
+### Checklist final: qué debes tener tras darte de alta
 
 Cuando hayas completado todos los pasos, deberías tener estos documentos y confirmaciones en tu poder. Si falta alguno, algo ha ido mal y debes revisarlo inmediatamente.
 
@@ -382,9 +388,7 @@ Si abriste un centro de trabajo, deberías tener el justificante de la comunicac
 
 Asegúrate de que puedes entrar sin problemas en la Sede Electrónica de la AEAT (para presentar tus declaraciones trimestrales de IVA e IRPF), en Import@ss (para consultar tu situación en Seguridad Social y modificar bases si es necesario), y en la sede electrónica de tu comunidad autónoma (por si hay ayudas o bonificaciones autonómicas que quieras solicitar).
 
----
-
-## Próximos pasos: emitir tu primera factura con Invoo
+### Próximos pasos: emitir tu primera factura
 
 Ya estás dado de alta oficialmente. Has completado el Modelo 036 en Hacienda, te has inscrito en el RETA, tienes tu Tarifa Plana activa, y has recibido el primer recibo con la cuota correcta. Ahora llega el momento de la verdad: facturar tu primer trabajo.
 
@@ -400,42 +404,49 @@ El precio es accesible incluso para autónomos que están empezando: **10,90€/
 
 ## Preguntas frecuentes
 
-**¿Puedo darme de alta como autónomo si ya trabajo por cuenta ajena?**
+<AccordionGroup>
 
-Sí, perfectamente. Esto se llama pluriactividad: trabajas como asalariado y además como autónomo. Cotizarás en el Régimen General por tu trabajo asalariado y en el RETA por tu actividad autónoma. Lo que debes saber es que al darte de alta en pluriactividad, debes elegir entre Tarifa Plana o bonificación por pluriactividad (50% de descuento los primeros 18 meses). No puedes tener ambas. En la mayoría de casos, la Tarifa Plana sale más rentable, pero consulta con tu gestoría para tu caso específico.
+<AccordionGroupItem title="¿Qué documentos necesito para darme de alta como autónomo?" value="faq-1">
 
-**¿Tengo que tener un nombre comercial o puedo facturar con mi nombre?**
+Necesitas tu **DNI o NIE en vigor**, número de Seguridad Social (NUSS), y certificado digital, Cl@ve o DNI electrónico para identificarte en las sedes electrónicas.
 
-Puedes facturar perfectamente con tu nombre y apellidos como persona física. No es obligatorio tener un nombre comercial. Si quieres usar un nombre comercial (por ejemplo, "Diseños Creativos Laura García"), puedes hacerlo, pero debes declararlo en el Modelo 036 en la casilla correspondiente. El nombre comercial NO te obliga a crear una empresa o sociedad, simplemente es una denominación que usas para tu actividad pero sigues siendo persona física.
+También debes tener clara tu actividad económica para elegir el epígrafe IAE correcto. Si nunca has trabajado en España, necesitarás solicitar el NUSS antes de poder completar el alta, lo cual añade unos días al proceso.
 
-**¿Cuánto tarda todo el proceso desde que empiezo hasta que estoy operativo?**
+Es recomendable verificar que estás al corriente de pagos con Hacienda y Seguridad Social antes de iniciar el proceso, porque si tienes deudas pendientes pueden denegarte la Tarifa Plana.
 
-Si lo haces todo online y tienes certificado digital o Cl@ve, puedes completar ambas altas (Hacienda y Seguridad Social) en el mismo día. El Modelo 036 se procesa inmediatamente, y el TA.0521 suele confirmarse en 24-48 horas hábiles. Dicho esto, si es tu primera vez, te recomiendo dedicarle al menos 2-3 horas a recopilar toda la información, elegir el epígrafe IAE correcto, entender qué base de cotización elegir, etc. No lo hagas con prisas el mismo día que tienes que empezar a trabajar.
+</AccordionGroupItem>
 
-**¿Qué pasa si me equivoco al rellenar algo?**
+<AccordionGroupItem title="¿Cuánto cuesta darse de alta como autónomo en 2026?" value="faq-2">
 
-Si te das cuenta del error antes de enviar el formulario, simplemente corrígelo y ya. Si ya enviaste el Modelo 036 con algún dato incorrecto (por ejemplo, te equivocaste de epígrafe IAE o pusiste mal tu domicilio fiscal), puedes presentar un Modelo 036 de modificación para corregirlo. Es el mismo formulario pero marcas la casilla "Modificación" en lugar de "Alta" y cambias el dato erróneo. Si el error es en el TA.0521 de la Seguridad Social (por ejemplo, elegiste mal tu base de cotización), puedes modificarla a través de Import@ss o la sede electrónica de la TGSS.
+**El alta en sí es gratuita**—no pagas tasas por presentar el Modelo 036 ni el TA.0521.
 
-**¿Puedo darme de baja y volver a darme de alta varias veces?**
+Lo que sí pagarás es la cuota mensual de autónomo desde el día que te des de alta. Con Tarifa Plana son **80€/mes más 8,72€ de Mutua (88,72€ total)** durante los primeros 12 meses.
 
-Sí, puedes darte de baja y alta tantas veces como quieras. Cada vez que causes baja en el RETA, dejas de pagar cuota desde el día siguiente. Y cuando te vuelvas a dar de alta, volverás a pagar desde ese día. Lo que debes saber es que si te das de baja antes de cumplir 12 meses desde tu alta inicial, pierdes los meses restantes de Tarifa Plana que te quedaban. Y si vuelves a darte de alta después, solo podrás volver a solicitar Tarifa Plana si han pasado 2 años desde tu primera alta (o 3 años si ya la usaste antes).
+Sin Tarifa Plana, la cuota depende de tu base de cotización pero ronda los 200€/mes según el nuevo sistema de tramos por ingresos reales de 2026.
 
-**¿Necesito una cuenta bancaria específica para autónomos?**
+</AccordionGroupItem>
 
-No es obligatorio tener una cuenta bancaria separada para tu actividad de autónomo. Puedes usar tu cuenta personal normal. Dicho esto, es muy recomendable tener una cuenta específica para tu actividad porque facilita enormemente la contabilidad: todos los ingresos y gastos de tu negocio están en una cuenta, y tus gastos personales en otra. Esto hace mucho más fácil calcular tus rendimientos netos, justificar gastos ante Hacienda, y llevar un control de tu tesorería.
+<AccordionGroupItem title="¿Puedo perder la Tarifa Plana si olvido marcar la casilla?" value="faq-3">
 
-Muchos bancos ofrecen cuentas para autónomos sin comisiones o con comisiones muy bajas (0-5€ al mes). Merece la pena tener una cuenta separada aunque no sea obligatorio legalmente.
+Sí, y **es irrecuperable**. La Tarifa Plana solo se puede solicitar al darte de alta en el RETA marcando la casilla correspondiente en el formulario TA.0521.
 
-**¿Qué hago si tengo problemas con el alta o no entiendo algo?**
+Si olvidas marcarla, no se aplica automáticamente y no puedes solicitarla después. Esto significa que pagarás la cuota completa (unos 200€/mes) en lugar de 88€/mes, **perdiendo más de 1.300€ en tu primer año**.
 
-Si tienes dudas durante el proceso de alta, puedes:
+Por eso es crítico revisar tres veces que la casilla está marcada antes de enviar el formulario.
 
-1. Llamar al teléfono de información de la AEAT para dudas sobre el Modelo 036: 901 33 55 33 (horario de lunes a viernes de 9:00 a 19:00)
-2. Llamar al teléfono de información de la Seguridad Social para dudas sobre el RETA y Tarifa Plana: 901 50 20 50
-3. Pedir cita en tu oficina local de Hacienda o Seguridad Social para que te ayuden presencialmente (puede tardar días o semanas según saturación)
-4. Contratar una gestoría para que hagan todo el proceso por ti (coste aproximado: 100-200€ por el alta completa)
+</AccordionGroupItem>
 
-Si es tu primera vez como autónomo y tienes dudas sobre muchos aspectos (régimen de IVA, retenciones, deducciones, etc.), probablemente merece la pena pagar a una gestoría para que te orienten en el alta inicial. Una vez dado de alta, ya puedes decidir si sigues con gestoría o gestionas tú mismo tus obligaciones fiscales.
+<AccordionGroupItem title="¿Cuál es el mejor día del mes para darse de alta?" value="faq-4">
+
+El **último día del mes anterior** a cuando quieres empezar a facturar. Por ejemplo, si quieres trabajar desde febrero, date de alta el 31 de enero.
+
+La cuota se prorratea por días, así que al darte de alta el día 31 solo pagas 1/30 de la cuota mensual (unos 3€), y ya en febrero empiezas con el mes completo bonificado.
+
+Esto te ahorra 80-85€ en tu primer mes, aunque debes asegurarte de que la fecha coincida con la que declaraste como inicio de actividad en Hacienda.
+
+</AccordionGroupItem>
+
+</AccordionGroup>
 
 ---
 

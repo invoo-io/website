@@ -57,7 +57,7 @@ Key behaviors:
 
 ### 4. Quality Check
 
-Run through Section 10 checklist in the guide:
+Run through Section 11 checklist in the guide:
 - 🔴 Required items must ALL pass
 - 🟡 Recommended items should mostly pass
 - 🟢 Polish items improve quality
@@ -110,11 +110,14 @@ When creating content:
 
 ## Common Mistakes to Avoid
 
-1. **Fragmented paragraphs** - Write 4-6 sentences, not 1-2
+1. **Fragmented paragraphs** - Write 2-4 sentences per paragraph, one idea each
 2. **Generic content** - Add Spanish-specific examples and data
 3. **Missing keyTakeaways** - Always include exactly 4
 4. **Tables in content** - Use structured lists instead
 5. **Wrong image format** - Must be WebP
+6. **Adding "Fuentes" section in content** - Sources go in frontmatter `sources` array (minimum 3), NOT in article body. The blog has a dedicated Sources component.
+7. **Adding "Aviso legal" disclaimer in content** - The Legal Disclaimer component renders automatically at bottom of article. Don't add it manually.
+8. **Missing sources in frontmatter** - Every article MUST have at least 3 sources with `name` and `url` in frontmatter.
 
 ## Coordination with Other Agents
 

@@ -32,16 +32,27 @@ sources:
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186"
   - name: "Ley 11/2021 Antifraude"
     url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11473"
-lastVerified: "Noviembre 2025"
+lastVerified: "Enero 2026"
+faq:
+  - question: "¿Puedo seguir facturando con Excel después de julio 2026?"
+    answer: "Solo si escribes todo a mano sin usar NINGUNA fórmula. Si calculas IVA, totales o cualquier operación automáticamente, estás usando un Sistema Informático de Facturación y debes cumplir Verifactu. La multa por incumplimiento es de 50.000€."
+  - question: "¿Qué es el código QR de Verifactu y para qué sirve?"
+    answer: "Es un código que tu software genera automáticamente en cada factura con datos básicos (NIF, número, fecha, importe). Permite que tu cliente y Hacienda verifiquen que la factura es legítima y no ha sido borrada o modificada."
+  - question: "¿Cuál es la multa por no cumplir con Verifactu?"
+    answer: "La multa es de 50.000€ fijos por ejercicio fiscal, independientemente de tu facturación. Si usas software no conforme durante 3 años, acumulas 150.000€ en sanciones. La multa no es proporcional a tu volumen de negocio."
+  - question: "¿Tengo que pagar por usar Verifactu?"
+    answer: "Depende. La AEAT ofrece un formulario gratuito básico para autónomos simples. Si usas software comercial como Invoo, Holded o Quipu, Verifactu viene incluido en tu tarifa mensual sin coste adicional."
 ---
 
-**Aviso legal:** Esta guía tiene carácter informativo y no constituye asesoramiento fiscal profesional. La normativa tributaria está sujeta a cambios. Para decisiones específicas sobre tu caso, consulta siempre con un asesor fiscal colegiado. Información actualizada a noviembre de 2025.
+> **En resumen:** Verifactu obliga a tu software de facturación a generar un código QR oficial en cada factura desde enero 2026 (sociedades) o julio 2026 (autónomos). **Excel con fórmulas = obligado**. La multa por incumplimiento es de 50.000€ fijos por ejercicio. En esta guía te explicamos fechas, requisitos y cómo cumplir sin complicaciones.
 
 ---
 
 Son las 11 PM del 30 de junio de 2026.
 
-Mañana arranca la obligación de Verifactu para autónomos. Abres Google. Buscas "¿qué es Verifactu?". Te salen 147 artículos. Todos hablan de "SIF", "hash encadenado", "XML", "registros de alta".
+Mañana arranca la obligación de Verifactu para autónomos. Abres Google. Buscas "¿qué es Verifactu?". Te salen 147 artículos.
+
+Todos hablan de "SIF", "hash encadenado", "XML", "registros de alta".
 
 Cierras el portátil.
 
@@ -55,9 +66,13 @@ En este artículo encontrarás todo lo que necesitas saber sin tocar una sola l�
 
 ---
 
-## El problema real: ¿por qué existe Verifactu?
+## Qué es Verifactu y por qué existe
 
-Imagina que tienes una tienda. Al final del día, borras algunas ventas de caja. Le dices a Hacienda que vendiste 100€. Pero en realidad vendiste 200€. Te ahorras el IVA de esos 100€ fantasma.
+### El problema real: ¿por qué existe Verifactu?
+
+Imagina que tienes una tienda. Al final del día, borras algunas ventas de caja.
+
+Le dices a Hacienda que vendiste 100€. Pero en realidad vendiste 200€. Te ahorras el IVA de esos 100€ fantasma.
 
 **Eso es lo que algunos negocios hacían con software de "doble uso".**
 
@@ -69,138 +84,7 @@ No es la factura electrónica (eso es otra cosa). No es para particulares que fa
 
 Y sí, **afecta al 90% de autónomos**.
 
----
-
-## Las fechas que sí están confirmadas (no hay prórroga)
-
-**29 de julio de 2025**
-Los fabricantes de software DEBEN tener sus programas adaptados. Si tu software no está listo para esta fecha, cambia de software YA.
-
-**1 de enero de 2026**
-**Obligatorio para sociedades** (S.L., S.A., y todas las entidades sujetas al Impuesto sobre Sociedades según el artículo 3.1.a del Real Decreto)
-
-**1 de julio de 2026**
-**Obligatorio para autónomos** y resto de empresarios
-
-**Fuente oficial:** [Real Decreto 254/2025](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600) publicado en el BOE. Estas fechas NO van a cambiar. No se ha anunciado periodo de gracia oficial.
-
----
-
-## ¿Te aplica Verifactu? Guía rápida de decisión
-
-### SÍ estás obligado
-
-**Autónomo con software de facturación**
-Si usas [Quipu](https://getquipu.com), [Holded](https://www.holded.com), [Billin](https://www.billin.net), [Invoo](https://invoo.es) o cualquier otro programa de facturación → **Obligado desde el 1 de julio de 2026**
-
-**Sociedad (S.L., S.A.) con software**
-Cualquier entidad sujeta al Impuesto sobre Sociedades que use software de facturación → **Obligada desde el 1 de enero de 2026**
-
-**Excel/Word CON fórmulas**
-Si calculas IVA, totales o sumas con cualquier fórmula (aunque sea `=A1*1.21`) → **Obligado desde el 1 de julio de 2026**
-
-### NO estás obligado
-
-**Excel/Word SIN fórmulas**
-Si usas Excel o Word como una máquina de escribir (100% manual, sin ninguna fórmula) → **No te aplica Verifactu**
-
-**Facturas manuscritas**
-Si haces facturas completamente a mano en papel o talonarios → **No te aplica Verifactu**
-
-**Ya estás en el SII**
-Si ya usas el [Suministro Inmediato de Información de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) → **Ya estás cubierto, no necesitas Verifactu adicional**
-
-**País Vasco o Navarra con TicketBAI**
-Si tu domicilio fiscal está en territorio foral y ya usas [TicketBAI](https://www.batuz.eus/es/ticketbai) → **Tienes tu propio sistema, Verifactu no te aplica**
-
-**Alquileres de vivienda (particulares)**
-Si eres particular que alquila vivienda → **No te aplica Verifactu**
-
-### Depende de tu caso
-
-**Régimen de módulos (estimación objetiva)**
-La situación es más compleja. Consulta la sección "El caso especial de los módulos" más abajo. En general: si solo emites tickets simplificados a consumidor final y todo es manual → probablemente exento. Si usas TPV o software → obligado.
-
----
-
-## La trampa de Excel/Word (Lee esto antes de seguir)
-
-**Esto es lo más confuso de toda la normativa:**
-
-Muchísimos autónomos usan Excel para facturar. Y la mayoría piensa: "Excel no es un programa de facturación, estoy exento."
-
-**ERROR FATAL.**
-
-### La regla REAL (Consulta Vinculante V2653-24 de la DGT):
-
-**Excel/Word como "máquina de escribir" = NO obligado:**
-- Escribes TODO a mano en cada celda
-- **CERO fórmulas** (ni siquiera `=A1*1.21` para calcular IVA)
-- No usas macros
-- No calculas nada automáticamente
-- Solo escribes y guardas/imprimes
-
-**Excel/Word con CUALQUIER automatismo = SÍ obligado:**
-- Usas **cualquier fórmula** (aunque sea simple)
-- Calculas totales, IVA, subtotales automáticamente
-- Usas macros o funciones
-- Generas resúmenes, listados o informes
-- Auto-numeras facturas
-- Exportas datos a otros programas
-
-### La cita oficial que cambia todo:
-
-> "Si la consultante utiliza hojas de cálculo, bases de datos o procesadores **no se puede concluir que no resulte obligada** por el Reglamento"
-> — Dirección General de Tributos, [Consulta V2653-24](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2653-24)
-
-**Traducción:** Si usas Excel → Probablemente estés obligado.
-
-### ¿Qué pasa en la práctica?
-
-**El 99% de la gente que usa Excel para facturar:**
-- Calcula el IVA con una fórmula (`=Subtotal * 1.21`)
-- Suma automáticamente líneas de concepto
-- Tiene la numeración correlativa automatizada
-- Copia datos entre facturas
-
-**Eso YA es un "Sistema Informático de Facturación" (SIF).**
-
-**Por tanto:**
-- Excel con fórmulas = Verifactu te aplica desde julio 2026
-- Multa si no cumples: 50.000€
-
-### La "Regla de los 4 NO" para estar exento
-
-Según la Consulta Vinculante V0058-25 de febrero de 2025, solo estás exento si cumples los 4 NO:
-
-1. **NO produces** ningún sistema informático de facturación
-2. **NO comercializas** ningún SIF
-3. **NO usas** ningún SIF (ni Excel con fórmulas)
-4. **NO posees** ningún SIF
-
-**Importante:** Si usas un sistema informático para CUALQUIER factura, debes cumplir Verifactu para TODAS tus facturas.
-
-### ¿Cómo saber si tu Excel califica como exento?
-
-**Pregúntate:**
-¿Calculas algo automáticamente en tu Excel? (IVA, totales, restas, sumas)
-
-- **SÍ** → Estás usando un SIF → Verifactu te aplica
-- **NO** → Puede que estés exento (pero ¿de verdad no calculas NADA?)
-
-**La realidad brutal:**
-
-Si haces más de 3 facturas al mes, **necesitas automatizar** (o pierdes 2 horas/mes).
-
-Y si automatizas aunque sea mínimamente → Ya estás obligado a Verifactu.
-
-**Recomendación:**
-
-No juegues con fuego. Asume que si usas Excel con fórmulas, **estás obligado**. La multa de 50.000€ no compensa el ahorro de usar software gratuito.
-
----
-
-## Qué es Verifactu EN SIMPLE (sin XML ni hashes)
+### Qué es Verifactu EN SIMPLE (sin XML ni hashes)
 
 **Verifactu = Tu software debe:**
 
@@ -212,7 +96,7 @@ No juegues con fuego. Asume que si usas Excel con fórmulas, **estás obligado**
 
 El resto (hash, encadenamiento, firma electrónica) son cosas técnicas que hace TU SOFTWARE. Tú no tocas nada.
 
-### Lo que sí verás tú:
+### Lo que sí verás tú
 
 **Antes de Verifactu (ahora):**
 ```
@@ -237,38 +121,25 @@ Nada. El QR lo genera el software. Tú solo haces la factura como siempre.
 **¿Qué cambia para tu cliente?**
 Puede escanear el QR y verificar que la factura está registrada. Sabe que no es falsa.
 
----
-
-## Los 2 caminos: Verifactu SÍ vs Verifactu NO
+### Los 2 caminos: VERI*FACTU vs NO VERI*FACTU
 
 Tu software puede funcionar de dos formas:
 
-### Opción 1: VERI*FACTU (con envío automático)
+**Opción 1: VERI*FACTU (con envío automático)**
 
-**Qué hace:**
 Cada vez que emites una factura, tu software **envía automáticamente** un "registro" a Hacienda con los datos clave (NIF, número, fecha, importe).
 
-**Ventajas:**
-- Tu cliente puede verificar al instante que la factura está en Hacienda
-- Si Hacienda te inspecciona, ya lo tienen todo
-- Más "fiabilidad fiscal" (buena imagen)
-- La factura debe mostrar "VERI*FACTU" o "Factura verificable en la Sede electrónica de la AEAT"
+**Ventajas:** Tu cliente puede verificar al instante que la factura está en Hacienda. Si Hacienda te inspecciona, ya lo tienen todo. Más "fiabilidad fiscal" (buena imagen). La factura debe mostrar "VERI*FACTU" o "Factura verificable en la Sede electrónica de la AEAT".
 
-**Desventajas:**
-- Hacienda tiene TODAS tus facturas en tiempo real (algunos lo ven como invasivo)
+**Desventajas:** Hacienda tiene TODAS tus facturas en tiempo real (algunos lo ven como invasivo).
 
-### Opción 2: NO VERI*FACTU (sin envío automático)
+**Opción 2: NO VERI*FACTU (sin envío automático)**
 
-**Qué hace:**
 Tu software **guarda los registros** de forma segura internamente. NO los envía. Solo cuando Hacienda te los pide (inspección), los entregas.
 
-**Ventajas:**
-- No compartes tus facturas hasta que Hacienda lo solicite
-- Más "privacidad" (relativa, porque en inspección lo das igual)
+**Ventajas:** No compartes tus facturas hasta que Hacienda lo solicite. Más "privacidad" (relativa, porque en inspección lo das igual).
 
-**Desventajas:**
-- Tu cliente NO puede verificar la factura en el momento (pero puede enviar los datos del QR a la AEAT para contraste futuro)
-- Si Hacienda inspecciona, debes poder entregar todo
+**Desventajas:** Tu cliente NO puede verificar la factura en el momento (pero puede enviar los datos del QR a la AEAT para contraste futuro). Si Hacienda inspecciona, debes poder entregar todo.
 
 **¿Cuál elegir?**
 
@@ -280,7 +151,97 @@ Tu software **guarda los registros** de forma segura internamente. NO los envía
 
 ---
 
-## El famoso código QR: qué lleva dentro y para qué sirve
+## Fechas clave y quién está obligado
+
+### Las fechas confirmadas (no hay prórroga)
+
+**29 de julio de 2025**
+Los fabricantes de software DEBEN tener sus programas adaptados. **Si tu software no está listo para esta fecha, cambia de software YA.**
+
+**1 de enero de 2026**
+**Obligatorio para sociedades** (S.L., S.A., y todas las entidades sujetas al Impuesto sobre Sociedades según el artículo 3.1.a del Real Decreto)
+
+**1 de julio de 2026**
+**Obligatorio para autónomos** y resto de empresarios
+
+**Fuente oficial:** [Real Decreto 254/2025](https://www.boe.es/buscar/doc.php?id=BOE-A-2025-6600) publicado en el BOE. Estas fechas NO van a cambiar. No se ha anunciado periodo de gracia oficial.
+
+### ¿Te aplica Verifactu? Guía rápida
+
+**SÍ estás obligado si:**
+
+- Usas software de facturación ([Quipu](https://getquipu.com), [Holded](https://www.holded.com), [Billin](https://www.billin.net), [Invoo](https://invoo.es)) → **Obligado desde julio 2026 (autónomos) o enero 2026 (sociedades)**
+- Usas Excel/Word CON fórmulas (aunque sea `=A1*1.21` para calcular IVA) → **Obligado desde julio 2026**
+- Tienes TPV informatizado o software conectado
+
+**NO estás obligado si:**
+
+- Excel/Word SIN fórmulas (100% manual, como máquina de escribir) → **No te aplica**
+- Facturas manuscritas en papel o talonarios → **No te aplica**
+- Ya usas el [SII de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) → **Ya estás cubierto**
+- País Vasco o Navarra con [TicketBAI](https://www.batuz.eus/es/ticketbai) → **Sistema propio, Verifactu no aplica**
+- Particular que alquila vivienda → **No te aplica**
+
+**Régimen de módulos (depende):**
+Si solo emites tickets simplificados a consumidor final y todo es manual → probablemente exento. **Si usas TPV o software → obligado.** Consulta con tu gestoría para tu caso específico.
+
+### La trampa de Excel/Word (LEE ESTO ANTES DE SEGUIR)
+
+Muchísimos autónomos usan Excel para facturar. Y la mayoría piensa: "Excel no es un programa de facturación, estoy exento."
+
+**ERROR FATAL.**
+
+**La regla REAL según la Consulta Vinculante V2653-24:**
+
+**Excel/Word como "máquina de escribir" = NO obligado:**
+- Escribes TODO a mano en cada celda
+- **CERO fórmulas** (ni siquiera `=A1*1.21` para calcular IVA)
+- No usas macros ni calculas nada automáticamente
+- Solo escribes y guardas/imprimes
+
+**Excel/Word con CUALQUIER automatismo = SÍ obligado:**
+- Usas **cualquier fórmula** (aunque sea simple)
+- Calculas totales, IVA, subtotales automáticamente
+- Usas macros, funciones, auto-numeración o exportas datos
+
+**La cita oficial que cambia todo:**
+
+> "Si la consultante utiliza hojas de cálculo, bases de datos o procesadores **no se puede concluir que no resulte obligada** por el Reglamento"
+> — Dirección General de Tributos, [Consulta V2653-24](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V2653-24)
+
+**Traducción:** Si usas Excel → Probablemente estés obligado.
+
+**El 99% de la gente que usa Excel para facturar:**
+- Calcula el IVA con una fórmula (`=Subtotal * 1.21`)
+- Suma automáticamente líneas de concepto
+- Tiene la numeración correlativa automatizada
+
+**Eso YA es un "Sistema Informático de Facturación" (SIF).**
+
+**Por tanto:** Excel con fórmulas = Verifactu te aplica desde julio 2026. **Multa si no cumples: 50.000€.**
+
+**La "Regla de los 4 NO" para estar exento:**
+
+Según la Consulta Vinculante V0058-25 de febrero 2025, solo estás exento si cumples los 4 NO:
+
+1. **NO produces** ningún sistema informático de facturación
+2. **NO comercializas** ningún SIF
+3. **NO usas** ningún SIF (ni Excel con fórmulas)
+4. **NO posees** ningún SIF
+
+**Importante:** Si usas un sistema informático para CUALQUIER factura, debes cumplir Verifactu para TODAS tus facturas.
+
+**Recomendación final:**
+
+Si haces más de 3 facturas al mes, **necesitas automatizar** (o pierdes 2 horas/mes). Y si automatizas aunque sea mínimamente → Ya estás obligado a Verifactu.
+
+No juegues con fuego. Asume que si usas Excel con fórmulas, **estás obligado**. La multa de 50.000€ no compensa el ahorro de usar software gratuito.
+
+---
+
+## El código QR y requisitos técnicos
+
+### Qué lleva el código QR
 
 **Contenido del QR (obligatorio):**
 - NIF del emisor
@@ -294,13 +255,12 @@ Tu software **guarda los registros** de forma segura internamente. NO los envía
 https://www2.aeat.es/wlpl/TIKE-CONT/ValidarQR?nif=89890001K&numserie=12345678&G33&fecha=01-01-2026&importe=1210.00
 ```
 
-**Tamaño:**
-Entre 30×30 mm y 40×40 mm (como un sello de correos). Debe cumplir el estándar ISO/IEC 18004 con nivel M de corrección de errores.
+**Especificaciones:**
+- **Tamaño:** Entre 30×30 mm y 40×40 mm (como un sello de correos)
+- **Estándar:** ISO/IEC 18004 con nivel M de corrección de errores
+- **Ubicación:** Al principio de la factura, antes del contenido principal
 
-**Ubicación:**
-Al principio de la factura, antes del contenido principal
-
-**Para qué sirve:**
+### Para qué sirve el QR
 
 **Si usas VERI*FACTU:**
 Tu cliente escanea → Hacienda compara → Responde:
@@ -310,375 +270,161 @@ Tu cliente escanea → Hacienda compara → Responde:
 **Si usas NO VERI*FACTU:**
 Tu cliente escanea → Envía datos a Hacienda → Hacienda lo guarda para futuro contraste
 
-**En resumen:**
-El QR es la forma de que tu cliente (y Hacienda) sepan que tu factura es legítima y no ha sido borrada.
+**En resumen:** El QR es la forma de que tu cliente (y Hacienda) sepan que tu factura es legítima y no ha sido borrada.
 
----
+### Casos prácticos reales
 
-## El caso especial de los módulos
+**Caso 1: Laura, diseñadora freelance**
 
-**Esto genera mucha confusión, así que vamos a aclararlo:**
+Usa una plantilla de Excel con fórmulas para calcular IVA (`=B10*0.21`) y totales (`=B10+C10`). Guarda como PDF y envía.
 
-Los autónomos en **régimen de módulos (estimación objetiva)** tienen una situación particular porque su tributación se basa en parámetros objetivos, no en facturación real.
+**¿Le aplica Verifactu?** SÍ. Aunque sea Excel, está usando fórmulas. Eso ya es un "Sistema Informático de Facturación".
 
-**Estás EXENTO si:**
-- Solo emites tickets simplificados a consumidores finales
-- No usas ningún sistema informático para facturar
-- Toda tu facturación es manual
+**Soluciones:**
+- Cambiar a software Verifactu ([Invoo](https://invoo.es), [Holded](https://www.holded.com), [Quipu](https://getquipu.com)) antes de julio 2026
+- Usar la [app gratuita de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html) (pocas facturas)
+- Excel SIN fórmulas (escribir totales a mano) → Inviable si hace +5 facturas/mes
 
-**Estás OBLIGADO si:**
-- Emites facturas completas a otras empresas (B2B)
-- Usas TPV informatizado o software de facturación
-- Realizas actividades mixtas (parte módulos, parte estimación directa)
+**Riesgo:** Multa de 50.000€ por usar Excel con fórmulas sin cumplir Verifactu.
 
-**La realidad:** La mayoría de los autónomos en módulos que emiten cualquier tipo de factura o ticket con software deberán cumplir Verifactu desde el 1 de julio de 2026.
+**Caso 2: Javier, consultor IT**
 
-**Consulta con tu gestoría** para tu caso específico, ya que la AEAT puede emitir clarificaciones adicionales.
+Usa [Holded](https://www.holded.com). Factura a empresas españolas (le retienen 15%) y particulares.
 
----
+**¿Le aplica?** SÍ. Usa software. **Obligado desde 1 julio 2026.**
 
-## Casos prácticos reales
+**Acción:** Verificar que Holded actualiza para Verifactu antes del 29 julio 2025. Decidir: ¿VERI*FACTU (envío auto) o NO VERI*FACTU? Recomendación: VERI*FACTU para dar más fiabilidad fiscal a clientes corporativos.
 
-### Caso 1: Laura, diseñadora freelance (100% a particulares)
+**Caso 3: Marta, propietaria de S.L. con 3 empleados**
 
-**Situación:**
-Usa Canva para presupuestos. Tiene una plantilla de Excel donde pone:
-- Nombre del cliente (celda A5)
-- Concepto (celda A10)
-- Precio sin IVA (celda B10)
-- IVA 21% (celda C10 con fórmula `=B10*0.21`)
-- Total (celda D10 con fórmula `=B10+C10`)
+Tiene un TPV conectado a software de facturación. Vende a público general y pequeñas empresas.
 
-Guarda el Excel como PDF y lo envía.
+**¿Le aplica?** SÍ. Es sociedad + usa software. **Obligada desde 1 enero 2026.**
 
-**¿Le aplica Verifactu?**
-**SÍ.** Aunque sea Excel, está usando fórmulas para calcular IVA y totales. Eso ya es un "Sistema Informático de Facturación".
-
-**¿Qué debe hacer?**
-1. **Opción A:** Cambiar a software Verifactu ([Invoo](https://invoo.es), [Holded](https://www.holded.com), [Quipu](https://getquipu.com)) antes de julio 2026
-2. **Opción B:** Usar la [app gratuita de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html) (si hace pocas facturas)
-3. **Opción C:** Seguir con Excel SIN fórmulas (escribir totales a mano) → Inviable si hace +5 facturas/mes
-
-**Riesgo de no hacer nada:**
-Multa de 50.000€ por usar Excel con fórmulas sin cumplir Verifactu.
-
-**Con [Invoo](https://invoo.es):**
-- Factura en 30 segundos
-- QR automático desde julio 2026
-- Ahorra 8 horas/mes
-- Coste: 10,90€/mes (menos que un café al día)
+**Acción:** Su proveedor de TPV debe adaptar el sistema antes de octubre 2025. TODAS las facturas (incluso tickets simplificados) llevarán QR desde enero 2026. **Crítico:** Formar a empleados—NO se puede "borrar" una venta. TPV antiguo sin actualización = multa de 50.000€.
 
 Además, con un software adecuado podrás controlar mejor tus gastos deducibles. Consulta las [15 deducciones fiscales que puedes aprovechar como autónomo](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana/).
 
 ---
 
-### Caso 2: Javier, consultor IT (80% empresas, 20% particulares)
+## Sanciones, errores comunes y checklist
 
-**Situación:**
-Usa [Holded](https://www.holded.com). Factura a empresas españolas (le retienen 15%) y a algunos particulares.
-
-**¿Le aplica Verifactu?**
-SÍ. Usa software. Obligado desde **1 julio 2026**.
-
-**Qué debe hacer:**
-1. **Antes del 29 julio 2025:** Verificar que Holded actualiza para Verifactu
-2. **Julio 2026:** Sus facturas llevarán QR automático
-3. **Decidir:** ¿VERI*FACTU (envío auto) o NO VERI*FACTU (sin envío)?
-
-**Recomendación para Javier:**
-VERI*FACTU. Al ser consultor con clientes corporativos, el envío automático le da más "fiabilidad fiscal". Sus clientes grandes lo valorarán.
-
----
-
-### Caso 3: Marta, propietaria de S.L. con 3 empleados (ferretería)
-
-**Situación:**
-Tiene un TPV conectado a software de facturación. Vende a público general y a pequeñas empresas.
-
-**¿Le aplica Verifactu?**
-SÍ. Es sociedad + usa software. Obligada desde **1 enero 2026**.
-
-**Qué debe hacer:**
-1. **Antes de octubre 2025:** Su proveedor de TPV debe adaptar el sistema
-2. **Enero 2026:** TODAS sus facturas (incluso tickets simplificados) llevarán QR
-3. **Formación:** Sus empleados deben saber que NO se puede "borrar" una venta
-
-**Crítico:**
-Si usa un TPV antiguo sin actualización → Multa de 50.000€. Debe cambiar YA.
-
----
-
-## Las sanciones reales (sin exagerar)
-
-### Sanción principal: uso de software no conforme
+### Las sanciones reales
 
 **[Artículo 201 bis de la Ley General Tributaria](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a201bis):**
 
 **Multa fija:** 50.000€ **por ejercicio fiscal**
 
-**¿Por qué?**
+**¿Por qué te multan?**
 - Usar software que no cumple Verifactu
 - Usar Excel con fórmulas sin cumplir requisitos
 - Usar software alterado ("doble uso")
 - **Poseer** software no conforme (aunque no lo uses activamente)
 
-**Ejemplo real:**
-Autónomo sigue usando Excel con fórmulas desde julio 2026 hasta diciembre 2028.
+**Ejemplo real:** Autónomo sigue usando Excel con fórmulas desde julio 2026 hasta diciembre 2028.
 → 50.000€ (2026) + 50.000€ (2027) + 50.000€ (2028) = **150.000€**
 
-**¿Es proporcional a tu facturación?**
-NO. Es fija. Da igual si facturas 10.000€ o 500.000€. La multa es la misma.
+**¿Es proporcional a tu facturación?** NO. Es fija. Da igual si facturas 10.000€ o 500.000€. La multa es la misma.
 
-### Otras sanciones relacionadas
+**Otras sanciones:**
+- **Para fabricantes de software no conforme:** 150.000€ por ejercicio
+- **Datos incorrectos en facturas:** Hasta 1% del importe de las operaciones (Art. 201 LGT)
+- **Defectos formales:** Mínimo 300€ por factura según marco general
+- **Consecuencias adicionales:** Inspecciones más frecuentes, liquidaciones complementarias, intereses de demora, daño reputacional (clientes corporativos rechazan proveedores sin Verifactu)
 
-**Para fabricantes de software no conforme:**
-→ Multa de 150.000€ por ejercicio y por cada tipo de software fraudulento
+### Los 5 errores que cuestan 50.000€
 
-**Datos incorrectos en facturas:**
-→ Hasta 1% del importe de las operaciones según el régimen general de infracciones de facturación (Art. 201 LGT). La aplicación específica a errores de Verifactu está pendiente de clarificación por la AEAT.
+**Error 1: "Todavía tengo tiempo"**
 
-**Defectos formales de facturación:**
-→ Sanciones según el régimen general de facturación. Los importes específicos para errores de QR aún no han sido oficialmente publicados por la AEAT, pero se espera que sigan el marco general (mínimo 300€ por factura).
+Tu software debe estar certificado ANTES del 29 julio 2025. **Si esperas al último momento, no habrá plazas ni soporte disponible.**
 
-**Consecuencias adicionales:**
-- Inspecciones más frecuentes
-- Liquidaciones complementarias con recargos
-- Intereses de demora
-- Daño reputacional (clientes corporativos rechazan proveedores sin Verifactu)
+Habla con tu proveedor HOY. Pregunta: "¿Estaréis listos para Verifactu?"
 
----
+**Error 2: "No me aplica porque facturo con Excel simple"**
 
-## Errores comunes que cuestan dinero
+Si calculas IVA o totales con fórmulas → Estás usando un SIF → Verifactu te aplica. **Consulta oficial V2653-24:** "Si utiliza hojas de cálculo [...] no se puede concluir que no resulte obligada".
 
-### Error #1: "Todavía tengo tiempo"
-
-**Pensamiento:** "Julio 2026 está lejos, ya lo miraré en abril"
-**Realidad:** Tu software debe estar certificado ANTES del 29 julio 2025. Si esperas al último momento, no habrá plazas ni soporte disponible.
-
-**Acción:**
-Habla con tu proveedor de software HOY. Pregunta: "¿Estaréis listos para Verifactu?"
-
----
-
-### Error #2: "No me aplica porque facturo con Excel simple"
-
-**Pensamiento:** "Solo uso Excel con unas fórmulas básicas, no es un programa de facturación"
-**Realidad:** Si calculas IVA o totales con fórmulas → Estás usando un SIF → Verifactu te aplica.
-
-**Consulta oficial V2653-24:**
-"Si utiliza hojas de cálculo [...] no se puede concluir que no resulte obligada"
-
-**Acción:**
 Si tu Excel tiene UNA SOLA fórmula → Asume que estás obligado. Cambia a software certificado.
 
----
+**Error 3: "Mi software cumple porque lo dice en la web"**
 
-### Error #3: "Mi software cumple porque lo dice en la web"
-
-**Pensamiento:** "Mi programa dice 'compatible con Verifactu', vale"
-**Realidad:** PIDE la **declaración responsable** por escrito que certifique cumplimiento técnico.
-
-**Acción:**
-Exige a tu proveedor:
+PIDE la **declaración responsable** por escrito. Exige:
 - Certificado de cumplimiento firmado
 - Fecha de disponibilidad de la actualización
 - Plan de migración (si cambias de software)
 
----
+**Error 4: "Ya tengo factura electrónica, estoy cubierto"**
 
-### Error #4: "Ya tengo factura electrónica, estoy cubierto"
-
-**Pensamiento:** "Uso Facturae para Administración Pública, estoy OK"
-**Realidad:** Verifactu ≠ Factura electrónica. Son DOS cosas distintas.
-
-**Diferencia:**
-- **Factura electrónica B2B:** formato de intercambio entre empresas ([Ley Crea y Crece](https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818), pendiente de desarrollo reglamentario)
-- **Verifactu:** requisitos de tu software de facturación (YA en vigor, fechas 2026)
+Verifactu ≠ Factura electrónica. Son DOS cosas distintas. **Factura electrónica B2B:** formato de intercambio entre empresas ([Ley Crea y Crece](https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818), pendiente de desarrollo reglamentario). **Verifactu:** requisitos de tu software de facturación (YA en vigor, fechas 2026).
 
 Puedes tener uno sin el otro. Necesitas AMBOS.
 
----
+**Error 5: "Borro una factura mal hecha y hago una nueva"**
 
-### Error #5: "Borro una factura mal hecha y hago una nueva"
+**Con Verifactu:** NO puedes borrar. La numeración se ROMPE. **Correcto:** Emites una **factura rectificativa** (anulas + nueva).
 
-**Con Verifactu:** NO puedes borrar. La numeración se ROMPE.
-**Correcto:** Emites una **factura rectificativa** (anulas + nueva)
+Verifactu detecta saltos de numeración, facturas "desaparecidas", modificaciones sin rastro. **Consecuencia:** Multa + sospecha de fraude.
 
-**Verifactu detecta:**
-- Saltos de numeración
-- Facturas "desaparecidas"
-- Modificaciones sin rastro
+Si quieres evitar errores con las facturas rectificativas, consulta nuestra [guía completa sobre cómo emitir facturas rectificativas](/es/blog/guias/como-emitir-factura-rectificativa-guia).
 
-**Consecuencia:** Multa + sospecha de fraude
-
----
-
-## Checklist: ¿Estás listo para Verifactu?
+### Checklist de preparación
 
 **Antes del 29 julio 2025:**
-- [ ] Confirmado con tu proveedor: "¿Software listo para Verifactu?"
-- [ ] Recibida declaración responsable de cumplimiento
-- [ ] Fecha de actualización agendada
-- [ ] Plan B si tu proveedor falla (alternativas como Invoo)
-- [ ] Si usas Excel: evaluado si tus fórmulas te obligan (spoiler: sí)
+- Confirmado con tu proveedor: "¿Software listo para Verifactu?"
+- Recibida declaración responsable de cumplimiento
+- Fecha de actualización agendada
+- Plan B si tu proveedor falla (alternativas como Invoo)
+- Si usas Excel: evaluado si tus fórmulas te obligan (spoiler: sí)
 
 **Julio 2025 - Diciembre 2025 (si eres sociedad):**
-- [ ] Software actualizado e instalado
-- [ ] Equipo formado (no se borran facturas, se rectifican)
-- [ ] Probado: emitir factura + generar QR + verificar
+- Software actualizado e instalado
+- Equipo formado (no se borran facturas, se rectifican)
+- Probado: emitir factura + generar QR + verificar
 
 **Enero - Junio 2026 (si eres autónomo):**
-- [ ] Software actualizado e instalado
-- [ ] Fórmate bien en el nuevo flujo
-- [ ] Primera factura de prueba con QR generada
-- [ ] Verificado QR con la app de la AEAT
+- Software actualizado e instalado
+- Fórmate bien en el nuevo flujo
+- Primera factura de prueba con QR generada
+- Verificado QR con la app de la AEAT
 
 **Desde tu fecha límite:**
-- [ ] TODAS las facturas llevan QR automático
-- [ ] Decides: ¿VERI*FACTU (envío) o NO VERI*FACTU (sin envío)?
-- [ ] Conservas registros accesibles 4 años + año en curso
+- TODAS las facturas llevan QR automático
+- Decides: ¿VERI*FACTU (envío) o NO VERI*FACTU (sin envío)?
+- Conservas registros accesibles 4 años + año en curso
 
----
+### Timeline visual: cuándo hacer qué
 
-## FAQ Express: 15 preguntas críticas
+**HOY - Julio 2025**
+Verifica que tu software estará listo. Si usas Excel con fórmulas: busca alternativa YA. Solicita declaración responsable. Familiarízate con Verifactu.
 
-**1. ¿Puedo seguir facturando en Word/Excel?**
-Depende. ¿Usas fórmulas? → NO, estás obligado a Verifactu.
-¿Escribes todo a mano sin calcular nada? → SÍ, pero es inviable para +5 facturas/mes. Consulta nuestra guía sobre [errores comunes de autónomos principiantes](/es/blog/consejos/5-errores-comunes-autonomos-principiantes/) para más información.
+**29 Julio 2025**
+FECHA LÍMITE FABRICANTES. Software debe estar homologado.
 
-**2. ¿Me obligarán a usar Verifactu si facturo a mano?**
-NO. Solo si usas software o Excel con fórmulas.
+**Agosto - Diciembre 2025 (si eres SOCIEDAD)**
+Actualiza tu software. Forma a tu equipo. Prueba: emite factura con QR.
 
-**3. ¿Excel con una fórmula simple para IVA me obliga?**
-SÍ. Cualquier fórmula = Sistema Informático de Facturación = Obligado.
+**1 Enero 2026**
+OBLIGATORIO PARA SOCIEDADES (S.L., S.A.). Todas las facturas con QR desde HOY.
 
-**4. ¿El QR lleva información sensible?**
-NO. Solo: NIF, número factura, fecha, importe. Nada más.
+**Enero - Junio 2026 (si eres AUTÓNOMO)**
+Actualiza tu software. Fórmate bien. Prueba: emite factura con QR.
 
-**5. ¿Mis clientes pueden ver mi facturación total?**
-NO. Cada QR solo verifica ESA factura. No ven tu histórico.
+**1 Julio 2026**
+OBLIGATORIO PARA AUTÓNOMOS. Todas las facturas con QR desde HOY. **Excel con fórmulas → 50.000€ de multa.**
 
-**6. ¿Puedo cambiar de VERI*FACTU a NO VERI*FACTU?**
-SÍ, pero una vez que empiezas a enviar (VERI*FACTU), debes seguir hasta fin de año natural.
+**Desde tu fecha límite**
+Facturación normal. QR automático. Tranquilidad.
 
-**7. ¿Qué pasa si mi cliente no puede escanear el QR?**
-Nada. El QR es para verificación opcional. La factura sigue siendo válida.
-
-**8. ¿Y si estoy en módulos?**
-Depende de si emites facturas B2B o usas software. Consulta la sección específica de módulos en esta guía y con tu gestoría.
-
-**9. ¿Puedo editar una factura después de emitirla?**
-NO. Debes hacer una **rectificativa** (R1, R2, etc.). Verifactu registra TODO.
-
-**10. ¿Tengo que pagar por usar Verifactu?**
-Depende:
-- Si usas el [formulario gratuito de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html) (para autónomos simples) → Gratis
-- Si usas software comercial ([Invoo](https://invoo.es), [Holded](https://www.holded.com), [Quipu](https://getquipu.com)) → Lo incluyen en tu tarifa
-
-¿Te preguntas por qué el software español cuesta más? Lee nuestro [análisis del precio del software de facturación en España](/es/blog/analisis/por-que-software-facturacion-espanol-cuesta-mas/).
-
-**11. ¿Qué pasa si mi software no está listo para julio 2025?**
-Cambia de software ANTES del 29 julio. Si no, estarás en falta desde enero/julio 2026.
-
-**12. ¿Me multarán por un error técnico puntual?**
-Si es un fallo momentáneo que corriges rápido → Justificable.
-Si usas Excel con fórmulas sin cumplir durante meses → Multa de 50.000€.
-
-**13. ¿Verifactu sustituye al modelo 303 o al 130?**
-NO. Verifactu es para facturación. Los modelos 303 (IVA) y 130 (IRPF) siguen igual. Consulta nuestra [guía completa del Modelo 303 vs Modelo 130](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos/) para entender las diferencias.
-
-**14. ¿Cómo sé si mi software cumple?**
-PIDE la declaración responsable del fabricante. Si no te la dan → Huye.
-
-**15. ¿País Vasco y Navarra también?**
-NO. Tienen TicketBAI (su propio sistema). No les aplica Verifactu.
-
----
-
-## Lo que Invoo hace por ti (sin tecnicismos)
-
-**Desde el primer día:**
-- QR automático en todas tus facturas
-- Series y numeración correlativa sin fallos
-- Rectificativas guiadas (no rompes la secuencia)
-- Registro de eventos (lo exige Verifactu, lo hacemos nosotros)
-
-**Tú decides:**
-- **VERI*FACTU:** Envío automático a Hacienda con cada factura
-- **NO VERI*FACTU:** Guardamos todo seguro, entregas solo si Hacienda pide
-
-**Dashboard en tiempo real:**
-```
-Facturas este mes: 47
-   Enviadas a AEAT: 47 ✓
-   QR generados: 47 ✓
-   Errores: 0 ✓
-```
-
-**Sin sorpresas:**
-Sabes en cada momento si estás cumpliendo. Exportas CSV para tu gestoría. Listo.
-
-**Invoo estará certificado ANTES del 29 julio 2025.**
-No tendrás que cambiar de software. Actualizamos, tú sigues facturando.
-
----
-
-## Timeline visual: cuándo hacer qué
-
-```
-▼ HOY - Julio 2025
-└─ Verifica que tu software estará listo
-└─ Si usas Excel con fórmulas: busca alternativa YA
-└─ Solicita declaración responsable
-└─ Familiarízate con Verifactu (lee este artículo)
-
-▼ 29 Julio 2025
-└─ FECHA LÍMITE FABRICANTES
-└─ Software debe estar homologado
-
-▼ Agosto - Diciembre 2025 (si eres SOCIEDAD)
-└─ Actualiza tu software
-└─ Forma a tu equipo
-└─ Prueba: emite factura con QR
-
-▼ 1 Enero 2026
-└─ OBLIGATORIO PARA SOCIEDADES (S.L., S.A.)
-└─ Todas las facturas con QR desde HOY
-
-▼ Enero - Junio 2026 (si eres AUTÓNOMO)
-└─ Actualiza tu software
-└─ Fórmate bien
-└─ Prueba: emite factura con QR
-
-▼ 1 Julio 2026
-└─ OBLIGATORIO PARA AUTÓNOMOS
-└─ Todas las facturas con QR desde HOY
-└─ Excel con fórmulas → 50.000€ de multa
-
-▼ Desde tu fecha límite
-└─ Facturación normal
-└─ QR automático
-└─ Tranquilidad
-```
-
----
-
-## El último consejo: anticípate
+### El consejo final: anticípate
 
 **El mayor error no es técnico. Es psicológico.**
-
-La tentación será decir: "Ya lo haré el mes antes". Mal.
 
 **Por qué anticiparse:**
 
 1. **Software saturado:** En mayo 2026, todos los autónomos querrán lo mismo. No habrá soporte técnico disponible.
-
 2. **Curva de aprendizaje:** Tu primer mes con Verifactu cometerás pequeños errores (QR mal ubicado, rectificativas mal hechas). Mejor cometerlos ANTES de la fecha límite.
-
 3. **Inspecciones:** Hacienda cazará a los últimos. Si esperas hasta julio 2026 (día límite), estarás en el radar. Si empiezas en enero, demuestras buena fe.
-
 4. **Clientes corporativos:** Las empresas grandes ya están pidiendo que sus proveedores tengan Verifactu. Si tú no lo tienes y tu competidor sí → pierdes el cliente.
-
 5. **Excel ya no sirve:** Si usas Excel con fórmulas (como el 99% de autónomos), necesitas migrar. Eso toma tiempo.
 
 **Recomendación:**
@@ -691,24 +437,61 @@ Así tienes margen para fallos. No juegas con fuego.
 
 ---
 
-## Conclusión: Verifactu no es el enemigo
+## Preguntas frecuentes
 
-**Verifactu existe para eliminar el fraude.**
+<AccordionGroup>
 
-Sí, es un cambio. Sí, requiere adaptar tu software. Pero **NO es complejo** si usas herramientas que lo hacen por ti.
+<AccordionGroupItem title="¿Puedo seguir facturando con Excel después de julio 2026?" value="faq-1">
 
-**La clave:**
-1. Elige software que esté listo para Verifactu ANTES del 29 julio 2025
-2. Si usas Excel con fórmulas → Cambia a software certificado (no hay excepciones)
-3. Fórmate (este artículo es un buen inicio)
-4. Anticípate 3 meses a tu fecha límite
-5. Factura como siempre. El QR sale solo.
+Solo si escribes todo a mano sin usar NINGUNA fórmula. Si calculas IVA, totales o cualquier operación automáticamente (`=A1*1.21`), estás usando un Sistema Informático de Facturación y debes cumplir Verifactu.
 
-**Verifactu bien hecho = más credibilidad fiscal + menos inspecciones.**
+**La multa por incumplimiento es de 50.000€ por ejercicio fiscal.**
 
-**Verifactu mal hecho (o Excel con fórmulas sin cumplir) = 50.000€ de multa + estrés.**
+En la práctica, si haces más de 3-5 facturas al mes, necesitas fórmulas para no perder tiempo. Por tanto, asume que estás obligado. Consulta nuestra guía sobre [errores comunes de autónomos principiantes](/es/blog/consejos/5-errores-comunes-autonomos-principiantes/) para más información.
 
-La diferencia está en usar las herramientas correctas.
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Qué es el código QR de Verifactu y para qué sirve?" value="faq-2">
+
+Es un código que tu software genera automáticamente en cada factura con datos básicos: NIF, número de factura, fecha e importe total. Permite que tu cliente y Hacienda verifiquen que la factura es legítima y no ha sido borrada o modificada.
+
+**Si usas VERI*FACTU:** Tu cliente escanea el QR y Hacienda responde "Factura encontrada" o "Factura no encontrada".
+
+**Si usas NO VERI*FACTU:** El QR envía los datos a Hacienda para futuro contraste en caso de inspección.
+
+El QR NO contiene información sensible. Solo datos básicos de la factura. Tus clientes NO pueden ver tu facturación total—cada QR solo verifica ESA factura concreta.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Cuál es la multa por no cumplir con Verifactu?" value="faq-3">
+
+La multa es de **50.000€ fijos por ejercicio fiscal**, independientemente de tu facturación. Si usas software no conforme durante 3 años, acumulas 150.000€ en sanciones.
+
+**Importante:** La multa NO es proporcional a tu volumen de negocio. Da igual si facturas 10.000€ o 500.000€ al año—la sanción es la misma.
+
+**¿Por qué te multan?**
+- Usar software que no cumple Verifactu
+- Usar Excel con fórmulas sin cumplir requisitos
+- Usar software alterado ("doble uso")
+- Poseer software no conforme (aunque no lo uses activamente)
+
+Otras consecuencias: inspecciones más frecuentes, liquidaciones complementarias, intereses de demora, y daño reputacional (clientes corporativos rechazan proveedores sin Verifactu).
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Tengo que pagar por usar Verifactu?" value="faq-4">
+
+Depende de la opción que elijas:
+
+**Opción gratuita:** La AEAT ofrece un [formulario web gratuito](https://sede.agenciatributaria.gob.es/Sede/iva/sistemas-informaticos-facturacion-verifactu.html) básico para autónomos simples que hacen pocas facturas. Es funcional pero limitado—no tiene funcionalidades avanzadas como envío automático de facturas por email, gestión de clientes, o integraciones.
+
+**Opción de pago:** Si usas software comercial como [Invoo](https://invoo.es), [Holded](https://www.holded.com) o [Quipu](https://getquipu.com), Verifactu viene incluido en tu tarifa mensual sin coste adicional. El software genera el QR automáticamente, gestiona las rectificativas correctamente, y te ahorra tiempo.
+
+**Recomendación:** Si haces más de 5 facturas al mes, el software comercial compensa. Invoo cuesta 10,90€/mes y te ahorra 8+ horas mensuales. ¿Te preguntas por qué el software español cuesta más? Lee nuestro [análisis del precio del software de facturación en España](/es/blog/analisis/por-que-software-facturacion-espanol-cuesta-mas/).
+
+</AccordionGroupItem>
+
+</AccordionGroup>
 
 ---
 
