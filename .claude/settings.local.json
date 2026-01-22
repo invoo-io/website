@@ -154,10 +154,7 @@
       "WebFetch(domain:vercel.com)",
       "WebFetch(domain:docs.stripe.com)",
       "WebFetch(domain:www.flowbite.com)",
-      "WebFetch(domain:clay.global)",
-      "Bash(**En)",
-      "Bash(resumen:**\" format\n- Convert FAQ sections to AccordionGroup components\n- Update lastVerified to \"Enero)",
-      "Bash(2026\"\n- Remove TOC and H1 from content where present\n- Standardize CTA to waiting list mode\n\nSEO/Schema fixes:\n- Fix lastVerified format in invoo-vs-quipu \\(\"2026-01\" → \"Enero 2026\"\\)\n- Add 4 sources to por-que-facturar-te-da-pereza \\(was 1\\)\n- Add 2 sources to del-caos-whatsapp \\(was 3\\)\n- Add 2 sources to invoo-vs-herramienta-aeat + fix broken URL\n\nNew content:\n- Add modelo-347-guia-completa-autonomos-2026.md\n- Add content plan for February 2026\n\nNew components:\n- Accordion.tsx for FAQ sections\n- InfoCard.tsx for callouts\n- PullQuote.tsx for quotes\n\nDocumentation:\n- Update article-creation.md guide\n- Update content-writer agent\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "WebFetch(domain:clay.global)"
     ],
     "deny": [],
     "ask": []

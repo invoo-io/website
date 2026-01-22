@@ -1,10 +1,13 @@
 # Content Plan: February 2026
 
 > **Created:** 2026-01-20
+> **Updated:** 2026-01-22
 > **Duration:** 4 weeks (Feb 3 - Feb 28, 2026)
 > **Articles:** 16 total (4 per week)
 > **Themes:** New autónomo journey + Verifactu/Compliance
 > **Category mix:** Balanced across all categories
+>
+> **Progress:** 2/16 articles completed
 
 ---
 
@@ -50,9 +53,10 @@
 
 ## Week 1: February 3-9
 
-### Article 1.1 - Modelo 347
+### Article 1.1 - Modelo 347 ✅
 **Category:** guías
 **Priority:** 🔴 URGENT (Feb 28 deadline)
+**Status:** ✅ Published 2026-01-22
 **File:** `content/blog/guias/modelo-347-guia-completa-autonomos-2026.md`
 
 **Title:** "Modelo 347: Guía Completa para Autónomos 2026"
@@ -85,9 +89,10 @@
 
 ---
 
-### Article 1.2 - Invoo vs Billin
+### Article 1.2 - Invoo vs Billin ✅
 **Category:** comparaciones
 **Priority:** 🟠 HIGH
+**Status:** ✅ Published 2026-01-22
 **File:** `content/blog/comparaciones/invoo-vs-billin-comparativa-2026.md`
 
 **Title:** "Invoo vs Billin: Comparativa Honesta para Autónomos 2026"
