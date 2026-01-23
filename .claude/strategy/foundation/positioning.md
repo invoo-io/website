@@ -42,8 +42,10 @@ What can Invoo do that alternatives cannot?
 |-----------|-------------|---------------|
 | **Gestoría dashboard included** | Real-time collaboration with your accountant, no extra cost | High - core architecture decision, competitors charge €80/mo extra |
 | **Invoicing-only focus** | No CRM, no inventory, no HR - just invoicing done well | High - product philosophy, competitors cannot unbundle |
+| **30-second invoice creation** | Distraction-free UX, minimal fields, zero learning curve | High - UX philosophy, requires ground-up design |
+| **One-click presupuesto → factura** | Convert quote to invoice instantly, gestoría sees it immediately | Medium - feature parity, but gestoría sync is unique |
+| **Discount module included** | Line-item discounts built into base price | Low - table stakes, but worth mentioning |
 | **Built for Spain** | Verifactu + TicketBAI native, Spanish fiscal requirements built-in | Medium - competitors can adapt, but we're ahead |
-| **Fast, distraction-free UX** | Create invoice in <60 seconds, no learning curve | Medium - design philosophy, harder to copy than features |
 | **Transparent pricing** | €10.90/month, everything included, no surprise fees | Medium - pricing is a choice, competitors can match |
 | **Human support that responds** | Real people, fast answers, Spanish-speaking | High - requires operational commitment competitors avoid |
 
@@ -65,8 +67,10 @@ Translating attributes into customer outcomes:
 |-----------|---------|---------|-----------------|
 | Gestoría dashboard included | Real-time sync | "No more email ping-pong" | Peace of mind that someone is watching |
 | Invoicing-only focus | Simple interface | "Use 100% of what you pay for" | No guilt about wasted money |
+| 30-second invoices | Distraction-free UX | "Invoice and get back to work" | Flow state preserved |
+| Presupuesto → Factura | One-click conversion | "No retyping, no recreating" | Efficiency, no busywork |
+| Discount module | Line-item discounts | "Professional pricing flexibility" | Client relationships |
 | Built for Spain | Verifactu native | "Compliant without thinking" | No Hacienda anxiety |
-| Fast UX | 60-second invoices | "Reclaim 6 hours/month" | Weekends back |
 | Transparent pricing | €10.90/month all-in | "Know exactly what you pay" | No surprise bills |
 | Human support | Fast responses | "Answers in hours, not weeks" | Someone has your back |
 
@@ -151,7 +155,8 @@ This modifier differentiates within the category without inventing a new one.
 **Alternatives by context**:
 - SEO/Search: "Software de facturacion para autonomos"
 - Compliance angle: "Facturacion Verifactu sin complicaciones"
-- Value angle: "Factura en 60 segundos. Tu gestoria lo ve al instante."
+- Speed angle: "Factura en 30 segundos. Tu gestoria lo ve al instante."
+- Workflow angle: "Presupuesto a factura en 1 click. Sin reescribir nada."
 - Anti-bloat angle: "Solo facturacion. Sin CRM, sin complicaciones."
 
 ---
@@ -187,16 +192,44 @@ This modifier differentiates within the category without inventing a new one.
 
 **Benefits**:
 - Usa el 100% de lo que pagas
-- Interfaz simple, sin distracciones
-- Factura en menos de 60 segundos
+- Interfaz sin distracciones — factura en 30 segundos
+- De presupuesto a factura en 1 click
+- Descuentos por linea incluidos
 - €10.90/mes, todo incluido
 
 **Proof points**:
 - Holded: €29/mes por CRM + inventario + HR que no necesitas
 - Invoo: €10.90/mes por facturacion profesional completa
 - "Para un disenador freelance, usarias solo el 5% de lo que pagas" (review real de Holded)
+- Competidores dicen "en segundos" — nosotros decimos "en 30 segundos" (y lo cumplimos)
 
 **Who cares most**: David (escaping bloat), Carmen (wants simple)
+
+---
+
+#### Pillar 4: Speed Without Sacrifice
+
+**Headline**: "Factura en 30 segundos. En serio."
+
+**Subheadline**: "UX disenada para facturar, no para impresionar"
+
+**Benefits**:
+- 30 segundos: nueva factura desde cero
+- 1 click: presupuesto a factura (sin reescribir nada)
+- 0 distracciones: interfaz limpia, solo lo esencial
+- Descuentos integrados: aplica descuentos por linea sin complicaciones
+
+**Proof points**:
+- Todos los competidores dicen "facturas en segundos" (generico)
+- Solo Invoo especifica: 30 segundos, medido y verificable
+- Demo en video disponible (mostrar, no contar)
+
+**Who cares most**: David (values time), Miguel (wants minimal friction)
+
+**Why this matters**:
+- Competitors all claim "invoice in seconds" but none give specific times
+- Specific claim = credibility and testability
+- UX is a moat: requires ground-up design philosophy, not feature additions
 
 ---
 
@@ -225,7 +258,7 @@ This modifier differentiates within the category without inventing a new one.
 
 ### Short Version (Elevator Pitch)
 
-> Invoo es software de facturacion para autonomos y pymes en Espana. Factura en 60 segundos, cumple con Verifactu automaticamente, y tu gestoria ve todo en tiempo real, incluido en el precio. €10.90/mes, sin sorpresas.
+> Invoo es software de facturacion para autonomos y pymes en Espana. Factura en 30 segundos, convierte presupuestos en 1 click, cumple con Verifactu automaticamente, y tu gestoria ve todo en tiempo real. €10.90/mes, todo incluido.
 
 ### Long Version (Full Positioning)
 
@@ -233,7 +266,7 @@ This modifier differentiates within the category without inventing a new one.
 >
 > A diferencia de Holded o Quipu, que te venden ERPs con CRM, inventario y funciones que nunca usaras, Invoo se centra solo en facturacion: rapida, simple y compliant.
 >
-> Tu gestoria accede a un dashboard en tiempo real sin coste extra (competidores cobran €80/mes adicionales). Facturas en menos de 60 segundos. Y Verifactu funciona desde el primer dia sin que tengas que entenderlo.
+> Factura en 30 segundos. Convierte presupuestos a facturas en 1 click. Aplica descuentos por linea sin complicaciones. Y tu gestoria ve todo en tiempo real — sin coste extra (competidores cobran €80/mes adicionales).
 >
 > €10.90/mes. Todo incluido. Sin letra pequena.
 
@@ -250,13 +283,14 @@ This modifier differentiates within the category without inventing a new one.
 **Primary message**: "Deja de pagar por funciones que no usas"
 
 **Value proposition**:
-> Holded te cobra €29/mes por un ERP completo. Tu usas el 5%. Invoo te da facturacion profesional por €10.90/mes, con soporte para clientes internacionales y tu gestoria conectada. Ahorra dinero. Recupera 6 horas al mes.
+> Holded te cobra €29/mes por un ERP completo. Tu usas el 5%. Invoo te da facturacion profesional por €10.90/mes: facturas en 30 segundos, presupuesto a factura en 1 click, descuentos incluidos, y tu gestoria conectada. Ahorra dinero. Recupera 6 horas al mes.
 
 **Key messages**:
 1. "€10.90/mes vs €29+ en Holded — y usas el 100%"
-2. "Facturacion multi-divisa con IVA automatico por pais"
-3. "Tu gestoria ve todo en tiempo real — sin email ping-pong"
-4. "Verifactu resuelto desde el dia 1"
+2. "Factura en 30 segundos — presupuesto a factura en 1 click"
+3. "Facturacion multi-divisa con IVA automatico por pais"
+4. "Tu gestoria ve todo en tiempo real — sin email ping-pong"
+5. "Descuentos por linea, Verifactu, todo incluido"
 
 **Objection handling**:
 - "Ya uso Holded" --> "Estas pagando por CRM, inventario y HR que no necesitas. Migrar toma 15 minutos."
@@ -511,7 +545,9 @@ This modifier differentiates within the category without inventing a new one.
 | Invoicing only (no CRM, inventory, HR) | Product scope decision | TRUE |
 | €10.90/month, all included | Pricing page, no hidden fees | TRUE |
 | Verifactu + TicketBAI compliant | Technical implementation verified | TRUE |
-| 60-second invoice creation | UX testing confirmed | TRUE |
+| 30-second invoice creation | UX testing required | TRUE (verify) |
+| One-click presupuesto → factura | Product feature | TRUE |
+| Line-item discounts included | Product feature, no extra charge | TRUE |
 | Fast support responses | Operational commitment, track metrics | TRUE (monitor) |
 
 ### Is Our Positioning DIFFERENTIATED?
