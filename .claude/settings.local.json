@@ -171,7 +171,8 @@
       "WebFetch(domain:www.consejogestores.org)",
       "Bash(git merge:*)",
       "Bash(git mv:*)",
-      "Bash(pgrep:*)"
+      "Bash(pgrep:*)",
+      "Bash(npm outdated:*)"
     ],
     "deny": [],
     "ask": []
