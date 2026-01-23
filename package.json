@@ -42,6 +42,14 @@
     "validator": "^13.15.23",
     "vaul": "^1.1.2"
   },
+  "browserslist": [
+    "Chrome >= 90",
+    "Firefox >= 90",
+    "Safari >= 15",
+    "Edge >= 90",
+    "iOS >= 15",
+    "not dead"
+  ],
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@playwright/test": "^1.55.0",

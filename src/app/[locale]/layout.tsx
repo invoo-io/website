@@ -97,6 +97,9 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="dark" suppressHydrationWarning>
       <head>
+        {/* Preconnect to third-party origins for faster loading */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         {/* Prevent theme flash - must be first script */}
         <script
           dangerouslySetInnerHTML={{

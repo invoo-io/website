@@ -202,13 +202,15 @@ export default function Navigation({ locale }: NavigationProps) {
 
             {/* Mobile menu button */}
             <div className="lg:hidden">
-              <motion.button
+              <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-primary hover:text-secondary p-2"
-                whileTap={{ scale: 0.95 }}
+                className="text-primary hover:text-secondary p-2 active:scale-95 transition-transform"
+                aria-label={t('openMenu')}
+                aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-menu"
               >
                 <Menu className="w-6 h-6" />
-              </motion.button>
+              </button>
             </div>
           </div>
         </div>
@@ -232,6 +234,7 @@ export default function Navigation({ locale }: NavigationProps) {
 
             {/* Drawer */}
             <motion.div
+              id="mobile-menu"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}

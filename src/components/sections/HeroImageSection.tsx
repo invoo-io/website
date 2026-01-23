@@ -23,6 +23,7 @@ export default function HeroImageSection({
               alt={dashboardAlt}
               width={1350}
               height={700}
+              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
               className="w-full h-auto rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.2)]"
               priority
             />
@@ -46,15 +47,17 @@ export default function HeroImageSection({
             alt={dashboardAlt}
             width={1350}
             height={700}
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
             className="w-full h-auto rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.2)] dark:hidden"
-            priority
+            loading="lazy"
           />
-          {/* Dark mode image - hidden in light mode */}
+          {/* Dark mode image - hidden in light mode, priority since dark is default */}
           <Image
             src={getImagePath(darkImage)}
             alt={dashboardAlt}
             width={1350}
             height={700}
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
             className="w-full h-auto rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.2)] hidden dark:block"
             priority
           />
