@@ -202,6 +202,7 @@ Specialized agents in `.claude/agents/`:
 | Agent | Use For |
 |-------|---------|
 | `product-lead` | Feature specs, roadmap planning (outside codebase) |
+| `positioning-lead` | Messaging, differentiation, value props. Review content for positioning alignment |
 | `marketing-lead` | Website content strategy: WHAT content to create, topic clusters, conversion optimization |
 | `growth-lead` | GTM execution: HOW to distribute and acquire users through channels and campaigns |
 | `compliance-regulator` | Spanish tax/legal (AEAT, Verifactu, TicketBAI) |
@@ -234,6 +235,7 @@ Workflow guides in `.claude/guides/`:
 See `article-creation.md` guide. Agents involved:
 - `seo-specialist` → keyword research, structure
 - `market-intelligence` → competitor analysis
+- `positioning-lead` → angle validation, differentiation brief (for comparison articles)
 - `content-writer` → draft article
 - `compliance-regulator` → review (if tax/legal topic)
 - `code-reviewer` → final check
@@ -250,6 +252,7 @@ Similar to articles, plus development:
 ### Update Website (pages, components, content)
 Classic development flow:
 - `market-intelligence` → research best practices
+- `positioning-lead` → messaging review (for landing pages, hero sections)
 - `design-leader` → UX decisions
 - `nextjs-architect` → plan implementation
 - `nextjs-developer` → implement changes
