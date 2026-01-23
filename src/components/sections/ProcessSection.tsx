@@ -1,11 +1,9 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import GradientText from "@/components/ui/GradientText";
 
-export function ProcessSection() {
-  const t = useTranslations("home.process");
+export async function ProcessSection({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale, namespace: "home.process" });
 
   const steps = ["step1", "step2", "step3"];
 

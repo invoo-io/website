@@ -108,6 +108,7 @@ export default async function FreelancersPage({
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="Freelancer Dashboard" />
       <TrustBarSection />
       <ThreeCardSection
+        locale={locale}
         translationKey="freelancersPage.pains"
         cards={[
           { key: "card1", icon: "Package" },
@@ -116,6 +117,7 @@ export default async function FreelancersPage({
         ]}
       />
       <FourPillarSection
+        locale={locale}
         translationKey="freelancersPage.solution"
         pillars={[
           {

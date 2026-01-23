@@ -113,6 +113,7 @@ export default async function Home({
 
       {/* Section 3: Problem Agitation */}
       <ThreeCardSection
+        locale={locale}
         translationKey="home.problems"
         iconGradient="linear-gradient(135deg, rgba(37,125,254,0.1), rgba(121,51,255,0.1))"
         cards={[
@@ -124,6 +125,7 @@ export default async function Home({
 
       {/* Section 4: The Invoo Difference */}
       <FourPillarSection
+        locale={locale}
         translationKey="home.difference"
         pillars={[
           {
@@ -157,7 +159,7 @@ export default async function Home({
       <AudienceSegmentationSection locale={locale} />
 
       {/* Section 6: How It Works */}
-      <ProcessSection />
+      <ProcessSection locale={locale} />
 
       {/* Section 7: Pricing */}
       <PricingSection variant="section" />

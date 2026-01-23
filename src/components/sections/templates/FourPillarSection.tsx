@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import {
   Users,
   Zap,
@@ -37,15 +35,17 @@ interface PillarConfig {
 }
 
 interface FourPillarSectionProps {
+  locale: string;
   translationKey: string;
   pillars: [PillarConfig, PillarConfig, PillarConfig, PillarConfig];
 }
 
-export function FourPillarSection({
+export async function FourPillarSection({
+  locale,
   translationKey,
   pillars,
 }: FourPillarSectionProps) {
-  const t = useTranslations(translationKey);
+  const t = await getTranslations({ locale, namespace: translationKey });
 
   return (
     <section className="py-[120px] max-md:py-16 px-4 md:px-6">

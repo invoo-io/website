@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { User, Users, Building2, ArrowRight } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import GradientText from "@/components/ui/GradientText";
@@ -37,8 +35,8 @@ const audiences = [
   },
 ];
 
-export function AudienceSegmentationSection({ locale }: AudienceSegmentationSectionProps) {
-  const t = useTranslations("home.audiences");
+export async function AudienceSegmentationSection({ locale }: AudienceSegmentationSectionProps) {
+  const t = await getTranslations({ locale, namespace: "home.audiences" });
 
   return (
     <section className="py-[120px] max-md:py-16 px-4 md:px-6 bg-background-secondary">

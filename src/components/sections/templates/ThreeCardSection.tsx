@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import {
   Package,
   CalendarClock,
@@ -16,7 +14,7 @@ import {
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import GradientText from "@/components/ui/GradientText";
 
-// Icon mapping for server-to-client component compatibility
+// Icon mapping for server component
 const iconMap: Record<string, LucideIcon> = {
   Package,
   CalendarClock,
@@ -36,17 +34,19 @@ interface CardConfig {
 }
 
 interface ThreeCardSectionProps {
+  locale: string;
   translationKey: string;
   cards: [CardConfig, CardConfig, CardConfig];
   iconGradient?: string;
 }
 
-export function ThreeCardSection({
+export async function ThreeCardSection({
+  locale,
   translationKey,
   cards,
   iconGradient = "linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))",
 }: ThreeCardSectionProps) {
-  const t = useTranslations(translationKey);
+  const t = await getTranslations({ locale, namespace: translationKey });
 
   return (
     <section className="py-[120px] max-md:py-16 px-4 md:px-6 bg-background-secondary">
