@@ -9,6 +9,7 @@ import { HeroGlow } from "./ui/HeroGlow";
 
 interface HeroSectionProps {
   title: React.ReactNode;
+  subheadline?: string;
   paragraph: string;
   buttonText?: string;
   buttonHref?: string;
@@ -18,6 +19,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({
   title,
+  subheadline,
   paragraph,
   buttonText,
   buttonHref,
@@ -32,9 +34,18 @@ export default function HeroSection({
         size="hero"
         align="center"
         title={title}
-        description={paragraph}
-        marginBottom="lg"
+        marginBottom={subheadline ? "sm" : "lg"}
       />
+
+      {subheadline && (
+        <p className="text-title2-emphasized text-accent-blue-main text-center mb-6 max-w-2xl mx-auto">
+          {subheadline}
+        </p>
+      )}
+
+      <p className="text-body text-secondary text-center max-w-2xl mx-auto mb-10">
+        {paragraph}
+      </p>
 
       {buttonText && (buttonHref || buttonOnClick) && (
         <div className="flex justify-center">

@@ -12,17 +12,17 @@
 :root {
   /* Typography System Tokens */
 
-  /* Header Title (64px) */
+  /* Header Title (72px) */
   --text-header-title-size: 72px;
   --text-header-title-weight: 400;
   --text-header-title-emphasized-weight: 700;
   --text-header-title-tracking: -0.001em;
-  --text-header-title-leading: 1;
+  --text-header-title-leading: 1.1;
 
-  /* Section Title (48px) */
-  --text-section-title-size: 48px;
+  /* Section Title (56px) */
+  --text-section-title-size: 56px;
   --text-section-title-weight: 400;
-  --text-section-title-emphasized-weight: 600;
+  --text-section-title-emphasized-weight: 700;
   --text-section-title-tracking: 0em;
   --text-section-title-leading: 1.2;
 
