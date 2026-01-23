@@ -104,7 +104,7 @@ export default async function PymesPage({
         buttonHref="#waitlist"
         highlights={highlights}
       />
-      <HeroImageSection imageBaseName="freelancer" dashboardAlt="PYMES Dashboard" />
+      <HeroImageSection imageBaseName="freelancer" dashboardAlt="Software facturación multi-usuario para PYMEs - Panel de control Invoo" />
       <TrustBarSection translationKey="pymesPage.trustBar" />
       <ThreeCardSection
         translationKey="pymesPage.pains"

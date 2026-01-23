@@ -214,12 +214,12 @@
   },
   "pymesPage": {
     "metadata": {
-      "title": "Team Invoicing | Quote to Invoice in 1 Click | SMBs",
-      "description": "2-4 users, maximum collaboration. Flexible pricing to close deals. Real-time accountant access, zero email chaos. 50% off, no contracts."
+      "title": "Your Team Invoices. You See Everything | Invoo",
+      "description": "Know who invoiced what, when, and your accountant sees it without chasing emails. 2-4 user invoicing with automatic Verifactu. From €10.45/month. Just invoicing, zero bloat."
     },
     "header": {
       "title": "Team invoicing",
-      "description": "Centralize invoices, control who does what, and connect your accountant. Automatic Verifactu for the whole team. From €10.45/month for 2 users (50% off first 100).",
+      "description": "Invoicing software for teams: centralize invoices, control who does what, and connect your accountant. Automatic Verifactu for the whole team. From €10.45/month for 2 users (50% off first 100).",
       "cta": "Join the waiting list"
     },
     "highlights": [
@@ -324,7 +324,7 @@
       },
       "q4": {
         "question": "Can I limit what each user on my team can do?",
-        "answer": "Currently all users have full access (create invoices, view reports, export data). In future versions we'll add custom roles (e.g. \"view only\" vs \"create and edit\")."
+        "answer": "All users have full access: create invoices, view reports, export data. This means zero silos, zero permission complexity. Each team member can work autonomously while you (and your accountant) see everything in real-time."
       },
       "q5": {
         "question": "Does Invoo comply with Verifactu for all team invoices?",

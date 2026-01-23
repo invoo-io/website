@@ -214,12 +214,12 @@
   },
   "pymesPage": {
     "metadata": {
-      "title": "Facturación en Equipo | Presupuesto a Factura en 1 Clic | Pymes",
-      "description": "2-4 usuarios, máxima colaboración. Precios flexibles para cerrar ventas. Gestoría en tiempo real, cero caos de emails. 50% dto sin permanencia."
+      "title": "Tu Equipo Factura, Tú lo Ves Todo | Gestoría Incluida",
+      "description": "Sabes quién facturó qué, cuándo, y tu gestoría lo ve sin perseguir emails. Facturación 2-4 usuarios con Verifactu automático. Desde €10.45/mes. Solo facturas, cero bloat."
     },
     "header": {
       "title": "Facturación en equipo",
-      "description": "Centraliza facturas, controla quién hace qué, y conecta tu gestoría. Verifactu automático para todo el equipo. Desde €10.45/mes para 2 usuarios (50% dto primeros 100).",
+      "description": "Software de facturación para equipos: centraliza facturas, controla quién hace qué, y conecta tu gestoría. Verifactu automático para todo el equipo. Desde €10.45/mes para 2 usuarios (50% dto primeros 100).",
       "cta": "Únete a la lista de espera"
     },
     "highlights": [
@@ -324,7 +324,7 @@
       },
       "q4": {
         "question": "¿Puedo limitar qué puede hacer cada usuario de mi equipo?",
-        "answer": "Actualmente todos los usuarios tienen acceso completo (crear facturas, ver informes, exportar datos). En futuras versiones añadiremos roles personalizados (ej: \"solo ver facturas\" vs \"crear y editar\")."
+        "answer": "Todos los usuarios tienen acceso completo: crear facturas, ver informes, exportar datos. Esto significa cero silos, cero complejidad de permisos. Cada persona del equipo puede trabajar de forma autónoma mientras tú (y tu gestoría) ves todo en tiempo real."
       },
       "q5": {
         "question": "¿Invoo cumple Verifactu para todas las facturas del equipo?",
