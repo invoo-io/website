@@ -34,9 +34,17 @@ export function FeaturedBlogSection({
 
   return (
     <section className="relative w-full py-16 md:py-24 bg-background-primary overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-accent-blue-main opacity-5 blur-[100px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-purple-main opacity-5 blur-[100px] pointer-events-none" />
+      {/* Background decoration using radial gradients (no blur filter for mobile perf) */}
+      <div
+        className="absolute top-0 right-0 w-96 h-96 pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(37,125,254,0.05) 0%, transparent 70%)" }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute bottom-0 left-0 w-96 h-96 pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(121,51,255,0.05) 0%, transparent 70%)" }}
+        aria-hidden="true"
+      />
 
       <div className="container mx-auto px-4 md:px-6 max-w-7xl relative z-10">
         {/* Section header */}
