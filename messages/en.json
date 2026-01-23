@@ -86,81 +86,129 @@
   },
   "freelancersPage": {
     "metadata": {
-      "title": "Verifactu Invoicing in 30s | Collaborate with Accountant",
-      "description": "Use it from your phone, fast, intuitive. Flexible pricing to close deals. Accountant sees everything in real-time. Join the waiting list."
+      "title": "Freelancer Invoicing in 30s | Your Accountant Connected | Invoo",
+      "description": "Invoice in 30 seconds with automatic Verifactu. Your accountant sees everything instantly, no emails. VAT & IRPF calculated. €10.90/month. Join the waiting list."
     },
     "header": {
       "title": "Invoicing without stress",
-      "description": "Professional invoices, automatic Verifactu compliance, and instant delivery to AEAT, your client, and your gestoría",
+      "description": "Create invoices in 30 seconds. Your accountant sees them instantly, no emails or PDFs. Automatic Verifactu, VAT & IRPF calculated. All included for €10.90/month.",
       "cta": "Join the waiting list"
     },
-    "block1": {
-      "title": "Create professional invoices in seconds",
-      "description": "Skip the templates and Excel hacks. Invoo generates polished PDFs that are always correctly numbered and ready to send",
-      "features": [
-        "Autofilled client data",
-        "Professional PDF templates",
-        "Automatic numbering"
-      ],
-      "cta": "Start invoicing in 30 seconds"
-    },
-    "block2": {
-      "title": "Compliance handled for you",
-      "description": "Every invoice includes the official Verifactu QR and is submitted to AEAT in the background, so you never worry about errors or fines",
-      "features": [
-        "Automatic QR generation",
-        "Secure AEAT submission",
-        "Full audit trail with status checks"
-      ],
-      "cta": "Try Verifactu for free"
-    },
-    "block3": {
-      "title": "Your finances in one simple view",
-      "description": "From daily expenses to quarterly models, Invoo centralizes everything so you can see the big picture without switching tools",
-      "features": [
-        "Snap and log expenses",
-        "Automatic monthly summaries",
-        "Pre-calculated Modelo 130/303"
-      ],
-      "cta": "Connect your accountant now"
-    },
-    "block4": {
-      "title": "Share effortlessly with your gestoría",
-      "description": "No more chasing or forwarding PDFs. Your gestoría sees invoices and expenses in real time, at no cost to them",
-      "features": [
-        "Direct access for your gestoría",
-        "No email chains or retyping",
-        "Free for gestorías"
-      ],
-      "cta": "Join the waiting list"
-    },
-    "introTitle": "Invoicing software designed for Spanish freelancers",
-    "introParagraph": [
-      "If you're a freelancer, you know that invoicing takes more time than it should. Between Excel, outdated templates, doubts about Verifactu, and coordination with your gestoría, each invoice can take 10-15 minutes that you should invest in your business.",
-      "Invoo was born to solve exactly this. Invoicing software that understands Spanish reality: automatic AEAT compliance, direct integration with your gestoría, and an interface so simple you'll create invoices from your mobile while having coffee.",
-      "These are the reasons why freelancers like you are leaving Excel and choosing Invoo:"
+    "highlights": [
+      "Invoice in 30 seconds",
+      "Your accountant already connected",
+      "€10.90/month, no surprises"
     ],
-    "faqTitle": "Freelancers' frequent questions about Verifactu and Invoo",
+    "trustBar": {
+      "title": "Freelancers already",
+      "titleHighlight": "waiting to invoice better",
+      "subtitle": "Join the freelancers waiting to invoice without stress",
+      "stat1": {
+        "number": "80+",
+        "label": "freelancers waiting"
+      },
+      "stat2": {
+        "number": "30 sec",
+        "label": "average per invoice"
+      },
+      "stat3": {
+        "number": "€10.90",
+        "label": "all included"
+      }
+    },
+    "pains": {
+      "title": "Still invoicing like this?",
+      "titleHighlight": "It doesn't have to be this hard",
+      "description": "Most freelancers waste hours every month on invoicing. There's a better way.",
+      "card1": {
+        "title": "You pay for features you don't use",
+        "description": "Holded charges €29+/month for CRM, inventory, and HR. A freelancer uses only 5%."
+      },
+      "card2": {
+        "title": "Word wastes your time",
+        "description": "Copying data, calculating VAT manually, numbering invoices, saving PDFs. 10 minutes per invoice you could be billing."
+      },
+      "card3": {
+        "title": "Endless emails with your accountant",
+        "description": "Forwarding PDFs, chasing documents, waiting for replies. Back and forth that frustrates everyone."
+      }
+    },
+    "solution": {
+      "title": "Invoo solves",
+      "titleHighlight": "all of this",
+      "description": "Just invoicing, done right. No CRM, no inventory, no complications.",
+      "pillar1": {
+        "title": "Your accountant already connected",
+        "description": "Real-time dashboard for your advisor. Zero emails with PDFs. Included in the price (competitors charge €80/month extra)."
+      },
+      "pillar2": {
+        "title": "Invoice in 30 seconds",
+        "description": "Distraction-free interface. Quote to invoice in 1 click. Discounts included."
+      },
+      "pillar3": {
+        "title": "Just invoicing",
+        "description": "No CRM, no inventory, no HR. €10.90/month vs €29+ from Holded — and you use 100% of what you pay for."
+      },
+      "pillar4": {
+        "title": "Verifactu without thinking",
+        "description": "Automatic Verifactu + TicketBAI. VAT & IRPF calculated. Comply without understanding regulations."
+      }
+    },
+    "speedDemo": {
+      "title": "Invoice in",
+      "titleHighlight": "30 seconds. Seriously.",
+      "description": "From zero to sent PDF. No tricks, no exaggerations.",
+      "step1": {
+        "time": "5 sec",
+        "title": "Client data",
+        "description": "Auto-completed"
+      },
+      "step2": {
+        "time": "10 sec",
+        "title": "Add lines",
+        "description": "Concept & amount"
+      },
+      "step3": {
+        "time": "5 sec",
+        "title": "Review",
+        "description": "VAT calculated"
+      },
+      "step4": {
+        "time": "10 sec",
+        "title": "Sent",
+        "description": "Your accountant sees it"
+      }
+    },
+    "faqTitle": "Questions freelancers ask",
+    "faqTitleHighlight": "before deciding",
     "faq": {
       "q1": {
-        "question": "What is Verifactu and why does it affect me as a freelancer?",
-        "answer": "Verifactu (RD 1007/2023) is the new mandatory electronic invoicing system for freelancers and SMEs in Spain. From July 2027 (postponed from 2026), all freelancers must use approved software that generates invoices with QR code and sends information to AEAT in real-time. Invoo is Verifactu compliant."
+        "question": "I already have an accountant. How does the connection with Invoo work?",
+        "answer": "Your accountant gets free access to a dashboard where they see all your invoices and expenses in real-time. No emails with PDFs, no chasing documents, no misunderstandings. Invite your accountant once and from then on everything syncs automatically. It's what sets us apart: collaboration with your advisor included in the price, not an €80/month extra."
       },
       "q2": {
-        "question": "Can I use Invoo from my mobile?",
-        "answer": "Yes. Invoo's web interface is mobile-optimized. Create invoices, log expenses with receipt photos, and check income from any device. No native app needed, works from any browser."
+        "question": "I use Holded/Quipu and have too many features. Is Invoo different?",
+        "answer": "Invoo is just invoicing. No CRM, no inventory, no HR modules you'll never use. You pay €10.90/month for complete professional invoicing: quotes, invoices, expenses, discounts, multi-currency, and your accountant connected. You use 100% of what you pay for."
       },
       "q3": {
-        "question": "How do I share invoices with my gestoría?",
-        "answer": "Your gestoría gets free access to a dashboard where they see all your invoices and expenses in real-time. You don't need to send PDFs by email or chase documents. Invite your gestoría once, and from then on everything syncs automatically."
+        "question": "How much time does invoicing take each month?",
+        "answer": "30 seconds per invoice, verified. Quote to invoice in 1 click. Expenses via photo from your mobile. If you invoice 10-15 clients per month, that's 15 minutes. Not 6 hours like with Excel. Time you reclaim for billable work, not admin."
       },
       "q4": {
-        "question": "How long does it take to create my first invoice?",
-        "answer": "Less than 2 minutes including initial registration. Once your tax profile and first client are configured, subsequent invoices take 30 seconds."
+        "question": "Do I need to do something special to comply with Verifactu?",
+        "answer": "No. Invoo generates Verifactu-compliant invoices from day 1. QR code, AEAT submission, all automatic. Your accountant sees it, you forget about it. When July 2027 arrives, you'll already be compliant without having done anything extra."
       },
       "q5": {
-        "question": "Does Invoo calculate VAT and withholdings automatically?",
-        "answer": "Yes. According to your tax regime (general, equivalence surcharge, IRPF), Invoo automatically applies VAT (21%, 10%, 4%) and withholdings (15% or 7% IRPF depending on cases). No manual calculations, no errors."
+        "question": "I invoice clients outside Spain. Does Invoo handle VAT?",
+        "answer": "Yes. Invoice in euros, dollars, or pounds. VAT is calculated automatically based on the client's country: intra-community, export, or domestic. No conversion errors, no confusion with ROI or form 349. Your accountant sees international invoices just like domestic ones."
+      },
+      "q6": {
+        "question": "I'm coming from Excel. How much does it cost to migrate?",
+        "answer": "5 minutes of initial setup: tax details, logo, first client. From there, each invoice takes 30 seconds. No learning curve. If you use WhatsApp, you already know how to use Invoo. You save time from day one."
+      },
+      "q7": {
+        "question": "€10.90/month seems expensive for a freelancer. Is it worth it?",
+        "answer": "€10.90 is less than an hour of your work. You recover that time on your first invoice of the month. Not counting the stress you save with automatic Verifactu and your accountant always up to date. Competitors like Holded charge €29+/month for features you'll never use."
       }
     }
   },
@@ -401,7 +449,7 @@
           },
           "q7": {
             "question": "Can I still use Excel or Word for invoicing?",
-            "answer": "No, VeriFactu requires approved software that sends data in real-time to AEAT. Invoo replaces that with a dead-simple interface; as an option, migrate Excel data via CSV, but we recommend automating to save billable time."
+            "answer": "Yes, if you only use Word/Excel as a manual template (no macros or accounting integration), Verifactu doesn't affect you. But you'll waste time: 10 minutes per invoice vs 30 seconds with Invoo. If you use Excel with macros that generate VAT books, then you do need compliant software."
           }
         }
       },
@@ -937,7 +985,13 @@
         "period": "/month",
         "badge": "Free Forever",
         "cta": "Join the waiting list",
-        "features": ["3 invoices per month", "Quote-to-invoice flow", "Service catalogue", "Client database", "Email support"]
+        "features": [
+          "3 invoices per month",
+          "Quote-to-invoice flow",
+          "Service catalogue",
+          "Client database",
+          "Email support"
+        ]
       },
       "pro": {
         "title": "Pro",
@@ -949,7 +1003,18 @@
         "subtitle": "First 100 users save 50% forever",
         "savingsText": "Save 50% forever",
         "cta": "Join the waiting list",
-        "features": ["Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "Email invoices to clients", "Priority email support"]
+        "features": [
+          "Unlimited invoices",
+          "Quote-to-invoice flow",
+          "Expense management",
+          "Service catalogue",
+          "Client database",
+          "Discounts module",
+          "Gestoría live dashboard",
+          "Verifactu & TicketBAI compliance",
+          "Email invoices to clients",
+          "Priority email support"
+        ]
       }
     },
     "pymes": {
@@ -960,7 +1025,14 @@
         "period": "/month",
         "badge": "Free Forever",
         "cta": "Join the waiting list",
-        "features": ["3 invoices per month", "1 user", "Quote-to-invoice flow", "Service catalogue", "Client database", "Email support"]
+        "features": [
+          "3 invoices per month",
+          "1 user",
+          "Quote-to-invoice flow",
+          "Service catalogue",
+          "Client database",
+          "Email support"
+        ]
       },
       "pro": {
         "title": "Pro",
@@ -972,7 +1044,19 @@
         "subtitle": "First 100 users save 50% forever",
         "savingsText": "Save 50% forever",
         "cta": "Join the waiting list",
-        "features": ["2 users (team collaboration)", "Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "User permissions and roles", "Priority email support"]
+        "features": [
+          "2 users (team collaboration)",
+          "Unlimited invoices",
+          "Quote-to-invoice flow",
+          "Expense management",
+          "Service catalogue",
+          "Client database",
+          "Discounts module",
+          "Gestoría live dashboard",
+          "Verifactu & TicketBAI compliance",
+          "User permissions and roles",
+          "Priority email support"
+        ]
       },
       "premium": {
         "title": "Premium",
@@ -984,7 +1068,19 @@
         "subtitle": "First 100 users save 50% forever",
         "savingsText": "Save 50% forever",
         "cta": "Join the waiting list",
-        "features": ["4 users (team collaboration)", "Unlimited invoices", "Quote-to-invoice flow", "Expense management", "Service catalogue", "Client database", "Discounts module", "Gestoría live dashboard", "Verifactu & TicketBAI compliance", "User permissions and roles", "Priority email support"]
+        "features": [
+          "4 users (team collaboration)",
+          "Unlimited invoices",
+          "Quote-to-invoice flow",
+          "Expense management",
+          "Service catalogue",
+          "Client database",
+          "Discounts module",
+          "Gestoría live dashboard",
+          "Verifactu & TicketBAI compliance",
+          "User permissions and roles",
+          "Priority email support"
+        ]
       }
     },
     "gestoria": {
@@ -995,7 +1091,13 @@
         "period": "/month",
         "badge": "Free Forever",
         "cta": "Contact us",
-        "features": ["Unlimited clients", "Real-time invoice/expense sync", "One-click CSV export", "Quarterly summaries", "Notifications for new activity"]
+        "features": [
+          "Unlimited clients",
+          "Real-time invoice/expense sync",
+          "One-click CSV export",
+          "Quarterly summaries",
+          "Notifications for new activity"
+        ]
       },
       "enterprise": {
         "title": "Enterprise",
@@ -1003,7 +1105,16 @@
         "price": "Custom Pricing",
         "badge": "Contact Sales",
         "cta": "Contact us",
-        "features": ["Everything in Free included", "Unlimited client accounts", "Multi-client dashboard view", "White-label options", "Advanced reporting and analytics", "API access for integrations", "Priority support with dedicated account manager", "Bulk operations across clients"]
+        "features": [
+          "Everything in Free included",
+          "Unlimited client accounts",
+          "Multi-client dashboard view",
+          "White-label options",
+          "Advanced reporting and analytics",
+          "API access for integrations",
+          "Priority support with dedicated account manager",
+          "Bulk operations across clients"
+        ]
       }
     }
   },
@@ -1028,8 +1139,8 @@
         "description": "Software like Holded charges €29/mo for CRM, inventory, and HR you never open. You just want to invoice."
       },
       "card2": {
-        "title": "Word and Excel won't cut it anymore",
-        "description": "Electronic invoicing regulations take effect July 2027. Manual invoices will no longer be valid. Fines reach €50,000."
+        "title": "Word steals your time",
+        "description": "Copying data, calculating VAT, numbering invoices, finding that PDF from 3 months ago. 10 minutes per invoice you could be billing."
       },
       "card3": {
         "title": "Ping-pong with your accountant",

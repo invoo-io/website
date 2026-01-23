@@ -9,7 +9,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { PagePreloader } from "@/components/PagePreloader";
 import { BASE_URL } from "@/lib/constants";
 import { generateOrganizationSchema, generateWebSiteSchema } from "@/lib/schema";
 import "../globals.css";
@@ -17,9 +16,9 @@ import "../globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: true,
 });
 
 export async function generateMetadata({
@@ -96,8 +95,14 @@ export default async function RootLayout({
   const websiteSchema = generateWebSiteSchema();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} className="dark" suppressHydrationWarning>
       <head>
+        {/* Prevent theme flash - must be first script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light'){document.documentElement.classList.remove('dark');document.documentElement.classList.add('light')}}catch(e){}})()`,
+          }}
+        />
         {/* Global Organization Schema */}
         <script
           type="application/ld+json"
@@ -120,15 +125,20 @@ export default async function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <PagePreloader />
-          <Analytics />
-          <SpeedInsights />
-          <GoogleAnalytics />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          disableTransitionOnChange
+          storageKey="theme"
+        >
           <NextIntlClientProvider messages={messages}>
             {children}
             <CookieBanner />
           </NextIntlClientProvider>
+          <Analytics />
+          <SpeedInsights />
+          <GoogleAnalytics />
         </ThemeProvider>
       </body>
     </html>

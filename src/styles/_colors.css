@@ -110,15 +110,15 @@
 
   --background-primary-light: #fafafd;
   --background-primary-dark: #121212;
-  --background-primary: var(--background-primary-light);
+  --background-primary: var(--background-primary-dark);
 
   --background-secondary-light: #ffffff;
   --background-secondary-dark: #161616;
-  --background-secondary: var(--background-secondary-light);
+  --background-secondary: var(--background-secondary-dark);
 
   --background-tertiary-light: #f7f7f7;
   --background-tertiary-dark: #1c1c1c;
-  --background-tertiary: var(--background-tertiary-light);
+  --background-tertiary: var(--background-tertiary-dark);
 
   /* ========================================
      LABEL/TEXT COLORS
@@ -126,15 +126,15 @@
 
   --label-primary-light: rgba(18, 18, 18, 1);
   --label-primary-dark: rgba(239, 239, 245, 1);
-  --label-primary: var(--label-primary-light);
+  --label-primary: var(--label-primary-dark);
 
   --label-secondary-light: rgba(51, 58, 69, 0.9);
   --label-secondary-dark: rgba(169, 180, 190, 0.7);
-  --label-secondary: var(--label-secondary-light);
+  --label-secondary: var(--label-secondary-dark);
 
   --label-tertiary-light: rgba(51, 58, 69, 0.3);
   --label-tertiary-dark: rgba(159, 159, 159, 0.3);
-  --label-tertiary: var(--label-tertiary-light);
+  --label-tertiary: var(--label-tertiary-dark);
 
   /* ========================================
      FILL COLORS
@@ -142,23 +142,23 @@
 
   --fills-primary-light: rgba(228, 228, 248, 0.42);
   --fills-primary-dark: rgba(221, 221, 221, 0.2);
-  --fills-primary: var(--fills-primary-light);
+  --fills-primary: var(--fills-primary-dark);
 
   --fills-secondary-light: rgba(228, 228, 248, 0.38);
   --fills-secondary-dark: rgba(221, 221, 221, 0.14);
-  --fills-secondary: var(--fills-secondary-light);
+  --fills-secondary: var(--fills-secondary-dark);
 
   --fills-tertiary-light: rgba(228, 228, 248, 0.34);
   --fills-tertiary-dark: rgba(221, 221, 221, 0.08);
-  --fills-tertiary: var(--fills-tertiary-light);
+  --fills-tertiary: var(--fills-tertiary-dark);
 
   --fills-quaternary-light: rgba(228, 228, 249, 0.3);
   --fills-quaternary-dark: rgba(221, 221, 221, 0.06);
-  --fills-quaternary: var(--fills-quaternary-light);
+  --fills-quaternary: var(--fills-quaternary-dark);
 
   --fills-solid-light: rgba(236, 236, 242, 1);
   --fills-solid-dark: rgba(19, 19, 19, 1);
-  --fills-solid: var(--fills-solid-light);
+  --fills-solid: var(--fills-solid-dark);
 
   /* ========================================
      STROKE/BORDER COLORS
@@ -166,11 +166,11 @@
 
   --strokes-primary-light: #ededed;
   --strokes-primary-dark: #202020;
-  --strokes-primary: var(--strokes-primary-light);
+  --strokes-primary: var(--strokes-primary-dark);
 
   --strokes-secondary-light: #dfdfdf;
   --strokes-secondary-dark: #2b2b2b;
-  --strokes-secondary: var(--strokes-secondary-light);
+  --strokes-secondary: var(--strokes-secondary-dark);
 
   /* ========================================
      SYSTEM COLORS
@@ -198,7 +198,7 @@
 
   --system-overlay-light: rgba(29, 29, 29, 0.7);
   --system-overlay-dark: rgba(29, 29, 29, 0.9);
-  --system-overlay: var(--system-overlay-light);
+  --system-overlay: var(--system-overlay-dark);
 }
 
 /* ========================================
@@ -263,6 +263,70 @@
   --system-grey800: var(--system-grey800-dark);
   --system-grey900: var(--system-grey900-dark);
   --system-overlay: var(--system-overlay-dark);
+}
+
+/* ========================================
+   LIGHT MODE OVERRIDES
+   ======================================== */
+
+.light {
+  /* Accent Colors */
+  --accent-purple-main: var(--accent-purple-main-light);
+  --accent-purple-light: var(--accent-purple-light-light);
+  --accent-purple-lighter: var(--accent-purple-lighter-light);
+
+  --accent-blue-main: var(--accent-blue-main-light);
+  --accent-blue-light: var(--accent-blue-light-light);
+  --accent-blue-lighter: var(--accent-blue-lighter-light);
+
+  --accent-orange-main: var(--accent-orange-main-light);
+  --accent-orange-light: var(--accent-orange-light-light);
+
+  --accent-yellow-main: var(--accent-yellow-main-light);
+  --accent-yellow-light: var(--accent-yellow-light-light);
+
+  --accent-pink-main: var(--accent-pink-main-light);
+  --accent-pink-darker: var(--accent-pink-darker-light);
+
+  --accent-red-main: var(--accent-red-main-light);
+  --accent-red-light: var(--accent-red-light-light);
+  --accent-red-darker: var(--accent-red-darker-light);
+
+  --accent-green-main: var(--accent-green-main-light);
+  --accent-green-darker: var(--accent-green-darker-light);
+
+  /* Brand Colors */
+  --brand-blue: var(--brand-blue-light);
+  --brand-purple: var(--brand-purple-light);
+
+  /* Background Colors */
+  --background-primary: var(--background-primary-light);
+  --background-secondary: var(--background-secondary-light);
+  --background-tertiary: var(--background-tertiary-light);
+
+  /* Label Colors */
+  --label-primary: var(--label-primary-light);
+  --label-secondary: var(--label-secondary-light);
+  --label-tertiary: var(--label-tertiary-light);
+
+  /* Fill Colors */
+  --fills-primary: var(--fills-primary-light);
+  --fills-secondary: var(--fills-secondary-light);
+  --fills-tertiary: var(--fills-tertiary-light);
+  --fills-quaternary: var(--fills-quaternary-light);
+  --fills-solid: var(--fills-solid-light);
+
+  /* Stroke Colors */
+  --strokes-primary: var(--strokes-primary-light);
+  --strokes-secondary: var(--strokes-secondary-light);
+
+  /* System Colors */
+  --system-grey100: var(--system-grey100-light);
+  --system-grey200: var(--system-grey200-light);
+  --system-grey700: var(--system-grey700-light);
+  --system-grey800: var(--system-grey800-light);
+  --system-grey900: var(--system-grey900-light);
+  --system-overlay: var(--system-overlay-light);
 }
 
 /* ========================================

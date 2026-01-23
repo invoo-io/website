@@ -3,8 +3,8 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import HeroImageSection from "@/components/HeroImageSection";
-import { ProblemSection } from "@/components/ProblemSection";
-import { DifferenceSection } from "@/components/DifferenceSection";
+import { ThreeCardSection } from "@/components/ui/ThreeCardSection";
+import { FourPillarSection } from "@/components/ui/FourPillarSection";
 import { ProcessSection } from "@/components/ProcessSection";
 import PricingSection from "@/components/PricingSection";
 import { AudienceSegmentationSection } from "@/components/AudienceSegmentationSection";
@@ -112,10 +112,46 @@ export default async function Home({
       <HeroImageSection />
 
       {/* Section 3: Problem Agitation */}
-      <ProblemSection />
+      <ThreeCardSection
+        translationKey="home.problems"
+        iconGradient="linear-gradient(135deg, rgba(37,125,254,0.1), rgba(121,51,255,0.1))"
+        cards={[
+          { key: "card1", icon: "Package" },
+          { key: "card2", icon: "CalendarClock" },
+          { key: "card3", icon: "MessageSquare" },
+        ]}
+      />
 
       {/* Section 4: The Invoo Difference */}
-      <DifferenceSection />
+      <FourPillarSection
+        translationKey="home.difference"
+        pillars={[
+          {
+            key: "pillar1",
+            icon: "Users",
+            gradient: "linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))",
+            iconColor: "var(--accent-blue-main)",
+          },
+          {
+            key: "pillar2",
+            icon: "Zap",
+            gradient: "linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))",
+            iconColor: "var(--accent-purple-main)",
+          },
+          {
+            key: "pillar3",
+            icon: "Timer",
+            gradient: "linear-gradient(135deg, rgba(255,159,10,0.15), rgba(255,159,10,0.05))",
+            iconColor: "var(--accent-orange-main)",
+          },
+          {
+            key: "pillar4",
+            icon: "ShieldCheck",
+            gradient: "linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))",
+            iconColor: "var(--accent-green-main)",
+          },
+        ]}
+      />
 
       {/* Section 5: Choose Your Path */}
       <AudienceSegmentationSection locale={locale} />

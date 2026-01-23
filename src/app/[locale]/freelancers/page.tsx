@@ -3,15 +3,18 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import HeroImageSection from "@/components/HeroImageSection";
-import BuildForGestoriasSection from "@/components/BuildForGestoriasSection";
-import IntroSection from "@/components/IntroSection";
+import { TrustBarSection } from "@/components/TrustBarSection";
+import { ThreeCardSection } from "@/components/ui/ThreeCardSection";
+import { FourPillarSection } from "@/components/ui/FourPillarSection";
+import { SpeedDemoSection } from "@/components/SpeedDemoSection";
+import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
-import FocusSection from "@/components/FocusSection";
+import { FinalCTASection } from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
-import { generateWebApplicationSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
+import { generateWebApplicationSchema, generateFAQPageSchemaStandalone, generateHowToSchema, generateBreadcrumbListSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -44,6 +47,9 @@ export default async function FreelancersPage({
   const firstPart = titleParts[0]; // "Invoicing" or "Facturación"
   const secondPart = titleParts.slice(1).join(" "); // "without stress" or "sin estrés"
 
+  // Get highlights for hero section
+  const highlights = t.raw("freelancersPage.highlights") as string[];
+
   // Generate WebApplication schema with freelancer audience targeting
   const webAppSchema = generateWebApplicationSchema(locale);
 
@@ -59,10 +65,32 @@ export default async function FreelancersPage({
     questions: faqQuestions,
   });
 
+  // Generate HowTo schema for speed demo section
+  const howToSchema = generateHowToSchema({
+    locale,
+    name: `${t("freelancersPage.speedDemo.title")} ${t("freelancersPage.speedDemo.titleHighlight")}`,
+    description: t("freelancersPage.speedDemo.description"),
+    steps: [
+      { name: t("freelancersPage.speedDemo.step1.title"), text: t("freelancersPage.speedDemo.step1.description") },
+      { name: t("freelancersPage.speedDemo.step2.title"), text: t("freelancersPage.speedDemo.step2.description") },
+      { name: t("freelancersPage.speedDemo.step3.title"), text: t("freelancersPage.speedDemo.step3.description") },
+      { name: t("freelancersPage.speedDemo.step4.title"), text: t("freelancersPage.speedDemo.step4.description") },
+    ],
+  });
+
+  // Generate breadcrumb schema
+  const breadcrumbSchema = generateBreadcrumbListSchema(
+    locale,
+    "/freelancers",
+    t("freelancersPage.metadata.title")
+  );
+
   return (
     <div className="min-h-screen bg-background-primary">
       <JsonLd data={webAppSchema} id="webapp-schema" />
       <JsonLd data={faqSchema} id="faq-schema-freelancers" />
+      <JsonLd data={howToSchema} id="howto-schema-freelancers" />
+      <JsonLd data={breadcrumbSchema} id="breadcrumb-schema-freelancers" />
       <Navigation locale={locale} />
       <HeroSection
         title={
@@ -75,71 +103,55 @@ export default async function FreelancersPage({
         paragraph={t("freelancersPage.header.description")}
         buttonText={t("freelancersPage.header.cta")}
         buttonHref="#waitlist"
+        highlights={highlights}
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="Freelancer Dashboard" />
-      <IntroSection
-        titleKey="freelancersPage.introTitle"
-        paragraphKey="freelancersPage.introParagraph"
+      <TrustBarSection />
+      <ThreeCardSection
+        translationKey="freelancersPage.pains"
+        cards={[
+          { key: "card1", icon: "Package" },
+          { key: "card2", icon: "CalendarClock" },
+          { key: "card3", icon: "MessageSquare" },
+        ]}
       />
-      <BuildForGestoriasSection
-        imageSrc="/clock.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("freelancersPage.block1.title")}
-        paragraph={t("freelancersPage.block1.description")}
-        features={t.raw("freelancersPage.block1.features")}
-        buttonText={t("freelancersPage.block1.cta")}
-        buttonHref="#waitlist"
+      <FourPillarSection
+        translationKey="freelancersPage.solution"
+        pillars={[
+          {
+            key: "pillar1",
+            icon: "Users",
+            gradient: "linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))",
+            iconColor: "var(--accent-blue-main)",
+          },
+          {
+            key: "pillar2",
+            icon: "Zap",
+            gradient: "linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))",
+            iconColor: "var(--accent-purple-main)",
+          },
+          {
+            key: "pillar3",
+            icon: "Package",
+            gradient: "linear-gradient(135deg, rgba(255,159,10,0.15), rgba(255,159,10,0.05))",
+            iconColor: "var(--accent-orange-main)",
+          },
+          {
+            key: "pillar4",
+            icon: "ShieldCheck",
+            gradient: "linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))",
+            iconColor: "var(--accent-green-main)",
+          },
+        ]}
       />
-      <BuildForGestoriasSection
-        imageSrc="/Doc.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("freelancersPage.block2.title")}
-        paragraph={t("freelancersPage.block2.description")}
-        features={t.raw("freelancersPage.block2.features")}
-        buttonText={t("freelancersPage.block2.cta")}
-        buttonHref="#waitlist"
-        imagePosition="left"
-        showImagePlaceholder={true}
-      />
-      <BuildForGestoriasSection
-        imageSrc="/Screen.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("freelancersPage.block3.title")}
-        paragraph={t("freelancersPage.block3.description")}
-        features={t.raw("freelancersPage.block3.features")}
-        buttonText={t("freelancersPage.block3.cta")}
-        buttonHref="#waitlist"
-        imagePosition="right"
-        showImagePlaceholder={true}
-      />
-      <BuildForGestoriasSection
-        imageSrc="/Book.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("freelancersPage.block4.title")}
-        paragraph={t("freelancersPage.block4.description")}
-        features={t.raw("freelancersPage.block4.features")}
-        buttonText={t("freelancersPage.block4.cta")}
-        buttonHref="#waitlist"
-        imagePosition="left"
-        showImagePlaceholder={true}
-      />
+      <SpeedDemoSection />
+      <PricingSection variant="section" />
       <FAQSection
         titleKey="freelancersPage.faqTitle"
+        titleHighlightKey="freelancersPage.faqTitleHighlight"
         questionsKey="freelancersPage.faq"
       />
-      <FocusSection />
+      <FinalCTASection />
       <Footer locale={locale} />
     </div>
   );
