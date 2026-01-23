@@ -165,7 +165,7 @@ export default async function Home({
       <PricingSection variant="section" />
 
       {/* Section 8: Final CTA */}
-      <FinalCTASection />
+      <FinalCTASection locale={locale} />
 
       <Footer locale={locale} />
     </div>

@@ -1,10 +1,6 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { useTheme } from "next-themes";
+import { getTranslations } from "next-intl/server";
 import { Facebook, Linkedin, X } from "lucide-react";
 import { getImagePath, getBasePath } from "@/lib/utils";
 
@@ -12,17 +8,12 @@ interface FooterProps {
   locale: string;
 }
 
-export default function Footer({ locale }: FooterProps) {
-  const t = useTranslations("home.footer");
-  const [mounted, setMounted] = useState(false);
-  const { theme } = useTheme();
+export default async function Footer({ locale }: FooterProps) {
+  const t = await getTranslations({ locale, namespace: "home.footer" });
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  // Match the Navigation component logic
-  const logoSrc = mounted && theme === "dark" ? "/Logo-Dark.svg" : "/Logo-White.svg";
+  // Default to dark logo (dark mode is default theme)
+  // CSS handles visibility based on theme class on html element
+  const logoSrc = "/Logo-Dark.svg";
 
   return (
     <footer className="bg-background-secondary text-primary px-6 pt-20 pb-10">

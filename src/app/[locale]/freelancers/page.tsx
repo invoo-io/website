@@ -153,7 +153,7 @@ export default async function FreelancersPage({
         titleHighlightKey="freelancersPage.faqTitleHighlight"
         questionsKey="freelancersPage.faq"
       />
-      <FinalCTASection />
+      <FinalCTASection locale={locale} />
       <Footer locale={locale} />
     </div>
   );

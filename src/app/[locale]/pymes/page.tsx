@@ -152,7 +152,7 @@ export default async function PymesPage({
         titleHighlightKey="pymesPage.faqTitleHighlight"
         questionsKey="pymesPage.faq"
       />
-      <FinalCTASection translationKey="pymesPage.finalCta" />
+      <FinalCTASection locale={locale} translationKey="pymesPage.finalCta" />
       <Footer locale={locale} />
     </div>
   );
