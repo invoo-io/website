@@ -1,7 +1,7 @@
 {
   "buildCommand": "npm run build:vercel",
   "framework": "nextjs",
-  "regions": ["cdg1", "fra1", "iad1"],
+  "regions": ["iad1"],
   "git": {
     "deploymentEnabled": {
       "main": true
