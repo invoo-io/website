@@ -2,9 +2,11 @@
 
 import { useState, FormEvent, useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import validator from "validator";
 
 type SubmissionState = "idle" | "loading" | "success" | "error";
+
+// Simple email validation regex (replaces 128KB validator library)
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const SUCCESS_MESSAGE_DURATION = 3000;
 const REQUEST_TIMEOUT = 10000; // 10 seconds
@@ -37,10 +39,7 @@ export default function NewsletterForm() {
   }, []);
 
   const validateEmail = (email: string): boolean => {
-    return validator.isEmail(email, {
-      allow_utf8_local_part: false,
-      require_tld: true,
-    });
+    return EMAIL_REGEX.test(email.trim());
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
