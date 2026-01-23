@@ -202,15 +202,15 @@ Specialized agents in `.claude/agents/`:
 | Agent | Use For |
 |-------|---------|
 | `product-lead` | Feature specs, roadmap planning (outside codebase) |
-| `marketing-lead` | Marketing site strategy, content calendar, conversion optimization |
-| `growth-lead` | GTM strategy, acquisition, launch planning |
+| `marketing-lead` | Website content strategy: WHAT content to create, topic clusters, conversion optimization |
+| `growth-lead` | GTM execution: HOW to distribute and acquire users through channels and campaigns |
 | `compliance-regulator` | Spanish tax/legal (AEAT, Verifactu, TicketBAI) |
 | `content-writer` | Blog articles, SEO content |
 | `nextjs-architect` | Architecture decisions, refactoring |
 | `nextjs-developer` | Feature implementation |
 | `code-reviewer` | Code reviews, security audits |
 | `seo-specialist` | Technical SEO, keywords |
-| `market-intelligence` | Competitor analysis, research |
+| `market-intelligence` | Research: competitor analysis, user sentiment, market trends (data gathering) |
 | `design-leader` | UX decisions, design systems |
 
 **Deploy proactively** when the task matches an agent's specialty. Run in parallel when independent.
