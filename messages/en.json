@@ -144,7 +144,7 @@
     "faq": {
       "q1": {
         "question": "What is Verifactu and why does it affect me as a freelancer?",
-        "answer": "Verifactu (RD 1007/2023) is the new mandatory electronic invoicing system for freelancers and SMEs in Spain. From July 2026, all freelancers must use approved software that generates invoices with QR code and sends information to AEAT in real-time. Invoo is 100% Verifactu compliant."
+        "answer": "Verifactu (RD 1007/2023) is the new mandatory electronic invoicing system for freelancers and SMEs in Spain. From July 2027 (postponed from 2026), all freelancers must use approved software that generates invoices with QR code and sends information to AEAT in real-time. Invoo is Verifactu compliant."
       },
       "q2": {
         "question": "Can I use Invoo from my mobile?",
@@ -381,7 +381,7 @@
           },
           "q2": {
             "question": "When does VeriFactu become mandatory?",
-            "answer": "For software developers, from July 2025; for companies, from January 2026; and for the self-employed, from July 2026. Some details roll out in stages. We'll notify you in-app when we switch to production AEAT endpoints. If you wait until the last minute (like 38-40% of the self-employed, per surveys), you might face rushed adaptation costs; consider testing Invoo now for a smooth transition."
+            "answer": "Updated January 2026: for software developers, from July 2025; for companies, from January 2027; and for freelancers, from July 2027 (Royal Decree-Law 15/2025). Some details roll out in stages. We'll notify you in-app when we switch to production AEAT endpoints."
           },
           "q3": {
             "question": "Does VeriFactu mean invoices are \"approved\" instantly by AEAT?",
@@ -1009,105 +1009,110 @@
   },
   "home": {
     "hero": {
-      "title": "Create compliant invoices in 30 seconds",
-      "description": "Invoo helps freelancers, SMBs and gestorías work faster together: Verifactu and TicketBAI ready, intuitive UX, quote-to-invoice flow, discount module, and live dashboard for your accountant.",
-      "cta": "Join the waiting list"
+      "title": "Invoice with peace of mind.",
+      "titleHighlight": "Your accountant already has it.",
+      "description": "Create professional invoices in seconds. No CRM you don't use, no inventory you don't need. Just fast invoicing, tax compliant, and automatically shared with your accountant.",
+      "cta": "Join the waiting list",
+      "highlights": [
+        "No pricing surprises",
+        "Verifactu included",
+        "50% off first 100"
+      ]
     },
-    "featuredBlog": {
-      "title": "Featured Articles",
-      "subtitle": "Explore our latest insights on invoicing, compliance, and business management"
-    },
-    "whyChoose": {
-      "title": "Why freelancers, SMBs and gestorías choose Invoo",
-      "intro": "Invoo is invoicing software designed specifically for the Spanish market. From freelancers who need to create Verifactu invoices in seconds to gestorías managing multiple clients, our platform simplifies AEAT compliance while eliminating the paperwork that consumes hours each week.",
-      "outro": "Over 1000 freelancers and gestorías trust Invoo for their daily invoicing. Join professionals who have recovered an average of 5 hours per week by eliminating manual paperwork and compliance errors.",
+    "problems": {
+      "title": "Sound",
+      "titleHighlight": "familiar?",
+      "description": "Every freelancer spends hours on what should take minutes.",
       "card1": {
-        "title": "Save time",
-        "description": "Create and send invoices in 30 seconds with zero learning curve"
+        "title": "Paying for what you don't use",
+        "description": "Software like Holded charges €29/mo for CRM, inventory, and HR you never open. You just want to invoice."
       },
-      "card1Extended": "Create and send professional invoices in 30 seconds, with zero learning curve. Our system automatically generates the Verifactu QR code, sequential numbering, and AEAT compliance without you having to think about it.",
       "card2": {
-        "title": "Always compliant",
-        "description": "Automatic compliance with Verifactu and TicketBAI, stress-free with AEAT"
+        "title": "Word and Excel won't cut it anymore",
+        "description": "Electronic invoicing regulations take effect July 2027. Manual invoices will no longer be valid. Fines reach €50,000."
       },
-      "card2Extended": "Stay always compliant with the latest tax regulations. Invoo automatically updates with each regulatory change, generating compliant invoices that meet RD 1007/2023 and sending data to Tax Authority in real-time.",
       "card3": {
-        "title": "Your workflow",
-        "description": "Convert quotes to invoices instantly without duplicating work"
-      },
-      "card3Extended": "Access your invoicing from any device. Create invoices, log expenses with receipt photos, and check income from your mobile while having coffee. No native apps needed, works from any browser.",
-      "card4": {
-        "title": "Happy clients",
-        "description": "Apply line-item discounts for flexible and professional quotes"
-      },
-      "card4Extended": "Your gestoría sees all your invoices and expenses in real-time from their own panel. No emails, no chasing documents, no delays. Real collaboration with free access for gestorías.",
-      "card5": {
-        "title": "Live collaboration",
-        "description": "Your accountant sees invoices and expenses in real-time from their dashboard"
-      },
-      "card5Extended": "From quote to invoice in one click. Configure volume discounts, special prices per client, and flexible payment terms. Close sales faster with professional proposals.",
-      "cta1": "Accountant",
-      "cta2": "Freelancers",
-      "cta3": "SMBs"
+        "title": "Ping-pong with your accountant",
+        "description": "Emails asking for invoices, WhatsApps with questions, lost PDFs. Time you waste instead of billing more."
+      }
     },
-    "invoicing": {
-      "title": "Invoicing made simple",
-      "intro": "The invoicing process with Invoo is designed for freelancers and SMEs who need speed without sacrificing compliance. From creating the invoice to automatic submission to AEAT, everything happens in seconds with complete traceability.",
+    "difference": {
+      "title": "Invoo is",
+      "titleHighlight": "different",
+      "description": "That's why we built Invoo.",
+      "pillar1": {
+        "title": "Your accountant is already connected",
+        "description": "No emails, no waiting. Your advisor sees every invoice in real-time from their own dashboard. Included free."
+      },
+      "pillar2": {
+        "title": "Just invoicing. Nothing more.",
+        "description": "No CRM you don't open, no inventory you don't manage. Pay for what you use. A tool so clear you don't need a manual."
+      },
+      "pillar3": {
+        "title": "Quote to invoice in 1 click",
+        "description": "Convert quotes to invoices instantly. No retyping data. With discount module to negotiate and close fast."
+      },
+      "pillar4": {
+        "title": "Automatic tax compliance",
+        "description": "Verifiable QR code, automatic tax submission, VAT and withholding calculated. Comply with regulations without studying the law."
+      }
+    },
+    "process": {
+      "title": "This",
+      "titleHighlight": "simple",
+      "description": "Three steps. Zero complications.",
       "step1": {
         "title": "Create",
-        "description": "Enter amount, select service and client, generate professional invoice ready to send"
+        "description": "Select client, service, and amount. VAT, withholding, and numbering automatic."
       },
-      "step1Extended": "Enter the amount, select service and client, and generate a professional invoice ready to send. The platform auto-fills tax data, applies VAT according to regime, and automatically numbers each document to comply with Verifactu. Compatible with quotes that convert to invoices with one click.",
       "step2": {
-        "title": "Deliver",
-        "description": "We send it automatically to AEAT (Verifactu and TicketBAI), your gestoría, and your client"
+        "title": "Send",
+        "description": "To your client, to Tax Authority, and to your accountant. All in one click."
       },
-      "step2Extended": "Once created, Invoo automatically sends your invoice to three destinations: AEAT (Verifactu and TicketBAI compliance), your gestoría (real-time access from their dashboard), and your client (professional PDF by email). No email chains, no duplicate work.",
       "step3": {
         "title": "Done",
-        "description": "All invoices stored and summarized. You just get paid, no extra paperwork"
-      },
-      "step3Extended": "All invoices are automatically saved and summarized. Check monthly income, generate pre-calculations for Model 130 and 303, and export clean CSVs for your accounting software. You just collect, we handle the paperwork.",
-      "faq": {
-        "question": "How long does it take to create an invoice in Invoo?",
-        "answer": "Less than 30 seconds from first click to sending. Users report saving 5-10 minutes per invoice vs. Excel or Word."
-      },
-      "cta": "Join the waiting list"
+        "description": "Invoice saved, compliant, and visible to your accountant. You just get paid."
+      }
     },
-    "moreThanInvoicing": {
-      "title": "More than invoicing",
-      "intro": "Invoo is not just an invoice generator. It's your complete financial management platform designed for freelancers and SMEs in Spain. From expense logging to quarterly tax preparation, we centralize everything you need to keep your finances organized and your gestoría informed.",
-      "card1": {
-        "title": "Track your expenses",
-        "description": "Snap a photo of receipts and let Invoo organize them automatically"
+    "audiences": {
+      "title": "One tool.",
+      "titleHighlight": "Three solutions.",
+      "description": "Same software, different experience.",
+      "autonomos": {
+        "title": "Freelancers",
+        "tagline": "Invoice in 30 seconds. No tax stress.",
+        "body": "Your accountant sees your invoices in real-time. Verifactu, VAT and withholding calculated automatically.",
+        "cta": "How it works for freelancers"
       },
-      "card1Extended": "Take a photo of receipts from your mobile and let Invoo organize them automatically. Smart data extraction, categorization by expense type, and automatic deductible VAT calculation. Share with your gestoría in real-time for more accurate filings.",
-      "card2": {
-        "title": "Quarterly tax ready",
-        "description": "Pre-calculated summaries for Modelo 130 and 303, so you file faster"
+      "pymes": {
+        "title": "SMEs",
+        "tagline": "Your whole team in sync. Your accountant too.",
+        "body": "Quote to invoice in 1 click. Discounts to negotiate, full control, zero emails to your accountant.",
+        "cta": "How it works for SMEs"
       },
-      "card2Extended": "Forget Excel sheets for Model 130 and 303. Invoo generates pre-calculated summaries with taxable bases, charged and borne VAT, and applied withholdings. Your gestoría reviews and validates in minutes, not hours.",
-      "card3": {
-        "title": "Gestoría dashboard",
-        "description": "Your gestoría gets real-time access to invoices and expenses, no email chains"
-      },
-      "card3Extended": "Your gestoría accesses invoices and expenses from their own panel, without email chains or chasing documents. Instant updates, automatic notifications, and free access for gestorías. Real collaboration, zero friction.",
-      "card4": {
-        "title": "One-click exports",
-        "description": "Download invoices and expenses in clean CSV format, ready for any accounting software"
-      },
-      "card4Extended": "Download invoices and expenses in clean CSV format, compatible with any accounting software. Monthly, quarterly, or custom exports. Standard format that your gestoría can import without reformatting data.",
-      "cta": "Join the waiting list"
+      "gestorias": {
+        "title": "Accountants",
+        "tagline": "Your brand. Our technology. Free dashboard.",
+        "body": "Your clients invoice themselves while you see everything. Compete with digital platforms without losing the relationship.",
+        "cta": "How it works for accountants"
+      }
     },
-    "gestoriasBlock": {
-      "title": "Built for gestorías",
-      "description": "Invoo isn't just for freelancers. Gestorías get real-time client data access without chasing documents or retyping. Free, secure, and always Verifactu compliant",
+    "gestorias": {
+      "title": "Built for",
+      "titleHighlight": "accountants",
+      "description": "Compete with TaxDown and digital platforms without losing your identity. Invoo gives you the tools, you keep the relationship.",
       "features": [
-        "Real-time multi-client data",
-        "Bulk CSV export",
-        "Quarterly tax summaries"
+        "Free dashboard with all your clients",
+        "One-click CSV export for your software",
+        "Model 130/303 pre-calculated per client"
       ],
-      "cta": "Learn More"
+      "cta": "Learn more for accountants"
+    },
+    "finalCta": {
+      "title": "Get back to what matters:",
+      "titleHighlight": "your work.",
+      "description": "Leave the paperwork and tax headaches behind. Your accountant handles the rest. Join the first 100 users and get 50% off forever.",
+      "cta": "Join the waiting list"
     },
     "focus": {
       "title": "Focus on your work. We'll handle the paperwork",

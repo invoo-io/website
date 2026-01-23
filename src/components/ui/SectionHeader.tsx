@@ -27,7 +27,7 @@ const SIZE_CONFIG = {
     descriptionColor: "text-secondary",
     defaultAs: "h2" as const,
     defaultMargin: "mb-16",
-    defaultGap: "mt-6",
+    defaultGap: "mt-4",
     defaultMaxWidth: "max-w-4xl",
   },
   subsection: {
