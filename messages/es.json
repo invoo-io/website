@@ -86,81 +86,129 @@
   },
   "freelancersPage": {
     "metadata": {
-      "title": "Factura Verifactu en 30s | Colabora con Gestoría | Autónomos",
-      "description": "Úsalo desde tu móvil, rápido, intuitivo. Precios flexibles para cerrar ventas. Gestoría ve todo en tiempo real. Únete a la lista de espera."
+      "title": "Facturación Autónomos en 30s | Tu Gestoría Conectada | Invoo",
+      "description": "Factura en 30 segundos con Verifactu automático. Tu gestoría ve todo al instante, sin emails. IVA e IRPF calculados. €10.90/mes. Únete a la lista de espera."
     },
     "header": {
       "title": "Facturación sin estrés",
-      "description": "Facturas profesionales, cumplimiento automático con Verifactu (RD 1007/2023) y envío instantáneo a Hacienda, tu cliente y tu gestoría en tiempo real",
+      "description": "Crea facturas en 30 segundos. Tu gestor las ve al instante, sin emails ni PDFs. Verifactu automático, IVA e IRPF calculados. Todo incluido por €10.90/mes.",
       "cta": "Únete a la lista de espera"
     },
-    "block1": {
-      "title": "Crea facturas profesionales en segundos",
-      "description": "Olvida las plantillas y trucos de Excel. Invoo genera PDFs pulidos siempre correctamente numerados y listos para enviar",
-      "features": [
-        "Datos de cliente autocompletados",
-        "Plantillas PDF profesionales",
-        "Numeración automática"
-      ],
-      "cta": "Empieza a facturar en 30 segundos"
-    },
-    "block2": {
-      "title": "Cumplimiento gestionado por ti",
-      "description": "Cada factura incluye el QR oficial Verifactu y se envía a Hacienda en segundo plano, así nunca te preocupas por errores o multas",
-      "features": [
-        "Generación automática de QR",
-        "Envío seguro a Hacienda",
-        "Trazabilidad completa con verificación de estado"
-      ],
-      "cta": "Prueba Verifactu gratis"
-    },
-    "block3": {
-      "title": "Tus finanzas en una vista simple",
-      "description": "Desde gastos diarios hasta modelos trimestrales, Invoo centraliza todo para que veas el panorama general sin cambiar de herramientas",
-      "features": [
-        "Captura y registra gastos",
-        "Resúmenes mensuales automáticos",
-        "Modelo 130/303 pre-calculado"
-      ],
-      "cta": "Conecta tu gestoría ahora"
-    },
-    "block4": {
-      "title": "Comparte sin esfuerzo con tu gestoría",
-      "description": "Sin más perseguir o reenviar PDFs. Tu gestoría ve facturas y gastos en tiempo real, sin coste para ellos",
-      "features": [
-        "Acceso directo para tu gestoría",
-        "Sin cadenas de emails ni reescribir",
-        "Gratis para gestorías"
-      ],
-      "cta": "Únete a la lista de espera"
-    },
-    "introTitle": "Software de facturación diseñado para autónomos en España",
-    "introParagraph": [
-      "Si eres autónomo, sabes que facturar consume más tiempo del que debería. Entre Excel, plantillas desactualizadas, dudas sobre Verifactu, y coordinación con tu gestoría, cada factura puede tomar 10-15 minutos que deberías invertir en tu negocio.",
-      "Invoo nació para resolver exactamente esto. Software de facturación que entiende la realidad española: cumplimiento automático con AEAT, integración directa con tu gestoría, y una interfaz tan simple que crearás facturas desde el móvil mientras tomas café.",
-      "Estas son las razones por las que autónomos como tú están dejando Excel y eligiendo Invoo:"
+    "highlights": [
+      "Factura en 30 segundos",
+      "Tu gestoría ya conectada",
+      "€10.90/mes, sin sorpresas"
     ],
-    "faqTitle": "Preguntas frecuentes de autónomos sobre Verifactu e Invoo",
+    "trustBar": {
+      "title": "Autónomos que ya",
+      "titleHighlight": "esperan facturar mejor",
+      "subtitle": "Únete a los autónomos que esperan facturar sin estrés",
+      "stat1": {
+        "number": "80+",
+        "label": "autónomos en espera"
+      },
+      "stat2": {
+        "number": "30 seg",
+        "label": "media por factura"
+      },
+      "stat3": {
+        "number": "€10.90",
+        "label": "todo incluido"
+      }
+    },
+    "pains": {
+      "title": "¿Todavía facturas así?",
+      "titleHighlight": "No tiene que ser tan difícil",
+      "description": "La mayoría de autónomos pierden horas cada mes en facturación. Hay una forma mejor.",
+      "card1": {
+        "title": "Pagas por funciones que no usas",
+        "description": "Holded te cobra €29+/mes por CRM, inventario y HR. Un freelancer usa solo el 5%."
+      },
+      "card2": {
+        "title": "Word te quita tiempo",
+        "description": "Copiar datos, calcular IVA a mano, numerar facturas, guardar PDFs. 10 minutos por factura que podrías estar facturando."
+      },
+      "card3": {
+        "title": "Emails interminables con tu gestoría",
+        "description": "Reenviar PDFs, perseguir documentos, esperar respuestas. Ida y vuelta que frustra a todos."
+      }
+    },
+    "solution": {
+      "title": "Invoo resuelve",
+      "titleHighlight": "todo esto",
+      "description": "Solo facturación, hecha bien. Sin CRM, sin inventario, sin complicaciones.",
+      "pillar1": {
+        "title": "Tu gestoría ya conectada",
+        "description": "Dashboard en tiempo real para tu asesor. Cero emails con PDFs. Incluido en el precio (competidores cobran €80/mes extra)."
+      },
+      "pillar2": {
+        "title": "Factura en 30 segundos",
+        "description": "Interfaz sin distracciones. Presupuesto a factura en 1 clic. Descuentos incluidos."
+      },
+      "pillar3": {
+        "title": "Solo facturación",
+        "description": "Sin CRM, sin inventario, sin HR. €10.90/mes vs €29+ de Holded — y usas el 100% de lo que pagas."
+      },
+      "pillar4": {
+        "title": "Verifactu sin pensar",
+        "description": "Verifactu + TicketBAI automático. IVA e IRPF calculados. Cumple sin entender la normativa."
+      }
+    },
+    "speedDemo": {
+      "title": "Factura en",
+      "titleHighlight": "30 segundos. En serio.",
+      "description": "Desde cero a PDF enviado. Sin trucos, sin exageraciones.",
+      "step1": {
+        "time": "5 seg",
+        "title": "Datos cliente",
+        "description": "Autocompletado"
+      },
+      "step2": {
+        "time": "10 seg",
+        "title": "Añade líneas",
+        "description": "Concepto e importe"
+      },
+      "step3": {
+        "time": "5 seg",
+        "title": "Revisión",
+        "description": "IVA calculado"
+      },
+      "step4": {
+        "time": "10 seg",
+        "title": "Enviada",
+        "description": "Tu gestoría lo ve"
+      }
+    },
+    "faqTitle": "Preguntas que se hacen los autónomos",
+    "faqTitleHighlight": "antes de decidirse",
     "faq": {
       "q1": {
-        "question": "¿Qué es Verifactu y por qué me afecta como autónomo?",
-        "answer": "Verifactu (RD 1007/2023) es el nuevo sistema de facturación electrónica obligatorio para autónomos y pymes en España. Desde julio 2027 (prorrogado desde 2026), todos los autónomos deben usar software homologado que genere facturas con código QR y envíe información a AEAT en tiempo real. Invoo cumple con Verifactu."
+        "question": "Ya tengo gestoría. ¿Cómo funciona la conexión con Invoo?",
+        "answer": "Tu gestoría obtiene acceso gratuito a un dashboard donde ve todas tus facturas y gastos en tiempo real. Sin emails con PDFs, sin perseguir documentos, sin malentendidos. Invitas a tu gestoría una vez y desde entonces todo se sincroniza automáticamente. Es lo que nos diferencia: colaboración con tu asesor incluida en el precio, no un extra de €80 al mes."
       },
       "q2": {
-        "question": "¿Puedo usar Invoo desde mi móvil?",
-        "answer": "Sí. La interfaz web de Invoo está optimizada para móvil. Crea facturas, registra gastos con fotos de tickets, y consulta ingresos desde cualquier dispositivo. Sin necesidad de app nativa, funciona desde cualquier navegador."
+        "question": "Uso Holded/Quipu y me sobran funciones. ¿Invoo es diferente?",
+        "answer": "Invoo es solo facturación. Sin CRM, sin inventario, sin módulos de HR que nunca usarás. Pagas €10.90/mes por facturación profesional completa: presupuestos, facturas, gastos, descuentos, multi-divisa, y tu gestoría conectada. Usas el 100% de lo que pagas."
       },
       "q3": {
-        "question": "¿Cómo comparto facturas con mi gestoría?",
-        "answer": "Tu gestoría obtiene acceso gratuito a un dashboard donde ve todas tus facturas y gastos en tiempo real. No necesitas enviar PDFs por email ni perseguir documentos. Invitas a tu gestoría una vez, y desde entonces todo se sincroniza automáticamente."
+        "question": "¿Cuánto tiempo me quita facturar cada mes?",
+        "answer": "30 segundos por factura, verificado. Presupuesto a factura en 1 clic. Gastos con foto desde el móvil. Si facturas a 10-15 clientes al mes, son 15 minutos. No 6 horas como con Excel. Tiempo que recuperas para facturar a clientes, no para hacer admin."
       },
       "q4": {
-        "question": "¿Cuánto tardo en crear mi primera factura?",
-        "answer": "Menos de 2 minutos incluyendo el registro inicial. Una vez configurado tu perfil fiscal y primer cliente, las siguientes facturas toman 30 segundos."
+        "question": "¿Tengo que hacer algo especial para cumplir con Verifactu?",
+        "answer": "No. Invoo genera facturas con Verifactu desde el día 1. Código QR, envío a AEAT, todo automático. Tu gestoría lo ve, tú lo olvidas. Cuando llegue julio 2027, ya estarás cumpliendo sin haber hecho nada extra."
       },
       "q5": {
-        "question": "¿Invoo calcula el IVA y retenciones automáticamente?",
-        "answer": "Sí. Según tu régimen fiscal (general, recargo de equivalencia, IRPF), Invoo aplica automáticamente IVA (21%, 10%, 4%) y retenciones (15% o 7% IRPF según casos). Sin cálculos manuales, sin errores."
+        "question": "Facturo a clientes de fuera de España. ¿Invoo gestiona el IVA?",
+        "answer": "Sí. Facturas en euros, dólares o libras. El IVA se calcula automáticamente según el país del cliente: intracomunitario, exportación, o nacional. Sin errores de conversión, sin confusiones con el ROI o la forma 349. Tu gestoría ve las facturas internacionales igual que las nacionales."
+      },
+      "q6": {
+        "question": "Vengo de Excel. ¿Cuánto cuesta migrar?",
+        "answer": "5 minutos de configuración inicial: datos fiscales, logo, primer cliente. Desde ahí, cada factura son 30 segundos. No hay curva de aprendizaje. Si usas WhatsApp, ya sabes usar Invoo. Ahorras tiempo desde el primer día."
+      },
+      "q7": {
+        "question": "€10.90/mes parece caro para un autónomo. ¿Vale la pena?",
+        "answer": "€10.90 es menos de una hora de tu trabajo. Recuperas ese tiempo en la primera factura del mes. Sin contar el estrés que te ahorras con Verifactu automático y tu gestoría siempre al día. Competidores como Holded cobran €29+/mes por funciones que nunca usarás."
       }
     }
   },
@@ -401,7 +449,7 @@
           },
           "q7": {
             "question": "¿Puedo seguir usando Excel o Word para facturar?",
-            "answer": "No, VeriFactu exige software homologado que envíe datos en tiempo real a la AEAT. Invoo reemplaza eso con una interfaz simple; como opción, migra datos de Excel vía CSV, pero recomendamos automatizar para ahorrar tiempo."
+            "answer": "Sí, si solo usas Word/Excel como plantilla manual (sin macros ni integración contable), Verifactu no te afecta. Pero perderás tiempo: 10 minutos por factura vs 30 segundos con Invoo. Si usas Excel con macros que generan libros de IVA, entonces sí necesitas software homologado."
           }
         }
       },
@@ -1091,8 +1139,8 @@
         "description": "Programas como Holded te cobran €29/mes por CRM, inventario y HR que nunca abres. Tú solo quieres facturar."
       },
       "card2": {
-        "title": "Word y Excel ya no valen",
-        "description": "En julio 2027 entra en vigor la normativa de facturación electrónica. Las facturas manuales dejarán de ser válidas. Las multas alcanzan los €50.000."
+        "title": "Word te roba tiempo",
+        "description": "Copiar datos, calcular IVA, numerar facturas, buscar el PDF de hace 3 meses. 10 minutos por factura que podrías estar cobrando."
       },
       "card3": {
         "title": "El ping-pong con tu gestoría",
