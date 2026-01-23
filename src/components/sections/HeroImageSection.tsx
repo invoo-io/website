@@ -1,4 +1,8 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 import { getImagePath } from "@/lib/utils";
 
 interface HeroImageSectionProps {
@@ -12,6 +16,13 @@ export default function HeroImageSection({
   dashboardAlt = "Invoo Dashboard",
   imageBaseName = "homepage",
 }: HeroImageSectionProps) {
+  const [mounted, setMounted] = useState(false);
+  const { theme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   // If a specific image is provided, use it directly
   if (dashboardImage) {
     return (
@@ -33,32 +44,24 @@ export default function HeroImageSection({
     );
   }
 
-  // Render both images, CSS handles visibility based on theme
-  const lightImage = `/${imageBaseName}-light.webp`;
-  const darkImage = `/${imageBaseName}-dark.webp`;
+  // Default to dark image (since dark mode is default theme)
+  // Only switch to light image after hydration confirms light theme
+  const isLightTheme = mounted && theme === "light";
+  const imageSrc = isLightTheme
+    ? `/${imageBaseName}-light.webp`
+    : `/${imageBaseName}-dark.webp`;
 
   return (
     <section className="w-full -mt-40 max-md:-mt-10 pt-32 pb-32 max-md:pt-8 max-md:pb-24">
       <div className="max-w-7xl mx-auto px-6 max-md:px-4">
         <div className="relative w-full">
-          {/* Light mode image - hidden in dark mode */}
           <Image
-            src={getImagePath(lightImage)}
+            src={getImagePath(imageSrc)}
             alt={dashboardAlt}
             width={1350}
             height={700}
             sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
-            className="w-full h-auto rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.2)] dark:hidden"
-            loading="lazy"
-          />
-          {/* Dark mode image - hidden in light mode, priority since dark is default */}
-          <Image
-            src={getImagePath(darkImage)}
-            alt={dashboardAlt}
-            width={1350}
-            height={700}
-            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 90vw, 1200px"
-            className="w-full h-auto rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.2)] hidden dark:block"
+            className="w-full h-auto rounded-[32px] shadow-[0_20px_80px_rgba(0,0,0,0.2)]"
             priority
           />
         </div>
