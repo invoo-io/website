@@ -219,56 +219,96 @@
     },
     "header": {
       "title": "Facturación en equipo",
-      "description": "Software colaborativo con Verifactu integrado. Gestiona permisos, comparte con tu gestoría, y factura sin límites con tu equipo",
+      "description": "Centraliza facturas, controla quién hace qué, y conecta tu gestoría. Verifactu automático para todo el equipo. Desde €10.45/mes para 2 usuarios (50% dto primeros 100).",
       "cta": "Únete a la lista de espera"
     },
-    "block1": {
-      "title": "Tu equipo, facturando juntos",
-      "description": "Factura con varios usuarios simultáneamente, asigna roles personalizados y mantén el control total sin bloqueos ni conflictos",
-      "features": [
-        "2-4 usuarios según tu plan",
-        "Roles: Admin, Editor, Solo lectura",
-        "Cambios sincronizados al instante"
-      ],
-      "cta": "Centraliza la facturación de tu equipo"
-    },
-    "block2": {
-      "title": "Cumplimiento automático con Verifactu",
-      "description": "Cada factura genera el QR oficial y se envía a AEAT automáticamente. Trazabilidad completa para auditorías sin preocupaciones",
-      "features": [
-        "QR oficial en cada factura",
-        "Envío automático a AEAT",
-        "Registro de auditoría completo"
-      ],
-      "cta": "Empieza con tu PYME ahora"
-    },
-    "block3": {
-      "title": "Tu gestoría accede cuando quiera",
-      "description": "Dashboard en tiempo real sin coste adicional. Exportaciones CSV listas y resúmenes trimestrales para contabilizar en segundos",
-      "features": [
-        "Dashboard en tiempo real sin coste",
-        "Exportaciones CSV listas para contabilizar",
-        "Resúmenes Modelo 130/303"
-      ],
-      "cta": "Prueba colaboración en tiempo real"
-    },
-    "block4": {
-      "title": "Crece sin complicaciones",
-      "description": "Añade usuarios con un clic, facturación ilimitada siempre, y escala tu negocio sin cambiar de software ni contratos de permanencia",
-      "features": [
-        "De 2 a 4 usuarios con un clic",
-        "Facturación ilimitada siempre",
-        "Sin contratos de permanencia"
-      ],
-      "cta": "Únete a la lista de espera"
-    },
-    "introTitle": "Facturación colaborativa diseñada para equipos pequeños",
-    "introParagraph": [
-      "Gestionar la facturación en una pyme con 2-4 personas es un caos sin las herramientas adecuadas. Facturas creadas por distintos miembros del equipo, falta de visibilidad sobre quién facturó qué, y tu gestoría persiguiendo documentos dispersos en emails.",
-      "Invoo centraliza toda la facturación de tu equipo en una plataforma única. Cada miembro crea facturas con su usuario, todos ven el estado en tiempo real, y tu gestoría accede a todo desde su dashboard sin pedir nada.",
-      "Estas son las ventajas que equipos pyme están descubriendo con Invoo:"
+    "highlights": [
+      "2-4 usuarios según plan",
+      "Admin ve todo al instante",
+      "Gestoría incluida gratis"
     ],
-    "faqTitle": "Preguntas frecuentes de PYMEs sobre facturación en equipo",
+    "trustBar": {
+      "title": "Por qué equipos eligen",
+      "titleHighlight": "Invoo para PYMEs",
+      "subtitle": "Centralizar la facturación del equipo elimina caos, ahorra tiempo, y da visibilidad total",
+      "stat1": {
+        "number": "2-4 usuarios",
+        "label": "Según tu plan"
+      },
+      "stat2": {
+        "number": "100% visibilidad",
+        "label": "Admin ve todo"
+      },
+      "stat3": {
+        "number": "€0 extra",
+        "label": "Gestoría incluida"
+      }
+    },
+    "pains": {
+      "title": "El caos de facturar",
+      "titleHighlight": "sin coordinación",
+      "description": "Cuando varias personas facturan sin herramienta común, todo se descontrola. Invoo centraliza y da visibilidad total.",
+      "card1": {
+        "title": "Facturas en emails dispersos",
+        "description": "Cada persona envía facturas desde su propio email. Tu gestoría tiene que perseguir PDFs por WhatsApp, Gmail, y no sabe quién facturó qué."
+      },
+      "card2": {
+        "title": "Cero visibilidad del equipo",
+        "description": "No sabes quién ya facturó qué cliente, ni cuánto llevas facturado este mes. Cada uno trabaja en su burbuja sin coordinarse."
+      },
+      "card3": {
+        "title": "Plantillas inconsistentes",
+        "description": "Uno usa Word, otro Excel, otro un template descargado. Facturas con distintos formatos, numeración sin control, imagen poco profesional."
+      }
+    },
+    "solution": {
+      "title": "Facturación en equipo",
+      "titleHighlight": "que funciona",
+      "description": "Invoo centraliza facturas, asigna roles, conecta tu gestoría, y mantiene Verifactu para todos. Visibilidad total, cero caos.",
+      "pillar1": {
+        "title": "Multi-usuario con roles",
+        "description": "Cada miembro factura con su usuario. Admin ve facturas de todos, controla quién hace qué. Roles personalizados para dar acceso justo."
+      },
+      "pillar2": {
+        "title": "Gestoría conectada gratis",
+        "description": "Dashboard en tiempo real para tu gestoría, sin coste adicional. Ve facturas de todo el equipo al instante, sin perseguir emails ni PDFs."
+      },
+      "pillar3": {
+        "title": "Verifactu automático por usuario",
+        "description": "Cada factura genera QR Verifactu, independientemente de quién la cree. Cumplimiento AEAT 100% sin configuración manual por persona."
+      },
+      "pillar4": {
+        "title": "Trazabilidad completa",
+        "description": "Sabes quién creó cada factura y cuándo. Auditoría interna fácil, gestoría con visibilidad total, todo registrado sin esfuerzo."
+      }
+    },
+    "speedDemo": {
+      "title": "Presupuesto a factura",
+      "titleHighlight": "en equipo",
+      "description": "Colabora en presupuestos, convierte a factura en 1 clic, y tu gestoría lo ve todo sin pedir nada",
+      "step1": {
+        "time": "Paso 1",
+        "title": "Equipo crea presupuesto",
+        "description": "Cualquier usuario crea presupuesto, Admin revisa antes de enviar"
+      },
+      "step2": {
+        "time": "Paso 2",
+        "title": "Cliente acepta",
+        "description": "Presupuesto enviado, cliente da OK. Listo para facturar"
+      },
+      "step3": {
+        "time": "Paso 3",
+        "title": "Admin convierte a factura",
+        "description": "1 clic convierte presupuesto en factura. Verifactu automático, enviado a AEAT"
+      },
+      "step4": {
+        "time": "30 segundos",
+        "title": "Gestoría lo ve todo",
+        "description": "Dashboard actualizado. CSV listo. Sin emails ni PDFs sueltos"
+      }
+    },
+    "faqTitle": "Preguntas de equipos sobre",
+    "faqTitleHighlight": "facturación colaborativa",
     "faq": {
       "q1": {
         "question": "¿Cuántos usuarios puede tener mi cuenta de PYME?",
@@ -290,6 +330,12 @@
         "question": "¿Invoo cumple Verifactu para todas las facturas del equipo?",
         "answer": "Sí. Independientemente de quién cree la factura en tu equipo, Invoo genera automáticamente el código QR Verifactu, numera correlativamente, y envía a AEAT. Cumplimiento 100% sin configuración manual por usuario."
       }
+    },
+    "finalCta": {
+      "title": "Centraliza la facturación",
+      "titleHighlight": "de tu equipo",
+      "description": "Únete a equipos pyme que ya facturan sin caos. Roles claros, gestoría conectada, Verifactu automático.",
+      "cta": "Únete a la lista de espera"
     }
   },
   "gestoriasPage": {

@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import HeroImageSection from "@/components/HeroImageSection";
-import { ThreeCardSection } from "@/components/ui/ThreeCardSection";
-import { FourPillarSection } from "@/components/ui/FourPillarSection";
-import { ProcessSection } from "@/components/ProcessSection";
-import PricingSection from "@/components/PricingSection";
-import { AudienceSegmentationSection } from "@/components/AudienceSegmentationSection";
-import { FinalCTASection } from "@/components/FinalCTASection";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import HeroSection from "@/components/sections/HeroSection";
+import HeroImageSection from "@/components/sections/HeroImageSection";
+import { ThreeCardSection } from "@/components/sections/templates/ThreeCardSection";
+import { FourPillarSection } from "@/components/sections/templates/FourPillarSection";
+import { ProcessSection } from "@/components/sections/ProcessSection";
+import PricingSection from "@/components/sections/PricingSection";
+import { AudienceSegmentationSection } from "@/components/sections/AudienceSegmentationSection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateWebApplicationSchema, generateHowToSchema } from "@/lib/schema";
 
 const BASE_URL = "https://invoo.es";

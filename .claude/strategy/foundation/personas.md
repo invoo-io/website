@@ -14,6 +14,7 @@
 | David | Efficiency | B2C - Tech Autónomo | High | Strong |
 | Carmen | Simplicity | B2C - Traditional Autónomo | High | Very Strong |
 | Miguel | Focus | B2C - Single-client Autónomo | Medium | Moderate |
+| Laura | Control | B2C - PYME (2-15 employees) | High | Moderate |
 | Ana | Scale | B2B - Gestoría | High | Strong |
 
 ---
@@ -547,6 +548,141 @@
 
 ---
 
+## Laura - The Control Seeker (PYME)
+
+**Archetype**: Small business owner/manager who needs team invoicing without enterprise complexity
+
+**Demographics**:
+- Location: Spain (Madrid, Barcelona, Valencia, regional cities)
+- Age: 35-55
+- Company size: 2-15 employees
+- Revenue: €150K-1.5M/year
+- Industry: Professional services, retail, hospitality, construction, agencies
+- Role: Owner, General Manager, Office Manager, Administrative Director
+- Team invoicing: 2-4 people create invoices (sales, admin, owner)
+
+### Research Validation
+
+**Where we found Laura:**
+- Small business forums (Emprendedores, Infoautonomos "dar el salto" threads)
+- LinkedIn groups for PYME owners
+- Trustpilot reviews complaining about Holded/Factorial complexity
+- Searching "software facturacion pymes" and "facturacion equipos"
+
+**Key quotes from research:**
+> "Holded es potente pero mi equipo tarda semanas en aprender a usarlo"
+> "Necesito saber quién facturó qué, pero sin montar un ERP"
+
+### Current Situation
+
+**Tools Today**:
+- Excel compartido en Google Drive (version chaos)
+- Holded/Quipu (complex, expensive, underused)
+- Word templates per employee (no standardization)
+- Email forwarding to gestoría (lost documents, delays)
+- WhatsApp group for coordination (chaotic)
+
+**Monthly Workflow**:
+1. Each team member creates invoices their own way
+2. Laura consolidates at end of month
+3. Chase missing invoices from team members
+4. Forward everything to gestoría via email
+5. Gestoría asks for missing documents
+6. Quarterly tax prep = stressful scramble
+
+**Time Spent**: 8-12 hours/month on invoicing coordination + significant stress
+
+### What Makes Laura Different from Freelancers
+
+| Aspect | Freelancer (David/Carmen) | PYME (Laura) |
+|--------|---------------------------|--------------|
+| **Invoice creators** | Just themselves | 2-4 team members |
+| **Visibility need** | Personal records | Who invoiced what, when |
+| **Compliance scope** | Individual Verifactu | Company-wide Verifactu |
+| **Gestoría relationship** | 1:1 communication | Multiple people, one gestoría |
+| **Growth concern** | Client acquisition | Team scaling |
+| **Price sensitivity** | €10.90 is personal expense | €19.90 is business expense |
+
+### Jobs to Be Done
+
+| Job Type | Job Statement |
+|----------|---------------|
+| **Functional** | Let my team invoice professionally while I maintain visibility and control |
+| **Social** | Look organized to clients, gestoría, and potential auditors |
+| **Emotional** | Sleep at night knowing my business is compliant and nothing falls through cracks |
+
+### Pains (Research-Validated)
+
+| Pain | Severity | Evidence |
+|------|----------|----------|
+| No visibility into team invoicing | Critical | "No sé quién facturó qué hasta fin de mes" |
+| Gestoría communication chaos | High | Multiple team members, multiple email threads |
+| Verifactu compliance for whole team | Critical | Must implement for ALL employees |
+| Holded/ERP complexity | High | "Mi equipo no sabe usar ni el 10%" |
+| Version control hell | High | Multiple people editing same Excel |
+| Audit trail missing | Medium | "Si Hacienda pregunta, no tengo registro claro" |
+
+### Gains
+
+| Gain | Importance |
+|------|------------|
+| Dashboard showing who created what | Critical |
+| Gestoría sees all team invoices in one place | Critical |
+| Verifactu automatic for all users | Critical |
+| Fast setup (no weeks of implementation) | High |
+| Affordable team pricing | High |
+| Professional appearance | Medium |
+
+### Buying Triggers
+
+- New employee who needs to create invoices
+- Gestoría complains about document chaos
+- Verifactu deadline approaching
+- Audit or client request for proper records
+- Holded renewal with price increase
+- Key admin employee leaves (reveals system fragility)
+
+### Objections & Responses
+
+| Objection | Response |
+|-----------|----------|
+| "Ya usamos Holded" | Tu equipo usa el 10% y tarda semanas en aprenderlo. €19.90/mes vs €100+ de Holded. |
+| "Necesito más que facturación" | Usa tu CRM para clientes, Invoo para facturación. Sin duplicar trabajo. |
+| "Mi equipo no usará otro software" | Si saben usar WhatsApp, saben usar Invoo. Más fácil que Excel. |
+| "Mi gestoría no sabrá usarlo" | Dashboard gratuito para tu asesor. Ve todo sin que le envíes nada. |
+
+### Messaging That Resonates
+
+- ✅ "Tu equipo factura. Tú lo ves todo."
+- ✅ "Tu gestoría ve TODAS las facturas de TODOS los usuarios"
+- ✅ "Verifactu para todo el equipo, automático"
+- ✅ "De decisión a equipo facturando en 10 minutos"
+- ✅ "€19.90/mes para 4 usuarios vs €100+ de Holded"
+- ❌ "All-in-one" (that's what she's avoiding)
+- ❌ "Enterprise" (sounds expensive and complex)
+- ❌ "Implementation required" (red flag)
+
+### Content Topics
+
+- Cómo gestionar facturación con varios empleados
+- Holded vs Invoo para PYMEs: ¿necesitas un ERP?
+- Verifactu para empresas: cómo cumplir con todo tu equipo
+- El problema del Excel compartido para facturar
+- Cómo conectar a tu gestoría cuando hay varios facturadores
+
+### Go-to-Market for Laura
+
+**Channels:**
+- SEO: "software facturación pymes", "facturación equipos"
+- Content marketing: PYME pain points blog posts
+- LinkedIn ads targeting small business owners
+- Referrals from gestorías (Ana persona)
+- Partner with business associations (Cámaras de Comercio)
+
+**Full positioning details:** See [positioning.md](./positioning.md) (Laura value proposition, Pillar 5: Team Visibility, PYME competitive positioning)
+
+---
+
 ## Persona Priority Matrix
 
 | Persona | Revenue Potential | Acquisition Cost | Strategic Value | Validation | Priority |
@@ -554,6 +690,7 @@
 | David | Medium (€10.90/mo) | Low (SEO, content) | High (word of mouth, vocal) | Strong | **High** |
 | Carmen | Medium (€10.90/mo) | Medium (trust needed) | High (largest segment, forced migration) | Very Strong | **High** |
 | Miguel | Low (€10.90/mo) | Low (SEO) | Low (may churn) | Moderate | **Medium** |
+| Laura | Medium-High (€19.90/mo) | Medium (SEO, referrals) | High (team adoption = sticky) | Moderate | **High** |
 | Ana | High (€149+/mo) | High (sales cycle) | Critical (brings 150-400 clients each) | Strong | **High** |
 
 ---
@@ -583,18 +720,22 @@ Based on research, here's how we differentiate:
 
 ### For Landing Pages
 - Homepage should resonate with David + Carmen (highest volume, SEO)
+- Dedicated `/freelancers` page for David + Carmen (individual autónomos)
+- Dedicated `/pymes` page for Laura (team invoicing, control angle)
 - Dedicated `/gestorias` page for Ana (different buyer journey)
 - Pricing page must address "Holded is too expensive" objection
 
 ### For Product Decisions
 - **Carmen = simplicity filter**: If she can't use it in 5 minutes, simplify
 - **David = power filter**: If he finds it limiting for international clients, add depth
+- **Laura = team filter**: If it doesn't give visibility across users, add dashboard features
 - **Ana = scale filter**: If it doesn't work for 300 clients, rethink architecture
 
 ### For Sales/Support
 - David: Speak tech, focus on time savings and international features
 - Carmen: Speak simply, emphasize gestoría connection and "impossible to make mistakes"
 - Miguel: Quick setup, recurring automation, scale-when-ready messaging
+- Laura: Team visibility, fast setup, no ERP complexity, gestoría for whole team
 - Ana: ROI focus, competitive positioning vs. online gestorías, implementation support
 
 ---

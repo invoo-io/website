@@ -1,14 +1,14 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import Footer from "@/components/layout/Footer";
 import Button from "@/components/ui/button";
 import { ArticleCard } from "@/components/blog/ArticleCard";
 import {
   getBlogPostsMetadataByCategory,
   getAllCategories,
 } from "@/lib/blog";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateCollectionPageSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 

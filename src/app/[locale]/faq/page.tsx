@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import FAQContent from "@/components/FAQContent";
-import FocusSection from "@/components/FocusSection";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import HeroSection from "@/components/sections/HeroSection";
+import FAQContent from "@/components/content/FAQContent";
+import FocusSection from "@/components/sections/FocusSection";
+import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateFAQPageSchema } from "@/lib/schema";
 
 export async function generateMetadata({

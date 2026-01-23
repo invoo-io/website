@@ -9,55 +9,9 @@ import { CalculatorSelect } from './CalculatorSelect';
 import { CalculatorRadioGroup } from './CalculatorRadioGroup';
 import { CalculatorResult } from './CalculatorResult';
 import { calculateIVA } from '@/lib/calculators/iva';
-import { IVA_RATES, formatPercentage, MAX_CALCULATOR_AMOUNT } from '@/lib/calculators/constants';
+import { IVA_RATES, formatPercentage, parseLocalizedAmount, validateAmount } from '@/lib/calculators/constants';
 
 type CalculationDirection = 'fromBase' | 'fromTotal';
-
-/**
- * Parse amount string handling both Spanish (1.234,56) and English (1,234.56) formats
- */
-function parseLocalizedAmount(value: string, locale: string): number {
-  if (!value || !value.trim()) return 0;
-
-  let normalized = value.trim();
-
-  if (locale === 'es') {
-    // Spanish: remove thousand separators (.) and convert decimal comma to period
-    normalized = normalized.replace(/\./g, '').replace(',', '.');
-  } else {
-    // English: remove thousand separators (,) and keep decimal period
-    normalized = normalized.replace(/,/g, '');
-  }
-
-  const parsed = parseFloat(normalized);
-  return isNaN(parsed) ? 0 : parsed;
-}
-
-/**
- * Validate amount and return error message key if invalid
- */
-function validateAmount(value: string, numericValue: number, locale: string): string | null {
-  if (!value || !value.trim()) return null; // Empty is valid (shows placeholder)
-
-  // Check if the string has valid characters for the locale
-  const validChars = locale === 'es'
-    ? /^[\d.,\s]+$/ // Spanish: digits, dots, commas, spaces
-    : /^[\d.,\s]+$/; // English: same characters
-
-  if (!validChars.test(value)) {
-    return 'errors.invalidNumber';
-  }
-
-  if (numericValue < 0) {
-    return 'errors.negativeNotAllowed';
-  }
-
-  if (numericValue > MAX_CALCULATOR_AMOUNT) {
-    return 'errors.amountTooLarge';
-  }
-
-  return null;
-}
 
 /**
  * IVACalculator - Complete IVA calculator component
@@ -83,9 +37,9 @@ export function IVACalculator() {
 
   // Validate input
   const inputError = useMemo(() => {
-    const errorKey = validateAmount(amount, numericAmount, locale);
+    const errorKey = validateAmount(amount, numericAmount);
     return errorKey ? t(errorKey) : undefined;
-  }, [amount, numericAmount, locale, t]);
+  }, [amount, numericAmount, t]);
 
   // Handle amount change - allow locale-appropriate characters
   const handleAmountChange = useCallback((value: string) => {

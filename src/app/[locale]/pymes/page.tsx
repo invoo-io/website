@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import HeroImageSection from "@/components/HeroImageSection";
-import IntroSection from "@/components/IntroSection";
-import BuildForGestoriasSection from "@/components/BuildForGestoriasSection";
-import FAQSection from "@/components/FAQSection";
-import FocusSection from "@/components/FocusSection";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import HeroSection from "@/components/sections/HeroSection";
+import HeroImageSection from "@/components/sections/HeroImageSection";
+import { TrustBarSection } from "@/components/sections/TrustBarSection";
+import { ThreeCardSection } from "@/components/sections/templates/ThreeCardSection";
+import { FourPillarSection } from "@/components/sections/templates/FourPillarSection";
+import { SpeedDemoSection } from "@/components/sections/SpeedDemoSection";
+import PricingSection from "@/components/sections/PricingSection";
+import FAQSection from "@/components/sections/FAQSection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
-import { JsonLd } from "@/components/JsonLd";
-import { generateWebApplicationSchema, generateFAQPageSchemaStandalone } from "@/lib/schema";
+import { JsonLd } from "@/components/utilities/JsonLd";
+import { generateWebApplicationSchema, generateFAQPageSchemaStandalone, generateHowToSchema, generateBreadcrumbListSchema } from "@/lib/schema";
 
 export async function generateMetadata({
   params,
@@ -44,6 +47,9 @@ export default async function PymesPage({
   const firstPart = titleParts[0]; // "Facturación" or "Team"
   const secondPart = titleParts.slice(1).join(" "); // "en equipo" or "invoicing"
 
+  // Get highlights for hero section
+  const highlights = t.raw("pymesPage.highlights") as string[];
+
   // Generate WebApplication schema with pymes audience targeting
   const webAppSchema = generateWebApplicationSchema(locale);
 
@@ -59,10 +65,32 @@ export default async function PymesPage({
     questions: faqQuestions,
   });
 
+  // Generate HowTo schema for speed demo section
+  const howToSchema = generateHowToSchema({
+    locale,
+    name: `${t("pymesPage.speedDemo.title")} ${t("pymesPage.speedDemo.titleHighlight")}`,
+    description: t("pymesPage.speedDemo.description"),
+    steps: [
+      { name: t("pymesPage.speedDemo.step1.title"), text: t("pymesPage.speedDemo.step1.description") },
+      { name: t("pymesPage.speedDemo.step2.title"), text: t("pymesPage.speedDemo.step2.description") },
+      { name: t("pymesPage.speedDemo.step3.title"), text: t("pymesPage.speedDemo.step3.description") },
+      { name: t("pymesPage.speedDemo.step4.title"), text: t("pymesPage.speedDemo.step4.description") },
+    ],
+  });
+
+  // Generate breadcrumb schema
+  const breadcrumbSchema = generateBreadcrumbListSchema(
+    locale,
+    "/pymes",
+    t("pymesPage.metadata.title")
+  );
+
   return (
     <div className="min-h-screen bg-background-primary">
       <JsonLd data={webAppSchema} id="webapp-schema" />
       <JsonLd data={faqSchema} id="faq-schema-pymes" />
+      <JsonLd data={howToSchema} id="howto-schema-pymes" />
+      <JsonLd data={breadcrumbSchema} id="breadcrumb-schema-pymes" />
       <Navigation locale={locale} />
       <HeroSection
         title={
@@ -74,71 +102,55 @@ export default async function PymesPage({
         paragraph={t("pymesPage.header.description")}
         buttonText={t("pymesPage.header.cta")}
         buttonHref="#waitlist"
+        highlights={highlights}
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="PYMES Dashboard" />
-      <IntroSection
-        titleKey="pymesPage.introTitle"
-        paragraphKey="pymesPage.introParagraph"
+      <TrustBarSection translationKey="pymesPage.trustBar" />
+      <ThreeCardSection
+        translationKey="pymesPage.pains"
+        cards={[
+          { key: "card1", icon: "Mail" },
+          { key: "card2", icon: "EyeOff" },
+          { key: "card3", icon: "FileX" },
+        ]}
       />
-      <BuildForGestoriasSection
-        imageSrc="/clock.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("pymesPage.block1.title")}
-        paragraph={t("pymesPage.block1.description")}
-        features={t.raw("pymesPage.block1.features")}
-        buttonText={t("pymesPage.block1.cta")}
-        buttonHref="#waitlist"
+      <FourPillarSection
+        translationKey="pymesPage.solution"
+        pillars={[
+          {
+            key: "pillar1",
+            icon: "Users",
+            gradient: "linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))",
+            iconColor: "var(--accent-blue-main)",
+          },
+          {
+            key: "pillar2",
+            icon: "Building2",
+            gradient: "linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))",
+            iconColor: "var(--accent-purple-main)",
+          },
+          {
+            key: "pillar3",
+            icon: "ShieldCheck",
+            gradient: "linear-gradient(135deg, rgba(255,159,10,0.15), rgba(255,159,10,0.05))",
+            iconColor: "var(--accent-orange-main)",
+          },
+          {
+            key: "pillar4",
+            icon: "History",
+            gradient: "linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))",
+            iconColor: "var(--accent-green-main)",
+          },
+        ]}
       />
-      <BuildForGestoriasSection
-        imageSrc="/Doc.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("pymesPage.block2.title")}
-        paragraph={t("pymesPage.block2.description")}
-        features={t.raw("pymesPage.block2.features")}
-        buttonText={t("pymesPage.block2.cta")}
-        buttonHref="#waitlist"
-        imagePosition="left"
-        showImagePlaceholder={true}
-      />
-      <BuildForGestoriasSection
-        imageSrc="/Screen.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("pymesPage.block3.title")}
-        paragraph={t("pymesPage.block3.description")}
-        features={t.raw("pymesPage.block3.features")}
-        buttonText={t("pymesPage.block3.cta")}
-        buttonHref="#waitlist"
-        imagePosition="right"
-        showImagePlaceholder={true}
-      />
-      <BuildForGestoriasSection
-        imageSrc="/Book.png"
-        imageWidth={350}
-        imageHeight={350}
-        offsetImage={false}
-        maxImageWidth={160}
-        title={t("pymesPage.block4.title")}
-        paragraph={t("pymesPage.block4.description")}
-        features={t.raw("pymesPage.block4.features")}
-        buttonText={t("pymesPage.block4.cta")}
-        buttonHref="#waitlist"
-        imagePosition="left"
-        showImagePlaceholder={true}
-      />
+      <SpeedDemoSection translationKey="pymesPage.speedDemo" />
+      <PricingSection variant="section" defaultTab="pymes" />
       <FAQSection
         titleKey="pymesPage.faqTitle"
+        titleHighlightKey="pymesPage.faqTitleHighlight"
         questionsKey="pymesPage.faq"
       />
-      <FocusSection />
+      <FinalCTASection translationKey="pymesPage.finalCta" />
       <Footer locale={locale} />
     </div>
   );

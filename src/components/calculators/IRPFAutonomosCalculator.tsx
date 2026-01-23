@@ -9,50 +9,7 @@ import { CalculatorSelect } from './CalculatorSelect';
 import { CalculatorRadioGroup } from './CalculatorRadioGroup';
 import { CalculatorResult } from './CalculatorResult';
 import { calculateIRPFAutonomos } from '@/lib/calculators/irpf-autonomos';
-import { MAX_CALCULATOR_AMOUNT, formatCurrency } from '@/lib/calculators/constants';
-
-/**
- * Parse amount string handling both Spanish (1.234,56) and English (1,234.56) formats
- */
-function parseLocalizedAmount(value: string, locale: string): number {
-  if (!value || !value.trim()) return 0;
-
-  let normalized = value.trim();
-
-  if (locale === 'es') {
-    normalized = normalized.replace(/\./g, '').replace(',', '.');
-  } else {
-    normalized = normalized.replace(/,/g, '');
-  }
-
-  const parsed = parseFloat(normalized);
-  return isNaN(parsed) ? 0 : parsed;
-}
-
-/**
- * Validate amount and return error message key if invalid
- */
-function validateAmount(
-  value: string,
-  numericValue: number
-): string | null {
-  if (!value || !value.trim()) return null;
-
-  const validChars = /^[\d.,\s]+$/;
-  if (!validChars.test(value)) {
-    return 'errors.invalidNumber';
-  }
-
-  if (numericValue < 0) {
-    return 'errors.negativeNotAllowed';
-  }
-
-  if (numericValue > MAX_CALCULATOR_AMOUNT) {
-    return 'errors.amountTooLarge';
-  }
-
-  return null;
-}
+import { formatCurrency, parseLocalizedAmount, validateAmount } from '@/lib/calculators/constants';
 
 /**
  * IRPFAutonomosCalculator - Complete IRPF calculator component for Spanish self-employed

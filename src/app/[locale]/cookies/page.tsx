@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import Navigation from "@/components/Navigation";
-import CookiePolicyContent from "@/components/CookiePolicyContent";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import CookiePolicyContent from "@/components/content/legal/CookiePolicyContent";
+import Footer from "@/components/layout/Footer";
 import { generatePageMetadata } from "@/lib/seo";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateWebPageSchema } from "@/lib/schema";
 
 export async function generateMetadata({

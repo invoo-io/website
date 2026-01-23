@@ -219,56 +219,96 @@
     },
     "header": {
       "title": "Team invoicing",
-      "description": "Collaborative software with integrated Verifactu. Manage permissions, share with your gestoría, and create unlimited invoices with your team",
+      "description": "Centralize invoices, control who does what, and connect your accountant. Automatic Verifactu for the whole team. From €10.45/month for 2 users (50% off first 100).",
       "cta": "Join the waiting list"
     },
-    "block1": {
-      "title": "Your team, invoicing together",
-      "description": "Invoice with multiple users simultaneously, assign custom roles, and maintain total control without blockages or conflicts",
-      "features": [
-        "2-4 users depending on your plan",
-        "Roles: Admin, Editor, Read-only",
-        "Changes synced instantly"
-      ],
-      "cta": "Centralize your team's invoicing"
-    },
-    "block2": {
-      "title": "Automatic Verifactu compliance",
-      "description": "Every invoice generates the official QR and is automatically submitted to AEAT. Complete traceability for audits without worries",
-      "features": [
-        "Official QR on every invoice",
-        "Automatic AEAT submission",
-        "Complete audit log"
-      ],
-      "cta": "Start with your SMB now"
-    },
-    "block3": {
-      "title": "Your gestoría accesses whenever they want",
-      "description": "Real-time dashboard at no additional cost. CSV exports ready and quarterly summaries to process in seconds",
-      "features": [
-        "Real-time dashboard at no cost",
-        "CSV exports ready to process",
-        "Modelo 130/303 summaries"
-      ],
-      "cta": "Try real-time collaboration"
-    },
-    "block4": {
-      "title": "Grow without complications",
-      "description": "Add users with one click, unlimited invoicing always, and scale your business without changing software or lock-in contracts",
-      "features": [
-        "From 2 to 4 users with one click",
-        "Unlimited invoicing always",
-        "No lock-in contracts"
-      ],
-      "cta": "Join the waiting list"
-    },
-    "introTitle": "Collaborative invoicing designed for small teams",
-    "introParagraph": [
-      "Managing invoicing in a small business with 2-4 people is chaos without the right tools. Invoices created by different team members, lack of visibility about who invoiced what, and your accountant chasing documents scattered across emails.",
-      "Invoo centralizes all your team's invoicing in a single platform. Each member creates invoices with their user account, everyone sees the status in real-time, and your accountant accesses everything from their dashboard without asking.",
-      "These are the advantages that small business teams are discovering with Invoo:"
+    "highlights": [
+      "2-4 users per plan",
+      "Admin sees everything instantly",
+      "Free accountant access included"
     ],
-    "faqTitle": "Frequently asked questions from small businesses about team invoicing",
+    "trustBar": {
+      "title": "Why teams choose",
+      "titleHighlight": "Invoo for SMBs",
+      "subtitle": "Centralizing team invoicing eliminates chaos, saves time, and provides total visibility",
+      "stat1": {
+        "number": "2-4 users",
+        "label": "Depending on plan"
+      },
+      "stat2": {
+        "number": "100% visibility",
+        "label": "Admin sees everything"
+      },
+      "stat3": {
+        "number": "€0 extra",
+        "label": "Accountant included"
+      }
+    },
+    "pains": {
+      "title": "The chaos of invoicing",
+      "titleHighlight": "without coordination",
+      "description": "When multiple people invoice without a common tool, everything gets out of control. Invoo centralizes and provides total visibility.",
+      "card1": {
+        "title": "Invoices scattered in emails",
+        "description": "Each person sends invoices from their own email. Your accountant has to chase PDFs via WhatsApp, Gmail, and doesn't know who invoiced what."
+      },
+      "card2": {
+        "title": "Zero team visibility",
+        "description": "You don't know who already invoiced which client, or how much you've invoiced this month. Everyone works in their own bubble without coordination."
+      },
+      "card3": {
+        "title": "Inconsistent templates",
+        "description": "One uses Word, another Excel, another a downloaded template. Invoices with different formats, uncontrolled numbering, unprofessional image."
+      }
+    },
+    "solution": {
+      "title": "Team invoicing",
+      "titleHighlight": "that works",
+      "description": "Invoo centralizes invoices, assigns roles, connects your accountant, and maintains Verifactu for everyone. Total visibility, zero chaos.",
+      "pillar1": {
+        "title": "Multi-user with roles",
+        "description": "Each member invoices with their user. Admin sees everyone's invoices, controls who does what. Custom roles to grant precise access."
+      },
+      "pillar2": {
+        "title": "Free connected accountant",
+        "description": "Real-time dashboard for your accountant, at no additional cost. See invoices from the whole team instantly, without chasing emails or PDFs."
+      },
+      "pillar3": {
+        "title": "Automatic Verifactu per user",
+        "description": "Each invoice generates Verifactu QR, regardless of who creates it. 100% AEAT compliance without manual configuration per person."
+      },
+      "pillar4": {
+        "title": "Complete traceability",
+        "description": "Know who created each invoice and when. Easy internal audit, accountant with total visibility, everything recorded effortlessly."
+      }
+    },
+    "speedDemo": {
+      "title": "Quote to invoice",
+      "titleHighlight": "as a team",
+      "description": "Collaborate on quotes, convert to invoice in 1 click, and your accountant sees everything without asking",
+      "step1": {
+        "time": "Step 1",
+        "title": "Team creates quote",
+        "description": "Any user creates quote, Admin reviews before sending"
+      },
+      "step2": {
+        "time": "Step 2",
+        "title": "Client accepts",
+        "description": "Quote sent, client gives OK. Ready to invoice"
+      },
+      "step3": {
+        "time": "Step 3",
+        "title": "Admin converts to invoice",
+        "description": "1 click converts quote to invoice. Automatic Verifactu, submitted to AEAT"
+      },
+      "step4": {
+        "time": "30 seconds",
+        "title": "Accountant sees everything",
+        "description": "Dashboard updated. CSV ready. No loose emails or PDFs"
+      }
+    },
+    "faqTitle": "Team questions about",
+    "faqTitleHighlight": "collaborative invoicing",
     "faq": {
       "q1": {
         "question": "How many users can my small business account have?",
@@ -290,6 +330,12 @@
         "question": "Does Invoo comply with Verifactu for all team invoices?",
         "answer": "Yes. Regardless of who creates the invoice in your team, Invoo automatically generates the Verifactu QR code, numbers consecutively, and submits to AEAT. 100% compliance without manual configuration per user."
       }
+    },
+    "finalCta": {
+      "title": "Centralize your team's",
+      "titleHighlight": "invoicing",
+      "description": "Join small business teams already invoicing without chaos. Clear roles, connected accountant, automatic Verifactu.",
+      "cta": "Join the waiting list"
     }
   },
   "gestoriasPage": {

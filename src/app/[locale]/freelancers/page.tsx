@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import HeroImageSection from "@/components/HeroImageSection";
-import { TrustBarSection } from "@/components/TrustBarSection";
-import { ThreeCardSection } from "@/components/ui/ThreeCardSection";
-import { FourPillarSection } from "@/components/ui/FourPillarSection";
-import { SpeedDemoSection } from "@/components/SpeedDemoSection";
-import PricingSection from "@/components/PricingSection";
-import FAQSection from "@/components/FAQSection";
-import { FinalCTASection } from "@/components/FinalCTASection";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import HeroSection from "@/components/sections/HeroSection";
+import HeroImageSection from "@/components/sections/HeroImageSection";
+import { TrustBarSection } from "@/components/sections/TrustBarSection";
+import { ThreeCardSection } from "@/components/sections/templates/ThreeCardSection";
+import { FourPillarSection } from "@/components/sections/templates/FourPillarSection";
+import { SpeedDemoSection } from "@/components/sections/SpeedDemoSection";
+import PricingSection from "@/components/sections/PricingSection";
+import FAQSection from "@/components/sections/FAQSection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateWebApplicationSchema, generateFAQPageSchemaStandalone, generateHowToSchema, generateBreadcrumbListSchema } from "@/lib/schema";
 
 export async function generateMetadata({

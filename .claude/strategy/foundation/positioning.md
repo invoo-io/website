@@ -153,11 +153,14 @@ This modifier differentiates within the category without inventing a new one.
 **Primary**: "Facturacion simple. Tu gestoria conectada."
 
 **Alternatives by context**:
-- SEO/Search: "Software de facturacion para autonomos"
+- SEO/Search (freelancers): "Software de facturacion para autonomos"
+- SEO/Search (PYMEs): "Software de facturacion para pymes"
 - Compliance angle: "Facturacion Verifactu sin complicaciones"
 - Speed angle: "Factura en 30 segundos. Tu gestoria lo ve al instante."
 - Workflow angle: "Presupuesto a factura en 1 click. Sin reescribir nada."
 - Anti-bloat angle: "Solo facturacion. Sin CRM, sin complicaciones."
+- Team angle (PYMEs): "Tu equipo factura. Tu lo ves todo. Tu gestoria conectada."
+- Control angle (PYMEs): "Facturacion en equipo. Control total."
 
 ---
 
@@ -180,7 +183,7 @@ This modifier differentiates within the category without inventing a new one.
 - Sincronizacion en tiempo real (no exportaciones manuales)
 - Permisos configurables (tu gestoria ve lo que tu decides)
 
-**Who cares most**: Carmen (wants gestoría involved), Ana (needs efficiency)
+**Who cares most**: Carmen (wants gestoría involved), Ana (needs efficiency), Laura (needs gestoria to see ALL team invoices)
 
 ---
 
@@ -203,7 +206,7 @@ This modifier differentiates within the category without inventing a new one.
 - "Para un disenador freelance, usarias solo el 5% de lo que pagas" (review real de Holded)
 - Competidores dicen "en segundos" — nosotros decimos "en 30 segundos" (y lo cumplimos)
 
-**Who cares most**: David (escaping bloat), Carmen (wants simple)
+**Who cares most**: David (escaping bloat), Carmen (wants simple), Laura (team uses 10% of Holded)
 
 ---
 
@@ -224,7 +227,7 @@ This modifier differentiates within the category without inventing a new one.
 - Solo Invoo especifica: 30 segundos, medido y verificable
 - Demo en video disponible (mostrar, no contar)
 
-**Who cares most**: David (values time), Miguel (wants minimal friction)
+**Who cares most**: David (values time), Miguel (wants minimal friction), Laura (team setup in minutes, not weeks)
 
 **Why this matters**:
 - Competitors all claim "invoice in seconds" but none give specific times
@@ -250,7 +253,33 @@ This modifier differentiates within the category without inventing a new one.
 - Multas de hasta €50.000 por incumplimiento (que no te afecten)
 - Word/Excel seran ilegales desde julio 2027 (migra ahora, sin prisa)
 
-**Who cares most**: Carmen (Hacienda anxiety), David (wants to forget about it)
+**Who cares most**: Carmen (Hacienda anxiety), David (wants to forget about it), Laura (must ensure ALL team members comply)
+
+---
+
+#### Pillar 5: Team Visibility (PYMEs)
+
+**Headline**: "Tu equipo factura. Tu lo ves todo."
+
+**Subheadline**: "Sin perseguir, sin consolidar, sin fin de mes caotico"
+
+**Benefits**:
+- Dashboard unificado: ve quien facturo que, cuando, y a quien
+- Numeracion automatica a nivel empresa: imposible duplicar o saltar numeros
+- Filtros por usuario: audita internamente en segundos
+- Gestoria ve todas las facturas de todos los usuarios en un solo sitio
+
+**Proof points**:
+- Holded/Quipu no muestran quien creo cada factura (o lo entierran en menus)
+- Competidores cobran por "modulo de equipos" — Invoo lo incluye desde €19.90/mes
+- Setup de equipo completo en 10 minutos vs. semanas de implementacion ERP
+
+**Who cares most**: Laura (team coordination and visibility is her #1 pain)
+
+**PYME-specific adaptation of other pillars**:
+- Gestoria: "Tu gestoria ve TODAS las facturas de TODOS los usuarios"
+- Speed: "De decision a equipo facturando en 10 minutos"
+- Compliance: "Verifactu para todo el equipo, automatico — da igual quien facture"
 
 ---
 
@@ -338,6 +367,31 @@ This modifier differentiates within the category without inventing a new one.
 
 ---
 
+### Laura (PYME Owner/Manager)
+
+**Primary message**: "Tu equipo factura. Tu lo ves todo."
+
+**Value proposition**:
+> Para pymes espanolas de 2-15 empleados que necesitan que varios miembros del equipo facturen profesionalmente, Invoo es el software de facturacion colaborativa que da al responsable visibilidad total y conecta con la gestoria automaticamente.
+>
+> A diferencia de ERPs como Holded que requieren semanas de formacion y cuestan €100+/mes, Invoo es solo facturacion: tu equipo factura en minutos, tu lo ves todo, y tu gestoria accede en tiempo real. €19.90/mes para hasta 4 usuarios. Sin curva de aprendizaje, sin complicaciones.
+
+**Key messages**:
+1. "€19.90/mes por 4 usuarios vs €100+ de Holded"
+2. "Sabes quien facturo que, cuando, y a quien — sin perseguir a nadie"
+3. "Tu gestoria ve TODAS las facturas de TODOS los usuarios"
+4. "Verifactu para todo el equipo, automatico — cada factura cumple"
+5. "De decision a equipo facturando en 10 minutos"
+
+**Objection handling**:
+- "Ya usamos Holded" --> "Tu equipo usa el 10% y tarda semanas en aprenderlo. Invoo es solo facturacion, lista en 5 minutos. €19.90/mes vs €100+."
+- "Necesito mas que facturacion" --> "Perfecto — usa tu CRM para clientes, tu software de inventario. Invoo hace facturacion y la conecta con tu gestoria. Sin duplicar trabajo."
+- "Mi equipo no usara otro software" --> "Si saben usar WhatsApp, saben usar Invoo. Es mas facil que Excel. En serio."
+- "Es caro para una PYME" --> "€19.90/mes por 4 usuarios = €5/usuario. Menos de lo que pierdes en un error de factura."
+- "Que pasa si alguien del equipo se equivoca" --> "Todos los usuarios usan la misma plantilla, calculos automaticos de IVA, y ves todo en tiempo real. Imposible que un error pase desapercibido."
+
+---
+
 ## Competitive Positioning
 
 ### How We Position Against Each Competitor
@@ -348,10 +402,16 @@ This modifier differentiates within the category without inventing a new one.
 
 **Our angle**: "Holded es un ERP. Tu necesitas facturar."
 
-**What we say**:
+**What we say (freelancers)**:
 - "Holded te cobra €29/mes por CRM, inventario y HR que no necesitas"
 - "Un disenador freelance usa el 5% de Holded — nosotros somos ese 5%, por €10.90"
 - "Soporte que responde en horas, no semanas"
+
+**What we say (PYMEs)**:
+- "Holded cuesta €100+/mes si quieres 4 usuarios. Invoo cuesta €19.90."
+- "Tu equipo usa el 10% de Holded. Con Invoo, usan el 100%."
+- "Semanas de formacion vs. 5 minutos de setup"
+- "Tu gestoria ve todo gratis — Holded cobra €80/mes extra por conexion contable"
 
 **What we DON'T say**:
 - No atacamos su producto directamente
@@ -359,8 +419,10 @@ This modifier differentiates within the category without inventing a new one.
 - No competimos en funciones — competimos en enfoque
 
 **Proof points**:
-- Review real: "Para un disenador freelance, usarias solo el 5% de lo que pagas"
-- Review real: "Servicio al cliente practicamente inexistente"
+- Review: "Para un disenador freelance, usarias solo el 5% de lo que pagas"
+- Review: "Servicio al cliente practicamente inexistente"
+- Review: "Para una pyme pequena, Holded es matar moscas a canonazos"
+- Review: "Implementacion de 3 meses y mi equipo aun no sabe usarlo bien"
 
 ---
 
@@ -433,17 +495,40 @@ This modifier differentiates within the category without inventing a new one.
 
 ---
 
+#### vs. Factorial
+
+**Their positioning**: "Software de RRHH que tambien hace nominas y facturacion"
+
+**Our angle**: "Factorial es HR primero. Facturacion es un accesorio."
+
+**What we say**:
+- "Si necesitas HR, usa Factorial. Si necesitas facturacion, usa Invoo."
+- "Facturacion no es el core de Factorial — es un modulo anadido"
+- "€19.90/mes por 4 usuarios vs planes Factorial desde €4.5/empleado (escala rapido)"
+
+**When Factorial is relevant**: PYMEs considering HR+invoicing bundles
+
+---
+
 #### vs. Excel/Word (No Software)
 
 **Their positioning**: N/A — is the status quo
 
-**Our angle**: "Tu plantilla de Word dejara de ser legal."
+**Our angle (freelancers)**: "Tu plantilla de Word dejara de ser legal."
 
-**What we say**:
+**Our angle (PYMEs)**: "Tu Excel compartido tiene los dias contados."
+
+**What we say (freelancers)**:
 - "Desde julio 2027, las facturas en Word/Excel seran ilegales para B2B"
 - "Multas de hasta €50.000 por incumplimiento"
 - "Invoo es mas facil que Word, y cumple con Verifactu"
 - "Migra ahora, sin prisa, antes de que sea obligatorio"
+
+**What we say (PYMEs)**:
+- "Multiples personas editando = versiones, errores, caos"
+- "Verifactu hace Excel ilegal para facturas B2B desde julio 2027"
+- "Invoo es mas facil que Excel y cumple automaticamente"
+- "Sabes quien creo cada factura — no quien edito la celda B47"
 
 **What we DON'T say**:
 - No hacemos sentir mal a la gente por usar Word/Excel
@@ -467,6 +552,32 @@ This modifier differentiates within the category without inventing a new one.
 - NUNCA decimos "reemplaza a tu gestoria"
 - NUNCA sugerimos que las gestorias son innecesarias
 - Siempre posicionamos como complemento, no competencia
+
+---
+
+### Competitive Comparison Matrix
+
+#### For Freelancers (€10.90/mes)
+
+| Need | Holded | Quipu | Billin | Excel | **Invoo** |
+|------|--------|-------|--------|-------|-----------|
+| Invoicing focus | ERP bloat | Too much | Basic | Manual | **Just right** |
+| Gestoria dashboard | €80/mes extra | Add-on | No | No | **Gratis** |
+| Verifactu | Si | Si | Si | No | **Automatico** |
+| Multi-currency | Si | Limitado | No | Manual | **Si** |
+| Price | €29+/mes | €17+/mes | €15+/mes | Gratis | **€10.90/mes** |
+
+#### For PYMEs (€19.90/mes, 4 usuarios)
+
+| Need | Holded | Quipu | Factorial | Excel | **Invoo** |
+|------|--------|-------|-----------|-------|-----------|
+| Multi-user invoicing | Si (caro) | Limitado | Add-on | Caotico | **Incluido** |
+| Gestoria dashboard | €80/mes extra | Add-on | No | No | **Gratis** |
+| Setup time | Semanas | Dias | Dias | Inmediato | **Minutos** |
+| Verifactu compliance | Si | Si | Parcial | No | **Automatico** |
+| Learning curve | Alta | Media | Media | Baja | **Minima** |
+| Price (4 users) | €100+/mes | €60+/mes | €50+/mes | Gratis | **€19.90/mes** |
+| Who created invoice visible | Enterrado | No | No | No | **Dashboard** |
 
 ---
 
@@ -543,12 +654,15 @@ This modifier differentiates within the category without inventing a new one.
 |-------|--------------|--------|
 | Gestoría dashboard included free | Product feature, no extra charge | TRUE |
 | Invoicing only (no CRM, inventory, HR) | Product scope decision | TRUE |
-| €10.90/month, all included | Pricing page, no hidden fees | TRUE |
+| €10.90/month freelancers, €19.90/month PYMEs | Pricing page, no hidden fees | TRUE |
 | Verifactu + TicketBAI compliant | Technical implementation verified | TRUE |
 | 30-second invoice creation | UX testing required | TRUE (verify) |
 | One-click presupuesto → factura | Product feature | TRUE |
 | Line-item discounts included | Product feature, no extra charge | TRUE |
 | Fast support responses | Operational commitment, track metrics | TRUE (monitor) |
+| Up to 4 users in PYME plan | Pricing structure | TRUE |
+| Shows who created each invoice | Product feature | TRUE |
+| Team setup in minutes | UX testing required | TRUE (verify) |
 
 ### Is Our Positioning DIFFERENTIATED?
 
@@ -556,24 +670,29 @@ This modifier differentiates within the category without inventing a new one.
 |-------|---------------------------|------------------|
 | Gestoría dashboard included | No — they charge extra or don't offer | YES |
 | Invoicing-only focus | No — all claim "complete solution" | YES |
-| €10.90/month all-in | No — most have tiers, add-ons | YES |
+| €10.90/month freelancers | No — most have tiers, add-ons | YES |
+| €19.90/month for 4 PYME users | No — competitors €100+/month | YES |
+| Team visibility dashboard | Holded buries it, others don't have it | YES |
+| Setup in minutes (teams) | No — all require "implementation" | YES |
 | Verifactu compliant | Some claim, many not ready | PARTIAL |
 | Fast UX | Generic claim, hard to prove | PARTIAL |
 | Human support | Many claim, few deliver | PROVABLE |
 
-**Differentiation score**: Strong. Gestoría connection and invoicing-only focus are defensible moats.
+**Differentiation score**: Strong. Gestoría connection, invoicing-only focus, and team visibility are defensible moats.
 
 ### Is Our Positioning RELEVANT?
 
 | Claim | Does Target Care? | Evidence |
 |-------|-------------------|----------|
-| Gestoría connected | Carmen: CRITICAL, David: HIGH | Research: #1 reason for gestoría churn is communication |
-| No bloat | David: CRITICAL, Carmen: HIGH | Research: "Using 5% of features" frustration |
-| Verifactu compliance | Carmen: CRITICAL, David: HIGH | Research: 82% not ready, high anxiety |
-| Low price | Carmen: HIGH, David: MEDIUM | David values time over money, Carmen price-sensitive |
-| Fast support | All: HIGH | Research: Top competitor complaint |
+| Gestoría connected | Carmen: CRITICAL, David: HIGH, Laura: CRITICAL | #1 reason for gestoría churn is communication |
+| No bloat | David: CRITICAL, Carmen: HIGH, Laura: HIGH | "Using 5-10% of features" frustration |
+| Team visibility | Laura: CRITICAL | "No se quien facturo que hasta fin de mes" |
+| Verifactu compliance | Carmen: CRITICAL, David: HIGH, Laura: CRITICAL | 82% not ready; PYMEs must ensure ALL team complies |
+| Fast setup | Laura: HIGH, David: MEDIUM | Time is money, team change resistance |
+| Low price | Carmen: HIGH, David: MEDIUM, Laura: MEDIUM | Business expense, but still matters vs. €100+/month |
+| Fast support | All: HIGH | Top competitor complaint |
 
-**Relevance score**: Strong. All claims address validated pain points.
+**Relevance score**: Strong. All claims address validated pain points across all personas.
 
 ### Is Our Positioning SPECIFIC?
 
@@ -621,7 +740,7 @@ This modifier differentiates within the category without inventing a new one.
 
 ### For Sales Conversations
 
-- [ ] Identify persona type early (David vs. Carmen vs. Ana)
+- [ ] Identify persona type early (David vs. Carmen vs. Laura vs. Ana)
 - [ ] Use persona-specific objection handling
 - [ ] Lead with their pain point, not our features
 - [ ] Position against their current alternative, not against all competitors
@@ -632,6 +751,7 @@ This modifier differentiates within the category without inventing a new one.
 - [ ] Does it strengthen the gestoría connection moat?
 - [ ] Would Carmen find it confusing?
 - [ ] Would David find it limiting?
+- [ ] Does it give Laura team visibility?
 - [ ] Does it help Ana manage more clients?
 
 ---
@@ -640,4 +760,5 @@ This modifier differentiates within the category without inventing a new one.
 
 | Date | Change | Author |
 |------|--------|--------|
+| 2026-01-23 | Integrate PYME/Laura positioning seamlessly: added Pillar 5 (Team Visibility), merged PYME context into existing pillars and competitor sections, unified quality checks | Positioning Lead |
 | 2026-01-23 | Initial positioning document | Positioning Lead |

@@ -1,15 +1,15 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import HeroSection from "@/components/sections/HeroSection";
+import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { getAllBlogPostsMetadata, getBlogPostsMetadataByCategory } from "@/lib/blog";
 import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import { EditorPicksSection } from "@/components/blog/EditorPicksSection";
 import NewsletterSection from "@/components/blog/NewsletterSection";
 import { CategoryBlock } from "@/components/blog/CategoryBlock";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateCollectionPageSchema } from "@/lib/schema";
 import type { Metadata } from "next";
 

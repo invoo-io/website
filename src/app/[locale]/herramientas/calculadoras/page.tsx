@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { JsonLd } from '@/components/JsonLd';
+import Navigation from '@/components/layout/Navigation';
+import Footer from '@/components/layout/Footer';
+import { JsonLd } from '@/components/utilities/JsonLd';
 import {
   generateCalculatorHubSchema,
   generateCalculatorItemListSchema,

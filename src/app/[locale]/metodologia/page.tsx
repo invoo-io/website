@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import MethodologyContent from "@/components/MethodologyContent";
-import FocusSection from "@/components/FocusSection";
-import Footer from "@/components/Footer";
+import Navigation from "@/components/layout/Navigation";
+import HeroSection from "@/components/sections/HeroSection";
+import MethodologyContent from "@/components/content/MethodologyContent";
+import FocusSection from "@/components/sections/FocusSection";
+import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
 
