@@ -68,8 +68,8 @@ export default async function AboutPage({
           }
           paragraph={t("about.header.description")}
         />
-        <AboutContent />
-        <FocusSection />
+        <AboutContent locale={locale} />
+        <FocusSection locale={locale} />
 
         {/* Editorial Team Section */}
         <section className="py-16 md:py-24 px-6">

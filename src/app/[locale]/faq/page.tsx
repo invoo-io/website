@@ -59,7 +59,7 @@ export default async function FAQPage({
         buttonHref="#waitlist"
       />
       <FAQContent />
-      <FocusSection />
+      <FocusSection locale={locale} />
       <Footer locale={locale} />
     </div>
   );

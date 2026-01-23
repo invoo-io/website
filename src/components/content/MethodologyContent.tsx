@@ -1,11 +1,13 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { BookOpen, CheckCircle, RefreshCw, FileText, Scale, AlertCircle } from "lucide-react";
 
-export default function MethodologyContent() {
-  const t = useTranslations("methodology");
+interface MethodologyContentProps {
+  locale: string;
+}
+
+export default async function MethodologyContent({ locale }: MethodologyContentProps) {
+  const t = await getTranslations({ locale, namespace: "methodology" });
 
   const renderParagraphs = (text: string) => {
     return text.split('\n').map((paragraph, index) => (

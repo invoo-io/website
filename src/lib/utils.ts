@@ -74,3 +74,20 @@ export function getBasePath(path: string): string {
   // Just return the path as-is
   return path;
 }
+
+/**
+ * Pick specific namespaces from messages object.
+ * Used to reduce translation bundle size sent to client.
+ */
+export function pickMessages<T extends Record<string, unknown>>(
+  messages: T,
+  namespaces: (keyof T)[]
+): Partial<T> {
+  const result: Partial<T> = {};
+  for (const ns of namespaces) {
+    if (messages[ns]) {
+      result[ns] = messages[ns];
+    }
+  }
+  return result;
+}

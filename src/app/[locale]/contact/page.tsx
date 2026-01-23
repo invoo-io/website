@@ -40,7 +40,7 @@ export default async function ContactPage({
       <JsonLd data={contactSchema} id="contact-schema" />
       <Navigation locale={locale} />
       <ContactForm />
-      <FocusSection />
+      <FocusSection locale={locale} />
       <Footer locale={locale} />
     </div>
   );

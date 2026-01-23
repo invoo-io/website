@@ -1,17 +1,16 @@
-"use client";
-
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { WaitlistDrawer } from "@/components/forms/WaitlistDrawer";
 import GradientText from "@/components/ui/GradientText";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { getImagePath } from "@/lib/utils";
 
-export default function FocusSection() {
-  const t = useTranslations("home.focus");
-  const params = useParams();
-  const locale = params.locale as string;
+interface FocusSectionProps {
+  locale: string;
+}
+
+export default async function FocusSection({ locale }: FocusSectionProps) {
+  const t = await getTranslations({ locale, namespace: "home.focus" });
 
   return (
     <section className="relative min-h-[400px] flex flex-col items-center justify-center py-[164px] px-4 md:px-6 overflow-hidden">
@@ -33,11 +32,16 @@ export default function FocusSection() {
         <SectionHeader
           size="section"
           align="center"
-          title={locale === "es" ? (
-            <><GradientText>Céntrate en tu trabajo.</GradientText> Nosotros nos encargamos del papeleo</>
-          ) : (
-            <><GradientText>Focus on your work.</GradientText> We&apos;ll handle the paperwork</>
-          )}
+          title={(() => {
+            // Split title on period to apply gradient to first sentence
+            const fullTitle = t("title");
+            const parts = fullTitle.split(". ");
+            return (
+              <>
+                <GradientText>{parts[0]}.</GradientText> {parts.slice(1).join(". ")}
+              </>
+            );
+          })()}
           description={t("description")}
           titleClassName="text-system-grey100"
           descriptionClassName="text-callout text-system-grey100"

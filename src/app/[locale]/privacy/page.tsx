@@ -45,7 +45,7 @@ export default async function PrivacyPage({
     <div className="min-h-screen bg-background-primary">
       <JsonLd data={webPageSchema} id="webpage-schema" />
       <Navigation locale={locale} />
-      <PrivacyContent />
+      <PrivacyContent locale={locale} />
       <Footer locale={locale} />
     </div>
   );

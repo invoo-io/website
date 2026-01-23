@@ -1,9 +1,11 @@
-"use client";
+import { getTranslations } from "next-intl/server";
 
-import { useTranslations } from "next-intl";
+interface TermsContentProps {
+  locale: string;
+}
 
-export default function TermsContent() {
-  const t = useTranslations("terms");
+export default async function TermsContent({ locale }: TermsContentProps) {
+  const t = await getTranslations({ locale, namespace: "terms" });
 
   const renderParagraphs = (text: string) => {
     return text.split('\n\n').map((paragraph, index) => (

@@ -1,18 +1,18 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { Users, Clock, Euro } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import GradientText from "@/components/ui/GradientText";
 
 interface TrustBarSectionProps {
+  locale: string;
   translationKey?: string;
 }
 
-export function TrustBarSection({
+export async function TrustBarSection({
+  locale,
   translationKey = "freelancersPage.trustBar"
 }: TrustBarSectionProps) {
-  const t = useTranslations(translationKey);
+  const t = await getTranslations({ locale, namespace: translationKey });
 
   const stats = [
     {

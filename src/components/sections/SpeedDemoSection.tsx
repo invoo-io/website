@@ -1,6 +1,4 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { User, Plus, Eye, Send } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import GradientText from "@/components/ui/GradientText";
@@ -34,13 +32,15 @@ const steps = [
 ];
 
 interface SpeedDemoSectionProps {
+  locale: string;
   translationKey?: string;
 }
 
-export function SpeedDemoSection({
+export async function SpeedDemoSection({
+  locale,
   translationKey = "freelancersPage.speedDemo"
 }: SpeedDemoSectionProps) {
-  const t = useTranslations(translationKey);
+  const t = await getTranslations({ locale, namespace: translationKey });
 
   return (
     <section className="py-[120px] max-md:py-16 px-4 md:px-6 bg-background-secondary">

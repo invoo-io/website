@@ -1,9 +1,11 @@
-"use client";
+import { getTranslations } from "next-intl/server";
 
-import { useTranslations } from "next-intl";
+interface PrivacyContentProps {
+  locale: string;
+}
 
-export default function PrivacyContent() {
-  const t = useTranslations("privacy");
+export default async function PrivacyContent({ locale }: PrivacyContentProps) {
+  const t = await getTranslations({ locale, namespace: "privacy" });
 
   const renderParagraphs = (text: string) => {
     return text.split('\n').map((paragraph, index) => (

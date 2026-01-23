@@ -48,8 +48,8 @@ export default async function MethodologyPage({
           }
           paragraph={t("methodology.header.description")}
         />
-        <MethodologyContent />
-        <FocusSection />
+        <MethodologyContent locale={locale} />
+        <FocusSection locale={locale} />
         <Footer locale={locale} />
       </div>
     </div>

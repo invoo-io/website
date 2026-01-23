@@ -1,9 +1,11 @@
-"use client";
+import { getTranslations } from "next-intl/server";
 
-import { useTranslations } from "next-intl";
+interface LegalNoticeContentProps {
+  locale: string;
+}
 
-export default function LegalNoticeContent() {
-  const t = useTranslations("legalNotice");
+export default async function LegalNoticeContent({ locale }: LegalNoticeContentProps) {
+  const t = await getTranslations({ locale, namespace: "legalNotice" });
 
   const renderParagraphs = (text: string) => {
     return text.split('\n\n').map((paragraph, index) => (

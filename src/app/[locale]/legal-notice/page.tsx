@@ -45,7 +45,7 @@ export default async function LegalNoticePage({
     <div className="min-h-screen bg-background-primary">
       <JsonLd data={webPageSchema} id="webpage-schema" />
       <Navigation locale={locale} />
-      <LegalNoticeContent />
+      <LegalNoticeContent locale={locale} />
       <Footer locale={locale} />
     </div>
   );

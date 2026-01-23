@@ -105,7 +105,7 @@ export default async function PymesPage({
         highlights={highlights}
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="Software facturación multi-usuario para PYMEs - Panel de control Invoo" />
-      <TrustBarSection translationKey="pymesPage.trustBar" />
+      <TrustBarSection locale={locale} translationKey="pymesPage.trustBar" />
       <ThreeCardSection
         locale={locale}
         translationKey="pymesPage.pains"
@@ -145,7 +145,7 @@ export default async function PymesPage({
           },
         ]}
       />
-      <SpeedDemoSection translationKey="pymesPage.speedDemo" />
+      <SpeedDemoSection locale={locale} translationKey="pymesPage.speedDemo" />
       <PricingSection variant="section" defaultTab="pymes" />
       <FAQSection
         titleKey="pymesPage.faqTitle"

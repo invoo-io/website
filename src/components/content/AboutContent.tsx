@@ -1,13 +1,12 @@
-"use client";
-
-import { useTranslations } from "next-intl";
-import { useParams } from "next/navigation";
+import { getTranslations } from "next-intl/server";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
-export default function AboutContent() {
-  const t = useTranslations("about");
-  const params = useParams();
-  const locale = params.locale as string;
+interface AboutContentProps {
+  locale: string;
+}
+
+export default async function AboutContent({ locale }: AboutContentProps) {
+  const t = await getTranslations({ locale, namespace: "about" });
 
   const renderParagraphs = (text: string) => {
     return text.split('\n').map((paragraph, index) => (

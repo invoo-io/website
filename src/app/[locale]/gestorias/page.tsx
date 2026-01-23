@@ -186,7 +186,7 @@ export default async function GestoriasPage({
         titleKey="gestoriasPage.faqTitle"
         questionsKey="gestoriasPage.faq"
       />
-      <FocusSection />
+      <FocusSection locale={locale} />
       <Footer locale={locale} />
     </div>
   );

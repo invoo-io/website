@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "@/i18n";
+import { pickMessages } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import GoogleAnalytics from "@/components/utilities/GoogleAnalytics";
@@ -88,7 +89,18 @@ export default async function RootLayout({
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const allMessages = await getMessages();
+
+  // Only send core translations to client (nav, cookieBanner, waitlist, pricingPage)
+  // This reduces bundle from ~220KB to ~6KB for most pages
+  // Page-specific translations (calculators, blog) are handled by page-level providers
+  const messages = pickMessages(allMessages as Record<string, unknown>, [
+    'nav',
+    'cookieBanner',
+    'waitlist',
+    'pricingPage', // Used on landing pages with PricingSection
+    'pricing',     // Used by PricingCard
+  ]);
 
   // Generate global schemas for Organization and WebSite
   const organizationSchema = generateOrganizationSchema();

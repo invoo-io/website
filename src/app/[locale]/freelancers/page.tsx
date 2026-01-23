@@ -106,7 +106,7 @@ export default async function FreelancersPage({
         highlights={highlights}
       />
       <HeroImageSection imageBaseName="freelancer" dashboardAlt="Freelancer Dashboard" />
-      <TrustBarSection />
+      <TrustBarSection locale={locale} />
       <ThreeCardSection
         locale={locale}
         translationKey="freelancersPage.pains"
@@ -146,7 +146,7 @@ export default async function FreelancersPage({
           },
         ]}
       />
-      <SpeedDemoSection />
+      <SpeedDemoSection locale={locale} />
       <PricingSection variant="section" />
       <FAQSection
         titleKey="freelancersPage.faqTitle"

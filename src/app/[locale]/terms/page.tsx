@@ -45,7 +45,7 @@ export default async function TermsPage({
     <div className="min-h-screen bg-background-primary">
       <JsonLd data={webPageSchema} id="webpage-schema" />
       <Navigation locale={locale} />
-      <TermsContent />
+      <TermsContent locale={locale} />
       <Footer locale={locale} />
     </div>
   );
