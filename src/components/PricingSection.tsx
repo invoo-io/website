@@ -10,7 +10,12 @@ import { SectionHeader } from "./ui/SectionHeader";
 import { getBasePath } from "@/lib/utils";
 import { HeroGlow } from "./ui/HeroGlow";
 
-export default function PricingSection() {
+interface PricingSectionProps {
+  /** Use "hero" for pricing page, "section" for homepage */
+  variant?: "hero" | "section";
+}
+
+export default function PricingSection({ variant = "hero" }: PricingSectionProps) {
   const t = useTranslations("pricingPage");
   const params = useParams();
   const locale = params.locale as string;
@@ -20,18 +25,32 @@ export default function PricingSection() {
   // Split title at the period to apply gradient
   const titleParts = t("header.title").split(". ");
 
+  const isHero = variant === "hero";
+
   return (
-    <section className="relative py-60 max-md:py-32 px-4 md:px-6 overflow-hidden" style={{
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center'
-    }}>
-      <HeroGlow />
+    <section
+      className={
+        isHero
+          ? "relative py-60 max-md:py-32 px-4 md:px-6 overflow-hidden"
+          : "py-[120px] max-md:py-16 px-4 md:px-6"
+      }
+      style={isHero ? {
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      } : {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}
+      id="pricing"
+    >
+      {isHero && <HeroGlow />}
 
       {/* Header */}
       <SectionHeader
-        size="hero"
+        size={isHero ? "hero" : "section"}
         align="center"
         maxWidth="lg"
         title={
@@ -41,7 +60,7 @@ export default function PricingSection() {
           </>
         }
         description={t("header.description")}
-        descriptionClassName="text-headline"
+        descriptionClassName={isHero ? "text-headline" : undefined}
         className="mb-16"
       />
 

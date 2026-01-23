@@ -124,7 +124,7 @@ export default async function Home({
       <ProcessSection />
 
       {/* Section 7: Pricing */}
-      <PricingSection />
+      <PricingSection variant="section" />
 
       {/* Section 8: Final CTA */}
       <FinalCTASection />

@@ -27,7 +27,7 @@ export function generateOrganizationSchema(): SchemaOrg {
     name: "Invoo",
     legalName: "Roques OÜ",
     description:
-      "La plataforma de facturación Verifactu que conecta autónomos, pymes y gestorías en tiempo real. Facturación en 30 segundos, dashboard gratuito para gestorías con clientes ilimitados, cumplimiento automático con AEAT. Sin papeleo, sin Excel, sin complicaciones.",
+      "Software de facturación para autónomos y pymes con tu gestoría conectada de serie. Factura en 30 segundos, presupuesto a factura en 1 clic, Verifactu automático. Dashboard gratuito para gestorías con clientes ilimitados. €10.90/mes, todo incluido.",
     url: BASE_URL,
     logo: `${BASE_URL}/Logo.png`,
     image: `${BASE_URL}/Logo.png`,
@@ -152,8 +152,8 @@ export function generateWebApplicationSchema(
       ];
 
   const description = isSpanish
-    ? "Facturación Verifactu en 30 segundos para autónomos y pymes. Dashboard gratuito para gestorías con clientes ilimitados. Colaboración en tiempo real, cumplimiento automático con AEAT, sin papeleo."
-    : "Verifactu invoicing in 30 seconds for freelancers and SMBs. Free dashboard for accountants with unlimited clients. Real-time collaboration, automatic AEAT compliance, zero paperwork.";
+    ? "Software de facturación para autónomos y pymes con tu gestoría conectada en tiempo real. Factura en 30 segundos, presupuesto a factura en 1 clic, Verifactu automático. €10.90/mes, todo incluido."
+    : "Invoicing software for freelancers and SMBs with your accountant connected in real-time. Invoice in 30 seconds, quote to invoice in 1 click, automatic Verifactu. €10.90/month, all included.";
 
   return {
     "@context": "https://schema.org",
@@ -226,8 +226,8 @@ export function generateProductSchema(locale: string): SchemaOrg {
   const isSpanish = locale === "es";
 
   const description = isSpanish
-    ? "Software de facturación Verifactu para autónomos, pymes y gestorías. La única plataforma con dashboard gratuito para gestorías y clientes ilimitados. Facturación en 30 segundos, colaboración en tiempo real."
-    : "Verifactu invoicing software for freelancers, SMBs and accountants. The only platform with free dashboard for accountants and unlimited clients. Invoicing in 30 seconds, real-time collaboration.";
+    ? "Software de facturación para autónomos y pymes con tu gestoría conectada de serie. Solo facturación, sin CRM ni inventario. Factura en 30 segundos, Verifactu automático. €10.90/mes con dashboard gratuito para gestorías."
+    : "Invoicing software for freelancers and SMBs with your accountant connected by default. Just invoicing, no CRM or inventory. Invoice in 30 seconds, automatic Verifactu. €10.90/month with free accountant dashboard.";
 
   return {
     "@context": "https://schema.org",
