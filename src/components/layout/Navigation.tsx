@@ -1,18 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { useTheme } from "next-themes";
 import { ChevronDown, Languages, Menu, X } from "lucide-react";
 import { WaitlistDrawer } from "@/components/forms/WaitlistDrawer";
 import NavDropdown from "./NavDropdown";
 import MobileNavButton from "./MobileNavButton";
 import MobileNavLink from "./MobileNavLink";
 import { ThemeToggle } from "@/components/utilities/ThemeToggle";
-import { getImagePath, getBasePath, cn } from "@/lib/utils";
+import { Logo } from "@/components/ui/Logo";
+import { getBasePath, cn } from "@/lib/utils";
 
 interface NavigationProps {
   locale: string;
@@ -25,16 +24,9 @@ export default function Navigation({ locale }: NavigationProps) {
   const [mobileActiveDropdown, setMobileActiveDropdown] = useState<
     string | null
   >(null);
-  const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { theme } = useTheme();
 
   const pathname = usePathname();
-
-  // Handle hydration for theme
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   // Handle scroll for glass effect
   useEffect(() => {
@@ -119,17 +111,10 @@ export default function Navigation({ locale }: NavigationProps) {
               paddingLeft: "24px",
             }}
           >
-            {/* Logo - Dark logo is default since dark theme is default */}
+            {/* Logo - Inline SVG, no network request */}
             <div className="flex items-center z-50">
               <Link href={getBasePath(`/${locale}`)} className="flex items-center" prefetch={true}>
-                <Image
-                  src={getImagePath(mounted && theme === "light" ? "/Logo-White.svg" : "/Logo-Dark.svg")}
-                  alt="invoo"
-                  width={126}
-                  height={32}
-                  priority
-                  unoptimized
-                />
+                <Logo className="text-primary" width={126} height={32} />
               </Link>
             </div>
 
