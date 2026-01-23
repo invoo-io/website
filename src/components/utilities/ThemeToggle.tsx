@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { useTranslations } from "next-intl";
 import { Moon, Sun } from "lucide-react";
-import { motion } from "framer-motion";
 
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false);
@@ -33,25 +32,22 @@ export function ThemeToggle() {
   const ariaLabel = isDark ? t('themeToggleLightMode') : t('themeToggleDarkMode');
 
   return (
-    <motion.button
+    <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className="w-10 h-10 flex items-center justify-center text-primary hover:text-secondary transition-colors rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary"
-      whileTap={{ scale: 0.95 }}
+      className="w-10 h-10 flex items-center justify-center text-primary hover:text-secondary transition-all duration-200 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2 focus-visible:ring-offset-background-primary active:scale-95"
       aria-label={ariaLabel}
       aria-live="polite"
       title={ariaLabel}
     >
-      <motion.div
-        initial={false}
-        animate={{ rotate: isDark ? 0 : 180 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+      <div
+        className={`transition-transform duration-300 ${isDark ? '' : 'rotate-180'}`}
       >
         {isDark ? (
           <Sun className="w-5 h-5" />
         ) : (
           <Moon className="w-5 h-5" />
         )}
-      </motion.div>
-    </motion.button>
+      </div>
+    </button>
   );
 }

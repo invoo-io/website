@@ -1,6 +1,18 @@
+import dynamic from 'next/dynamic'
 import { getFeaturedBlogPostsMetadata } from '@/lib/blog'
-import { BlogCarousel } from './BlogCarousel'
 import GradientText from '@/components/ui/GradientText'
+
+const BlogCarousel = dynamic(
+  () => import('./BlogCarousel').then(mod => mod.BlogCarousel),
+  {
+    loading: () => (
+      <div className="h-96 flex items-center justify-center">
+        <div className="animate-spin h-8 w-8 border-4 border-accent-blue-main border-t-transparent rounded-full" />
+      </div>
+    ),
+    ssr: true // Keep SSR for SEO
+  }
+)
 
 interface FeaturedBlogSectionProps {
   locale: string

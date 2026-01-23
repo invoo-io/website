@@ -172,7 +172,14 @@
       "Bash(git merge:*)",
       "Bash(git mv:*)",
       "Bash(pgrep:*)",
-      "Bash(npm outdated:*)"
+      "Bash(npm outdated:*)",
+      "Bash(npm show:*)",
+      "Bash(tail:*)",
+      "Bash(du:*)",
+      "Bash(sort:*)",
+      "Bash(npx playwright test:*)",
+      "Bash(npx playwright:*)",
+      "Bash(__NEW_LINE_b7dba29ebb255c40__ echo \"\")"
     ],
     "deny": [],
     "ask": []

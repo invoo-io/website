@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
+import dynamicImport from 'next/dynamic';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import { JsonLd } from '@/components/utilities/JsonLd';
-import { Modelo303CalculatorPageContent } from '@/components/calculators/pages/Modelo303CalculatorPage';
 import {
   generateCalculatorSchema,
   generateCalculatorFAQSchema,
@@ -13,6 +13,17 @@ import {
   generateCalculatorWebPageSchema,
 } from '@/lib/calculators/schema';
 import { BASE_URL } from '@/lib/constants';
+
+const DynamicModelo303Calculator = dynamicImport(
+  () => import('@/components/calculators/pages/Modelo303CalculatorPage').then(mod => mod.Modelo303CalculatorPageContent),
+  {
+    loading: () => (
+      <div className="min-h-[400px] flex items-center justify-center">
+        <div className="animate-spin h-8 w-8 border-4 border-accent-blue-main border-t-transparent rounded-full" />
+      </div>
+    )
+  }
+);
 
 export const dynamic = 'force-static';
 
@@ -154,7 +165,7 @@ export default async function Modelo303CalculatorPage({
 
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
-        <Modelo303CalculatorPageContent />
+        <DynamicModelo303Calculator />
         <Footer locale={locale} />
       </div>
     </>

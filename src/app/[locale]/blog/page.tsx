@@ -1,17 +1,29 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { redirect } from "next/navigation";
+import dynamic from "next/dynamic";
 import Navigation from "@/components/layout/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
 import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { getAllBlogPostsMetadata, getBlogPostsMetadataByCategory } from "@/lib/blog";
-import { BlogCarousel } from "@/components/blog/BlogCarousel";
 import { EditorPicksSection } from "@/components/blog/EditorPicksSection";
 import NewsletterSection from "@/components/blog/NewsletterSection";
 import { CategoryBlock } from "@/components/blog/CategoryBlock";
 import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateCollectionPageSchema } from "@/lib/schema";
 import type { Metadata } from "next";
+
+const BlogCarousel = dynamic(
+  () => import('@/components/blog/BlogCarousel').then(mod => mod.BlogCarousel),
+  {
+    loading: () => (
+      <div className="h-96 flex items-center justify-center">
+        <div className="animate-spin h-8 w-8 border-4 border-accent-blue-main border-t-transparent rounded-full" />
+      </div>
+    ),
+    ssr: true // Keep SSR for SEO
+  }
+);
 
 export async function generateStaticParams() {
   // Blog is Spanish-only - don't generate EN pages to avoid redirect chains

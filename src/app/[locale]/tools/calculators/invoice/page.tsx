@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
+import dynamicImport from 'next/dynamic';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { redirect } from 'next/navigation';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import { JsonLd } from '@/components/utilities/JsonLd';
-import { FacturaCalculatorPageContent } from '@/components/calculators/pages/FacturaCalculatorPage';
 import {
   generateCalculatorSchema,
   generateCalculatorFAQSchema,
@@ -12,6 +12,17 @@ import {
   generateCalculatorHowToSchema,
 } from '@/lib/calculators/schema';
 import { BASE_URL } from '@/lib/constants';
+
+const DynamicFacturaCalculator = dynamicImport(
+  () => import('@/components/calculators/pages/FacturaCalculatorPage').then(mod => mod.FacturaCalculatorPageContent),
+  {
+    loading: () => (
+      <div className="min-h-[400px] flex items-center justify-center">
+        <div className="animate-spin h-8 w-8 border-4 border-accent-blue-main border-t-transparent rounded-full" />
+      </div>
+    )
+  }
+);
 
 export const dynamic = 'force-static';
 
@@ -149,7 +160,7 @@ export default async function InvoiceCalculatorPage({
 
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
-        <FacturaCalculatorPageContent />
+        <DynamicFacturaCalculator />
         <Footer locale={locale} />
       </div>
     </>

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
-import { motion } from "framer-motion";
 import Button from "@/components/ui/button";
 import GradientText from "@/components/ui/GradientText";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -136,15 +135,11 @@ export default function WhyChooseSection() {
           {/* 3 Buttons */}
           <div className="flex justify-center gap-4 flex-wrap">
             {/* Gestoría button with gradient border */}
-            <motion.div
-              className="gradient-border-wrapper rounded-xl p-[2px] inline-flex"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
-            >
+            <div className="gradient-border-wrapper rounded-xl p-[2px] inline-flex hover:scale-105 transition-transform">
               <Button variant="outline" showArrow className="!bg-background-primary !border-0 !text-primary" href={getBasePath(`/${locale}/gestorias`)} disableHoverScale>
                 {t("cta1")}
               </Button>
-            </motion.div>
+            </div>
 
             {/* Freelancer button with solid gradient background */}
             <Button variant="gradient" showArrow href={getBasePath(`/${locale}/freelancers`)}>

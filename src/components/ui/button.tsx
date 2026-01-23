@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, ChevronLeft } from 'lucide-react';
-import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
 /**
@@ -48,12 +47,6 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
-const motionConfig = {
-  whileHover: { scale: 1.05 },
-  whileTap: { scale: 0.98 },
-  transition: { type: "spring" as const, stiffness: 400, damping: 17 }
-};
-
 export default function Button({
   children,
   variant = 'primary',
@@ -78,11 +71,14 @@ export default function Button({
 
   const baseClasses = cn(
     'inline-flex items-center justify-center rounded-[12px] text-callout-emphasized',
-    'transition-colors duration-200 cursor-pointer',
+    'cursor-pointer',
     'disabled:opacity-50 disabled:cursor-not-allowed',
     'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-blue-main',
     variants[variant],
     sizes[size],
+    !disableHoverScale
+      ? 'transition-all duration-200 hover:scale-105 active:scale-98'
+      : 'transition-colors duration-200',
     className
   );
 
@@ -94,36 +90,31 @@ export default function Button({
     </>
   );
 
-  const animationProps = disableHoverScale ? {} : motionConfig;
-
   // Render as Link
   if (isLink) {
-    const MotionLink = motion.create(Link);
     return (
-      <MotionLink
+      <Link
         href={href}
         className={baseClasses}
         style={gradientStyle}
         aria-label={ariaLabel}
-        {...animationProps}
       >
         {content}
-      </MotionLink>
+      </Link>
     );
   }
 
   // Render as button
   return (
-    <motion.button
+    <button
       type={type}
       onClick={onClick}
       disabled={disabled}
       className={baseClasses}
       style={gradientStyle}
       aria-label={ariaLabel}
-      {...animationProps}
     >
       {content}
-    </motion.button>
+    </button>
   );
 }

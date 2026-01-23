@@ -13,6 +13,22 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: isStaticExport, // Only unoptimized for static export
   },
+  experimental: {
+    optimizePackageImports: [
+      "lucide-react",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-dialog",
+      "embla-carousel-react",
+    ],
+  },
+  compiler: {
+    removeConsole:
+      process.env.NODE_ENV === "production"
+        ? {
+            exclude: ["error", "warn"],
+          }
+        : false,
+  },
 };
 
 export default withNextIntl(nextConfig);

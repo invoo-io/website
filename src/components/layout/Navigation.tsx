@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { ChevronDown, Languages, Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
 import { WaitlistDrawer } from "@/components/forms/WaitlistDrawer";
 import NavDropdown from "./NavDropdown";
 import MobileNavButton from "./MobileNavButton";
@@ -120,11 +119,11 @@ export default function Navigation({ locale }: NavigationProps) {
               paddingLeft: "24px",
             }}
           >
-            {/* Logo */}
+            {/* Logo - Dark logo is default since dark theme is default */}
             <div className="flex items-center z-50">
               <Link href={getBasePath(`/${locale}`)} className="flex items-center" prefetch={true}>
                 <Image
-                  src={getImagePath(mounted && theme === "dark" ? "/Logo-Dark.svg" : "/Logo-White.svg")}
+                  src={getImagePath(mounted && theme === "light" ? "/Logo-White.svg" : "/Logo-Dark.svg")}
                   alt="invoo"
                   width={126}
                   height={32}
@@ -216,327 +215,240 @@ export default function Navigation({ locale }: NavigationProps) {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <>
-            {/* Backdrop */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.25 }}
-              className="fixed inset-0 bg-system-overlay backdrop-blur-sm lg:hidden"
-              style={{ zIndex: 150 }}
-              onClick={() => setMobileMenuOpen(false)}
-              aria-hidden="true"
-            />
+      {/* Mobile Menu Overlay - Always rendered for animations */}
+      {/* Backdrop */}
+      <div
+        className={cn(
+          "fixed inset-0 bg-system-overlay backdrop-blur-sm lg:hidden transition-opacity duration-300 ease-out",
+          mobileMenuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        )}
+        style={{ zIndex: 150 }}
+        onClick={() => setMobileMenuOpen(false)}
+        aria-hidden="true"
+      />
 
-            {/* Drawer */}
-            <motion.div
-              id="mobile-menu"
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{
-                type: "spring",
-                damping: 25,
-                stiffness: 200,
-              }}
-              className="fixed right-0 top-0 h-full w-[85%] max-w-[380px] lg:hidden overflow-y-auto border-l border-strokes-primary/10 bg-background-primary/70 backdrop-blur-3xl backdrop-saturate-150"
-              style={{ zIndex: 200 }}
-              role="dialog"
-              aria-modal="true"
-              aria-label={t('mobileMenu')}
-            >
-              {/* Floating Close Button */}
-              <div className="absolute top-5 right-5 z-10">
-                <motion.button
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="p-2.5 rounded-full bg-fill-tertiary hover:bg-fill-secondary text-secondary hover:text-primary transition-all duration-200"
-                  whileTap={{ scale: 0.92 }}
-                  aria-label={t('closeMenu')}
-                >
-                  <X className="w-5 h-5" />
-                </motion.button>
-              </div>
+      {/* Drawer */}
+      <div
+        id="mobile-menu"
+        className={cn(
+          "fixed right-0 top-0 h-full w-[85%] max-w-[380px] lg:hidden overflow-y-auto border-l border-strokes-primary/10 bg-background-primary/70 backdrop-blur-3xl backdrop-saturate-150 transition-transform duration-300 ease-out",
+          mobileMenuOpen
+            ? "translate-x-0"
+            : "translate-x-full"
+        )}
+        style={{ zIndex: 200 }}
+        role="dialog"
+        aria-modal={mobileMenuOpen}
+        aria-label={t('mobileMenu')}
+        aria-hidden={!mobileMenuOpen}
+      >
+            {/* Floating Close Button */}
+            <div className="absolute top-5 right-5 z-10">
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2.5 rounded-full bg-fill-tertiary hover:bg-fill-secondary text-secondary hover:text-primary transition-all duration-200 active:scale-95"
+                aria-label={t('closeMenu')}
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
 
-              {/* Drawer Content */}
-              <div className="pt-20 px-5 pb-8">
-                <motion.div
-                  className="flex flex-col gap-3"
-                  initial="closed"
-                  animate="open"
-                  variants={{
-                    open: {
-                      transition: { staggerChildren: 0.05 },
-                    },
-                    closed: {
-                      transition: {
-                        staggerChildren: 0.05,
-                        staggerDirection: -1,
-                      },
-                    },
-                  }}
-                >
-                  {/* Services Section */}
-                  <motion.div
-                    variants={{
-                      open: { opacity: 1, x: 0 },
-                      closed: { opacity: 0, x: 50 },
-                    }}
-                    transition={{ duration: 0.3 }}
+            {/* Drawer Content */}
+            <div className="pt-20 px-5 pb-8">
+              <div className="flex flex-col gap-3">
+                {/* Services Section */}
+                <div>
+                  <MobileNavButton
+                    onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "services" ? null : "services")}
                   >
-                    <MobileNavButton
-                      onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "services" ? null : "services")}
+                    <span className="text-primary">{t('services')}</span>
+                    <div
+                      className="absolute right-6"
+                      style={{ transition: "transform 0.2s" }}
                     >
-                      <span className="text-primary">{t('services')}</span>
-                      <motion.div
-                        style={{
-                          position: "absolute",
-                          right: "24px",
-                        }}
-                        animate={{
-                          rotate: mobileActiveDropdown === "services" ? 180 : 0,
-                        }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <ChevronDown className="w-4 h-4 text-secondary" />
-                      </motion.div>
-                    </MobileNavButton>
+                      <ChevronDown
+                        className={cn(
+                          "w-4 h-4 text-secondary transition-transform duration-200",
+                          mobileActiveDropdown === "services" && "rotate-180"
+                        )}
+                      />
+                    </div>
+                  </MobileNavButton>
 
-                    <AnimatePresence>
-                      {mobileActiveDropdown === "services" && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2 }}
-                          className="overflow-hidden"
-                        >
-                          <div style={{ padding: "12px 0" }}>
-                            {services.map((service, index) => (
-                              <motion.div
-                                key={service.name}
-                                initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: index * 0.05 }}
-                                style={{
-                                  marginBottom:
-                                    index < services.length - 1 ? "8px" : "0",
-                                }}
-                              >
-                                <MobileNavLink
-                                  href={service.href}
-                                  onClick={() => setMobileMenuOpen(false)}
-                                  className="mx-4"
-                                >
-                                  {service.name}
-                                </MobileNavLink>
-                              </motion.div>
-                            ))}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </motion.div>
-
-                  {/* Resources Section */}
-                  <motion.div
-                    variants={{
-                      open: { opacity: 1, x: 0 },
-                      closed: { opacity: 0, x: 50 },
-                    }}
-                    transition={{ duration: 0.3 }}
+                  <div
+                    className={cn(
+                      "grid transition-all duration-200 overflow-hidden",
+                      mobileActiveDropdown === "services" ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    )}
                   >
-                    <MobileNavButton
-                      onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "resources" ? null : "resources")}
-                    >
-                      <span className="text-primary">{t('resources')}</span>
-                      <motion.div
-                        style={{
-                          position: "absolute",
-                          right: "24px",
-                        }}
-                        animate={{
-                          rotate:
-                            mobileActiveDropdown === "resources" ? 180 : 0,
-                        }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <ChevronDown className="w-4 h-4 text-secondary" />
-                      </motion.div>
-                    </MobileNavButton>
-
-                    <AnimatePresence>
-                      {mobileActiveDropdown === "resources" && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2 }}
-                          className="overflow-hidden"
-                        >
-                          <div style={{ padding: "12px 0" }}>
-                            {resources.map((resource, index) => (
-                              <motion.div
-                                key={resource.name}
-                                initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: index * 0.05 }}
-                                style={{
-                                  marginBottom:
-                                    index < resources.length - 1 ? "8px" : "0",
-                                }}
-                              >
-                                <MobileNavLink
-                                  href={resource.href}
-                                  external={resource.external}
-                                  onClick={() => setMobileMenuOpen(false)}
-                                  className="mx-4"
-                                >
-                                  {resource.name}
-                                </MobileNavLink>
-                              </motion.div>
-                            ))}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </motion.div>
-
-                  {/* Tools Section */}
-                  <motion.div
-                    variants={{
-                      open: { opacity: 1, x: 0 },
-                      closed: { opacity: 0, x: 50 },
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <MobileNavButton
-                      onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "tools" ? null : "tools")}
-                    >
-                      <span className="text-primary">{t('tools')}</span>
-                      <motion.div
-                        style={{
-                          position: "absolute",
-                          right: "24px",
-                        }}
-                        animate={{
-                          rotate:
-                            mobileActiveDropdown === "tools" ? 180 : 0,
-                        }}
-                        transition={{ duration: 0.2 }}
-                      >
-                        <ChevronDown className="w-4 h-4 text-secondary" />
-                      </motion.div>
-                    </MobileNavButton>
-
-                    <AnimatePresence>
-                      {mobileActiveDropdown === "tools" && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2 }}
-                          className="overflow-hidden"
-                        >
-                          <div style={{ padding: "12px 0" }}>
-                            {tools.map((tool, index) => (
-                              <motion.div
-                                key={tool.name}
-                                initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: index * 0.05 }}
-                                style={{
-                                  marginBottom:
-                                    index < tools.length - 1 ? "8px" : "0",
-                                }}
-                              >
-                                <MobileNavLink
-                                  href={tool.href}
-                                  onClick={() => setMobileMenuOpen(false)}
-                                  className="mx-4"
-                                >
-                                  {tool.name}
-                                </MobileNavLink>
-                              </motion.div>
-                            ))}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </motion.div>
-
-                  {/* Direct Links */}
-                  <motion.div
-                    variants={{
-                      open: { opacity: 1, x: 0 },
-                      closed: { opacity: 0, x: 50 },
-                    }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <MobileNavLink
-                      href={getBasePath(`/${locale}/pricing`)}
-                      onClick={() => setMobileMenuOpen(false)}
-                      className="w-full px-5 py-4 text-body-emphasized text-primary"
-                    >
-                      {t('pricing')}
-                    </MobileNavLink>
-                  </motion.div>
-
-                  {/* Settings Section */}
-                  <motion.div
-                    variants={{
-                      open: { opacity: 1, x: 0 },
-                      closed: { opacity: 0, x: 50 },
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className="mt-6 space-y-3"
-                  >
-                    {/* Theme & Language Row */}
-                    <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-fill-tertiary/40">
-                      <div className="flex items-center gap-3 flex-1">
-                        <ThemeToggle />
-                        <div className="w-px h-5 bg-strokes-primary/20" />
-                        <div className="flex gap-1.5">
-                          {languages.map((lang) => (
-                            <Link
-                              key={lang.code}
-                              href={getLanguageSwitchUrl(lang.code)}
+                    <div className="min-h-0">
+                      <div style={{ padding: "12px 0" }}>
+                        {services.map((service, index) => (
+                          <div
+                            key={service.name}
+                            style={{
+                              marginBottom: index < services.length - 1 ? "8px" : "0",
+                            }}
+                          >
+                            <MobileNavLink
+                              href={service.href}
                               onClick={() => setMobileMenuOpen(false)}
-                              className={cn(
-                                "px-3 py-1.5 rounded-lg text-footnote transition-all duration-200",
-                                locale === lang.code
-                                  ? "bg-accent-blue-main text-white font-medium"
-                                  : "text-secondary hover:text-primary hover:bg-fill-tertiary/60"
-                              )}
+                              className="mx-4"
                             >
-                              {lang.code.toUpperCase()}
-                            </Link>
-                          ))}
-                        </div>
+                              {service.name}
+                            </MobileNavLink>
+                          </div>
+                        ))}
                       </div>
                     </div>
-                  </motion.div>
+                  </div>
+                </div>
 
-                  {/* CTA Button */}
-                  <motion.div
-                    variants={{
-                      open: { opacity: 1, x: 0 },
-                      closed: { opacity: 0, x: 50 },
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className="mt-8"
+                {/* Resources Section */}
+                <div>
+                  <MobileNavButton
+                    onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "resources" ? null : "resources")}
                   >
-                    <WaitlistDrawer triggerText={t("getStarted")} />
-                  </motion.div>
-                </motion.div>
+                    <span className="text-primary">{t('resources')}</span>
+                    <div
+                      className="absolute right-6"
+                      style={{ transition: "transform 0.2s" }}
+                    >
+                      <ChevronDown
+                        className={cn(
+                          "w-4 h-4 text-secondary transition-transform duration-200",
+                          mobileActiveDropdown === "resources" && "rotate-180"
+                        )}
+                      />
+                    </div>
+                  </MobileNavButton>
+
+                  <div
+                    className={cn(
+                      "grid transition-all duration-200 overflow-hidden",
+                      mobileActiveDropdown === "resources" ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    )}
+                  >
+                    <div className="min-h-0">
+                      <div style={{ padding: "12px 0" }}>
+                        {resources.map((resource, index) => (
+                          <div
+                            key={resource.name}
+                            style={{
+                              marginBottom: index < resources.length - 1 ? "8px" : "0",
+                            }}
+                          >
+                            <MobileNavLink
+                              href={resource.href}
+                              external={resource.external}
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="mx-4"
+                            >
+                              {resource.name}
+                            </MobileNavLink>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tools Section */}
+                <div>
+                  <MobileNavButton
+                    onClick={() => setMobileActiveDropdown(mobileActiveDropdown === "tools" ? null : "tools")}
+                  >
+                    <span className="text-primary">{t('tools')}</span>
+                    <div
+                      className="absolute right-6"
+                      style={{ transition: "transform 0.2s" }}
+                    >
+                      <ChevronDown
+                        className={cn(
+                          "w-4 h-4 text-secondary transition-transform duration-200",
+                          mobileActiveDropdown === "tools" && "rotate-180"
+                        )}
+                      />
+                    </div>
+                  </MobileNavButton>
+
+                  <div
+                    className={cn(
+                      "grid transition-all duration-200 overflow-hidden",
+                      mobileActiveDropdown === "tools" ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    )}
+                  >
+                    <div className="min-h-0">
+                      <div style={{ padding: "12px 0" }}>
+                        {tools.map((tool, index) => (
+                          <div
+                            key={tool.name}
+                            style={{
+                              marginBottom: index < tools.length - 1 ? "8px" : "0",
+                            }}
+                          >
+                            <MobileNavLink
+                              href={tool.href}
+                              onClick={() => setMobileMenuOpen(false)}
+                              className="mx-4"
+                            >
+                              {tool.name}
+                            </MobileNavLink>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Direct Links */}
+                <div>
+                  <MobileNavLink
+                    href={getBasePath(`/${locale}/pricing`)}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="w-full px-5 py-4 text-body-emphasized text-primary"
+                  >
+                    {t('pricing')}
+                  </MobileNavLink>
+                </div>
+
+                {/* Settings Section */}
+                <div className="mt-6 space-y-3">
+                  {/* Theme & Language Row */}
+                  <div className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-fill-tertiary/40">
+                    <div className="flex items-center gap-3 flex-1">
+                      <ThemeToggle />
+                      <div className="w-px h-5 bg-strokes-primary/20" />
+                      <div className="flex gap-1.5">
+                        {languages.map((lang) => (
+                          <Link
+                            key={lang.code}
+                            href={getLanguageSwitchUrl(lang.code)}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className={cn(
+                              "px-3 py-1.5 rounded-lg text-footnote transition-all duration-200",
+                              locale === lang.code
+                                ? "bg-accent-blue-main text-white font-medium"
+                                : "text-secondary hover:text-primary hover:bg-fill-tertiary/60"
+                            )}
+                          >
+                            {lang.code.toUpperCase()}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <div className="mt-8">
+                  <WaitlistDrawer triggerText={t("getStarted")} />
+                </div>
               </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
+            </div>
+          </div>
     </>
   );
 }
