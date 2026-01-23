@@ -37,6 +37,7 @@ export default function Footer({ locale }: FooterProps) {
                 alt="Invoo"
                 width={130}
                 height={60}
+                unoptimized
               />
             </div>
             <p className="text-callout text-secondary">

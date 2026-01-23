@@ -154,7 +154,8 @@ export default function BuildForGestoriasSection({
         className={applyHeroStyling ? "rounded-[24px] shadow-[0_10px_40px_rgba(0,0,0,0.1)]" : ""}
         style={{
           objectFit: 'contain',
-
+          width: 'auto',
+          height: 'auto',
         }}
         priority
       />

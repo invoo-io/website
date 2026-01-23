@@ -51,7 +51,7 @@ export default function ArticleHeader({
   }, [post.title]);
 
   return (
-    <header className="w-full bg-background-secondary">
+    <header className="w-full bg-background-secondary pt-28">
       <div className="container mx-auto px-4 py-12 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_450px] gap-8 lg:gap-12">
         {/* Left Column - Metadata */}
