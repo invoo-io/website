@@ -15,6 +15,7 @@ import {
   CalculatorRelatedTools,
 } from '@/components/calculators/CalculatorSEOContent';
 import { getBasePath } from '@/lib/utils';
+import { HeroGlow } from '@/components/ui/HeroGlow';
 
 /**
  * Modelo130CalculatorPageContent - Shared content component for Modelo 130 calculator page
@@ -77,7 +78,8 @@ export function Modelo130CalculatorPageContent() {
   return (
     <>
       {/* Hero Section */}
-      <section className="px-4 md:px-6 pt-40 max-md:pt-20 pb-12">
+      <section className="relative px-4 md:px-6 py-60 max-md:py-32 overflow-hidden">
+        <HeroGlow />
         <SectionHeader
           size="hero"
           align="center"

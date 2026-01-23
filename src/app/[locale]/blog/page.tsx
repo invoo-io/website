@@ -109,7 +109,7 @@ export default async function BlogPage({
         buttonHref="#newsletter"
       />
 
-      <main className="container mx-auto px-4 pb-12 pt-32 max-w-7xl">
+      <main className="container mx-auto px-4 pb-12 max-w-7xl">
 
         {/* Featured Articles Carousel */}
         {featuredPosts.length > 0 && (

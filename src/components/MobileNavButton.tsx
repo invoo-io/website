@@ -1,6 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 interface MobileNavButtonProps {
   onClick: () => void;
@@ -16,16 +17,12 @@ export default function MobileNavButton({
   return (
     <button
       onClick={onClick}
-      className={`relative w-full text-primary rounded-lg transition-colors px-6 py-4 flex items-center justify-center ${className}`}
-      style={{
-        backgroundColor: "transparent",
-      }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.backgroundColor = "var(--background-tertiary)";
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.backgroundColor = "transparent";
-      }}
+      className={cn(
+        "relative w-full text-primary rounded-xl transition-all duration-200",
+        "px-5 py-4 flex items-center justify-start text-body-emphasized",
+        "bg-transparent hover:bg-fill-tertiary/50 active:scale-[0.98]",
+        className
+      )}
     >
       {children}
     </button>

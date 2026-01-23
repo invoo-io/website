@@ -28,7 +28,7 @@ export default function HeroImageSection({
     (mounted && theme === "dark" ? `/${imageBaseName}-dark.webp` : `/${imageBaseName}-light.webp`);
 
   return (
-    <section className="w-full pt-32 pb-32 max-md:pt-8 max-md:pb-24">
+    <section className="w-full -mt-40 max-md:-mt-10 pt-32 pb-32 max-md:pt-8 max-md:pb-24">
       <div className="max-w-7xl mx-auto px-6 max-md:px-4">
         <div className="relative w-full">
           <Image

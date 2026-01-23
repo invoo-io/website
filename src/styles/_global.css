@@ -1,0 +1,119 @@
+/**
+ * Global Styles & Tailwind Configuration
+ *
+ * This file contains:
+ * - Global CSS variables (gradients, radius, borders)
+ * - Tailwind theme configuration (@theme inline)
+ * - Body styles
+ * - Base layer customizations
+ */
+
+:root {
+  /* Gradient support (using design system colors) */
+  --gradient-primary: linear-gradient(135deg, var(--accent-purple-main), var(--accent-blue-main));
+  --gradient-blue: linear-gradient(135deg, var(--accent-blue-main), var(--accent-purple-main));
+  --gradient-hero: linear-gradient(90deg, var(--accent-blue-main) 0%, var(--accent-pink-main) 93.27%);
+  --gradient-border: linear-gradient(94.28deg, var(--accent-blue-main) 3.12%, var(--accent-purple-main) 95.84%);
+
+  /* Border radius */
+  --radius: 0.625rem;
+
+  /* Required for Tailwind base styles (@apply border-border) */
+  --border: var(--strokes-primary);
+  --ring: var(--accent-blue-main);
+}
+
+@theme inline {
+  /* Typography */
+  --font-sans: var(--font-inter);
+
+  /* Tailwind base styles requirement */
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  /* Design System Colors - Accent Colors */
+  --color-accent-purple-main: var(--accent-purple-main);
+  --color-accent-purple-light: var(--accent-purple-light);
+  --color-accent-purple-lighter: var(--accent-purple-lighter);
+  --color-accent-blue-main: var(--accent-blue-main);
+  --color-accent-blue-light: var(--accent-blue-light);
+  --color-accent-blue-lighter: var(--accent-blue-lighter);
+  --color-accent-orange-main: var(--accent-orange-main);
+  --color-accent-orange-light: var(--accent-orange-light);
+  --color-accent-yellow-main: var(--accent-yellow-main);
+  --color-accent-yellow-light: var(--accent-yellow-light);
+  --color-accent-pink-main: var(--accent-pink-main);
+  --color-accent-pink-darker: var(--accent-pink-darker);
+  --color-accent-red-main: var(--accent-red-main);
+  --color-accent-red-light: var(--accent-red-light);
+  --color-accent-red-darker: var(--accent-red-darker);
+  --color-accent-green-main: var(--accent-green-main);
+  --color-accent-green-darker: var(--accent-green-darker);
+
+  /* Design System Colors - Brand Colors */
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-purple: var(--brand-purple);
+
+  /* Design System Colors - Background Colors (simplified naming) */
+  /* Use: bg-primary, bg-secondary, bg-tertiary */
+  --color-background-primary: var(--background-primary);
+  --color-background-secondary: var(--background-secondary);
+  --color-background-tertiary: var(--background-tertiary);
+
+  /* Design System Colors - Text Colors (simplified naming) */
+  /* Use: text-primary, text-secondary, text-tertiary */
+  --color-primary: var(--label-primary);
+  --color-secondary: var(--label-secondary);
+  --color-tertiary: var(--label-tertiary);
+
+  /* Design System Colors - Fill Colors */
+  --color-fills-primary: var(--fills-primary);
+  --color-fills-secondary: var(--fills-secondary);
+  --color-fills-tertiary: var(--fills-tertiary);
+  --color-fills-quaternary: var(--fills-quaternary);
+  --color-fills-solid: var(--fills-solid);
+
+  /* Design System Colors - Border Colors */
+  --color-border-primary: var(--strokes-primary);
+  --color-border-secondary: var(--strokes-secondary);
+
+  /* Design System Colors - System Colors */
+  --color-system-grey100: var(--system-grey100);
+  --color-system-grey200: var(--system-grey200);
+  --color-system-grey700: var(--system-grey700);
+  --color-system-grey800: var(--system-grey800);
+  --color-system-grey900: var(--system-grey900);
+  --color-system-overlay: var(--system-overlay);
+
+  /* Design System Colors - Interactive & Status */
+  --color-interactive-primary: var(--accent-blue-main);
+  --color-interactive-secondary: var(--accent-purple-main);
+  --color-interactive-hover: var(--accent-blue-light);
+  --color-success: var(--accent-green-main);
+  --color-warning: var(--accent-yellow-main);
+  --color-error: var(--accent-red-main);
+  --color-info: var(--accent-blue-main);
+
+  /* Border Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-xxl: calc(var(--radius) + 8px);
+}
+
+body {
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    background-color: var(--background-primary);
+    color: var(--label-primary);
+  }
+}

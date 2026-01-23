@@ -28,8 +28,8 @@ export default function FAQContent() {
   });
 
   return (
-    <section className="flex flex-col items-center justify-center bg-background-primary" style={{ margin: '40px 0' }}>
-      <div className="w-full max-w-3xl px-6 pt-24 pb-24">
+    <section className="flex flex-col items-center justify-center bg-background-primary">
+      <div className="w-full max-w-3xl px-6 pb-24">
 
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faqData.map((category, categoryIndex) => (

@@ -105,6 +105,11 @@ export default async function Home({
         paragraph={t("home.hero.description")}
         buttonText={t("home.hero.cta")}
         buttonHref="#waitlist"
+        highlights={
+          locale === "es"
+            ? ["50% dto. primeros 100 usuarios", "7 días gratis", "Conforme con AEAT"]
+            : ["50% off first 100 users", "7 day free trial", "AEAT compliant"]
+        }
       />
       <HeroImageSection />
       <WhyChooseSection />

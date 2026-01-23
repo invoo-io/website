@@ -1,0 +1,465 @@
+/**
+ * Typography System
+ *
+ * This file contains all typography tokens and utility classes.
+ * Based on the Invoo Design System.
+ *
+ * Usage:
+ * - Use utility classes like text-body, text-title1-emphasized, etc.
+ * - CSS variables are available for custom implementations
+ */
+
+:root {
+  /* Typography System Tokens */
+
+  /* Header Title (64px) */
+  --text-header-title-size: 72px;
+  --text-header-title-weight: 400;
+  --text-header-title-emphasized-weight: 700;
+  --text-header-title-tracking: -0.001em;
+  --text-header-title-leading: 1;
+
+  /* Section Title (48px) */
+  --text-section-title-size: 48px;
+  --text-section-title-weight: 400;
+  --text-section-title-emphasized-weight: 600;
+  --text-section-title-tracking: 0em;
+  --text-section-title-leading: 1.2;
+
+  /* Step Number (36px) */
+  --text-step-number-size: 36px;
+  --text-step-number-weight: 600;
+  --text-step-number-tracking: 0.012em;
+  --text-step-number-leading: 1.2;
+
+  /* Large Title (34px) */
+  --text-large-title-size: 34px;
+  --text-large-title-weight: 400;
+  --text-large-title-emphasized-weight: 600;
+  --text-large-title-tracking: 0.012em;
+  --text-large-title-leading: 1.2;
+
+  /* Title 1 (28px) */
+  --text-title1-size: 28px;
+  --text-title1-weight: 400;
+  --text-title1-emphasized-weight: 600;
+  --text-title1-tracking: 0.014em;
+  --text-title1-leading: 1.25;
+
+  /* Title 2 (22px) */
+  --text-title2-size: 22px;
+  --text-title2-weight: 400;
+  --text-title2-emphasized-weight: 600;
+  --text-title2-tracking: -0.012em;
+  --text-title2-leading: 1.3;
+
+  /* Title 3 (19px) */
+  --text-title3-size: 19px;
+  --text-title3-weight: 400;
+  --text-title3-emphasized-weight: 600;
+  --text-title3-tracking: -0.024em;
+  --text-title3-leading: 1.6;
+
+  /* Headline (17px) */
+  --text-headline-size: 17px;
+  --text-headline-weight: 500;
+  --text-headline-tracking: -0.025em;
+  --text-headline-leading: 1.35;
+
+  /* Body (17px) */
+  --text-body-size: 17px;
+  --text-body-weight: 400;
+  --text-body-emphasized-weight: 500;
+  --text-body-tracking: -0.025em;
+  --text-body-leading: 1.5;
+
+  /* Callout (16px) */
+  --text-callout-size: 16px;
+  --text-callout-weight: 400;
+  --text-callout-emphasized-weight: 500;
+  --text-callout-tracking: -0.019em;
+  --text-callout-leading: 1.4;
+
+  /* Subheadline (15px) */
+  --text-subheadline-size: 15px;
+  --text-subheadline-weight: 400;
+  --text-subheadline-emphasized-weight: 500;
+  --text-subheadline-tracking: -0.015em;
+  --text-subheadline-leading: 1.35;
+
+  /* Footnote (13px) */
+  --text-footnote-size: 13px;
+  --text-footnote-weight: 400;
+  --text-footnote-emphasized-weight: 500;
+  --text-footnote-tracking: -0.006em;
+  --text-footnote-leading: 1.4;
+
+  /* Caption 1 (12px) */
+  --text-caption1-size: 12px;
+  --text-caption1-weight: 400;
+  --text-caption1-emphasized-weight: 500;
+  --text-caption1-tracking: 0;
+  --text-caption1-leading: 1.35;
+
+  /* Caption 2 (11px) */
+  --text-caption2-size: 11px;
+  --text-caption2-weight: 400;
+  --text-caption2-emphasized-weight: 600;
+  --text-caption2-tracking: 0.005em;
+  --text-caption2-leading: 1.3;
+}
+
+/* Mobile typography overrides */
+@media (max-width: 768px) {
+  :root {
+    --text-header-title-size: 48px;
+    --text-section-title-size: 40px;
+  }
+}
+
+/* Typography Utility Classes
+ *
+ * Note: Emphasized-italic variants use font-weight 600 (semibold) instead of
+ * the emphasized token weight. This is intentional for better visual hierarchy
+ * when combining emphasis with italic styling.
+ */
+@layer utilities {
+  /* Header Title - For page headers (64px) */
+  .text-header-title {
+    font-family: var(--font-inter);
+    font-size: var(--text-header-title-size);
+    font-weight: var(--text-header-title-weight);
+    letter-spacing: var(--text-header-title-tracking);
+    line-height: var(--text-header-title-leading);
+  }
+
+  .text-header-title-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-header-title-size);
+    font-weight: var(--text-header-title-emphasized-weight);
+    letter-spacing: var(--text-header-title-tracking);
+    line-height: var(--text-header-title-leading);
+  }
+
+  /* Section Title - For section headings (48px) */
+  .text-section-title {
+    font-family: var(--font-inter);
+    font-size: var(--text-section-title-size);
+    font-weight: var(--text-section-title-weight);
+    letter-spacing: var(--text-section-title-tracking);
+    line-height: var(--text-section-title-leading);
+  }
+
+  .text-section-title-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-section-title-size);
+    font-weight: var(--text-section-title-emphasized-weight);
+    letter-spacing: var(--text-section-title-tracking);
+    line-height: var(--text-section-title-leading);
+  }
+
+  /* Step Number - For numbered circles (36px) */
+  .text-step-number {
+    font-family: var(--font-inter);
+    font-size: var(--text-step-number-size);
+    font-weight: var(--text-step-number-weight);
+    letter-spacing: var(--text-step-number-tracking);
+    line-height: var(--text-step-number-leading);
+  }
+
+  /* Large Title */
+  .text-large-title {
+    font-family: var(--font-inter);
+    font-size: var(--text-large-title-size);
+    font-weight: var(--text-large-title-weight);
+    letter-spacing: var(--text-large-title-tracking);
+    line-height: var(--text-large-title-leading);
+  }
+
+  .text-large-title-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-large-title-size);
+    font-weight: var(--text-large-title-emphasized-weight);
+    letter-spacing: var(--text-large-title-tracking);
+    line-height: var(--text-large-title-leading);
+  }
+
+  /* Title 1 */
+  .text-title1 {
+    font-family: var(--font-inter);
+    font-size: var(--text-title1-size);
+    font-weight: var(--text-title1-weight);
+    letter-spacing: var(--text-title1-tracking);
+    line-height: var(--text-title1-leading);
+  }
+
+  .text-title1-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-title1-size);
+    font-weight: var(--text-title1-emphasized-weight);
+    letter-spacing: var(--text-title1-tracking);
+    line-height: var(--text-title1-leading);
+  }
+
+  /* Title 2 */
+  .text-title2 {
+    font-family: var(--font-inter);
+    font-size: var(--text-title2-size);
+    font-weight: var(--text-title2-weight);
+    letter-spacing: var(--text-title2-tracking);
+    line-height: var(--text-title2-leading);
+  }
+
+  .text-title2-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-title2-size);
+    font-weight: var(--text-title2-emphasized-weight);
+    letter-spacing: var(--text-title2-tracking);
+    line-height: var(--text-title2-leading);
+  }
+
+  /* Title 3 */
+  .text-title3 {
+    font-family: var(--font-inter);
+    font-size: var(--text-title3-size);
+    font-weight: var(--text-title3-weight);
+    letter-spacing: var(--text-title3-tracking);
+    line-height: var(--text-title3-leading);
+  }
+
+  .text-title3-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-title3-size);
+    font-weight: var(--text-title3-emphasized-weight);
+    letter-spacing: var(--text-title3-tracking);
+    line-height: var(--text-title3-leading);
+  }
+
+  /* Headline */
+  .text-headline {
+    font-family: var(--font-inter);
+    font-size: var(--text-headline-size);
+    font-weight: var(--text-headline-weight);
+    letter-spacing: var(--text-headline-tracking);
+    line-height: var(--text-headline-leading);
+  }
+
+  .text-headline-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-headline-size);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: var(--text-headline-tracking);
+    line-height: var(--text-headline-leading);
+  }
+
+  /* Body */
+  .text-body {
+    font-family: var(--font-inter);
+    font-size: var(--text-body-size);
+    font-weight: var(--text-body-weight);
+    letter-spacing: var(--text-body-tracking);
+    line-height: var(--text-body-leading);
+  }
+
+  .text-body-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-body-size);
+    font-weight: var(--text-body-emphasized-weight);
+    letter-spacing: var(--text-body-tracking);
+    line-height: var(--text-body-leading);
+  }
+
+  .text-body-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-body-size);
+    font-weight: var(--text-body-weight);
+    font-style: italic;
+    letter-spacing: var(--text-body-tracking);
+    line-height: var(--text-body-leading);
+  }
+
+  .text-body-emphasized-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-body-size);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: var(--text-body-tracking);
+    line-height: var(--text-body-leading);
+  }
+
+  /* Callout */
+  .text-callout {
+    font-family: var(--font-inter);
+    font-size: var(--text-callout-size);
+    font-weight: var(--text-callout-weight);
+    letter-spacing: var(--text-callout-tracking);
+    line-height: var(--text-callout-leading);
+  }
+
+  .text-callout-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-callout-size);
+    font-weight: var(--text-callout-emphasized-weight);
+    letter-spacing: var(--text-callout-tracking);
+    line-height: var(--text-callout-leading);
+  }
+
+  .text-callout-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-callout-size);
+    font-weight: var(--text-callout-weight);
+    font-style: italic;
+    letter-spacing: var(--text-callout-tracking);
+    line-height: var(--text-callout-leading);
+  }
+
+  .text-callout-emphasized-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-callout-size);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: var(--text-callout-tracking);
+    line-height: var(--text-callout-leading);
+  }
+
+  /* Subheadline */
+  .text-subheadline {
+    font-family: var(--font-inter);
+    font-size: var(--text-subheadline-size);
+    font-weight: var(--text-subheadline-weight);
+    letter-spacing: var(--text-subheadline-tracking);
+    line-height: var(--text-subheadline-leading);
+  }
+
+  .text-subheadline-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-subheadline-size);
+    font-weight: var(--text-subheadline-emphasized-weight);
+    letter-spacing: var(--text-subheadline-tracking);
+    line-height: var(--text-subheadline-leading);
+  }
+
+  .text-subheadline-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-subheadline-size);
+    font-weight: var(--text-subheadline-weight);
+    font-style: italic;
+    letter-spacing: var(--text-subheadline-tracking);
+    line-height: var(--text-subheadline-leading);
+  }
+
+  .text-subheadline-emphasized-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-subheadline-size);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: var(--text-subheadline-tracking);
+    line-height: var(--text-subheadline-leading);
+  }
+
+  /* Footnote */
+  .text-footnote {
+    font-family: var(--font-inter);
+    font-size: var(--text-footnote-size);
+    font-weight: var(--text-footnote-weight);
+    letter-spacing: var(--text-footnote-tracking);
+    line-height: var(--text-footnote-leading);
+  }
+
+  .text-footnote-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-footnote-size);
+    font-weight: var(--text-footnote-emphasized-weight);
+    letter-spacing: var(--text-footnote-tracking);
+    line-height: var(--text-footnote-leading);
+  }
+
+  .text-footnote-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-footnote-size);
+    font-weight: var(--text-footnote-weight);
+    font-style: italic;
+    letter-spacing: var(--text-footnote-tracking);
+    line-height: var(--text-footnote-leading);
+  }
+
+  .text-footnote-emphasized-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-footnote-size);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: var(--text-footnote-tracking);
+    line-height: var(--text-footnote-leading);
+  }
+
+  /* Caption 1 */
+  .text-caption1 {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption1-size);
+    font-weight: var(--text-caption1-weight);
+    letter-spacing: var(--text-caption1-tracking);
+    line-height: var(--text-caption1-leading);
+  }
+
+  .text-caption1-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption1-size);
+    font-weight: var(--text-caption1-emphasized-weight);
+    letter-spacing: var(--text-caption1-tracking);
+    line-height: var(--text-caption1-leading);
+  }
+
+  .text-caption1-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption1-size);
+    font-weight: var(--text-caption1-weight);
+    font-style: italic;
+    letter-spacing: var(--text-caption1-tracking);
+    line-height: var(--text-caption1-leading);
+  }
+
+  .text-caption1-emphasized-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption1-size);
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: var(--text-caption1-tracking);
+    line-height: var(--text-caption1-leading);
+  }
+
+  /* Caption 2 */
+  .text-caption2 {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption2-size);
+    font-weight: var(--text-caption2-weight);
+    letter-spacing: var(--text-caption2-tracking);
+    line-height: var(--text-caption2-leading);
+  }
+
+  .text-caption2-emphasized {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption2-size);
+    font-weight: var(--text-caption2-emphasized-weight);
+    letter-spacing: var(--text-caption2-tracking);
+    line-height: var(--text-caption2-leading);
+  }
+
+  .text-caption2-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption2-size);
+    font-weight: var(--text-caption2-weight);
+    font-style: italic;
+    letter-spacing: var(--text-caption2-tracking);
+    line-height: var(--text-caption2-leading);
+  }
+
+  .text-caption2-emphasized-italic {
+    font-family: var(--font-inter);
+    font-size: var(--text-caption2-size);
+    font-weight: var(--text-caption2-emphasized-weight);
+    font-style: italic;
+    letter-spacing: var(--text-caption2-tracking);
+    line-height: var(--text-caption2-leading);
+  }
+}

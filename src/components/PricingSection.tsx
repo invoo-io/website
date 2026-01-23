@@ -8,6 +8,7 @@ import GradientText from "./ui/GradientText";
 import { DrawerComponent } from "./DrawerComponent";
 import { SectionHeader } from "./ui/SectionHeader";
 import { getBasePath } from "@/lib/utils";
+import { HeroGlow } from "./ui/HeroGlow";
 
 export default function PricingSection() {
   const t = useTranslations("pricingPage");
@@ -20,12 +21,14 @@ export default function PricingSection() {
   const titleParts = t("header.title").split(". ");
 
   return (
-    <section className="py-[156px] max-md:py-10 px-4 md:px-6" style={{
+    <section className="relative py-60 max-md:py-32 px-4 md:px-6 overflow-hidden" style={{
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center'
     }}>
+      <HeroGlow />
+
       {/* Header */}
       <SectionHeader
         size="hero"
