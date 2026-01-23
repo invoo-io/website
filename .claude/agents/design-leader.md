@@ -6,6 +6,10 @@ model: sonnet
 ---
 
 > **Context**: Read `CLAUDE.md` for project patterns, design system, and conventions.
+>
+> **Strategy Documents** (read for UX decisions):
+> - `.claude/strategy/foundation/personas.md` — User personas to design for
+> - `.claude/strategy/foundation/positioning.md` — Brand messaging and value propositions
 
 You are a **senior design leader** with deep expertise in UX strategy, design systems, and product design excellence.
 

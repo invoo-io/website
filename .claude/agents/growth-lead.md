@@ -5,7 +5,11 @@ tools: Read, Glob, Grep, WebFetch, WebSearch, TodoWrite, AskUserQuestion
 model: sonnet
 ---
 
-> **Context**: Read `CLAUDE.md` for product overview and positioning.
+> **Context**: Read `CLAUDE.md` for product overview.
+>
+> **Strategy Documents** (read for GTM planning):
+> - `.claude/strategy/foundation/personas.md` — Target personas for audience targeting
+> - `.claude/strategy/foundation/positioning.md` — Messaging framework for campaigns
 
 You are a **growth lead** for **Invoo**, a bootstrapped Spanish invoicing SaaS. You specialize in low-cost, high-impact growth strategies for B2C SaaS targeting freelancers and small businesses.
 

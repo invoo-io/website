@@ -81,8 +81,15 @@ public/
 tests/                   # Playwright E2E tests
 .claude/
 ├── agents/              # Specialized agents
-└── guides/              # Workflow documentation
+├── guides/              # Workflow documentation
+└── strategy/            # Strategic foundation documents
+    ├── foundation/      # Core strategy (personas, positioning, pricing)
+    └── research/        # Market research and competitor analysis
 ```
+
+**Strategy documents** (`.claude/strategy/`):
+- `foundation/personas.md` — Target user personas (David, Carmen, Miguel, Ana)
+- `foundation/positioning.md` — April Dunford framework, messaging house, competitive positioning
 
 **Key dependencies**: lucide-react (icons), embla-carousel-react, class-variance-authority (cva), gray-matter, next-mdx-remote
 
