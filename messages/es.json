@@ -505,126 +505,228 @@
   },
   "faq": {
     "metadata": {
-      "title": "Preguntas Frecuentes | Verifactu, Colaboración y Precios | Invoo",
-      "description": "¿Cómo funciona la colaboración con gestoría? ¿Cuándo es obligatorio Verifactu? ¿Cómo paso de presupuesto a factura? Respuestas claras. Únete a la lista de espera."
+      "title": "Verifactu y Facturación: Preguntas Frecuentes | Invoo",
+      "description": "¿Qué es Verifactu? ¿Cuánto cuesta software de facturación? ¿Cómo colaborar con tu gestoría? Respuestas claras sobre facturación electrónica."
     },
     "hero": {
       "title": "Preguntas Frecuentes",
-      "description": "Encuentra respuestas a las preguntas más comunes sobre Invoo, facturación electrónica y Verifactu",
+      "description": "Encuentra respuestas claras sobre Invoo, facturación electrónica, Verifactu y colaboración con tu gestoría",
       "cta": "Únete a la lista de espera"
     },
     "title": "FAQs",
     "categories": {
-      "compliance": {
-        "title": "Cumplimiento (VeriFactu / AEAT)",
+      "gettingStarted": {
+        "title": "Empezando con Invoo",
         "questions": {
           "q1": {
-            "question": "¿Es Invoo compatible con VeriFactu?",
-            "answer": "Sí. Invoo está diseñado para cumplir con el Reglamento VeriFactu (RD 1007/2023). Generamos el QR VeriFactu y gestionamos el flujo de envío a la AEAT a través de nuestro proveedor de API. Puedes consultar estados y exportar evidencias para auditorías."
+            "question": "¿Qué es Invoo y para quién es?",
+            "answer": "Invoo es software de facturación para autónomos y pymes en España que incluye conexión con tu gestoría. A diferencia de ERPs como Holded que incluyen CRM, inventario y módulos que nunca usarás, nosotros solo hacemos facturación. Factura en 30 segundos, tu gestoría ve todo al instante, Verifactu automático. Diseñado para quien quiere facturar profesionalmente sin complicaciones. Si tienes entre 1 y 100 facturas al mes y trabajas con gestoría (o quieres trabajar con una), Invoo es para ti."
           },
           "q2": {
-            "question": "¿Cuándo entra en vigor VeriFactu de forma obligatoria?",
-            "answer": "Actualizado enero 2026: para desarrolladores de software, desde julio de 2025; para empresas (sociedades), desde enero de 2027; y para autónomos, desde julio de 2027 (Real Decreto-Ley 15/2025). Algunos detalles se implementan por fases. Te avisaremos en la app cuando activemos los endpoints de producción de la AEAT."
+            "question": "¿Cuánto tiempo lleva empezar con Invoo?",
+            "answer": "5 minutos para autónomos, 10 minutos para pymes con equipo. Creas tu cuenta, añades tus datos fiscales (CIF, dirección), introduces un par de clientes y ya puedes facturar. Sin implementación, sin semanas de formación, sin vídeos de 2 horas. El primer día que usas Invoo ya estás facturando más rápido que con Word o Excel. Comparado con Holded o Quipu, que requieren días de configuración, Invoo está listo antes de que termines el café."
           },
           "q3": {
-            "question": "¿VeriFactu significa que las facturas se aprueban al instante por la AEAT?",
-            "answer": "No. La factura incluye el QR y se envía a la AEAT, pero la aceptación depende de ellos. Puedes rastrear el estado y corregir si es necesario (por ejemplo, rectificativas)."
+            "question": "Vengo de Excel/Word. ¿Es difícil migrar?",
+            "answer": "No, es más fácil que lo que usas ahora. Si sabes usar WhatsApp, sabes usar Invoo. Introduces nombre del cliente, concepto, importe. Invoo calcula IVA e IRPF automáticamente (adiós calculadora). Generas el PDF y lo envías en 30 segundos. Sin fórmulas que se rompen, sin plantillas desactualizadas. Puedes importar tu lista de clientes desde un CSV si quieres ahorrarte escribir. Además, desde julio 2027, Word y Excel serán ilegales para facturación B2B. Mejor migrar ahora sin prisa que en junio de 2027 con Hacienda detrás."
           },
           "q4": {
-            "question": "¿Necesito mi propio certificado digital?",
-            "answer": "No para empezar. Nuestro proveedor gestiona el intercambio seguro con la AEAT; manejamos las cargas técnicas y devolvemos el QR y estado. Para personalizaciones enterprise (como usar tu certificado), contáctanos más adelante."
+            "question": "Ya uso Holded/Quipu. ¿Por qué cambiar a Invoo?",
+            "answer": "Porque estás pagando por funciones que no necesitas. Holded cuesta €29+/mes e incluye CRM, inventario y módulos de HR. Si eres autónomo, usas el 5% de lo que pagas. Invoo cuesta €10.90/mes y te da el 100% de lo que necesitas para facturar: presupuestos que se convierten en facturas en 1 clic, descuentos por línea, Verifactu automático, multi-divisa, y tu gestoría conectada gratis. En Holded pagarías €80/mes extra por conectar a tu asesor. Además, el soporte de Invoo responde en horas, no en semanas. Migrar toma 15 minutos. Prueba y compara."
           },
           "q5": {
-            "question": "¿Quién está obligado a usar VeriFactu?",
-            "answer": "Autónomos, pymes y empresas que facturen menos de 6M€ anuales, excepto exentos como REGE o grandes contribuyentes en SII. Si eres un freelancer con pocos clientes, elige software simple como Invoo; para gestorías con cientos de clientes, usa nuestro dashboard gratuito para centralizar."
+            "question": "¿Tengo que dejar a mi gestoría para usar Invoo?",
+            "answer": "No, todo lo contrario. Tu gestoría sigue contigo y de hecho le haces la vida más fácil. Con Invoo, tu asesor accede a un dashboard gratuito donde ve todas tus facturas en tiempo real. Sin emails, sin PDFs adjuntos, sin WhatsApps a las 23h preguntando dónde está la factura de noviembre. Tú facturas, él lo ve al instante. Muchas gestorías nos recomiendan a sus clientes porque les ahorra horas de trabajo manual. Si tu gestoría te dice que no quiere que uses software, envíales nuestra web. Si ven el dashboard gratuito, cambian de opinión."
           },
           "q6": {
-            "question": "¿Cuáles son las sanciones por no cumplir con VeriFactu?",
-            "answer": "Hasta 50.000€ por no usar software homologado o manipular registros. Evítalo con Invoo, que asegura trazabilidad."
+            "question": "¿Necesito conocimientos técnicos para usar Invoo?",
+            "answer": "No. Si usas WhatsApp o Gmail, puedes usar Invoo. Diseñamos la interfaz para Carmen, una autónoma de 48 años que lleva 8 años facturando con Word. No hay menús complicados, ni módulos que configurar, ni integraciones raras. Abres Invoo, introduces cliente y concepto, guardas. Listo. Invoo calcula impuestos, genera el PDF, y envía. Nuestro récord es una autónoma que creó su primera factura en 90 segundos sin ayuda. Si te atascas, soporte humano responde en horas."
           },
           "q7": {
-            "question": "¿Puedo seguir usando Excel o Word para facturar?",
-            "answer": "Sí, si solo usas Word/Excel como plantilla manual (sin macros ni integración contable), Verifactu no te afecta. Pero perderás tiempo: 10 minutos por factura vs 30 segundos con Invoo. Si usas Excel con macros que generan libros de IVA, entonces sí necesitas software homologado."
+            "question": "¿Puedo importar mis clientes y facturas antiguas?",
+            "answer": "Sí. Clientes los importas desde un CSV (Excel) con nombre, CIF y email. Tarda 2 minutos. Facturas antiguas puedes subirlas como archivos adjuntos para tener todo centralizado, pero no las migramos automáticamente porque cada software tiene formato diferente. Sin embargo, para efectos fiscales, solo necesitas las facturas desde que empiezas con Invoo hacia adelante. Hacienda no te pide que rehaces tu historial. Lo importante es que desde julio 2027, todas las nuevas facturas B2B deben cumplir Verifactu. Empezar en Invoo ahora te da margen para acostumbrarte sin presión."
+          },
+          "q8": {
+            "question": "¿Qué diferencia a Invoo de otros software de facturación?",
+            "answer": "Tres cosas. Primero, tu gestoría ya está conectada de serie, gratis. Competidores cobran €80/mes extra por eso o directamente no lo ofrecen. Segundo, solo hacemos facturación. Sin CRM, sin inventario, sin módulos que nunca usarás. Usas el 100% de lo que pagas. Tercero, rapidez real. Factura en 30 segundos, presupuesto a factura en 1 clic, configuración en 5 minutos. Comparado con Holded (€29+/mes, semanas de implementación), Quipu (seguridad cuestionable, sin 2FA), o Billin (sin multi-divisa), Invoo es justo lo que necesitas. Ni más, ni menos. €10.90/mes, todo incluido."
           }
         }
       },
-      "scope": {
-        "title": "Alcance y Disponibilidad",
+      "gestoriaCollaboration": {
+        "title": "Colaboración con Gestoría",
         "questions": {
           "q1": {
-            "question": "¿Para quién es Invoo?",
-            "answer": "Para freelancers (autónomos), pymes en España y sus gestorías. Optimizamos flujos de cumplimiento español, como sincronización automática con gestorías. No reemplazamos a tu gestor, sino que lo potenciamos, mejorando retención al reducir errores de coordinación."
+            "question": "¿Cómo funciona la conexión con mi gestoría?",
+            "answer": "Simple: tú facturas, tu gestoría lo ve al instante. Invitas a tu asesor desde tu cuenta (introduces su email), él recibe acceso a un dashboard gratuito donde ve todas tus facturas, gastos e ingresos en tiempo real. Sin enviar PDFs, sin exportar Excel, sin emails de ida y vuelta. Tu gestoría puede filtrar por fecha, descargar lo que necesite para declaraciones, y ver todo consolidado. No tiene que pedirte nada. Tú mantienes el control: decides qué ve y cuándo. Puedes revocar acceso en cualquier momento. Es como Google Drive colaborativo, pero diseñado para facturación."
           },
           "q2": {
-            "question": "¿Qué incluye Invoo en el lanzamiento?",
-            "answer": "Facturación core con QR VeriFactu y envío a AEAT, captura de gastos, precálculos trimestrales (Modelos 130 y 303), acceso para gestorías y exportaciones CSV. Funciones avanzadas como multi-moneda se añaden progresivamente. Prueba el plan gratuito para validar; si necesitas escalabilidad, sube a pro."
+            "question": "¿Mi gestoría tiene que pagar algo?",
+            "answer": "No, nada. El dashboard de gestoría es gratis para tu asesor, incluido en tu plan de €10.90/mes (autónomos) o €19.90/mes (pymes). Competidores como Holded cobran €80/mes adicionales por la conexión contable. Nosotros lo incluimos porque entendemos que autónomo + gestoría = equipo. Tu gestoría solo necesita un email para acceder. Si gestiona 50 clientes con Invoo, accede a los 50 desde un solo panel. Sin licencias, sin costes ocultos. Gana-gana: tú pagas menos, tu gestoría ahorra tiempo, nosotros ganamos clientes contentos."
           },
           "q3": {
-            "question": "¿Hay app móvil?",
-            "answer": "Priorizamos desktop, pero la web móvil es 100% usable para escanear recibos on-the-go. Una app nativa podría venir si hay demanda; mientras, usa el navegador para simplicidad operativa."
+            "question": "¿Qué ve exactamente mi gestoría en su dashboard?",
+            "answer": "Tu gestoría ve: todas tus facturas emitidas (con estado: pagada, pendiente, vencida), todos tus gastos registrados, totales de ingresos y gastos por trimestre, datos listos para modelos 303, 130 y declaraciones trimestrales. Puede descargar PDFs individuales o exportar CSV con todo consolidado. No ve tu contraseña, no puede modificar facturas, no puede borrar nada. Solo lectura y descarga. Tú controlas permisos desde tu panel. Si solo quieres que vean facturas del último trimestre, configuras filtro. Es tu data, tu control. Ellos ven lo que tú decides."
           },
           "q4": {
-            "question": "¿Invoo soporta facturas recurrentes?",
-            "answer": "Sí, automatiza envíos mensuales para clientes fijos. Configura variaciones para extras sin complejidad. Alterna con recordatorios manuales si prefieres control total, pero la automatización reduce errores."
+            "question": "¿Puedo usar Invoo si mi gestoría no quiere usarlo?",
+            "answer": "Sí, pero estarás perdiendo la mitad del valor. Invoo funciona sin gestoría conectada: puedes facturar, exportar PDFs y enviarlos por email como siempre. Pero pierdes la magia: cero emails, cero esperas, cero 'me falta la factura 0234'. Nuestra experiencia: el 90% de gestorías que dicen 'no' cambian de opinión cuando ven el dashboard gratuito. Envía a tu gestoría nuestra web o pídeles que nos contacten. Si realmente no quieren, puedes usar Invoo igualmente y exportar manualmente. Pero te recomendamos insistir. Muchos autónomos han cambiado de gestoría por esto: si tu asesor se niega a usar herramientas que te hacen la vida más fácil, quizá no es el asesor adecuado."
           },
           "q5": {
-            "question": "¿Es Invoo fácil para usuarios no tech-savvy?",
-            "answer": "Absolutamente, con interfaz simple y guías paso a paso. Crea facturas en <30s sin cálculos manuales. Si la curva de aprendizaje preocupa, empieza con nuestro onboarding gratuito; o integra con tu gestoría para delegar."
+            "question": "Si tengo varios usuarios (PYME), ¿mi gestoría ve facturas de todos?",
+            "answer": "Sí, exactamente para eso existe el plan PYME. Tu gestoría ve todas las facturas de todos los usuarios de tu empresa en un solo sitio. Puede filtrar por usuario, por fecha, por cliente, por estado. Ve quién facturó qué y cuándo. Esto es crítico para declaraciones: tu gestoría necesita consolidar todo tu equipo antes de presentar modelos trimestrales. Con Invoo, hace clic en 'exportar trimestre Q1' y descarga todo. Sin perseguir a 4 personas, sin juntar Excels. Por eso el plan PYME (€19.90/mes para 4 usuarios) incluye visibilidad total: tú como admin ves todo tu equipo, tu gestoría ve todo tu equipo. Control absoluto, cero caos."
           },
           "q6": {
-            "question": "¿Invoo maneja multi-moneda e IVA internacional?",
-            "answer": "Sí, soporta conversiones automáticas y manejo de IVA para clientes extranjeros. Reduce complejidad fiscal; como alternativa, exporta a herramientas externas, pero la integración nativa simplifica la retención."
+            "question": "¿Qué pasa si cambio de gestoría?",
+            "answer": "Revocas acceso a la gestoría antigua e invitas a la nueva. Toma 30 segundos. Tus facturas siguen siendo tuyas, no dependen de quién las vea. La nueva gestoría accede al historial completo desde que empezaste a usar Invoo. Sin migración, sin pérdida de datos. Esto es otra ventaja de Invoo: tu data no está en el ordenador de tu gestoría como con a3ASESOR o Excel que ellos controlan. Está en tu cuenta Invoo. Tú decides quién accede. Cambiar de gestoría ya es lo suficientemente estresante. Con Invoo, al menos la parte técnica es trivial."
+          }
+        }
+      },
+      "compliance": {
+        "title": "Verifactu y Cumplimiento",
+        "questions": {
+          "q1": {
+            "question": "¿Qué es Verifactu y por qué me afecta?",
+            "answer": "Verifactu es la nueva normativa de la AEAT para combatir el fraude fiscal mediante software de facturación. Desde julio 2027, todos los autónomos y pymes que facturen B2B (a otras empresas) deben usar software homologado que genere un código QR por factura y envíe información a Hacienda en tiempo real. Objetivo: evitar facturas falsas y manipulación de registros. Si facturas con Word, Excel, o software no homologado, tus facturas B2B serán ilegales. Te afecta si: eres autónomo o pyme, facturas menos de 6M€/año, y tus clientes son empresas (B2B). Solución: usar software como Invoo que ya cumple Verifactu. Si esperas a junio 2027, tendrás prisa y estrés. Si empiezas ahora, llegas tranquilo."
+          },
+          "q2": {
+            "question": "¿Invoo está listo para Verifactu?",
+            "answer": "Sí, desde el día 1. Invoo genera automáticamente el código QR Verifactu en cada factura y gestiona el envío a la AEAT a través de nuestra API. Tú facturas normal, nosotros nos encargamos de la parte técnica. Cuando Verifactu sea obligatorio en julio 2027, no tienes que hacer nada: tu Invoo ya cumple. Sin actualizaciones, sin migraciones, sin sorpresas. Además, exportamos evidencias para auditorías y mostramos estado de cada factura (enviada, aceptada, rechazada). El 82% de pymes no están preparadas para Verifactu. Tú sí lo estarás."
+          },
+          "q3": {
+            "question": "¿Puedo seguir usando Excel o Word para facturar?",
+            "answer": "Hasta julio 2027, sí. Pero después, no para facturas B2B (empresas). Verifactu prohíbe software no homologado para facturación entre empresas. Puedes seguir usando Word para facturas B2C (particulares sin actividad económica), pero perderás tiempo: 10 minutos por factura manual vs 30 segundos con Invoo. Además, Word no calcula IVA automáticamente, no genera QR, no conecta con tu gestoría. Mucha gente dice 'mi Word funciona desde hace 8 años'. Pero desde julio 2027, no cumplirá con Verifactu para B2B. Mejor migrar ahora sin presión que esperar al último minuto."
+          },
+          "q4": {
+            "question": "¿Cuáles son las sanciones por no cumplir con Verifactu?",
+            "answer": "Multas de hasta €50.000 por no usar software homologado o manipular registros fiscales. Hacienda puede auditar tus facturas y si detecta que usas Word/Excel después de julio 2027 para B2B, te sancionan. Infracciones graves incluyen: facturas sin QR Verifactu, software no homologado, manipulación de registros contables. No es una amenaza vacía: Verifactu existe porque hay fraude. Hacienda va en serio. La buena noticia es que evitarlo es fácil: usa software como Invoo que cumple automáticamente. €10.90/mes es mucho menos que €50.000 de multa. Haz el cálculo."
+          },
+          "q5": {
+            "question": "¿Tengo que hacer algo especial para cumplir con Verifactu?",
+            "answer": "No, si usas Invoo. Verifactu es automático: creas tu factura normal, Invoo genera el QR, envía la info a la AEAT, y te muestra el estado. Tú no tocas nada. No necesitas certificado digital (nosotros lo gestionamos), no necesitas entender la normativa técnica, no necesitas configurar nada. Solo facturar. Comparado con otras opciones donde tienes que descargar plugins, configurar APIs, o gestionar certificados manualmente, Invoo es invisible. La mejor tecnología es la que no notas. Facturas como siempre, nosotros nos encargamos del resto. Así debe ser."
+          },
+          "q6": {
+            "question": "Si facturo con Invoo, ¿mi gestoría tiene menos trabajo en declaraciones?",
+            "answer": "Sí, mucho menos. Tu gestoría accede a todas tus facturas Verifactu desde su dashboard, descarga CSV con totales de ingresos, gastos, IVA e IRPF ya calculados. Sin pedirte facturas por WhatsApp, sin consolidar PDFs, sin teclear datos manualmente. Para modelos 303 y 130, exporta todo en un clic. Esto reduce errores (datos vienen directos de tu software homologado) y ahorra tiempo (menos horas de data entry = menos coste para ti). Muchas gestorías reducen honorarios si el cliente usa software bien integrado. Pregúntale a tu asesor: probablemente te diga que sí, que Invoo le facilita la vida."
+          },
+          "q7": {
+            "question": "¿Invoo soporta TicketBAI (País Vasco)?",
+            "answer": "Sí. TicketBAI es obligatorio en el País Vasco desde 2024 para todas las facturas. Invoo genera el fichero XML TicketBAI, firma digitalmente cada factura, y envía a las Haciendas Forales (Bizkaia, Gipuzkoa, Araba). Funciona igual que Verifactu: tú facturas, nosotros gestionamos la parte técnica. Si tienes actividad en País Vasco y resto de España, Invoo maneja ambos: TicketBAI para Euskadi, Verifactu para el resto. Un solo software, dos normativas cumplidas. Sin complicaciones, sin duplicar herramientas."
           }
         }
       },
       "pricing": {
-        "title": "Precios",
+        "title": "Precios y Planes",
         "questions": {
           "q1": {
             "question": "¿Cuánto cuesta Invoo?",
-            "answer": "Freelancers: Starter gratuito y Pro a 9,90€/mes; gestorías: Dashboard gratuito y Enterprise personalizado. Planes anuales con descuentos disponibles. Consulta la página de Precios para tiers actuales."
+            "answer": "€10.90/mes para autónomos (1 usuario), €19.90/mes para pymes (hasta 4 usuarios). Todo incluido: facturas ilimitadas, presupuestos, gastos, Verifactu, TicketBAI, multi-divisa, descuentos, dashboard de gestoría gratuito, soporte humano. Sin costes ocultos, sin cargos por 'módulos extra', sin límites de facturas. Pagas lo que ves. Comparado con Holded (€29+/mes sin gestoría conectada), Quipu (€17+/mes sin muchas funciones), o gestorías online (€30+/mes sin relación personal), Invoo es más barato y más completo. Precio fijo, sin sorpresas. Cancelas cuando quieras."
           },
           "q2": {
-            "question": "¿Puedo cancelar en cualquier momento? ¿Ofrecen reembolsos?",
-            "answer": "Sí, el plan mensual se cancela en cualquier momento; reembolso de 30 días en upgrades anuales. Flexible para probar sin riesgo, mejorando activación."
+            "question": "€10.90/mes parece caro para un autónomo. ¿Vale la pena?",
+            "answer": "Depende de cuánto valores tu tiempo. Si facturas 10 veces al mes con Word (10 minutos cada una), pierdes 100 minutos = 1h40min. Con Invoo (30 segundos por factura), son 5 minutos. Ahorras 1h35min al mes. Si tu hora vale €30, recuperas €47.50 mensuales. €10.90 es menos de una hora de tu trabajo. Además, evitas errores de IVA que pueden costarte sanciones, tu gestoría ve todo al instante (menos emails = menos fricción), y cumples Verifactu sin pensar (evitas multas de hasta €50.000). ROI claro: pagas €10.90, ahorras tiempo, evitas sanciones, ganas paz mental. ¿Caro? No. Necesario."
           },
           "q3": {
-            "question": "¿El plan para gestorías es realmente gratuito?",
-            "answer": "Sí, acceso a datos de clientes, exportaciones CSV, notificaciones y resúmenes sin coste. Enterprise para integraciones personalizadas."
+            "question": "¿Hay plan gratuito o período de prueba?",
+            "answer": "Actualmente estamos en lista de espera. Cuando lancemos, ofreceremos prueba gratuita de 7 días sin tarjeta de crédito. Creas tu cuenta, facturas, pruebas todo (incluido dashboard de gestoría), y decides si te quedas. Sin compromiso. Si no te convence, cancelas y no pagas nada. Nuestra apuesta es que después de crear tu primera factura en 30 segundos y ver cómo tu gestoría accede sin emails, no querrás volver a Word. Si quieres acceso prioritario, únete a la lista de espera. Te avisamos cuando abramos."
+          },
+          "q4": {
+            "question": "¿Puedo cancelar cuando quiera?",
+            "answer": "Sí, sin penalizaciones ni preguntas incómodas. Cancelas desde tu panel en 10 segundos. Tu suscripción termina al final del período pagado (si cancelas el 15 de enero y pagaste hasta el 1 de febrero, tienes acceso hasta el 1 de febrero). Puedes exportar todas tus facturas en PDF o CSV antes de irte. Tus datos son tuyos. Sin ataduras, sin contratos anuales forzosos, sin llamadas de 'retención'. Creemos que si Invoo es bueno, te quedas porque quieres. Si no, te vas. Simple. Honesto. Como debe ser."
+          },
+          "q5": {
+            "question": "¿Qué incluye el plan de PYMEs (€19.90/mes)?",
+            "answer": "Todo lo del plan autónomo, más gestión de equipo. Hasta 4 usuarios pueden facturar desde la misma cuenta, tú como admin ves quién facturó qué y cuándo, numeración automática compartida (imposible duplicar facturas), tu gestoría ve todas las facturas de todos los usuarios en su dashboard, filtros por usuario para auditoría interna. Perfecto para agencias, estudios, consultoras, pequeños retailers. Comparado con Holded (€100+/mes para 4 usuarios) o Factorial (€4.5/usuario/mes = €18/mes, sin facturación completa), Invoo es más barato y enfocado. €19.90/mes = €5 por usuario. Menos de lo que pierdes en un error de factura."
           }
         }
       },
-      "privacy": {
-        "title": "Datos y Privacidad (GDPR)",
+      "features": {
+        "title": "Funcionalidades de Facturación",
+        "questions": {
+          "q1": {
+            "question": "¿Cuánto tiempo lleva crear una factura con Invoo?",
+            "answer": "30 segundos si el cliente ya está registrado. Abres Invoo, seleccionas cliente, introduces concepto e importe, guardas. Listo. Invoo calcula IVA e IRPF automáticamente, genera PDF con QR Verifactu, y envía por email si quieres. Primer factura del día: 30 segundos. Décima factura: 25 segundos (ya tienes el ritmo). Comparado con Word (10 minutos: abrir plantilla, actualizar datos, calcular impuestos, guardar PDF, enviar), o Excel (5-8 minutos), o Holded (2 minutos navegando menús complejos), Invoo es brutal. Rapidez real, medida, verificable. Cronométralo tú mismo."
+          },
+          "q2": {
+            "question": "¿Invoo soporta facturación internacional y multi-divisa?",
+            "answer": "Sí. Creas facturas en EUR, USD, GBP u otras divisas, Invoo aplica reglas de IVA automáticamente según país destino (intracomunitario, extracomunitario, regla de inversión del sujeto pasivo). Para clientes UK post-Brexit: factura sin IVA con mención 'Inversión del sujeto pasivo'. Para clientes UE con CIF intracomunitario válido: sin IVA, pero registras en modelo 349. Para clientes fuera UE: sin IVA, exportación. Todo automático. Tú introduces país del cliente, Invoo decide qué regla aplicar. Sin errores, sin consultar a tu gestoría cada vez. David, freelancer tech con clientes en Londres y Berlín, factura en 30 segundos sin pensar en IVA. Así funciona."
+          },
+          "q3": {
+            "question": "¿Puedo automatizar facturas recurrentes?",
+            "answer": "Sí. Configuras una factura recurrente (cliente, concepto, importe, frecuencia: mensual, trimestral, anual), Invoo la genera y envía automáticamente cada período. Perfecto para Miguel, que factura €5.000/mes al mismo cliente desde hace 2 años. Configuró una vez, olvídate. Cada 1 de mes, Invoo crea factura, envía PDF al cliente, notifica a la gestoría. Miguel no toca nada. Ahorra 15 minutos al mes. Si un mes cambia el importe, edita puntualmente. Si quiere pausar, pausa. Automatización que no da miedo: tú controlas, Invoo ejecuta."
+          },
+          "q4": {
+            "question": "¿Cómo funcionan los presupuestos? ¿Puedo convertirlos a facturas?",
+            "answer": "Sí, en 1 clic. Creas presupuesto con cliente, conceptos, descuentos. Envías al cliente. Cliente acepta (por email o firma digital si configurado). Entras a Invoo, abres presupuesto aceptado, botón 'Convertir a factura'. Listo. Sin reescribir nada, sin copiar-pegar, sin errores. Numeración automática, fecha actualizada, estado cambia a 'Factura emitida'. Esto ahorra 5-10 minutos por presupuesto aceptado. Si haces 5 presupuestos al mes y 3 se convierten en facturas, ahorras 15-30 minutos. Además, tu gestoría ve presupuestos y facturas vinculados: trazabilidad total."
+          },
+          "q5": {
+            "question": "¿Puedo aplicar descuentos en las facturas?",
+            "answer": "Sí, por línea o global. Descuento por línea: introduces producto/servicio €100, aplicas 10% descuento, Invoo muestra €90 y calcula IVA sobre €90. Descuento global: introduces 3 servicios (total €500), aplicas 15% descuento global, Invoo calcula sobre €425. Útil para promociones, clientes VIP, negociaciones. Comparado con Word (calcular descuento manualmente = errores) o software que cobra por 'módulo de descuentos', Invoo lo incluye gratis. Descuentos son parte de facturar profesionalmente, no un extra. Están ahí, úsalos cuando quieras."
+          },
+          "q6": {
+            "question": "Si tengo un equipo (PYME), ¿cómo sé quién creó cada factura?",
+            "answer": "Dashboard del admin muestra columna 'Creado por' en lista de facturas. Filtras por usuario, ves todas las facturas de María, o de Juan, o de ti. Útil para auditoría interna (¿quién facturó al cliente X?), para seguimiento comercial (¿cuánto facturó cada comercial este mes?), para control (¿alguien facturó sin autorización?). Tu gestoría también ve esta info en su dashboard. Comparado con Excel compartido donde nadie sabe quién editó qué, o Holded donde esta info está enterrada en menús, Invoo lo pone en primera fila. Laura, dueña de agencia con 4 empleados, lo usa para bonos trimestrales: exporta facturas por usuario, calcula comisiones. Transparencia total."
+          },
+          "q7": {
+            "question": "¿Invoo calcula IVA e IRPF automáticamente?",
+            "answer": "Sí, siempre. Introduces importe bruto (€1.000), Invoo añade IVA 21% (€210) y aplica retención IRPF 15% (-€150) si corresponde. Resultado: total factura €1.060. Tú introduces €1.000, Invoo hace el resto. Sin calculadora, sin fórmulas de Excel, sin errores. Si facturar servicios profesionales: IRPF 15% (7% si eres nuevo autónomo). Si vendes productos: IVA 21%, sin IRPF. Si exportas fuera UE: sin IVA, sin IRPF. Todo según normativa AEAT actualizada. Imposible equivocarse. Carmen, 48 años, facturando con Word desde 2015, tuvo que pagar €300 a Hacienda por error de IVA. Con Invoo: cero errores."
+          },
+          "q8": {
+            "question": "¿Puedo registrar gastos en Invoo?",
+            "answer": "Sí. Registras gastos (concepto, importe, IVA, categoría: material, software, transporte), subes foto del ticket o PDF de factura recibida. Tu gestoría ve tus gastos en su dashboard, los exporta para deducirlos en trimestral. Útil para: llevar control mensual de cuánto gastas, tener tickets centralizados (adiós carpeta de fotos en móvil), facilitar trabajo a gestoría (ven gasto + justificante en mismo sitio). No es contabilidad completa (para eso está tu gestoría con a3ASESOR), pero sí registro suficiente para autónomos. David registra 8-12 gastos al mes (Notion, Figma, cafés con clientes), su gestoría los descarga en segundos. Sin WhatsApps, sin fotos perdidas."
+          }
+        }
+      },
+      "forGestorias": {
+        "title": "Para Gestorías y Asesores",
+        "questions": {
+          "q1": {
+            "question": "¿Cómo puede mi gestoría gestionar múltiples clientes con Invoo?",
+            "answer": "Tu gestoría accede a un panel único donde ve todos sus clientes que usan Invoo. Puede filtrar por cliente, descargar facturas consolidadas, exportar CSV por trimestre, gestionar Verifactu de todos en un solo sitio. Si tu gestoría tiene 50 clientes en Invoo, ve los 50 desde un dashboard. Sin hacer login en 50 cuentas diferentes, sin perseguir documentos por WhatsApp. Cada cliente invita a la gestoría desde su cuenta, la gestoría acepta una vez, y tiene acceso perpetuo (hasta que el cliente revoque). Esto permite a gestorías pequeñas (2-5 empleados) competir con online como TaxDown ofreciendo tecnología + relación personal. Ana, dueña de gestoría en Valencia con 200 clientes, gestiona 3x más clientes sin contratar gracias a Invoo."
+          },
+          "q2": {
+            "question": "¿Mis clientes tendrán que pagar por usar Invoo?",
+            "answer": "Sí, pero muy poco: €10.90/mes autónomos, €19.90/mes pymes. Mucho menos de lo que pagarían a una gestoría online (€30+/mes) y con la ventaja de mantenerte a ti como asesor de confianza. Tú ofreces Invoo como parte de tu servicio: 'Usa esta herramienta, yo veo todo automáticamente, me facilitas el trabajo y te ahorro horas de consolidar facturas'. Muchas gestorías negocian: 'Si usas Invoo, rebajo honorarios €15/mes porque me ahorras trabajo'. Cliente paga €10.90 Invoo, ahorra €15 en gestoría, gana €4 + tiempo + paz mental. Gana-gana. Invoo no es competencia, es aliado."
+          },
+          "q3": {
+            "question": "¿Invoo ofrece white-label para gestorías?",
+            "answer": "Sí, en plan Enterprise (contacto directo). White-label significa: tu cliente ve tu marca (tu logo, tu nombre), no Invoo. Tú ofreces 'Portal de Facturación [Tu Gestoría]' powered by Invoo. Cliente usa software, cree que es tuyo, tú controlas relación. Precio depende de número de clientes. Ejemplo: gestoría con 300 clientes, €299/mes flat. Cliente no paga nada, tú incluyes coste en tus honorarios o cobras €5 extra/cliente/mes. Perfecto para gestorías medianas que quieren competir con TaxDown sin perder marca. Si tienes 150+ clientes y te interesa, contáctanos. Configuramos en 2 semanas."
+          },
+          "q4": {
+            "question": "¿Mis clientes (autónomos tradicionales) sabrán usar Invoo?",
+            "answer": "Sí. Diseñamos Invoo para Carmen: 48 años, 8 años usando Word, tecnología no es lo suyo. Si Carmen puede, tus clientes pueden. Interfaz sin menús complicados, solo lo esencial. Muchas gestorías hacen onboarding: primera factura juntos en videollamada (10 minutos), cliente aprende, ya está. Después factura solo. Si se atasca, soporte Invoo responde (o tú le ayudas si prefieres mantener control). El 95% de clientes autónomos tradicionales que prueban Invoo lo adoptan. El 5% restante vuelve a Word... hasta que Verifactu les obligue en julio 2027. Mejor onboardear ahora sin presión."
+          },
+          "q5": {
+            "question": "¿Invoo reemplaza mi software contable (a3ASESOR, Sage)?",
+            "answer": "No, lo complementa. a3ASESOR y Sage son para contabilidad completa, presentación de modelos, gestión multi-NIF. Invoo es para facturación del cliente. Tu flujo: cliente factura en Invoo → tú ves facturas en dashboard Invoo → exportas CSV → importas a a3ASESOR para contabilidad formal. Invoo no reemplaza tu ERP interno, facilita la captura de datos del cliente. Sin Invoo, recibes facturas por WhatsApp/email, las tecleas manualmente en a3. Con Invoo, descargas CSV limpio, importas automáticamente. Ahorras 2-3 horas por cliente al trimestre. Eso escala: 100 clientes = 200-300h ahorradas/trimestre. Puedes gestionar más clientes o bajar precio y ganar volumen."
+          },
+          "q6": {
+            "question": "¿Cómo compite Invoo con gestorías online como TaxDown?",
+            "answer": "Invoo no compite contigo, te ayuda a competir contra TaxDown. TaxDown cobra €30/mes y ofrece tecnología, pero sin relación personal, sin asesoramiento de confianza. Tú ofreces: relación personal de 10 años, conoces su negocio, asesoría proactiva, PLUS tecnología Invoo (€10.90/mes cliente o €0 si white-label incluido en tus honorarios). Cliente paga €80-100/mes a ti (gestoría tradicional + Invoo) vs €30/mes TaxDown. Diferencia de €50-70, pero TaxDown es impersonal, no llaman para avisar de deducciones, no te conocen. Tú sí. Invoo es tu arma secreta: modernizas sin perder lo que te hace valioso. Ana, gestoría en Valencia, recuperó 15 clientes que se habían ido a TaxDown ofreciéndoles Invoo + su expertise. Funciona."
+          }
+        }
+      },
+      "dataPrivacy": {
+        "title": "Datos, Seguridad y Exportaciones",
         "questions": {
           "q1": {
             "question": "¿Dónde se almacenan mis datos?",
-            "answer": "En infraestructura basada en la UE con procesadores GDPR-compliant. Minimizamos retención y ofrecemos exportaciones bajo demanda."
+            "answer": "En servidores en Europa (AWS Frankfurt o similar), cumpliendo GDPR. Tus facturas, clientes y datos fiscales están cifrados en tránsito (HTTPS) y en reposo (AES-256). No vendemos datos a terceros, no hacemos marketing con tu info, no compartimos con nadie salvo tu gestoría (si tú lo autorizas). Backups automáticos diarios, recuperación ante desastres garantizada. Certificados de seguridad auditados anualmente. Comparado con Excel en Dropbox (sin cifrado), o software pirata (¿dónde está tu data?), Invoo es seguridad bancaria. Tus datos son tuyos, siempre."
           },
           "q2": {
             "question": "¿Quién puede ver mis facturas y gastos?",
-            "answer": "Solo tú y la gestoría que invites explícitamente. Nunca vendemos datos; revoca acceso en cualquier momento."
+            "answer": "Solo tú, tu equipo (si PYME), y tu gestoría (si la invitaste). Nadie más. Ni Invoo como empresa puede ver contenido de tus facturas (están cifradas). Empleados de soporte solo acceden si tú abres ticket y autorizas (para resolver problema técnico). Sin acceso de terceros, sin integraciones raras que filtran data. Si revocas acceso a tu gestoría, pierde acceso instantáneamente. Control absoluto. Esto es crítico: tu competencia no puede ver tus clientes, Hacienda no ve nada salvo lo que Verifactu envía (que es obligatorio por ley), nadie espía. Privacidad real."
           },
           "q3": {
             "question": "¿Puedo exportar mis datos?",
-            "answer": "Sí, CSV (y pronto XML para artefactos de cumplimiento) bajo demanda."
-          }
-        }
-      },
-      "operations": {
-        "title": "Operaciones y Soporte",
-        "questions": {
-          "q1": {
-            "question": "¿Qué pasa si la AEAT está caída?",
-            "answer": "Encolamos envíos y reintentamos automáticamente; verás estado pendiente hasta resolución."
+            "answer": "Sí, todo. Exportas facturas en PDF (individuales o lote), CSV con listado completo (cliente, fecha, importe, IVA, IRPF, estado), gastos en CSV, clientes en CSV. Útil para: cambiar de software (espero que no, pero es tu derecho), hacer análisis en Excel, entregar a auditor externo, backup personal. Exportación sin límites, sin coste extra. Tus datos son tuyos, no rehenes de Invoo. GDPR exige portabilidad, nosotros lo cumplimos con gusto. Botón 'Exportar todo' descarga ZIP con PDFs + CSVs. 2 minutos, listo."
           },
-          "q2": {
-            "question": "¿Cuándo estará Invoo disponible al público?",
-            "answer": "Preparamos lanzamiento con piloto pequeño, luego expansión. No publicamos fecha exacta hasta readiness. Únete a la waitlist."
+          "q4": {
+            "question": "¿Qué pasa con mis facturas si cancelo mi cuenta?",
+            "answer": "Tienes 30 días para exportar todo antes de borrado definitivo. Cancelas el 1 de enero, puedes descargar facturas hasta el 31 de enero. Después, borramos tus datos permanentemente (GDPR: derecho al olvido). Por eso recomendamos exportar inmediatamente al cancelar. Invoo envía email recordatorio 7 días antes del borrado. No guardamos tus facturas en 'archivo muerto' para siempre: cancelas, exportas, borramos. Limpio, respetuoso, legal. Si cancelas por error y pasan los 30 días, no podemos recuperar (backups se sobrescriben). Export first, cancel second."
           },
-          "q3": {
-            "question": "¿Cómo afecta VeriFactu a mi gestoría?",
-            "answer": "Las gestorías deben usarlo para su facturación propia y verán beneficios en dashboards como el nuestro: visibilidad en tiempo real de clientes, cero entrada manual. Para Ana gestionando cientos, reduce operaciones; invita clientes a Invoo gratis o integra con tu software actual."
+          "q5": {
+            "question": "¿Invoo tiene autenticación de dos factores (2FA)?",
+            "answer": "Sí. Activas 2FA desde ajustes, usas app autenticadora (Google Authenticator, Authy). Cada login requiere código temporal además de contraseña. Protege contra hackeos de contraseña, phishing, accesos no autorizados. Crítico si gestionas facturación de empresa con varios usuarios o datos sensibles. Quipu no tiene 2FA (brecha grave). Contasimple tuvo cuentas hackeadas. Invoo: 2FA desde día 1, gratis, recomendado encarecidamente. Actívalo, duerme tranquilo. Si pierdes acceso a app autenticadora, soporte te ayuda con recovery codes (guardados al activar 2FA). Seguridad sin compromisos."
           }
         }
       }

@@ -12,7 +12,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 export default function FAQContent() {
   const t = useTranslations("faq");
 
-  const categoryKeys = ["compliance", "scope", "pricing", "privacy", "operations"];
+  const categoryKeys = ["gettingStarted", "gestoriaCollaboration", "compliance", "pricing", "features", "forGestorias", "dataPrivacy"];
 
   const faqData = categoryKeys.map((categoryKey) => {
     const categoryT = t.raw(`categories.${categoryKey}`);

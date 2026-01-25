@@ -306,7 +306,7 @@ export async function generateFAQPageSchema(
   const t = await getTranslations({ locale });
 
   // FAQ categories to extract
-  const categories = ["compliance", "scope", "pricing", "privacy", "operations"] as const;
+  const categories = ["gettingStarted", "gestoriaCollaboration", "compliance", "pricing", "features", "forGestorias", "dataPrivacy"] as const;
 
   // Build question/answer pairs from all categories
   const mainEntity: Array<{
@@ -360,15 +360,17 @@ export async function generateFAQPageSchema(
  * Returns array of question key identifiers (q1, q2, q3, etc.)
  */
 function getQuestionKeysForCategory(
-  category: "compliance" | "scope" | "pricing" | "privacy" | "operations"
+  category: "gettingStarted" | "gestoriaCollaboration" | "compliance" | "pricing" | "features" | "forGestorias" | "dataPrivacy"
 ): string[] {
   // Based on the translation files structure
   const questionCounts: Record<typeof category, number> = {
+    gettingStarted: 8,
+    gestoriaCollaboration: 6,
     compliance: 7,
-    scope: 6,
-    pricing: 3,
-    privacy: 3,
-    operations: 3,
+    pricing: 5,
+    features: 8,
+    forGestorias: 6,
+    dataPrivacy: 5,
   };
 
   const count = questionCounts[category];

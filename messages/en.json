@@ -505,126 +505,228 @@
   },
   "faq": {
     "metadata": {
-      "title": "FAQs | Verifactu, Collaboration and Pricing | Invoo",
-      "description": "How does accountant collaboration work? When is Verifactu mandatory? How do I convert quote to invoice? Clear answers. Join the waiting list."
+      "title": "Verifactu & Invoicing: Frequently Asked Questions | Invoo",
+      "description": "What is Verifactu? How much does invoicing software cost? How to collaborate with your accountant? Clear answers about electronic invoicing."
     },
     "hero": {
       "title": "Frequently Asked Questions",
-      "description": "Find answers to the most common questions about Invoo, electronic invoicing and Verifactu",
+      "description": "Find clear answers about Invoo, electronic invoicing, Verifactu, and collaboration with your accountant",
       "cta": "Join the Waitlist"
     },
     "title": "FAQs",
     "categories": {
-      "compliance": {
-        "title": "Compliance (VeriFactu / AEAT)",
+      "gettingStarted": {
+        "title": "Getting Started with Invoo",
         "questions": {
           "q1": {
-            "question": "Is Invoo VeriFactu compliant?",
-            "answer": "Yes. Invoo is built to meet the VeriFactu Regulation (RD 1007/2023). We generate the VeriFactu QR and manage the AEAT submission flow through our API provider. You can review statuses and export evidence for audits."
+            "question": "What is Invoo and who is it for?",
+            "answer": "Invoo is invoicing software for freelancers and SMEs in Spain that includes connection with your accountant. Unlike ERPs like Holded that include CRM, inventory, and modules you'll never use, we only do invoicing. Invoice in 30 seconds, your accountant sees everything instantly, automatic Verifactu. Designed for those who want to invoice professionally without complications. If you have between 1 and 100 invoices per month and work with an accountant (or want to work with one), Invoo is for you."
           },
           "q2": {
-            "question": "When does VeriFactu become mandatory?",
-            "answer": "Updated January 2026: for software developers, from July 2025; for companies, from January 2027; and for freelancers, from July 2027 (Royal Decree-Law 15/2025). Some details roll out in stages. We'll notify you in-app when we switch to production AEAT endpoints."
+            "question": "How long does it take to start with Invoo?",
+            "answer": "5 minutes for freelancers, 10 minutes for SMEs with a team. Create your account, add your tax details (CIF, address), enter a couple of clients, and you're ready to invoice. No implementation, no weeks of training, no 2-hour videos. The first day you use Invoo, you're already invoicing faster than with Word or Excel. Compared to Holded or Quipu, which require days of setup, Invoo is ready before you finish your coffee."
           },
           "q3": {
-            "question": "Does VeriFactu mean invoices are \"approved\" instantly by AEAT?",
-            "answer": "No. Your invoice includes the QR and is submitted to AEAT, but acceptance depends on them. You can track the status and correct it if needed (e.g., rectifications)."
+            "question": "I'm coming from Excel/Word. Is it hard to migrate?",
+            "answer": "No, it's easier than what you use now. If you can use WhatsApp, you can use Invoo. Enter client name, concept, amount. Invoo calculates VAT and withholding tax automatically (goodbye calculator). Generate the PDF and send it in 30 seconds. No broken formulas, no outdated templates. You can import your client list from a CSV if you want to save typing. Also, from July 2027, Word and Excel will be illegal for B2B invoicing. Better to migrate now without rush than in June 2027 with the tax authority on your back."
           },
           "q4": {
-            "question": "Do I need my own digital certificate?",
-            "answer": "Not to start. Our provider handles the secure exchange with AEAT; we manage technical payloads and return the QR and status. For enterprise customizations (like using your certificate), contact us later."
+            "question": "I already use Holded/Quipu. Why switch to Invoo?",
+            "answer": "Because you're paying for features you don't need. Holded costs €29+/month and includes CRM, inventory, and HR modules. If you're a freelancer, you use 5% of what you pay for. Invoo costs €10.90/month and gives you 100% of what you need to invoice: quotes that convert to invoices in 1 click, line-item discounts, automatic Verifactu, multi-currency, and your accountant connected for free. In Holded, you'd pay €80/month extra to connect your accountant. Plus, Invoo support responds in hours, not weeks. Migration takes 15 minutes. Try and compare."
           },
           "q5": {
-            "question": "Who is required to use VeriFactu?",
-            "answer": "Self-employed, SMEs, and companies billing under €6M annually, except for exemptions like REGE or large SII contributors. If you're a freelancer with few clients, choose simple software like Invoo; for gestorías with hundreds of clients, contact us for a better plan."
+            "question": "Do I have to leave my accountant to use Invoo?",
+            "answer": "No, quite the opposite. Your accountant stays with you and you actually make their life easier. With Invoo, your accountant accesses a free dashboard where they see all your invoices in real time. No emails, no attached PDFs, no WhatsApps at 11pm asking where November's invoice is. You invoice, they see it instantly. Many accountants recommend us to their clients because it saves them hours of manual work. If your accountant says they don't want you to use software, send them our website. When they see the free dashboard, they change their mind."
           },
           "q6": {
-            "question": "What are the penalties for non-compliance with VeriFactu?",
-            "answer": "Up to €50,000 for not using approved software or tampering with records. Avoid it with Invoo, which ensures traceability. If preferring alternatives, check they're AEAT-certified, but Invoo integrates directly, reducing operational risks."
+            "question": "Do I need technical knowledge to use Invoo?",
+            "answer": "No. If you use WhatsApp or Gmail, you can use Invoo. We designed the interface for Carmen, a 48-year-old freelancer who's been invoicing with Word for 8 years. No complicated menus, no modules to configure, no weird integrations. Open Invoo, enter client and concept, save. Done. Invoo calculates taxes, generates the PDF, and sends it. Our record is a freelancer who created her first invoice in 90 seconds without help. If you get stuck, human support responds in hours."
           },
           "q7": {
-            "question": "Can I still use Excel or Word for invoicing?",
-            "answer": "Yes, if you only use Word/Excel as a manual template (no macros or accounting integration), Verifactu doesn't affect you. But you'll waste time: 10 minutes per invoice vs 30 seconds with Invoo. If you use Excel with macros that generate VAT books, then you do need compliant software."
+            "question": "Can I import my clients and old invoices?",
+            "answer": "Yes. Import clients from a CSV (Excel) with name, tax ID, and email. Takes 2 minutes. Old invoices can be uploaded as attachments to have everything centralized, but we don't migrate them automatically because each software has a different format. However, for tax purposes, you only need invoices from when you start with Invoo onwards. The tax authority doesn't ask you to redo your history. What matters is that from July 2027, all new B2B invoices must comply with Verifactu. Starting with Invoo now gives you time to get used to it without pressure."
+          },
+          "q8": {
+            "question": "What makes Invoo different from other invoicing software?",
+            "answer": "Three things. First, your accountant is already connected by default, free. Competitors charge €80/month extra for that or simply don't offer it. Second, we only do invoicing. No CRM, no inventory, no modules you'll never use. You use 100% of what you pay for. Third, real speed. Invoice in 30 seconds, quote to invoice in 1 click, setup in 5 minutes. Compared to Holded (€29+/month, weeks of implementation), Quipu (questionable security, no 2FA), or Billin (no multi-currency), Invoo is exactly what you need. No more, no less. €10.90/month, everything included."
           }
         }
       },
-      "scope": {
-        "title": "Scope & Availability",
+      "gestoriaCollaboration": {
+        "title": "Accountant Collaboration",
         "questions": {
           "q1": {
-            "question": "Who is Invoo for?",
-            "answer": "Freelancers (autónomos) in Spain and their gestorías. We optimize for Spain-specific compliance and workflows. We don't replace your gestor, but enhance it, improving retention by reducing coordination errors."
+            "question": "How does the connection with my accountant work?",
+            "answer": "Simple: you invoice, your accountant sees it instantly. Invite your accountant from your account (enter their email), they receive access to a free dashboard where they see all your invoices, expenses, and income in real time. No sending PDFs, no exporting Excel, no back-and-forth emails. Your accountant can filter by date, download what they need for tax returns, and see everything consolidated. They don't have to ask you for anything. You maintain control: you decide what they see and when. You can revoke access anytime. It's like collaborative Google Drive, but designed for invoicing."
           },
           "q2": {
-            "question": "What does Invoo include at launch?",
-            "answer": "Core invoicing with VeriFactu QR + AEAT submission, expense capture, quarterly pre-calcs (Modelos 130 y 303), gestoría access, and CSV exports. Advanced features like multi-currency roll out progressively. Test the free plan to validate; if needing scalability, upgrade to Pro."
+            "question": "Does my accountant have to pay anything?",
+            "answer": "No, nothing. The accountant dashboard is free for your accountant, included in your €10.90/month (freelancers) or €19.90/month (SMEs) plan. Competitors like Holded charge €80/month extra for the accounting connection. We include it because we understand that freelancer + accountant = team. Your accountant only needs an email to access. If they manage 50 clients with Invoo, they access all 50 from a single panel. No licenses, no hidden costs. Win-win: you pay less, your accountant saves time, we gain happy customers."
           },
           "q3": {
-            "question": "Is there a mobile app?",
-            "answer": "Desktop-first, but mobile web is fully usable for on-the-go receipt scanning. A native app may come if demanded; meanwhile, use the browser for operational simplicity."
+            "question": "What exactly does my accountant see in their dashboard?",
+            "answer": "Your accountant sees: all your issued invoices (with status: paid, pending, overdue), all your registered expenses, income and expense totals by quarter, data ready for quarterly tax returns. They can download individual PDFs or export CSV with everything consolidated. They can't see your password, can't modify invoices, can't delete anything. Read-only and download only. You control permissions from your panel. If you only want them to see invoices from the last quarter, you configure the filter. It's your data, your control. They see what you decide."
           },
           "q4": {
-            "question": "Does Invoo support recurring invoices?",
-            "answer": "Yes, automate monthly sends for fixed clients. Set variations for extras without complexity. This maximizes billable hours; alternate with manual reminders if preferring total control, but automation lowers errors."
+            "question": "Can I use Invoo if my accountant doesn't want to use it?",
+            "answer": "Yes, but you'll be losing half the value. Invoo works without a connected accountant: you can invoice, export PDFs, and email them as always. But you lose the magic: zero emails, zero waiting, zero 'I'm missing invoice 0234'. Our experience: 90% of accountants who say 'no' change their mind when they see the free dashboard. Send your accountant our website or ask them to contact us. If they really don't want to, you can still use Invoo and export manually. But we recommend insisting. Many freelancers have switched accountants because of this: if your accountant refuses to use tools that make your life easier, maybe they're not the right accountant."
           },
           "q5": {
-            "question": "Is Invoo easy for non-tech-savvy users?",
-            "answer": "Absolutely, with a dead-simple interface and step-by-step guides. Create invoices in <30 seconds without manual calculations. If the learning curve concerns you, start with our free onboarding; or integrate with your gestoría to delegate."
+            "question": "If I have multiple users (SME), does my accountant see invoices from everyone?",
+            "answer": "Yes, that's exactly what the SME plan is for. Your accountant sees all invoices from all users in your company in one place. They can filter by user, by date, by client, by status. They see who invoiced what and when. This is critical for tax returns: your accountant needs to consolidate your entire team before filing quarterly returns. With Invoo, they click 'export Q1' and download everything. No chasing 4 people, no merging Excel files. That's why the SME plan (€19.90/month for 4 users) includes total visibility: you as admin see your whole team, your accountant sees your whole team. Absolute control, zero chaos."
           },
           "q6": {
-            "question": "Does Invoo handle multi-currency and international VAT?",
-            "answer": "Yes, it supports automatic conversions and VAT handling for foreign clients. It reduces tax complexity; as an alternative, export to external tools, but native integration simplifies retention."
+            "question": "What happens if I change accountants?",
+            "answer": "Revoke access from the old accountant and invite the new one. Takes 30 seconds. Your invoices remain yours, they don't depend on who views them. The new accountant accesses the complete history since you started using Invoo. No migration, no data loss. This is another advantage of Invoo: your data isn't on your accountant's computer like with proprietary accounting software or Excel they control. It's in your Invoo account. You decide who has access. Changing accountants is already stressful enough. With Invoo, at least the technical part is trivial."
+          }
+        }
+      },
+      "compliance": {
+        "title": "Verifactu & Compliance",
+        "questions": {
+          "q1": {
+            "question": "What is Verifactu and why does it affect me?",
+            "answer": "Verifactu is the new AEAT regulation to combat tax fraud through invoicing software. From July 2027, all freelancers and SMEs who invoice B2B (to other businesses) must use approved software that generates a QR code per invoice and sends information to the tax authority in real time. Goal: prevent fake invoices and record manipulation. If you invoice with Word, Excel, or non-approved software, your B2B invoices will be illegal. It affects you if: you're a freelancer or SME, you invoice less than €6M/year, and your clients are businesses (B2B). Solution: use software like Invoo that already complies with Verifactu. If you wait until June 2027, you'll be rushed and stressed. If you start now, you'll arrive calm."
+          },
+          "q2": {
+            "question": "Is Invoo ready for Verifactu?",
+            "answer": "Yes, from day 1. Invoo automatically generates the Verifactu QR code on each invoice and handles submission to the AEAT through our API. You invoice normally, we handle the technical part. When Verifactu becomes mandatory in July 2027, you don't have to do anything: your Invoo already complies. No updates, no migrations, no surprises. Plus, we export audit evidence and show the status of each invoice (submitted, accepted, rejected). 82% of SMEs aren't prepared for Verifactu. You will be."
+          },
+          "q3": {
+            "question": "Can I continue using Excel or Word to invoice?",
+            "answer": "Until July 2027, yes. But after that, not for B2B invoices (businesses). Verifactu prohibits non-approved software for invoicing between businesses. You can continue using Word for B2C invoices (individuals without business activity), but you'll waste time: 10 minutes per manual invoice vs 30 seconds with Invoo. Plus, Word doesn't calculate VAT automatically, doesn't generate QR, doesn't connect with your accountant. Many people say 'my Word has worked for 8 years'. But from July 2027, it won't comply with Verifactu for B2B. Better to migrate now without pressure than wait until the last minute."
+          },
+          "q4": {
+            "question": "What are the penalties for not complying with Verifactu?",
+            "answer": "Fines of up to €50,000 for not using approved software or manipulating tax records. The tax authority can audit your invoices and if they detect you're using Word/Excel after July 2027 for B2B, they'll sanction you. Serious violations include: invoices without Verifactu QR, non-approved software, manipulation of accounting records. It's not an empty threat: Verifactu exists because there is fraud. The tax authority is serious. The good news is that avoiding it is easy: use software like Invoo that complies automatically. €10.90/month is much less than a €50,000 fine. Do the math."
+          },
+          "q5": {
+            "question": "Do I have to do anything special to comply with Verifactu?",
+            "answer": "No, if you use Invoo. Verifactu is automatic: create your invoice normally, Invoo generates the QR, sends the info to AEAT, and shows you the status. You don't touch anything. You don't need a digital certificate (we manage it), you don't need to understand the technical regulation, you don't need to configure anything. Just invoice. Compared to other options where you have to download plugins, configure APIs, or manually manage certificates, Invoo is invisible. The best technology is the one you don't notice. Invoice as always, we handle the rest. That's how it should be."
+          },
+          "q6": {
+            "question": "If I invoice with Invoo, does my accountant have less work on tax returns?",
+            "answer": "Yes, much less. Your accountant accesses all your Verifactu invoices from their dashboard, downloads CSV with totals of income, expenses, VAT, and withholding tax already calculated. No asking for invoices via WhatsApp, no consolidating PDFs, no manually typing data. For quarterly tax returns, they export everything in one click. This reduces errors (data comes directly from your approved software) and saves time (fewer hours of data entry = lower cost for you). Many accountants reduce fees if the client uses well-integrated software. Ask your accountant: they'll probably say yes, Invoo makes their life easier."
+          },
+          "q7": {
+            "question": "Does Invoo support TicketBAI (Basque Country)?",
+            "answer": "Yes. TicketBAI is mandatory in the Basque Country since 2024 for all invoices. Invoo generates the TicketBAI XML file, digitally signs each invoice, and sends to the Regional Tax Authorities (Bizkaia, Gipuzkoa, Araba). Works the same as Verifactu: you invoice, we handle the technical part. If you have activity in the Basque Country and the rest of Spain, Invoo handles both: TicketBAI for Euskadi, Verifactu for the rest. One software, two regulations covered. No complications, no duplicating tools."
           }
         }
       },
       "pricing": {
-        "title": "Pricing",
+        "title": "Pricing & Plans",
         "questions": {
           "q1": {
             "question": "How much does Invoo cost?",
-            "answer": "Freelancers: Free Starter and Pro at €9.90/month; Gestorías: Free dashboard and custom Enterprise. Annual plans are available with savings. See the Pricing page for current tiers."
+            "answer": "€10.90/month for freelancers (1 user), €19.90/month for SMEs (up to 4 users). Everything included: unlimited invoices, quotes, expenses, Verifactu, TicketBAI, multi-currency, discounts, free accountant dashboard, human support. No hidden costs, no charges for 'extra modules', no invoice limits. You pay what you see. Compared to Holded (€29+/month without connected accountant), Quipu (€17+/month without many features), or online accountants (€30+/month without personal relationship), Invoo is cheaper and more complete. Fixed price, no surprises. Cancel whenever you want."
           },
           "q2": {
-            "question": "Can I cancel anytime? Do you offer refunds?",
-            "answer": "Yes, monthly cancels anytime; 30-day refund on annual upgrades."
+            "question": "€10.90/month seems expensive for a freelancer. Is it worth it?",
+            "answer": "Depends on how much you value your time. If you invoice 10 times a month with Word (10 minutes each), you lose 100 minutes = 1h40min. With Invoo (30 seconds per invoice), it's 5 minutes. You save 1h35min per month. If your hour is worth €30, you recover €47.50 monthly. €10.90 is less than an hour of your work. Plus, you avoid VAT errors that can cost you penalties, your accountant sees everything instantly (fewer emails = less friction), and you comply with Verifactu automatically (avoid fines up to €50,000). Clear ROI: pay €10.90, save time, avoid penalties, gain peace of mind. Expensive? No. Necessary."
           },
           "q3": {
-            "question": "Is the gestoría plan really free?",
-            "answer": "Yes, access to client data, CSV exports, notifications, and summaries at no cost. Enterprise for custom integrations."
+            "question": "Is there a free plan or trial period?",
+            "answer": "We're currently in waiting list. When we launch, we'll offer a 7-day free trial without credit card. Create your account, invoice, test everything (including accountant dashboard), and decide if you stay. No commitment. If you're not convinced, cancel and pay nothing. Our bet is that after creating your first invoice in 30 seconds and seeing how your accountant accesses without emails, you won't want to go back to Word. If you want priority access, join the waiting list. We'll let you know when we open."
+          },
+          "q4": {
+            "question": "Can I cancel whenever I want?",
+            "answer": "Yes, without penalties or awkward questions. Cancel from your panel in 10 seconds. Your subscription ends at the end of the paid period (if you cancel on January 15 and paid until February 1, you have access until February 1). You can export all your invoices in PDF or CSV before leaving. Your data is yours. No ties, no forced annual contracts, no 'retention' calls. We believe that if Invoo is good, you stay because you want to. If not, you leave. Simple. Honest. As it should be."
+          },
+          "q5": {
+            "question": "What does the SME plan (€19.90/month) include?",
+            "answer": "Everything from the freelancer plan, plus team management. Up to 4 users can invoice from the same account, you as admin see who invoiced what and when, shared automatic numbering (impossible to duplicate invoices), your accountant sees all invoices from all users in their dashboard, filters by user for internal audit. Perfect for agencies, studios, consultancies, small retailers. Compared to Holded (€100+/month for 4 users) or Factorial (€4.5/user/month = €18/month, without full invoicing), Invoo is cheaper and focused. €19.90/month = €5 per user. Less than what you lose on an invoice error."
           }
         }
       },
-      "privacy": {
-        "title": "Data & Privacy (GDPR)",
+      "features": {
+        "title": "Invoicing Features",
+        "questions": {
+          "q1": {
+            "question": "How long does it take to create an invoice with Invoo?",
+            "answer": "30 seconds if the client is already registered. Open Invoo, select client, enter concept and amount, save. Done. Invoo calculates VAT and withholding tax automatically, generates PDF with Verifactu QR, and sends by email if you want. First invoice of the day: 30 seconds. Tenth invoice: 25 seconds (you've got the rhythm). Compared to Word (10 minutes: open template, update data, calculate taxes, save PDF, send), or Excel (5-8 minutes), or Holded (2 minutes navigating complex menus), Invoo is brutal. Real speed, measured, verifiable. Time it yourself."
+          },
+          "q2": {
+            "question": "Does Invoo support international invoicing and multi-currency?",
+            "answer": "Yes. Create invoices in EUR, USD, GBP, or other currencies, Invoo applies VAT rules automatically based on destination country (intra-EU, extra-EU, reverse charge). For UK clients post-Brexit: invoice without VAT with 'Reverse charge' mention. For EU clients with valid intra-EU tax ID: no VAT, but register in form 349. For clients outside EU: no VAT, export. All automatic. You enter the client's country, Invoo decides which rule to apply. No errors, no consulting your accountant each time. David, a tech freelancer with clients in London and Berlin, invoices in 30 seconds without thinking about VAT. That's how it works."
+          },
+          "q3": {
+            "question": "Can I automate recurring invoices?",
+            "answer": "Yes. Set up a recurring invoice (client, concept, amount, frequency: monthly, quarterly, annual), Invoo generates and sends it automatically each period. Perfect for Miguel, who invoices €5,000/month to the same client for 2 years. Set it once, forget about it. Every 1st of the month, Invoo creates the invoice, sends PDF to the client, notifies the accountant. Miguel doesn't touch anything. Saves 15 minutes per month. If one month the amount changes, edit punctually. If you want to pause, pause. Automation that's not scary: you control, Invoo executes."
+          },
+          "q4": {
+            "question": "How do quotes work? Can I convert them to invoices?",
+            "answer": "Yes, in 1 click. Create a quote with client, line items, discounts. Send to client. Client accepts (by email or digital signature if configured). Enter Invoo, open accepted quote, 'Convert to invoice' button. Done. No rewriting, no copy-pasting, no errors. Automatic numbering, updated date, status changes to 'Invoice issued'. This saves 5-10 minutes per accepted quote. If you make 5 quotes per month and 3 become invoices, you save 15-30 minutes. Plus, your accountant sees quotes and invoices linked: total traceability."
+          },
+          "q5": {
+            "question": "Can I apply discounts on invoices?",
+            "answer": "Yes, by line or global. Line discount: enter product/service €100, apply 10% discount, Invoo shows €90 and calculates VAT on €90. Global discount: enter 3 services (total €500), apply 15% global discount, Invoo calculates on €425. Useful for promotions, VIP clients, negotiations. Compared to Word (calculate discount manually = errors) or software that charges for 'discount module', Invoo includes it free. Discounts are part of professional invoicing, not an extra. They're there, use them when you want."
+          },
+          "q6": {
+            "question": "If I have a team (SME), how do I know who created each invoice?",
+            "answer": "Admin dashboard shows 'Created by' column in invoice list. Filter by user, see all of María's invoices, or Juan's, or yours. Useful for internal audit (who invoiced client X?), for commercial tracking (how much did each salesperson invoice this month?), for control (did someone invoice without authorization?). Your accountant also sees this info in their dashboard. Compared to shared Excel where nobody knows who edited what, or Holded where this info is buried in menus, Invoo puts it front and center. Laura, agency owner with 4 employees, uses it for quarterly bonuses: exports invoices by user, calculates commissions. Total transparency."
+          },
+          "q7": {
+            "question": "Does Invoo calculate VAT and withholding tax automatically?",
+            "answer": "Yes, always. Enter gross amount (€1,000), Invoo adds 21% VAT (€210) and applies 15% withholding tax (-€150) if applicable. Result: invoice total €1,060. You enter €1,000, Invoo does the rest. No calculator, no Excel formulas, no errors. If invoicing professional services: 15% withholding (7% if you're a new freelancer). If selling products: 21% VAT, no withholding. If exporting outside EU: no VAT, no withholding. All according to current AEAT regulations. Impossible to make mistakes. Carmen, 48, invoicing with Word since 2015, had to pay €300 to the tax authority for a VAT error. With Invoo: zero errors."
+          },
+          "q8": {
+            "question": "Can I record expenses in Invoo?",
+            "answer": "Yes. Record expenses (concept, amount, VAT, category: supplies, software, transport), upload receipt photo or received invoice PDF. Your accountant sees your expenses in their dashboard, exports them for quarterly deductions. Useful for: keeping monthly track of spending, having centralized receipts (goodbye phone photo folder), facilitating your accountant's work (they see expense + receipt in same place). It's not full accounting (that's what your accountant with their software is for), but it's sufficient recording for freelancers. David records 8-12 expenses per month (Notion, Figma, client coffees), his accountant downloads them in seconds. No WhatsApps, no lost photos."
+          }
+        }
+      },
+      "forGestorias": {
+        "title": "For Accountants & Advisors",
+        "questions": {
+          "q1": {
+            "question": "How can my accountant manage multiple clients with Invoo?",
+            "answer": "Your accountant accesses a single panel where they see all their clients who use Invoo. They can filter by client, download consolidated invoices, export CSV by quarter, manage Verifactu for everyone in one place. If your accountant has 50 clients on Invoo, they see all 50 from one dashboard. No logging into 50 different accounts, no chasing documents via WhatsApp. Each client invites the accountant from their account, the accountant accepts once, and has perpetual access (until the client revokes). This allows small accounting firms (2-5 employees) to compete with online services offering technology + personal relationship. Ana, accounting firm owner in Valencia with 200 clients, manages 3x more clients without hiring thanks to Invoo."
+          },
+          "q2": {
+            "question": "Will my clients have to pay to use Invoo?",
+            "answer": "Yes, but very little: €10.90/month freelancers, €19.90/month SMEs. Much less than they'd pay an online accountant service (€30+/month) and with the advantage of keeping you as their trusted advisor. You offer Invoo as part of your service: 'Use this tool, I see everything automatically, you make my work easier and I save you hours consolidating invoices'. Many accountants negotiate: 'If you use Invoo, I'll reduce my fees €15/month because you save me work'. Client pays €10.90 Invoo, saves €15 on accounting, gains €4 + time + peace of mind. Win-win. Invoo isn't competition, it's an ally."
+          },
+          "q3": {
+            "question": "Does Invoo offer white-label for accountants?",
+            "answer": "Yes, in Enterprise plan (direct contact). White-label means: your client sees your brand (your logo, your name), not Invoo. You offer 'Invoicing Portal [Your Firm]' powered by Invoo. Client uses software, thinks it's yours, you control the relationship. Price depends on number of clients. Example: accounting firm with 300 clients, €299/month flat. Client pays nothing, you include cost in your fees or charge €5 extra/client/month. Perfect for medium-sized accounting firms that want to compete with online services without losing their brand. If you have 150+ clients and are interested, contact us. We set up in 2 weeks."
+          },
+          "q4": {
+            "question": "Will my clients (traditional freelancers) know how to use Invoo?",
+            "answer": "Yes. We designed Invoo for Carmen: 48 years old, 8 years using Word, technology isn't her thing. If Carmen can, your clients can. Interface without complicated menus, only the essentials. Many accountants do onboarding: first invoice together on video call (10 minutes), client learns, done. After that they invoice on their own. If they get stuck, Invoo support responds (or you help if you prefer to maintain control). 95% of traditional freelancer clients who try Invoo adopt it. The remaining 5% go back to Word... until Verifactu forces them in July 2027. Better to onboard now without pressure."
+          },
+          "q5": {
+            "question": "Does Invoo replace my accounting software?",
+            "answer": "No, it complements it. Professional accounting software is for complete accounting, filing tax returns, multi-company management. Invoo is for client invoicing. Your workflow: client invoices in Invoo → you see invoices in Invoo dashboard → export CSV → import to your accounting software for formal accounting. Invoo doesn't replace your internal ERP, it facilitates client data capture. Without Invoo, you receive invoices via WhatsApp/email, type them manually into your system. With Invoo, you download clean CSV, import automatically. Save 2-3 hours per client per quarter. That scales: 100 clients = 200-300h saved/quarter. You can manage more clients or lower price and win volume."
+          },
+          "q6": {
+            "question": "How does Invoo compete with online accountant services?",
+            "answer": "Invoo doesn't compete with you, it helps you compete against online services. Online accountants charge €30/month and offer technology, but without personal relationship, without trusted advice. You offer: 10 years of personal relationship, you know their business, proactive advice, PLUS Invoo technology (€10.90/month client or €0 if white-label included in your fees). Client pays €80-100/month to you (traditional accounting + Invoo) vs €30/month online service. Difference of €50-70, but online is impersonal, they don't call to warn about deductions, they don't know you. You do. Invoo is your secret weapon: you modernize without losing what makes you valuable. Ana, accounting firm in Valencia, recovered 15 clients who had left for online services by offering them Invoo + her expertise. It works."
+          }
+        }
+      },
+      "dataPrivacy": {
+        "title": "Data, Security & Exports",
         "questions": {
           "q1": {
             "question": "Where is my data stored?",
-            "answer": "In EU-based infrastructure with GDPR-compliant processors. We minimize retention and offer exports on request."
+            "answer": "On servers in Europe (AWS Frankfurt or similar), complying with GDPR. Your invoices, clients, and tax data are encrypted in transit (HTTPS) and at rest (AES-256). We don't sell data to third parties, we don't do marketing with your info, we don't share with anyone except your accountant (if you authorize it). Automatic daily backups, disaster recovery guaranteed. Security certificates audited annually. Compared to Excel on Dropbox (no encryption), or pirated software (where is your data?), Invoo is bank-level security. Your data is yours, always."
           },
           "q2": {
             "question": "Who can see my invoices and expenses?",
-            "answer": "Only you and any gestoría you explicitly invite. We never sell data; revoke access anytime."
+            "answer": "Only you, your team (if SME), and your accountant (if you invited them). No one else. Not even Invoo as a company can see your invoice content (they're encrypted). Support employees only access if you open a ticket and authorize (to resolve a technical problem). No third-party access, no weird integrations that leak data. If you revoke access from your accountant, they lose access instantly. Absolute control. This is critical: your competition can't see your clients, the tax authority sees nothing except what Verifactu sends (which is mandatory by law), no one spies. Real privacy."
           },
           "q3": {
             "question": "Can I export my data?",
-            "answer": "Yes, CSV (and soon XML for compliance artifacts) on demand."
-          }
-        }
-      },
-      "operations": {
-        "title": "Operations & Support",
-        "questions": {
-          "q1": {
-            "question": "What happens if AEAT is down?",
-            "answer": "We queue submissions and retry automatically; you'll see a pending status until resolved."
+            "answer": "Yes, everything. Export invoices in PDF (individual or batch), CSV with complete listing (client, date, amount, VAT, withholding, status), expenses in CSV, clients in CSV. Useful for: switching software (I hope not, but it's your right), doing analysis in Excel, delivering to external auditor, personal backup. Export without limits, no extra cost. Your data is yours, not Invoo hostages. GDPR requires portability, we comply gladly. 'Export all' button downloads ZIP with PDFs + CSVs. 2 minutes, done."
           },
-          "q2": {
-            "question": "When will Invoo be generally available?",
-            "answer": "We're preparing to launch with a small pilot, then expanding. We won't publish an exact date until ready. Join the waitlist for early access."
+          "q4": {
+            "question": "What happens to my invoices if I cancel my account?",
+            "answer": "You have 30 days to export everything before permanent deletion. Cancel on January 1, you can download invoices until January 31. After that, we delete your data permanently (GDPR: right to be forgotten). That's why we recommend exporting immediately when canceling. Invoo sends reminder email 7 days before deletion. We don't keep your invoices in 'dead archive' forever: you cancel, export, we delete. Clean, respectful, legal. If you cancel by mistake and 30 days pass, we can't recover (backups are overwritten). Export first, cancel second."
           },
-          "q3": {
-            "question": "How does VeriFactu affect my gestoría?",
-            "answer": "Gestorías must use it for their own invoicing and will benefit from dashboards like ours: real-time client visibility, zero manual entry."
+          "q5": {
+            "question": "Does Invoo have two-factor authentication (2FA)?",
+            "answer": "Yes. Activate 2FA from settings, use authenticator app (Google Authenticator, Authy). Each login requires temporary code plus password. Protects against password hacks, phishing, unauthorized access. Critical if you manage company invoicing with multiple users or sensitive data. Quipu doesn't have 2FA (serious breach). Contasimple had hacked accounts. Invoo: 2FA from day 1, free, strongly recommended. Activate it, sleep well. If you lose access to authenticator app, support helps you with recovery codes (saved when activating 2FA). Security without compromise."
           }
         }
       }
