@@ -341,89 +341,137 @@
   },
   "gestoriasPage": {
     "metadata": {
-      "title": "Free Accountant Dashboard | Unlimited Clients | Invoo",
-      "description": "Less chasing, more advising. Direct access to invoices and expenses in real-time. One-click CSV. Ready Modelo 130/303. Unlimited clients, no cost."
+      "title": "Accounting Firm Software | Free Dashboard | Invoo",
+      "description": "Compete with online platforms without losing clients. Accounting portal with automatic invoicing, multi-client Verifactu, and instant CSV. Free forever."
     },
     "header": {
-      "title": "Less paperwork, more advising",
-      "description": "Invoo gives gestorías real-time access to client invoices and expenses, always Verifactu compliant, always free",
+      "title": "Your clients invoice, you see everything",
+      "description": "Free dashboard for accounting firms. Real-time access to invoices and expenses from all your clients. No chasing emails, no rewriting data. Automatic Verifactu, ready CSV, unlimited clients. Zero cost for you.",
       "cta": "Join the waiting list"
     },
-    "block1": {
-      "title": "Always up to date",
-      "description": "No more chasing clients for invoices. See every invoice and expense the moment it's created",
-      "features": [
-        "Instant invoice + expense sync",
-        "Verifactu QR included automatically",
-        "Alerts when new activity appears"
-      ],
-      "cta": "Access your free dashboard"
-    },
-    "block2": {
-      "title": "Data you can actually use",
-      "description": "Download clean CSVs or XMLs ready for your accounting software, no retyping required",
-      "features": [
-        "One-click CSV export",
-        "Quarterly or monthly batch downloads",
-        "XML exports aligned with AEAT standards"
-      ],
-      "cta": "Start managing clients"
-    },
-    "block3": {
-      "title": "Tax periods in seconds",
-      "description": "Pre-calculated Modelo 130 and 303 summaries per client help you prepare declarations faster",
-      "features": [
-        "Auto-generated summaries",
-        "Clear breakdowns of bases and IVA",
-        "Easy to review and validate"
-      ],
-      "cta": "Invite your clients now"
-    },
-    "block4": {
-      "title": "Zero cost, zero risk",
-      "description": "Invoo is free for gestorías. Clients pay their subscription, you get the tools, no barriers to adoption",
-      "features": [
-        "Free dashboard access",
-        "Unlimited clients",
-        "Built for collaboration, not replacement"
-      ],
-      "cta": "Join as an accountant"
-    },
-    "introTitle": "Real-time gestoría-client collaboration platform",
-    "introParagraph": [
-      "Gestorías lose up to 40% of operational time chasing client documents: late invoices, unanswered emails, poorly formatted Excel files, and data that must be manually rewritten into accounting software.",
-      "Invoo eliminates this bottleneck. Your clients invoice with our platform (Verifactu compatible, automatic AEAT submission), and you get direct access to a free dashboard where you see every invoice, expense, and document in real-time. No chasing, no rewriting, no friction.",
-      "This is how professional gestorías are recovering 10-15 hours weekly with Invoo:"
+    "highlights": [
+      "Unlimited clients free",
+      "Multi-client Verifactu",
+      "Real-time data"
     ],
-    "faqTitle": "Frequently asked questions from accountants about Invoo",
-    "faq": {
-      "q1": {
-        "question": "How many clients can I manage in my accountant dashboard?",
-        "answer": "Unlimited. There's no limit to the number of clients you can see in your dashboard. Every client using Invoo automatically gives you access to their invoices and expenses. No additional cost, no restrictions."
+    "trustBar": {
+      "title": "Why accounting firms choose",
+      "titleHighlight": "Invoo as partner",
+      "subtitle": "Join accounting firms that recover time to advise",
+      "stat1": {
+        "number": "Unlimited",
+        "label": "free clients"
       },
-      "q2": {
-        "question": "How do I invite my freelance clients to use Invoo?",
-        "answer": "Share the registration link with your accountant code. When your clients register with your code, they automatically appear in your dashboard. You see their data in real-time from day one."
+      "stat2": {
+        "number": "€0",
+        "label": "cost for firm"
       },
-      "q3": {
-        "question": "Can I export data from multiple clients at once?",
-        "answer": "Yes. Select the clients you want, choose the period (month, quarter, year), and download a consolidated CSV. Compatible with ContaPlus, A3, Sage and other accounting software. No data reformatting needed."
-      },
-      "q4": {
-        "question": "What happens if a client stops using Invoo?",
-        "answer": "Their history remains in your dashboard (past invoices accessible for queries). If they return to using Invoo, it reactivates automatically. You don't lose access to historical data."
-      },
-      "q5": {
-        "question": "Does Invoo replace my current accounting software?",
-        "answer": "No. Invoo complements your accounting software, it doesn't replace it. Your clients invoice in Invoo, you export the data and import it into your ContaPlus/A3/Sage. Invoo simplifies data collection, your accounting software remains the official system of record."
+      "stat3": {
+        "number": "30 sec",
+        "label": "access to new invoice"
       }
     },
-    "recommendTitle": "Why gestorías recommend Invoo to their freelance clients",
-    "recommendIntro": "Gestorías are the engine of our growth strategy. When you recommend Invoo to a freelance or SME client, you not only improve your own operational efficiency, but strengthen the client-gestoría relationship by eliminating coordination friction.",
-    "recommendBenefit1Title": "Reduce operational costs",
-    "recommendBenefit1Text": "Less time on manual data entry = more time on value-added consulting. Gestorías report 70% reduction in tax data entry time when using Invoo with their clients.",
-    "recommendBenefit2Title": "Improve client retention",
-    "recommendBenefit2Text": "Clients satisfied with smooth collaboration are clients who renew. By recommending Invoo, you position your gestoría as innovative and efficiency-focused, not just reactive compliance."
+    "pains": {
+      "title": "Still wasting hours",
+      "titleHighlight": "chasing documents?",
+      "description": "Most accounting firms waste time searching for papers instead of advising. There's a better way.",
+      "card1": {
+        "title": "Chasing clients via WhatsApp",
+        "description": "Did you send the invoice? Do you have the receipt? How much did you charge? Endless messages to close a quarter. Your clients promise to send and forget."
+      },
+      "card2": {
+        "title": "Online platforms stealing your clients",
+        "description": "They offer software + online advice for €30/month. You offer only in-person advice. You lose clients who want digital convenience without losing the human touch."
+      },
+      "card3": {
+        "title": "Rewriting data manually",
+        "description": "PDF to accounting software. Excel to Sage. Finding errors in poorly numbered invoices. 5 minutes per invoice x 20 clients x 30 invoices/month = 50 hours wasted."
+      }
+    },
+    "solution": {
+      "title": "Manage 3x more clients",
+      "titleHighlight": "without hiring",
+      "description": "Accounting portal that saves you hours every week. No cost, no client limits.",
+      "pillar1": {
+        "title": "Total visibility in real-time",
+        "description": "Dashboard with invoices, expenses, and payments from all your clients. Filter by client, quarter, or status. Everything auto-updated when they invoice."
+      },
+      "pillar2": {
+        "title": "Compete with online without losing personal touch",
+        "description": "Offer digital portal + your in-person advice. Better than online platforms because you maintain the relationship. Your clients invoice in Invoo, you see everything, they don't leave you."
+      },
+      "pillar3": {
+        "title": "Verifactu for all your clients",
+        "description": "All your clients comply automatically. No installing software client by client. No calls explaining regulations. Multi-client Verifactu from a single dashboard."
+      },
+      "pillar4": {
+        "title": "Ready CSV, no rewriting",
+        "description": "Export data from multiple clients at once. CSV compatible with accounting software. Tax forms in 2 clicks. Never rewrite invoices by hand again."
+      }
+    },
+    "speedDemo": {
+      "title": "From client invoicing",
+      "titleHighlight": "to data in your dashboard",
+      "description": "From when your client creates the invoice to when you export it. Zero friction.",
+      "step1": {
+        "time": "30 sec",
+        "title": "Client invoices",
+        "description": "In Invoo from mobile"
+      },
+      "step2": {
+        "time": "Real-time",
+        "title": "You see invoice",
+        "description": "In your firm dashboard"
+      },
+      "step3": {
+        "time": "10 sec",
+        "title": "Filter quarter",
+        "description": "Q1 2026 invoices"
+      },
+      "step4": {
+        "time": "5 sec",
+        "title": "Export CSV",
+        "description": "Import to software"
+      }
+    },
+    "faqTitle": "Questions accounting firms ask",
+    "faqTitleHighlight": "before recommending",
+    "faq": {
+      "q1": {
+        "question": "How much does the accounting firm dashboard cost?",
+        "answer": "€0. Free forever, no client limit. Your client pays €10.90/month to invoice in Invoo, you access their dashboard at no cost. It's our model: we charge who uses the software (freelancer/SME), not who advises (accounting firm). No tricks, no hidden costs."
+      },
+      "q2": {
+        "question": "How many clients can I manage from the dashboard?",
+        "answer": "Unlimited. 5 clients or 500, same price: €0. Each client you invite gives you access to their invoice/expense panel. Single dashboard where you see everything: filter by client, export data from multiple clients at once. No restrictions, no upgrades."
+      },
+      "q3": {
+        "question": "Do my clients have to use Invoo for me to use the dashboard?",
+        "answer": "Yes, and that's good for you. Invoo is professional invoicing (€10.90/month) + free accounting dashboard. Your clients save vs Holded (€29+), you stop chasing papers. Win-win. The easy part: you recommend Invoo, they invoice comfortably, you access their data for free in real-time."
+      },
+      "q4": {
+        "question": "Can I export data from multiple clients at once?",
+        "answer": "Yes. Select the clients you want, define the period (e.g., Q1 2026), export CSV with all invoices. Import directly to your accounting software. Save hours: instead of asking each client for Excel and manually merging, you have everything in one ready-to-account file."
+      },
+      "q5": {
+        "question": "Does Invoo replace my accounting software?",
+        "answer": "No. Invoo is just invoicing and income/expenses. It doesn't do accounting or complex tax forms. Your flow would be: your clients invoice in Invoo → you export CSV from firm dashboard → import to your usual accounting software. Invoo replaces the chaos of WhatsApp PDFs, not your accounting system."
+      },
+      "q6": {
+        "question": "What happens if a client stops using Invoo or goes to another firm?",
+        "answer": "You lose access to their dashboard (logical, they're no longer your active client). But before leaving you can export complete history: invoices, expenses, everything in CSV. They can also export. No lock-in: data always exportable. If they go to another firm, the new firm accesses equally (free) if the client keeps using Invoo."
+      },
+      "q7": {
+        "question": "How do I manage Verifactu for multiple clients without going crazy?",
+        "answer": "Invoo makes it automatic for everyone. Your clients invoice, Invoo generates compliant Verifactu record (hash, chain, signature). From the dashboard you see each client's compliance status. No installing software in each business, no explaining regulations, no panic calls. Multi-client Verifactu on autopilot."
+      }
+    },
+    "finalCta": {
+      "title": "Recover time to",
+      "titleHighlight": "advise, not chase",
+      "description": "Join accounting firms already managing more clients without chaos. Free dashboard, unlimited clients, automatic Verifactu.",
+      "cta": "Join the waiting list"
+    }
   },
   "gestorias": {
     "title": "Built for gestorías",

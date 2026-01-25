@@ -341,89 +341,137 @@
   },
   "gestoriasPage": {
     "metadata": {
-      "title": "Dashboard Gestoría Gratis | Clientes Ilimitados | Invoo",
-      "description": "Menos perseguir, más asesorar. Acceso directo a facturas y gastos en tiempo real. CSV en un clic. Modelo 130/303 listo. Clientes ilimitados, sin coste."
+      "title": "Software Gestorías Autónomos | Dashboard Gratis | Invoo",
+      "description": "Compite con TaxDown sin perder clientes. Portal gestoría con facturación automática, Verifactu multicliente y CSV instantáneo. Gratis para siempre."
     },
     "header": {
-      "title": "Menos papeleo, más asesoramiento",
-      "description": "Invoo da a las gestorías acceso en tiempo real a facturas y gastos de clientes, siempre conforme con Verifactu, siempre gratis",
+      "title": "Tus clientes facturan, tú lo ves todo",
+      "description": "Dashboard gratuito para gestorías. Acceso en tiempo real a facturas y gastos de todos tus clientes. Sin perseguir emails, sin reescribir datos. Verifactu automático, CSV listo, clientes ilimitados. Cero coste para ti.",
       "cta": "Únete a la lista de espera"
     },
-    "block1": {
-      "title": "Siempre actualizado",
-      "description": "Sin más perseguir clientes por facturas. Ve cada factura y gasto en el momento que se crea",
-      "features": [
-        "Sincronización instantánea de facturas + gastos",
-        "QR Verifactu incluido automáticamente",
-        "Alertas cuando aparece nueva actividad"
-      ],
-      "cta": "Accede gratis a tu dashboard"
-    },
-    "block2": {
-      "title": "Datos que puedes usar",
-      "description": "Descarga CSVs o XMLs limpios listos para tu software contable, sin reescribir",
-      "features": [
-        "Exportación CSV en un clic",
-        "Descargas masivas trimestrales o mensuales",
-        "Exportaciones XML alineadas con estándares AEAT"
-      ],
-      "cta": "Empieza a gestionar clientes"
-    },
-    "block3": {
-      "title": "Periodos impositivos en segundos",
-      "description": "Resúmenes pre-calculados de Modelo 130 y 303 por cliente te ayudan a preparar declaraciones más rápido",
-      "features": [
-        "Resúmenes auto-generados",
-        "Desgloses claros de bases e IVA",
-        "Fácil de revisar y validar"
-      ],
-      "cta": "Invita a tus clientes ahora"
-    },
-    "block4": {
-      "title": "Cero coste, cero riesgo",
-      "description": "Invoo es gratis para gestorías. Los clientes pagan su suscripción, tú obtienes las herramientas, sin barreras de adopción",
-      "features": [
-        "Acceso gratuito al panel",
-        "Clientes ilimitados",
-        "Diseñado para colaboración, no reemplazo"
-      ],
-      "cta": "Únete como gestoría"
-    },
-    "introTitle": "Plataforma de colaboración gestoría-cliente en tiempo real",
-    "introParagraph": [
-      "Las gestorías pierden hasta 40% del tiempo operativo persiguiendo documentos de clientes: facturas atrasadas, emails sin respuesta, Excel mal formateados, y datos que hay que reescribir manualmente en software contable.",
-      "Invoo elimina este cuello de botella. Tus clientes facturan con nuestra plataforma (compatible Verifactu, envío automático a AEAT), y tú obtienes acceso directo a un dashboard gratuito donde ves cada factura, gasto, y documento en tiempo real. Sin perseguir, sin reescribir, sin fricciones.",
-      "Así es como gestorías profesionales están recuperando 10-15 horas semanales con Invoo:"
+    "highlights": [
+      "Clientes ilimitados gratis",
+      "Verifactu multi-cliente",
+      "Datos en tiempo real"
     ],
-    "faqTitle": "Preguntas frecuentes de gestorías sobre Invoo",
-    "faq": {
-      "q1": {
-        "question": "¿Cuántos clientes puedo gestionar en mi dashboard de gestoría?",
-        "answer": "Ilimitados. No hay límite de clientes que puedas ver en tu dashboard. Cada cliente que use Invoo te da acceso automático a sus facturas y gastos. Sin coste adicional, sin restricciones."
+    "trustBar": {
+      "title": "Por qué gestorías eligen",
+      "titleHighlight": "Invoo como aliado",
+      "subtitle": "Únete a las gestorías que recuperan tiempo para asesorar",
+      "stat1": {
+        "number": "Ilimitados",
+        "label": "clientes gratuitos"
       },
-      "q2": {
-        "question": "¿Cómo invito a mis clientes autónomos a usar Invoo?",
-        "answer": "Comparte el enlace de registro con tu código de gestoría. Cuando tus clientes se registran con tu código, automáticamente aparecen en tu dashboard. Tú ves sus datos en tiempo real desde el primer día."
+      "stat2": {
+        "number": "0€",
+        "label": "coste para gestoría"
       },
-      "q3": {
-        "question": "¿Puedo exportar datos de múltiples clientes a la vez?",
-        "answer": "Sí. Selecciona los clientes que quieras, elige el periodo (mes, trimestre, año), y descarga un CSV consolidado. Compatible con ContaPlus, A3, Sage y otros software contables. Sin reformatear datos."
-      },
-      "q4": {
-        "question": "¿Qué pasa si un cliente deja de usar Invoo?",
-        "answer": "Su historial permanece en tu dashboard (facturas pasadas accesibles para consultas). Si vuelve a usar Invoo, se reactiva automáticamente. No pierdes acceso a datos históricos."
-      },
-      "q5": {
-        "question": "¿Invoo reemplaza mi software contable actual?",
-        "answer": "No. Invoo complementa tu software contable, no lo reemplaza. Tus clientes facturan en Invoo, tú exportas los datos y los importas en tu ContaPlus/A3/Sage. Invoo simplifica la recopilación de datos, tu software contable sigue siendo el sistema de registro oficial."
+      "stat3": {
+        "number": "30 seg",
+        "label": "acceso a factura nueva"
       }
     },
-    "recommendTitle": "Por qué las gestorías recomiendan Invoo a sus clientes autónomos",
-    "recommendIntro": "Las gestorías son el motor de nuestra estrategia de crecimiento. Cuando recomiendas Invoo a un cliente autónomo o pyme, no solo mejoras tu propia eficiencia operativa, sino que fortaleces la relación cliente-gestoría al eliminar fricciones de coordinación.",
-    "recommendBenefit1Title": "Reduce costes operativos",
-    "recommendBenefit1Text": "Menos tiempo en entrada manual de datos = más tiempo en consultoría de valor añadido. Gestorías reportan 70% reducción en tiempo de introducción de datos fiscales al usar Invoo con sus clientes.",
-    "recommendBenefit2Title": "Mejora retención de clientes",
-    "recommendBenefit2Text": "Clientes satisfechos con la colaboración fluida son clientes que renuevan. Al recomendar Invoo, posicionas tu gestoría como innovadora y centrada en eficiencia, no solo en cumplimiento reactivo."
+    "pains": {
+      "title": "¿Todavía pierdes horas",
+      "titleHighlight": "persiguiendo documentos?",
+      "description": "La mayoría de gestorías pierden tiempo buscando papeles en lugar de asesorar. Hay una forma mejor.",
+      "card1": {
+        "title": "Perseguir clientes por WhatsApp",
+        "description": "¿Enviaste la factura? ¿Tienes el ticket? ¿Cuánto cobraste? Mensajes infinitos para cerrar un trimestre. Tus clientes prometen enviar y olvidan."
+      },
+      "card2": {
+        "title": "TaxDown te está robando clientes",
+        "description": "Ofrecen software + asesoría online por 30€/mes. Tú ofreces solo asesoría presencial. Pierdes clientes que quieren comodidad digital sin perder el trato humano."
+      },
+      "card3": {
+        "title": "Reescribir datos manualmente",
+        "description": "PDF a a3. Excel a Sage. Buscar errores en facturas mal numeradas. 5 minutos por factura x 20 clientes x 30 facturas/mes = 50 horas perdidas."
+      }
+    },
+    "solution": {
+      "title": "Gestiona 3x más clientes",
+      "titleHighlight": "sin contratar",
+      "description": "Portal gestoría que te ahorra horas cada semana. Sin coste, sin límites de clientes.",
+      "pillar1": {
+        "title": "Visibilidad total en tiempo real",
+        "description": "Dashboard con facturas, gastos y cobros de todos tus clientes. Filtro por cliente, trimestre o estado. Todo actualizado automáticamente cuando facturan."
+      },
+      "pillar2": {
+        "title": "Compite con online sin perder lo personal",
+        "description": "Ofrece portal digital + tu asesoría presencial. Mejor que TaxDown porque mantienes la relación. Tus clientes facturan en Invoo, tú lo ves todo, ellos no te dejan."
+      },
+      "pillar3": {
+        "title": "Verifactu para todos tus clientes",
+        "description": "Todos tus clientes cumplen automáticamente. Sin instalar software cliente por cliente. Sin llamadas explicando normativas. Verifactu multicliente desde un solo dashboard."
+      },
+      "pillar4": {
+        "title": "CSV listo, sin reescribir",
+        "description": "Exporta datos de múltiples clientes a la vez. CSV compatible con a3, Sage, Contaplus. Modelo 130/303 en 2 clics. Nunca más reescribir facturas a mano."
+      }
+    },
+    "speedDemo": {
+      "title": "De cliente facturando",
+      "titleHighlight": "a datos en tu dashboard",
+      "description": "Desde que tu cliente crea la factura hasta que la exportas. Cero fricción.",
+      "step1": {
+        "time": "30 seg",
+        "title": "Cliente factura",
+        "description": "En Invoo desde móvil"
+      },
+      "step2": {
+        "time": "Tiempo real",
+        "title": "Ves la factura",
+        "description": "En tu dashboard gestoría"
+      },
+      "step3": {
+        "time": "10 seg",
+        "title": "Filtras trimestre",
+        "description": "Facturas Q1 2026"
+      },
+      "step4": {
+        "time": "5 seg",
+        "title": "Exportas CSV",
+        "description": "Importas a a3/Sage"
+      }
+    },
+    "faqTitle": "Preguntas que hacen gestorías",
+    "faqTitleHighlight": "antes de recomendarlo",
+    "faq": {
+      "q1": {
+        "question": "¿Cuánto cuesta el dashboard de gestoría?",
+        "answer": "0€. Gratis para siempre, sin límite de clientes. Tu cliente paga €10.90/mes por facturar en Invoo, tú accedes a su dashboard sin coste. Es nuestro modelo: cobramos a quien usa el software (autónomo/pyme), no a quien asesora (gestoría). Sin trucos, sin costes ocultos."
+      },
+      "q2": {
+        "question": "¿Cuántos clientes puedo gestionar desde el dashboard?",
+        "answer": "Ilimitados. 5 clientes o 500, mismo precio: 0€. Cada cliente que invites te da acceso a su panel de facturas/gastos. Dashboard único donde ves todo: filtras por cliente, exportas datos múltiples clientes a la vez. Sin restricciones, sin upgrades."
+      },
+      "q3": {
+        "question": "¿Mis clientes tienen que usar obligatoriamente Invoo para que yo use el dashboard?",
+        "answer": "Sí, y eso es bueno para ti. Invoo es facturación profesional (€10.90/mes) + dashboard gestoría gratis. Tus clientes ahorran vs Holded (€29+), tú dejas de perseguir papeles. Win-win. Lo fácil: recomiendas Invoo, ellos facturan cómodamente, tú accedes gratis a sus datos en tiempo real."
+      },
+      "q4": {
+        "question": "¿Puedo exportar datos de múltiples clientes a la vez?",
+        "answer": "Sí. Seleccionas los clientes que quieras, defines el período (ej. Q1 2026), exportas CSV con todas las facturas. Importas directo a a3, Sage, Contaplus o lo que uses. Ahorra horas: en lugar de pedir Excel a cada cliente y unificar manualmente, tienes todo en un solo archivo listo para contabilizar."
+      },
+      "q5": {
+        "question": "¿Invoo reemplaza mi software contable (a3, Sage, etc.)?",
+        "answer": "No. Invoo es solo facturación e ingresos/gastos. No hace contabilidad ni modelos complejos. Tu flujo sería: tus clientes facturan en Invoo → tú exportas CSV desde dashboard gestoría → importas a tu software contable habitual. Invoo reemplaza el caos de PDFs por WhatsApp, no tu sistema de contabilidad."
+      },
+      "q6": {
+        "question": "¿Qué pasa si un cliente deja de usar Invoo o se va con otra gestoría?",
+        "answer": "Pierdes acceso a su dashboard (lógico, ya no es tu cliente activo). Pero antes de irse puedes exportar histórico completo: facturas, gastos, todo en CSV. Ellos también pueden exportar. No hay lock-in: datos exportables siempre. Si se va con otra gestoría, la nueva gestoría accede igual (gratis) si el cliente sigue usando Invoo."
+      },
+      "q7": {
+        "question": "¿Cómo gestiono Verifactu para múltiples clientes sin volverme loco?",
+        "answer": "Invoo lo hace automático para todos. Tus clientes facturan, Invoo genera el registro Verifactu conforme (hash, cadena, firma). Tú desde el dashboard ves el estado de cumplimiento de cada cliente. Sin instalar software en cada negocio, sin explicar normativas, sin llamadas de pánico. Verifactu multicliente en piloto automático."
+      }
+    },
+    "finalCta": {
+      "title": "Recupera tiempo para",
+      "titleHighlight": "asesorar, no perseguir",
+      "description": "Únete a las gestorías que ya gestionan más clientes sin caos. Dashboard gratis, clientes ilimitados, Verifactu automático.",
+      "cta": "Únete a la lista de espera"
+    }
   },
   "gestorias": {
     "title": "Diseñado para gestorías",
