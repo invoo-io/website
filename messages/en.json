@@ -1812,55 +1812,28 @@
         "amountTooLarge": "Amount exceeds maximum allowed"
       },
       "howTo": {
-        "title": "How to use the VAT calculator",
+        "title": "How to use",
+        "titleHighlight": "the VAT calculator",
         "schemaName": "How to calculate VAT for an invoice",
-        "description": "Calculating VAT for your invoices is very simple with our free tool. Follow these three steps:",
-        "step1": {
-          "title": "Choose the calculation",
-          "description": "Select whether you want to add VAT to a base amount or extract VAT from a price that already includes it."
+        "description": "Calculating VAT for your invoices is very simple with our free tool. Follow these four steps:",
+        "pillar1": {
+          "title": "Choose the calculation type",
+          "description": "Select whether you want to add VAT to a base amount or extract VAT from an amount that already includes it."
         },
-        "step2": {
+        "pillar2": {
           "title": "Enter the amount",
-          "description": "Type the amount in euros. You can use decimals separated by comma or period."
+          "description": "Type the amount in euros. You can use decimals separated by comma or period. The calculator accepts any amount."
         },
-        "step3": {
+        "pillar3": {
           "title": "Select the VAT rate",
-          "description": "Choose between 21% (standard), 10% (reduced), 4% (super-reduced) or 0% (exempt)."
+          "description": "Choose between 21% (standard), 10% (reduced), 4% (super-reduced), or 0% (exempt) depending on your product or service."
+        },
+        "pillar4": {
+          "title": "Get instant results",
+          "description": "The calculator automatically shows the taxable base, VAT amount, and total. No waiting, no rounding errors."
         }
       },
-      "ivaTypes": {
-        "title": "VAT rates in Spain",
-        "description": "In Spain there are four VAT rates depending on the product or service. Knowing which one to apply is essential for correct invoicing.",
-        "general": {
-          "title": "21% - Standard VAT",
-          "description": "Applies to most products and services: electronics, clothing, professional services, hospitality."
-        },
-        "reducido": {
-          "title": "10% - Reduced VAT",
-          "description": "For processed foods, passenger transport, hospitality, event tickets and water."
-        },
-        "superreducido": {
-          "title": "4% - Super-reduced VAT",
-          "description": "Essential products: bread, milk, eggs, fruits, vegetables, books and medicines."
-        },
-        "exento": {
-          "title": "0% - VAT Exempt",
-          "description": "Medical services, education, insurance, residential rental and financial operations."
-        }
-      },
-      "whyUse": {
-        "title": "Why use our VAT calculator?"
-      },
-      "benefits": [
-        "Instant and accurate calculations without rounding errors",
-        "All Spanish VAT rates updated for 2026",
-        "Completely free, no registration or usage limits",
-        "Works on mobile, tablet and desktop",
-        "Option to calculate VAT or extract it from a final price",
-        "Ideal for freelancers, SMBs and any professional"
-      ],
       "faq": {
-        "title": "Frequently asked questions about VAT",
         "q1": {
           "question": "What are the current VAT rates in Spain in 2026?",
           "answer": "In Spain there are four VAT rates: the standard 21% which applies to most products and services; the reduced 10% for food, transport and hospitality; the super-reduced 4% for essential products such as bread, milk and medicines; and 0% for exempt services such as healthcare and education."
@@ -1884,6 +1857,52 @@
         "q6": {
           "question": "What is input VAT and output VAT?",
           "answer": "Output VAT is what you charge your customers on your sales invoices. Input VAT is what you pay on invoices from your suppliers and deductible expenses. In the quarterly declaration, you subtract input from output: if the result is positive, you pay; if negative, you can offset or request a refund."
+        }
+      },
+      "tiposIva": {
+        "title": "VAT rates",
+        "titleHighlight": "in Spain 2026",
+        "description": "Spain has four VAT rates depending on the product or service. Knowing which one to apply is essential for correct invoicing.",
+        "pillar1": {
+          "title": "21% - Standard VAT",
+          "description": "Applies to most products and services: electronics, clothing, professional services, hospitality and catering."
+        },
+        "pillar2": {
+          "title": "10% - Reduced VAT",
+          "description": "For processed foods, passenger transport, hospitality, cultural event tickets, and water supply."
+        },
+        "pillar3": {
+          "title": "4% - Super-reduced VAT",
+          "description": "Essential products: bread, milk, eggs, fruits, vegetables, books, newspapers, and medicines for human use."
+        },
+        "pillar4": {
+          "title": "0% - VAT exempt",
+          "description": "Medical and health services, regulated education, insurance, residential rental, and financial operations."
+        }
+      },
+      "finalCta": {
+        "title": "Stop calculating VAT.",
+        "titleHighlight": "Invoice with automatic VAT.",
+        "description": "With Invoo, VAT is calculated automatically on every invoice. Choose the rate (21%, 10%, 4%), enter the base amount, and done: invoice ready in 30 seconds. Complies with Verifactu, your accountant sees everything in real-time.",
+        "cta": "Join the waiting list"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about VAT in Spain",
+      "benefits": {
+        "title": "Why use",
+        "titleHighlight": "our calculator?",
+        "description": "Designed for freelancers and small businesses that need to calculate VAT quickly and accurately.",
+        "card1": {
+          "title": "Instant calculations",
+          "description": "Real-time results with no waiting. Enter the amount, select the VAT rate, and get the base, VAT, and total instantly."
+        },
+        "card2": {
+          "title": "All VAT rates",
+          "description": "Includes all four VAT rates in force in Spain: 21%, 10%, 4%, and 0%. Updated for 2026 with official regulations."
+        },
+        "card3": {
+          "title": "Free and no registration",
+          "description": "Use it whenever you want without limits. We don't store your data, we don't ask for registration, no hidden costs. 100% free."
         }
       }
     },
@@ -1972,22 +1991,23 @@
       },
       "disclaimer": "Estimated calculation based on current regulations (January 2026). Social Security will adjust your quota based on your declared real income. Consult with your accountant for personalized advice.",
       "howTo": {
-        "title": "How to calculate your self-employed quota",
+        "title": "How to calculate",
+        "titleHighlight": "your self-employed quota",
         "schemaName": "How to calculate self-employed quota by real income",
         "description": "The new contribution system lets you pay based on your real income. Follow these steps:",
-        "step1": {
+        "pillar1": {
           "title": "Calculate your net income",
           "description": "Subtract your deductible expenses from your gross annual income. This is your net income."
         },
-        "step2": {
+        "pillar2": {
           "title": "Select the year",
           "description": "Choose the contribution year. Bases and rates vary each year during the transition period."
         },
-        "step3": {
+        "pillar3": {
           "title": "Indicate if you're new",
           "description": "New self-employed can benefit from Flat Rate (€80/month) or Zero Quota depending on their region."
         },
-        "step4": {
+        "pillar4": {
           "title": "Check your quota",
           "description": "The calculator will show your monthly and annual quota, including any applicable discounts."
         }
@@ -2012,17 +2032,23 @@
           "description": "For income above €6,000/month. Maximum contribution base that guarantees the highest benefits."
         }
       },
-      "whyUse": {
-        "title": "Why use our calculator?"
+      "benefits": {
+        "title": "Why this calculator",
+        "titleHighlight": "is different",
+        "description": "Designed for self-employed who want to know their quota without surprises.",
+        "card1": {
+          "title": "Calculation with Flat Rate and Zero Quota",
+          "description": "Automatically includes available discounts: €80 Flat Rate for new self-employed and Zero Quota based on your region. You know exactly how much you'll pay from day one."
+        },
+        "card2": {
+          "title": "Official 2026 bracket system",
+          "description": "Uses the official 15 contribution brackets based on real income. Exact calculation like Social Security would do — no errors to correct later."
+        },
+        "card3": {
+          "title": "When you invoice, manage your quota automatically",
+          "description": "This calculator is from Invoo, the software that connects your invoicing with your accountant. Your income calculates itself, your accountant sees your bracket in real-time — no paperwork, no manual declarations."
+        }
       },
-      "benefits": [
-        "Pay based on what you actually earn, fairer for those starting out",
-        "You can change brackets up to 6 times per year as your income varies",
-        "Flat Rate of €80/month for the first 12 months for new self-employed",
-        "Zero Quota in many autonomous communities: €0 for the first year",
-        "Greater protection: includes business cessation and training",
-        "Annual regularization to adjust contributions to real income"
-      ],
       "tarifaPlana": {
         "title": "Flat Rate for new self-employed",
         "description": "If you register for the first time (or after 2 years of being unregistered), you can apply for the Flat Rate:",
@@ -2035,11 +2061,18 @@
         "description": "Several autonomous communities subsidize 100% of the quota for the first year. Check if your region offers this benefit.",
         "availableIn": "Available in: Madrid, Andalusia, Aragon, Cantabria, Castilla-La Mancha, Extremadura, Galicia, Murcia, La Rioja, Canary Islands, Valencian Community"
       },
+      "finalCta": {
+        "title": "Stop calculating quotas.",
+        "titleHighlight": "Start invoicing.",
+        "description": "With Invoo you invoice in 30 seconds — just invoicing, no features you don't use. Your quota calculates itself based on your income, your accountant sees it in real-time, and you change brackets with 1 click. €10.90/month, all included.",
+        "cta": "Join the waitlist"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about self-employed quota",
       "faq": {
-        "title": "Frequently asked questions about self-employed quota",
         "q1": {
           "question": "How much does a self-employed person pay in 2026?",
-          "answer": "It depends on your real income. With the bracket system, the minimum quota is around €230/month for low income, and can reach over €500/month for high income. New self-employed pay only €80/month with Flat Rate, or €0 with Zero Quota in some regions."
+          "answer": "It depends on your real income. With the 2026 bracket system, the minimum quota is €205/month for low income, and can reach up to €607/month for high income. New self-employed pay only €80/month with Flat Rate, or €0 with Zero Quota in some regions."
         },
         "q2": {
           "question": "What is net income?",
@@ -2119,24 +2152,25 @@
         "amountTooLarge": "Amount exceeds maximum allowed"
       },
       "howTo": {
-        "title": "How to calculate your invoice amount",
+        "title": "How to use the",
+        "titleHighlight": "invoice calculator",
         "schemaName": "How to calculate an invoice with VAT and IRPF",
         "description": "Calculating your invoice total including VAT and IRPF is easy with our free tool:",
-        "step1": {
+        "pillar1": {
           "title": "Choose your starting point",
-          "description": "Select whether you're starting from the base amount, the total with VAT, or the net amount you want to receive."
+          "description": "Select whether you are starting from the base amount, the total with VAT, or the net amount you want to receive."
         },
-        "step2": {
+        "pillar2": {
           "title": "Enter the amount",
           "description": "Type the amount in euros. You can use decimals with comma (1,234.56) or period (1234.56)."
         },
-        "step3": {
+        "pillar3": {
           "title": "Select VAT and IRPF",
           "description": "Choose the VAT rate for your activity and the corresponding IRPF withholding rate."
         },
-        "step4": {
+        "pillar4": {
           "title": "Get the breakdown",
-          "description": "You'll see the complete breakdown: base, VAT, invoice total, IRPF withholding, and the net you'll receive."
+          "description": "You will see the complete breakdown: base, VAT, invoice total, IRPF withholding, and the net you will receive."
         }
       },
       "irpfTypes": {
@@ -2155,19 +2189,24 @@
           "description": "Invoices to individuals, business activities (IAE section 1), or foreign clients."
         }
       },
-      "whyUse": {
-        "title": "Why use our invoice calculator?"
+      "benefits": {
+        "title": "Why use",
+        "titleHighlight": "our calculator?",
+        "description": "Designed for freelancers who want to invoice without errors or doubts.",
+        "card1": {
+          "title": "Instant calculation without errors",
+          "description": "VAT, IRPF, and net to receive calculated instantly. All 2026 tax rates included. From base, total, or desired net — no Excel, no rounding mistakes."
+        },
+        "card2": {
+          "title": "Withholdings the tax office would approve",
+          "description": "Exact calculation on base amount — as required by the AEAT. 15% standard, 7% new freelancers, 0% individuals. No confusion, no inspections."
+        },
+        "card3": {
+          "title": "And when you invoice, everything is calculated",
+          "description": "This calculator is from Invoo, the software that calculates VAT and IRPF automatically on every invoice. You enter the amount — we do the math and send the invoice. No thinking, no doubting."
+        }
       },
-      "benefits": [
-        "Instant calculation of VAT, IRPF, and net to receive",
-        "Updated with current 2026 tax rates",
-        "Calculate from base, total, or desired net amount",
-        "No registration or personal data required",
-        "Optimized for freelancers and professionals",
-        "Avoid errors in your invoices"
-      ],
       "faq": {
-        "title": "Frequently asked questions about invoices",
         "q1": {
           "question": "How is an invoice total with VAT and IRPF calculated?",
           "answer": "The invoice total is Base + VAT. The net you receive is: Base + VAT - IRPF. For example: with €1,000 base, 21% VAT and 15% IRPF: Total = 1,000 + 210 = €1,210. Net = 1,210 - 150 = €1,060."
@@ -2192,7 +2231,36 @@
           "question": "Who must apply IRPF withholding on their invoices?",
           "answer": "Self-employed professionals registered in IAE section 2 activities (professional activities) when invoicing businesses or professionals. Self-employed with business activities (section 1) generally don't apply withholding."
         }
-      }
+      },
+      "info": {
+        "title": "Understanding",
+        "titleHighlight": "VAT & IRPF on invoices",
+        "description": "Two different taxes that affect your invoices in distinct ways:",
+        "pillar1": {
+          "title": "VAT: Business invoices",
+          "description": "When invoicing businesses with tax ID, you apply VAT (21%, 10%, or 4%). They deduct it, you declare it quarterly in Form 303. It is neutral for both parties."
+        },
+        "pillar2": {
+          "title": "VAT: Individual invoices",
+          "description": "You also apply VAT to individuals (with ID number), but they cannot deduct it. You declare it the same way in Form 303 each quarter."
+        },
+        "pillar3": {
+          "title": "IRPF: Only business invoices",
+          "description": "IRPF withholding (7% or 15%) only applies when invoicing businesses. It is an advance on your income tax — what they withhold now is deducted later in your tax return."
+        },
+        "pillar4": {
+          "title": "IRPF: Nothing for individuals",
+          "description": "Invoices to individuals do not include IRPF withholding. You receive the full total (base + VAT) without withholdings. Then you declare your annual income in your tax return."
+        }
+      },
+      "finalCta": {
+        "title": "Stop calculating.",
+        "titleHighlight": "Start invoicing.",
+        "description": "With Invoo you invoice in 30 seconds — VAT and IRPF calculated automatically, client invoiced instantly, accountant connected in real-time. €10.90/month, all included.",
+        "cta": "Join the waitlist"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about invoices with VAT & IRPF"
     },
     "irpfAutonomos": {
       "meta": {
@@ -2272,7 +2340,8 @@
         "amountTooLarge": "Amount exceeds maximum allowed"
       },
       "howTo": {
-        "title": "How to calculate your freelancer income tax",
+        "title": "How to calculate",
+        "titleHighlight": "your freelancer income tax",
         "schemaName": "How to calculate income tax for freelancers",
         "description": "IRPF is a progressive tax on your income. Follow these steps to estimate it:",
         "step1": {
@@ -2290,10 +2359,27 @@
         "step4": {
           "title": "Review your personal situation",
           "description": "Personal and family minimums reduce your taxable base. More children = less taxes."
+        },
+        "pillar1": {
+          "title": "Enter your gross income",
+          "description": "This is the total invoiced during the year before taxes. Add up all your issued invoices."
+        },
+        "pillar2": {
+          "title": "Subtract deductible expenses",
+          "description": "Include office rent, utilities, materials, insurance, training, and other business-related expenses."
+        },
+        "pillar3": {
+          "title": "Enter your social security quota",
+          "description": "The social security contributions paid are 100% deductible from net income."
+        },
+        "pillar4": {
+          "title": "Review your personal situation",
+          "description": "Personal and family minimums reduce your taxable base. More children = less taxes."
         }
       },
       "tramos": {
-        "title": "IRPF tax brackets 2024-2026",
+        "title": "IRPF tax brackets",
+        "titleHighlight": "2024-2026",
         "description": "IRPF is a progressive tax with 6 brackets. Each bracket applies a different rate to the portion of income that falls within it, not the total.",
         "tramo1": {
           "title": "Up to €12,450: 19%",
@@ -2310,21 +2396,50 @@
         "tramo4": {
           "title": "From €35,200: 37-47%",
           "description": "Higher brackets for high incomes: 37% (€35,200-60,000), 45% (€60,000-300,000), and 47% (over €300,000)."
+        },
+        "pillar1": {
+          "title": "Up to €12,450: 19%",
+          "description": "First bracket. The first €12,450 of taxable base are taxed at 19%. All taxpayers go through this bracket."
+        },
+        "pillar2": {
+          "title": "€12,450 - €20,200: 24%",
+          "description": "Second bracket. Income between these amounts is taxed at 24%. Only the portion exceeding €12,450."
+        },
+        "pillar3": {
+          "title": "€20,200 - €35,200: 30%",
+          "description": "Third bracket. 30% rate for medium incomes. Only applies to the portion exceeding €20,200."
+        },
+        "pillar4": {
+          "title": "From €35,200: 37-47%",
+          "description": "Higher brackets for high incomes: 37% (€35,200-60,000), 45% (€60,000-300,000), and 47% (over €300,000)."
         }
       },
-      "whyUse": {
-        "title": "Why use our income tax calculator?"
+      "benefits": {
+        "title": "Why use",
+        "titleHighlight": "our calculator?",
+        "description": "Designed for freelancers who want to plan their taxes with confidence.",
+        "card1": {
+          "title": "2026 taxes without stress",
+          "description": "Calculations with official 2026 brackets. Know exactly what you'll pay in your tax return. No anxiety about Hacienda, no last-minute surprises."
+        },
+        "card2": {
+          "title": "Deductions your gestoría would approve",
+          "description": "Personal minimum, difficult-to-justify expenses, dependent children. Calculations just like your tax advisor would do — no errors to fix later."
+        },
+        "card3": {
+          "title": "And when you invoice, your gestoría is already connected",
+          "description": "This calculator is from Invoo, the software that connects your invoicing with your gestoría in real time. Your withholdings calculate automatically when invoicing — no emails, no exports."
+        }
       },
-      "benefits": [
-        "Updated tax brackets for 2024, 2025, and 2026",
-        "Automatically includes the 5% difficult-to-justify expenses",
-        "Calculates personal minimum based on age (over 65 or 75)",
-        "Deductions for dependent children, including those under 3",
-        "Compare withholdings paid vs actual tax liability",
-        "Find out if you'll pay or get a refund in your tax return"
-      ],
+      "finalCta": {
+        "title": "Stop calculating.",
+        "titleHighlight": "Start invoicing.",
+        "description": "With Invoo, invoice in 30 seconds — just invoicing, no features you won't use. Your withholdings calculate automatically, your gestoría sees everything in real time, and you're Verifactu compliant without thinking. €10.90/month, all included.",
+        "cta": "Join the waitlist"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about freelancer income tax",
       "faq": {
-        "title": "Frequently asked questions about freelancer income tax",
         "q1": {
           "question": "How much income tax does a freelancer pay?",
           "answer": "It depends on your net income. With €30,000 net income and no special deductions, income tax is around €4,500-5,500 (effective rate ~15-18%). With dependent children or over 65, you pay less thanks to the minimums."
@@ -2441,32 +2556,34 @@
         "amountTooLarge": "Amount exceeds maximum allowed"
       },
       "howTo": {
-        "title": "How to calculate your freelancer net salary",
+        "title": "How to calculate",
+        "titleHighlight": "your freelancer net salary",
         "schemaName": "How to calculate freelancer net salary in Spain",
         "description": "A freelancer's net salary is what you actually take home after paying taxes and contributions. Follow these steps:",
-        "step1": {
+        "pillar1": {
           "title": "Enter your billing",
           "description": "This is the total billed during the year before taxes (excluding VAT). Add up all your issued invoices."
         },
-        "step2": {
+        "pillar2": {
           "title": "Subtract deductible expenses",
           "description": "Include rent, utilities, materials, insurance, training, accounting, and other business-related expenses."
         },
-        "step3": {
+        "pillar3": {
           "title": "Indicate your freelancer status",
           "description": "If you're a new freelancer, you may benefit from the Flat Rate (€80/month) or Zero Quota depending on your community."
         },
-        "step4": {
+        "pillar4": {
           "title": "Check your net salary",
           "description": "The calculator will show your monthly and annual net salary, with a breakdown of freelancer quota and income tax."
         }
       },
       "deducciones": {
-        "title": "What deductions apply to your net salary",
+        "title": "What deductions apply",
+        "titleHighlight": "to your net salary",
         "description": "Your net salary depends on two major mandatory deductions: the freelancer quota and income tax. Understanding them helps you plan better.",
         "item1": {
           "title": "Freelancer Quota",
-          "description": "Monthly Social Security contribution based on your real income. Covers healthcare, sick leave, freelancer unemployment, and retirement. In 2025 it ranges from €230 to €500+/month."
+          "description": "Monthly Social Security contribution based on your real income. Covers healthcare, sick leave, freelancer unemployment, and retirement. In 2026 it ranges from €205 to €607/month."
         },
         "item2": {
           "title": "Income Tax (IRPF)",
@@ -2492,8 +2609,32 @@
         "Compare different scenarios: with/without expenses, new vs established",
         "Instant results without registration or usage limits"
       ],
+      "benefitsSection": {
+        "title": "Why use",
+        "titleHighlight": "our calculator?",
+        "description": "Designed for freelancers who want to know what they really earn without surprises.",
+        "card1": {
+          "title": "Everything in one calculation",
+          "description": "Freelancer quota + income tax + benefits in real time. You don't need three different calculators to know your real net salary."
+        },
+        "card2": {
+          "title": "Includes Flat Rate and Zero Quota",
+          "description": "The calculator automatically applies benefits if you're a new freelancer. You know exactly how much you save the first year."
+        },
+        "card3": {
+          "title": "And when you invoice, your gestoría is already connected",
+          "description": "This calculator is from Invoo, the software that connects your invoicing with your gestoría in real time. Your taxes calculate automatically when invoicing — no emails, no exports."
+        }
+      },
+      "finalCta": {
+        "title": "Stop calculating.",
+        "titleHighlight": "Start invoicing.",
+        "description": "With Invoo, invoice in 30 seconds — just invoicing, no features you won't use. Your quota and withholdings calculate automatically, your gestoría sees everything in real time, and you're Verifactu compliant without thinking. €10.90/month, all included.",
+        "cta": "Join the waitlist"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about freelancer net salary",
       "faq": {
-        "title": "Frequently asked questions about freelancer net salary",
         "q1": {
           "question": "How much does a freelancer who bills €30,000 actually earn?",
           "answer": "With €30,000 annual billing and typical expenses of €3,000, an established freelancer would have a net salary of approximately €17,000-19,000 annually (~€1,500/month). A new freelancer with Flat Rate could reach €20,000-21,000 net thanks to quota savings."
@@ -2567,28 +2708,30 @@
         "invalidPercentage": "Enter a percentage between 0 and 100"
       },
       "howTo": {
-        "title": "How to calculate your hourly rate (without selling yourself short)",
+        "title": "How to calculate your hourly rate",
+        "titleHighlight": "(without selling yourself short)",
         "schemaName": "How to calculate a freelancer's hourly rate in Spain",
         "description": "Calculating your proper hourly rate is the difference between having a profitable business or working more than an employee for less money. Avoid freelancers' #1 mistake: calculating only 'what I need to survive'.",
-        "step1": {
+        "pillar1": {
           "title": "Define your net salary goal (without undervaluing yourself)",
           "description": "Think like an employee: what would you earn working for someone else? Now add +20% for taking on risk. E.g., if employees in your sector earn €30,000 gross (≈€22,000 net), you should aim for €24,000-26,000 net."
         },
-        "step2": {
+        "pillar2": {
           "title": "Count ALL your hours (not just billable ones)",
           "description": "If you work 40h/week, probably only 25-30h are billable. The rest is emails, meetings, sales, admin. Enter your TOTAL working hours."
         },
-        "step3": {
+        "pillar3": {
           "title": "Estimate your real expenses",
           "description": "Rent/coworking, software, accounting (€60-100/month), insurance, materials, training, marketing. Digital services: 15-25%. With office: 30-50%. If unsure, use 20-25%."
         },
-        "step4": {
+        "pillar4": {
           "title": "Get your minimum rate (and negotiate above it)",
           "description": "The calculator shows your MINIMUM rate. This is your 'I can't go below this'. Ideally bill 10-20% above for buffer. If a client can't pay your minimum rate, they're not your ideal client."
         }
       },
       "factors": {
-        "title": "Why your hourly rate needs to be so high",
+        "title": "Why your hourly rate",
+        "titleHighlight": "needs to be so high",
         "description": "Of every euro you bill, you only take home 50-65 cents net. The rest disappears before reaching your pocket:",
         "irpf": {
           "title": "Progressive Income Tax (19-47%)",
@@ -2649,19 +2792,32 @@
         },
         "note": "Madrid and Barcelona typically pay 20-30% more. International clients (UK, Germany, USA) may pay 2-3× more."
       },
-      "whyUse": {
-        "title": "Why use our hourly rate calculator?"
+      "benefits": {
+        "title": "Why use",
+        "titleHighlight": "our calculator?",
+        "description": "The only tool that shows you the real rate you need to charge to make a living from your work.",
+        "card1": {
+          "title": "Realistic calculation with all taxes",
+          "description": "Spanish progressive income tax calculated precisely. Includes social security based on your real income and deductible expenses. No generic estimates."
+        },
+        "card2": {
+          "title": "Hourly, daily, and monthly rates",
+          "description": "We show your hourly rate, daily rate (8h), and required monthly billing. Complete breakdown: see exactly where each euro you bill goes."
+        },
+        "card3": {
+          "title": "Customizable to your real situation",
+          "description": "Adjust weekly hours, vacation, and expense percentage. Because your business isn't the same as others — your rate shouldn't be either."
+        }
       },
-      "benefits": [
-        "Realistic calculation including all taxes and expenses",
-        "Spanish progressive income tax calculated precisely",
-        "Considers social security contributions based on income",
-        "Daily and monthly rates in addition to hourly",
-        "Complete breakdown: see where every euro you bill goes",
-        "Adjust hours, vacation, and expenses to your actual situation"
-      ],
+      "finalCta": {
+        "title": "Stop calculating.",
+        "titleHighlight": "Start invoicing.",
+        "description": "With Invoo, invoice in 30 seconds — just invoicing, no features you won't use. Your rate saves automatically, your gestoría sees everything in real time, and you're Verifactu compliant without thinking. €10.90/month, all included.",
+        "cta": "Join the waitlist"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about hourly rates",
       "faq": {
-        "title": "Frequently asked questions about hourly rate",
         "q1": {
           "question": "How much should I charge per hour as a freelancer?",
           "answer": "It depends on your sector, experience, and net salary goal. A junior developer might charge €30-50/h, while a senior can exceed €80-100/h. An experienced consultant or designer can bill between €60-150/h. Use this calculator by entering your desired net salary to get your optimal rate."
@@ -2779,79 +2935,74 @@
         "amountTooLarge": "Amount exceeds maximum allowed"
       },
       "howTo": {
-        "title": "How to calculate your Form 303",
+        "title": "How to calculate",
+        "titleHighlight": "your Form 303",
         "schemaName": "How to calculate the quarterly VAT return",
         "description": "Form 303 is the quarterly VAT self-assessment. Follow these steps to calculate it:",
-        "step1": {
+        "pillar1": {
           "title": "Sum your sales by VAT rate",
           "description": "Group the tax bases of your issued invoices by VAT rate: 21%, 10%, or 4%."
         },
-        "step2": {
+        "pillar2": {
           "title": "Sum your deductible expenses",
           "description": "Group the bases of your expense invoices. Only include expenses related to your economic activity."
         },
-        "step3": {
+        "pillar3": {
           "title": "Add investment goods",
           "description": "If you purchased equipment or machinery, add the input VAT as an additional deduction."
         },
-        "step4": {
+        "pillar4": {
           "title": "Apply previous compensation",
           "description": "If you have negative balances from previous quarters, you can offset them to reduce what you pay."
         }
       },
       "concepts": {
-        "title": "Key concepts of Form 303",
+        "title": "Key concepts",
+        "titleHighlight": "of Form 303",
         "description": "Understanding these concepts is essential for correctly filing your VAT return:",
-        "ivaRepercutido": {
+        "pillar1": {
           "title": "Output VAT",
           "description": "This is the VAT you charge customers on sales invoices. It corresponds to boxes 01-09 of the form."
         },
-        "ivaSoportado": {
+        "pillar2": {
           "title": "Deductible Input VAT",
           "description": "This is the VAT you pay on business expenses. It's only deductible if the invoice is in your name and linked to your business."
         },
-        "resultado": {
+        "pillar3": {
           "title": "Settlement Result",
           "description": "Output VAT - Input VAT = Result. If positive, you pay. If negative, you offset or request a refund."
         },
-        "compensacion": {
+        "pillar4": {
           "title": "Compensation",
           "description": "If a quarter results in negative, you can carry forward that balance to reduce what you pay in subsequent quarters."
         }
       },
-      "deadlines": {
-        "title": "2026 Filing Deadlines",
-        "description": "Form 303 is filed quarterly. These are the deadlines for 2026:",
-        "q1": {
-          "period": "Q1 (January - March)",
-          "deadline": "April 1-20, 2026"
+      "benefits": {
+        "title": "Why use",
+        "titleHighlight": "our calculator?",
+        "description": "Designed for freelancers who want to file VAT returns without errors or stress.",
+        "card1": {
+          "title": "Form 303 filing without headaches",
+          "description": "Precise calculations of output and input VAT. Know exactly how much to pay the tax authorities. No quarterly anxiety, no box errors."
         },
-        "q2": {
-          "period": "Q2 (April - June)",
-          "deadline": "July 1-20, 2026"
+        "card2": {
+          "title": "All VAT rates in one place",
+          "description": "21%, 10%, 4%, investment goods, and compensation. Everything you need to complete the form — no pocket calculators or complex Excel sheets."
         },
-        "q3": {
-          "period": "Q3 (July - September)",
-          "deadline": "October 1-20, 2026"
-        },
-        "q4": {
-          "period": "Q4 (October - December)",
-          "deadline": "January 1-30, 2027"
+        "card3": {
+          "title": "And when you invoice, VAT files itself",
+          "description": "This calculator is from Invoo, the software that connects your invoicing with your gestoría. Your Form 303 generates automatically — no copying figures, no paperwork, no emails."
         }
       },
-      "whyUse": {
-        "title": "Why use our Form 303 calculator?"
+      "finalCta": {
+        "title": "Stop calculating VAT.",
+        "titleHighlight": "Start invoicing.",
+        "description": "With Invoo, invoice in 30 seconds — your VAT tracks automatically, your gestoría sees Form 303 in real time, and you're Verifactu compliant without thinking. €10.90/month, all included.",
+        "cta": "Join the waitlist"
       },
-      "benefits": [
-        "Instant calculation of output and input VAT",
-        "Support for all three VAT rates: 21%, 10%, and 4%",
-        "Includes investment goods and compensation",
-        "Tells you if the result is to pay or offset",
-        "Detailed breakdown by operation type",
-        "Free, no registration required, updated for 2026"
-      ],
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about Form 303",
       "faq": {
-        "title": "Frequently asked questions about Form 303",
         "q1": {
           "question": "When do I need to file Form 303?",
           "answer": "Quarterly: from the 1st to the 20th of April (Q1), July (Q2), October (Q3), and from the 1st to the 30th of January of the following year (Q4). If the deadline falls on a weekend or holiday, it extends to the next business day. There's an option to direct debit the payment, which has a deadline 5 days earlier."
@@ -2943,42 +3094,44 @@
         "amountTooLarge": "Amount exceeds maximum allowed"
       },
       "howTo": {
-        "title": "How to calculate your Form 130",
+        "title": "How to calculate",
+        "titleHighlight": "your Form 130",
         "schemaName": "How to calculate quarterly IRPF advance payment",
         "description": "Form 130 is the quarterly IRPF advance payment for freelancers. Follow these steps:",
-        "step1": {
+        "pillar1": {
           "title": "Add up accumulated income",
           "description": "Sum all invoices issued from January 1st to the end of the quarter you're filing."
         },
-        "step2": {
+        "pillar2": {
           "title": "Subtract deductible expenses",
           "description": "Include business-related expenses: rent, utilities, supplies, self-employed quota, etc."
         },
-        "step3": {
+        "pillar3": {
           "title": "Deduct previous payments",
           "description": "Subtract what you already paid in Form 130s from previous quarters this same year."
         },
-        "step4": {
+        "pillar4": {
           "title": "Deduct retentions",
           "description": "Subtract the IRPF retentions applied on your invoices (7% or 15%)."
         }
       },
       "concepts": {
-        "title": "Key Form 130 concepts",
+        "title": "Key concepts",
+        "titleHighlight": "for Form 130",
         "description": "Understanding these concepts will help you file your quarterly IRPF return correctly:",
-        "pagoFraccionado": {
+        "pillar1": {
           "title": "Advance Payment",
           "description": "A quarterly advance on the IRPF you'll pay in your annual return. Equals 20% of accumulated profit minus deductions."
         },
-        "rendimientoNeto": {
+        "pillar2": {
           "title": "Net Income",
           "description": "Gross income minus deductible expenses. This is the base on which the 20% advance payment is calculated."
         },
-        "retenciones": {
+        "pillar3": {
           "title": "IRPF Retentions",
           "description": "The IRPF your business clients withhold when paying you (7% or 15%). This is deducted from your advance payment."
         },
-        "exencion": {
+        "pillar4": {
           "title": "70% Exemption",
           "description": "If more than 70% of your income has retention, you may be exempt from filing Form 130."
         }
@@ -3009,19 +3162,32 @@
         "condition1": "More than 70% of your professional activity income has IRPF retention",
         "condition2": "You're under direct estimation (simplified or normal) for professional activities"
       },
-      "whyUse": {
-        "title": "Why use our Form 130 calculator?"
+      "benefits": {
+        "title": "Why use",
+        "titleHighlight": "our calculator?",
+        "description": "The most complete tool for calculating your IRPF advance payment.",
+        "card1": {
+          "title": "Instant calculation with deductions",
+          "description": "IRPF advance payment calculated instantly. Automatically includes deductions for previous payments and invoice retentions."
+        },
+        "card2": {
+          "title": "Detects if you're exempt",
+          "description": "Analyzes your retentions and alerts you if you might be exempt from filing Form 130 (70% rule)."
+        },
+        "card3": {
+          "title": "And when you invoice, Form 130 fills itself",
+          "description": "This calculator is by Invoo, the software that connects your invoicing with your accountant. Your Form 130 is generated automatically from your income and retentions — no copying figures, no manual declarations."
+        }
       },
-      "benefits": [
-        "Instant calculation of quarterly IRPF advance payment",
-        "Includes deductions for previous payments and retentions",
-        "Detects if you might be exempt from filing",
-        "Shows whether you need to pay or result is zero",
-        "Detailed step-by-step calculation breakdown",
-        "Free, no registration required, updated for 2026"
-      ],
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about Form 130",
+      "finalCta": {
+        "title": "Stop calculating.",
+        "titleHighlight": "Start invoicing.",
+        "description": "With Invoo you invoice in 30 seconds and Form 130 fills automatically with your data. Your accountant sees everything in real-time and you comply with Verifactu without thinking.",
+        "cta": "Join the waiting list"
+      },
       "faq": {
-        "title": "Frequently asked questions about Form 130",
         "q1": {
           "question": "Who has to file Form 130?",
           "answer": "All freelancers under direct estimation (simplified or normal) who perform economic activities. The exception: if more than 70% of your professional income already has IRPF retention (invoices to companies with 7% or 15% retention), you may be exempt."
@@ -3176,9 +3342,26 @@
         }
       },
       "howTo": {
-        "title": "How to use the deductible expenses calculator",
+        "title": "How to use the",
+        "titleHighlight": "deductible expenses calculator",
         "schemaName": "How to calculate your deductible expenses as a freelancer",
         "description": "Calculate how much you save on taxes with your business expenses in 4 simple steps:",
+        "pillar1": {
+          "title": "Enter your net income",
+          "description": "Enter your income minus expenses to calculate the 5% automatic deduction (capped at €2,000/year)"
+        },
+        "pillar2": {
+          "title": "Select your marginal rate",
+          "description": "Choose your IRPF bracket (19%, 24%, 30%, 37% or 45%) to calculate real tax savings based on your income"
+        },
+        "pillar3": {
+          "title": "Enter your expenses by category",
+          "description": "Add the amounts for each professional expense type with VAT included: office, equipment, software, rent, training, insurance and self-employed contribution"
+        },
+        "pillar4": {
+          "title": "Review the breakdown and savings",
+          "description": "See how much you save on recoverable VAT and deductible IRPF with each expense, plus total estimated tax savings"
+        },
         "step1": {
           "title": "Enter your net income",
           "description": "Enter your income minus expenses to calculate the 5% deduction"
@@ -3199,17 +3382,43 @@
       "whyUse": {
         "title": "Why use our deductible expenses calculator?"
       },
-      "benefits": [
-        "Calculates recoverable VAT for each expense category",
-        "Shows IRPF deductible expenses with official percentages",
-        "Includes automatic 5% deduction calculation (max €2,000)",
-        "Detailed breakdown for each expense category",
-        "Total estimated tax savings based on your marginal rate",
-        "Free, no registration required, updated for 2026"
-      ],
+      "benefits": {
+        "title": "Why use our",
+        "titleHighlight": "deductible expenses calculator?",
+        "description": "Save time and maximize your tax deductions with our free tool",
+        "card1": {
+          "title": "Instant and accurate calculation",
+          "description": "Real-time results with recoverable VAT, deductible IRPF and automatic 5% deduction according to current 2026 regulations"
+        },
+        "card2": {
+          "title": "Detailed breakdown by category",
+          "description": "Visualize the savings from each expense: office, equipment, software, rent, training, insurance and more with official percentages"
+        },
+        "card3": {
+          "title": "Free and no registration",
+          "description": "Use the calculator as many times as you need at no cost or limits. Updated with 2026 tax rates"
+        }
+      },
       "concepts": {
-        "title": "Key concepts for deductible expenses",
+        "title": "Key concepts for",
+        "titleHighlight": "deductible expenses",
         "description": "Understanding these concepts will help you maximize your tax deductions:",
+        "pillar1": {
+          "title": "Deductible VAT",
+          "description": "VAT you pay on business expenses that can be recovered on Form 303. Only deductible if you have a complete invoice."
+        },
+        "pillar2": {
+          "title": "IRPF deductible expenses",
+          "description": "Expenses that reduce your IRPF tax base. They must be necessary for your activity and properly documented."
+        },
+        "pillar3": {
+          "title": "Hard-to-justify expenses",
+          "description": "Automatic 5% deduction on net income, capped at €2,000/year. Only applies in simplified direct estimation regime."
+        },
+        "pillar4": {
+          "title": "Proportional use",
+          "description": "Some expenses (phone, vehicle, utilities) only allow deducting the professional use percentage, typically 50% if mixed use."
+        },
         "ivaDeducible": {
           "title": "Deductible VAT",
           "description": "VAT you pay on business expenses that can be recovered on Form 303. Only deductible if you have a complete invoice."
@@ -3228,7 +3437,6 @@
         }
       },
       "faq": {
-        "title": "Frequently asked questions about deductible expenses",
         "q1": {
           "question": "What expenses can a freelancer deduct?",
           "answer": "Freelancers can deduct necessary expenses for their activity: office supplies, computer equipment, software, office rent, utilities (if working from home), transportation, professional training, insurance, and the self-employed contribution itself. The key is that they're directly related to the activity."
@@ -3251,8 +3459,16 @@
         },
         "q6": {
           "question": "Can I deduct business meals?",
-          "answer": "IMPORTANT: VAT on meals and hospitality is NOT deductible (Art. 96.1.6º LIVA). You can only deduct the base amount for IRPF purposes. The expense must be justified with an invoice, must be outside your municipality of residence, and total deductions cannot exceed 1% of your annual revenue. Always keep the invoice and note the meeting reason."
+          "answer": "VAT on meals is NOT deductible when it's client entertainment (Art. 96.1.6º LIVA). However, it IS deductible for business travel expenses (per diem) outside your municipality of residence, as long as they meet IRPF deductibility requirements. The base amount can be deducted for IRPF if justified as a necessary business expense and doesn't exceed 1% of annual revenue. Always keep the invoice and note the business reason."
         }
+      },
+      "faqTitle": "Frequently asked questions about",
+      "faqTitleHighlight": "deductible expenses",
+      "finalCta": {
+        "title": "Stop calculating expenses.",
+        "titleHighlight": "Record expenses instantly.",
+        "description": "With Invoo you record expenses instantly, deductible VAT is calculated automatically, and your accountant sees them in real-time. Invoice in 30 seconds, automatic Verifactu. €10.90/month, all included.",
+        "cta": "Join the waiting list"
       }
     },
     "autonomoVsEmpresa": {
@@ -3360,9 +3576,26 @@
         "amountTooLarge": "Amount exceeds maximum allowed"
       },
       "howTo": {
-        "title": "How to use the Freelancer vs SL comparison",
+        "title": "How to use the",
+        "titleHighlight": "Freelancer vs SL comparison",
         "schemaName": "How to decide between freelancer and Limited Company",
         "description": "Comparing both options is very simple. You only need 4 data points:",
+        "pillar1": {
+          "title": "Enter your annual revenue",
+          "description": "Estimate how much you'll invoice in a year. It's your business volume before subtracting expenses."
+        },
+        "pillar2": {
+          "title": "Select the percentage of expenses",
+          "description": "Choose what percentage of your revenue are business expenses (rent, materials, software, etc.). If unsure, use 20-30%."
+        },
+        "pillar3": {
+          "title": "Define your desired monthly salary",
+          "description": "If you created an SL, what salary would you like to pay yourself as administrator? This affects SS and IRPF calculation."
+        },
+        "pillar4": {
+          "title": "Indicate if it's your first company",
+          "description": "If you've never had an SL, you can benefit from the reduced 15% Corporate Tax rate for the first 2 years (instead of standard 25%)."
+        },
         "step1": {
           "title": "Enter your annual revenue",
           "description": "Estimate how much you'll invoice in a year. It's your business volume before subtracting expenses."
@@ -3381,7 +3614,8 @@
         }
       },
       "concepts": {
-        "title": "Key concepts for your decision",
+        "title": "Key concepts",
+        "titleHighlight": "for your decision",
         "description": "Understand the fundamental differences between being a freelancer and having a Limited Company:",
         "autonomo": {
           "title": "Self-Employed Regime",
@@ -3413,8 +3647,32 @@
         "Personalized recommendation based on your data",
         "Free, no registration required, updated for 2026"
       ],
+      "benefitsCards": {
+        "title": "Why use",
+        "titleHighlight": "our comparison tool",
+        "description": "Designed to help you make the best decision for your business.",
+        "card1": {
+          "title": "Complete and accurate tax comparison",
+          "description": "Exact calculations of IRPF, self-employed quota, Corporate Tax and Social Security. Includes accountant and formation costs for a real comparison."
+        },
+        "card2": {
+          "title": "Recommendation based on your data",
+          "description": "There are no magic rules. The break-even point varies by your revenue, expenses and desired salary. The calculator tells you what's best for YOUR specific case."
+        },
+        "card3": {
+          "title": "And when you decide, invoice with Invoo",
+          "description": "Whether freelancer or SL, with Invoo you invoice in 30 seconds and your accountant sees everything in real-time. Verifactu included. €10.90/month, no fine print."
+        }
+      },
+      "finalCta": {
+        "title": "Now you know what works for you.",
+        "titleHighlight": "Invoice without complications.",
+        "description": "With Invoo you invoice in 30 seconds — just invoicing, no features you won't use. Your accountant sees everything in real-time, you comply with Verifactu automatically. Freelancer or SL, €10.90/month, all included.",
+        "cta": "Join the waiting list"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqTitleHighlight": "about Freelancer vs SL",
       "faq": {
-        "title": "Frequently asked questions about Freelancer vs SL",
         "q1": {
           "question": "From what income level is it worth creating an SL?",
           "answer": "There's no exact figure, it depends on your desired salary and expenses. As a general rule, with net profits (after expenses) above €40,000-50,000 annually, SL is usually more advantageous due to the differential between IRPF (up to 47%) and Corporate Tax (25%). Use the calculator with your real data to know for sure."

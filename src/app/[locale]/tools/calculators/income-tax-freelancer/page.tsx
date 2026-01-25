@@ -12,6 +12,13 @@ import {
   generateCalculatorHowToSchema,
 } from '@/lib/calculators/schema';
 import { BASE_URL } from '@/lib/constants';
+import { ThreeCardSection } from '@/components/sections/templates/ThreeCardSection';
+import { FourPillarSection } from '@/components/sections/templates/FourPillarSection';
+import FAQSection from '@/components/sections/FAQSection';
+import { FinalCTASection } from '@/components/sections/FinalCTASection';
+import { CalculatorRelatedTools } from '@/components/calculators/CalculatorSEOContent';
+import { getBasePath } from '@/lib/utils';
+import { calculatorIcons } from '@/lib/calculator-icons';
 
 const DynamicIRPFAutonomosCalculator = dynamicImport(
   () => import('@/components/calculators/pages/IRPFAutonomosCalculatorPage').then(mod => mod.IRPFAutonomosCalculatorPageContent),
@@ -105,6 +112,29 @@ export default async function IncomeTaxFreelancerCalculatorPage({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'calculators.irpfAutonomos' });
+  const tc = await getTranslations({ locale, namespace: 'calculators.common' });
+
+  // Related calculators data
+  const relatedCalculators = [
+    {
+      name: tc('related.sueldoNetoAutonomo.name'),
+      description: tc('related.sueldoNetoAutonomo.description'),
+      href: getBasePath(`/${locale}/tools/calculators/net-salary-freelancer`),
+      icon: calculatorIcons.sueldoNetoAutonomo,
+    },
+    {
+      name: tc('related.cuotaAutonomos.name'),
+      description: tc('related.cuotaAutonomos.description'),
+      href: getBasePath(`/${locale}/tools/calculators/self-employed-quota`),
+      icon: calculatorIcons.cuotaAutonomos,
+    },
+    {
+      name: tc('related.factura.name'),
+      description: tc('related.factura.description'),
+      href: getBasePath(`/${locale}/tools/calculators/invoice`),
+      icon: calculatorIcons.factura,
+    },
+  ];
 
   // FAQ data for schema
   const faqItems = [
@@ -144,10 +174,10 @@ export default async function IncomeTaxFreelancerCalculatorPage({
     name: t('howTo.schemaName'),
     description: t('howTo.description'),
     steps: [
-      { name: t('howTo.step1.title'), text: t('howTo.step1.description') },
-      { name: t('howTo.step2.title'), text: t('howTo.step2.description') },
-      { name: t('howTo.step3.title'), text: t('howTo.step3.description') },
-      { name: t('howTo.step4.title'), text: t('howTo.step4.description') },
+      { name: t('howTo.pillar1.title'), text: t('howTo.pillar1.description') },
+      { name: t('howTo.pillar2.title'), text: t('howTo.pillar2.description') },
+      { name: t('howTo.pillar3.title'), text: t('howTo.pillar3.description') },
+      { name: t('howTo.pillar4.title'), text: t('howTo.pillar4.description') },
     ],
   });
 
@@ -160,7 +190,121 @@ export default async function IncomeTaxFreelancerCalculatorPage({
 
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
+
+        {/* 1. Hero + Calculator */}
         <DynamicIRPFAutonomosCalculator />
+
+        {/* 2. How To Use - bg-secondary */}
+        <div className="bg-background-secondary">
+          <FourPillarSection
+            locale={locale}
+            translationKey="calculators.irpfAutonomos.howTo"
+            cardBackground="tertiary"
+            pillars={[
+              {
+                key: 'pillar1',
+                icon: 'FileText',
+                gradient: 'linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))',
+                iconColor: 'var(--accent-blue-main)',
+              },
+              {
+                key: 'pillar2',
+                icon: 'Calculator',
+                gradient: 'linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))',
+                iconColor: 'var(--accent-purple-main)',
+              },
+              {
+                key: 'pillar3',
+                icon: 'Coins',
+                gradient: 'linear-gradient(135deg, rgba(255,159,10,0.15), rgba(255,159,10,0.05))',
+                iconColor: 'var(--accent-orange-main)',
+              },
+              {
+                key: 'pillar4',
+                icon: 'Users',
+                gradient: 'linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))',
+                iconColor: 'var(--accent-green-main)',
+              },
+            ]}
+          />
+        </div>
+
+        {/* 3. Tax Brackets - bg-primary */}
+        <FourPillarSection
+          locale={locale}
+          translationKey="calculators.irpfAutonomos.tramos"
+          pillars={[
+            {
+              key: 'pillar1',
+              icon: 'TrendingDown',
+              gradient: 'linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))',
+              iconColor: 'var(--accent-green-main)',
+            },
+            {
+              key: 'pillar2',
+              icon: 'TrendingUp',
+              gradient: 'linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))',
+              iconColor: 'var(--accent-blue-main)',
+            },
+            {
+              key: 'pillar3',
+              icon: 'BarChart3',
+              gradient: 'linear-gradient(135deg, rgba(255,159,10,0.15), rgba(255,159,10,0.05))',
+              iconColor: 'var(--accent-orange-main)',
+            },
+            {
+              key: 'pillar4',
+              icon: 'Wallet',
+              gradient: 'linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))',
+              iconColor: 'var(--accent-purple-main)',
+            },
+          ]}
+        />
+
+        {/* 4. Benefits - bg-secondary */}
+        <ThreeCardSection
+          locale={locale}
+          translationKey="calculators.irpfAutonomos.benefits"
+          cardBackground="tertiary"
+          cards={[
+            {
+              key: 'card1',
+              icon: 'Zap',
+              gradient: 'linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))',
+            },
+            {
+              key: 'card2',
+              icon: 'CheckCircle',
+              gradient: 'linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))',
+            },
+            {
+              key: 'card3',
+              icon: 'Gift',
+              gradient: 'linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))',
+            },
+          ]}
+        />
+
+        {/* 5. FAQ - bg-primary */}
+        <FAQSection
+          titleKey="calculators.irpfAutonomos.faqTitle"
+          titleHighlightKey="calculators.irpfAutonomos.faqTitleHighlight"
+          questionsKey="calculators.irpfAutonomos.faq"
+          background="primary"
+        />
+
+        {/* 6. Related Calculators */}
+        <CalculatorRelatedTools
+          title={tc('relatedTitle')}
+          calculators={relatedCalculators}
+        />
+
+        {/* 7. Final CTA - FinalCTASection (same as landing pages) */}
+        <FinalCTASection
+          locale={locale}
+          translationKey="calculators.irpfAutonomos.finalCta"
+        />
+
         <Footer locale={locale} />
       </div>
     </>

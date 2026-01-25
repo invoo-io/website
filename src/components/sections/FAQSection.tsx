@@ -14,9 +14,10 @@ interface FAQSectionProps {
   titleKey: string;
   titleHighlightKey?: string;
   questionsKey: string;
+  background?: 'primary' | 'secondary';
 }
 
-export default function FAQSection({ titleKey, titleHighlightKey, questionsKey }: FAQSectionProps) {
+export default function FAQSection({ titleKey, titleHighlightKey, questionsKey, background = 'secondary' }: FAQSectionProps) {
   const t = useTranslations();
 
   // Get the FAQ object from translations
@@ -32,8 +33,11 @@ export default function FAQSection({ titleKey, titleHighlightKey, questionsKey }
     t(titleKey)
   );
 
+  // Card background follows the rule: secondary on primary, tertiary on secondary
+  const cardBg = background === 'primary' ? 'bg-background-secondary' : 'bg-background-tertiary';
+
   return (
-    <section className="py-[120px] max-md:py-16 px-4 md:px-6 bg-background-secondary">
+    <section className={`py-[120px] max-md:py-16 px-4 md:px-6 ${background === 'primary' ? 'bg-background-primary' : 'bg-background-secondary'}`}>
       <div className="container mx-auto max-w-4xl">
         <SectionHeader
           size="section"
@@ -47,7 +51,7 @@ export default function FAQSection({ titleKey, titleHighlightKey, questionsKey }
             <AccordionItem
               key={key}
               value={`item-${index}`}
-              className="bg-background-primary hover:bg-background-tertiary data-[state=open]:bg-background-tertiary rounded-2xl border-none px-6 transition-colors"
+              className={`${cardBg} hover:bg-background-tertiary data-[state=open]:bg-background-tertiary rounded-2xl border-none px-6 transition-colors`}
             >
               <AccordionTrigger className="text-left hover:no-underline py-6">
                 <span className="text-title3-emphasized text-primary pr-4">

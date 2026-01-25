@@ -1764,7 +1764,7 @@
       },
       "cta": {
         "title": "¿Buscas más que calculadoras?",
-        "description": "Invoo es la plataforma completa de facturación y gestión fiscal para autónomos. Facturas, gastos, impuestos y colaboración con tu gestoría en un solo lugar.",
+        "description": "Invoo es el software de facturación más rápido de España. Solo facturación, sin funciones que no usas. Tu gestoría conectada en tiempo real desde el primer día.",
         "button": "Únete a la lista de espera"
       }
     },
@@ -1812,55 +1812,28 @@
         "amountTooLarge": "El importe excede el máximo permitido"
       },
       "howTo": {
-        "title": "Cómo usar la calculadora de IVA",
+        "title": "Cómo usar",
+        "titleHighlight": "la calculadora de IVA",
         "schemaName": "Cómo calcular el IVA de una factura",
-        "description": "Calcular el IVA de tus facturas es muy sencillo con nuestra herramienta gratuita. Sigue estos tres pasos:",
-        "step1": {
-          "title": "Elige el cálculo",
+        "description": "Calcular el IVA de tus facturas es muy sencillo con nuestra herramienta gratuita. Sigue estos cuatro pasos:",
+        "pillar1": {
+          "title": "Elige el tipo de cálculo",
           "description": "Selecciona si quieres añadir IVA a una base imponible o extraer el IVA de un importe que ya lo incluye."
         },
-        "step2": {
+        "pillar2": {
           "title": "Introduce el importe",
-          "description": "Escribe la cantidad en euros. Puedes usar decimales separados por coma o punto."
+          "description": "Escribe la cantidad en euros. Puedes usar decimales separados por coma o punto. La calculadora acepta cualquier importe."
         },
-        "step3": {
+        "pillar3": {
           "title": "Selecciona el tipo de IVA",
-          "description": "Elige entre el 21% (general), 10% (reducido), 4% (superreducido) o 0% (exento)."
+          "description": "Elige entre el 21% (general), 10% (reducido), 4% (superreducido) o 0% (exento) según tu producto o servicio."
+        },
+        "pillar4": {
+          "title": "Obtén el resultado al instante",
+          "description": "La calculadora muestra automáticamente la base imponible, el IVA y el total. Sin esperas, sin errores de redondeo."
         }
       },
-      "ivaTypes": {
-        "title": "Tipos de IVA en España",
-        "description": "En España existen cuatro tipos de IVA según el producto o servicio. Conocer cuál aplicar es fundamental para facturar correctamente.",
-        "general": {
-          "title": "21% - IVA General",
-          "description": "Se aplica a la mayoría de productos y servicios: electrónica, ropa, servicios profesionales, hostelería."
-        },
-        "reducido": {
-          "title": "10% - IVA Reducido",
-          "description": "Para alimentos procesados, transporte de viajeros, hostelería, entradas a espectáculos y agua."
-        },
-        "superreducido": {
-          "title": "4% - IVA Superreducido",
-          "description": "Productos de primera necesidad: pan, leche, huevos, frutas, verduras, libros y medicamentos."
-        },
-        "exento": {
-          "title": "0% - Exento de IVA",
-          "description": "Servicios médicos, educación, seguros, alquiler de vivienda y operaciones financieras."
-        }
-      },
-      "whyUse": {
-        "title": "¿Por qué usar nuestra calculadora de IVA?"
-      },
-      "benefits": [
-        "Cálculos instantáneos y precisos sin errores de redondeo",
-        "Todos los tipos de IVA españoles actualizados para 2026",
-        "Totalmente gratuita, sin registro ni límites de uso",
-        "Funciona en móvil, tablet y ordenador",
-        "Opción de calcular IVA o extraerlo de un precio final",
-        "Ideal para autónomos, pymes y cualquier profesional"
-      ],
       "faq": {
-        "title": "Preguntas frecuentes sobre el IVA",
         "q1": {
           "question": "¿Cuáles son los tipos de IVA vigentes en España en 2026?",
           "answer": "En España hay cuatro tipos de IVA: el general del 21% que se aplica a la mayoría de productos y servicios; el reducido del 10% para alimentos, transporte y hostelería; el superreducido del 4% para productos de primera necesidad como pan, leche y medicamentos; y el 0% para servicios exentos como sanidad y educación."
@@ -1884,6 +1857,52 @@
         "q6": {
           "question": "¿Qué es el IVA soportado y el IVA repercutido?",
           "answer": "El IVA repercutido es el que cobras a tus clientes en tus facturas de venta. El IVA soportado es el que pagas tú en las facturas de tus proveedores y gastos deducibles. En la declaración trimestral, restas el soportado del repercutido: si el resultado es positivo, pagas; si es negativo, puedes compensar o solicitar devolución."
+        }
+      },
+      "tiposIva": {
+        "title": "Tipos de IVA",
+        "titleHighlight": "en España 2026",
+        "description": "En España existen cuatro tipos de IVA según el producto o servicio. Conocer cuál aplicar es fundamental para facturar correctamente.",
+        "pillar1": {
+          "title": "21% - IVA General",
+          "description": "Se aplica a la mayoría de productos y servicios: electrónica, ropa, servicios profesionales, hostelería y restauración."
+        },
+        "pillar2": {
+          "title": "10% - IVA Reducido",
+          "description": "Para alimentos procesados, transporte de viajeros, hostelería, entradas a espectáculos culturales y suministro de agua."
+        },
+        "pillar3": {
+          "title": "4% - IVA Superreducido",
+          "description": "Productos de primera necesidad: pan, leche, huevos, frutas, verduras, libros, periódicos y medicamentos de uso humano."
+        },
+        "pillar4": {
+          "title": "0% - Exento de IVA",
+          "description": "Servicios médicos y sanitarios, educación reglada, seguros, alquiler de vivienda habitual y operaciones financieras."
+        }
+      },
+      "finalCta": {
+        "title": "Deja de calcular IVA.",
+        "titleHighlight": "Factura con IVA automático.",
+        "description": "Con Invoo el IVA se calcula solo en cada factura. Elige el tipo (21%, 10%, 4%), escribe el importe base y listo: factura lista en 30 segundos. Tu gestoría lo ve en tiempo real, cumples con Verifactu automáticamente. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
+      },
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre el IVA en España",
+      "benefits": {
+        "title": "¿Por qué usar",
+        "titleHighlight": "nuestra calculadora?",
+        "description": "Diseñada para autónomos y pymes que necesitan calcular el IVA de forma rápida y precisa.",
+        "card1": {
+          "title": "Cálculos instantáneos",
+          "description": "Resultados en tiempo real sin esperas. Introduce el importe, selecciona el tipo de IVA y obtén la base, el IVA y el total al instante."
+        },
+        "card2": {
+          "title": "Todos los tipos de IVA",
+          "description": "Incluye los cuatro tipos de IVA vigentes en España: 21%, 10%, 4% y 0%. Actualizados para 2026 con la normativa oficial."
+        },
+        "card3": {
+          "title": "Y cuando factures, el IVA ya está calculado",
+          "description": "Esta calculadora es de Invoo, el software que calcula el IVA automáticamente en cada factura. Eliges el tipo (21%, 10%, 4%), escribes el importe, y la factura está lista en 30 segundos."
         }
       }
     },
@@ -1972,22 +1991,23 @@
       },
       "disclaimer": "Cálculo orientativo basado en la normativa vigente (enero 2026). La Seguridad Social ajustará tu cuota según tus ingresos reales declarados. Consulta con tu gestoría para asesoramiento personalizado.",
       "howTo": {
-        "title": "Cómo calcular tu cuota de autónomo",
+        "title": "Cómo calcular",
+        "titleHighlight": "tu cuota de autónomo",
         "schemaName": "Cómo calcular la cuota de autónomo por ingresos reales",
         "description": "El nuevo sistema de cotización te permite pagar según tus ingresos reales. Sigue estos pasos:",
-        "step1": {
+        "pillar1": {
           "title": "Calcula tu rendimiento neto",
           "description": "Resta tus gastos deducibles de tus ingresos brutos anuales. Ese es tu rendimiento neto."
         },
-        "step2": {
+        "pillar2": {
           "title": "Selecciona el año",
           "description": "Elige el año de cotización. Las bases y tipos varían cada año durante el periodo transitorio."
         },
-        "step3": {
+        "pillar3": {
           "title": "Indica si eres nuevo autónomo",
           "description": "Los nuevos autónomos pueden beneficiarse de la Tarifa Plana (80€/mes) o Cuota Cero según su comunidad."
         },
-        "step4": {
+        "pillar4": {
           "title": "Consulta tu cuota",
           "description": "La calculadora te mostrará tu cuota mensual y anual, incluyendo bonificaciones si aplican."
         }
@@ -2012,17 +2032,23 @@
           "description": "Para rendimientos superiores a 6.000€/mes. Base máxima de cotización que garantiza las prestaciones más altas."
         }
       },
-      "whyUse": {
-        "title": "¿Por qué usar nuestra calculadora?"
+      "benefits": {
+        "title": "Por qué esta calculadora",
+        "titleHighlight": "es diferente",
+        "description": "Diseñada para autónomos que quieren conocer su cuota sin sorpresas.",
+        "card1": {
+          "title": "Cálculo con Tarifa Plana y Cuota Cero",
+          "description": "Incluye automáticamente las bonificaciones disponibles: Tarifa Plana de 80€ para nuevos autónomos y Cuota Cero según tu comunidad. Sabes exactamente cuánto pagarás desde el primer mes."
+        },
+        "card2": {
+          "title": "Sistema de tramos 2026 oficial",
+          "description": "Usa los 15 tramos oficiales de cotización según ingresos reales. Cálculo exacto como lo haría la Seguridad Social — sin errores que corregir después."
+        },
+        "card3": {
+          "title": "Y cuando factures, gestiona tu cuota automáticamente",
+          "description": "Esta calculadora es de Invoo, el software que conecta tu facturación con tu gestoría. Tus ingresos se calculan solos, tu gestoría ve tu tramo en tiempo real — sin papeleos, sin declaraciones manuales."
+        }
       },
-      "benefits": [
-        "Pagas según lo que realmente ganas, más justo para quien empieza",
-        "Puedes cambiar de tramo hasta 6 veces al año según varíen tus ingresos",
-        "Tarifa Plana de 80€/mes los primeros 12 meses para nuevos autónomos",
-        "Cuota Cero en muchas comunidades autónomas: 0€ el primer año",
-        "Mayor protección: incluye cese de actividad y formación",
-        "Regularización anual para ajustar cotizaciones a ingresos reales"
-      ],
       "tarifaPlana": {
         "title": "Tarifa Plana para nuevos autónomos",
         "description": "Si te das de alta por primera vez (o tras 2 años de baja), puedes acogerte a la Tarifa Plana:",
@@ -2033,13 +2059,20 @@
       "cuotaCero": {
         "title": "Cuota Cero por comunidad",
         "description": "Varias comunidades autónomas bonifican el 100% de la cuota el primer año. Consulta si tu comunidad ofrece este beneficio.",
-        "availableIn": "Disponible en: Madrid, Andalucía, Aragón, Cantabria, Castilla-La Mancha, Extremadura, Galicia, Murcia, La Rioja, Canarias, Comunidad Valenciana"
+        "availableIn": "Disponible en: Madrid, Andalucía, Aragón y Cantabria (otras comunidades cerraron sus convocatorias en 2025)"
       },
+      "finalCta": {
+        "title": "Deja de calcular cuotas.",
+        "titleHighlight": "Empieza a facturar.",
+        "description": "Con Invoo facturas en 30 segundos — solo facturación, sin funciones que no usas. Tu cuota se calcula sola según tus ingresos, tu gestoría lo ve en tiempo real, y cambias de tramo con 1 clic. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
+      },
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre la cuota de autónomos",
       "faq": {
-        "title": "Preguntas frecuentes sobre la cuota de autónomos",
         "q1": {
           "question": "¿Cuánto paga un autónomo en 2026?",
-          "answer": "Depende de tus ingresos reales. Con el sistema de tramos, la cuota mínima ronda los 230€/mes para rendimientos bajos, y puede llegar a más de 500€/mes para ingresos altos. Los nuevos autónomos pagan solo 80€/mes con Tarifa Plana, o 0€ con Cuota Cero en algunas comunidades."
+          "answer": "Depende de tus ingresos reales. Con el sistema de tramos de 2026, la cuota mínima es de 205€/mes para rendimientos bajos, y puede llegar hasta 607€/mes para ingresos altos. Los nuevos autónomos pagan solo 80€/mes con Tarifa Plana, o 0€ con Cuota Cero en algunas comunidades."
         },
         "q2": {
           "question": "¿Qué es el rendimiento neto?",
@@ -2119,22 +2152,23 @@
         "amountTooLarge": "El importe excede el máximo permitido"
       },
       "howTo": {
-        "title": "Cómo calcular el importe de tu factura",
+        "title": "Cómo usar la",
+        "titleHighlight": "calculadora de facturas",
         "schemaName": "Cómo calcular una factura con IVA e IRPF",
         "description": "Calcular el total de tu factura incluyendo IVA e IRPF es muy sencillo con nuestra herramienta gratuita:",
-        "step1": {
+        "pillar1": {
           "title": "Elige el punto de partida",
           "description": "Selecciona si partes de la base imponible, del total con IVA, o del importe neto que deseas cobrar."
         },
-        "step2": {
+        "pillar2": {
           "title": "Introduce el importe",
           "description": "Escribe la cantidad en euros. Puedes usar decimales con coma (1.234,56) o punto (1234.56)."
         },
-        "step3": {
+        "pillar3": {
           "title": "Selecciona IVA e IRPF",
           "description": "Elige el tipo de IVA según tu actividad y la retención de IRPF correspondiente."
         },
-        "step4": {
+        "pillar4": {
           "title": "Obtén el desglose",
           "description": "Verás el desglose completo: base, IVA, total factura, retención IRPF y el neto que cobrarás."
         }
@@ -2155,19 +2189,24 @@
           "description": "Facturas a particulares, actividades empresariales (sección 1ª IAE) o clientes extranjeros."
         }
       },
-      "whyUse": {
-        "title": "¿Por qué usar nuestra calculadora de facturas?"
+      "benefits": {
+        "title": "¿Por qué usar",
+        "titleHighlight": "nuestra calculadora?",
+        "description": "Diseñada para autónomos que quieren facturar sin errores ni dudas.",
+        "card1": {
+          "title": "Cálculo instantáneo sin errores",
+          "description": "IVA, IRPF y neto a cobrar calculados al momento. Todos los tipos vigentes en 2026. Desde base, total o neto deseado — sin Excel, sin fallos de redondeo."
+        },
+        "card2": {
+          "title": "Retenciones que Hacienda aprobaría",
+          "description": "Cálculo exacto sobre base imponible — como exige la AEAT. 15% estándar, 7% nuevos autónomos, 0% particulares. Sin confusiones, sin inspecciones."
+        },
+        "card3": {
+          "title": "Y cuando factures, ya está todo calculado",
+          "description": "Esta calculadora es de Invoo, el software que calcula IVA e IRPF automáticamente en cada factura. Tú escribes el importe — nosotros hacemos las cuentas y mandamos la factura. Sin pensar, sin dudar."
+        }
       },
-      "benefits": [
-        "Cálculo instantáneo de IVA, IRPF y neto a cobrar",
-        "Actualizada con los tipos vigentes en 2026",
-        "Calcula desde base, total o neto deseado",
-        "Sin registro ni datos personales requeridos",
-        "Optimizada para autónomos y profesionales",
-        "Evita errores en tus facturas"
-      ],
       "faq": {
-        "title": "Preguntas frecuentes sobre facturas",
         "q1": {
           "question": "¿Cómo se calcula el total de una factura con IVA e IRPF?",
           "answer": "El total de la factura es Base + IVA. El neto que cobras es: Base + IVA - IRPF. Por ejemplo: con 1.000€ de base, 21% IVA y 15% IRPF: Total = 1.000 + 210 = 1.210€. Neto = 1.210 - 150 = 1.060€."
@@ -2192,7 +2231,36 @@
           "question": "¿Quién debe aplicar retención de IRPF en sus facturas?",
           "answer": "Los profesionales autónomos dados de alta en actividades de la sección 2ª del IAE (actividades profesionales) cuando facturan a empresas o profesionales. Los autónomos con actividades empresariales (sección 1ª) generalmente no aplican retención."
         }
-      }
+      },
+      "info": {
+        "title": "Entender",
+        "titleHighlight": "IVA e IRPF en facturas",
+        "description": "Dos impuestos diferentes que afectan a tus facturas de manera distinta:",
+        "pillar1": {
+          "title": "IVA: Facturas a empresas",
+          "description": "Cuando facturas a empresas con CIF, aplicas IVA (21%, 10% o 4%). Ellas lo deducen, tú lo declaras trimestralmente en el Modelo 303. Es neutral para ambos."
+        },
+        "pillar2": {
+          "title": "IVA: Facturas a particulares",
+          "description": "También aplicas IVA a particulares (con DNI/NIE), pero ellos no pueden deducirlo. Tú lo declaras igual en el 303 cada trimestre."
+        },
+        "pillar3": {
+          "title": "IRPF: Solo facturas a empresas",
+          "description": "La retención de IRPF (7% o 15%) solo aplica cuando facturas a empresas. Es un adelanto de tu renta — lo que te retienen ahora se descuenta después en la declaración."
+        },
+        "pillar4": {
+          "title": "IRPF: Nada en particulares",
+          "description": "Las facturas a particulares no llevan retención de IRPF. Cobras el total (base + IVA) sin retenciones. Luego declaras tus ingresos anuales en la renta."
+        }
+      },
+      "finalCta": {
+        "title": "Deja de calcular.",
+        "titleHighlight": "Empieza a facturar.",
+        "description": "Con Invoo facturas en 30 segundos — IVA e IRPF calculados automáticamente, cliente facturado al instante, gestoría conectada en tiempo real. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
+      },
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre facturas con IVA e IRPF"
     },
     "irpfAutonomos": {
       "meta": {
@@ -2272,59 +2340,74 @@
         "amountTooLarge": "El importe excede el máximo permitido"
       },
       "howTo": {
-        "title": "Cómo calcular tu IRPF de autónomo",
+        "title": "Cómo calcular",
+        "titleHighlight": "tu IRPF de autónomo",
         "schemaName": "Cómo calcular el IRPF para autónomos",
         "description": "El IRPF es un impuesto progresivo que grava tus rendimientos. Sigue estos pasos para estimarlo:",
-        "step1": {
+        "pillar1": {
           "title": "Introduce tus ingresos brutos",
           "description": "Es el total facturado durante el año antes de impuestos. Suma todas tus facturas emitidas."
         },
-        "step2": {
+        "pillar2": {
           "title": "Resta los gastos deducibles",
           "description": "Incluye alquiler de local, suministros, material, seguros, formación y otros gastos vinculados a tu actividad."
         },
-        "step3": {
+        "pillar3": {
           "title": "Indica la cuota de autónomos",
           "description": "La cuota pagada a la Seguridad Social es 100% deducible del rendimiento neto."
         },
-        "step4": {
+        "pillar4": {
           "title": "Revisa tu situación personal",
           "description": "El mínimo personal y familiar reduce la base sobre la que tributas. Más hijos = menos impuestos."
         }
       },
       "tramos": {
-        "title": "Tramos del IRPF 2024-2026",
+        "title": "Tramos del IRPF",
+        "titleHighlight": "2024-2026",
         "description": "El IRPF es un impuesto progresivo con 6 tramos. Cada tramo aplica un tipo diferente sobre la parte de renta que cae en él, no sobre el total.",
-        "tramo1": {
+        "pillar1": {
           "title": "Hasta 12.450€: 19%",
           "description": "Primer tramo. Los primeros 12.450€ de base liquidable tributan al 19%. Todos los contribuyentes pasan por este tramo."
         },
-        "tramo2": {
+        "pillar2": {
           "title": "12.450€ - 20.200€: 24%",
           "description": "Segundo tramo. La renta entre estos importes tributa al 24%. Solo la parte que excede 12.450€."
         },
-        "tramo3": {
+        "pillar3": {
           "title": "20.200€ - 35.200€: 30%",
           "description": "Tercer tramo. Tipo del 30% para rentas medias. Aplica solo a la parte que supera los 20.200€."
         },
-        "tramo4": {
+        "pillar4": {
           "title": "Desde 35.200€: 37-47%",
           "description": "Tramos superiores para rentas altas: 37% (35.200-60.000€), 45% (60.000-300.000€) y 47% (más de 300.000€)."
         }
       },
-      "whyUse": {
-        "title": "¿Por qué usar nuestra calculadora de IRPF?"
+      "benefits": {
+        "title": "¿Por qué usar",
+        "titleHighlight": "nuestra calculadora?",
+        "description": "Diseñada para autónomos que quieren planificar su fiscalidad con confianza.",
+        "card1": {
+          "title": "Fiscal 2026 sin estrés",
+          "description": "Cálculos con tramos oficiales 2026. Sabes exactamente cuánto pagarás en la renta. Sin ansiedad ante Hacienda, sin sorpresas de última hora."
+        },
+        "card2": {
+          "title": "Deducciones que tu gestoría aprobaría",
+          "description": "Mínimo personal, gastos de difícil justificación, hijos a cargo. Cálculo igual que haría tu asesor — sin errores que corregir después."
+        },
+        "card3": {
+          "title": "Y cuando factures, tu gestoría ya está conectada",
+          "description": "Esta calculadora es de Invoo, el software que conecta tu facturación con tu gestoría en tiempo real. Tus retenciones se calculan solas al facturar — sin emails, sin exportar nada."
+        }
       },
-      "benefits": [
-        "Tramos fiscales actualizados para 2024, 2025 y 2026",
-        "Incluye el 5% de gastos de difícil justificación automáticamente",
-        "Calcula el mínimo personal según tu edad (mayor de 65 o 75)",
-        "Deducciones por hijos a cargo, incluyendo menores de 3 años",
-        "Compara retenciones practicadas vs cuota real de IRPF",
-        "Descubre si te saldrá a pagar o a devolver en la renta"
-      ],
+      "finalCta": {
+        "title": "Deja de calcular.",
+        "titleHighlight": "Empieza a facturar.",
+        "description": "Con Invoo facturas en 30 segundos — solo facturación, sin funciones que no usas. Tus retenciones se calculan solas, tu gestoría ve todo en tiempo real, y cumples con Verifactu sin pensar. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
+      },
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre IRPF para autónomos",
       "faq": {
-        "title": "Preguntas frecuentes sobre IRPF para autónomos",
         "q1": {
           "question": "¿Cuánto IRPF paga un autónomo?",
           "answer": "Depende de tus rendimientos netos. Con 30.000€ de rendimiento neto y sin deducciones especiales, el IRPF ronda los 4.500-5.500€ (tipo efectivo ~15-18%). Con hijos a cargo o más de 65 años, pagas menos gracias a los mínimos."
@@ -2441,32 +2524,34 @@
         "amountTooLarge": "El importe excede el máximo permitido"
       },
       "howTo": {
-        "title": "Cómo calcular tu sueldo neto de autónomo",
+        "title": "Cómo calcular",
+        "titleHighlight": "tu sueldo neto de autónomo",
         "schemaName": "Cómo calcular el sueldo neto de un autónomo en España",
         "description": "El sueldo neto de un autónomo es lo que realmente te queda después de pagar impuestos y cotizaciones. Sigue estos pasos:",
-        "step1": {
+        "pillar1": {
           "title": "Introduce tu facturación",
           "description": "Es el total facturado durante el año antes de impuestos (sin IVA). Suma todas tus facturas emitidas."
         },
-        "step2": {
+        "pillar2": {
           "title": "Resta los gastos deducibles",
           "description": "Incluye alquiler, suministros, material, seguros, formación, gestoría y otros gastos vinculados a tu actividad."
         },
-        "step3": {
+        "pillar3": {
           "title": "Indica tu situación de autónomo",
           "description": "Si eres nuevo autónomo puedes beneficiarte de la Tarifa Plana (80€/mes) o Cuota Cero según tu comunidad."
         },
-        "step4": {
+        "pillar4": {
           "title": "Revisa tu sueldo neto",
           "description": "La calculadora te mostrará tu sueldo neto mensual y anual, con el desglose de cuota de autónomos e IRPF."
         }
       },
       "deducciones": {
-        "title": "Qué deducciones aplican a tu sueldo neto",
+        "title": "Qué deducciones aplican",
+        "titleHighlight": "a tu sueldo neto",
         "description": "Tu sueldo neto depende de dos grandes deducciones obligatorias: la cuota de autónomos y el IRPF. Conocerlas te ayuda a planificar mejor.",
         "item1": {
           "title": "Cuota de Autónomos",
-          "description": "Cotización mensual a la Seguridad Social según tus ingresos reales. Cubre sanidad, baja laboral, paro del autónomo y jubilación. En 2025 oscila entre 230€ y 500€+/mes."
+          "description": "Cotización mensual a la Seguridad Social según tus ingresos reales. Cubre sanidad, baja laboral, paro del autónomo y jubilación. En 2026 oscila entre 205€ y 607€/mes."
         },
         "item2": {
           "title": "IRPF (Impuesto sobre la Renta)",
@@ -2478,7 +2563,7 @@
         },
         "item4": {
           "title": "Bonificaciones disponibles",
-          "description": "Tarifa Plana (80€/mes 12 meses) para nuevos autónomos. Cuota Cero en Madrid, Andalucía, Valencia y otras comunidades. Mínimo personal y familiar en IRPF."
+          "description": "Tarifa Plana (80€/mes 12 meses) para nuevos autónomos. Cuota Cero activa en Madrid, Andalucía, Aragón y Cantabria. Mínimo personal y familiar en IRPF."
         }
       },
       "whyUse": {
@@ -2492,8 +2577,32 @@
         "Compara diferentes escenarios: con y sin gastos, nuevo vs establecido",
         "Resultados instantáneos sin registro ni límites de uso"
       ],
+      "benefitsSection": {
+        "title": "¿Por qué usar",
+        "titleHighlight": "nuestra calculadora?",
+        "description": "Diseñada para autónomos que quieren saber cuánto ganan realmente sin sorpresas.",
+        "card1": {
+          "title": "Todo en un solo cálculo",
+          "description": "Cuota de autónomos + IRPF + bonificaciones en tiempo real. No necesitas tres calculadoras diferentes para saber tu sueldo neto real."
+        },
+        "card2": {
+          "title": "Incluye Tarifa Plana y Cuota Cero",
+          "description": "La calculadora aplica automáticamente las bonificaciones si eres nuevo autónomo. Sabes exactamente cuánto ahorras el primer año."
+        },
+        "card3": {
+          "title": "Y cuando factures, tu gestoría ya está conectada",
+          "description": "Esta calculadora es de Invoo, el software que conecta tu facturación con tu gestoría en tiempo real. Tus impuestos se calculan solos al facturar — sin emails, sin exportar nada."
+        }
+      },
+      "finalCta": {
+        "title": "Deja de calcular.",
+        "titleHighlight": "Empieza a facturar.",
+        "description": "Con Invoo facturas en 30 segundos — solo facturación, sin funciones que no usas. Tu cuota y retenciones se calculan solas, tu gestoría ve todo en tiempo real, y cumples con Verifactu sin pensar. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
+      },
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre el sueldo neto de autónomos",
       "faq": {
-        "title": "Preguntas frecuentes sobre el sueldo neto de autónomos",
         "q1": {
           "question": "¿Cuánto gana realmente un autónomo que factura 30.000€?",
           "answer": "Con 30.000€ de facturación anual y gastos típicos de 3.000€, un autónomo establecido tendría un sueldo neto aproximado de 17.000-19.000€ anuales (~1.500€/mes). Un nuevo autónomo con Tarifa Plana podría llegar a 20.000-21.000€ netos gracias al ahorro en cuota."
@@ -2516,7 +2625,7 @@
         },
         "q6": {
           "question": "¿Qué comunidades autónomas tienen Cuota Cero?",
-          "answer": "A fecha de enero 2026, ofrecen Cuota Cero: Madrid (24 meses), Andalucía, Aragón, Cantabria, Castilla-La Mancha (24 meses), Castilla y León, Comunidad Valenciana, Extremadura, Galicia, La Rioja, Murcia, Canarias e Islas Baleares. Los requisitos y duración varían por comunidad. Estos programas están sujetos a cambios: verifica siempre con tu comunidad autónoma antes de solicitarlo."
+          "answer": "A fecha de enero 2026, MANTIENEN ACTIVA la Cuota Cero: Madrid (24 meses), Andalucía (12 meses, solicitudes hasta sept 2026), Aragón y Cantabria. Otras comunidades como Castilla-La Mancha, Castilla y León, Valencia, Extremadura, Galicia, La Rioja, Murcia, Canarias y Baleares cerraron sus convocatorias en 2025. Verifica siempre con tu comunidad autónoma antes de solicitarlo, ya que los programas y plazos cambian frecuentemente."
         }
       }
     },
@@ -2567,35 +2676,37 @@
         "invalidPercentage": "Introduce un porcentaje entre 0 y 100"
       },
       "howTo": {
-        "title": "Cómo calcular tu precio por hora (sin quedarte corto)",
+        "title": "Cómo calcular tu precio por hora",
+        "titleHighlight": "(sin quedarte corto)",
         "schemaName": "Cómo calcular el precio por hora de un autónomo en España",
         "description": "Calcular tu tarifa horaria es la diferencia entre tener un negocio rentable o trabajar más que un empleado por menos dinero. Evita el error #1 de los autónomos: calcular solo 'lo que necesito para vivir'.",
-        "step1": {
+        "pillar1": {
           "title": "Define tu sueldo neto objetivo (sin infravalorarte)",
           "description": "Piensa como empleado: ¿cuánto ganarías trabajando para otro? Ahora añade +20% por asumir riesgos. Por ejemplo, si un empleado de tu sector gana 30.000€ brutos (≈22.000€ netos), tú deberías aspirar a 24.000-26.000€ netos."
         },
-        "step2": {
+        "pillar2": {
           "title": "Cuenta TODAS tus horas (no solo las facturables)",
           "description": "Si trabajas 40h/semana, probablemente solo 25-30h son facturables. El resto es emails, reuniones, comercial, administración. Indica tus horas TOTALES de trabajo."
         },
-        "step3": {
+        "pillar3": {
           "title": "Estima tus gastos reales",
           "description": "Alquiler/coworking, software, gestoría (60-100€/mes), seguros, material, formación, marketing. Servicios digitales: 15-25%. Con oficina: 30-50%. Si no estás seguro, pon 20-25%."
         },
-        "step4": {
+        "pillar4": {
           "title": "Obtén tu tarifa mínima (y negocia por encima)",
           "description": "La calculadora te muestra el precio MÍNIMO. Este es tu 'no puedo bajar de aquí'. Idealmente factura 10-20% por encima para tener margen. Si un cliente no puede pagar tu tarifa mínima, no es tu cliente ideal."
         }
       },
       "factors": {
-        "title": "Por qué tu precio por hora debe ser tan alto",
+        "title": "Por qué tu precio",
+        "titleHighlight": "debe ser tan alto",
         "description": "De cada euro que facturas, solo te llevas 50-65 céntimos netos. El resto desaparece antes de llegar a tu bolsillo:",
         "irpf": {
           "title": "IRPF Progresivo (19-47%)",
           "description": "Hacienda se lleva entre el 19% y el 47% de tus beneficios según cuánto ganes. A más facturas, más pagas. Por eso muchos autónomos se sorprenden en la declaración anual."
         },
         "cuota": {
-          "title": "Cuota de Autónomos (230-530€/mes)",
+          "title": "Cuota de Autónomos (205-607€/mes)",
           "description": "Con el sistema de cotización por tramos 2026, pagas entre 2.760€ y 6.360€ al año. Un empleado no paga esto: su empresa lo cubre. Tú eres tu propia empresa."
         },
         "gastos": {
@@ -2649,19 +2760,32 @@
         },
         "note": "Madrid y Barcelona suelen pagar 20-30% más. Clientes internacionales (UK, Alemania, EEUU) pueden pagar 2-3× más."
       },
-      "whyUse": {
-        "title": "¿Por qué usar nuestra calculadora de precio por hora?"
+      "benefits": {
+        "title": "¿Por qué usar",
+        "titleHighlight": "nuestra calculadora?",
+        "description": "La única herramienta que te muestra el precio real que necesitas cobrar para vivir de tu trabajo.",
+        "card1": {
+          "title": "Cálculo realista con todos los impuestos",
+          "description": "IRPF progresivo español calculado con precisión. Incluye cuota de autónomos según tus ingresos reales y gastos deducibles. No estimaciones genéricas."
+        },
+        "card2": {
+          "title": "Tarifa horaria, diaria y mensual",
+          "description": "Te mostramos tu tarifa por hora, día (8h) y facturación mensual necesaria. Desglose completo: ves exactamente a dónde va cada euro que facturas."
+        },
+        "card3": {
+          "title": "Personalizable a tu situación real",
+          "description": "Ajusta horas semanales, vacaciones y porcentaje de gastos. Porque tu negocio no es igual que el de otros — tu tarifa tampoco debería serlo."
+        }
       },
-      "benefits": [
-        "Cálculo realista que incluye todos los impuestos y gastos",
-        "IRPF progresivo español calculado con precisión",
-        "Considera la cuota de autónomos según tus ingresos",
-        "Tarifa diaria y mensual además de la horaria",
-        "Desglose completo: ves a dónde va cada euro que facturas",
-        "Ajusta horas, vacaciones y gastos según tu situación real"
-      ],
+      "finalCta": {
+        "title": "Deja de calcular.",
+        "titleHighlight": "Empieza a facturar.",
+        "description": "Con Invoo facturas en 30 segundos — solo facturación, sin funciones que no usas. Tu tarifa se guarda automáticamente, tu gestoría ve todo en tiempo real, y cumples con Verifactu sin pensar. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
+      },
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre precio por hora",
       "faq": {
-        "title": "Preguntas frecuentes sobre precio por hora",
         "q1": {
           "question": "¿Cuánto debería cobrar por hora como autónomo?",
           "answer": "Depende de tu sector, experiencia y sueldo neto objetivo. Un desarrollador junior podría cobrar 30-50€/h, mientras que uno senior puede superar los 80-100€/h. Un consultor o diseñador experimentado puede facturar entre 60-150€/h. Usa esta calculadora introduciendo tu sueldo neto deseado para obtener tu tarifa óptima."
@@ -2779,79 +2903,74 @@
         "amountTooLarge": "El importe excede el máximo permitido"
       },
       "howTo": {
-        "title": "Cómo calcular tu Modelo 303",
+        "title": "Cómo calcular",
+        "titleHighlight": "tu Modelo 303",
         "schemaName": "Cómo calcular la declaración trimestral de IVA",
         "description": "El Modelo 303 es la autoliquidación trimestral del IVA. Sigue estos pasos para calcularlo:",
-        "step1": {
+        "pillar1": {
           "title": "Suma tus ventas por tipo de IVA",
           "description": "Agrupa las bases imponibles de tus facturas emitidas según el tipo de IVA: 21%, 10% o 4%."
         },
-        "step2": {
+        "pillar2": {
           "title": "Suma tus gastos deducibles",
           "description": "Agrupa las bases de tus facturas de gastos. Solo incluye gastos relacionados con tu actividad económica."
         },
-        "step3": {
+        "pillar3": {
           "title": "Añade bienes de inversión",
           "description": "Si compraste equipos o maquinaria, añade el IVA soportado como deducción adicional."
         },
-        "step4": {
+        "pillar4": {
           "title": "Aplica compensaciones previas",
           "description": "Si tienes saldo negativo de trimestres anteriores, puedes compensarlo reduciendo lo que ingresas."
         }
       },
       "concepts": {
-        "title": "Conceptos clave del Modelo 303",
+        "title": "Conceptos clave",
+        "titleHighlight": "del Modelo 303",
         "description": "Entender estos conceptos es fundamental para presentar correctamente tu declaración de IVA:",
-        "ivaRepercutido": {
+        "pillar1": {
           "title": "IVA Repercutido",
           "description": "Es el IVA que cobras a tus clientes en las facturas de venta. Se corresponde con las casillas 01-09 del modelo."
         },
-        "ivaSoportado": {
+        "pillar2": {
           "title": "IVA Soportado Deducible",
           "description": "Es el IVA que pagas en tus gastos de actividad. Solo es deducible si la factura está a tu nombre y vinculada a tu negocio."
         },
-        "resultado": {
+        "pillar3": {
           "title": "Resultado de la Liquidación",
           "description": "IVA Repercutido - IVA Soportado = Resultado. Si es positivo, pagas. Si es negativo, compensas o pides devolución."
         },
-        "compensacion": {
+        "pillar4": {
           "title": "Compensación",
           "description": "Si un trimestre te sale negativo, puedes arrastrar ese saldo para reducir lo que pagas en trimestres posteriores."
         }
       },
-      "deadlines": {
-        "title": "Plazos de presentación 2026",
-        "description": "El Modelo 303 se presenta trimestralmente. Estos son los plazos para el año 2026:",
-        "q1": {
-          "period": "1T (Enero - Marzo)",
-          "deadline": "1-20 de Abril 2026"
+      "benefits": {
+        "title": "¿Por qué usar",
+        "titleHighlight": "nuestra calculadora?",
+        "description": "Diseñada para autónomos que quieren declarar el IVA sin errores ni estrés.",
+        "card1": {
+          "title": "Declaración 303 sin quebraderos de cabeza",
+          "description": "Cálculos precisos de IVA repercutido y soportado. Sabes exactamente cuánto ingresar a Hacienda. Sin ansiedad ante el trimestre, sin errores de casillas."
         },
-        "q2": {
-          "period": "2T (Abril - Junio)",
-          "deadline": "1-20 de Julio 2026"
+        "card2": {
+          "title": "Todos los tipos de IVA en un solo sitio",
+          "description": "21%, 10%, 4%, bienes de inversión y compensaciones. Todo lo que necesitas para completar el modelo — sin calculadoras de bolsillo ni Excel complicado."
         },
-        "q3": {
-          "period": "3T (Julio - Septiembre)",
-          "deadline": "1-20 de Octubre 2026"
-        },
-        "q4": {
-          "period": "4T (Octubre - Diciembre)",
-          "deadline": "1-30 de Enero 2027"
+        "card3": {
+          "title": "Y cuando factures, el IVA se declara solo",
+          "description": "Esta calculadora es de Invoo, el software que conecta tu facturación con tu gestoría. Tus modelos 303 se generan automáticamente — sin copiar cifras, sin papeles, sin emails."
         }
       },
-      "whyUse": {
-        "title": "¿Por qué usar nuestra calculadora de Modelo 303?"
+      "finalCta": {
+        "title": "Deja de calcular IVA.",
+        "titleHighlight": "Empieza a facturar.",
+        "description": "Con Invoo facturas en 30 segundos — tu IVA se contabiliza automáticamente, tu gestoría ve el Modelo 303 en tiempo real, y cumples con Verifactu sin pensar. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
       },
-      "benefits": [
-        "Cálculo instantáneo de IVA repercutido y soportado",
-        "Soporte para los tres tipos de IVA: 21%, 10% y 4%",
-        "Incluye bienes de inversión y compensaciones",
-        "Te indica si el resultado es a ingresar o compensar",
-        "Desglose detallado por cada tipo de operación",
-        "Gratis, sin registro y actualizada para 2026"
-      ],
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre el Modelo 303",
       "faq": {
-        "title": "Preguntas frecuentes sobre el Modelo 303",
         "q1": {
           "question": "¿Cuándo hay que presentar el Modelo 303?",
           "answer": "Trimestralmente: del 1 al 20 de abril (1T), julio (2T), octubre (3T) y del 1 al 30 de enero del año siguiente (4T). Si la fecha límite cae en fin de semana o festivo, se amplía al siguiente día hábil. Existe la opción de domiciliar el pago, cuyo plazo acaba 5 días antes."
@@ -2943,42 +3062,44 @@
         "amountTooLarge": "El importe excede el máximo permitido"
       },
       "howTo": {
-        "title": "Cómo calcular tu Modelo 130",
+        "title": "Cómo calcular",
+        "titleHighlight": "tu Modelo 130",
         "schemaName": "Cómo calcular el pago fraccionado de IRPF",
         "description": "El Modelo 130 es el pago trimestral a cuenta del IRPF para autónomos. Sigue estos pasos:",
-        "step1": {
+        "pillar1": {
           "title": "Suma tus ingresos acumulados",
           "description": "Suma todas las facturas emitidas desde el 1 de enero hasta el final del trimestre que declaras."
         },
-        "step2": {
+        "pillar2": {
           "title": "Resta tus gastos deducibles",
           "description": "Incluye gastos vinculados a tu actividad: alquiler, suministros, material, cuota de autónomos, etc."
         },
-        "step3": {
+        "pillar3": {
           "title": "Deduce pagos anteriores",
           "description": "Resta lo que ya pagaste en los Modelo 130 de trimestres anteriores de este mismo año."
         },
-        "step4": {
+        "pillar4": {
           "title": "Deduce retenciones",
           "description": "Resta las retenciones de IRPF que te han practicado en tus facturas (7% o 15%)."
         }
       },
       "concepts": {
-        "title": "Conceptos clave del Modelo 130",
+        "title": "Conceptos clave",
+        "titleHighlight": "del Modelo 130",
         "description": "Entender estos conceptos te ayudará a presentar correctamente tu declaración trimestral de IRPF:",
-        "pagoFraccionado": {
+        "pillar1": {
           "title": "Pago Fraccionado",
           "description": "Es un anticipo trimestral del IRPF que pagarás en la Renta. Equivale al 20% de tu beneficio acumulado menos deducciones."
         },
-        "rendimientoNeto": {
+        "pillar2": {
           "title": "Rendimiento Neto",
           "description": "Ingresos brutos menos gastos deducibles. Es la base sobre la que se calcula el 20% del pago fraccionado."
         },
-        "retenciones": {
+        "pillar3": {
           "title": "Retenciones IRPF",
           "description": "El IRPF que retienen tus clientes empresa al pagarte (7% o 15%). Se descuenta de tu pago fraccionado."
         },
-        "exencion": {
+        "pillar4": {
           "title": "Exención 70%",
           "description": "Si más del 70% de tus ingresos tienen retención, puedes estar exento de presentar el Modelo 130."
         }
@@ -3009,19 +3130,32 @@
         "condition1": "Más del 70% de tus ingresos de actividades profesionales tienen retención de IRPF",
         "condition2": "Tributas en estimación directa (simplificada o normal) en actividades profesionales"
       },
-      "whyUse": {
-        "title": "¿Por qué usar nuestra calculadora de Modelo 130?"
+      "benefits": {
+        "title": "¿Por qué usar",
+        "titleHighlight": "nuestra calculadora?",
+        "description": "La herramienta más completa para calcular tu pago fraccionado de IRPF.",
+        "card1": {
+          "title": "Cálculo instantáneo con deducciones",
+          "description": "Pago fraccionado de IRPF al instante. Incluye deducciones por pagos anteriores y retenciones de facturas automáticamente."
+        },
+        "card2": {
+          "title": "Detecta si estás exento",
+          "description": "Analiza tus retenciones y te avisa si podrías estar exento de presentar el Modelo 130 (regla del 70%)."
+        },
+        "card3": {
+          "title": "Y cuando factures, el 130 se rellena solo",
+          "description": "Esta calculadora es de Invoo, el software que conecta tu facturación con tu gestoría. Tus modelos 130 se generan automáticamente con tus ingresos y retenciones — sin copiar cifras, sin declaraciones manuales."
+        }
       },
-      "benefits": [
-        "Cálculo instantáneo del pago fraccionado de IRPF",
-        "Incluye deducciones por pagos anteriores y retenciones",
-        "Detecta si podrías estar exento de presentarlo",
-        "Te indica el resultado a ingresar o cero",
-        "Desglose detallado del cálculo paso a paso",
-        "Gratis, sin registro y actualizada para 2026"
-      ],
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre el Modelo 130",
+      "finalCta": {
+        "title": "Deja de calcular.",
+        "titleHighlight": "Empieza a facturar.",
+        "description": "Con Invoo facturas en 30 segundos y el Modelo 130 se rellena automáticamente con tus datos. Tu gestoría ve todo en tiempo real y cumples con Verifactu sin pensar.",
+        "cta": "Únete a la lista de espera"
+      },
       "faq": {
-        "title": "Preguntas frecuentes sobre el Modelo 130",
         "q1": {
           "question": "¿Quién tiene que presentar el Modelo 130?",
           "answer": "Todos los autónomos en estimación directa (simplificada o normal) que desarrollen actividades económicas. La excepción: si más del 70% de tus ingresos profesionales ya tienen retención de IRPF (facturas a empresas con retención del 7% o 15%), puedes estar exento."
@@ -3176,9 +3310,26 @@
         }
       },
       "howTo": {
-        "title": "Cómo usar la calculadora de gastos deducibles",
+        "title": "Cómo usar la",
+        "titleHighlight": "calculadora de gastos deducibles",
         "schemaName": "Cómo calcular tus gastos deducibles como autónomo",
         "description": "Calcula cuánto ahorras en impuestos con tus gastos de actividad en 4 sencillos pasos:",
+        "pillar1": {
+          "title": "Indica tu rendimiento neto",
+          "description": "Introduce tus ingresos menos gastos para calcular el GDJ (5% automático, máximo 2.000€/año)"
+        },
+        "pillar2": {
+          "title": "Selecciona tu tipo marginal",
+          "description": "Elige tu tramo de IRPF (19%, 24%, 30%, 37% o 45%) para calcular el ahorro fiscal real según tus ingresos"
+        },
+        "pillar3": {
+          "title": "Introduce tus gastos por categoría",
+          "description": "Añade los importes de cada tipo de gasto profesional con IVA incluido: oficina, equipos, software, alquiler, formación, seguros y cuota de autónomos"
+        },
+        "pillar4": {
+          "title": "Revisa el desglose y ahorro",
+          "description": "Consulta cuánto ahorras en IVA recuperable e IRPF deducible con cada gasto, más el ahorro fiscal total estimado"
+        },
         "step1": {
           "title": "Indica tu rendimiento neto",
           "description": "Introduce tus ingresos menos gastos para calcular el GDJ"
@@ -3199,17 +3350,43 @@
       "whyUse": {
         "title": "¿Por qué usar nuestra calculadora de gastos deducibles?"
       },
-      "benefits": [
-        "Calcula el IVA recuperable de cada categoría de gasto",
-        "Muestra los gastos deducibles en IRPF con porcentajes oficiales",
-        "Incluye el cálculo automático del GDJ (5%, máx. 2.000€)",
-        "Desglose detallado por cada categoría de gasto",
-        "Ahorro fiscal total estimado según tu tipo marginal",
-        "Gratis, sin registro y actualizada para 2026"
-      ],
+      "benefits": {
+        "title": "¿Por qué usar nuestra",
+        "titleHighlight": "calculadora de gastos deducibles?",
+        "description": "Ahorra tiempo y maximiza tus deducciones fiscales con nuestra herramienta gratuita",
+        "card1": {
+          "title": "Cálculo instantáneo y preciso",
+          "description": "Resultados en tiempo real con IVA recuperable, IRPF deducible y GDJ automático según normativa vigente 2026"
+        },
+        "card2": {
+          "title": "Desglose detallado por categoría",
+          "description": "Visualiza el ahorro de cada gasto: oficina, equipos, software, alquiler, formación, seguros y más con porcentajes oficiales"
+        },
+        "card3": {
+          "title": "Y cuando factures, tus gastos se registran al instante",
+          "description": "Esta calculadora es de Invoo, el software que registra gastos al momento, calcula el IVA deducible automáticamente, y tu gestoría los ve en tiempo real. Sin papeles, sin emails."
+        }
+      },
       "concepts": {
-        "title": "Conceptos clave de gastos deducibles",
+        "title": "Conceptos clave de",
+        "titleHighlight": "gastos deducibles",
         "description": "Entender estos conceptos te ayudará a maximizar tus deducciones fiscales:",
+        "pillar1": {
+          "title": "IVA Deducible",
+          "description": "Es el IVA que pagas en tus gastos de actividad y que puedes recuperar en el Modelo 303. Solo es deducible si tienes factura completa."
+        },
+        "pillar2": {
+          "title": "Gastos deducibles en IRPF",
+          "description": "Son los gastos que reducen tu base imponible del IRPF. Deben ser necesarios para tu actividad y estar correctamente justificados."
+        },
+        "pillar3": {
+          "title": "Gastos de Difícil Justificación (GDJ)",
+          "description": "Deducción automática del 5% sobre el rendimiento neto, con un máximo de 2.000€/año. Solo aplica en estimación directa simplificada."
+        },
+        "pillar4": {
+          "title": "Proporcionalidad de uso",
+          "description": "Algunos gastos (teléfono, vehículo, suministros) solo permiten deducir el porcentaje de uso profesional, típicamente el 50% si hay uso mixto."
+        },
         "ivaDeducible": {
           "title": "IVA Deducible",
           "description": "Es el IVA que pagas en tus gastos de actividad y que puedes recuperar en el Modelo 303. Solo es deducible si tienes factura completa."
@@ -3228,7 +3405,6 @@
         }
       },
       "faq": {
-        "title": "Preguntas frecuentes sobre gastos deducibles",
         "q1": {
           "question": "¿Qué gastos puede deducir un autónomo?",
           "answer": "Los autónomos pueden deducir gastos necesarios para su actividad: material de oficina, equipos informáticos, software, alquiler de local, suministros (si trabajan desde casa), transporte, formación profesional, seguros, y la propia cuota de autónomos. La clave es que estén directamente relacionados con la actividad."
@@ -3251,8 +3427,16 @@
         },
         "q6": {
           "question": "¿Puedo deducir las comidas con clientes?",
-          "answer": "IMPORTANTE: El IVA de comidas y restauración NO es deducible (Art. 96.1.6º LIVA). Solo puedes deducir la base imponible en el IRPF. El gasto debe estar justificado con factura, debe ser fuera de tu municipio de residencia, y el total de estas deducciones no puede superar el 1% de tu facturación anual. Guarda siempre la factura y anota el motivo de la reunión."
+          "answer": "El IVA de comidas NO es deducible cuando se trata de atenciones a clientes (Art. 96.1.6º LIVA). Sin embargo, SÍ es deducible si se trata de gastos de desplazamiento (dietas) fuera de tu municipio de residencia, siempre que cumplan los requisitos de deducibilidad en IRPF. La base imponible puede deducirse en IRPF si está justificada como gasto necesario y no supera el 1% de la facturación anual. Guarda siempre la factura y anota el motivo profesional."
         }
+      },
+      "faqTitle": "Preguntas frecuentes sobre",
+      "faqTitleHighlight": "gastos deducibles",
+      "finalCta": {
+        "title": "Deja de calcular gastos.",
+        "titleHighlight": "Registra gastos al instante.",
+        "description": "Con Invoo registras gastos al momento, el IVA deducible se calcula solo, y tu gestoría los ve en tiempo real. Facturas en 30 segundos, Verifactu automático. €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
       }
     },
     "autonomoVsEmpresa": {
@@ -3360,9 +3544,26 @@
         "amountTooLarge": "El importe excede el máximo permitido"
       },
       "howTo": {
-        "title": "Cómo usar el comparador Autónomo vs SL",
+        "title": "Cómo usar el comparador",
+        "titleHighlight": "Autónomo vs SL",
         "schemaName": "Cómo decidir entre autónomo y Sociedad Limitada",
         "description": "Comparar las dos opciones es muy sencillo. Solo necesitas 4 datos:",
+        "pillar1": {
+          "title": "Introduce tu facturación anual",
+          "description": "Estima cuánto vas a facturar en un año. Es tu volumen de negocio antes de restar gastos."
+        },
+        "pillar2": {
+          "title": "Selecciona el porcentaje de gastos",
+          "description": "Elige qué porcentaje de tu facturación son gastos del negocio (alquiler, material, software, etc.). Si no estás seguro, usa 20-30%."
+        },
+        "pillar3": {
+          "title": "Define tu sueldo mensual deseado",
+          "description": "Si crearas una SL, ¿qué sueldo te gustaría pagar como administrador? Esto afecta al cálculo de SS e IRPF."
+        },
+        "pillar4": {
+          "title": "Indica si es tu primera empresa",
+          "description": "Si nunca has tenido una SL, puedes beneficiarte del tipo reducido del 15% de Impuesto de Sociedades los primeros 2 años (en vez del 25% general)."
+        },
         "step1": {
           "title": "Introduce tu facturación anual",
           "description": "Estima cuánto vas a facturar en un año. Es tu volumen de negocio antes de restar gastos."
@@ -3381,7 +3582,8 @@
         }
       },
       "concepts": {
-        "title": "Conceptos clave para tu decisión",
+        "title": "Conceptos clave",
+        "titleHighlight": "para tu decisión",
         "description": "Entiende las diferencias fundamentales entre ser autónomo y tener una Sociedad Limitada:",
         "autonomo": {
           "title": "Régimen de Autónomos",
@@ -3413,8 +3615,32 @@
         "Recomendación personalizada según tus datos",
         "Gratis, sin registro y actualizada para 2026"
       ],
+      "benefitsCards": {
+        "title": "Por qué usar",
+        "titleHighlight": "nuestro comparador",
+        "description": "Diseñado para ayudarte a tomar la mejor decisión para tu negocio.",
+        "card1": {
+          "title": "Comparación fiscal completa y precisa",
+          "description": "Cálculos exactos de IRPF, cuota de autónomos, Impuesto de Sociedades y Seguridad Social. Incluye costes de gestoría y constitución para que la comparación sea real."
+        },
+        "card2": {
+          "title": "Recomendación basada en tus datos",
+          "description": "No hay reglas mágicas. El punto de equilibrio varía según tu facturación, gastos y sueldo deseado. La calculadora te dice qué es mejor para TU caso concreto."
+        },
+        "card3": {
+          "title": "Y cuando decidas, factura con Invoo",
+          "description": "Seas autónomo o SL, con Invoo facturas en 30 segundos y tu gestoría ve todo en tiempo real. Verifactu incluido. €10.90/mes, sin letra pequeña."
+        }
+      },
+      "finalCta": {
+        "title": "Ya sabes qué te conviene.",
+        "titleHighlight": "Ahora factura sin complicaciones.",
+        "description": "Con Invoo facturas en 30 segundos — solo facturación, sin funciones que no usas. Tu gestoría ve todo en tiempo real, cumples con Verifactu automáticamente. Autónomo o SL, €10.90/mes, todo incluido.",
+        "cta": "Únete a la lista de espera"
+      },
+      "faqTitle": "Preguntas frecuentes",
+      "faqTitleHighlight": "sobre Autónomo vs SL",
       "faq": {
-        "title": "Preguntas frecuentes sobre Autónomo vs SL",
         "q1": {
           "question": "¿A partir de qué ingresos conviene crear una SL?",
           "answer": "No hay una cifra exacta, depende de tu sueldo deseado y gastos. Como regla general, con beneficios netos (después de gastos) superiores a 40.000-50.000€ anuales, la SL suele ser más ventajosa por el diferencial entre IRPF (hasta 47%) e IS (25%). Usa la calculadora con tus datos reales para saberlo."

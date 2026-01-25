@@ -5,7 +5,7 @@ export { CalculatorSelect } from './CalculatorSelect';
 export { CalculatorRadioGroup } from './CalculatorRadioGroup';
 export { CalculatorResult, SingleResult } from './CalculatorResult';
 export { CalculatorFAQ } from './CalculatorFAQ';
-export { CalculatorHowTo, CalculatorInfoGrid, CalculatorWhyUse } from './CalculatorSEOContent';
+export { CalculatorRelatedTools } from './CalculatorSEOContent';
 
 // Specific Calculators
 export { IVACalculator } from './IVACalculator';

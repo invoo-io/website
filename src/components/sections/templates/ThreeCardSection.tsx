@@ -9,6 +9,11 @@ import {
   Users,
   AlertTriangle,
   Clock,
+  Zap,
+  CheckCircle,
+  Gift,
+  Calculator,
+  Shield,
   LucideIcon
 } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -25,6 +30,11 @@ const iconMap: Record<string, LucideIcon> = {
   Users,
   AlertTriangle,
   Clock,
+  Zap,
+  CheckCircle,
+  Gift,
+  Calculator,
+  Shield,
 };
 
 interface CardConfig {
@@ -38,6 +48,7 @@ interface ThreeCardSectionProps {
   translationKey: string;
   cards: [CardConfig, CardConfig, CardConfig];
   iconGradient?: string;
+  cardBackground?: 'primary' | 'tertiary';
 }
 
 export async function ThreeCardSection({
@@ -45,6 +56,7 @@ export async function ThreeCardSection({
   translationKey,
   cards,
   iconGradient = "linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))",
+  cardBackground = 'tertiary', // Default tertiary since section has bg-secondary
 }: ThreeCardSectionProps) {
   const t = await getTranslations({ locale, namespace: translationKey });
 
@@ -65,10 +77,11 @@ export async function ThreeCardSection({
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {cards.map(({ key, icon, gradient }) => {
           const Icon = iconMap[icon];
+          const cardBg = cardBackground === 'tertiary' ? 'bg-background-tertiary' : 'bg-background-primary';
           return (
             <div
               key={key}
-              className="rounded-3xl p-8 bg-background-primary border border-strokes-primary hover:border-accent-blue-main/30 transition-colors"
+              className={`rounded-3xl p-8 ${cardBg} border border-strokes-primary hover:border-accent-blue-main/30 transition-colors`}
             >
               <div
                 className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"

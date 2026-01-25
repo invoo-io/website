@@ -12,6 +12,13 @@ import {
   generateCalculatorHowToSchema,
 } from '@/lib/calculators/schema';
 import { BASE_URL } from '@/lib/constants';
+import { ThreeCardSection } from '@/components/sections/templates/ThreeCardSection';
+import { FourPillarSection } from '@/components/sections/templates/FourPillarSection';
+import FAQSection from '@/components/sections/FAQSection';
+import { FinalCTASection } from '@/components/sections/FinalCTASection';
+import { CalculatorRelatedTools } from '@/components/calculators/CalculatorSEOContent';
+import { getBasePath } from '@/lib/utils';
+import { calculatorIcons } from '@/lib/calculator-icons';
 
 const DynamicCuotaAutonomosCalculator = dynamicImport(
   () => import('@/components/calculators/pages/CuotaAutonomosCalculatorPage').then(mod => mod.CuotaAutonomosCalculatorPageContent),
@@ -51,6 +58,17 @@ export async function generateMetadata({
         es: `${BASE_URL}${esPath}`,
         en: `${BASE_URL}${enPath}`,
         'x-default': `${BASE_URL}${esPath}`,
+      },
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
       },
     },
     openGraph: {
@@ -140,12 +158,36 @@ export default async function CuotaAutonomosCalculatorPage({
     name: t('howTo.schemaName'),
     description: t('howTo.description'),
     steps: [
-      { name: t('howTo.step1.title'), text: t('howTo.step1.description') },
-      { name: t('howTo.step2.title'), text: t('howTo.step2.description') },
-      { name: t('howTo.step3.title'), text: t('howTo.step3.description') },
-      { name: t('howTo.step4.title'), text: t('howTo.step4.description') },
+      { name: t('howTo.pillar1.title'), text: t('howTo.pillar1.description') },
+      { name: t('howTo.pillar2.title'), text: t('howTo.pillar2.description') },
+      { name: t('howTo.pillar3.title'), text: t('howTo.pillar3.description') },
+      { name: t('howTo.pillar4.title'), text: t('howTo.pillar4.description') },
     ],
   });
+
+  const tc = await getTranslations({ locale, namespace: 'calculators.common' });
+
+  // Related calculators data
+  const relatedCalculators = [
+    {
+      name: tc('related.irpfAutonomos.name'),
+      description: tc('related.irpfAutonomos.description'),
+      href: getBasePath(`/${locale}/herramientas/calculadoras/irpf-autonomos`),
+      icon: calculatorIcons.irpfAutonomos,
+    },
+    {
+      name: tc('related.sueldoNetoAutonomo.name'),
+      description: tc('related.sueldoNetoAutonomo.description'),
+      href: getBasePath(`/${locale}/herramientas/calculadoras/sueldo-neto-autonomo`),
+      icon: calculatorIcons.sueldoNetoAutonomo,
+    },
+    {
+      name: tc('related.factura.name'),
+      description: tc('related.factura.description'),
+      href: getBasePath(`/${locale}/herramientas/calculadoras/factura`),
+      icon: calculatorIcons.factura,
+    },
+  ];
 
   return (
     <>
@@ -156,7 +198,88 @@ export default async function CuotaAutonomosCalculatorPage({
 
       <div className="min-h-screen bg-background-primary">
         <Navigation locale={locale} />
+
+        {/* 1. Hero + Calculator */}
         <DynamicCuotaAutonomosCalculator />
+
+        {/* 2. How To Use - bg-secondary */}
+        <div className="bg-background-secondary">
+          <FourPillarSection
+            locale={locale}
+            translationKey="calculators.cuotaAutonomos.howTo"
+            cardBackground="tertiary"
+            pillars={[
+              {
+                key: 'pillar1',
+                icon: 'Calculator',
+                gradient: 'linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))',
+                iconColor: 'var(--accent-blue-main)',
+              },
+              {
+                key: 'pillar2',
+                icon: 'CalendarCheck',
+                gradient: 'linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))',
+                iconColor: 'var(--accent-purple-main)',
+              },
+              {
+                key: 'pillar3',
+                icon: 'Users',
+                gradient: 'linear-gradient(135deg, rgba(255,159,10,0.15), rgba(255,159,10,0.05))',
+                iconColor: 'var(--accent-orange-main)',
+              },
+              {
+                key: 'pillar4',
+                icon: 'FileText',
+                gradient: 'linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))',
+                iconColor: 'var(--accent-green-main)',
+              },
+            ]}
+          />
+        </div>
+
+        {/* 3. Benefits - bg-primary */}
+        <ThreeCardSection
+          locale={locale}
+          translationKey="calculators.cuotaAutonomos.benefits"
+          cards={[
+            {
+              key: 'card1',
+              icon: 'Zap',
+              gradient: 'linear-gradient(135deg, rgba(37,125,254,0.15), rgba(37,125,254,0.05))',
+            },
+            {
+              key: 'card2',
+              icon: 'CheckCircle',
+              gradient: 'linear-gradient(135deg, rgba(121,51,255,0.15), rgba(121,51,255,0.05))',
+            },
+            {
+              key: 'card3',
+              icon: 'Gift',
+              gradient: 'linear-gradient(135deg, rgba(48,209,88,0.15), rgba(48,209,88,0.05))',
+            },
+          ]}
+        />
+
+        {/* 4. FAQ - bg-secondary */}
+        <FAQSection
+          titleKey="calculators.cuotaAutonomos.faqTitle"
+          titleHighlightKey="calculators.cuotaAutonomos.faqTitleHighlight"
+          questionsKey="calculators.cuotaAutonomos.faq"
+          background="primary"
+        />
+
+        {/* 5. Related Calculators */}
+        <CalculatorRelatedTools
+          title={tc('relatedTitle')}
+          calculators={relatedCalculators}
+        />
+
+        {/* 6. Final CTA */}
+        <FinalCTASection
+          locale={locale}
+          translationKey="calculators.cuotaAutonomos.finalCta"
+        />
+
         <Footer locale={locale} />
       </div>
     </>
