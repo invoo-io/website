@@ -28,7 +28,7 @@ export default async function LegalNoticeContent({ locale }: LegalNoticeContentP
   };
 
   return (
-    <section aria-labelledby="legal-notice-title" className="min-h-screen bg-background-primary py-20">
+    <section aria-labelledby="legal-notice-title" className="min-h-screen bg-background-primary pt-40 pb-20">
       <div className="max-w-4xl mx-auto px-6">
         <h1 id="legal-notice-title" className="text-5xl font-bold text-primary mb-6">{t("title")}</h1>
         <p className="text-sm text-secondary mb-12">

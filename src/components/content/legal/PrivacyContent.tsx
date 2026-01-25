@@ -29,7 +29,7 @@ export default async function PrivacyContent({ locale }: PrivacyContentProps) {
   };
 
   return (
-    <section className="min-h-screen bg-background-primary py-20">
+    <section className="min-h-screen bg-background-primary pt-40 pb-20">
       <div className="max-w-4xl mx-auto px-6">
         <h1 className="text-5xl font-bold text-primary mb-6">{t("title")}</h1>
         <p className="text-sm text-secondary mb-12">

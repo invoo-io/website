@@ -90,7 +90,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="min-h-screen bg-background-primary px-6 py-20">
+    <section className="min-h-screen bg-background-primary px-6 pt-40 pb-20">
       <SectionHeader
         size="hero"
         align="center"
