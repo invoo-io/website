@@ -734,33 +734,88 @@
   },
   "about": {
     "metadata": {
-      "title": "Why We Built Invoo | Stop Losing Sundays to Spreadsheets",
-      "description": "We lived the frustration: freelancers losing hours to Excel, accountants chasing invoices. Verifactu was the opportunity. Invoo was born to unite both worlds."
+      "title": "About Invoo | Bringing Calm Back to Invoicing",
+      "description": "We built Invoo to make invoicing invisible. Simple software that connects freelancers and accountants naturally. No complications, no surprises."
     },
-    "header": {
-      "title": "Helping freelancers and gestorías work better together",
-      "description": "Invoo is the gestoría-friendly invoicing platform built to simplify compliance, save time, and strengthen collaboration"
+    "hero": {
+      "title": "Bringing calm back",
+      "titleHighlight": "to invoicing",
+      "description": "Simple software that connects freelancers and accountants naturally. You focus on your work."
     },
-    "block1": {
-      "title": "Born from Real Experience",
-      "description": "When we moved to Spain, we quickly discovered the maze that freelancers navigate daily — endless invoicing, scattered expenses, and complex tax obligations. Every autónomo we met shared the same story: hours lost to paperwork that should take minutes.\nMeanwhile, gestorías told us their side: outdated Excel files, manual data entry, and constant back-and-forth with clients just to get basic information.\nThen Verifactu arrived — a regulatory change that could've made things worse. Instead, we saw opportunity. The perfect moment to build something better.\nThat's how Invoo was born: a platform that speaks both languages — the simplicity freelancers need and the comprehensive data gestorías require. Less time on paperwork, more time on what matters."
-    },
-    "block2": {
-      "title": "Our Vision",
-      "description": "We believe invoicing shouldn't feel like a tax exam. It should just work.\nOur mission is simple: connect freelancers, their clients, and gestorías in one seamless workflow. Professional invoices that create themselves. Verifactu compliance that happens automatically. Gestoría dashboards that update in real-time.\nNo more \"can you resend that invoice from March?\" No more Sunday afternoons lost to Excel. Just smooth, simple, compliant invoicing that everyone can trust."
-    },
-    "block3": {
-      "title": "Why Invoo?",
-      "items": {
-        "item1": "Built for Spanish reality\nNot another generic tool pretending to understand Spain. We know what Modelo 130 means. We get why your gestoría needs that specific CSV format.",
-        "item2": "Verifactu? Already handled\nQR codes, AEAT submission, compliance checks — all automatic. You create invoices, we handle the bureaucracy.",
-        "item3": "Gestorías love us too\nFree access, real-time data, no more chasing documents. We're not replacing gestorías — we're making their work easier.",
-        "item4": "Complexity eliminated\nEvery feature earns its place by saving you time. If it doesn't make your life simpler, it doesn't make it into Invoo."
+    "problem": {
+      "title": "The problem",
+      "titleHighlight": "we saw",
+      "description": "A market where software complicates instead of simplifies",
+      "card1": {
+        "title": "Too much software",
+        "description": "ERPs with 50 features you don't need. CRM, inventory, HR... You just wanted to invoice."
+      },
+      "card2": {
+        "title": "Word won't work anymore",
+        "description": "Your old template won't be legal with Verifactu. July 2027 is around the corner."
+      },
+      "card3": {
+        "title": "Disconnected accountants",
+        "description": "Emails, WhatsApps, lost PDFs. Your accountant chasing documents instead of advising you."
       }
     },
-    "block4": {
-      "title": "Join Us Early",
-      "description": "Invoo launches soon. Right now, we're working hand-in-hand with pioneering freelancers and forward-thinking gestorías to perfect every detail.\nWant to be among the first to escape invoicing chaos? Join our waiting list and get early access when we launch.\nThe future of invoicing in Spain starts here. And it starts with you."
+    "trustTriangle": {
+      "title": "The trust",
+      "titleHighlight": "triangle",
+      "description": "We saw something others don't: software can connect instead of separate",
+      "autonomo": {
+        "label": "Your business",
+        "title": "You want peace of mind",
+        "description": "Whether freelancer or small business, it's the same: invoice fast, comply with taxes, and forget about paperwork."
+      },
+      "invoo": {
+        "label": "Invoo",
+        "title": "The bridge",
+        "description": "We connect both sides. Simplicity for you, data for your accountant."
+      },
+      "gestoria": {
+        "label": "Accountant",
+        "title": "They want efficiency",
+        "description": "See your invoices instantly, no chasing documents, no delays."
+      },
+      "conclusion": "We don't replace your accountant. We make them more efficient."
+    },
+    "beliefs": {
+      "title": "What we",
+      "titleHighlight": "believe",
+      "description": "The principles that guide every decision at Invoo",
+      "belief1": {
+        "title": "Invoicing should be invisible",
+        "description": "The best invoice is one you don't have to think about. Create, send, forget."
+      },
+      "belief2": {
+        "title": "Accountants are valuable",
+        "description": "We don't want to replace them. We want them to have time to actually advise you."
+      },
+      "belief3": {
+        "title": "Complexity is the enemy",
+        "description": "Every feature we DON'T build is a decision we're proud of."
+      },
+      "belief4": {
+        "title": "Compliance is a feature",
+        "description": "Verifactu isn't a problem. It's an opportunity to give you peace of mind."
+      },
+      "belief5": {
+        "title": "Your data is yours",
+        "description": "No selling it, no ads. Your invoicing is private, period."
+      }
+    },
+    "ai": {
+      "eyebrow": "Coming soon",
+      "title": "Even more invisible",
+      "description": "Invoo already makes invoicing as simple as sending a WhatsApp. Soon: create invoices by talking. But first, the basics done perfectly.",
+      "example": "\"Invoice Creative Studio, 1,500 euros, web design, due in 30 days\""
+    },
+    "finalCta": {
+      "title": "Be among the first to",
+      "titleHighlight": "try it",
+      "description": "Create invoices in 30 seconds. Your accountant sees them instantly. Verifactu included. Early access for the first 100 freelancers.",
+      "cta": "Get early access"
     },
     "editorial": {
       "title": "Our Editorial Approach",

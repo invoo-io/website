@@ -543,6 +543,36 @@ export function generateBreadcrumbListSchema(
 }
 
 /**
+ * Generates AboutPage schema for the about/company page
+ * Links to Organization for brand entity signals
+ */
+export function generateAboutPageSchema(locale: string): SchemaOrg {
+  const isSpanish = locale === "es";
+  const url = `${BASE_URL}/${locale}/about`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${url}#aboutpage`,
+    url,
+    name: isSpanish ? "Sobre Invoo" : "About Invoo",
+    description: isSpanish
+      ? "Software simple que conecta autónomos y gestorías de forma natural. Facturación en 30 segundos, Verifactu automático, sin complicaciones."
+      : "Simple software that connects freelancers and accountants naturally. Invoicing in 30 seconds, automatic Verifactu, no complications.",
+    inLanguage: locale,
+    isPartOf: {
+      "@id": WEBSITE_ID,
+    },
+    about: {
+      "@id": ORGANIZATION_ID,
+    },
+    mainEntity: {
+      "@id": ORGANIZATION_ID,
+    },
+  };
+}
+
+/**
  * Generates CollectionPage schema for blog listing and category pages
  */
 export function generateCollectionPageSchema({

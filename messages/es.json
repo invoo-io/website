@@ -734,33 +734,88 @@
   },
   "about": {
     "metadata": {
-      "title": "Por Qué Creamos Invoo | Deja de Perder Domingos en Excel",
-      "description": "Vivimos la frustración: autónomos perdiendo horas en Excel, gestorías persiguiendo facturas. Verifactu fue la oportunidad. Invoo nació para unir ambos mundos."
+      "title": "Sobre Invoo | Devolviendo la Calma a la Facturación",
+      "description": "Construimos Invoo para que facturar sea invisible. Software simple que conecta autónomos y gestorías de forma natural. Sin complicaciones, sin sorpresas."
     },
-    "header": {
-      "title": "Ayudando a autónomos y gestorías a trabajar mejor juntos",
-      "description": "Invoo es la plataforma de facturación amiga de las gestorías, diseñada para simplificar el cumplimiento, ahorrar tiempo y fortalecer la colaboración"
+    "hero": {
+      "title": "Devolviendo la calma",
+      "titleHighlight": "a la facturación",
+      "description": "Software simple que conecta autónomos y gestorías de forma natural. Tú a lo tuyo."
     },
-    "block1": {
-      "title": "Nacido de la Experiencia Real",
-      "description": "Cuando nos mudamos a España, descubrimos rápidamente el laberinto que navegan los autónomos cada día — facturas interminables, gastos dispersos y obligaciones fiscales complejas. Cada autónomo que conocimos compartía la misma historia: horas perdidas en papeleo que debería tomar minutos.\nMientras tanto, las gestorías nos contaron su lado: archivos Excel obsoletos, entrada manual de datos y constante ida y vuelta con clientes solo para obtener información básica.\nEntonces llegó Verifactu — un cambio regulatorio que podría haber empeorado las cosas. En su lugar, vimos una oportunidad. El momento perfecto para construir algo mejor.\nAsí nació Invoo: una plataforma que habla ambos idiomas — la simplicidad que necesitan los autónomos y los datos completos que requieren las gestorías. Menos tiempo en papeleo, más tiempo en lo que importa."
-    },
-    "block2": {
-      "title": "Nuestra Visión",
-      "description": "Creemos que facturar no debería sentirse como un examen de Hacienda. Debería simplemente funcionar.\nNuestra misión es simple: conectar autónomos, sus clientes y gestorías en un flujo de trabajo continuo. Facturas profesionales que se crean solas. Cumplimiento Verifactu que ocurre automáticamente. Paneles para gestorías que se actualizan en tiempo real.\nSin más \"¿puedes reenviar esa factura de marzo?\" Sin más domingos perdidos en Excel. Solo facturación fluida, simple y conforme que todos pueden confiar."
-    },
-    "block3": {
-      "title": "Por Qué Invoo?",
-      "items": {
-        "item1": "Construido para la realidad española\nNo otra herramienta genérica fingiendo entender España. Sabemos qué significa el Modelo 130. Entendemos por qué tu gestoría necesita ese formato CSV específico.",
-        "item2": "¿Verifactu? Ya está resuelto\nCódigos QR, envío a AEAT, verificaciones de cumplimiento — todo automático. Tú creas facturas, nosotros manejamos la burocracia.",
-        "item3": "Las gestorías también nos adoran\nAcceso gratuito, datos en tiempo real, sin más perseguir documentos. No estamos reemplazando gestorías — estamos facilitando su trabajo.",
-        "item4": "Complejidad eliminada\nCada función gana su lugar ahorrándote tiempo. Si no hace tu vida más simple, no entra en Invoo."
+    "problem": {
+      "title": "El problema",
+      "titleHighlight": "que vimos",
+      "description": "Un mercado donde el software complica en vez de simplificar",
+      "card1": {
+        "title": "Demasiado software",
+        "description": "ERPs con 50 funciones que no necesitas. CRM, inventario, HR... Solo querías facturar."
+      },
+      "card2": {
+        "title": "Word ya no vale",
+        "description": "Tu plantilla de siempre dejará de ser legal con Verifactu. Julio 2027 está a la vuelta."
+      },
+      "card3": {
+        "title": "Gestorías desconectadas",
+        "description": "Emails, WhatsApps, PDFs perdidos. Tu gestoría persiguiendo documentos en vez de asesorarte."
       }
     },
-    "block4": {
-      "title": "Únete Pronto",
-      "description": "Invoo se lanza pronto. Ahora mismo, estamos trabajando mano a mano con autónomos pioneros y gestorías innovadoras para perfeccionar cada detalle.\n¿Quieres estar entre los primeros en escapar del caos de facturación? Únete a nuestra lista de espera y obtén acceso anticipado cuando lancemos.\nEl futuro de la facturación en España empieza aquí. Y empieza contigo."
+    "trustTriangle": {
+      "title": "El triángulo",
+      "titleHighlight": "de confianza",
+      "description": "Vimos algo que otros no ven: el software puede conectar en vez de separar",
+      "autonomo": {
+        "label": "Tu negocio",
+        "title": "Quieres paz mental",
+        "description": "Seas autónomo o pyme, lo mismo: facturar rápido, cumplir con Hacienda, y olvidarte del papeleo."
+      },
+      "invoo": {
+        "label": "Invoo",
+        "title": "El puente",
+        "description": "Conectamos las dos partes. Simplicidad para ti, datos para tu gestoría."
+      },
+      "gestoria": {
+        "label": "Gestoría",
+        "title": "Quiere eficiencia",
+        "description": "Ver tus facturas al instante, sin perseguir documentos, sin retrasos."
+      },
+      "conclusion": "No reemplazamos a tu gestoría. La hacemos más eficiente."
+    },
+    "beliefs": {
+      "title": "En qué",
+      "titleHighlight": "creemos",
+      "description": "Los principios que guían cada decisión en Invoo",
+      "belief1": {
+        "title": "La facturación debe ser invisible",
+        "description": "La mejor factura es la que no tienes que pensar. Creas, envías, olvidas."
+      },
+      "belief2": {
+        "title": "Las gestorías son valiosas",
+        "description": "No queremos reemplazarlas. Queremos que tengan tiempo para asesorarte de verdad."
+      },
+      "belief3": {
+        "title": "La complejidad es el enemigo",
+        "description": "Cada función que NO construimos es una decisión de la que estamos orgullosos."
+      },
+      "belief4": {
+        "title": "El cumplimiento es una función",
+        "description": "Verifactu no es un problema. Es una oportunidad para darte tranquilidad."
+      },
+      "belief5": {
+        "title": "Tus datos son tuyos",
+        "description": "Sin venderlos, sin anuncios. Tu facturación es privada, punto."
+      }
+    },
+    "ai": {
+      "eyebrow": "Próximamente",
+      "title": "Aún más invisible",
+      "description": "Invoo ya hace facturar tan simple como enviar un WhatsApp. Pronto: crea facturas hablando. Pero primero, lo básico hecho perfecto.",
+      "example": "\"Factura a Estudio Creativo, 1.500 euros, diseño web, vencimiento 30 días\""
+    },
+    "finalCta": {
+      "title": "Sé de los primeros en",
+      "titleHighlight": "probarlo",
+      "description": "Crea facturas en 30 segundos. Tu gestoría las ve al instante. Verifactu incluido. Acceso anticipado para los primeros 100 autónomos.",
+      "cta": "Quiero acceso anticipado"
     },
     "editorial": {
       "title": "Nuestro Enfoque Editorial",

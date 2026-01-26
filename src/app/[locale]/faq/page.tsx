@@ -3,7 +3,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import Navigation from "@/components/layout/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
 import FAQContent from "@/components/content/FAQContent";
-import FocusSection from "@/components/sections/FocusSection";
+import { FinalCTASection } from "@/components/sections/FinalCTASection";
 import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { generatePageMetadata } from "@/lib/seo";
@@ -59,7 +59,7 @@ export default async function FAQPage({
         buttonHref="#waitlist"
       />
       <FAQContent />
-      <FocusSection locale={locale} />
+      <FinalCTASection locale={locale} />
       <Footer locale={locale} />
     </div>
   );
