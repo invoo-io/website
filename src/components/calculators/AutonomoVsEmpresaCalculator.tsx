@@ -123,7 +123,7 @@ export function AutonomoVsEmpresaCalculator() {
   );
 
   return (
-    <CalculatorCard className="w-full max-w-4xl mx-auto">
+    <CalculatorCard className="w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         {/* Left side - Inputs */}
         <div className="flex flex-col gap-6">
@@ -171,7 +171,7 @@ export function AutonomoVsEmpresaCalculator() {
               onChange={setEsPrimeraVez}
               options={primeraVezOptions}
             />
-            <p className="text-footnote text-tertiary mt-2">
+            <p className="text-footnote text-secondary mt-2">
               {t('inputs.esPrimeraVez.helper')}
             </p>
           </div>
@@ -236,7 +236,7 @@ export function AutonomoVsEmpresaCalculator() {
                       {t(`results.recommendation.${result.recomendacion}.description`)}
                     </p>
                     {result.recomendacion === 'similar' && (
-                      <p className="text-footnote text-tertiary mt-1">
+                      <p className="text-footnote text-secondary mt-1">
                         {t('results.recommendation.similar.context', {
                           diferencia: formatNumber(Math.abs(result.diferencia), locale),
                         })}
@@ -249,7 +249,7 @@ export function AutonomoVsEmpresaCalculator() {
               {/* Comparison cards */}
               <div className="grid grid-cols-1 gap-4">
                 {/* Autónomo Column */}
-                <div className="bg-background-primary rounded-2xl p-5 border border-strokes-primary">
+                <div className="bg-background-tertiary rounded-2xl p-5 border border-strokes-primary">
                   <div className="flex items-center gap-2 mb-3">
                     <div className="w-2 h-2 rounded-full bg-accent-green-main" />
                     <h4 className="text-callout-emphasized text-primary">
@@ -300,7 +300,7 @@ export function AutonomoVsEmpresaCalculator() {
                 </div>
 
                 {/* Sociedad Column */}
-                <div className="bg-background-primary rounded-2xl p-5 border border-strokes-primary">
+                <div className="bg-background-tertiary rounded-2xl p-5 border border-strokes-primary">
                   <div className="flex items-center gap-2 mb-3">
                     <div className="w-2 h-2 rounded-full bg-accent-blue-main" />
                     <h4 className="text-callout-emphasized text-primary">
@@ -381,7 +381,7 @@ export function AutonomoVsEmpresaCalculator() {
               </div>
 
               {/* Break-even info */}
-              <div className="p-3 rounded-xl bg-background-secondary border border-strokes-primary">
+              <div className="p-3 rounded-xl bg-background-tertiary border border-strokes-primary">
                 <div className="flex items-start gap-2">
                   <svg
                     className="w-4 h-4 text-accent-purple-main flex-shrink-0 mt-0.5"
@@ -417,7 +417,7 @@ export function AutonomoVsEmpresaCalculator() {
                   </h4>
                   <ul className="space-y-1">
                     {result.razonamientos.map((razon, index) => (
-                      <li key={index} className="flex items-start gap-2 text-caption1 text-tertiary">
+                      <li key={index} className="flex items-start gap-2 text-caption1 text-secondary">
                         <span className="text-accent-purple-main mt-0.5">•</span>
                         <span>{t(`results.razonamientos.${razon}`)}</span>
                       </li>
@@ -427,8 +427,8 @@ export function AutonomoVsEmpresaCalculator() {
               )}
 
               {/* Disclaimer */}
-              <div className="p-2 rounded-lg bg-background-secondary/50 border border-strokes-primary/50">
-                <p className="text-caption1 text-tertiary">
+              <div className="p-2 rounded-lg bg-background-tertiary/50 border border-strokes-primary/50">
+                <p className="text-caption1 text-secondary">
                   {t('results.disclaimer')}
                 </p>
               </div>
@@ -438,13 +438,13 @@ export function AutonomoVsEmpresaCalculator() {
           {/* Empty state */}
           {!result && (
             <div
-              className="flex flex-col items-center justify-center text-center py-12 bg-background-primary rounded-2xl border border-strokes-primary"
+              className="flex flex-col items-center justify-center text-center py-12 bg-background-tertiary rounded-2xl border border-strokes-primary"
               role="status"
               aria-live="polite"
             >
               <div className="w-12 h-12 rounded-full bg-background-secondary flex items-center justify-center mb-4">
                 <svg
-                  className="w-6 h-6 text-tertiary"
+                  className="w-6 h-6 text-secondary"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -458,7 +458,7 @@ export function AutonomoVsEmpresaCalculator() {
                   />
                 </svg>
               </div>
-              <p className="text-body text-tertiary">{t('results.placeholder')}</p>
+              <p className="text-body text-secondary">{t('results.placeholder')}</p>
             </div>
           )}
         </div>

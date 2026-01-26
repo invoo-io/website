@@ -35,7 +35,9 @@ export function Modelo303CalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <Modelo303Calculator />
+        <div className="max-w-6xl mx-auto">
+          <Modelo303Calculator />
+        </div>
       </section>
     </>
   );

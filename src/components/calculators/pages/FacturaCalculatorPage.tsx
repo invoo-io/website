@@ -35,7 +35,9 @@ export function FacturaCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <FacturaCalculator />
+        <div className="max-w-6xl mx-auto">
+          <FacturaCalculator />
+        </div>
       </section>
     </>
   );

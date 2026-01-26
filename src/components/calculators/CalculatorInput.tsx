@@ -109,7 +109,7 @@ export function CalculatorInput({
             'bg-background-primary',
             'border border-strokes-primary',
             'text-body text-primary',
-            'placeholder:text-tertiary',
+            'placeholder:text-secondary',
             'focus:outline-none focus:ring-2 focus:ring-accent-blue-main focus:border-transparent',
             'transition-all duration-200',
             prefix ? 'pl-10' : 'pl-4',
@@ -127,7 +127,7 @@ export function CalculatorInput({
       </div>
 
       {helperText && !error && (
-        <p id={helperId} className="text-footnote text-tertiary">{helperText}</p>
+        <p id={helperId} className="text-footnote text-secondary">{helperText}</p>
       )}
 
       {error && (

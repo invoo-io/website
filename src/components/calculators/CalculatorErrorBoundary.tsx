@@ -108,10 +108,10 @@ export class CalculatorErrorBoundary extends Component<Props, State> {
             {/* Technical details for debugging (only in development) */}
             {process.env.NODE_ENV === 'development' && this.state.error && (
               <details className="mt-8 w-full max-w-md text-left">
-                <summary className="cursor-pointer text-footnote text-tertiary hover:text-secondary">
+                <summary className="cursor-pointer text-footnote text-secondary hover:text-primary">
                   Detalles técnicos
                 </summary>
-                <pre className="mt-2 p-4 bg-background-primary rounded-lg text-caption2 text-tertiary overflow-auto">
+                <pre className="mt-2 p-4 bg-background-tertiary rounded-lg text-caption2 text-secondary overflow-auto">
                   {this.state.error.message}
                   {'\n\n'}
                   {this.state.error.stack}

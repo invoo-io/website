@@ -67,27 +67,35 @@ export const CUOTA_TRAMOS_2025: CuotaTramo[] = [
   { min: 6000, max: null, baseMin: 1928.10, baseMax: 4909.50 },
 ];
 
-// Official 2026 tramos - Government maintained same bases as 2025
-// Source: Government decision to freeze bases for 2026
-// Note: Same values as 2025 per official announcement
+// Official 2026 tramos - Real Decreto-ley 16/2025, de 23 de diciembre (BOE 24/12/2025)
+// Source: https://www.boe.es/buscar/act.php?id=BOE-A-2025-26952
+// Changes from 2025:
+// - Tramos 1-3: Frozen (same as 2025)
+// - Tramos 4-6: +1% increase in bases
+// - Tramos 7-9: +1.5% increase in bases
+// - Tramos 10-15: +2% increase in bases
+// - New tope general de cotización: 5,101.20€
 export const CUOTA_TRAMOS_2026: CuotaTramo[] = [
-  // Tabla Reducida (tramos 1-3)
+  // Tabla Reducida (tramos 1-3) - FROZEN
   { min: 0, max: 670, baseMin: 653.59, baseMax: 718.94 },
   { min: 670, max: 900, baseMin: 718.95, baseMax: 900 },
   { min: 900, max: 1166.70, baseMin: 849.67, baseMax: 1166.70 },
-  // Tabla General (tramos 4-15)
-  { min: 1166.70, max: 1300, baseMin: 950.98, baseMax: 1300 },
-  { min: 1300, max: 1500, baseMin: 960.78, baseMax: 1500 },
-  { min: 1500, max: 1700, baseMin: 960.78, baseMax: 1700 },
-  { min: 1700, max: 1850, baseMin: 1143.79, baseMax: 1850 },
-  { min: 1850, max: 2030, baseMin: 1209.15, baseMax: 2030 },
-  { min: 2030, max: 2330, baseMin: 1274.51, baseMax: 2330 },
-  { min: 2330, max: 2760, baseMin: 1356.21, baseMax: 2760 },
-  { min: 2760, max: 3190, baseMin: 1437.91, baseMax: 3190 },
-  { min: 3190, max: 3620, baseMin: 1519.61, baseMax: 3620 },
-  { min: 3620, max: 4050, baseMin: 1601.31, baseMax: 4050 },
-  { min: 4050, max: 6000, baseMin: 1732.03, baseMax: 4909.50 },
-  { min: 6000, max: null, baseMin: 1928.10, baseMax: 4909.50 },
+  // Tabla General (tramos 4-6) - +1%
+  { min: 1166.70, max: 1300, baseMin: 960.49, baseMax: 1313 },
+  { min: 1300, max: 1500, baseMin: 970.39, baseMax: 1515 },
+  { min: 1500, max: 1700, baseMin: 970.39, baseMax: 1717 },
+  // Tabla General (tramos 7-9) - +1.5%
+  { min: 1700, max: 1850, baseMin: 1160.95, baseMax: 1877.75 },
+  { min: 1850, max: 2030, baseMin: 1227.29, baseMax: 2060.45 },
+  { min: 2030, max: 2330, baseMin: 1293.63, baseMax: 2364.95 },
+  // Tabla General (tramos 10-12) - +2%
+  { min: 2330, max: 2760, baseMin: 1383.33, baseMax: 2815.20 },
+  { min: 2760, max: 3190, baseMin: 1466.67, baseMax: 3253.80 },
+  { min: 3190, max: 3620, baseMin: 1550.00, baseMax: 3692.40 },
+  // Tabla General (tramos 13-15) - +2%
+  { min: 3620, max: 4050, baseMin: 1633.34, baseMax: 4131 },
+  { min: 4050, max: 6000, baseMin: 1766.67, baseMax: 5101.20 },
+  { min: 6000, max: null, baseMin: 1966.66, baseMax: 5101.20 },
 ];
 
 // Tarifa Plana (Flat Rate) for new self-employed - Current system since 2023

@@ -121,14 +121,23 @@ export const SS_REGIMEN_GENERAL = {
   employerRateMEI: 0.75,
   employeeRateMEI: 0.15,
   totalMEI: 0.90,
-  // Additional contributions (employer only)
-  desempleo: 5.5, // Unemployment
-  fogasa: 0.2, // Wage guarantee fund
-  formacion: 0.6, // Training
-  // TOTALS (including MEI)
-  totalEmployer: 30.65, // 23.6 + 0.75 + 5.5 + 0.2 + 0.6
-  totalEmployee: 4.85, // 4.7 + 0.15
-  total: 35.5, // 30.65 + 4.85
+  // Desempleo (Unemployment) - contrato indefinido
+  desempleoEmployer: 5.5, // Employer
+  desempleoEmployee: 1.55, // Employee
+  totalDesempleo: 7.05,
+  // FOGASA (Wage guarantee fund) - employer only
+  fogasa: 0.2,
+  // Formación Profesional (Training)
+  formacionEmployer: 0.6, // Employer
+  formacionEmployee: 0.1, // Employee
+  totalFormacion: 0.7,
+  // TOTALS (including all contributions)
+  // Employer: 23.6 (CC) + 0.75 (MEI) + 5.5 (desempleo) + 0.2 (FOGASA) + 0.6 (formación) = 30.65%
+  totalEmployer: 30.65,
+  // Employee: 4.7 (CC) + 0.15 (MEI) + 1.55 (desempleo) + 0.1 (formación) = 6.5%
+  totalEmployee: 6.5,
+  // Combined total
+  total: 37.15, // 30.65 + 6.5
   // Contribution base caps 2026
   // Source: BOE - Orden cotización 2026
   minBaseMonthly: 1260.00, // Minimum monthly contribution base

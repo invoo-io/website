@@ -103,33 +103,32 @@ export function CalculatorResult({
         <div
           key={index}
           className={cn(
-            'group flex justify-between items-start py-4 gap-4',
+            'group flex justify-between items-center py-4 gap-4',
             index !== results.length - 1 && 'border-b border-strokes-primary',
             row.isHighlighted && 'pt-6'
           )}
         >
           <span
             className={cn(
-              'flex-1 min-w-0',
               row.isHighlighted
                 ? 'text-headline text-primary'
                 : 'text-body text-secondary'
             )}
           >
-            {row.prefix && <span className="text-tertiary">{row.prefix} </span>}
             {row.label}
           </span>
           <div className="flex items-center gap-2 flex-shrink-0">
             <span
               className={cn(
-                'text-right whitespace-nowrap',
+                'text-right whitespace-nowrap tabular-nums',
                 row.isHighlighted
                   ? 'text-title1-emphasized text-primary'
                   : 'text-body-emphasized text-primary'
               )}
             >
+              {row.prefix && <span className="text-secondary">{row.prefix}</span>}
               {formatCurrency(row.value, locale)}
-              {row.suffix && <span className="text-tertiary ml-1">{row.suffix}</span>}
+              {row.suffix && <span className="text-secondary ml-1">{row.suffix}</span>}
             </span>
             <button
               onClick={() => handleCopy(row.value, index)}
@@ -146,7 +145,7 @@ export function CalculatorResult({
               {copiedIndex === index ? (
                 <CheckIcon className="text-accent-green-main" />
               ) : (
-                <CopyIcon className="text-tertiary" />
+                <CopyIcon className="text-secondary" />
               )}
             </button>
           </div>

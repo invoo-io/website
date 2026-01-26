@@ -36,9 +36,11 @@ export function SueldoNetoAutonomoCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <CalculatorErrorBoundary>
-          <SueldoNetoAutonomoCalculator />
-        </CalculatorErrorBoundary>
+        <div className="max-w-6xl mx-auto">
+          <CalculatorErrorBoundary>
+            <SueldoNetoAutonomoCalculator />
+          </CalculatorErrorBoundary>
+        </div>
       </section>
     </>
   );

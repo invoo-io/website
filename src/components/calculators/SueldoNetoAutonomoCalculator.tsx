@@ -245,7 +245,7 @@ export function SueldoNetoAutonomoCalculator() {
   ];
 
   return (
-    <CalculatorCard className="w-full max-w-5xl mx-auto">
+    <CalculatorCard className="w-full">
       <form
         onSubmit={(e) => e.preventDefault()}
         aria-label={t('form.ariaLabel')}
@@ -366,15 +366,8 @@ export function SueldoNetoAutonomoCalculator() {
 
         {/* Right side - Results */}
         <div className="flex flex-col">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-2 h-2 rounded-full bg-accent-blue-main" />
-            <h3 className="text-callout-emphasized text-primary">
-              {t('results.title')}
-            </h3>
-          </div>
-
           <div
-            className="flex-1 flex flex-col justify-center bg-background-primary rounded-2xl p-6 border border-strokes-primary min-h-[300px]"
+            className="flex-1 flex flex-col justify-center bg-background-tertiary rounded-2xl p-6 border border-strokes-primary min-h-[300px]"
             aria-live="polite"
             aria-atomic="true"
           >
@@ -386,7 +379,7 @@ export function SueldoNetoAutonomoCalculator() {
               >
                 <div className="w-12 h-12 rounded-full bg-background-secondary flex items-center justify-center mb-4">
                   <svg
-                    className="w-6 h-6 text-tertiary"
+                    className="w-6 h-6 text-secondary"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -400,13 +393,13 @@ export function SueldoNetoAutonomoCalculator() {
                     />
                   </svg>
                 </div>
-                <p className="text-body text-tertiary">{t('results.placeholder')}</p>
+                <p className="text-body text-secondary">{t('results.placeholder')}</p>
               </div>
             ) : (
               <div className="space-y-6">
                 {/* Main result - Monthly net salary */}
                 <div className="text-center p-6 bg-accent-green-soft/10 border border-accent-green-soft rounded-2xl">
-                  <p className="text-footnote text-tertiary mb-2">
+                  <p className="text-footnote text-secondary mb-2">
                     {t('results.sueldoNetoMensual')}
                   </p>
                   <p className="text-large-title-emphasized text-accent-green-main">
@@ -420,18 +413,18 @@ export function SueldoNetoAutonomoCalculator() {
                 {/* Summary cards */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-background-secondary rounded-lg p-4">
-                    <p className="text-footnote text-tertiary mb-1">
+                    <p className="text-footnote text-secondary mb-1">
                       {t('results.cuotaMensual')}
                     </p>
                     <p className="text-title2-emphasized text-primary">
                       {formatCurrency(result.cuotaMensual, locale)}
                     </p>
-                    <p className="text-caption2 text-tertiary mt-1">
+                    <p className="text-caption2 text-secondary mt-1">
                       {t('results.tramo')} {result.cuotaAutonomos.tramo}
                     </p>
                   </div>
                   <div className="bg-background-secondary rounded-lg p-4">
-                    <p className="text-footnote text-tertiary mb-1">
+                    <p className="text-footnote text-secondary mb-1">
                       {t('results.tipoEfectivoIRPF')}
                     </p>
                     <p className="text-title2-emphasized text-primary">
@@ -443,14 +436,14 @@ export function SueldoNetoAutonomoCalculator() {
                 {/* Tax percentage summary */}
                 <div className="bg-background-secondary rounded-lg p-4">
                   <div className="flex justify-between items-center">
-                    <p className="text-footnote text-tertiary">
+                    <p className="text-footnote text-secondary">
                       {t('results.porcentajeImpuestos')}
                     </p>
                     <p className="text-callout-emphasized text-primary">
                       {result.porcentajeImpuestos.toFixed(1)}%
                     </p>
                   </div>
-                  <div className="mt-2 h-2 bg-background-primary rounded-full overflow-hidden">
+                  <div className="mt-2 h-2 bg-background-tertiary rounded-full overflow-hidden">
                     <div
                       className="h-full bg-accent-orange-main rounded-full transition-all duration-300"
                       style={{ width: `${Math.min(result.porcentajeImpuestos, 100)}%` }}
@@ -468,7 +461,7 @@ export function SueldoNetoAutonomoCalculator() {
                       {result.desglosePorTramos.map((tramo) => (
                         <div
                           key={tramo.tramo}
-                          className="flex justify-between text-footnote text-tertiary"
+                          className="flex justify-between text-footnote text-secondary"
                         >
                           <span>
                             {t('results.tramoIRPF')} {tramo.tramo} ({tramo.tipo}%)
@@ -540,7 +533,7 @@ export function SueldoNetoAutonomoCalculator() {
 
                 {/* Legal disclaimer */}
                 <div className="p-3 bg-background-secondary rounded-lg">
-                  <p className="text-footnote text-tertiary">
+                  <p className="text-footnote text-secondary">
                     {t('results.legalDisclaimer')}
                   </p>
                 </div>

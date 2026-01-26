@@ -35,7 +35,9 @@ export function IVACalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <IVACalculator />
+        <div className="max-w-6xl mx-auto">
+          <IVACalculator />
+        </div>
       </section>
     </>
   );

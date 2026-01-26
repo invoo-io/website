@@ -837,7 +837,7 @@
   },
   "methodology": {
     "metadata": {
-      "title": "Our Editorial Methodology | How We Create Content | Invoo",
+      "title": "Our Editorial Methodology | How We Create Content",
       "description": "Discover how we create reliable content about taxes and invoicing: official sources (AEAT, BOE), rigorous verification, and constant updates."
     },
     "header": {
@@ -845,54 +845,78 @@
       "titleGradient": "official sources",
       "description": "At Invoo, every article follows a rigorous research and verification process. Our content is based exclusively on official Spanish sources to ensure accuracy and reliability."
     },
-    "block1": {
-      "title": "How we create our content",
-      "description": "Every article we publish follows a structured process designed to ensure accuracy and usefulness. We don't publish generic content or copy from other sources — all our material is built from official documentation."
-    },
     "process": {
-      "research": {
+      "title": "How we create",
+      "titleHighlight": "our content",
+      "description": "Every article we publish follows a structured process designed to ensure accuracy and usefulness. We don't publish generic content or copy from other sources — all our material is built from official documentation.",
+      "pillar1": {
         "title": "Research",
         "description": "We consult official sources: AEAT, BOE, Social Security, and current regional regulations."
       },
-      "writing": {
+      "pillar2": {
         "title": "Writing",
         "description": "We translate technical regulations into clear, practical language with real examples."
       },
-      "verification": {
+      "pillar3": {
         "title": "Verification",
-        "description": "We verify every piece of data against current legislation before publishing."
+        "description": "We cross-check every piece of data against current legislation before publishing."
       },
-      "update": {
-        "title": "Update",
+      "pillar4": {
+        "title": "Updates",
         "description": "We review and update when there are relevant regulatory changes."
       }
     },
-    "block2": {
-      "title": "Our main sources",
-      "description": "All our content about taxes and invoicing is based on official documentation. We don't use secondary sources or unverified information."
-    },
     "sources": {
-      "aeat": "Spanish Tax Agency electronic office. Tax regulations, tax forms, and binding consultations.",
-      "boe": "Official State Gazette. Current legislation, royal decrees, and ministerial orders.",
-      "seguridadSocial": "General Treasury of Social Security. Contributions, bases, and benefits for freelancers.",
-      "autonomicTitle": "Regional Regulations",
-      "autonomic": "Specific legislation by autonomous community, including TicketBAI (Basque Country) and other regional systems."
-    },
-    "block3": {
-      "title": "Our commitment",
-      "description": "We take seriously the responsibility of informing correctly. Freelancers and SMBs rely on our content to make important decisions about their business."
-    },
-    "commitment": {
-      "items": {
-        "accuracy": "Accuracy over speed — we prefer to take longer and publish correct information",
-        "sources": "Official sources always cited and linked when possible",
-        "dates": "Verification dates visible on every article",
-        "updates": "Proactive updates when regulations change"
+      "title": "Our main",
+      "titleHighlight": "sources",
+      "description": "All our content about taxation and invoicing is based on official documentation. We don't use secondary sources or unverified information.",
+      "pillar1": {
+        "title": "AEAT",
+        "description": "Spanish Tax Agency electronic office. Tax regulations, tax forms, and binding consultations."
+      },
+      "pillar2": {
+        "title": "BOE",
+        "description": "Official State Gazette. Current legislation, royal decrees, and ministerial orders."
+      },
+      "pillar3": {
+        "title": "Social Security",
+        "description": "General Treasury of Social Security. Contributions, bases, and benefits for self-employed."
+      },
+      "pillar4": {
+        "title": "Regional Regulations",
+        "description": "Community-specific legislation, including TicketBAI (Basque Country) and other regional systems."
       }
     },
-    "block4": {
+    "commitment": {
+      "title": "Our",
+      "titleHighlight": "commitment",
+      "description": "We take seriously the responsibility of informing correctly. Freelancers and SMEs trust our content to make important decisions about their business.",
+      "pillar1": {
+        "title": "Accuracy over speed",
+        "description": "We prefer to take longer and publish correct information."
+      },
+      "pillar2": {
+        "title": "Cited sources",
+        "description": "Official sources always cited and linked when possible."
+      },
+      "pillar3": {
+        "title": "Publication dates",
+        "description": "All publication and update dates visible."
+      },
+      "pillar4": {
+        "title": "Errors corrected",
+        "description": "If we make a mistake, we correct it immediately and communicate transparently."
+      }
+    },
+    "limitations": {
       "title": "Important limitations",
-      "description": "Our content is informative and educational. Although we strive to be accurate, tax regulations are complex and change frequently.\nEvery business situation is unique. For decisions that affect your business, we recommend consulting with a tax advisor or professional accountant who knows your specific case.\nInvoo does not offer personalized tax, legal, or accounting advice."
+      "description": "Our content is informative and educational. It does not replace professional advice from an accountant or tax advisor. Each business situation is unique and may require specific analysis.\n\nTax laws change frequently. Although we strive to keep content updated, always verify information with official sources or your accountant before making important decisions."
+    },
+    "finalCta": {
+      "title": "Ready to invoice",
+      "titleHighlight": "without complications?",
+      "description": "Join freelancers and SMEs already waiting to invoice better. Automatic Verifactu, your accountant connected, €10.90/month.",
+      "cta": "Join the waitlist"
     }
   },
   "privacy": {
@@ -2181,7 +2205,7 @@
         "ivaRate": "VAT rate",
         "ivaRateHelper": "Select the VAT applicable to your activity",
         "irpfRate": "IRPF withholding",
-        "irpfRateHelper": "Only for professionals invoicing businesses"
+        "irpfRateHelper": "Only professional freelancers (IAE section 2) invoicing businesses. Business owners (section 1): no withholding"
       },
       "direction": {
         "fromBase": "From base amount",

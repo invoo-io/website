@@ -121,7 +121,7 @@ export function RelatedContentGrid({ title, children, className }: RelatedConten
       aria-labelledby={headingId}
       className={cn('py-12 md:py-16 bg-background-secondary', className)}
     >
-      <div className="container mx-auto px-4 max-w-7xl">
+      <div className="container mx-auto px-4 max-w-6xl">
         <h2 id={headingId} className="text-title1-emphasized text-label-primary mb-8">
           {title}
         </h2>

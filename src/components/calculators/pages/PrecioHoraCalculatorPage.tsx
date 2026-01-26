@@ -35,7 +35,9 @@ export function PrecioHoraCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <PrecioHoraCalculator />
+        <div className="max-w-6xl mx-auto">
+          <PrecioHoraCalculator />
+        </div>
       </section>
     </>
   );

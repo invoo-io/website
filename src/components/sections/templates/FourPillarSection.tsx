@@ -35,6 +35,8 @@ import {
   ListChecks,
   CircleOff,
   Gift,
+  BookOpen,
+  MapPin,
   LucideIcon
 } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -77,6 +79,8 @@ const iconMap: Record<string, LucideIcon> = {
   ListChecks,
   CircleOff,
   Gift,
+  BookOpen,
+  MapPin,
 };
 
 interface PillarConfig {
@@ -91,6 +95,7 @@ interface FourPillarSectionProps {
   translationKey: string;
   pillars: [PillarConfig, PillarConfig, PillarConfig, PillarConfig];
   cardBackground?: 'secondary' | 'tertiary';
+  sectionBackground?: 'primary' | 'secondary';
 }
 
 export async function FourPillarSection({
@@ -98,11 +103,14 @@ export async function FourPillarSection({
   translationKey,
   pillars,
   cardBackground = 'secondary',
+  sectionBackground = 'primary',
 }: FourPillarSectionProps) {
   const t = await getTranslations({ locale, namespace: translationKey });
 
+  const sectionBg = sectionBackground === 'secondary' ? 'bg-background-secondary' : '';
+
   return (
-    <section className="py-[120px] max-md:py-16 px-4 md:px-6">
+    <section className={`py-[120px] max-md:py-16 px-4 md:px-6 ${sectionBg}`}>
       <SectionHeader
         size="section"
         align="center"
@@ -115,7 +123,7 @@ export async function FourPillarSection({
         marginBottom="xl"
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
         {pillars.map(({ key, icon, gradient, iconColor }) => {
           const Icon = iconMap[icon];
           const cardBg = cardBackground === 'tertiary' ? 'bg-background-tertiary' : 'bg-background-secondary';

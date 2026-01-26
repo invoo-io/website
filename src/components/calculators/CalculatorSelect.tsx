@@ -69,7 +69,7 @@ export function CalculatorSelect({
       </div>
 
       {helperText && (
-        <p className="text-footnote text-tertiary">{helperText}</p>
+        <p className="text-footnote text-secondary">{helperText}</p>
       )}
     </div>
   );

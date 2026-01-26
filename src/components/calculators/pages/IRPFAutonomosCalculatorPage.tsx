@@ -35,7 +35,9 @@ export function IRPFAutonomosCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <IRPFAutonomosCalculator />
+        <div className="max-w-6xl mx-auto">
+          <IRPFAutonomosCalculator />
+        </div>
       </section>
     </>
   );

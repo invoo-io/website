@@ -35,7 +35,9 @@ export function GastosDeduciblesCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <GastosDeduciblesCalculator />
+        <div className="max-w-6xl mx-auto">
+          <GastosDeduciblesCalculator />
+        </div>
       </section>
     </>
   );

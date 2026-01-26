@@ -166,7 +166,7 @@ export function PrecioHoraCalculator() {
   );
 
   return (
-    <CalculatorCard className="w-full max-w-4xl mx-auto">
+    <CalculatorCard className="w-full">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         {/* Left side - Inputs */}
         <div className="flex flex-col gap-6">
@@ -217,11 +217,11 @@ export function PrecioHoraCalculator() {
           {/* Info about billable hours - with accessibility role */}
           {!hasErrors && result.horasFacturablesAnuales > 0 && (
             <div
-              className="bg-background-secondary rounded-xl p-4 border border-strokes-primary"
+              className="bg-background-tertiary rounded-xl p-4 border border-strokes-primary"
               role="status"
               aria-live="polite"
             >
-              <p className="text-caption1 text-secondary">
+              <p className="text-caption1 text-tertiary">
                 {t('inputs.horasFacturablesInfo', {
                   hours: result.horasFacturablesAnuales,
                 })}
@@ -234,20 +234,13 @@ export function PrecioHoraCalculator() {
         <div className="flex flex-col gap-6">
           {/* Main Results */}
           <div className="flex flex-col">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-2 h-2 rounded-full bg-accent-purple-main" />
-              <h3 className="text-callout-emphasized text-primary">
-                {t('results.title')}
-              </h3>
-            </div>
-
-            <div className="flex-1 flex flex-col justify-center bg-background-primary rounded-2xl p-6 border border-strokes-primary min-h-[200px]">
+            <div className="flex-1 flex flex-col justify-center bg-background-tertiary rounded-2xl p-6 border border-strokes-primary min-h-[200px]">
               {hasErrors ? (
                 // Empty state placeholder
                 <div className="flex flex-col items-center justify-center text-center py-8">
                   <div className="w-12 h-12 rounded-full bg-background-secondary flex items-center justify-center mb-4">
                     <svg
-                      className="w-6 h-6 text-tertiary"
+                      className="w-6 h-6 text-secondary"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -261,7 +254,7 @@ export function PrecioHoraCalculator() {
                       />
                     </svg>
                   </div>
-                  <p className="text-body text-tertiary">
+                  <p className="text-body text-secondary">
                     {t('results.placeholder')}
                   </p>
                 </div>
@@ -281,12 +274,12 @@ export function PrecioHoraCalculator() {
                 </h3>
               </div>
 
-              <div className="bg-background-primary rounded-2xl p-6 border border-strokes-primary">
+              <div className="bg-background-tertiary rounded-2xl p-6 border border-strokes-primary">
                 <CalculatorResult results={breakdownResults} locale={locale} />
               </div>
 
               {/* Disclaimer about regional tax variations */}
-              <p className="text-caption2 text-tertiary mt-4 leading-relaxed">
+              <p className="text-caption2 text-secondary mt-4 leading-relaxed">
                 {t('results.disclaimer')}
               </p>
             </div>

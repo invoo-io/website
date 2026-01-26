@@ -837,7 +837,7 @@
   },
   "methodology": {
     "metadata": {
-      "title": "Nuestra Metodología Editorial | Cómo Creamos Contenido | Invoo",
+      "title": "Nuestra Metodología Editorial | Cómo Creamos Contenido",
       "description": "Descubre cómo creamos contenido fiable sobre fiscalidad y facturación: fuentes oficiales (AEAT, BOE), verificación rigurosa y actualizaciones constantes."
     },
     "header": {
@@ -845,54 +845,78 @@
       "titleGradient": "fuentes oficiales",
       "description": "En Invoo, cada artículo sigue un proceso riguroso de investigación y verificación. Nuestro contenido se basa exclusivamente en fuentes oficiales españolas para garantizar precisión y fiabilidad."
     },
-    "block1": {
-      "title": "Cómo creamos nuestro contenido",
-      "description": "Cada artículo que publicamos sigue un proceso estructurado diseñado para garantizar precisión y utilidad. No publicamos contenido genérico ni copiamos de otras fuentes — todo nuestro material se construye desde documentación oficial."
-    },
     "process": {
-      "research": {
+      "title": "Cómo creamos",
+      "titleHighlight": "nuestro contenido",
+      "description": "Cada artículo que publicamos sigue un proceso estructurado diseñado para garantizar precisión y utilidad. No publicamos contenido genérico ni copiamos de otras fuentes — todo nuestro material se construye desde documentación oficial.",
+      "pillar1": {
         "title": "Investigación",
         "description": "Consultamos fuentes oficiales: AEAT, BOE, Seguridad Social y normativa autonómica vigente."
       },
-      "writing": {
+      "pillar2": {
         "title": "Redacción",
         "description": "Traducimos la normativa técnica a lenguaje claro y práctico, con ejemplos reales."
       },
-      "verification": {
+      "pillar3": {
         "title": "Verificación",
         "description": "Contrastamos cada dato con la legislación vigente antes de publicar."
       },
-      "update": {
+      "pillar4": {
         "title": "Actualización",
         "description": "Revisamos y actualizamos cuando hay cambios normativos relevantes."
       }
     },
-    "block2": {
-      "title": "Nuestras fuentes principales",
-      "description": "Todo nuestro contenido sobre fiscalidad y facturación se basa en documentación oficial. No utilizamos fuentes secundarias ni información sin verificar."
-    },
     "sources": {
-      "aeat": "Sede electrónica de la Agencia Tributaria. Normativa fiscal, modelos tributarios y consultas vinculantes.",
-      "boe": "Boletín Oficial del Estado. Legislación vigente, reales decretos y órdenes ministeriales.",
-      "seguridadSocial": "Tesorería General de la Seguridad Social. Cotizaciones, bases y prestaciones para autónomos.",
-      "autonomicTitle": "Normativa Autonómica",
-      "autonomic": "Legislación específica por comunidad autónoma, incluyendo TicketBAI (País Vasco) y otros sistemas regionales."
-    },
-    "block3": {
-      "title": "Nuestro compromiso",
-      "description": "Nos tomamos en serio la responsabilidad de informar correctamente. Los autónomos y pymes confían en nuestro contenido para tomar decisiones importantes sobre su negocio."
-    },
-    "commitment": {
-      "items": {
-        "accuracy": "Precisión sobre velocidad — preferimos tardar más y publicar información correcta",
-        "sources": "Fuentes oficiales siempre citadas y enlazadas cuando es posible",
-        "dates": "Fechas de verificación visibles en cada artículo",
-        "updates": "Actualizaciones proactivas cuando cambia la normativa"
+      "title": "Nuestras fuentes",
+      "titleHighlight": "principales",
+      "description": "Todo nuestro contenido sobre fiscalidad y facturación se basa en documentación oficial. No utilizamos fuentes secundarias ni información sin verificar.",
+      "pillar1": {
+        "title": "AEAT",
+        "description": "Sede electrónica de la Agencia Tributaria. Normativa fiscal, modelos tributarios y consultas vinculantes."
+      },
+      "pillar2": {
+        "title": "BOE",
+        "description": "Boletín Oficial del Estado. Legislación vigente, reales decretos y órdenes ministeriales."
+      },
+      "pillar3": {
+        "title": "Seguridad Social",
+        "description": "Tesorería General de la Seguridad Social. Cotizaciones, bases y prestaciones para autónomos."
+      },
+      "pillar4": {
+        "title": "Normativa Autonómica",
+        "description": "Legislación específica por comunidad autónoma, incluyendo TicketBAI (País Vasco) y otros sistemas regionales."
       }
     },
-    "block4": {
+    "commitment": {
+      "title": "Nuestro",
+      "titleHighlight": "compromiso",
+      "description": "Nos tomamos en serio la responsabilidad de informar correctamente. Los autónomos y pymes confían en nuestro contenido para tomar decisiones importantes sobre su negocio.",
+      "pillar1": {
+        "title": "Precisión sobre velocidad",
+        "description": "Preferimos tardar más y publicar información correcta."
+      },
+      "pillar2": {
+        "title": "Fuentes citadas",
+        "description": "Fuentes oficiales siempre citadas y enlazadas cuando es posible."
+      },
+      "pillar3": {
+        "title": "Fechas de publicación",
+        "description": "Todas las fechas de publicación y actualización visibles."
+      },
+      "pillar4": {
+        "title": "Errores corregidos",
+        "description": "Si cometemos un error, lo corregimos de inmediato y lo comunicamos con transparencia."
+      }
+    },
+    "limitations": {
       "title": "Limitaciones importantes",
-      "description": "Nuestro contenido es informativo y educativo. Aunque nos esforzamos por ser precisos, la normativa fiscal es compleja y cambia frecuentemente.\nCada situación empresarial es única. Para decisiones que afecten a tu negocio, recomendamos consultar con un asesor fiscal o gestoría profesional que conozca tu caso específico.\nInvoo no ofrece asesoramiento fiscal, legal ni contable personalizado."
+      "description": "Nuestro contenido es informativo y educativo. No sustituye el asesoramiento profesional de un gestor o asesor fiscal. Cada situación empresarial es única y puede requerir análisis específico.\n\nLas leyes fiscales cambian frecuentemente. Aunque nos esforzamos por mantener el contenido actualizado, siempre verifica la información con fuentes oficiales o tu gestoría antes de tomar decisiones importantes."
+    },
+    "finalCta": {
+      "title": "¿Listo para facturar",
+      "titleHighlight": "sin complicaciones?",
+      "description": "Únete a los autónomos y pymes que ya esperan facturar mejor. Verifactu automático, tu gestoría conectada, €10.90/mes.",
+      "cta": "Únete a la lista de espera"
     }
   },
   "privacy": {
@@ -2181,7 +2205,7 @@
         "ivaRate": "Tipo de IVA",
         "ivaRateHelper": "Selecciona el IVA aplicable a tu actividad",
         "irpfRate": "Retención IRPF",
-        "irpfRateHelper": "Solo para profesionales que facturan a empresas"
+        "irpfRateHelper": "Solo autónomos profesionales (IAE sección 2) que facturan a empresas. Empresarios (sección 1): sin retención"
       },
       "direction": {
         "fromBase": "Desde base imponible",

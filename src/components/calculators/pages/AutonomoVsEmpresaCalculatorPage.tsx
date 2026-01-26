@@ -35,7 +35,9 @@ export function AutonomoVsEmpresaCalculatorPageContent() {
 
       {/* Calculator Section */}
       <section className="px-4 md:px-6 pb-16">
-        <AutonomoVsEmpresaCalculator />
+        <div className="max-w-6xl mx-auto">
+          <AutonomoVsEmpresaCalculator />
+        </div>
       </section>
     </>
   );
