@@ -7,7 +7,7 @@
 > **Themes:** New autónomo journey + Verifactu/Compliance
 > **Category mix:** Balanced across all categories
 >
-> **Progress:** 2/16 articles completed
+> **Progress:** 3/16 articles completed
 
 ---
 
@@ -132,9 +132,10 @@
 
 ---
 
-### Article 1.3 - First Month as Autónomo
+### Article 1.3 - First Month as Autónomo ✅
 **Category:** consejos
 **Priority:** 🟠 HIGH
+**Status:** ✅ Published 2026-01-27
 **File:** `content/blog/consejos/primer-mes-autonomo-guia-supervivencia.md`
 
 **Title:** "Tu Primer Mes como Autónomo: Guía de Supervivencia 2026"
