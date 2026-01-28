@@ -50,7 +50,6 @@ faq:
     answer: "El último día del mes anterior a cuando quieres empezar a facturar. Por ejemplo, si quieres trabajar desde febrero, date de alta el 31 de enero. La cuota se prorratea por días, así que al darte de alta el día 31 solo pagas 1/30 de la cuota mensual (unos 3€), y ya en febrero empiezas con el mes completo bonificado. Esto te ahorra 80-85€ en tu primer mes, aunque debes asegurarte de que la fecha coincida con la que declaraste en Hacienda."
 ---
 
-> **En resumen:** Darte de alta como autónomo requiere dos trámites distintos: Modelo 036 en Hacienda y TA.0521 en Seguridad Social, siempre con la misma fecha de inicio. No olvides marcar la casilla de Tarifa Plana al darte de alta o perderás más de 1.000€ en bonificaciones, y recuerda que la multa por alta fuera de plazo es de 200€ automáticos.
 
 Tienes tu primer cliente esperando, sabes exactamente qué vas a cobrar, y solo te falta un último paso antes de poder emitir tu primera factura legal: darte de alta como autónomo. Parece un trámite sencillo hasta que te enfrentas a formularios con 50 campos, siglas incomprensibles (IAE, CNAE, RETA, TA.0521) y decisiones que si tomas mal pueden costarte miles de euros sin que te des cuenta hasta meses después.
 

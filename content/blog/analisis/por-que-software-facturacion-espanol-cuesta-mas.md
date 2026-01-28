@@ -38,7 +38,6 @@ faq:
     answer: "Es cuando te obligan a pagar por un paquete completo (facturación + CRM + inventario + contabilidad + TPV) aunque solo necesites facturar. El 70% de autónomos españoles solo necesitan facturación, pero pagan por features que nunca usarán."
 ---
 
-> **En resumen:** El software de facturación en España cuesta €30-100/mes, entre 300-500% más que en Europa (€0-15/mes). **Parte está justificado por Verifactu y la complejidad fiscal (€12-18/mes razonables)**, pero el sobreprecio restante viene de consolidación de mercado y bundling forzado. Para un autónomo que gana €1,475/mes de media, pagar €45/mes significa destinar el 3% de ingresos solo para facturar.
 
 María es autónoma en Madrid. Diseñadora gráfica, factura unos €1,800 al mes. Cuando buscó un software de facturación, encontró Holded a €35/mes, Quipu a €40/mes, y Billin a €29/mes.
 

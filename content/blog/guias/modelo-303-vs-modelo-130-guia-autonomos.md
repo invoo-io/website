@@ -32,7 +32,6 @@ faq:
     answer: "Ambos modelos comparten los mismos plazos: del 1 al 20 de abril (Q1), julio (Q2) y octubre (Q3). Para el cuarto trimestre, el plazo es del 1 al 30 de enero del año siguiente."
 ---
 
-> **En resumen:** El Modelo 303 (IVA) es obligatorio para todos los autónomos que facturan con IVA. El Modelo 130 (IRPF) solo si menos del 70% de tus ingresos tienen retención. Ambos se presentan trimestralmente: del 1 al 20 de abril, julio y octubre. Para el cuarto trimestre, del 1 al 30 de enero del año siguiente.
 
 Son las 23:00 del 20 de abril. Abres el ordenador porque sabes que hay algo que deberías haber hecho hoy. Algo con números. Algo con Hacienda.
 

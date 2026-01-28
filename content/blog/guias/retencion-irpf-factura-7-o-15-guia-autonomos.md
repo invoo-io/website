@@ -36,7 +36,6 @@ sources:
 lastVerified: "Enero 2026"
 ---
 
-> **En resumen:** La retención IRPF general es **15%**, pero nuevos profesionales aplican **7% durante 3 años** si cumplen requisitos. **Debes comunicarlo por escrito** a cada cliente. Las facturas a particulares no llevan retención. **Si el 70% de tus ingresos tiene retención**, no necesitas Modelo 130.
 
 Son las 9 de la noche. Sara, diseñadora gráfica freelance, acaba de terminar un proyecto para una agencia de marketing. Abre su plantilla de Excel, escribe los datos del cliente y se queda paralizada en la línea de retención: "¿Era 7% o 15%? Empecé hace un año y medio... ¿todavía me toca el reducido? ¿Y si me equivoco?"
 

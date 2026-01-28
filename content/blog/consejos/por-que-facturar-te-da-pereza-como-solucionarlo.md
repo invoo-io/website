@@ -36,7 +36,6 @@ faq:
     answer: "Si facturas 20€/hora, ahorrar 10 horas mensuales vale 200€/mes. Un software como Invoo cuesta 10.90€/mes. El ROI es del 1.733%—la mejor inversión posible para tu negocio."
 ---
 
-> **En resumen:** La procrastinación en facturación no es falta de disciplina. Es que tu sistema tiene 14 pasos cuando debería tener 2. Esta guía te enseña cómo eliminar fricción psicológica y recuperar 10+ horas mensuales sin cambiar tu personalidad.
 
 Son las 23:47 del día 30. Otra vez. Estás haciendo facturas del mes entero mientras el café se enfría a tu lado.
 

@@ -32,7 +32,6 @@ faq:
     answer: "Invirtiendo 10.90€/mes y recuperando solo 8 horas a 25€/hora, generas 200€ en valor de tiempo. Eso es un retorno del 1.900% sobre la inversión mensual, el ROI más claro que puedes conseguir en tu negocio."
 ---
 
-> **En resumen:** El 82% de autónomos españoles pierde más de 10 horas mensuales (11.8h de media) en tareas administrativas automatizables. A una tarifa promedio de 30€/hora, eso significa **300-500€ evaporándose cada mes en papeleo**. Este análisis de 100+ autónomos revela qué están haciendo el 18% que recuperó ese tiempo y cómo puedes replicar su método.
 
 Durante tres meses entrevisté a 100+ autónomos españoles. Les pregunté sobre su día a día, sus herramientas, y sobre todo su tiempo. **Los resultados me sorprendieron incluso a mí.**
 

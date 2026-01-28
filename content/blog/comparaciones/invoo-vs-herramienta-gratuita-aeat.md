@@ -36,7 +36,6 @@ faq:
     answer: "Sí, ambas herramientas (AEAT e Invoo) cumplen perfectamente con Verifactu desde julio 2027 para autónomos y enero 2027 para sociedades. La diferencia está en funcionalidad, no en cumplimiento legal."
 ---
 
-> **En resumen:** La herramienta gratuita AEAT cumple Verifactu pero solo factura—no rastrea gastos, no colabora con gestorías, y no tiene app móvil. **Invoo cuesta €10.90/mes pero ahorra 8-10 horas mensuales** valoradas en €200-300. Si facturas más de €25/hora, se paga solo en 26 minutos.
 
 **"¿Para qué pagar por Invoo si ahora la AEAT ofrece facturación gratis?"** Es la pregunta que nos llega constantemente desde octubre de 2025, cuando la Agencia Tributaria lanzó su herramienta gratuita de facturación. Y es una pregunta completamente legítima que merece una respuesta honesta.
 

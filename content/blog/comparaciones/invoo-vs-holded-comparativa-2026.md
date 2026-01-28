@@ -38,7 +38,6 @@ faq:
     answer: "Tu gestoría accede en tiempo real a todas tus facturas y gastos sin límite de clientes. Es completamente gratuito para gestorías—no hay coste adicional para ti ni para tu gestor."
 ---
 
-> **En resumen:** Holded es un ERP completo ideal para pymes con múltiples departamentos (€29-199/mes). Invoo es facturación especializada para autónomos (€10.90/mes). **Si solo necesitas facturar rápido y cumplir Verifactu, Invoo te ahorra €817 anuales sin sacrificar lo esencial.**
 
 "Holded tiene todo lo que necesito, pero ¿realmente necesito todo eso?" Esta es la pregunta que más escuchamos de autónomos que evalúan software de facturación en 2026.
 

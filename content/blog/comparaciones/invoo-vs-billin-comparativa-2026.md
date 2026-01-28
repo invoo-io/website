@@ -36,7 +36,6 @@ faq:
     answer: "Según reportes de usuarios en Trustpilot 2025, Billin presenta limitaciones significativas para facturación internacional. Recomendamos contactar directamente con Billin para confirmar sus capacidades actuales si tienes clientes fuera de España. Invoo incluye facturación internacional completa."
 ---
 
-> **En resumen:** Billin ofrece plan gratuito con límites estrictos (3 clientes, sin OCR, sin internacional). El plan Básico real (€6.60/mes) limita a 5 clientes y 5 OCR/mes. **Invoo a €10.90/mes incluye clientes ilimitados, OCR sin restricciones, dashboard gratuito para gestoría, y facturación internacional**. Elige Billin si eres ultra-ocasional (3-4 facturas/mes). Elige Invoo si facturas profesionalmente y valoras crecimiento sin límites artificiales.
 
 > **Nota:** Esta comparativa se basa en información pública disponible en enero 2026. Los precios, características y limitaciones pueden cambiar sin previo aviso. Recomendamos verificar directamente con cada proveedor antes de tomar decisiones.
 

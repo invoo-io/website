@@ -39,7 +39,6 @@ faq:
     answer: "Tu gestoría necesita ver tus facturas desde el primer día para preparar declaraciones correctamente. Si envías todo de golpe en abril, pueden aparecer errores difíciles de corregir."
 ---
 
-> **En resumen:** Los primeros 30 días como autónomo son de organización, no de declaraciones fiscales. **Tus tres tareas inmediatas son confirmar tu recibo RETA, registrarte en la mutua, y configurar facturación conforme desde día 1**. No presentarás declaraciones hasta el cuarto mes, pero los errores del primer mes (numeración de facturas, no guardar justificantes) pueden costarte cientos de euros después.
 
 Es normal sentirte abrumado. Acabas de [darte de alta como autónomo](/es/blog/guias/como-darse-alta-autonomo-2026-guia-paso-paso) y tienes esa mezcla de ilusión y miedo que todos hemos sentido.
 

@@ -38,7 +38,6 @@ faq:
     answer: "Solo si ha sido actualizado para cumplir el Real Decreto 1007/2023 y la Orden Ministerial de octubre 2024. Si usas Excel, Word o herramientas antiguas que no generan huella digital, código QR y remisión automática, no cumples. Las sanciones por software no conforme son significativas."
 ---
 
-> **En resumen:** Los 5 errores más caros al empezar como autónomo son no aprovechar la tarifa plana, olvidar plazos del IVA y IRPF, mezclar finanzas personales con profesionales, emitir facturas incompletas, e ignorar los requisitos de Verifactu. **Esta guía te muestra cómo evitarlos con enlaces oficiales** para que arranques con buen pie.
 
 La semana pasada, Pablo me escribió desesperado. Llevaba seis meses como autónomo y acababa de recibir una notificación de Hacienda: **847 € de sanción por presentar tarde el Modelo 303**. "Nadie me dijo que había que hacerlo cada trimestre", me contó.
 

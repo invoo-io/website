@@ -32,7 +32,6 @@ faq:
     answer: "Tu prestación por baja se calcula sobre tu base de cotización del mes anterior. Si cotizas por la base mínima y te pones enfermo, cobrarás el 60-75% de esa base mínima, que puede ser muy poco para vivir."
 ---
 
-> **En resumen:** Tu base de cotización determina no solo tu cuota mensual, sino también tu futura pensión, prestaciones por baja y cese de actividad. Puedes cambiarla hasta 6 veces al año para adaptarla a tus ingresos reales y evitar regularizaciones. Elegir la base mínima ahorra dinero hoy pero puede costarte decenas de miles de euros en tu pensión de jubilación.
 
 El 80% de los autónomos en España eligen la base mínima de cotización. Parece la decisión más lógica: pagas menos cada mes y tienes más liquidez para tu negocio. Pero ¿es realmente la opción más inteligente? La respuesta corta es: depende. Y la respuesta larga es exactamente lo que vas a descubrir en esta guía. Porque elegir tu base de cotización no es solo una decisión financiera de hoy, es una inversión en tu futuro que puede determinar si cobras 800 o 1,500 euros de pensión dentro de 30 años. En este artículo vamos a desglosar exactamente cómo funciona el sistema en 2026, cuándo tiene sentido elegir la base mínima, cuándo deberías cotizar más, y cómo cambiarla sin complicaciones ni sorpresas desagradables de Seguridad Social.
 

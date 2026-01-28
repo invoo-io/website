@@ -36,7 +36,6 @@ faq:
     answer: "Sí. Puedes presentar una declaración complementaria hasta 4 años después. Necesitas las facturas y justificantes originales. Hacienda revisará la complementaria y devolverá lo que corresponda si está justificado."
 ---
 
-> **En resumen:** La mayoría de autónomos españoles pierden entre 2.000€ y 4.000€ anuales por deducciones que no aplican. **El 67% no optimiza correctamente sus gastos deducibles**. Esta guía te muestra las 15 deducciones más olvidadas y cómo implementar un sistema para no perder dinero este año.
 
 Maggie lleva 4 años como autónomo. Diseña páginas web desde su casa en Madrid, factura unos 45.000€ al año, y siempre ha confiado ciegamente en su gestoría para la declaración del IRPF.
 

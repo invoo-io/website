@@ -104,15 +104,7 @@ En esta guía te explicamos todo sin tecnicismos.
 
 **79% of users scan rather than read.** Make your content skimmable:
 
-1. **TL;DR at top** (required for articles 2000+ words)
-   ```markdown
-   > **En resumen:** [2-3 sentences with the key takeaway and action]
-   ```
-
-   **Example:**
-   > **En resumen:** Verifactu obliga a todos los autónomos que usen software de facturación a generar un código QR en cada factura desde julio 2026. **La multa por incumplimiento es de hasta 50.000€**. En esta guía te explicamos los pasos exactos para cumplir sin complicaciones.
-
-2. **Bold key phrases** in every section
+1. **Bold key phrases** in every section
    - A skimmer reading only bold text should understand the main points
    - Bold the **3-6 most important words** that convey the key takeaway
 
@@ -125,25 +117,25 @@ En esta guía te explicamos todo sin tecnicismos.
    ❌ BAD (nothing): "Si no lo cumples, las multas pueden llegar hasta 10000 euros."
    ```
 
-3. **Headers every 200-400 words**
+2. **Headers every 200-400 words**
    - H2 for main sections
    - H3 for subsections
    - Headers should make sense as a standalone outline
 
-4. **Visual breaks** (but avoid checklist overload)
+3. **Visual breaks** (but avoid checklist overload)
    - Bullet lists for **lists only** (3+ related items)
    - **NOT for explanations** that need narrative flow
    - Blockquotes for key insights or quotes
    - `---` dividers between major sections
    - **Never stack 3+ bullet sections** without prose breaks
 
-5. **Sentence length**
+4. **Sentence length**
    - Target: 15-20 words per sentence
    - Max: 25 words (break longer sentences)
    - Short sentences (8-12 words) for emphasis and CTAs
    - Vary sentence length to create rhythm
 
-6. **Content rhythm** (critical for readability)
+5. **Content rhythm** (critical for readability)
    - **Mix prose with lists** — avoid "bullet fatigue"
    - Pattern: 2-3 paragraphs → visual break → 2-3 paragraphs
    - Use **storytelling to explain**, not just bullet points
@@ -835,8 +827,6 @@ La fecha límite es **julio 2026**. No hay prórrogas confirmadas hasta la fecha
 [Frontmatter YAML including sources array - see Section 5]
 ---
 
-> **En resumen:** [TL;DR - 2-3 sentences summarizing the key takeaway and what action to take. Required for articles 2000+ words.]
-
 [Opening hook - 1-2 short paragraphs that establish the problem and connect emotionally]
 
 ---
@@ -1070,8 +1060,6 @@ coverImage: "/blog/verifactu-guide.webp"
 ```mdx
 # Cómo [lograr objetivo] en [año/contexto]
 
-> **En resumen:** [TL;DR en 2-3 oraciones con la acción clave.]
-
 [Hook: 4-5 líneas estableciendo el problema. **Bold key pain point**.]
 
 [Segundo párrafo: 2 líneas con conexión emocional o dato impactante.]
@@ -1143,8 +1131,6 @@ coverImage: "/blog/verifactu-guide.webp"
 ```markdown
 # [Tema]: Análisis del sector en [año]
 
-> **En resumen:** [TL;DR con el hallazgo principal y qué hacer al respecto.]
-
 [Hook: 2-4 oraciones sobre por qué este análisis importa ahora. **Bold key insight**.]
 
 ---
@@ -1189,8 +1175,6 @@ coverImage: "/blog/verifactu-guide.webp"
 
 ```markdown
 # [Producto A] vs [Producto B]: Comparativa [año]
-
-> **En resumen:** [Producto A] es mejor para [perfil]. [Producto B] gana en [aspecto]. **Nuestra elección: [recomendación]**.
 
 [Hook: 2-4 oraciones sobre por qué esta comparación importa. **Bold key differentiator**.]
 
@@ -1243,8 +1227,6 @@ coverImage: "/blog/verifactu-guide.webp"
 ```markdown
 # [Número] [elementos] para [objetivo]
 
-> **En resumen:** [Los X consejos más importantes en una frase.]
-
 [Hook: 2-4 oraciones con historia personal o situación relatable. **Bold key emotion**.]
 
 [Segunda parte del hook: 2-4 oraciones con promesa de valor.]
@@ -1289,8 +1271,6 @@ Ya conoces los X consejos que marcan la diferencia. Ahora el siguiente paso es i
 ```markdown
 # Cómo [nombre/tipo de cliente] [logró resultado específico]
 
-> **En resumen:** [Resultado principal en una frase con número concreto.]
-
 [Hook: 2-4 oraciones con el desafío inicial. **Bold key challenge**.]
 
 ---
@@ -1334,8 +1314,6 @@ Ya conoces los X consejos que marcan la diferencia. Ahora el siguiente paso es i
 
 ```markdown
 # Qué es [concepto] y cómo afecta a los autónomos
-
-> **En resumen:** [Definición en una frase + implicación principal.]
 
 [Hook: 2-4 oraciones sobre por qué esto importa ahora. **Bold key deadline or impact**.]
 
@@ -1403,7 +1381,6 @@ Ya conoces los X consejos que marcan la diferencia. Ahora el siguiente paso es i
 - [ ] Word count within category range (see Section 3)
 
 ### 🟡 Strongly Recommended
-- [ ] **TL;DR at top** (required for 2000+ word articles)
 - [ ] `author` set to "Equipo Invoo"
 - [ ] `tags` with 3-5 relevant keywords
 - [ ] `readingTime` calculated (~200 words/min)

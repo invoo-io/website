@@ -36,7 +36,6 @@ faq:
     answer: "No lo plantees como exigencia, sino como mejora mutua. Pregunta: '¿Te facilitaría el trabajo si uso un software que te dé acceso directo a mis facturas?' El 83% de gestorías están abiertas a sistemas con exportación estructurada porque les ahorra trabajo de transcripción manual."
 ---
 
-> **En resumen:** El 69% de autónomos usa WhatsApp para comunicarse con su gestoría, perdiendo 3.7 horas mensuales en búsqueda de documentos y malentendidos. **Los tres fallos estructurales son: falta de contexto, transcripción manual y cero trazabilidad**. Las gestorías avanzadas ya trabajan con acceso directo a datos del cliente usando el marco CART (Contextual, Automático, Responsable, Transparente), reduciendo el tiempo administrativo en un 78%. Verifactu 2026 es la oportunidad perfecta para rediseñar este flujo roto.
 
 Son las 18:47 del día 19 de octubre.
 

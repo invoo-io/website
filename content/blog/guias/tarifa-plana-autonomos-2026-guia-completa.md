@@ -38,7 +38,6 @@ sources:
 lastVerified: "Enero 2026"
 ---
 
-> **En resumen:** La tarifa plana te permite empezar como autónomo pagando aproximadamente 88,72€/mes (80€ + MEI) durante 12 meses. Necesitas 2 años sin actividad previa (3 si ya usaste la tarifa plana). **Si olvidas marcar la casilla al darte de alta, la pierdes para siempre**.
 
 Estás a punto de dar el salto. Has validado tu idea, tienes tus primeros clientes potenciales y sabes que puedes facturar lo suficiente para vivir de esto.
 

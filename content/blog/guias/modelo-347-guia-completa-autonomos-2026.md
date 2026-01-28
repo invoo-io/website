@@ -36,7 +36,6 @@ faq:
     answer: "La sanción por no presentar o presentar fuera de plazo el Modelo 347 oscila entre 300€ y 20.000€, dependiendo del volumen de operaciones y el número de registros omitidos."
 ---
 
-> **En resumen:** El Modelo 347 es una declaración informativa obligatoria si facturaste más de 3.005,06€ anuales (IVA incluido) con un mismo cliente o proveedor durante 2025. **Debes presentarlo entre el 1 de febrero y el 2 de marzo de 2026**. Si lo olvidas, la sanción mínima es de 300€ y puede llegar hasta 20.000€ dependiendo del volumen omitido.
 
 Es mediados de febrero y tu gestoría te envía un mensaje urgente: "Necesito la lista de clientes y proveedores para el 347. Cuanto antes." Tú piensas con confusión total: "¿Qué es el 347? ¿No acabo de presentar el IVA del cuarto trimestre hace dos semanas?"
 

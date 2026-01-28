@@ -40,7 +40,6 @@ faq:
     answer: "No, los tramos son los mismos para todos los autónomos. La diferencia es que los autónomos societarios (administradores de SL) tienen una base mínima obligatoria de 1.000€/mes, lo que les coloca automáticamente con una cuota mínima de aproximadamente 315€/mes (incluyendo MEI)."
 ---
 
-> **En resumen:** En 2026 existen 15 tramos de cotización que van desde 200€/mes (ingresos hasta 670€/mes) hasta 590€/mes (más de 6.000€/mes). Todos los tramos se mantienen congelados respecto a 2025, aunque el MEI sube al 0,9% añadiendo entre 6€ y 24€ mensuales. Puedes cambiar de tramo hasta 6 veces al año para ajustarte a tus ingresos reales y evitar regularizaciones con recargos del 10-20%.
 
 Estás mirando tus ingresos del último trimestre y te preguntas: ¿estoy cotizando en el tramo correcto? Es una pregunta que **3,3 millones de autónomos** en España se hacen cada año, especialmente desde que en 2023 entró en vigor el sistema de cotización por ingresos reales.
 

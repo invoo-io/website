@@ -48,7 +48,6 @@ faq:
     answer: "Sí. Debes residir y trabajar en la comunidad durante todo el periodo bonificado. Si te mudas antes de cumplir 12 meses, pierdes el derecho al reembolso."
 ---
 
-> **En resumen:** La Cuota Cero es una ayuda autonómica (no estatal) que te reembolsa el 100% de la Tarifa Plana durante 12-24 meses. Disponible en Madrid, Andalucía, Galicia, Canarias y Castilla-La Mancha, puede ahorrarte más de 2.000€. Se solicita DESPUÉS de cumplir tu primer año de actividad, no durante el alta.
 
 Te has dado de alta como autónomo y estás pagando 88,72€ al mes gracias a la Tarifa Plana. Piensas que es lo máximo que puedes ahorrar durante tu primer año, pero hay algo que probablemente no sabes: **algunas comunidades autónomas te devuelven esos 88 euros íntegros**.
 

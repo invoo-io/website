@@ -7,7 +7,7 @@
 > **Themes:** New autónomo journey + Verifactu/Compliance
 > **Category mix:** Balanced across all categories
 >
-> **Progress:** 3/16 articles completed
+> **Progress:** 5/16 articles completed
 
 ---
 
@@ -174,10 +174,11 @@
 
 ---
 
-### Article 1.4 - Why Spanish Software Costs More
+### Article 1.4 - Why Spanish Software Costs More ✅
 **Category:** análisis
 **Priority:** 🟡 MEDIUM
-**File:** `content/blog/analisis/software-facturacion-espanol-vs-internacional.md`
+**Status:** ✅ Published 2026-01-28
+**File:** `content/blog/analisis/por-que-software-facturacion-espanol-cuesta-mas.md`
 
 **Title:** "Por Qué el Software de Facturación Internacional No Sirve en España"
 
@@ -215,9 +216,10 @@
 
 ## Week 2: February 10-16
 
-### Article 2.1 - Bizum Income Reporting
+### Article 2.1 - Bizum Income Reporting ✅
 **Category:** guías
 **Priority:** 🔴 URGENT (New Feb 2026 requirement)
+**Status:** ✅ Published 2026-01-28
 **File:** `content/blog/guias/bizum-autonomos-declarar-ingresos-2026.md`
 
 **Title:** "Bizum para Autónomos: Nueva Obligación de Reporte 2026"

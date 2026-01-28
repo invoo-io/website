@@ -40,7 +40,6 @@ faq:
     answer: "Sí. Si eres PYME (facturas menos de 6 millones anuales), puedes recuperar el IVA tras 6 meses desde el vencimiento. Debes emitir factura rectificativa y notificarlo a Hacienda mediante el modelo 952 en un plazo de 1 mes."
 ---
 
-> **En resumen:** La mejor estrategia es prevenir con contratos claros y anticipos del 30-50%. Si ya tienes el impago, reclama con burofax (~31€) y luego proceso monitorio (gratuito para autónomos). Puedes recuperar el IVA tras 6 meses emitiendo factura rectificativa (modelo 952).
 
 Son las 10 de la noche. Abres el extracto bancario y haces números por tercera vez esta semana. La factura de 2.400 € que tu cliente prometió pagar "en unos días" lleva ya dos meses vencida. Has mandado tres emails. Dos WhatsApp. Incluso llamaste por teléfono. Siempre la misma respuesta: "La semana que viene sin falta". Mientras tanto, tú tienes que pagar la Seguridad Social, el alquiler del local, los proveedores. Y esa factura sigue sin aparecer en tu cuenta.
 

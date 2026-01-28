@@ -34,7 +34,6 @@ faq:
     answer: "No hay garantías de más aplazamientos. Este es ya el segundo retraso de Verifactu. Aunque la presión política y empresarial ha funcionado antes, lo más prudente es asumir que las fechas de 2027 son definitivas."
 ---
 
-> **En resumen:** Verifactu se aplaza hasta 2027: sociedades deben cumplir desde enero, autónomos desde julio. **Hacienda ofrece 6 meses de gracia sin sanciones** para quienes se adelanten. El 64% de autónomos reconoce no estar preparado, pero esperar al último momento significa perder ventajas competitivas y enfrentarse a proveedores saturados.
 
 Si eres autónomo o tienes una pyme, probablemente hayas respirado aliviado esta mañana. **El Gobierno acaba de anunciar que Verifactu se retrasa hasta 2027**, en lo que ya es el segundo aplazamiento de esta normativa.
 

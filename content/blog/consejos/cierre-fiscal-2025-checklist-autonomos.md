@@ -36,7 +36,6 @@ faq:
     answer: "Tu cuota de enero 2026 se calculará según tus ingresos reales de 2025. Si ganaste más, tu tramo sube. Si ganaste menos, puedes solicitar cambio de tramo a la Seguridad Social."
 ---
 
-> **En resumen:** Diciembre es tu última oportunidad para deducir gastos de 2025 y optimizar impuestos. Enero trae plazos brutales: modelos 130/303 antes del 30, modelo 390 el mismo día. **Llegar con las cuentas claras ahora te ahorra multas y noches sin dormir en enero.**
 
 Diciembre no es solo el mes de las cenas navideñas y los propósitos de Año Nuevo. Para los autónomos españoles, **es el mes en el que se cierra la última ventana fiscal del ejercicio**. Cada factura que emitas, cada gasto que registres y cada decisión que tomes en las próximas semanas determinará cuánto pagarás a Hacienda en 2025.
 

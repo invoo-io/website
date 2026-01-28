@@ -34,7 +34,6 @@ faq:
     answer: "Sí, la cuota mensual de autónomos (incluido el MEI) es 100% deducible como gasto de tu actividad profesional. Esto reduce tu base imponible en el IRPF y, en consecuencia, el impuesto que pagas."
 ---
 
-> **En resumen:** Las cuotas de autónomos 2026 se organizan en 15 tramos desde 200€ hasta 605€ mensuales según tus ingresos. Los 3 primeros tramos (hasta 1.166,70€/mes de rendimiento neto) quedan congelados respecto a 2025. El MEI (0,9%) añade entre 9€ y 40€ mensuales. Si te das de alta en 2026, la Tarifa Plana es de 80€/mes el primer año (más MEI, unos 88€ totales).
 
 El 30 de noviembre de 2025, miles de autónomos se manifestaron en Madrid y otras 20 ciudades españolas bajo el lema "Autónomos asfixiados. Basta ya". **La presión fiscal sobre los trabajadores por cuenta propia se ha vuelto insostenible**.
 

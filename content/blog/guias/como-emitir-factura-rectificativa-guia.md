@@ -34,7 +34,6 @@ faq:
     answer: "Debes emitirla tan pronto como tengas conocimiento del error. No hay plazo fijo, pero cuanto más tiempo pase, más complicaciones pueden surgir, especialmente si tu cliente ya cerró su trimestre fiscal."
 ---
 
-> **En resumen:** Nunca borres una factura emitida (multa de hasta €50.000). Usa una factura rectificativa con los códigos R1 a R5 según el motivo del error. Debes referenciar siempre la factura original y emitir tan pronto como detectes el error.
 
 Son las 9 de la noche. Acabas de darte cuenta de que la factura que enviaste esta mañana tiene mal el importe: pusiste 1.210€ en lugar de 121€. Tu primer instinto es abrir el programa, borrar esa factura, y hacer una nueva.
 

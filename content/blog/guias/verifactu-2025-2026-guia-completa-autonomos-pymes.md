@@ -44,7 +44,6 @@ faq:
     answer: "Depende. La AEAT ofrece un formulario gratuito básico para autónomos simples. Si usas software comercial como Invoo, Holded o Quipu, Verifactu viene incluido en tu tarifa mensual sin coste adicional."
 ---
 
-> **En resumen:** Verifactu obliga a tu software de facturación a generar un código QR oficial en cada factura desde enero 2026 (sociedades) o julio 2026 (autónomos). **Excel con fórmulas = obligado**. La multa por incumplimiento es de 50.000€ fijos por ejercicio. En esta guía te explicamos fechas, requisitos y cómo cumplir sin complicaciones.
 
 ---
 
