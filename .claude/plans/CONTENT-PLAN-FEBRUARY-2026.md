@@ -7,7 +7,7 @@
 > **Themes:** New autónomo journey + Verifactu/Compliance
 > **Category mix:** Balanced across all categories
 >
-> **Progress:** 5/16 articles completed
+> **Progress:** 6/16 articles completed
 
 ---
 
@@ -311,12 +311,13 @@
 
 ---
 
-### Article 2.3 - Q1 Tax Planning Tips
+### Article 2.3 - Q1 Tax Planning Tips ✅
 **Category:** consejos
 **Priority:** 🟡 MEDIUM
+**Status:** ✅ Published 2026-01-29
 **File:** `content/blog/consejos/planificacion-fiscal-primer-trimestre-2026.md`
 
-**Title:** "Planificación Fiscal Q1 2026: Maximiza Tus Deducciones"
+**Title:** "Gastos Deducibles Q1 2026: Qué Guardar Antes del Modelo 130"
 
 **Target keywords:**
 - Primary: `planificacion fiscal autonomos`, `deducciones primer trimestre`
