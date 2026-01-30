@@ -7,7 +7,7 @@
 > **Themes:** New autónomo journey + Verifactu/Compliance
 > **Category mix:** Balanced across all categories
 >
-> **Progress:** 6/16 articles completed
+> **Progress:** 7/16 articles completed
 
 ---
 
@@ -352,9 +352,10 @@
 
 ---
 
-### Article 2.4 - Estimación Directa vs Objetiva
+### Article 2.4 - Estimación Directa vs Objetiva ✅
 **Category:** formación
 **Priority:** 🟠 HIGH (Fundamental topic)
+**Status:** ✅ Published 2026-01-30
 **File:** `content/blog/formacion/estimacion-directa-vs-objetiva-modulos.md`
 
 **Title:** "Estimación Directa vs Objetiva (Módulos): Cuál Elegir en 2026"
