@@ -6,7 +6,7 @@ Create the next blog article from the content plan.
 
 ### 1. Find the Next Article
 
-Read the latest content plan in `.claude/plans/` (e.g., `CONTENT-PLAN-FEBRUARY-2026.md`).
+Read the latest content plan in `.claude/plans/` (e.g., `content-plan-february-2026.md`).
 Find the first article **not** marked as "Published" or "completed".
 Show me which article you're picking up and ask for confirmation before proceeding.
 
