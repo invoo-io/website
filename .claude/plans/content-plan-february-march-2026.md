@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 0/30 articles completed
+> **Progress:** 1/30 articles completed
 
 ---
 
@@ -37,7 +37,7 @@ Already published (29 articles). Key topics covered:
 
 ### Week 1: February Deadlines & Urgency (Feb 1-7)
 
-#### Day 1 — Feb 1 (Saturday)
+#### Day 1 — Feb 1 (Saturday) ✅ PUBLISHED
 **Category:** consejos
 **File:** `content/blog/consejos/calendario-fiscal-febrero-marzo-autonomos-2026.md`
 **Title:** "Calendario Fiscal Febrero-Marzo 2026: Qué Declarar y Cuándo"
