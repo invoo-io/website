@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 1/30 articles completed
+> **Progress:** 2/30 articles completed
 
 ---
 
@@ -56,7 +56,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 2 — Feb 2 (Sunday)
+#### Day 2 — Feb 2 (Sunday) ✅ PUBLISHED
 **Category:** formación
 **File:** `content/blog/formacion/rendimientos-netos-autonomos-como-calcular.md`
 **Title:** "Rendimientos Netos de Autónomos: Cómo Calcularlos para tu Cuota 2026"
