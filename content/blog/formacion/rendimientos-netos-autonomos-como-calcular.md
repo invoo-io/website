@@ -40,6 +40,8 @@ Te sientes como si te acabaran de hablar en klingon. **¿Rendimientos netos? ¿T
 
 Pero la realidad es más simple de lo que parece. Si entiendes cómo calcular tus rendimientos netos correctamente, puedes elegir tu tramo de cotización sin sorpresas y evitar que Seguridad Social te pase factura extra con recargos a final de año. En esta guía te explicamos la fórmula exacta, los errores comunes que cuestan dinero, y cómo proyectar tus rendimientos para 2026 sin necesitar un máster en contabilidad.
 
+> **¿Prefieres calcularlo directamente?** Usa nuestra [calculadora de cuota de autónomos](/es/tools/calculators/self-employed-quota) gratuita. Introduces tus ingresos y gastos, y te dice en qué tramo estás y cuánto pagarás de cuota mensual.
+
 ---
 
 ## Qué son los rendimientos netos y por qué determinan tu cuota
