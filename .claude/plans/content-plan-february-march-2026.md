@@ -1,7 +1,7 @@
 # Content Plan: February-March 2026 (30 Days)
 
 > **Created:** 2026-01-31
-> **Duration:** 30 days (Feb 1 - Mar 2, 2026)
+> **Duration:** 30 days (Feb 1 - Mar 3, 2026)
 > **Frequency:** 1 article per day
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
@@ -35,9 +35,9 @@ Already published (29 articles). Key topics covered:
 
 ## 30-Day Calendar
 
-### Week 1: February Deadlines & Urgency (Feb 1-7)
+### Week 1: February Deadlines & Urgency (Feb 1-8)
 
-#### Day 1 — Feb 1 (Saturday) ✅ PUBLISHED
+#### Day 1 — Feb 1 (Sunday) ✅ PUBLISHED
 **Category:** consejos
 **File:** `content/blog/consejos/calendario-fiscal-febrero-marzo-autonomos-2026.md`
 **Title:** "Calendario Fiscal Febrero-Marzo 2026: Qué Declarar y Cuándo"
@@ -56,7 +56,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 2 — Feb 2 (Sunday) ✅ PUBLISHED
+#### Day 2 — Feb 2 (Monday) ✅ PUBLISHED
 **Category:** formación
 **File:** `content/blog/formacion/rendimientos-netos-autonomos-como-calcular.md`
 **Title:** "Rendimientos Netos de Autónomos: Cómo Calcularlos para tu Cuota 2026"
@@ -75,7 +75,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 3 — Feb 3 (Monday)
+#### Day 3 — Feb 4 (Wednesday)
 **Category:** guías
 **File:** `content/blog/guias/regularizacion-cuotas-autonomos-2026.md`
 **Title:** "Regularización de Cuotas Autónomos 2026: Te Devuelven o Debes Pagar"
@@ -94,7 +94,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 4 — Feb 4 (Tuesday)
+#### Day 4 — Feb 5 (Thursday)
 **Category:** análisis
 **File:** `content/blog/analisis/gestorias-online-vs-presencial-autonomos-2026.md`
 **Title:** "Gestoría Online vs Presencial: Qué Conviene a Cada Autónomo en 2026"
@@ -113,7 +113,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 5 — Feb 5 (Wednesday)
+#### Day 5 — Feb 6 (Friday)
 **Category:** formación
 **File:** `content/blog/formacion/iva-criterio-caja-vs-devengo-autonomos.md`
 **Title:** "IVA: Criterio de Caja vs Devengo — Cuál Elegir como Autónomo (2026)"
@@ -132,7 +132,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 6 — Feb 6 (Thursday)
+#### Day 6 — Feb 7 (Saturday)
 **Category:** consejos
 **File:** `content/blog/consejos/errores-facturacion-autonomos-sanciones-hacienda.md`
 **Title:** "10 Errores de Facturación que Hacienda Sanciona (y Cómo Evitarlos)"
@@ -151,7 +151,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 7 — Feb 7 (Friday)
+#### Day 7 — Feb 8 (Sunday)
 **Category:** guías
 **File:** `content/blog/guias/libro-ingresos-gastos-autonomos-obligatorio.md`
 **Title:** "Libro de Ingresos y Gastos para Autónomos: Cómo Llevarlo Correctamente"
@@ -170,9 +170,9 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-### Week 2: High-Volume Evergreen (Feb 8-14)
+### Week 2: High-Volume Evergreen (Feb 9-15)
 
-#### Day 8 — Feb 8 (Saturday)
+#### Day 8 — Feb 9 (Monday)
 **Category:** guías
 **File:** `content/blog/guias/gastos-deducibles-autonomos-2026-lista-completa.md`
 **Title:** "Gastos Deducibles Autónomos 2026: La Lista Completa Verificada"
@@ -191,7 +191,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 9 — Feb 9 (Sunday)
+#### Day 9 — Feb 10 (Tuesday)
 **Category:** formación
 **File:** `content/blog/formacion/factura-proforma-vs-presupuesto-diferencias.md`
 **Title:** "Factura Proforma vs Presupuesto: Diferencias y Cuándo Usar Cada Uno"
@@ -210,7 +210,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 10 — Feb 10 (Monday)
+#### Day 10 — Feb 11 (Wednesday)
 **Category:** guías
 **File:** `content/blog/guias/trabajar-desde-casa-autonomo-deducciones-2026.md`
 **Title:** "Trabajar Desde Casa como Autónomo: Qué Deducir de Luz, Agua e Internet"
@@ -229,7 +229,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 11 — Feb 11 (Tuesday)
+#### Day 11 — Feb 12 (Thursday)
 **Category:** consejos
 **File:** `content/blog/consejos/cuenta-bancaria-autonomos-obligatoria-separada.md`
 **Title:** "¿Cuenta Bancaria Separada para Autónomos? No Es Obligatoria, Pero..."
@@ -248,7 +248,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 12 — Feb 12 (Wednesday)
+#### Day 12 — Feb 13 (Friday)
 **Category:** formación
 **File:** `content/blog/formacion/factura-simplificada-requisitos-limite-400.md`
 **Title:** "Factura Simplificada: Cuándo Usarla, Requisitos y Límite de 400€"
@@ -267,7 +267,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 13 — Feb 13 (Thursday)
+#### Day 13 — Feb 14 (Saturday)
 **Category:** guías
 **File:** `content/blog/guias/pluriactividad-autonomo-asalariado-2026.md`
 **Title:** "Pluriactividad: Ser Autónomo y Asalariado a la Vez en 2026"
@@ -286,7 +286,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 14 — Feb 14 (Friday)
+#### Day 14 — Feb 15 (Sunday)
 **Category:** análisis
 **File:** `content/blog/analisis/autonomo-vs-sociedad-limitada-2026.md`
 **Title:** "Autónomo vs Sociedad Limitada en 2026: Cuándo Conviene Cada Uno"
@@ -305,9 +305,9 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-### Week 3: Strategic Differentiation (Feb 15-21)
+### Week 3: Strategic Differentiation (Feb 16-22)
 
-#### Day 15 — Feb 15 (Saturday)
+#### Day 15 — Feb 16 (Monday)
 **Category:** formación
 **File:** `content/blog/formacion/numerar-facturas-autonomos-formato-correcto.md`
 **Title:** "Numeración de Facturas: Formato Correcto y Qué Exige Verifactu"
@@ -326,7 +326,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 16 — Feb 16 (Sunday)
+#### Day 16 — Feb 17 (Tuesday)
 **Category:** consejos
 **File:** `content/blog/consejos/dietas-manutencion-autonomos-deducibles-2026.md`
 **Title:** "Dietas y Manutención para Autónomos: Cuánto Deducir al Día (2026)"
@@ -345,7 +345,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 17 — Feb 17 (Monday)
+#### Day 17 — Feb 18 (Wednesday)
 **Category:** guías
 **File:** `content/blog/guias/modelo-036-vs-037-diferencias-cual-usar.md`
 **Title:** "Modelo 036 vs 037: Cuál Usar para Darte de Alta como Autónomo"
@@ -364,7 +364,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 18 — Feb 18 (Tuesday)
+#### Day 18 — Feb 19 (Thursday)
 **Category:** formación
 **File:** `content/blog/formacion/recargo-equivalencia-iva-comercio-minorista.md`
 **Title:** "Recargo de Equivalencia: Qué Es y Cómo Afecta al Comercio Minorista"
@@ -383,7 +383,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 19 — Feb 19 (Wednesday)
+#### Day 19 — Feb 20 (Friday)
 **Category:** consejos
 **File:** `content/blog/consejos/vehiculo-profesional-autonomo-deduccion-iva-irpf.md`
 **Title:** "Vehículo Profesional para Autónomos: Qué Deducir en IVA e IRPF"
@@ -402,7 +402,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 20 — Feb 20 (Thursday)
+#### Day 20 — Feb 21 (Saturday)
 **Category:** guías
 **File:** `content/blog/guias/pago-fraccionado-irpf-modelo-130-2026.md`
 **Title:** "Pago Fraccionado IRPF (Modelo 130): Cuánto Pagar Cada Trimestre"
@@ -421,7 +421,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 21 — Feb 21 (Friday)
+#### Day 21 — Feb 22 (Sunday)
 **Category:** análisis
 **File:** `content/blog/analisis/factura-electronica-b2b-obligatoria-2026-2027.md`
 **Title:** "Factura Electrónica B2B Obligatoria: Calendario, Requisitos y Diferencias con Verifactu"
@@ -440,9 +440,9 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-### Week 4: Long-Tail & Featured Snippets (Feb 22-28)
+### Week 4: Long-Tail & Featured Snippets (Feb 23 - Mar 1)
 
-#### Day 22 — Feb 22 (Saturday)
+#### Day 22 — Feb 23 (Monday)
 **Category:** formación
 **File:** `content/blog/formacion/facturar-sin-ser-autonomo-espana-legal.md`
 **Title:** "¿Puedo Facturar Sin Ser Autónomo en España? Cuándo Es Legal"
@@ -461,7 +461,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 23 — Feb 23 (Sunday)
+#### Day 23 — Feb 24 (Tuesday)
 **Category:** guías
 **File:** `content/blog/guias/cambiar-epigrafe-iae-autonomo-cuando-como.md`
 **Title:** "Cómo Cambiar el Epígrafe IAE como Autónomo: Cuándo y Trámite"
@@ -480,7 +480,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 24 — Feb 24 (Monday)
+#### Day 24 — Feb 25 (Wednesday)
 **Category:** consejos
 **File:** `content/blog/consejos/gastos-formacion-deducibles-autonomos-2026.md`
 **Title:** "Gastos de Formación Deducibles: Cuánto Puedes Deducir como Autónomo"
@@ -499,7 +499,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 25 — Feb 25 (Tuesday)
+#### Day 25 — Feb 26 (Thursday)
 **Category:** guías
 **File:** `content/blog/guias/modelo-349-operaciones-intracomunitarias-autonomos.md`
 **Title:** "Modelo 349: Guía para Autónomos con Clientes en la UE (2026)"
@@ -518,7 +518,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 26 — Feb 26 (Wednesday)
+#### Day 26 — Feb 27 (Friday)
 **Category:** formación
 **File:** `content/blog/formacion/amortizacion-bienes-inversion-autonomos-tabla.md`
 **Title:** "Amortización de Bienes de Inversión: Tabla Oficial y Ejemplos para Autónomos"
@@ -537,7 +537,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 27 — Feb 27 (Thursday)
+#### Day 27 — Feb 28 (Saturday)
 **Category:** consejos
 **File:** `content/blog/consejos/seguro-responsabilidad-civil-autonomos-obligatorio.md`
 **Title:** "Seguro de Responsabilidad Civil para Autónomos: ¿Obligatorio o No?"
@@ -556,7 +556,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 28 — Feb 28 (Friday)
+#### Day 28 — Mar 1 (Sunday)
 **Category:** guías
 **File:** `content/blog/guias/baja-autonomo-como-cuando-prestacion-cese.md`
 **Title:** "Cómo Darse de Baja como Autónomo: Trámites, Plazos y Prestación por Cese"
@@ -575,9 +575,9 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-### Week 5: March Push (Mar 1-2)
+### Week 5: March Push (Mar 2-3)
 
-#### Day 29 — Mar 1 (Saturday)
+#### Day 29 — Mar 2 (Monday)
 **Category:** análisis
 **File:** `content/blog/analisis/inteligencia-artificial-facturacion-autonomos-2026.md`
 **Title:** "IA y Facturación: Lo Que Puede Hacer por Ti (y Lo Que No) en 2026"
@@ -596,7 +596,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 30 — Mar 2 (Sunday)
+#### Day 30 — Mar 3 (Tuesday)
 **Category:** guías
 **File:** `content/blog/guias/autonomo-colaborador-familiar-requisitos-cuota.md`
 **Title:** "Autónomo Colaborador Familiar: Requisitos, Cuota y Bonificaciones 2026"
