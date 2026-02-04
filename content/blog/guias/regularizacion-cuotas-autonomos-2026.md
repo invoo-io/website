@@ -5,7 +5,7 @@ publishedAt: "2026-02-04"
 author: "Equipo Invoo"
 tags: ["regularizacion-cuotas", "seguridad-social", "autonomos-2026", "rendimientos-netos"]
 readingTime: 10
-featured: false
+featured: true
 editorPick: false
 coverImage: "/blog/regularizacion-cuotas-autonomos-2026.webp"
 keyTakeaways:
