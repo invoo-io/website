@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 2/30 articles completed
+> **Progress:** 4/30 articles completed
 
 ---
 
@@ -75,7 +75,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 3 — Feb 4 (Wednesday)
+#### Day 3 — Feb 4 (Wednesday) ✅ PUBLISHED
 **Category:** guías
 **File:** `content/blog/guias/regularizacion-cuotas-autonomos-2026.md`
 **Title:** "Regularización de Cuotas Autónomos 2026: Te Devuelven o Debes Pagar"
@@ -94,7 +94,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 4 — Feb 5 (Thursday)
+#### Day 4 — Feb 5 (Thursday) ✅ PUBLISHED
 **Category:** análisis
 **File:** `content/blog/analisis/gestorias-online-vs-presencial-autonomos-2026.md`
 **Title:** "Gestoría Online vs Presencial: Qué Conviene a Cada Autónomo en 2026"
