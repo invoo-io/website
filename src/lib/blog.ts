@@ -2,6 +2,11 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import type { BlogPost, BlogPostMetadata, Category } from "@/types/blog";
+import {
+  featuredArticles,
+  editorPickArticles,
+  type ArticleReference,
+} from "@/config/blog-featured";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
 
@@ -320,19 +325,64 @@ export function getBlogPostsMetadataByCategory(
 }
 
 /**
- * Get featured blog posts metadata
- * Returns posts marked as featured, sorted by publication date
+ * Helper to resolve article references to actual posts with validation
  */
-export function getFeaturedBlogPostsMetadata(): BlogPostMetadata[] {
-  return getAllBlogPostsMetadata().filter((post) => post.featured === true);
+function resolveArticleReferences(
+  refs: ArticleReference[],
+  allPosts: BlogPostMetadata[],
+  configName: string
+): BlogPostMetadata[] {
+  const posts: BlogPostMetadata[] = [];
+
+  for (const ref of refs) {
+    const post = allPosts.find(
+      (p) => p.category === ref.category && p.slug === ref.slug
+    );
+
+    if (post) {
+      posts.push(post);
+    } else if (process.env.NODE_ENV === "development") {
+      console.warn(
+        `[${configName}] Article not found: ${ref.category}/${ref.slug}`
+      );
+    }
+  }
+
+  return posts;
+}
+
+/**
+ * Get featured blog posts metadata
+ * Returns posts from the featuredArticles config in exact order specified
+ * @param allPosts - Optional pre-fetched posts to avoid duplicate filesystem reads
+ */
+export function getFeaturedBlogPostsMetadata(
+  allPosts?: BlogPostMetadata[]
+): BlogPostMetadata[] {
+  const posts = allPosts ?? getAllBlogPostsMetadata();
+  return resolveArticleReferences(featuredArticles, posts, "featuredArticles");
 }
 
 /**
  * Get editor pick blog posts metadata
- * Returns posts marked as editor picks, sorted by publication date
+ * Returns posts from the editorPickArticles config in exact order specified
+ * Automatically excludes articles that are already in featuredArticles
+ * @param allPosts - Optional pre-fetched posts to avoid duplicate filesystem reads
  */
-export function getEditorPickBlogPostsMetadata(): BlogPostMetadata[] {
-  return getAllBlogPostsMetadata().filter((post) => post.editorPick === true);
+export function getEditorPickBlogPostsMetadata(
+  allPosts?: BlogPostMetadata[]
+): BlogPostMetadata[] {
+  const posts = allPosts ?? getAllBlogPostsMetadata();
+
+  // Filter out articles that are already in featured to prevent duplicates
+  const nonFeaturedRefs = editorPickArticles.filter(
+    (ref) =>
+      !featuredArticles.some(
+        (feat) => feat.category === ref.category && feat.slug === ref.slug
+      )
+  );
+
+  return resolveArticleReferences(nonFeaturedRefs, posts, "editorPickArticles");
 }
 
 /**

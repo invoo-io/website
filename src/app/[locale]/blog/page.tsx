@@ -5,7 +5,12 @@ import Navigation from "@/components/layout/Navigation";
 import HeroSection from "@/components/sections/HeroSection";
 import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
-import { getAllBlogPostsMetadata, getBlogPostsMetadataByCategory } from "@/lib/blog";
+import {
+  getAllBlogPostsMetadata,
+  getBlogPostsMetadataByCategory,
+  getFeaturedBlogPostsMetadata,
+  getEditorPickBlogPostsMetadata,
+} from "@/lib/blog";
 import { EditorPicksSection } from "@/components/blog/EditorPicksSection";
 import NewsletterSection from "@/components/blog/NewsletterSection";
 import { CategoryBlock } from "@/components/blog/CategoryBlock";
@@ -76,8 +81,8 @@ export default async function BlogPage({
 
   const t = await getTranslations({ locale });
   const allPosts = getAllBlogPostsMetadata();
-  const featuredPosts = allPosts.filter((post) => post.featured === true);
-  const editorPickPosts = allPosts.filter((post) => post.editorPick === true);
+  const featuredPosts = getFeaturedBlogPostsMetadata(allPosts);
+  const editorPickPosts = getEditorPickBlogPostsMetadata(allPosts);
 
   // Get all unique categories from posts
   const allCategories = Array.from(new Set(allPosts.map(post => post.category)));
