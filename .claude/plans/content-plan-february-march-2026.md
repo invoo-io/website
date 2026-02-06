@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 4/30 articles completed
+> **Progress:** 5/30 articles completed
 
 ---
 
@@ -113,10 +113,10 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 5 — Feb 6 (Friday)
+#### Day 5 — Feb 6 (Friday) ✅ PUBLISHED
 **Category:** formación
 **File:** `content/blog/formacion/iva-criterio-caja-vs-devengo-autonomos.md`
-**Title:** "IVA: Criterio de Caja vs Devengo — Cuál Elegir como Autónomo (2026)"
+**Title:** "IVA Criterio de Caja vs Devengo para Autónomos 2026"
 **Keywords:** `IVA criterio de caja`, `criterio de caja vs devengo autónomos`
 **Volume/Competition:** Medium / Low-Medium
 **Intent:** Informational (compliance decision)
