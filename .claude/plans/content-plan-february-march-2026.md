@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 5/30 articles completed
+> **Progress:** 6/30 articles completed
 
 ---
 
@@ -132,7 +132,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 6 — Feb 7 (Saturday)
+#### Day 6 — Feb 7 (Saturday) ✅ PUBLISHED
 **Category:** consejos
 **File:** `content/blog/consejos/errores-facturacion-autonomos-sanciones-hacienda.md`
 **Title:** "10 Errores de Facturación que Hacienda Sanciona (y Cómo Evitarlos)"

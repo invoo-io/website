@@ -204,7 +204,9 @@
       "WebFetch(domain:www.iberley.es)",
       "WebFetch(domain:blog.groupseres.com)",
       "WebFetch(domain:leyfacturaelectronica.com)",
-      "WebFetch(domain:www.autonomosenruta.com)"
+      "WebFetch(domain:www.autonomosenruta.com)",
+      "WebFetch(domain:taxdown.es)",
+      "WebFetch(domain:www.supercontable.com)"
     ],
     "deny": [],
     "ask": []
