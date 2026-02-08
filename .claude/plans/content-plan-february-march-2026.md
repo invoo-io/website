@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 6/30 articles completed
+> **Progress:** 7/30 articles completed
 
 ---
 
@@ -151,7 +151,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 7 — Feb 8 (Sunday)
+#### Day 7 — Feb 8 (Sunday) ✅ PUBLISHED
 **Category:** guías
 **File:** `content/blog/guias/libro-ingresos-gastos-autonomos-obligatorio.md`
 **Title:** "Libro de Ingresos y Gastos para Autónomos: Cómo Llevarlo Correctamente"
