@@ -60,7 +60,7 @@ Aquí tributas sobre **ingresos menos gastos deducibles**. Es decir, calculas tu
 
 **Estimación directa simplificada**:
 - Para actividades económicas con facturación anual inferior a €600.000
-- Contabilidad mediante libros registro (ingresos, gastos, bienes de inversión)
+- Contabilidad mediante [libros registro](/es/blog/guias/libro-ingresos-gastos-autonomos-obligatorio) (ingresos, gastos, bienes de inversión)
 - Deducción adicional del 5% sobre rendimiento neto por gastos de difícil justificación (máximo €2.000/año)
 - Modelo 130 trimestral (excepto si tienes 70%+ de retenciones)
 

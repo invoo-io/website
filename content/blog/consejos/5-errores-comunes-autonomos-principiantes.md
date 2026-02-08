@@ -97,7 +97,7 @@ Esta separación te permite en diciembre revisar rápidamente tus gastos deducib
 
 Y guarda todas las facturas. Todas. **Digitalízalas si quieres**, pero asegúrate de tener el justificante completo. Los tickets simplificados que solo ponen "consumo" sin detalle te limitan mucho las deducciones si Hacienda decide revisar.
 
-Por último, lleva tus libros registro al día. Como mínimo necesitas el de ventas e ingresos y el de compras y gastos. Si has comprado equipamiento importante (ordenadores, maquinaria), también el libro de bienes de inversión.
+Por último, lleva tus [libros registro al día](/es/blog/guias/libro-ingresos-gastos-autonomos-obligatorio). Como mínimo necesitas el de ventas e ingresos y el de compras y gastos. Si has comprado equipamiento importante (ordenadores, maquinaria), también el libro de bienes de inversión.
 
 ---
 
