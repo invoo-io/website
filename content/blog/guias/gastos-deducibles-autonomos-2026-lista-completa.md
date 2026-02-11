@@ -209,6 +209,8 @@ Deducción: 15% × 30% × €60 = **€2,70 mensuales** (€32,40 anuales)
 
 Si eres propietario, también puedes deducir la parte proporcional del IBI y los gastos de comunidad. **Sin el 30% adicional**: simplemente (m² despacho / m² totales) × importe. Por ejemplo, con un IBI de €400 y un 15% de vivienda afecta, deduces €60 anuales.
 
+Para un desglose completo con ejemplos paso a paso y la novedad del IVA deducible en 2025, lee nuestra [guía sobre deducciones al trabajar desde casa](/es/blog/guias/trabajar-desde-casa-autonomo-deducciones-2026).
+
 ### Vehículo: la confusión entre IVA e IRPF
 
 Este es el gasto que más confusión genera. **IVA y IRPF tienen reglas diferentes para vehículos**, y mezclarlas es la causa principal de rechazos en inspección.

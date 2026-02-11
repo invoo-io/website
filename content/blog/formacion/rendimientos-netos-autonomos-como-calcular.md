@@ -299,7 +299,7 @@ Cuantos menos gastos declares, mayores serán tus rendimientos netos y más alta
 Gastos que muchos olvidan:
 - Cuota de colegio profesional
 - Seguros de responsabilidad civil o salud privado
-- Suministros proporcionales si trabajas desde casa (luz, internet, agua, IBI, comunidad)
+- [Suministros proporcionales si trabajas desde casa](/es/blog/guias/trabajar-desde-casa-autonomo-deducciones-2026) (luz, internet, agua, IBI, comunidad)
 - Software y herramientas digitales (diseño, facturación, hosting, CRM)
 - Formación relacionada con tu actividad
 - Amortización de equipos (ordenadores, mobiliario)

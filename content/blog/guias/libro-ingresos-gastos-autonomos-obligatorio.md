@@ -305,7 +305,7 @@ Consulta nuestra guía sobre [errores comunes en facturación](/es/blog/consejos
 **Qué detecta Hacienda:** Declaras €15,000 en gastos de suministros en el IRPF. Pero tu libro de facturas recibidas solo suma €9,000. **¿De dónde salen los €6,000 restantes?**
 
 **Por qué pasa:**
-- Deduces gastos sin conservar facturas (tickets de gasolina, comidas con clientes sin factura)
+- Deduces gastos sin conservar facturas (tickets de gasolina, comidas con clientes sin factura, [suministros de vivienda sin calcular correctamente la proporción](/es/blog/guias/trabajar-desde-casa-autonomo-deducciones-2026))
 - Duplicas gastos entre libro de IRPF y libro de IVA con importes distintos
 - Incluyes gastos personales como profesionales sin documentación
 
