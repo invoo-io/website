@@ -1,6 +1,6 @@
 ---
-title: "Tarifa Plana Autónomos 2026: Requisitos, Cuánto Pagas y Cómo Solicitarla"
-excerpt: "Guía completa sobre la tarifa plana de autónomos en 2026. Requisitos reales, cuánto pagas con el MEI, prórrogas, incompatibilidades y el proceso paso a paso para no perderla."
+title: "Tarifa Plana Autónomos 2026: Paga Solo 80€/mes (Requisitos y Cómo Solicitarla)"
+excerpt: "Guía definitiva de la tarifa plana 2026: cómo pagar solo 88,72€/mes durante 12-24 meses, requisitos exactos, cómo solicitarla sin perderla y prórrogas según tus ingresos."
 publishedAt: "2026-01-08"
 author: "Equipo Invoo"
 tags: ["tarifa-plana", "autonomos", "seguridad-social", "cuotas", "nuevos-autonomos"]
@@ -67,6 +67,8 @@ El titular dice 80€/mes, pero la realidad incluye algunos matices. **Aquí est
 
 El MEI es una cotización adicional que financia el sistema de pensiones. Para los autónomos, el porcentaje completo sale de nuestro bolsillo. **En 2026 sube al 0,9%**, y seguirá subiendo progresivamente hasta 2029.
 
+Cuando termine tu tarifa plana, pasarás al [sistema de tramos por ingresos reales](/es/blog/guias/tramos-cuota-autonomos-2026-tabla-completa/). Dependiendo de tus rendimientos netos, pagarás entre 200€/mes (tramo mínimo) y 590€/mes (tramo máximo).
+
 ### Lo que SÍ y lo que NO pagas durante la tarifa plana
 
 **Lo que SÍ estás exento de pagar:**
@@ -115,6 +117,9 @@ Si olvidas marcarlo, no podrás solicitarlo después. **No hay excepciones, no h
 **Si trabajas por cuenta ajena** (pluriactividad), debes elegir entre tarifa plana y bonificación por pluriactividad (50% durante 18 meses). **No son compatibles entre sí.**
 
 Como regla general: si estás empezando y no sabes cuánto vas a facturar, elige la tarifa plana por su previsibilidad y menor riesgo.
+
+> **💡 Maximiza tu ahorro fiscal**
+> ¿Sabías que muchos autónomos pueden [deducirse gastos de trabajar desde casa](/es/herramientas/calculadoras/gastos-deducibles/)? Usa nuestra calculadora para ver exactamente qué puedes deducir según tu actividad y reducir tu base imponible.
 
 **Buena noticia para autónomos societarios:** Desde las sentencias del Tribunal Supremo de 2019-2020 (STS 1669/2019, STS 286/2020, STS 315/2020), **los administradores de sociedades SÍ pueden acceder a la tarifa plana**.
 
@@ -168,7 +173,7 @@ Estos colectivos tienen **24 meses de tarifa plana inicial** (en lugar de 12) y 
 
 Cuando acabe tu periodo de tarifa plana, pasarás automáticamente al sistema de cotización por ingresos reales.
 
-**Cuota mínima en 2026:** Para el tramo más bajo (rendimientos inferiores a 670€/mes), la cuota se mantiene en **200€/mes**. Los primeros tres tramos están congelados para 2026.
+**Cuota mínima en 2026:** Para el tramo más bajo (rendimientos inferiores a 670€/mes), la cuota se mantiene en **200€/mes**. Los primeros tres tramos están congelados para 2026. Consulta la [tabla completa de tramos de cuota 2026](/es/blog/guias/tramos-cuota-autonomos-2026-tabla-completa/) para ver exactamente en cuál caerás según tus ingresos.
 
 **Ajuste cada dos meses:** Puedes cambiar tu base de cotización hasta 6 veces al año (cada dos meses) si tus previsiones de ingresos cambian.
 

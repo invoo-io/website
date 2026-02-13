@@ -288,6 +288,20 @@ Con Invoo, **€10.90/mes incluye todo**: facturas ilimitadas, gestión gastos, 
 
 ---
 
+## Otras comparativas que pueden interesarte
+
+Si estás evaluando diferentes opciones de software de facturación, estas comparativas te ayudarán a tomar la mejor decisión:
+
+- **[Invoo vs Holded](/es/blog/comparaciones/invoo-vs-holded-comparativa-2026/)** - Comparativa completa de Holded (ERP desde €29/mes) vs Invoo. Análisis de precios reales, funcionalidades, soporte y cumplimiento Verifactu.
+
+- **[Invoo vs Billin](/es/blog/comparaciones/invoo-vs-billin-comparativa-2026/)** - Comparamos Billin (gratis con límites severos) vs Invoo. Análisis honesto de OCR, gestión gastos, facturación internacional y dashboard gestoría.
+
+- **[Guía completa: Tarifa plana autónomos 2026](/es/blog/guias/tarifa-plana-autonomos-2026-guia-completa/)** - Si estás empezando como autónomo, la tarifa plana puede ahorrarte hasta €3,000 en el primer año. Descubre requisitos, importes y cómo solicitarla.
+
+- **[Tramos y cuota de autónomos 2026](/es/blog/guias/tramos-cuota-autonomos-2026-tabla-completa/)** - Tabla completa actualizada de tramos de cotización, cuotas mensuales y rendimientos netos. Calcula cuánto pagarás según tus ingresos reales.
+
+---
+
 ## Preguntas frecuentes
 
 <AccordionGroup>

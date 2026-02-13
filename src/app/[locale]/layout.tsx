@@ -38,17 +38,17 @@ export async function generateMetadata({
     },
     description: t("metadata.description"),
     alternates: {
-      canonical: `${BASE_URL}/${locale}`,
+      canonical: `${BASE_URL}/${locale}/`,
       languages: {
-        en: `${BASE_URL}/en`,
-        es: `${BASE_URL}/es`,
-        "x-default": `${BASE_URL}/es`,
+        en: `${BASE_URL}/en/`,
+        es: `${BASE_URL}/es/`,
+        "x-default": `${BASE_URL}/es/`,
       },
     },
     openGraph: {
       type: "website",
       locale: locale === "es" ? "es_ES" : "en_US",
-      url: `${BASE_URL}/${locale}`,
+      url: `${BASE_URL}/${locale}/`,
       siteName: "Invoo",
       title: t("metadata.title"),
       description: t("metadata.description"),

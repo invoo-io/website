@@ -1,6 +1,6 @@
 ---
-title: "Modelo 303 vs Modelo 130: Guía Definitiva para Autónomos (2026)"
-excerpt: "El Modelo 303 es el IVA que nunca fue tuyo. El Modelo 130 es un adelanto de TUS impuestos. Descubre cuándo presentar cada uno, cómo calcularlos y evita sanciones de hasta el 150%."
+title: "Modelo 130 y Modelo 303: Qué Son, Diferencias y Cuándo Presentarlos (2026)"
+excerpt: "Guía completa de los modelos 130 y 303 para autónomos: qué es cada modelo, quién debe presentarlos, cómo calcularlos correctamente y plazos exactos. Evita sanciones de hasta el 150%."
 publishedAt: "2025-11-25"
 author: "Equipo Invoo"
 tags: ["modelo-303", "modelo-130", "iva", "irpf", "impuestos-autonomos", "hacienda"]
@@ -22,13 +22,17 @@ sources:
     url: "https://sede.agenciatributaria.gob.es/Sede/calendario-contribuyente.html"
 lastVerified: "Enero 2026"
 faq:
+  - question: "¿Qué es el modelo 130 y quién tiene que presentarlo?"
+    answer: "El Modelo 130 es la declaración trimestral del pago fraccionado de IRPF para autónomos. Solo deben presentarlo quienes estén en estimación directa Y tengan menos del 70% de sus ingresos con retención. Si trabajas principalmente con empresas que te retienen el 15%, NO presentas el 130."
+  - question: "¿Qué es el modelo 303 y quién debe presentarlo?"
+    answer: "El Modelo 303 es la declaración trimestral del IVA. Deben presentarlo todos los autónomos que facturan con IVA, sin excepciones. Declaras el IVA que cobraste menos el IVA que pagaste, y liquidas la diferencia con Hacienda cada trimestre."
   - question: "¿Cuál es la diferencia entre el Modelo 303 y el Modelo 130?"
     answer: "El Modelo 303 es la declaración trimestral del IVA (dinero que nunca fue tuyo). El Modelo 130 es un pago fraccionado del IRPF (adelanto de tus propios impuestos). El 303 lo presentan todos los autónomos con IVA, mientras que el 130 solo quienes tienen menos del 70% de ingresos con retención."
   - question: "¿Qué pasa si tengo IVA a devolver en el Modelo 303?"
     answer: "Tienes dos opciones: solicitar la devolución a Hacienda (tarda 3-6 meses) o compensar el saldo a favor en los próximos trimestres. La mayoría de autónomos eligen compensar porque es más rápido y evita trámites."
   - question: "¿Tengo que presentar el Modelo 130 si tuve pérdidas?"
     answer: "Sí, siempre que cumplas los requisitos (estimación directa + menos del 70% con retención). Si tuviste pérdidas, el resultado será 0€ o negativo y no pagas nada, pero debes presentar el modelo igualmente."
-  - question: "¿Cuáles son los plazos para presentar el 303 y el 130?"
+  - question: "¿Cuáles son los plazos para presentar el 303 y el 130 en 2026?"
     answer: "Ambos modelos comparten los mismos plazos: del 1 al 20 de abril (Q1), julio (Q2) y octubre (Q3). Para el cuarto trimestre, el plazo es del 1 al 30 de enero del año siguiente."
 ---
 
@@ -38,6 +42,28 @@ Son las 23:00 del 20 de abril. Abres el ordenador porque sabes que hay algo que 
 ¿Era el Modelo 303? ¿O el 130? ¿Los dos? ¿Ninguno?
 
 Si alguna vez has sentido ese pinchazo de pánico, este artículo es para ti. Vamos a desmontar estos dos modelos pieza por pieza hasta que nunca más te quede duda de cuál presentar, cuándo y por qué.
+
+---
+
+## Qué es el Modelo 130 y el Modelo 303 (explicación rápida)
+
+### ¿Qué es el Modelo 130?
+
+El Modelo 130 es la **declaración trimestral del IRPF para autónomos**. Es un pago fraccionado (adelanto) del Impuesto sobre la Renta de las Personas Físicas que pagarás definitivamente cuando hagas la Declaración de la Renta.
+
+**En términos simples:** Adelantas el 20% de tus beneficios cada trimestre para evitar pagar todo de golpe al año siguiente.
+
+**Quién lo presenta:** Solo autónomos en estimación directa que tengan menos del 70% de sus ingresos con retención de IRPF. Si la mayoría de tus clientes son empresas que te retienen el 15%, NO presentas el 130.
+
+### ¿Qué es el Modelo 303?
+
+El Modelo 303 es la **declaración trimestral del IVA**. Declaras cuánto IVA cobraste (IVA repercutido) y cuánto IVA pagaste (IVA soportado), y liquidas la diferencia con Hacienda.
+
+**En términos simples:** Devuelves a Hacienda el IVA que cobraste menos el IVA que pagaste. El IVA nunca fue tu dinero, solo lo "guardabas" temporalmente.
+
+**Quién lo presenta:** Todos los autónomos con IVA. Si facturas con IVA, presentas el 303 cada trimestre. Sin excepciones (salvo actividades exentas de IVA).
+
+---
 
 ## La diferencia fundamental (explicada en una frase)
 
@@ -103,6 +129,9 @@ Imagina que en el primer trimestre del año:
 - Suscripciones software: 300€ + 21% IVA = 363€
 - Material de oficina: 200€ + 21% IVA = 242€
 - Total IVA soportado: 315€
+
+> **🧮 Calcula tu IVA correctamente**
+> ¿Dudas con el cálculo del IVA? Usa nuestra [calculadora de IVA gratuita](/es/herramientas/calculadoras/iva/) para calcular el IVA repercutido y soportado automáticamente.
 
 **Cálculo del Modelo 303:**
 ```
@@ -187,6 +216,9 @@ El Modelo 130 se calcula sobre **beneficios acumulados**, no solo del trimestre 
 - **Resultado Q2: 2.000€ a ingresar**
 
 Siempre calculas sobre el acumulado del año y restas lo que ya adelantaste.
+
+> **💡 Reduce tu Modelo 130 maximizando gastos deducibles**
+> El Modelo 130 se calcula sobre tus beneficios (ingresos - gastos). Cuantos más gastos deducibles tengas, menos pagas. Usa nuestra [calculadora de gastos deducibles](/es/herramientas/calculadoras/gastos-deducibles/) para descubrir qué puedes deducir según tu actividad.
 
 ### El truco mental para entenderlo
 
@@ -289,6 +321,10 @@ Cobras una factura de 12.100€ (10.000€ + 2.100€ IVA) y gastas los 12.100�
 Cuando llegue el 303, debes pagar 2.100€ a Hacienda. Si te lo gastaste todo, tendrás un problema de tesorería.
 
 **Solución:** Abre una cuenta bancaria separada y transfiere el IVA de cada factura inmediatamente. Trata ese dinero como si no existiera.
+
+**Error 6: Desconocer la cuota de autónomo que te corresponde**
+
+Muchos autónomos presentan correctamente el 303 y el 130, pero no saben que están pagando una cuota de autónomos incorrecta. Desde 2023, la cuota depende de tus rendimientos netos reales. Consulta la [tabla de tramos de cuota 2026](/es/blog/guias/tramos-cuota-autonomos-2026-tabla-completa/) para verificar que estás cotizando en el tramo correcto y evitar regularizaciones con recargo del 10-20%.
 
 ### Sanciones por no presentar a tiempo
 
@@ -398,7 +434,30 @@ Ejemplo: Te diste de alta el 15 de febrero. En abril presentas el 303 del Q1, pe
 
 <AccordionGroup>
 
-<AccordionGroupItem title="¿Cuál es la diferencia entre el Modelo 303 y el Modelo 130?" value="faq-1">
+<AccordionGroupItem title="¿Qué es el modelo 130 y quién tiene que presentarlo?" value="faq-1">
+
+El Modelo 130 es la **declaración trimestral del pago fraccionado de IRPF** para autónomos. Es un adelanto del 20% de tus beneficios trimestrales que pagas a cuenta del IRPF que liquidarás definitivamente en la Declaración de la Renta.
+
+**Quién debe presentarlo:** Solo autónomos que cumplan DOS condiciones:
+
+1. Estar en régimen de **estimación directa** (normal o simplificada)
+2. Tener **menos del 70% de sus ingresos con retención** de IRPF
+
+Si trabajas principalmente con empresas que te retienen el 15%, NO presentas el 130 porque ya están adelantando impuestos por ti.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Qué es el modelo 303 y quién debe presentarlo?" value="faq-2">
+
+El Modelo 303 es la **declaración trimestral del IVA**. Declaras el IVA que cobraste (IVA repercutido) menos el IVA que pagaste (IVA soportado), y liquidas la diferencia con Hacienda.
+
+**Quién debe presentarlo:** Todos los autónomos y empresas que facturan con IVA. Sin excepciones (salvo actividades exentas de IVA como sanitarios y educadores).
+
+Incluso si no facturaste nada ese trimestre, debes presentar el 303 en ceros. Es obligatorio mientras estés dado de alta con IVA.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿Cuál es la diferencia entre el Modelo 303 y el Modelo 130?" value="faq-3">
 
 El Modelo 303 es la declaración trimestral del IVA. **Declaras el IVA que cobraste menos el IVA que pagaste**. Es dinero que nunca fue tuyo, solo lo guardas temporalmente para Hacienda.
 
@@ -408,7 +467,7 @@ El Modelo 130 es un pago fraccionado del IRPF. **Adelantas el 20% de tus benefic
 
 </AccordionGroupItem>
 
-<AccordionGroupItem title="¿Qué pasa si tengo IVA a devolver en el Modelo 303?" value="faq-2">
+<AccordionGroupItem title="¿Qué pasa si tengo IVA a devolver en el Modelo 303?" value="faq-4">
 
 Cuando el IVA que pagaste es mayor que el IVA que cobraste, **Hacienda te debe dinero**. Tienes dos opciones:
 
@@ -419,7 +478,7 @@ La mayoría de autónomos eligen compensar porque es más rápido y evita trámi
 
 </AccordionGroupItem>
 
-<AccordionGroupItem title="¿Tengo que presentar el Modelo 130 si tuve pérdidas?" value="faq-3">
+<AccordionGroupItem title="¿Tengo que presentar el Modelo 130 si tuve pérdidas?" value="faq-5">
 
 **Sí, siempre que cumplas los requisitos** (estimación directa + menos del 70% de ingresos con retención).
 
@@ -429,7 +488,7 @@ No presentarlo puede generar requerimientos y sanciones, aunque no debas pagar c
 
 </AccordionGroupItem>
 
-<AccordionGroupItem title="¿Cuáles son los plazos para presentar el 303 y el 130?" value="faq-4">
+<AccordionGroupItem title="¿Cuáles son los plazos para presentar el 303 y el 130 en 2026?" value="faq-6">
 
 Ambos modelos comparten los mismos plazos:
 

@@ -12,6 +12,7 @@ import {
   generateCalculatorHowToSchema,
 } from '@/lib/calculators/schema';
 import { BASE_URL } from '@/lib/constants';
+import { ensureTrailingSlash } from '@/lib/seo';
 import { ThreeCardSection } from '@/components/sections/templates/ThreeCardSection';
 import { FourPillarSection } from '@/components/sections/templates/FourPillarSection';
 import FAQSection from '@/components/sections/FAQSection';
@@ -46,8 +47,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'calculators.factura' });
 
-  const esPath = '/es/herramientas/calculadoras/factura';
-  const enPath = '/en/tools/calculators/invoice';
+  const esPath = ensureTrailingSlash('/es/herramientas/calculadoras/factura');
+  const enPath = ensureTrailingSlash('/en/tools/calculators/invoice');
 
   return {
     title: t('meta.title'),

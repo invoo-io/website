@@ -11,6 +11,7 @@ import {
   generateCalculatorHubBreadcrumbSchema,
 } from '@/lib/calculators/schema';
 import { BASE_URL } from '@/lib/constants';
+import { ensureTrailingSlash } from '@/lib/seo';
 import { Calculator, TrendingUp, FileText, Receipt, Banknote, Clock, PiggyBank, Scale } from 'lucide-react';
 
 export const dynamic = 'force-static';
@@ -28,8 +29,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'calculators.hub' });
 
-  const esPath = '/es/herramientas/calculadoras';
-  const enPath = '/en/tools/calculators';
+  const esPath = ensureTrailingSlash('/es/herramientas/calculadoras');
+  const enPath = ensureTrailingSlash('/en/tools/calculators');
 
   return {
     title: t('meta.title'),
