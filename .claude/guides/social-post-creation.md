@@ -89,6 +89,7 @@ Based on our proven format, every post should follow this structure:
 | **Cercano** | "Tú" form, conversational | "¿Qué calculadora te gustaría?" not "¿Qué les gustaría?" |
 | **Empático** | Acknowledge autónomo struggles | "¿Cansado de perder horas con la facturación?" |
 | **Específico** | Numbers and concrete claims | "€10.90/mes" not "precio accesible" |
+| **Informativo** | Educate, don't alarm. No fear-based hooks | "Esto es lo que necesitas saber" not "🚨 50.000€ de multa" |
 
 ### Spanish Language Rules
 
@@ -98,6 +99,7 @@ Based on our proven format, every post should follow this structure:
 - ✅ Include € symbol after amount (10.90€)
 - ❌ Avoid bureaucratic language
 - ❌ No Anglicisms when Spanish word exists
+- ❌ No fear-based or alarmist hooks (fines, penalties, deadlines as scare tactics). Lead with useful information, not threats. Tone should be "here's what you need to know" not "you're in danger"
 
 ---
 
@@ -133,7 +135,7 @@ Based on our proven format, every post should follow this structure:
 **Hook formulas that work:**
 ```
 📊 Acabamos de lanzar [thing]
-🚨 [Pain point] te está costando dinero
+📖 [Topic] explicado en 2 minutos
 💡 [Number] autónomos ya saben esto (tú también deberías)
 ❓ ¿Sabías que [surprising stat]?
 🔥 La pregunta que todo autónomo se hace:
@@ -197,7 +199,7 @@ Based on our proven format, every post should follow this structure:
 ```
 🧵 [Topic] explicado en 60 segundos:
 💡 [Tip] que pocos autónomos conocen
-🚨 [Warning/deadline] para autónomos
+📖 Lo que cambia en [topic] para autónomos
 📊 Nueva herramienta: [name]
 ```
 
@@ -725,6 +727,7 @@ Calculadora gratuita con números reales:
 
 | Mistake | Solution |
 |---------|----------|
+| Fear-based hooks | Lead with useful info, not threats. "Esto es lo que necesitas saber" > "🚨 Multa de 50.000€" |
 | No hook in first line | Start with emoji + attention grabber under 140 chars |
 | Feature-focused, not benefit-focused | "Ahorra 2.000€" not "Tiene calculadora" |
 | Too many hashtags | LinkedIn 3-5, X 1-2, Facebook 1-2 |
