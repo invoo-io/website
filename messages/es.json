@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Software de Facturación para Autónomos | Tu Gestoría Conectada",
-    "description": "Factura en 30 segundos con tu gestoría conectada en tiempo real. Verifactu automático, presupuesto a factura en 1 clic. €10.90/mes, todo incluido. Sin emails."
+    "title": "Software de Facturación para Autónomos | Factura sin Estrés",
+    "description": "Factura en 30 segundos con Verifactu automático. Sin CRM, sin inventario. Solo facturación rápida y conforme. Si tienes gestoría, conectada gratis. €10.90/mes, todo incluido."
   },
   "nav": {
     "services": "Servicios",
@@ -1396,9 +1396,9 @@
   },
   "home": {
     "hero": {
-      "title": "Factura tranquilo.",
-      "titleHighlight": "Tu gestoría ya lo tiene.",
-      "description": "Crea facturas profesionales en segundos. Sin CRM que no usas, sin inventario que no necesitas. Solo facturación rápida, conforme con AEAT, y compartida automáticamente con tu asesor.",
+      "title": "Factura sin estrés.",
+      "titleHighlight": "Céntrate en crecer.",
+      "description": "Crea facturas profesionales en segundos. Sin CRM que no usas, sin inventario que no necesitas. Solo facturación rápida, conforme con AEAT. Y si tienes gestoría, compartida automáticamente.",
       "cta": "Únete a la lista de espera",
       "highlights": [
         "Sin sorpresas de precio",
@@ -1428,8 +1428,8 @@
       "titleHighlight": "diferente",
       "description": "Por eso creamos Invoo.",
       "pillar1": {
-        "title": "Tu gestoría ya está conectada",
-        "description": "Sin correos, sin esperas. Tu asesor ve cada factura en tiempo real desde su propio panel. Incluido gratis."
+        "title": "Tu gestoría conectada, si quieres",
+        "description": "Si tienes asesor, ve cada factura en tiempo real desde su propio panel. Sin correos, sin esperas. Incluido gratis."
       },
       "pillar2": {
         "title": "Solo facturación. Nada más.",
@@ -1454,11 +1454,11 @@
       },
       "step2": {
         "title": "Envía",
-        "description": "A tu cliente, a Hacienda y a tu gestoría. Todo en un clic."
+        "description": "A tu cliente y a Hacienda. Y a tu gestoría, si quieres. Todo en un clic."
       },
       "step3": {
         "title": "Listo",
-        "description": "Factura guardada, conforme y visible para tu gestoría. Tú solo cobras."
+        "description": "Factura guardada y conforme. Tú solo cobras."
       }
     },
     "audiences": {
@@ -1468,13 +1468,13 @@
       "autonomos": {
         "title": "Autónomos",
         "tagline": "Factura en 30 segundos. Sin estrés con Hacienda.",
-        "body": "Tu gestoría ve tus facturas en tiempo real. Verifactu, IVA e IRPF calculados automáticamente.",
+        "body": "Verifactu, IVA e IRPF calculados automáticamente. Y si tienes gestoría, ve tus facturas en tiempo real.",
         "cta": "Cómo funciona para autónomos"
       },
       "pymes": {
         "title": "Pymes",
-        "tagline": "Todo el equipo sincronizado. Tu gestoría también.",
-        "body": "De presupuesto a factura en 1 clic. Descuentos para negociar, control total, cero emails a tu asesor.",
+        "tagline": "Todo el equipo sincronizado.",
+        "body": "De presupuesto a factura en 1 clic. Descuentos para negociar, control total. Y si tienes asesor, cero emails.",
         "cta": "Cómo funciona para pymes"
       },
       "gestorias": {
@@ -1498,7 +1498,7 @@
     "finalCta": {
       "title": "Vuelve a lo importante:",
       "titleHighlight": "tu trabajo.",
-      "description": "Deja el papeleo y las dudas con Hacienda. Tu gestoría se encarga del resto. Únete a los primeros 100 usuarios y consigue 50% de descuento para siempre.",
+      "description": "Deja el papeleo y las dudas con Hacienda. Invoo se encarga del resto. Únete a los primeros 100 usuarios y consigue 50% de descuento para siempre.",
       "cta": "Únete a la lista de espera"
     },
     "focus": {

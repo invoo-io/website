@@ -27,7 +27,7 @@ export function generateOrganizationSchema(): SchemaOrg {
     name: "Invoo",
     legalName: "Roques OÜ",
     description:
-      "Software de facturación para autónomos y pymes con tu gestoría conectada de serie. Factura en 30 segundos, presupuesto a factura en 1 clic, Verifactu automático. Dashboard gratuito para gestorías con clientes ilimitados. €10.90/mes, todo incluido.",
+      "Software de facturación para autónomos y pymes. Factura en 30 segundos, presupuesto a factura en 1 clic, Verifactu automático. Sin CRM, sin inventario. €10.90/mes, todo incluido. Conexión con gestoría opcional y gratuita.",
     url: BASE_URL,
     logo: `${BASE_URL}/Logo.png`,
     image: `${BASE_URL}/Logo.png`,
@@ -152,8 +152,8 @@ export function generateWebApplicationSchema(
       ];
 
   const description = isSpanish
-    ? "Software de facturación para autónomos y pymes con tu gestoría conectada en tiempo real. Factura en 30 segundos, presupuesto a factura en 1 clic, Verifactu automático. €10.90/mes, todo incluido."
-    : "Invoicing software for freelancers and SMBs with your accountant connected in real-time. Invoice in 30 seconds, quote to invoice in 1 click, automatic Verifactu. €10.90/month, all included.";
+    ? "Software de facturación para autónomos y pymes. Factura en 30 segundos, presupuesto a factura en 1 clic, Verifactu automático. Sin CRM, sin inventario. Conexión con gestoría opcional y gratuita. €10.90/mes, todo incluido."
+    : "Invoicing software for freelancers and SMBs. Invoice in 30 seconds, quote to invoice in 1 click, automatic Verifactu. No CRM, no inventory. Optional free accountant connection. €10.90/month, all included.";
 
   return {
     "@context": "https://schema.org",
@@ -196,15 +196,15 @@ export function generateWebApplicationSchema(
         "@type": "Audience",
         "audienceType": isSpanish ? "Autónomos en España" : "Freelancers in Spain",
         "description": isSpanish
-          ? "Freelancers que buscan facturación Verifactu rápida (30 segundos), sin Excel ni papeleo, con colaboración directa con su gestoría"
-          : "Freelancers looking for fast Verifactu invoicing (30 seconds), without Excel or paperwork, with direct collaboration with their accountant",
+          ? "Freelancers que buscan facturación Verifactu rápida (30 segundos), sin Excel ni papeleo. Conexión con gestoría opcional y gratuita"
+          : "Freelancers looking for fast Verifactu invoicing (30 seconds), without Excel or paperwork. Optional free accountant connection",
       },
       {
         "@type": "Audience",
         "audienceType": isSpanish ? "Pymes en España" : "SMBs in Spain",
         "description": isSpanish
-          ? "Pequeñas y medianas empresas que necesitan facturación en equipo (2-4 usuarios), cumplimiento Verifactu automático y dashboard para su gestoría"
-          : "Small and medium businesses that need team invoicing (2-4 users), automatic Verifactu compliance and dashboard for their accountant",
+          ? "Pequeñas y medianas empresas que necesitan facturación en equipo (2-4 usuarios), cumplimiento Verifactu automático. Conexión con gestoría opcional"
+          : "Small and medium businesses that need team invoicing (2-4 users), automatic Verifactu compliance. Optional accountant connection",
       },
       {
         "@type": "Audience",
@@ -226,8 +226,8 @@ export function generateProductSchema(locale: string): SchemaOrg {
   const isSpanish = locale === "es";
 
   const description = isSpanish
-    ? "Software de facturación para autónomos y pymes con tu gestoría conectada de serie. Solo facturación, sin CRM ni inventario. Factura en 30 segundos, Verifactu automático. €10.90/mes con dashboard gratuito para gestorías."
-    : "Invoicing software for freelancers and SMBs with your accountant connected by default. Just invoicing, no CRM or inventory. Invoice in 30 seconds, automatic Verifactu. €10.90/month with free accountant dashboard.";
+    ? "Software de facturación para autónomos y pymes. Solo facturación, sin CRM ni inventario. Factura en 30 segundos, Verifactu automático. €10.90/mes, todo incluido. Conexión con gestoría opcional y gratuita."
+    : "Invoicing software for freelancers and SMBs. Just invoicing, no CRM or inventory. Invoice in 30 seconds, automatic Verifactu. €10.90/month, all included. Optional free accountant connection.";
 
   return {
     "@context": "https://schema.org",

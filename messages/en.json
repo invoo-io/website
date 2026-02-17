@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Invoicing Software for Freelancers | Accountant Connected",
-    "description": "Invoice in 30 seconds with your accountant connected in real-time. Automatic Verifactu, quote to invoice in 1 click. €10.90/month, all included. Zero emails."
+    "title": "Invoicing Software for Freelancers | Stress-Free Invoicing",
+    "description": "Invoice in 30 seconds with automatic Verifactu. No CRM, no inventory. Just fast, compliant invoicing. Accountant connection optional and free. €10.90/month, all included."
   },
   "nav": {
     "services": "Services",
@@ -1396,9 +1396,9 @@
   },
   "home": {
     "hero": {
-      "title": "Invoice stress-free.",
-      "titleHighlight": "Accountant included.",
-      "description": "Create professional invoices in seconds. No CRM you don't use, no inventory you don't need. Just fast invoicing, tax compliant, and automatically shared with your accountant.",
+      "title": "Stress-free invoicing.",
+      "titleHighlight": "Focus on growth.",
+      "description": "Create professional invoices in seconds. No CRM you don't use, no inventory you don't need. Just fast invoicing, tax compliant. And if you have an accountant, automatically shared.",
       "cta": "Join the waiting list",
       "highlights": [
         "No pricing surprises",
@@ -1428,8 +1428,8 @@
       "titleHighlight": "different",
       "description": "That's why we built Invoo.",
       "pillar1": {
-        "title": "Your accountant is already connected",
-        "description": "No emails, no waiting. Your advisor sees every invoice in real-time from their own dashboard. Included free."
+        "title": "Your accountant connected, if you want",
+        "description": "If you have an accountant, they see every invoice in real-time from their own dashboard. No emails, no waiting. Included free."
       },
       "pillar2": {
         "title": "Just invoicing. Nothing more.",
@@ -1454,11 +1454,11 @@
       },
       "step2": {
         "title": "Send",
-        "description": "To your client, to Tax Authority, and to your accountant. All in one click."
+        "description": "To your client and to the Tax Authority. And to your accountant, if you want. All in one click."
       },
       "step3": {
         "title": "Done",
-        "description": "Invoice saved, compliant, and visible to your accountant. You just get paid."
+        "description": "Invoice saved and compliant. You just get paid."
       }
     },
     "audiences": {
@@ -1468,13 +1468,13 @@
       "autonomos": {
         "title": "Freelancers",
         "tagline": "Invoice in 30 seconds. No tax stress.",
-        "body": "Your accountant sees your invoices in real-time. Verifactu, VAT and withholding calculated automatically.",
+        "body": "Verifactu, VAT and withholding calculated automatically. And if you have an accountant, they see your invoices in real-time.",
         "cta": "How it works for freelancers"
       },
       "pymes": {
         "title": "SMEs",
-        "tagline": "Your whole team in sync. Your accountant too.",
-        "body": "Quote to invoice in 1 click. Discounts to negotiate, full control, zero emails to your accountant.",
+        "tagline": "Your whole team in sync.",
+        "body": "Quote to invoice in 1 click. Discounts to negotiate, full control. And if you have an accountant, zero emails.",
         "cta": "How it works for SMEs"
       },
       "gestorias": {
@@ -1498,7 +1498,7 @@
     "finalCta": {
       "title": "Get back to what matters:",
       "titleHighlight": "your work.",
-      "description": "Leave the paperwork and tax headaches behind. Your accountant handles the rest. Join the first 100 users and get 50% off forever.",
+      "description": "Leave the paperwork and tax headaches behind. Invoo handles the rest. Join the first 100 users and get 50% off forever.",
       "cta": "Join the waiting list"
     },
     "focus": {
