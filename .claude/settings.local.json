@@ -206,7 +206,21 @@
       "WebFetch(domain:leyfacturaelectronica.com)",
       "WebFetch(domain:www.autonomosenruta.com)",
       "WebFetch(domain:taxdown.es)",
-      "WebFetch(domain:www.supercontable.com)"
+      "WebFetch(domain:www.supercontable.com)",
+      "Bash(gh api:*)",
+      "Bash(git status:*)",
+      "Bash(python3:*)",
+      "WebFetch(domain:vercel.link)",
+      "WebFetch(domain:discuss.hashicorp.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(npm:*)",
+      "Bash(STATIC_EXPORT=true npm run build:*)",
+      "Bash(/tmp/canonical_url_verification.txt << 'EOF'\nCanonical URL Fix Verification Report\n======================================\n\nISSUE: Google Search Console showed duplicate URLs due to:\n1. Trailing slash inconsistency \\(with/without trailing slash\\)\n2. www vs non-www duplication\n\nSOLUTION IMPLEMENTED:\n1. Created ensureTrailingSlash\\(\\) helper function in src/lib/seo.ts\n2. Updated generatePageMetadata\\(\\) to use trailing slashes\n3. Updated root layout canonical URLs to include trailing slashes\n4. Batch updated all 22 calculator pages \\(ES + EN\\) to use ensureTrailingSlash\\(\\)\n5. Blog pages already had trailing slashes hardcoded\n\nVERIFICATION RESULTS:\n✓ Homepage: https://invoo.es/es/ \\(with trailing slash, no www\\)\n✓ Blog index: https://invoo.es/es/blog/ \\(with trailing slash, no www\\)\n✓ Blog category: https://invoo.es/es/blog/analisis/ \\(with trailing slash, no www\\)\n✓ Blog article: https://invoo.es/es/blog/analisis/analice-100-autonomos-perdida-tiempo/ \\(with trailing slash, no www\\)\n✓ Calculator \\(ES\\): https://invoo.es/es/herramientas/calculadoras/iva/ \\(with trailing slash, no www\\)\n✓ Calculator \\(EN\\): https://invoo.es/en/tools/calculators/vat/ \\(with trailing slash, no www\\)\n\nALTERNATE LANGUAGE LINKS:\n✓ All hreflang links include trailing slashes\n✓ All links use invoo.es \\(no www\\)\n✓ x-default properly points to Spanish version\n\nBUILD STATUS:\n✓ TypeScript compilation successful\n✓ Static export successful \\(102 pages generated\\)\n✓ No errors or warnings\n\nCONFIGURATION:\n✓ next.config.ts has trailingSlash: true\n✓ BASE_URL constant set to https://invoo.es \\(no www\\)\n✓ All metadata generation functions now ensure trailing slashes\n\nAFFECTED FILES:\n- src/lib/seo.ts \\(added ensureTrailingSlash export\\)\n- src/app/[locale]/layout.tsx \\(updated homepage canonical URLs\\)\n- All 22 calculator pages \\(added ensureTrailingSlash import and usage\\)\nEOF)",
+      "Bash(__NEW_LINE_8d3b5c2597a87298__ cat /tmp/canonical_url_verification.txt)",
+      "WebFetch(domain:www.mites.gob.es)",
+      "Bash(git -C:*)",
+      "Bash(Céntrate en crecer.\"\\) instead of gestoría connection. Gestoría references\nacross homepage sections softened to optional \\(\"si quieres\", \"si tienes)",
+      "Bash(gestoría\"\\). SEO metadata and schema descriptions updated accordingly.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
     ],
     "deny": [],
     "ask": []
