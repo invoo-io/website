@@ -15,7 +15,9 @@
     "test:unit": "vitest run",
     "test:unit:watch": "vitest",
     "test:unit:coverage": "vitest run --coverage",
-    "playwright:show": "playwright show-report"
+    "playwright:show": "playwright show-report",
+    "lighthouse": "STATIC_EXPORT=true next build --turbopack && lhci autorun",
+    "lighthouse:report": "STATIC_EXPORT=true next build --turbopack && lhci autorun --upload.target=temporary-public-storage"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
@@ -52,6 +54,7 @@
   ],
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.55.0",
     "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^20",
@@ -61,6 +64,7 @@
     "eslint": "^9",
     "eslint-config-next": "^15.5.7",
     "playwright": "^1.55.0",
+    "puppeteer": "^24.37.4",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.8",
     "typescript": "^5",

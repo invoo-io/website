@@ -56,7 +56,7 @@ export async function AudienceSegmentationSection({ locale }: AudienceSegmentati
         {audiences.map(({ key, icon: Icon, href, gradient, iconColor, hoverBorder }) => (
           <Link
             key={key}
-            href={`/${locale}${href}`}
+            href={`/${locale}${href}/`}
             className={`group rounded-3xl p-8 bg-background-primary border border-strokes-primary ${hoverBorder} transition-all hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-blue-main`}
           >
             <div

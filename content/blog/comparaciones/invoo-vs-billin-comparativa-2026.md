@@ -1,5 +1,5 @@
 ---
-title: "Invoo vs Billin: Comparativa Honesta para Autónomos 2026"
+title: "Invoo vs Billin: Comparativa Autónomos 2026"
 excerpt: "Comparamos Billin (gratis con límites) vs Invoo (€10.90/mes). Análisis honesto: OCR, gestión gastos, dashboard gestoría. Descubre cuál elegir según tu perfil."
 publishedAt: "2026-01-22"
 author: "Equipo Invoo"

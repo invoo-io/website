@@ -115,7 +115,7 @@ export default async function FacturaCalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/invoice');
+    redirect('/en/tools/calculators/invoice/');
   }
 
   setRequestLocale(locale);

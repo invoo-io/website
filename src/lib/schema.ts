@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { BASE_URL } from "@/lib/constants";
+import { ensureTrailingSlash } from "@/lib/seo";
 
 // Type definitions for JSON-LD schemas
 interface SchemaOrg {
@@ -99,7 +100,7 @@ export function generateWebSiteSchema(): SchemaOrg {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${BASE_URL}/es/blog?q={search_term_string}`,
+        urlTemplate: `${BASE_URL}/es/blog/?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },
@@ -178,7 +179,7 @@ export function generateWebApplicationSchema(
       priceValidUntil: "2026-12-31",
       availability: "https://schema.org/PreOrder",
       availabilityStarts: "2026-03-01",
-      url: `${BASE_URL}/${locale}/pricing`,
+      url: `${BASE_URL}/${locale}/pricing/`,
       eligibleRegion: {
         "@type": "Country",
         name: "Spain",
@@ -254,7 +255,7 @@ export function generateProductSchema(locale: string): SchemaOrg {
         priceValidUntil: "2026-12-31",
         availability: "https://schema.org/PreOrder",
         availabilityStarts: "2026-03-01",
-        url: `${BASE_URL}/${locale}/pricing`,
+        url: `${BASE_URL}/${locale}/pricing/`,
         eligibleRegion: {
           "@type": "Country",
           name: "Spain",
@@ -278,7 +279,7 @@ export function generateProductSchema(locale: string): SchemaOrg {
         priceValidUntil: "2026-12-31",
         availability: "https://schema.org/PreOrder",
         availabilityStarts: "2026-03-01",
-        url: `${BASE_URL}/${locale}/pricing`,
+        url: `${BASE_URL}/${locale}/pricing/`,
         eligibleRegion: {
           "@type": "Country",
           name: "Spain",
@@ -392,7 +393,7 @@ export function generateWebPageSchema({
   title: string;
   description: string;
 }): SchemaOrg {
-  const url = `${BASE_URL}/${locale}${path}`;
+  const url = ensureTrailingSlash(`${BASE_URL}/${locale}${path}`);
   const isSpanish = locale === "es";
 
   return {
@@ -442,7 +443,7 @@ function generateBreadcrumbItems(
       "@type": "ListItem",
       position: 1,
       name: isSpanish ? "Inicio" : "Home",
-      item: `${BASE_URL}/${locale}`,
+      item: `${BASE_URL}/${locale}/`,
     },
   ];
 
@@ -458,7 +459,7 @@ function generateBreadcrumbItems(
       "@type": "ListItem",
       position: index + 2,
       name: isLast ? pageTitle : formatSegmentName(segment, isSpanish),
-      item: currentPath,
+      item: `${currentPath}/`,
     });
   });
 
@@ -548,7 +549,7 @@ export function generateBreadcrumbListSchema(
  */
 export function generateAboutPageSchema(locale: string): SchemaOrg {
   const isSpanish = locale === "es";
-  const url = `${BASE_URL}/${locale}/about`;
+  const url = `${BASE_URL}/${locale}/about/`;
 
   return {
     "@context": "https://schema.org",
@@ -586,7 +587,7 @@ export function generateCollectionPageSchema({
   title: string;
   description: string;
 }): SchemaOrg {
-  const url = `${BASE_URL}/${locale}${path}`;
+  const url = ensureTrailingSlash(`${BASE_URL}/${locale}${path}`);
 
   return {
     "@context": "https://schema.org",
@@ -610,7 +611,7 @@ export function generateCollectionPageSchema({
  */
 export function generateContactPageSchema(locale: string): SchemaOrg {
   const isSpanish = locale === "es";
-  const url = `${BASE_URL}/${locale}/contact`;
+  const url = `${BASE_URL}/${locale}/contact/`;
 
   return {
     "@context": "https://schema.org",
@@ -688,7 +689,7 @@ export function generateArticleSchema({
       "@type": "Organization",
       "@id": ORGANIZATION_ID,
       name: author === "Equipo Invoo" ? "Invoo" : author,
-      url: `${BASE_URL}/es/metodologia-editorial/`,
+      url: `${BASE_URL}/es/metodologia/`,
       description:
         "Equipo editorial especializado en facturación electrónica, Verifactu, normativa fiscal española y gestión de autónomos y pymes.",
       knowsAbout: [

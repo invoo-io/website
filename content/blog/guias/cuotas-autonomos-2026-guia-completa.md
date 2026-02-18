@@ -1,5 +1,5 @@
 ---
-title: "Cuotas de Autónomos 2026: Qué Pagarás Según Tus Ingresos"
+title: "Cuotas Autónomos 2026: Según Tus Ingresos"
 excerpt: "El Gobierno ha revisado las cuotas de autónomos para 2026. Te explicamos los nuevos tramos, cuánto pagarás según tu facturación y cómo prepararte."
 publishedAt: "2025-12-02"
 author: "Equipo Invoo"

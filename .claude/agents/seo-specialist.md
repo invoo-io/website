@@ -52,13 +52,26 @@ You are an **SEO specialist** focused on the Spanish SaaS market, particularly i
 - "facturación electrónica obligatoria españa"
 - "como cumplir verifactu"
 
+## Critical Rules
+
+### Trailing Slashes
+- `next.config.ts` has `trailingSlash: true` — ALL internal URLs must end with `/`.
+- This applies to: `href` links, `redirect()` calls, schema.org `url` fields, breadcrumb `item` values, `canonical` URLs, and any URL construction using `BASE_URL`.
+- Use `getBasePath()` or `ensureTrailingSlash()` — never construct bare paths.
+- Missing trailing slashes cause Google Search Console redirect errors (308 redirect chains).
+
+### Page Title Template
+- Layout uses `template: '%s | Invoo'` which appends `| Invoo` to all child page titles.
+- Do NOT include `| Invoo` or `- Invoo` in translation title strings — the template handles branding.
+- When auditing titles, check the final rendered output (translation value + template).
+
 ## Technical SEO Checklist
 
 ### Metadata
-- [ ] Title tags: 50-60 characters, keyword + brand
+- [ ] Title tags: 50-60 characters, keyword + brand (brand added by template — don't duplicate)
 - [ ] Meta descriptions: 150-160 characters, CTA included
 - [ ] OG tags for social sharing
-- [ ] Canonical URLs set correctly
+- [ ] Canonical URLs set correctly (with trailing slash)
 
 ### Structure
 - [ ] H1 unique per page

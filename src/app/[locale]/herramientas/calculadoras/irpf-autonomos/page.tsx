@@ -115,7 +115,7 @@ export default async function IRPFAutonomosCalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/income-tax-freelancer');
+    redirect('/en/tools/calculators/income-tax-freelancer/');
   }
 
   setRequestLocale(locale);

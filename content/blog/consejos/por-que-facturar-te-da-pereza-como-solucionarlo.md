@@ -1,6 +1,6 @@
 ---
-title: "Por Qué Facturar Te Da Pereza (Y Cómo Solucionarlo Sin Cambiar Tu Personalidad)"
-excerpt: "La mayoría de autónomos deja facturar para los últimos días del mes. No eres desorganizado—tu sistema de facturación es psicológicamente hostil. Descubre las razones reales de la procrastinación y soluciones prácticas que funcionan con tu cerebro."
+title: "Por Qué Facturar Da Pereza (Y Cómo Solucionarlo)"
+excerpt: "No eres desorganizado: tu sistema de facturación es psicológicamente hostil. Descubre las razones reales de la procrastinación y las soluciones prácticas que funcionan de verdad."
 publishedAt: "2025-12-08"
 author: "Equipo Invoo"
 tags: ["productividad", "autonomos", "procrastinacion", "gestion-facturas", "psicologia"]

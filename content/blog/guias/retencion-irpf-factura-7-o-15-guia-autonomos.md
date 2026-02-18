@@ -1,5 +1,5 @@
 ---
-title: "Retención IRPF en tu Factura: ¿7% o 15%? Guía Completa para Autónomos"
+title: "Retención IRPF en Factura: ¿7% o 15%?"
 excerpt: "Descubre cuándo aplicar el 7% o 15% de IRPF en tus facturas, cómo calcularlo paso a paso y los errores que debes evitar. Guía práctica con ejemplos reales."
 publishedAt: "2025-11-26"
 author: "Equipo Invoo"

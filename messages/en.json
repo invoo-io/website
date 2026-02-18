@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Invoicing Software for Freelancers | Stress-Free Invoicing",
-    "description": "Invoice in 30 seconds with automatic Verifactu. No CRM, no inventory. Just fast, compliant invoicing. Accountant connection optional and free. €10.90/month, all included."
+    "title": "Invoicing Software for Spanish Freelancers and SMBs",
+    "description": "Invoice in 30 seconds with automatic Verifactu. No CRM, no inventory. Just fast, compliant invoicing. Accountant dashboard included free. €10.90/month."
   },
   "nav": {
     "services": "Services",
@@ -87,8 +87,8 @@
   },
   "freelancersPage": {
     "metadata": {
-      "title": "Freelancer Invoicing in 30s | Your Accountant Connected | Invoo",
-      "description": "Invoice in 30 seconds with automatic Verifactu. Your accountant sees everything instantly, no emails. VAT & IRPF calculated. €10.90/month. Join the waiting list."
+      "title": "Freelancer Invoicing in 30s | Gestoría Connected",
+      "description": "Invoice in 30 seconds with automatic Verifactu. Your accountant sees everything instantly, no emails. VAT & IRPF calculated. €10.90/month, all included."
     },
     "header": {
       "title": "Invoicing without stress",
@@ -215,8 +215,8 @@
   },
   "pymesPage": {
     "metadata": {
-      "title": "Your Team Invoices. You See Everything | Invoo",
-      "description": "Know who invoiced what, when, and your accountant sees it without chasing emails. 2-4 user invoicing with automatic Verifactu. From €10.45/month. Just invoicing, zero bloat."
+      "title": "Your Team Invoices. You See Everything",
+      "description": "Know who invoiced what and when. Your accountant sees it all without chasing emails. 2-4 user invoicing with automatic Verifactu. From €10.45/month, zero bloat."
     },
     "header": {
       "title": "Team invoicing",
@@ -341,7 +341,7 @@
   },
   "gestoriasPage": {
     "metadata": {
-      "title": "Accounting Firm Software | Free Dashboard | Invoo",
+      "title": "Accounting Firm Software | Free Dashboard",
       "description": "Compete with online platforms without losing clients. Accounting portal with automatic invoicing, multi-client Verifactu, and instant CSV. Free forever."
     },
     "header": {
@@ -505,7 +505,7 @@
   },
   "faq": {
     "metadata": {
-      "title": "Verifactu & Invoicing: Frequently Asked Questions | Invoo",
+      "title": "Verifactu & Invoicing: Frequently Asked Questions",
       "description": "What is Verifactu? How much does invoicing software cost? How to collaborate with your accountant? Clear answers about electronic invoicing."
     },
     "hero": {
@@ -734,7 +734,7 @@
   },
   "about": {
     "metadata": {
-      "title": "About Invoo | Bringing Calm Back to Invoicing",
+      "title": "About Us | Bringing Calm Back to Invoicing",
       "description": "We built Invoo to make invoicing invisible. Simple software that connects freelancers and accountants naturally. No complications, no surprises."
     },
     "hero": {
@@ -922,7 +922,7 @@
   "privacy": {
     "metadata": {
       "title": "Privacy Policy",
-      "description": "Invoo Privacy Policy - Learn how we collect, use, and protect your personal data in compliance with GDPR."
+      "description": "Learn how Invoo collects, uses, and protects your personal data. GDPR-compliant processing for freelancers, SMEs, and accounting firms using our platform."
     },
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: November 19, 2025",
@@ -1034,7 +1034,7 @@
   "terms": {
     "metadata": {
       "title": "Terms and Conditions",
-      "description": "Invoo Terms and Conditions - Read the legal terms governing the use of our invoicing platform and services."
+      "description": "Read the legal terms governing use of the Invoo invoicing platform. Covers subscriptions, billing, Verifactu compliance, data handling, and cancellation policy."
     },
     "title": "Terms and Conditions of Use of the Invoo Service",
     "lastUpdated": "Last updated: November 19, 2025",
@@ -1233,7 +1233,7 @@
   },
   "contact": {
     "metadata": {
-      "title": "Contact | Support for Freelancers, SMBs and Accountants | Invoo",
+      "title": "Contact | Fast Support in English",
       "description": "Questions about accountant collaboration, Verifactu or pricing? Want to try the accountant dashboard? Contact us. Fast response in clear language."
     },
     "sections": {
@@ -1707,8 +1707,8 @@
   },
   "blog": {
     "meta": {
-      "title": "Invoo Blog | Invoicing and Verifactu Guides",
-      "description": "Tips, guides and news about electronic invoicing, Verifactu and tax management for freelancers and accountants in Spain"
+      "title": "Blog | Invoicing and Verifactu Guides",
+      "description": "Practical guides, tax tips and news about electronic invoicing, Verifactu and tax management for freelancers and accountants in Spain."
     },
     "title": "Invoo Blog",
     "description": "Practical guides, tax tips and the latest news on electronic invoicing and Verifactu for freelancers and accountants",
@@ -1819,8 +1819,8 @@
     },
     "hub": {
       "meta": {
-        "title": "Free Calculators for Freelancers in Spain 2026 - Invoo",
-        "description": "Free calculators for Spanish freelancers and SMBs: VAT, income tax, self-employed quota, forms 303 and 130, deductible expenses and more. No registration, updated for 2026."
+        "title": "Free Calculators for Freelancers in Spain",
+        "description": "Free calculators for Spanish freelancers: VAT, income tax, self-employed quota, forms 303 and 130, deductible expenses and more. No registration needed."
       },
       "hero": {
         "title": "Free Calculators for Freelancers",
@@ -1849,8 +1849,8 @@
     },
     "iva": {
       "meta": {
-        "title": "VAT Calculator Online 2026 | Free for Freelancers - Invoo",
-        "description": "Calculate VAT for your invoices instantly. Spanish VAT rates of 21%, 10% and 4%. Free calculator updated for freelancers and SMBs in Spain. No registration."
+        "title": "VAT Calculator Online for Freelancers",
+        "description": "Calculate VAT for your invoices instantly. Spanish VAT rates of 21%, 10% and 4%. Free calculator for freelancers and SMBs in Spain. No registration required."
       },
       "hero": {
         "titleHighlight": "VAT Calculator",
@@ -1987,8 +1987,8 @@
     },
     "cuotaAutonomos": {
       "meta": {
-        "title": "Self-Employed Quota Calculator 2026 by Brackets | Free + Flat Rate - Invoo",
-        "description": "Calculate your Spanish self-employed quota 2026 by real income. Updated bracket system. Flat Rate €80. Zero Quota available. Free, no signup. Instant results."
+        "title": "Self-Employed Quota Calculator Spain",
+        "description": "Calculate your self-employed social security quota by real income. Bracket system, Flat Rate €80, and Zero Quota included. Free, no signup, instant results."
       },
       "hero": {
         "titleHighlight": "Self-Employed Quota Calculator 2026",
@@ -2177,8 +2177,8 @@
     },
     "factura": {
       "meta": {
-        "title": "Invoice Calculator Online 2026 | VAT + Tax Withholding Free - Invoo",
-        "description": "Calculate your invoice totals with VAT and income tax withholding instantly. Free calculator for freelancers and professionals in Spain. No signup, instant results."
+        "title": "Invoice Calculator with VAT and IRPF",
+        "description": "Calculate your invoice total with VAT and IRPF withholding instantly. Free for Spanish freelancers and professionals. Instant results, no signup required."
       },
       "hero": {
         "titleHighlight": "Invoice Calculator",
@@ -2343,8 +2343,8 @@
     },
     "irpfAutonomos": {
       "meta": {
-        "title": "Freelancer Income Tax Calculator 2026 | Free - Invoo",
-        "description": "Calculate your IRPF as a Spanish freelancer with 2026 tax brackets. Includes personal minimums, deductions, and withholdings. Free, instant results."
+        "title": "Freelancer Income Tax Calculator Spain",
+        "description": "Calculate your IRPF as a Spanish freelancer with updated tax brackets. Includes personal minimums, deductible expenses, and withholdings. Free, no signup."
       },
       "hero": {
         "titleHighlight": "Income Tax Calculator",
@@ -2547,8 +2547,8 @@
     },
     "sueldoNetoAutonomo": {
       "meta": {
-        "title": "Net Salary Calculator for Freelancers 2026 | Free - Invoo",
-        "description": "Calculate your net salary as a Spanish freelancer. Includes social security, income tax, and deductions. Full breakdown with Flat Rate benefits. Free tool."
+        "title": "Net Salary Calculator for Freelancers",
+        "description": "Calculate what you really take home as a Spanish freelancer. Social security, income tax, and deductions included. Full breakdown with Flat Rate benefits. Free."
       },
       "hero": {
         "titleHighlight": "Net Salary Calculator",
@@ -2742,8 +2742,8 @@
     },
     "precioHora": {
       "meta": {
-        "title": "Calculate Freelancer Hourly Rate Spain 2026 | Free - Invoo",
-        "description": "Calculate your hourly rate as a freelancer in Spain in 30 seconds. Includes real progressive income tax, social security by brackets, and expenses. Free, no registration. Spain's most accurate calculator."
+        "title": "Freelancer Hourly Rate Calculator Spain",
+        "description": "Calculate your minimum hourly rate as a freelancer in Spain. Progressive income tax, social security by brackets, and expenses included. Free, no registration."
       },
       "hero": {
         "titleHighlight": "Hourly Rate",
@@ -2946,8 +2946,8 @@
     },
     "modelo303": {
       "meta": {
-        "title": "VAT Form 303 Calculator 2026 | Free for Freelancers - Invoo",
-        "description": "Calculate your quarterly VAT return (Modelo 303) instantly. Output VAT vs input VAT. Result to pay or offset. Free calculator for Spain 2026."
+        "title": "VAT Form 303 Calculator for Freelancers",
+        "description": "Calculate your quarterly VAT return (Form 303) instantly. Output VAT minus input VAT, result to pay or offset. Free for Spanish freelancers. No registration."
       },
       "hero": {
         "titleHighlight": "Form 303 Calculator",
@@ -3110,8 +3110,8 @@
     },
     "modelo130": {
       "meta": {
-        "title": "Form 130 IRPF Calculator 2026 | Free for Freelancers - Invoo",
-        "description": "Calculate your quarterly IRPF advance payment (Form 130) instantly. 20% of quarterly net income. Deduct retentions and previous payments. Free calculator 2026."
+        "title": "Form 130 IRPF Calculator for Freelancers",
+        "description": "Calculate your quarterly IRPF advance payment (Form 130) instantly. 20% of net income minus retentions and prior payments. Free for Spanish freelancers."
       },
       "hero": {
         "titleHighlight": "Form 130 Calculator",
@@ -3295,8 +3295,8 @@
     },
     "gastosDeducibles": {
       "meta": {
-        "title": "Deductible Expenses Calculator for Freelancers 2026 | Free - Invoo",
-        "description": "Calculate how much you save on taxes with your deductible expenses. Recoverable VAT, IRPF deductible and automatic 5% deduction. Free calculator for freelancers 2026."
+        "title": "Deductible Expenses Calculator for Freelancers",
+        "description": "Calculate your tax savings from deductible expenses. Recoverable VAT, IRPF deductions, and the automatic 5% hard-to-justify deduction included. Free, no signup."
       },
       "hero": {
         "titleHighlight": "Deductible Expenses Calculator",
@@ -3552,8 +3552,8 @@
     },
     "autonomoVsEmpresa": {
       "meta": {
-        "title": "Freelancer vs Limited Company 2026 | Tax Comparison - Invoo",
-        "description": "Compare tax burden between being a freelancer or creating an SL. Free calculator with IRPF, self-employed quota, Corporate Tax and break-even point. No registration."
+        "title": "Freelancer vs Limited Company | Tax Comparison",
+        "description": "Compare the full tax burden as a freelancer vs creating a Spanish SL. IRPF, self-employed quota, Corporate Tax, and break-even point included. Free, no signup."
       },
       "hero": {
         "titleHighlight": "Freelancer vs Limited",

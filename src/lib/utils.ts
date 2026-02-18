@@ -70,9 +70,10 @@ export function getImagePath(path: string): string {
 }
 
 export function getBasePath(path: string): string {
-  // Next.js basePath config handles the prefix automatically for Link components
-  // Just return the path as-is
-  return path;
+  // Ensure trailing slash to match next.config.ts trailingSlash: true
+  // Skip paths with hash fragments or query strings
+  if (path.includes('#') || path.includes('?')) return path;
+  return path.endsWith('/') ? path : `${path}/`;
 }
 
 /**

@@ -1,5 +1,5 @@
 ---
-title: "Invoo vs Herramienta Gratuita AEAT: ¿Cuál Elegir para Tu Negocio?"
+title: "Invoo vs Herramienta Gratuita AEAT"
 excerpt: "¿La herramienta gratuita AEAT significa que no necesitas Invoo? Comparación honesta sin marketing para que decidas con datos reales de 100+ autónomos."
 publishedAt: "2025-12-08"
 author: "Equipo Invoo"

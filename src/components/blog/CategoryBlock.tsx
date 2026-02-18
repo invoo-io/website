@@ -35,7 +35,7 @@ export async function CategoryBlock({ categoryName, categorySlug, posts, locale 
           {categoryName}
         </h2>
         <Link
-          href={`/${locale}/blog/${categorySlug}`}
+          href={`/${locale}/blog/${categorySlug}/`}
           className="flex items-center gap-2 text-callout-emphasized text-accent-blue-main hover:text-accent-blue-dark transition-colors"
         >
           {blogT('blog.viewAll')}

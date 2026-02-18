@@ -88,7 +88,7 @@ export default async function CalculadorasHubPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators');
+    redirect('/en/tools/calculators/');
   }
 
   setRequestLocale(locale);
@@ -130,7 +130,7 @@ export default async function CalculadorasHubPage({
       name: tCommon(`related.${translationKey}.name`),
       description: tCommon(`related.${translationKey}.description`),
       slug,
-      href: `/es/herramientas/calculadoras/${slug}`,
+      href: `/es/herramientas/calculadoras/${slug}/`,
     };
   });
 
@@ -274,7 +274,7 @@ export default async function CalculadorasHubPage({
               {t('cta.description')}
             </p>
             <Link
-              href="/es#waitlist"
+              href={`/${locale}/#waitlist`}
               className="mt-8 inline-flex items-center rounded-full bg-white px-8 py-3 text-base font-semibold text-brand-primary shadow-lg transition-all hover:scale-105 hover:shadow-xl"
             >
               {t('cta.button')}

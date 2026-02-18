@@ -107,7 +107,7 @@ export default async function Form130CalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/modelo-130');
+    redirect('/es/herramientas/calculadoras/modelo-130/');
   }
 
   setRequestLocale(locale);

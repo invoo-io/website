@@ -1,5 +1,5 @@
 ---
-title: "Por qué el software de facturación español cuesta 3 veces más"
+title: "Software Facturación España: ¿Por Qué Cuesta Más?"
 excerpt: "El software de facturación en España cuesta €30-100/mes vs €0-15 en Europa. Analizamos qué parte del sobreprecio está justificado y qué es puro rent-seeking."
 publishedAt: "2025-11-25"
 author: "Equipo Invoo"

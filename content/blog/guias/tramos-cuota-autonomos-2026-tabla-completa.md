@@ -1,6 +1,6 @@
 ---
-title: "Tabla Cuotas Autónomos 2026: 15 Tramos desde 200€/mes (Guía Completa)"
-excerpt: "Los 15 tramos de cuota 2026 explicados: desde 200€/mes (hasta 670€ de ingresos) hasta 590€/mes (más de 6.000€). Cuánto pagas según tu facturación, cómo elegir tu tramo y evitar regularizaciones con recargo del 20%."
+title: "Cuotas Autónomos 2026: Tabla de 15 Tramos"
+excerpt: "Los 15 tramos de cuota 2026: desde 200€/mes (hasta 670€ de ingresos) hasta 590€/mes (más de 6.000€). Elige tu tramo correcto y evita regularizaciones con recargo del 20%."
 publishedAt: "2026-01-13"
 author: "Equipo Invoo"
 tags: ["tramos autonomos 2026", "cuota autonomos", "base cotizacion", "seguridad social", "tabla cuotas"]

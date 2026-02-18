@@ -1,5 +1,5 @@
 ---
-title: "Estimación Directa Simplificada vs Módulos: Cuál Elegir en 2026"
+title: "Estimación Directa vs Módulos: Cuál Elegir"
 excerpt: "¿Estimación directa simplificada o módulos? Descubre cuál te ahorra más según tus gastos reales. Límites 2026, casos prácticos con números y cómo cambiar de régimen."
 publishedAt: "2026-01-30"
 author: "Equipo Invoo"

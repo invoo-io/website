@@ -43,7 +43,7 @@ export function GestoriasHomeSection({ locale }: GestoriasHomeSectionProps) {
         <Button
           variant="gradient"
           showArrow
-          href={`/${locale}/gestorias`}
+          href={`/${locale}/gestorias/`}
         >
           {t("cta")}
         </Button>

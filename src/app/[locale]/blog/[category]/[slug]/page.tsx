@@ -61,7 +61,7 @@ export async function generateMetadata({
     : `${BASE_URL}/Logo.png`;
 
   return {
-    title: `${post.title} | Blog de Invoo`,
+    title: post.title,
     description: post.excerpt,
     keywords: post.tags,
     alternates: {
@@ -108,7 +108,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
   // Redirect to Spanish blog if not Spanish
   if (locale !== "es") {
-    redirect(`/es/blog/${categorySlug}/${slug}`);
+    redirect(`/es/blog/${categorySlug}/${slug}/`);
   }
 
   const post = getBlogPost(categorySlug, slug);
@@ -215,7 +215,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             <article className="min-w-0">
               {/* Explore with AI */}
               <ExploreWithAI
-                articleUrl={`https://invoo.es/${locale}/blog/${categorySlug}/${slug}`}
+                articleUrl={`https://invoo.es/${locale}/blog/${categorySlug}/${slug}/`}
                 articleTitle={post.title}
                 articleExcerpt={post.excerpt}
               />

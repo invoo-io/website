@@ -76,7 +76,7 @@ export default async function BlogPage({
 
   // Redirect to Spanish blog if not Spanish
   if (locale !== "es") {
-    redirect("/es/blog");
+    redirect("/es/blog/");
   }
 
   const t = await getTranslations({ locale });

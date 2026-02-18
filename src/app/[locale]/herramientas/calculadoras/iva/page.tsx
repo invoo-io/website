@@ -115,7 +115,7 @@ export default async function IVACalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/vat');
+    redirect('/en/tools/calculators/vat/');
   }
 
   setRequestLocale(locale);

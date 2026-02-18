@@ -1,5 +1,5 @@
 ---
-title: "Numeración de Facturas: Formato Correcto y Verifactu 2027"
+title: "Numeración de Facturas: Formato Correcto"
 excerpt: "Aprende a numerar facturas correctamente como autónomo: formato, series obligatorias, errores que sanciona Hacienda y requisitos Verifactu 2027."
 publishedAt: "2026-02-17"
 author: "Equipo Invoo"

@@ -1,6 +1,6 @@
 ---
-title: "5 errores que cometen los autónomos principiantes (y te cuestan dinero)"
-excerpt: "El 73% de nuevos autónomos comete estos errores en su primer año. Guía práctica con enlaces oficiales para evitar sanciones y ahorrar tiempo."
+title: "5 Errores de Autónomos Principiantes que Cuestan"
+excerpt: "El 73% de nuevos autónomos comete estos 5 errores en su primer año y pierde miles de euros. Guía práctica con fuentes oficiales para evitar sanciones desde el primer día."
 publishedAt: "2025-11-25"
 author: "Equipo Invoo"
 tags: ["autónomos", "errores-comunes", "guia-principiantes", "consejos"]

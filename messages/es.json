@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Software de Facturación para Autónomos | Factura sin Estrés",
-    "description": "Factura en 30 segundos con Verifactu automático. Sin CRM, sin inventario. Solo facturación rápida y conforme. Si tienes gestoría, conectada gratis. €10.90/mes, todo incluido."
+    "title": "Software de Facturación para Autónomos y Pymes",
+    "description": "Factura en 30 segundos con Verifactu automático. Sin CRM, sin inventario. Solo facturación rápida y conforme. Gestoría conectada gratis. €10.90/mes."
   },
   "nav": {
     "services": "Servicios",
@@ -87,7 +87,7 @@
   },
   "freelancersPage": {
     "metadata": {
-      "title": "Facturación Autónomos en 30s | Tu Gestoría Conectada | Invoo",
+      "title": "Facturación Autónomos en 30s | Gestoría Conectada",
       "description": "Factura en 30 segundos con Verifactu automático. Tu gestoría ve todo al instante, sin emails. IVA e IRPF calculados. €10.90/mes. Únete a la lista de espera."
     },
     "header": {
@@ -215,8 +215,8 @@
   },
   "pymesPage": {
     "metadata": {
-      "title": "Tu Equipo Factura, Tú lo Ves Todo | Gestoría Incluida",
-      "description": "Sabes quién facturó qué, cuándo, y tu gestoría lo ve sin perseguir emails. Facturación 2-4 usuarios con Verifactu automático. Desde €10.45/mes. Solo facturas, cero bloat."
+      "title": "Tu Equipo Factura, Tú lo Ves Todo | Sin Caos",
+      "description": "Facturación en equipo (2-4 usuarios) con Verifactu automático. Tu gestoría ve todo sin perseguir emails. Desde €10.45/mes. Solo facturas, cero bloat."
     },
     "header": {
       "title": "Facturación en equipo",
@@ -341,7 +341,7 @@
   },
   "gestoriasPage": {
     "metadata": {
-      "title": "Software Gestorías Autónomos | Dashboard Gratis | Invoo",
+      "title": "Software Gestorías Autónomos | Dashboard Gratis",
       "description": "Compite con TaxDown sin perder clientes. Portal gestoría con facturación automática, Verifactu multicliente y CSV instantáneo. Gratis para siempre."
     },
     "header": {
@@ -505,7 +505,7 @@
   },
   "faq": {
     "metadata": {
-      "title": "Verifactu y Facturación: Preguntas Frecuentes | Invoo",
+      "title": "Preguntas sobre Verifactu, Gestoría y Precios",
       "description": "¿Qué es Verifactu? ¿Cuánto cuesta software de facturación? ¿Cómo colaborar con tu gestoría? Respuestas claras sobre facturación electrónica."
     },
     "hero": {
@@ -734,7 +734,7 @@
   },
   "about": {
     "metadata": {
-      "title": "Sobre Invoo | Devolviendo la Calma a la Facturación",
+      "title": "Sobre Nosotros | Facturación sin Complicaciones",
       "description": "Construimos Invoo para que facturar sea invisible. Software simple que conecta autónomos y gestorías de forma natural. Sin complicaciones, sin sorpresas."
     },
     "hero": {
@@ -837,7 +837,7 @@
   },
   "methodology": {
     "metadata": {
-      "title": "Nuestra Metodología Editorial | Cómo Creamos Contenido",
+      "title": "Metodología Editorial | Contenido Verificado",
       "description": "Descubre cómo creamos contenido fiable sobre fiscalidad y facturación: fuentes oficiales (AEAT, BOE), verificación rigurosa y actualizaciones constantes."
     },
     "header": {
@@ -921,7 +921,7 @@
   },
   "privacy": {
     "metadata": {
-      "title": "Política de Privacidad | RGPD y Protección de Datos | Invoo",
+      "title": "Política de Privacidad | RGPD y Protección de Datos",
       "description": "Cómo protegemos tus datos en Invoo: servidores UE, RGPD total, cero venta de datos. Solo tú y tu gestoría ven tus facturas. Exporta cuando quieras."
     },
     "title": "Política de Privacidad",
@@ -1033,8 +1033,8 @@
   },
   "terms": {
     "metadata": {
-      "title": "Términos y Condiciones | Uso de la Plataforma Invoo",
-      "description": "Términos legales claros de Invoo: qué incluye el servicio, tus derechos, responsabilidades, Verifactu integrado, y relación con tu gestoría. Transparencia total."
+      "title": "Términos y Condiciones | Uso de la Plataforma",
+      "description": "Condiciones de uso de Invoo. Qué incluye el servicio, precios, cancelación, Verifactu y acceso de gestoría. En español claro, sin letra pequeña."
     },
     "title": "Términos y Condiciones de Uso del Servicio Invoo",
     "lastUpdated": "Última actualización: 19 de noviembre de 2025",
@@ -1233,7 +1233,7 @@
   },
   "contact": {
     "metadata": {
-      "title": "Contacto | Soporte para Autónomos, Pymes y Gestorías | Invoo",
+      "title": "Contacto | Respuesta Rápida en Español",
       "description": "¿Dudas sobre colaboración con gestoría, Verifactu o precios? ¿Tu gestoría quiere probar el dashboard? Escríbenos. Respuesta rápida en español claro."
     },
     "sections": {
@@ -1242,7 +1242,7 @@
     }
   },
   "pricingPage": {
-    "title": "Precios Transparentes | Desde €5.45/mes con 50% Descuento",
+    "title": "Precios | Desde €10.90/mes Todo Incluido",
     "description": "Desde €5.45/mes (50% dto) con facturación ilimitada. Dashboard para gestoría incluido. Sin contratos. Ahorra €40-200/mes vs competencia.",
     "header": {
       "title": "Precios simples. Funciones potentes",
@@ -1707,8 +1707,8 @@
   },
   "blog": {
     "meta": {
-      "title": "Blog de Invoo | Guías sobre Facturación y Verifactu",
-      "description": "Consejos, guías y novedades sobre facturación electrónica, Verifactu y gestión fiscal para autónomos y gestorías en España"
+      "title": "Blog | Facturación y Verifactu para Autónomos",
+      "description": "Guías verificadas con fuentes AEAT y BOE sobre facturación electrónica, Verifactu y gestión fiscal para autónomos y gestorías en España."
     },
     "title": "Blog de Invoo",
     "description": "Guías prácticas, consejos fiscales y las últimas novedades sobre facturación electrónica y Verifactu para autónomos y gestorías",
@@ -1819,8 +1819,8 @@
     },
     "hub": {
       "meta": {
-        "title": "Calculadoras para Autónomos 2026 | Gratis - Invoo",
-        "description": "Calculadoras gratuitas para autónomos y pymes en España: IVA, IRPF, cuota de autónomos, modelos 303 y 130, gastos deducibles y más. Sin registro, actualizadas para 2026."
+        "title": "Calculadoras para Autónomos",
+        "description": "Calculadoras gratuitas para autónomos: IVA, IRPF, cuota, Modelos 303 y 130, gastos deducibles y más. Sin registro. Resultados al instante."
       },
       "hero": {
         "title": "Calculadoras Gratuitas para Autónomos",
@@ -1849,7 +1849,7 @@
     },
     "iva": {
       "meta": {
-        "title": "Calculadora IVA Online 2026 | Gratis para Autónomos - Invoo",
+        "title": "Calculadora IVA Online para Autónomos",
         "description": "Calcula el IVA de tus facturas al instante. Tipos del 21%, 10% y 4%. Calculadora gratuita y actualizada para autónomos y pymes en España. Sin registro."
       },
       "hero": {
@@ -1987,7 +1987,7 @@
     },
     "cuotaAutonomos": {
       "meta": {
-        "title": "Calculadora Cuota Autónomos 2026 por Tramos | Gratis + Tarifa Plana - Invoo",
+        "title": "Calculadora Cuota Autónomos por Tramos",
         "description": "Calcula tu cuota de autónomo 2026 por ingresos reales. Sistema de tramos actualizado. Tarifa Plana 80€. Cuota Cero disponible. Gratis, sin registro. Resultados al instante."
       },
       "hero": {
@@ -2177,7 +2177,7 @@
     },
     "factura": {
       "meta": {
-        "title": "Calculadora de Facturas Online 2026 | IVA + IRPF Gratis - Invoo",
+        "title": "Calculadora de Facturas con IVA e IRPF",
         "description": "Calcula el total de tus facturas con IVA e IRPF al instante. Calculadora gratuita para autónomos y profesionales en España. Sin registro, resultados inmediatos."
       },
       "hero": {
@@ -2343,7 +2343,7 @@
     },
     "irpfAutonomos": {
       "meta": {
-        "title": "Calculadora IRPF Autónomos 2026 | Gratis - Invoo",
+        "title": "Calculadora IRPF Autónomos",
         "description": "Calcula tu IRPF como autónomo con tramos fiscales 2026 actualizados. Incluye mínimo personal, gastos deducibles y retenciones. Gratis y sin registro."
       },
       "hero": {
@@ -2515,7 +2515,7 @@
     },
     "sueldoNetoAutonomo": {
       "meta": {
-        "title": "Calculadora Sueldo Neto Autónomo 2026 | Gratis - Invoo",
+        "title": "Calculadora Sueldo Neto Autónomo",
         "description": "Calcula tu sueldo neto como autónomo en España. Incluye cuota, IRPF, gastos y bonificaciones. Resultados instantáneos con desglose completo. Gratis."
       },
       "hero": {
@@ -2710,8 +2710,8 @@
     },
     "precioHora": {
       "meta": {
-        "title": "Calcular Precio Hora Autónomo 2026 | Tarifa Freelance Gratis - Invoo",
-        "description": "Calcula tu precio por hora como autónomo en 30 segundos. Incluye IRPF progresivo real, cuota de autónomos por tramos y gastos. Gratis, sin registro. La calculadora más precisa de España."
+        "title": "Calculadora Precio por Hora Autónomo",
+        "description": "Calcula tu precio por hora como autónomo en 30 segundos. Incluye IRPF progresivo, cuota por tramos y gastos. Gratis, sin registro."
       },
       "hero": {
         "titleHighlight": "Calculadora Precio",
@@ -2914,7 +2914,7 @@
     },
     "modelo303": {
       "meta": {
-        "title": "Calculadora Modelo 303 IVA 2026 | Gratis para Autónomos - Invoo",
+        "title": "Calculadora Modelo 303 IVA Trimestral",
         "description": "Calcula tu declaración trimestral de IVA (Modelo 303) al instante. IVA repercutido vs soportado. Resultado a ingresar o compensar. Calculadora gratuita 2026."
       },
       "hero": {
@@ -3078,7 +3078,7 @@
     },
     "modelo130": {
       "meta": {
-        "title": "Calculadora Modelo 130 IRPF 2026 | Gratis para Autónomos - Invoo",
+        "title": "Calculadora Modelo 130 Pago Fraccionado",
         "description": "Calcula tu pago fraccionado de IRPF (Modelo 130) al instante. 20% del rendimiento neto trimestral. Deduce retenciones y pagos anteriores. Calculadora gratuita 2026."
       },
       "hero": {
@@ -3263,8 +3263,8 @@
     },
     "gastosDeducibles": {
       "meta": {
-        "title": "Calculadora Gastos Deducibles Autónomos 2026 | Gratis - Invoo",
-        "description": "Calcula cuánto ahorras en impuestos con tus gastos deducibles. IVA recuperable, IRPF deducible y GDJ. Calculadora gratuita para autónomos 2026."
+        "title": "Calculadora Gastos Deducibles Autónomos",
+        "description": "Calcula cuánto ahorras en impuestos con tus gastos deducibles. IVA recuperable, IRPF deducible y gastos de difícil justificación. Calculadora gratuita para autónomos."
       },
       "hero": {
         "titleHighlight": "Calculadora Gastos Deducibles",
@@ -3520,7 +3520,7 @@
     },
     "autonomoVsEmpresa": {
       "meta": {
-        "title": "Autónomo vs Sociedad Limitada 2026 | Comparador Fiscal - Invoo",
+        "title": "Autónomo vs Sociedad Limitada | Comparador Fiscal",
         "description": "Compara la carga fiscal entre ser autónomo o crear una SL. Calculadora gratuita con IRPF, cuota autónomos, Impuesto de Sociedades y punto de equilibrio. Sin registro."
       },
       "hero": {

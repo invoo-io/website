@@ -115,7 +115,7 @@ export default async function SueldoNetoAutonomoCalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/net-salary-freelancer');
+    redirect('/en/tools/calculators/net-salary-freelancer/');
   }
 
   setRequestLocale(locale);

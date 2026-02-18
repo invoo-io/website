@@ -1,5 +1,5 @@
 ---
-title: "Analicé 100+ autónomos: por qué el 80% pierde 10h al mes"
+title: "100+ Autónomos: Por Qué Pierdes 10h al Mes"
 excerpt: "Investigación real sobre cómo los autónomos españoles pierden más de 10 horas mensuales en tareas administrativas y qué hacer para recuperarlas"
 publishedAt: "2025-11-24"
 author: "Equipo Invoo"

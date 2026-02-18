@@ -1,5 +1,5 @@
 ---
-title: "Factura Simplificada: Requisitos, Límites y Cuándo Usarla"
+title: "Factura Simplificada: Requisitos y Límites"
 excerpt: "¿Puedes emitir factura simplificada o necesitas completa? Descubre límites (400€ vs 3.000€), datos obligatorios y cambios Verifactu 2027 para autónomos."
 publishedAt: "2026-02-13"
 author: "Equipo Invoo"

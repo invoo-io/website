@@ -1,5 +1,5 @@
 ---
-title: "Pluriactividad: Ser Autónomo y Asalariado a la Vez en 2026"
+title: "Pluriactividad: Autónomo y Asalariado en 2026"
 excerpt: "Guía pluriactividad 2026: cuota reducida, devolución por exceso de cotización y obligaciones fiscales. Con ejemplos y cifras actualizadas."
 publishedAt: "2026-02-14"
 author: "Equipo Invoo"

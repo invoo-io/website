@@ -28,7 +28,7 @@ export function ArticleCard({ post, locale, categoryDisplayName, translations }:
 
   return (
     <Link
-      href={`/${locale}/blog/${post.category}/${post.slug}`}
+      href={`/${locale}/blog/${post.category}/${post.slug}/`}
       className="block h-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue-main focus-visible:ring-offset-2"
       aria-label={translations.readArticle}
     >

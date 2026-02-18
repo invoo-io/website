@@ -13,8 +13,7 @@ import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { JsonLd } from "@/components/utilities/JsonLd";
 import { generateWebApplicationSchema, generateHowToSchema } from "@/lib/schema";
-
-const BASE_URL = "https://invoo.es";
+import { BASE_URL } from "@/lib/constants";
 
 export async function generateMetadata({
   params,
@@ -27,7 +26,9 @@ export async function generateMetadata({
   const url = `${BASE_URL}/${locale}/`;
 
   return {
-    title: t("metadata.title"),
+    title: {
+      absolute: `${t("metadata.title")} | Invoo`,
+    },
     description: t("metadata.description"),
     alternates: {
       canonical: url,

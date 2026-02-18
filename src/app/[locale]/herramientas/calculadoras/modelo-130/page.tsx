@@ -115,7 +115,7 @@ export default async function Modelo130CalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/form-130');
+    redirect('/en/tools/calculators/form-130/');
   }
 
   setRequestLocale(locale);

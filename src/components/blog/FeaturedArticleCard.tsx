@@ -10,7 +10,7 @@ interface FeaturedArticleCardProps {
 export function FeaturedArticleCard({ post, locale }: FeaturedArticleCardProps) {
   return (
     <Link
-      href={`/${locale}/blog/${post.category}/${post.slug}`}
+      href={`/${locale}/blog/${post.category}/${post.slug}/`}
       className="block"
       aria-label={`Read article: ${post.title}`}
     >

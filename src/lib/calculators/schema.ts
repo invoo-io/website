@@ -100,13 +100,17 @@ export const CALCULATOR_PATHS: Record<string, { es: string; en: string }> = {
  */
 export function getCalculatorPath(slug: string, locale: string): string {
   const paths = CALCULATOR_PATHS[slug];
+  let path: string;
   if (!paths) {
     // Fallback for unknown calculators
-    return locale === 'es'
+    path = locale === 'es'
       ? `/es/herramientas/calculadoras/${slug}`
       : `/en/tools/calculators/${slug}`;
+  } else {
+    path = paths[locale as 'es' | 'en'] || paths.es;
   }
-  return paths[locale as 'es' | 'en'] || paths.es;
+  // Ensure trailing slash to match next.config.ts trailingSlash: true
+  return path.endsWith('/') ? path : `${path}/`;
 }
 
 /**
@@ -241,19 +245,19 @@ export function generateCalculatorBreadcrumbSchema({
         '@type': 'ListItem',
         position: 1,
         name: isSpanish ? 'Inicio' : 'Home',
-        item: `${BASE_URL}/${locale}`,
+        item: `${BASE_URL}/${locale}/`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: isSpanish ? 'Herramientas' : 'Tools',
-        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas' : 'tools'}`,
+        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas' : 'tools'}/`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: isSpanish ? 'Calculadoras' : 'Calculators',
-        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas/calculadoras' : 'tools/calculators'}`,
+        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas/calculadoras' : 'tools/calculators'}/`,
       },
       {
         '@type': 'ListItem',
@@ -307,7 +311,7 @@ export function generateCalculatorWebPageSchema({
           '@type': 'ListItem',
           position: 1,
           name: isSpanish ? 'Inicio' : 'Home',
-          item: `${BASE_URL}/${locale}`,
+          item: `${BASE_URL}/${locale}/`,
         },
         {
           '@type': 'ListItem',
@@ -344,19 +348,19 @@ export function generateCalculatorHubBreadcrumbSchema({
         '@type': 'ListItem',
         position: 1,
         name: isSpanish ? 'Inicio' : 'Home',
-        item: `${BASE_URL}/${locale}`,
+        item: `${BASE_URL}/${locale}/`,
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: isSpanish ? 'Herramientas' : 'Tools',
-        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas' : 'tools'}`,
+        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas' : 'tools'}/`,
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: isSpanish ? 'Calculadoras' : 'Calculators',
-        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas/calculadoras' : 'tools/calculators'}`,
+        item: `${BASE_URL}/${locale}/${isSpanish ? 'herramientas/calculadoras' : 'tools/calculators'}/`,
       },
     ],
   };
@@ -424,8 +428,8 @@ export function generateCalculatorHubSchema({
 }): SchemaOrg {
   const isSpanish = locale === 'es';
   const path = isSpanish
-    ? '/es/herramientas/calculadoras'
-    : '/en/tools/calculators';
+    ? '/es/herramientas/calculadoras/'
+    : '/en/tools/calculators/';
 
   return {
     '@context': 'https://schema.org',

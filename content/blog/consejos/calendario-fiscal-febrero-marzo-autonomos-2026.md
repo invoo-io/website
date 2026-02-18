@@ -1,5 +1,5 @@
 ---
-title: "Calendario Fiscal Febrero-Marzo 2026: Qué Declarar y Cuándo"
+title: "Calendario Fiscal Feb-Mar 2026: Qué Declarar"
 excerpt: "Calendario fiscal febrero-marzo 2026 para autónomos: plazos del Modelo 347, resúmenes anuales y checklist semanal para preparar el Q1 sin multas."
 publishedAt: "2026-02-02"
 author: "Equipo Invoo"

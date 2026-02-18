@@ -107,7 +107,7 @@ export default async function SelfEmployedQuotaCalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/cuota-autonomos');
+    redirect('/es/herramientas/calculadoras/cuota-autonomos/');
   }
 
   setRequestLocale(locale);

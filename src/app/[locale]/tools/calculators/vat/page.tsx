@@ -107,7 +107,7 @@ export default async function VATCalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/iva');
+    redirect('/es/herramientas/calculadoras/iva/');
   }
 
   setRequestLocale(locale);

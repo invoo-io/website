@@ -1,5 +1,5 @@
 ---
-title: "10 Errores de Facturación que Hacienda Sanciona (y Cómo Evitarlos)"
+title: "10 Errores de Facturación que Sanciona Hacienda"
 excerpt: "Descubre los 10 errores de facturación autónomos que Hacienda sanciona con hasta 50.000€. Guía con multas reales, ejemplos y cómo prevenirlos en 2026."
 publishedAt: "2026-02-07"
 author: "Equipo Invoo"

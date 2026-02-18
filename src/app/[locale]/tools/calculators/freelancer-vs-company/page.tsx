@@ -107,7 +107,7 @@ export default async function FreelancerVsCompanyCalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/autonomo-vs-empresa');
+    redirect('/es/herramientas/calculadoras/autonomo-vs-empresa/');
   }
 
   setRequestLocale(locale);

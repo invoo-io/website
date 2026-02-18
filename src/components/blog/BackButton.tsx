@@ -22,7 +22,7 @@ export default function BackButton({ locale, categorySlug, label, ariaLabel }: B
       router.back();
     } else {
       // Default: navigate to category page
-      router.push(`/${locale}/blog/${categorySlug}`);
+      router.push(`/${locale}/blog/${categorySlug}/`);
     }
   };
 

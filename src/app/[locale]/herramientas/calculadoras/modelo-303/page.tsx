@@ -115,7 +115,7 @@ export default async function Modelo303CalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/vat-return');
+    redirect('/en/tools/calculators/vat-return/');
   }
 
   setRequestLocale(locale);

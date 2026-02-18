@@ -1,6 +1,6 @@
 ---
-title: "15 deducciones fiscales que los autónomos olvidan cada año (y cómo recuperar hasta 4.000€)"
-excerpt: "La mayoría de autónomos españoles pierden entre 2.000€ y 4.000€ cada año por no aplicar todas las deducciones fiscales disponibles. Esta guía completa te muestra las 15 deducciones más olvidadas y cómo aprovecharlas correctamente."
+title: "15 Deducciones Fiscales que Olvidan los Autónomos"
+excerpt: "La mayoría de autónomos pierde entre 2.000€ y 4.000€ al año por no aplicar todas las deducciones disponibles. Aprende las 15 más olvidadas y cómo aprovecharlas correctamente."
 publishedAt: "2025-11-25"
 author: "Equipo Invoo"
 tags: ["deducciones-fiscales", "autonomos", "irpf", "ahorro-fiscal", "impuestos"]

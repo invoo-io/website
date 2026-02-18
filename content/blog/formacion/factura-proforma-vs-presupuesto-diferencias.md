@@ -1,5 +1,5 @@
 ---
-title: "Factura Proforma vs Presupuesto: Diferencias y Cuándo Usar Cada Uno"
+title: "Factura Proforma vs Presupuesto: Diferencias"
 excerpt: "Descubre las diferencias entre factura proforma y presupuesto, cuándo usar cada uno y cómo convertirlos en factura definitiva sin errores. Guía práctica 2026."
 publishedAt: "2026-02-10"
 author: "Equipo Invoo"

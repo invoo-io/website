@@ -107,7 +107,7 @@ export default async function NetSalaryFreelancerCalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/sueldo-neto-autonomo');
+    redirect('/es/herramientas/calculadoras/sueldo-neto-autonomo/');
   }
 
   setRequestLocale(locale);

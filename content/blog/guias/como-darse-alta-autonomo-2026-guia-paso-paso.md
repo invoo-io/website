@@ -1,5 +1,5 @@
 ---
-title: "Cómo Darse de Alta como Autónomo 2026: Guía Paso a Paso"
+title: "Alta Autónomo 2026: Guía Paso a Paso"
 excerpt: "Guía completa para darte de alta como autónomo en 2026. Modelo 036, RETA, Tarifa Plana y todos los trámites paso a paso sin errores."
 publishedAt: "2026-01-17"
 author: "Equipo Invoo"

@@ -1,5 +1,5 @@
 ---
-title: "Autónomo vs Sociedad Limitada en 2026: Cuándo Conviene Cada Uno"
+title: "Autónomo vs Sociedad Limitada 2026"
 excerpt: "¿A partir de qué ingresos conviene crear una SL? Comparamos fiscalidad, costes reales y 3 perfiles para ayudarte a decidir en 2026."
 publishedAt: "2026-02-16"
 author: "Equipo Invoo"

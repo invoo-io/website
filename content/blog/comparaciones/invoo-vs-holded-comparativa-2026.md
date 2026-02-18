@@ -1,5 +1,5 @@
 ---
-title: "Invoo vs Holded: Comparativa Completa para Autónomos 2026"
+title: "Invoo vs Holded: Comparativa Autónomos 2026"
 excerpt: "Análisis honesto de Holded vs Invoo: precios reales, funcionalidades, soporte y cumplimiento Verifactu. Descubre cuál es mejor para tu perfil."
 publishedAt: "2025-12-30"
 author: "Equipo Invoo"

@@ -1,6 +1,6 @@
 ---
 title: "Modelo 347: Guía Completa para Autónomos 2026"
-excerpt: "Declaración anual obligatoria para operaciones superiores a 3.005,06€. Plazo: del 1 de febrero al 2 de marzo 2026. Evita multas de hasta 20.000€ con esta guía práctica."
+excerpt: "Obligatorio si operaste más de 3.005,06€ con un cliente o proveedor en 2025. Plazo: 1 feb al 2 mar 2026. Evita multas de hasta 20.000€."
 publishedAt: "2026-01-20"
 author: "Equipo Invoo"
 tags: ["modelo-347", "hacienda", "declaraciones-informativas", "autonomos", "iva", "impuestos"]

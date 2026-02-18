@@ -79,7 +79,7 @@ export default function ArticleHeader({
           {/* Category & Date */}
           <div className="flex items-center gap-2 mb-4  mt-4 text-footnote">
             <Link
-              href={`/${locale}/blog/${category.slug}`}
+              href={`/${locale}/blog/${category.slug}/`}
               className="text-accent-blue-main hover:text-accent-blue-dark transition-colors duration-200"
             >
               {category.name}

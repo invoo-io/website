@@ -88,7 +88,7 @@ export default async function CalculatorsHubPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras');
+    redirect('/es/herramientas/calculadoras/');
   }
 
   setRequestLocale(locale);
@@ -114,7 +114,7 @@ export default async function CalculatorsHubPage({
     name: tCommon(`related.${key}.name`),
     description: tCommon(`related.${key}.description`),
     slug,
-    href: `/en/tools/calculators/${slug}`,
+    href: `/en/tools/calculators/${slug}/`,
   }));
 
   // Schema data
@@ -257,7 +257,7 @@ export default async function CalculatorsHubPage({
               {t('cta.description')}
             </p>
             <Link
-              href="/en#waitlist"
+              href={`/${locale}/#waitlist`}
               className="mt-8 inline-flex items-center rounded-full bg-white px-8 py-3 text-base font-semibold text-brand-primary shadow-lg transition-all hover:scale-105 hover:shadow-xl"
             >
               {t('cta.button')}

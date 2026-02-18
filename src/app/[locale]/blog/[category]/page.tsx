@@ -53,7 +53,7 @@ export async function generateMetadata({
   const canonicalUrl = `https://invoo.es/es/blog/${categorySlug}/`;
 
   return {
-    title: `${category.name} | Blog de Invoo`,
+    title: category.name,
     description: category.description,
     alternates: {
       canonical: canonicalUrl,
@@ -63,7 +63,7 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: `${category.name} | Blog de Invoo`,
+      title: category.name,
       description: category.description,
       type: "website",
     },
@@ -76,7 +76,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   // Redirect to Spanish blog if not Spanish
   if (locale !== "es") {
-    redirect(`/es/blog/${categorySlug}`);
+    redirect(`/es/blog/${categorySlug}/`);
   }
 
   const t = await getTranslations({ locale });
@@ -106,7 +106,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="max-w-6xl mx-auto text-center">
           <div className="mb-6">
             <Button
-              href={`/${locale}/blog`}
+              href={`/${locale}/blog/`}
               variant="tertiary"
               size="none"
               showBackIcon

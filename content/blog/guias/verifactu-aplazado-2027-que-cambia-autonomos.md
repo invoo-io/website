@@ -1,5 +1,5 @@
 ---
-title: "Verifactu Aplazado a 2027: Qué Cambia Para Autónomos y Pymes"
+title: "Verifactu Aplazado a 2027: Qué Cambia"
 excerpt: "El Gobierno retrasa Verifactu hasta 2027. Te explicamos las nuevas fechas, qué significa para tu negocio y si deberías prepararte ya o esperar."
 publishedAt: "2025-12-02"
 author: "Equipo Invoo"

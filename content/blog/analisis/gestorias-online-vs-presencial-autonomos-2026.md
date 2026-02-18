@@ -1,5 +1,5 @@
 ---
-title: "Gestoría Online vs Presencial: Qué Conviene a Cada Autónomo en 2026"
+title: "Gestoría Online vs Presencial: Cuál Elegir"
 excerpt: "¿Gestoría online o presencial? Comparamos precios (€25-150/mes), servicios y te ayudamos a elegir según tu perfil. Guía autónomos 2026."
 publishedAt: "2026-02-05"
 author: "Equipo Invoo"

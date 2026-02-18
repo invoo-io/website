@@ -1,5 +1,5 @@
 ---
-title: "Rendimientos Netos de Autónomos: Cómo Calcularlos para tu Cuota 2026"
+title: "Rendimientos Netos Autónomos: Cómo Calcularlos"
 excerpt: "Calcula tus rendimientos netos para elegir tu tramo de cotización 2026. Fórmula correcta, ejemplos reales y errores que debes evitar."
 publishedAt: "2026-02-02"
 author: "Equipo Invoo"

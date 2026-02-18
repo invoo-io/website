@@ -115,7 +115,7 @@ export default async function GastosDeduciblesCalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/deductible-expenses');
+    redirect('/en/tools/calculators/deductible-expenses/');
   }
 
   setRequestLocale(locale);

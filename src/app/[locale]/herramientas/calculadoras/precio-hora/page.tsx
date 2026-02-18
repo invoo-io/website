@@ -117,7 +117,7 @@ export default async function PrecioHoraCalculatorPage({
 
   // Redirect English users to the English URL
   if (locale === 'en') {
-    redirect('/en/tools/calculators/hourly-rate');
+    redirect('/en/tools/calculators/hourly-rate/');
   }
 
   setRequestLocale(locale);

@@ -1,6 +1,6 @@
 ---
-title: "Modelo 130 y Modelo 303: Qué Son, Diferencias y Cuándo Presentarlos (2026)"
-excerpt: "Guía completa de los modelos 130 y 303 para autónomos: qué es cada modelo, quién debe presentarlos, cómo calcularlos correctamente y plazos exactos. Evita sanciones de hasta el 150%."
+title: "Modelo 130 vs 303: Diferencias y Plazos"
+excerpt: "Guía práctica de los modelos 130 y 303 para autónomos: qué declara cada uno, quién debe presentarlos, plazos exactos y cómo evitar sanciones de hasta el 150%."
 publishedAt: "2025-11-25"
 author: "Equipo Invoo"
 tags: ["modelo-303", "modelo-130", "iva", "irpf", "impuestos-autonomos", "hacienda"]

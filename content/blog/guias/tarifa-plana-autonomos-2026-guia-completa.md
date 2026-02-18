@@ -1,6 +1,6 @@
 ---
-title: "Tarifa Plana Autónomos 2026: Paga Solo 80€/mes (Requisitos y Cómo Solicitarla)"
-excerpt: "Guía definitiva de la tarifa plana 2026: cómo pagar solo 88,72€/mes durante 12-24 meses, requisitos exactos, cómo solicitarla sin perderla y prórrogas según tus ingresos."
+title: "Tarifa Plana Autónomos 2026: Guía y Requisitos"
+excerpt: "Paga solo 88,72€/mes durante 12-24 meses como nuevo autónomo. Requisitos exactos, cómo solicitarla en el momento del alta y prórrogas según tus ingresos."
 publishedAt: "2026-01-08"
 author: "Equipo Invoo"
 tags: ["tarifa-plana", "autonomos", "seguridad-social", "cuotas", "nuevos-autonomos"]

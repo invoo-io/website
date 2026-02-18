@@ -1,6 +1,6 @@
 ---
-title: "Verifactu 2025-2026: Guía Completa para Autónomos y Pymes"
-excerpt: "Todo lo que necesitas saber sobre Verifactu sin tecnicismos. Fechas oficiales, quién está obligado, la trampa de Excel, sanciones reales y cómo prepararte antes de que sea tarde."
+title: "Verifactu: Guía Completa para Autónomos"
+excerpt: "Todo sobre Verifactu sin tecnicismos: fechas oficiales, quién está obligado, la trampa de Excel y sanciones reales. Prepárate antes de que sea tarde."
 publishedAt: "2025-11-25"
 author: "Equipo Invoo"
 tags: ["verifactu", "autonomos", "pymes", "facturacion", "hacienda", "sif", "guia-completa"]

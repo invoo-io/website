@@ -1,5 +1,5 @@
 ---
-title: "Cómo emitir una factura rectificativa: Guía completa 2026"
+title: "Factura Rectificativa: Guía Completa 2026"
 excerpt: "Aprende cuándo y cómo emitir una factura rectificativa paso a paso. Códigos R1 a R5, requisitos Verifactu 2026, errores a evitar y cómo prevenir tener que hacerla."
 publishedAt: "2026-01-08"
 author: "Equipo Invoo"

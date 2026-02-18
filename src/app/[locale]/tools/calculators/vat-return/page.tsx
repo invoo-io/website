@@ -107,7 +107,7 @@ export default async function VATReturnCalculatorPage({
 
   // Redirect Spanish users to the Spanish URL
   if (locale === 'es') {
-    redirect('/es/herramientas/calculadoras/modelo-303');
+    redirect('/es/herramientas/calculadoras/modelo-303/');
   }
 
   setRequestLocale(locale);
