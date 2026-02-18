@@ -7,7 +7,7 @@ tags: ["dietas autónomos", "gastos deducibles", "irpf", "hacienda", "autónomos
 readingTime: 7
 featured: false
 editorPick: true
-coverImage: "/blog/dietas-manutencion-autonomos-deducibles-2026.webp"
+coverImage: "/blog/dietas-manutencion-autonomos-deducibles.webp"
 keyTakeaways:
   - "Los límites son €26,67/día en España sin pernocta y €48,08/día en el extranjero, vigentes desde que la Ley 6/2017 introdujo la deducción en 2018"
   - "El pago electrónico es obligatorio: una comida pagada en efectivo no es deducible bajo ningún concepto, aunque tengas factura"
