@@ -1,9 +1,9 @@
 ---
 title: "Deducir Coche Autónomo: IVA al 50% e IRPF (2026)"
-excerpt: "IVA al 50% o al 100%, IRPF con uso exclusivo o método kilométrico: guía completa para deducir el coche siendo autónomo y novedades del TEAC 2025."
+excerpt: "¿Cuánto IVA y IRPF puedes deducir por tu coche como autónomo? 50%, 100% o cero: depende de tu actividad y tipo de vehículo. Incluye la resolución TEAC 2025."
 publishedAt: "2026-02-23"
 author: "Equipo Invoo"
-tags: ["gastos-deducibles", "vehiculo-autonomo", "iva", "irpf", "deduccion-coche"]
+tags: ["gastos-deducibles", "autonomos", "iva", "irpf", "vehiculo-autonomo"]
 readingTime: 12
 featured: false
 editorPick: false
@@ -11,17 +11,17 @@ coverImage: "/blog/vehiculo-profesional-autonomo-deduccion-iva-irpf.webp"
 keyTakeaways:
   - "En IVA deduces el 50% del coche sin demostrar nada; el 100% si eres transportista, taxi, autoescuela o agente comercial"
   - "En IRPF la regla es distinta: cero deducción salvo uso exclusivo profesional — algunos asesores aplican el criterio de kilometraje (0,26€/km), pero su base legal para autónomos es discutida"
-  - "La resolución TEAC de junio 2025 invierte la carga de la prueba para furgonetas y vehículos con características profesionales evidentes"
+  - "La resolución TEAC de junio 2025 invierte la carga de la prueba para vehículos mixtos adaptables (categoría N1) con características profesionales evidentes — no aplica a turismos convencionales"
   - "Renting permite deducir la cuota completa como gasto corriente; compra solo amortiza al 16% anual máximo"
 faq:
   - question: "¿Cuánto IVA puede deducir un autónomo por su coche?"
-    answer: "El 50% sin demostrar nada (presunción del Art. 95.3 Ley IVA). El 100% si tu actividad es transporte de mercancías, taxi, VTC, autoescuela, o si eres agente comercial."
+    answer: "El 50% sin demostrar nada (presunción del Art. 95.3 Ley IVA). El 100% si tu actividad es transporte de mercancías, taxi, VTC, autoescuela, agentes comerciales, o servicios de vigilancia."
   - question: "¿Puedo deducir el coche en IRPF si lo uso también para fines personales?"
     answer: "En general, no. El IRPF exige uso exclusivo profesional. Algunos asesores aplican el criterio de 0,26€/km por desplazamiento profesional, pero su base legal para autónomos es discutida. Consulta siempre con tu gestoría."
   - question: "¿Qué cambió con la resolución del TEAC de junio 2025?"
-    answer: "El TEAC creó un marco bidireccional: si tu vehículo tiene características profesionales evidentes (rotulación, herramientas, carrocería comercial), se presume afecto y Hacienda debe probar uso personal. Pero si el vehículo es ambiguo o de apariencia personal, la carga sigue en el autónomo."
+    answer: "El TEAC creó un marco bidireccional para vehículos mixtos adaptables (categoría N1): si tu vehículo tiene características profesionales evidentes (rotulación, herramientas, carrocería comercial), se presume afecto y Hacienda debe probar uso personal. Pero si el vehículo es ambiguo o de apariencia personal, la carga sigue en el autónomo. No aplica a turismos convencionales."
   - question: "¿Compensa más el renting o la compra del coche para autónomos?"
-    answer: "Con renting deduces la cuota mensual completa como gasto. Con compra solo amortizas el 16% anual. Si el vehículo califica para deducción en IRPF, el renting suele generar mayor deducción anual."
+    answer: "Con renting deduces la cuota mensual completa como gasto. Con compra solo amortizas el 16% anual. Si el vehículo califica para deducción en IRPF, el renting suele generar mayor deducción anual. En ambos casos, el vehículo debe cumplir el mismo requisito de afectación exclusiva para ser deducible en IRPF."
 sources:
   - name: "Art. 95.Tres Ley 37/1992 del IVA — BOE"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"
@@ -44,7 +44,7 @@ Esta guía lo explica sin ambigüedades.
 
 ---
 
-## Por qué IVA e IRPF tienen reglas distintas para el coche
+## Por qué el coche del autónomo tiene reglas distintas en IVA e IRPF
 
 El error más extendido entre autónomos —y el más caro— es asumir que si deduces el 50% del IVA de tu coche, también puedes deducir el 50% en IRPF. No funciona así.
 
@@ -79,15 +79,15 @@ Las actividades con derecho al 100% son:
 - Agentes o representantes comerciales
 - Servicios de vigilancia
 
-Un detalle relevante sobre los agentes comerciales: en el ámbito del IVA, la ley no exige estar colegiado para deducir el 100%. Sin embargo, en IRPF sí se exige la condición de colegiado para beneficiarse de la presunción de afectación del Art. 22.4.d del Reglamento del IRPF. Son reglas distintas para cada impuesto. El Tribunal Supremo (STS 1872/2024) precisó en el ámbito del IRPF que un agente de seguros no equivale a un agente comercial a estos efectos.
+Un detalle relevante sobre los agentes comerciales: en el ámbito del IVA, la deducción al 100% aplica a cualquier agente o representante comercial sin más requisitos. En IRPF, la presunción de afectación del Art. 22.4.d del Reglamento del IRPF beneficia específicamente a los "representantes o agentes comerciales" como categoría legal. El Tribunal Supremo (STS 1872/2024) precisó que un agente de seguros no equivale a un agente comercial a estos efectos, por lo que los agentes de seguros no pueden acogerse a esa presunción automática en IRPF y deben acreditar uso exclusivo.
 
-Si tu actividad no está en esta lista, **tu techo es el 50%**. Aunque demuestres que usas el coche el 90% del tiempo para trabajar, el IVA deducible no supera el 50% para un turismo en actividades no incluidas en el listado.
+Si tu actividad no está en esta lista, **el punto de partida es el 50%**. En teoría, puedes intentar acreditar un porcentaje superior con pruebas del grado real de afectación profesional, pero en la práctica es difícil sin una actividad que justifique un uso claramente mayoritario y sin documentación exhaustiva.
 
 ---
 
-## IRPF: el criterio de uso exclusivo y la novedad TEAC 2025
+## IRPF y coche autónomo: uso exclusivo y la resolución TEAC 2025
 
-En IRPF, la regla base es que [solo aplica en estimación directa](/es/blog/formacion/estimacion-directa-vs-objetiva-modulos). Si tributas en módulos, no puedes deducir el vehículo como gasto de actividad bajo estos criterios. Para el resto, el análisis depende de qué tipo de vehículo tienes y cómo lo usas.
+En IRPF, la regla base es que [solo aplica en estimación directa](/es/blog/formacion/estimacion-directa-vs-objetiva-modulos/). Si tributas en módulos, no puedes deducir el vehículo como gasto de actividad bajo estos criterios. Para el resto, el análisis depende de qué tipo de vehículo tienes y cómo lo usas.
 
 ### El criterio de uso exclusivo para turismos
 
@@ -109,7 +109,7 @@ Si tu asesor te recomienda aplicar el método de 0,26€/km, asegúrate de enten
 
 ### La resolución TEAC de junio 2025: qué cambia y para quién
 
-La Resolución TEAC 00/04214/2024, publicada en junio de 2025, introdujo un marco de presunciones bidireccional para vehículos mixtos en IRPF. El criterio funciona así:
+La Resolución TEAC 00/04214/2024, publicada en junio de 2025, introdujo un marco de presunciones bidireccional para **vehículos mixtos adaptables** (categoría N1 del registro de vehículos) en IRPF. No aplica a turismos convencionales. El criterio funciona así:
 
 - **Si el vehículo tiene características profesionales evidentes** (carrocería comercial, rotulación de empresa, herramientas o equipamiento específico de la actividad, o naturaleza que hace objetivamente incompatible su uso personal — como una furgoneta isotérmica o un vehículo de obra), **se presume afecto a la actividad** y es Hacienda quien debe demostrar uso personal.
 
@@ -117,7 +117,7 @@ La Resolución TEAC 00/04214/2024, publicada en junio de 2025, introdujo un marc
 
 Este marco beneficia a autónomos en construcción, fontanería, electricidad, reparto y actividades similares que usan furgonetas o vehículos claramente especializados. Para un autónomo que trabaja en consultoría y usa un turismo convencional, o incluso una furgoneta sin equipamiento profesional visible, esta resolución no cambia nada: sigue aplicando el criterio clásico de uso exclusivo.
 
-Para el **registro en tus libros obligatorios**, los kilómetros o los gastos del vehículo deben quedar correctamente registrados como gastos de actividad, tanto si usas el método de amortización como el de kilometraje. Tu gestoría necesita estos datos para cuadrar tu IRPF trimestral y anual.
+Para el **registro en tus [libros obligatorios](/es/blog/guias/libro-ingresos-gastos-autonomos-obligatorio/)**, los kilómetros o los gastos del vehículo deben quedar correctamente registrados como gastos de actividad, tanto si usas el método de amortización como el de kilometraje. Tu gestoría necesita estos datos para cuadrar tu IRPF trimestral y anual.
 
 ---
 
@@ -129,9 +129,9 @@ La forma en que accedes al vehículo tiene un impacto directo en cómo y cuánto
 
 Cuando compras un vehículo y lo incorporas a tu activo como autónomo, el IVA soportado es deducible en el porcentaje que corresponda (50% o 100%). El IVA que no deduces se suma al precio de adquisición y forma parte del coste fiscal del bien.
 
-En IRPF, si el vehículo cumple el requisito de afectación exclusiva, lo amortizas. En **estimación directa normal**, el coeficiente máximo de amortización lineal para vehículos es **del 16% anual**, lo que equivale a una vida útil fiscal de 14 años. Para un coche de segunda mano, el reglamento permite hasta el 32% anual. Si tributas en estimación directa simplificada, el cálculo de la amortización puede diferir — consulta con tu gestoría qué régimen aplicas.
+En IRPF, si el vehículo cumple el requisito de afectación exclusiva, lo amortizas. En **estimación directa normal**, el coeficiente máximo de amortización lineal para vehículos es **del 16% anual**. El periodo máximo de amortización es de 14 años (aplicando el coeficiente mínimo del ~7%). Si aplicas el coeficiente máximo del 16%, la amortización se completa en torno a **6-7 ejercicios**. Para un coche de segunda mano, el reglamento permite hasta el 32% anual. Si tributas en estimación directa simplificada, el cálculo de la amortización puede diferir — consulta con tu gestoría qué régimen aplicas.
 
-El impacto práctico: si compras un turismo por €24.000 (neto de IVA), el máximo deducible en IRPF el primer año es **€3.840** (16% de €24.000). El año siguiente, otros €3.840. Y así durante 14 años, siempre que mantengas la afectación exclusiva.
+El impacto práctico: si compras un turismo por €24.000 (neto de IVA) y aplicas el coeficiente máximo, el máximo deducible en IRPF cada año es **€3.840** (16% de €24.000) durante aproximadamente **6-7 ejercicios** hasta agotar el coste, siempre que mantengas la afectación exclusiva.
 
 ### Renting
 
@@ -145,13 +145,13 @@ El renting también incluye habitualmente el mantenimiento, el seguro y el cambi
 
 ### Leasing financiero
 
-El leasing es una figura intermedia. Desde el punto de vista fiscal, se descompone en dos partes: la **carga financiera** (intereses), que es deducible como gasto financiero, y la **recuperación del coste** del bien, que se deduce sujeta a los límites de amortización (el mismo 16%/32% que en la compra directa). Fiscalmente, el leasing no suele ofrecer ventajas sobre la compra directa y sí añade complejidad contable.
+El leasing es una figura intermedia. Desde el punto de vista fiscal, se descompone en dos partes: la **carga financiera** (intereses), que es deducible como gasto financiero, y la **recuperación del coste** del bien. El límite general de deducción de la parte de recuperación del coste es el **doble del coeficiente máximo** de tablas (hasta el 32% anual para vehículos). Si el autónomo tiene la condición de **empresa de reducida dimensión** (facturación inferior a €10 millones, que cubre a la inmensa mayoría de autónomos), el límite sube al **triple (48% anual)**, sustituyendo al límite general — no se acumulan. Esto puede suponer una deducción más acelerada que la compra directa en los primeros años. La complejidad contable es mayor que en el renting, pero la ventaja fiscal puede ser relevante si el vehículo califica para deducción en IRPF. Consulta con tu gestoría si aplicas el régimen de empresa de reducida dimensión.
 
 Para decidir entre estas tres opciones, la pregunta clave no es solo fiscal: también influyen la liquidez disponible, si el vehículo depreciará rápido, y si la actividad justifica afectación exclusiva. Un autónomo que no puede acreditar uso exclusivo no debería basar su análisis en las deducciones en IRPF, porque en ese escenario ninguna de las tres opciones genera deducción de IRPF relevante.
 
 ---
 
-## Documentación del vehículo para una inspección de Hacienda
+## Documentación del vehículo del autónomo ante Hacienda
 
 La teoría fiscal es una cosa; lo que debes poder presentar ante un requerimiento de Hacienda es otra. El **registro de desplazamientos** es el documento más eficaz en cualquier inspección relacionada con el vehículo. No es legalmente obligatorio, pero en la práctica es lo primero que Hacienda solicita.
 
@@ -173,9 +173,9 @@ Más allá del registro, estos elementos refuerzan tu posición ante Hacienda:
 
 Recuerda que **el IVA deducible reduce tu cuota en el [modelo 303](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos/)** trimestral, mientras que la deducción en IRPF reduce tu base imponible en el modelo 130 y en la renta anual. Mantener un registro ordenado de ambos facilita el trabajo a tu gestoría y te protege ante cualquier requerimiento.
 
-Para cualquier gasto relacionado con el vehículo que quieras deducir, el pago electrónico es importante —como en las dietas— aunque para los gastos del vehículo el criterio no es tan rígido como para las dietas de manutención: lo que Hacienda pide es factura completa con tus datos fiscales, no necesariamente que no hayas pagado en efectivo. Dicho esto, el pago con tarjeta siempre genera un rastro documental más sólido.
+Para cualquier gasto relacionado con el vehículo que quieras deducir, el pago electrónico es importante —como en [las dietas](/es/blog/consejos/dietas-manutencion-autonomos-deducibles-2026/)— aunque para los gastos del vehículo el criterio no es tan rígido como para las dietas de manutención: lo que Hacienda pide es factura completa con tus datos fiscales, no necesariamente que no hayas pagado en efectivo. Dicho esto, el pago con tarjeta siempre genera un rastro documental más sólido.
 
-Si quieres entender el conjunto de lo que puedes deducir como autónomo más allá del vehículo, la [lista completa de gastos deducibles](/es/blog/guias/gastos-deducibles-autonomos-2026-lista-completa) te da el mapa completo. Y para explorar deducciones que muchos autónomos pasan por alto, revisa [otras deducciones que muchos autónomos olvidan](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana).
+Si quieres entender el conjunto de lo que puedes deducir como autónomo más allá del vehículo, la [lista completa de gastos deducibles](/es/blog/guias/gastos-deducibles-autonomos-2026-lista-completa/) te da el mapa completo. Y para explorar deducciones que muchos autónomos pasan por alto, revisa [otras deducciones que muchos autónomos olvidan](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana/).
 
 ---
 
@@ -197,7 +197,7 @@ En general, no. El IRPF exige uso exclusivo profesional para que un turismo sea 
 
 <AccordionGroupItem title="¿Qué cambió con la resolución del TEAC de junio 2025?" value="faq-3">
 
-La Resolución TEAC 00/04214/2024, publicada el 24 de junio de 2025, creó un **marco de presunciones bidireccional**. Si el vehículo tiene características profesionales evidentes (rotulación, equipamiento específico, carrocería comercial incompatible con uso personal), se presume afecto y es Hacienda quien debe demostrar uso personal. Pero si el vehículo es físicamente ambiguo o de apariencia personal, la carga sigue en el autónomo. Esta resolución beneficia principalmente a autónomos de sectores como construcción, reparto o instalaciones con vehículos claramente profesionales. Para turismos convencionales o furgonetas sin distintivos, el criterio clásico sigue vigente.
+La Resolución TEAC 00/04214/2024, publicada el 24 de junio de 2025, creó un **marco de presunciones bidireccional** para vehículos mixtos adaptables (categoría N1). Si el vehículo tiene características profesionales evidentes (rotulación, equipamiento específico, carrocería comercial incompatible con uso personal), se presume afecto y es Hacienda quien debe demostrar uso personal. Pero si el vehículo es físicamente ambiguo o de apariencia personal, la carga sigue en el autónomo. Esta resolución beneficia principalmente a autónomos de sectores como construcción, reparto o instalaciones con vehículos mixtos claramente profesionales. Para turismos convencionales, no aplica: el criterio clásico de uso exclusivo sigue vigente.
 
 </AccordionGroupItem>
 
@@ -208,10 +208,6 @@ Depende de si el vehículo califica para deducción en IRPF. Si el vehículo es 
 </AccordionGroupItem>
 
 </AccordionGroup>
-
----
-
-*Esta guía tiene carácter informativo y no constituye asesoramiento fiscal ni legal. Las reglas descritas pueden variar según tu situación concreta. Consulta siempre con tu asesor fiscal o gestoría antes de aplicar cualquier criterio de deducción.*
 
 ---
 
