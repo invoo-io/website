@@ -247,7 +247,7 @@ Elena, abogada, factura principalmente a empresas (con retención del 15%). Solo
 
 Diego, fotógrafo, factura mayoritariamente a particulares para bodas y eventos. Solo el 30% de sus clientes son empresas. **Como menos del 70% tiene retención**, Diego debe presentar el Modelo 130 cada trimestre.
 
-Esta regla importa porque el Modelo 130 implica adelantar el 20% de tu beneficio trimestral. **Si ya te están reteniendo suficiente** a través de tus clientes, Hacienda te exime de esta obligación adicional.
+Esta regla importa porque el Modelo 130 implica adelantar el 20% de tu beneficio trimestral. **Si ya te están reteniendo suficiente** a través de tus clientes, Hacienda te exime de esta obligación adicional. Para ver exactamente cómo se calcula ese 20% trimestre a trimestre, consulta la [guía del pago fraccionado con el Modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/).
 
 ### Checklist rápido antes de emitir factura
 

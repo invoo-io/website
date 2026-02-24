@@ -184,7 +184,7 @@ El problema no es tu gestoría — es el proceso. Mientras sigas enviando PDFs y
 Muchos autónomos confunden el 303 con el 130. Son complementarios, pero cada uno declara cosas diferentes.
 
 - **Modelo 303**: IVA trimestral. Declaras el IVA que has cobrado (repercutido) y el IVA que has pagado (soportado). La diferencia es lo que pagas o te devuelve Hacienda.
-- **Modelo 130**: Pago fraccionado de IRPF. Declaras tus ingresos menos gastos deducibles. Pagas el 20% del beneficio trimestral. Esto es un adelanto del IRPF que ajustarás en la Renta.
+- **Modelo 130**: Pago fraccionado de IRPF. Declaras tus ingresos menos gastos deducibles. Pagas el 20% del beneficio trimestral. Esto es un adelanto del IRPF que ajustarás en la Renta. Si quieres ver el cálculo paso a paso con ejemplos, lee la [guía del Modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/).
 
 Si quieres profundizar en las diferencias, lee nuestra guía completa sobre [Modelo 303 vs Modelo 130 para autónomos](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos).
 

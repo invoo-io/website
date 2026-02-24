@@ -240,7 +240,7 @@ Importante: a estas cuotas se suma el **MEI (0,9%)**, que añade entre 9€ y 40
 
 ### Cómo saber si estás en el tramo correcto
 
-La manera más fácil es calcular tus rendimientos netos cada trimestre, no esperar a final de año. **Cada vez que presentes el modelo 130 o el modelo 303**, haz el ejercicio de proyectar tus ingresos anuales.
+La manera más fácil es calcular tus rendimientos netos cada trimestre, no esperar a final de año. **Cada vez que presentes el [modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/) o el modelo 303**, haz el ejercicio de proyectar tus ingresos anuales.
 
 Si en marzo llevas 11.250 euros de ingresos y 2.250 euros de gastos (ratio 20%), proyecta el año completo:
 - Ingresos proyectados: 11.250 × 4 = 45.000 euros

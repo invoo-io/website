@@ -44,7 +44,7 @@ La factura de tu gestoría acaba de llegar. Otros €120 este mes. Mientras firm
 
 **Ese portátil que compraste en noviembre. El café con un cliente. La luz de tu despacho.** Tu gestoría te dijo "guarda las facturas", pero nunca te explicó exactamente qué puedes deducir y qué no.
 
-Y ahora es febrero. El [modelo 130 del primer trimestre](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos) está a la vuelta de la esquina. **Si no sabes qué gastos son deducibles, estás pagando de más en IRPF**. Y Hacienda no te va a avisar.
+Y ahora es febrero. El [modelo 130 del primer trimestre](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/) está a la vuelta de la esquina. **Si no sabes qué gastos son deducibles, estás pagando de más en IRPF**. Y Hacienda no te va a avisar.
 
 Esta guía contiene la lista completa y verificada de gastos deducibles para autónomos en 2026. Con requisitos oficiales de la AEAT, límites legales actualizados, y cálculos que funcionan en inspección. Sin trucos, sin zonas grises, sin [errores que te cuesten sanciones](/es/blog/consejos/errores-facturacion-autonomos-sanciones-hacienda).
 

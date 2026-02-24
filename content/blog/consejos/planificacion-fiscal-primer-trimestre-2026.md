@@ -163,7 +163,7 @@ Si el resultado es positivo, pagas. Si es negativo, no pagas pero arrastras ese 
 - Retenciones aplicadas en facturas: 300€
 - Resultado: 1.500€ - 300€ = **1.200€ a pagar**
 
-Si en Q1 pagas 1.200€, en Q2 calcularás enero-junio y restarás esos 1.200€ ya pagados. **El sistema es acumulativo**. Por eso cada gasto que registres en Q1 reduce no solo el pago de abril, sino también el de julio, octubre y enero 2027.
+Si en Q1 pagas 1.200€, en Q2 calcularás enero-junio y restarás esos 1.200€ ya pagados. **El sistema es acumulativo**. Por eso cada gasto que registres en Q1 reduce no solo el pago de abril, sino también el de julio, octubre y enero 2027. Para ver cómo funciona este cálculo con números reales, consulta la [guía completa del Modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/).
 
 ### Plazos del modelo 130 en 2026
 

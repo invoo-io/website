@@ -120,7 +120,7 @@ Ese 5% adicional es un regalo fiscal que no tienes en normal. Imagina que tu ren
 
 Los gastos deducibles típicos incluyen cuota de autónomos, seguros, alquiler del local o proporción de vivienda, suministros, software, formación, material de oficina. **Todo lo que sea necesario para tu actividad económica y puedas justificar con factura**.
 
-El modelo 130 se presenta trimestralmente con estos plazos:
+El [modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/) se presenta trimestralmente con estos plazos:
 - Q1 (enero-marzo): del 1 al 20 de abril
 - Q2 (abril-junio): del 1 al 20 de julio
 - Q3 (julio-septiembre): del 1 al 20 de octubre
