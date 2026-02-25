@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 14/30 articles completed
+> **Progress:** 21/30 articles completed (Days 15-20 published, Day 21 drafted)
 
 ---
 
@@ -307,7 +307,7 @@ Already published (29 articles). Key topics covered:
 
 ### Week 3: Strategic Differentiation (Feb 17-23)
 
-#### Day 15 — Feb 17 (Tuesday)
+#### Day 15 — Feb 17 (Tuesday) ✅ PUBLISHED
 **Category:** formación
 **File:** `content/blog/formacion/numerar-facturas-autonomos-formato-correcto.md`
 **Title:** "Numeración de Facturas: Formato Correcto y Qué Exige Verifactu"
@@ -326,7 +326,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 16 — Feb 18 (Wednesday)
+#### Day 16 — Feb 18 (Wednesday) ✅ PUBLISHED
 **Category:** consejos
 **File:** `content/blog/consejos/dietas-manutencion-autonomos-deducibles-2026.md`
 **Title:** "Dietas y Manutención para Autónomos: Cuánto Deducir al Día (2026)"
@@ -345,7 +345,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 17 — Feb 19 (Thursday)
+#### Day 17 — Feb 19 (Thursday) ✅ PUBLISHED
 **Category:** guías
 **File:** `content/blog/guias/modelo-036-vs-037-diferencias-cual-usar.md`
 **Title:** "Modelo 036 vs 037: Cuál Usar para Darte de Alta como Autónomo"
@@ -364,7 +364,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 18 — Feb 20 (Friday)
+#### Day 18 — Feb 20 (Friday) ✅ PUBLISHED
 **Category:** formación
 **File:** `content/blog/formacion/recargo-equivalencia-iva-comercio-minorista.md`
 **Title:** "Recargo de Equivalencia: Qué Es y Cómo Afecta al Comercio Minorista"
@@ -383,7 +383,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 19 — Feb 21 (Saturday)
+#### Day 19 — Feb 21 (Saturday) ✅ PUBLISHED
 **Category:** consejos
 **File:** `content/blog/consejos/vehiculo-profesional-autonomo-deduccion-iva-irpf.md`
 **Title:** "Vehículo Profesional para Autónomos: Qué Deducir en IVA e IRPF"
@@ -402,7 +402,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 20 — Feb 22 (Sunday)
+#### Day 20 — Feb 22 (Sunday) ✅ PUBLISHED
 **Category:** guías
 **File:** `content/blog/guias/pago-fraccionado-irpf-modelo-130-2026.md`
 **Title:** "Pago Fraccionado IRPF (Modelo 130): Cuánto Pagar Cada Trimestre"
@@ -421,7 +421,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 21 — Feb 23 (Monday)
+#### Day 21 — Feb 23 (Monday) ✅ DRAFTED (uncommitted)
 **Category:** análisis
 **File:** `content/blog/analisis/factura-electronica-b2b-obligatoria-2026-2027.md`
 **Title:** "Factura Electrónica B2B Obligatoria: Calendario, Requisitos y Diferencias con Verifactu"
