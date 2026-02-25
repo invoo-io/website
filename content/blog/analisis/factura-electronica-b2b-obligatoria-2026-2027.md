@@ -7,6 +7,7 @@ tags: ["factura-electronica", "ley-crea-y-crece", "verifactu", "b2b", "normativa
 readingTime: 12
 featured: false
 editorPick: false
+draft: true
 coverImage: "/blog/factura-electronica-b2b-obligatoria.webp"
 keyTakeaways:
   - "Verifactu regula tu software de facturación; la factura electrónica B2B regula cómo intercambias facturas con otras empresas. Son dos obligaciones distintas"
