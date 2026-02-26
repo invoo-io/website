@@ -1,19 +1,18 @@
 ---
-title: "Factura Electrónica B2B Obligatoria: Cuándo y Para Quién"
-excerpt: "Factura electrónica B2B y Verifactu no son lo mismo. Qué dice la Ley Crea y Crece, quién está obligado en 2026 vs 2027 y cómo prepararte."
+title: "Factura Electrónica B2B Obligatoria para Autónomos"
+excerpt: "Factura electrónica B2B y Verifactu no son lo mismo. Quién está obligado, fechas reales para autónomos en 2026-2027, y cómo prepararte sin gastar de más."
 publishedAt: "2026-02-26"
 author: "Equipo Invoo"
-tags: ["factura-electronica", "ley-crea-y-crece", "verifactu", "b2b", "normativa-fiscal"]
+tags: ["factura-electronica", "ley-crea-y-crece", "verifactu", "autonomos", "normativa-fiscal"]
 readingTime: 12
 featured: false
 editorPick: false
-draft: true
 coverImage: "/blog/factura-electronica-b2b-obligatoria.webp"
 keyTakeaways:
   - "Verifactu regula tu software de facturación; la factura electrónica B2B regula cómo intercambias facturas con otras empresas. Son dos obligaciones distintas"
   - "El reglamento de la factura electrónica B2B sigue sin aprobarse a febrero de 2026. Las fechas estimadas: empresas grandes en 2027, pymes y autónomos en 2028"
   - "La factura electrónica B2B solo aplica a operaciones entre empresarios y profesionales. Tus facturas a particulares (B2C) quedan fuera"
-  - "La Ley 7/2024 añade una obligación nueva: enviar copia de cada factura B2B al repositorio público de la AEAT, además de al cliente"
+  - "La Ley 7/2024 prevé una obligación nueva (pendiente del reglamento): enviar copia de cada factura B2B al repositorio público de la AEAT, además de al cliente"
 sources:
   - name: "BOE - Ley 18/2022 (Ley Crea y Crece)"
     url: "https://www.boe.es/buscar/act.php?id=BOE-A-2022-15818"
@@ -30,13 +29,13 @@ faq:
   - question: "¿Cuál es la diferencia entre Verifactu y la factura electrónica B2B?"
     answer: "Verifactu regula los requisitos de tu software de facturación: QR, hash encadenado y registro ante Hacienda. La factura electrónica B2B, según la Ley Crea y Crece, obliga a intercambiar facturas en formato estructurado con otras empresas y profesionales. Son dos obligaciones independientes con calendarios distintos."
   - question: "¿Cuándo es obligatoria la factura electrónica para autónomos?"
-    answer: "Los autónomos con facturación inferior a 8 millones de euros anuales tendrán dos años desde la aprobación del reglamento de desarrollo para adaptarse. Con el reglamento pendiente a febrero de 2026, la fecha estimada es 2027-2028."
+    answer: "Los autónomos con facturación inferior a 8 millones de euros anuales tendrán dos años desde la publicación de la orden ministerial que desarrolle la plataforma pública. Con esa orden pendiente a febrero de 2026, la fecha estimada es 2028."
   - question: "¿La factura electrónica B2B obliga a las facturas con particulares?"
     answer: "No. La obligación de la Ley Crea y Crece aplica únicamente a operaciones B2B: entre empresarios y profesionales. Las facturas emitidas a consumidores finales quedan excluidas."
   - question: "¿Qué pasa si no cumplo con la factura electrónica B2B?"
     answer: "La Ley Crea y Crece establece multas de hasta 10.000 euros para empresas que, estando obligadas, no ofrezcan a sus clientes la posibilidad de recibir facturas electrónicas."
   - question: "¿Los autónomos en módulos están obligados a la factura electrónica B2B?"
-    answer: "No. Los autónomos en estimación objetiva (módulos) están excluidos de la obligación de factura electrónica B2B según la Ley Crea y Crece."
+    answer: "No, en general. Los autónomos en estimación objetiva (módulos) están excluidos de la obligación de factura electrónica B2B según la Ley Crea y Crece. Conviene verificarlo con tu gestoría si estás cerca de los límites que obligan a abandonar el régimen (€125.000 en operaciones a empresarios, €250.000 de volumen total), ya que al salir de módulos pasarías a estar obligado."
 ---
 
 En los últimos meses, miles de autónomos han recibido avisos de su gestoría, artículos de prensa y anuncios de Hacienda hablando de "factura electrónica obligatoria". **El problema es que la mayoría de esos mensajes mezclan dos obligaciones completamente distintas.**
@@ -71,24 +70,24 @@ La ley establece tres obligaciones concretas para cada parte:
 
 **Para ambas partes:** deben informar sobre el estado de la factura: si ha sido recibida, aceptada o rechazada. Este punto es clave para reducir disputas de pago.
 
-Además, la **Ley 7/2024** introdujo una novedad que prácticamente ningún competidor cubre: la obligación de remitir una copia de cada factura B2B al **repositorio público de la AEAT**. No basta con enviársela al cliente; también hay que depositarla en Hacienda. Esto crea una infraestructura de trazabilidad que va más allá de lo que regulaba la ley original de 2022.
+Además, la **Ley 7/2024** introdujo una novedad que prácticamente ningún competidor cubre: la obligación de remitir una copia de cada factura B2B al **repositorio público de la AEAT**. No basta con enviársela al cliente; también hay que depositarla en Hacienda. Esta obligación, igualmente pendiente de la entrada en vigor del reglamento, crea una infraestructura de trazabilidad que va más allá de lo que regulaba la ley original de 2022.
 
-¿Y qué pasa si no cumples? **Las sanciones llegan hasta €10.000** para empresas que no ofrezcan a sus clientes la opción de recibir facturas electrónicas. Hay también multas de entre €300 y €6.000 por trimestre para quienes no acepten facturas electrónicas de sus proveedores. Son sanciones independientes de las que contempla Verifactu, lo que significa que podrías enfrentarte a un doble régimen sancionador si incumples ambas normativas simultáneamente.
+¿Y qué pasa si no cumples? **Las sanciones llegan hasta €10.000** para empresas que no cumplan con sus obligaciones de emisión o aceptación de facturas electrónicas. No obstante, esta sanción no podrá aplicarse en la práctica hasta que el reglamento de desarrollo entre en vigor, ya que sin él no existe obligación incumplible. El reglamento pendiente podría además introducir un régimen sancionador más detallado. Estas sanciones son independientes de las que contempla Verifactu, lo que significa que podrías enfrentarte a un doble régimen sancionador si incumples ambas normativas simultáneamente.
 
 ---
 
-## Calendario: quién debe cumplir en 2026 y quién en 2027
+## Calendario de la factura electrónica B2B: autónomos y empresas (2026-2028)
 
-Aquí está la información que más busca la gente —y la que más errores genera. Antes de ver el calendario, **hay un dato crítico que debes conocer: el reglamento de desarrollo de la Ley Crea y Crece todavía no está aprobado** a fecha de febrero de 2026.
+Aquí está la información que más busca la gente —y la que más errores genera. Antes de ver el calendario, **hay un dato crítico que debes conocer: ni el reglamento de desarrollo de la Ley Crea y Crece ni la orden ministerial que desarrollará la plataforma pública se han aprobado** a fecha de febrero de 2026.
 
-La ley marco existe desde septiembre de 2022. Pero sin su reglamento de desarrollo, no hay obligación efectiva para nadie. El Ministerio de Economía ha publicado varios borradores, el último con cambios técnicos significativos (incluida la adopción del formato UBL para la plataforma pública, sustituyendo al histórico Facturae). Sin embargo, el texto definitivo no ha entrado en vigor.
+La ley marco existe desde septiembre de 2022. Pero sin su reglamento de desarrollo y la posterior orden ministerial, no hay obligación efectiva para nadie. El Ministerio de Economía ha publicado varios borradores del reglamento, el último con cambios técnicos significativos (incluida la adopción del formato UBL para la plataforma pública, sustituyendo al histórico Facturae). Sin embargo, el texto definitivo no ha entrado en vigor.
 
-Una vez que ese reglamento se publique en el BOE, los plazos de adaptación empiezan a correr:
+Una vez que se publique la orden ministerial que desarrolle la plataforma pública de facturación electrónica, los plazos de adaptación empiezan a correr:
 
 | Perfil | Facturación anual | Fecha límite estimada |
 |--------|-------------------|-----------------------|
-| Grandes empresas | Más de €8 millones | 1 año desde aprobación del reglamento (~2027) |
-| Pymes y autónomos | Hasta €8 millones | 2 años desde aprobación del reglamento (~2028) |
+| Grandes empresas | Más de €8 millones | 1 año desde la orden ministerial (~2027) |
+| Pymes y autónomos | Hasta €8 millones | 2 años desde la orden ministerial (~2028) |
 
 Con el reglamento aún pendiente a inicio de 2026, **las estimaciones más realistas apuntan a 2027 para grandes empresas y 2028 para la mayoría de autónomos y pymes**. Cualquier artículo que te dé fechas concretas sin añadir esta salvedad te está dando información incompleta.
 
@@ -104,7 +103,7 @@ Una factura electrónica B2B no es un PDF enviado por correo. **Es un archivo es
 
 Los requisitos técnicos que el reglamento en borrador establece para cada factura electrónica B2B son los siguientes:
 
-1. **Formato estructurado obligatorio**: UBL (Universal Business Language) o el formato que establezca la plataforma pública de la AEAT. El histórico Facturae queda para el sector público, no para el B2B privado.
+1. **Formato estructurado obligatorio**: UBL (Universal Business Language) para la plataforma pública de la AEAT y las copias remitidas a ella. Las plataformas privadas podrán admitir otros formatos. El histórico Facturae se mantiene para la facturación con el sector público (Ley 25/2013).
 2. **Identificación completa de las partes**: NIF del emisor y del receptor, nombre o razón social, y dirección fiscal. No vale datos parciales.
 3. **Descripción detallada de la operación**: tipo de bien o servicio, cantidad, precio unitario y total de cada línea.
 4. **Desglose fiscal correcto**: tipo de IVA aplicable, cuota resultante, y cualquier exención aplicable con su base legal.
@@ -112,8 +111,8 @@ Los requisitos técnicos que el reglamento en borrador establece para cada factu
 
 El cambio hacia **UBL** como formato para la plataforma pública es una de las novedades técnicas más relevantes del último borrador de reglamento. UBL es el estándar europeo, lo que alinea a España con el resto de la UE y facilita la facturación transfronteriza. Para autónomos con clientes en Alemania, Francia o cualquier otro país de la UE, esto tiene implicaciones directas: el formato de tus facturas internacionales podría converger con el doméstico.
 
-<InfoCard type="warning" title="Excepción para facturas simplificadas">
-Las facturas simplificadas (tickets por operaciones inferiores a €400) quedan excluidas de la obligación de factura electrónica B2B. También quedan fuera las operaciones internacionales sin nexo español y los autónomos en estimación objetiva (módulos). Si tu actividad cae en alguna de estas categorías, conviene que lo confirmes con tu gestoría antes de hacer cualquier inversión en adaptación.
+<InfoCard variant="warning" title="Excepciones a la factura electrónica B2B">
+Las facturas simplificadas quedan en general excluidas de la obligación, salvo determinadas facturas simplificadas emitidas a empresarios o profesionales cuando la normativa las equipara a facturas completas —cuyo tratamiento definitivo en el reglamento pendiente no ha quedado completamente cerrado—. También quedan fuera las operaciones internacionales sin nexo español y, en general, los autónomos en estimación objetiva (módulos), aunque conviene verificarlo con tu gestoría si estás cerca de los límites que obligan a abandonar el régimen (€125.000 en operaciones a empresarios, €250.000 de volumen total).
 </InfoCard>
 
 ---
@@ -128,17 +127,15 @@ Pero hay pasos concretos que sí puedes dar ahora, sin coste y con alto retorno:
 
 **Segundo, revisa con tu gestoría el volumen de facturación.** Las empresas con más de €8 millones anuales tienen un plazo de adaptación más corto. Si estás cerca o superas ese umbral, conviene planificar con más antelación.
 
-**Tercero, evalúa tu software actual.** Los proveedores de facturación de referencia ya están siguiendo los borradores del reglamento y adaptando sus plataformas. No necesitas cambiar de herramienta hoy, pero sí verificar que tu proveedor tiene plan de adaptación. Un software que ya cumple con Verifactu tiene la base técnica para incorporar los requisitos B2B con menos esfuerzo.
+**Tercero, evalúa tu software actual.** Los proveedores de facturación de referencia ya están siguiendo los borradores del reglamento y adaptando sus plataformas. No necesitas cambiar de herramienta hoy, pero sí verificar que el software que uses tiene plan de adaptación. Un software que ya cumple con Verifactu tiene la base técnica para incorporar los requisitos B2B con menos esfuerzo.
 
 **Cuarto, forma a tu equipo (o a ti mismo) sobre qué implica recibir facturas electrónicas.** La obligación no es solo emitirlas: también debes aceptarlas cuando te lleguen de proveedores. Rechazar una factura electrónica de un proveedor que tiene obligación de emitirla puede acarrear sanciones para tu empresa.
 
-En cuanto a [TicketBAI y Verifactu: las diferencias por territorio](/es/blog/guias/ticketbai-vs-verifactu-diferencias/), si operas en País Vasco, Navarra o Álava, el ecosistema normativo es distinto y puede generar solapamientos adicionales con la factura electrónica B2B que merecen análisis específico.
+Si operas en País Vasco, Navarra o Álava, consulta nuestra guía sobre [TicketBAI vs Verifactu: diferencias por territorio](/es/blog/guias/ticketbai-vs-verifactu-diferencias/), ya que el ecosistema normativo es distinto y puede generar solapamientos adicionales con la factura electrónica B2B.
 
-La conexión natural con esta realidad regulatoria es que el software de facturación que elijas no solo debe cumplir con Verifactu, sino estar preparado para absorber los requisitos B2B cuando lleguen. Invoo está construido con ese enfoque: cumplimiento Verifactu desde el día uno, arquitectura preparada para la factura electrónica B2B, y tu gestoría conectada en tiempo real para que no tengas que seguir esta normativa en solitario.
+La conexión natural con esta realidad regulatoria es que el software de facturación que elijas no solo debe cumplir con Verifactu, sino estar preparado para absorber los requisitos B2B cuando lleguen. Invoo se está construyendo con ese enfoque: cumplimiento Verifactu, seguimiento continuo de los borradores de la factura electrónica B2B, y tu gestoría conectada en tiempo real para que no tengas que seguir esta normativa en solitario.
 
 ---
-
-## Preguntas frecuentes
 
 <AccordionGroup>
 
@@ -154,9 +151,9 @@ Tienen calendarios distintos, bases legales distintas y sanciones distintas. Pue
 
 <AccordionGroupItem title="¿Cuándo es obligatoria la factura electrónica para autónomos?" value="faq-2">
 
-A febrero de 2026, **no hay fecha oficial fijada** para autónomos porque el reglamento de desarrollo de la Ley Crea y Crece todavía no se ha aprobado.
+A febrero de 2026, **no hay fecha oficial fijada** para autónomos porque ni el reglamento de desarrollo de la Ley Crea y Crece ni la orden ministerial que desarrollará la plataforma pública se han aprobado.
 
-Una vez que ese reglamento se publique en el BOE, los autónomos con menos de €8 millones de facturación anual tendrán **dos años** para adaptarse. Con el reglamento pendiente a inicio de 2026, la fecha estimada más realista es **2027-2028**. No confundas esto con las fechas de Verifactu (1 enero 2027 para sociedades, 1 julio 2027 para autónomos), que sí son firmes.
+Una vez que se publique esa orden ministerial, los autónomos con menos de €8 millones de facturación anual tendrán **dos años** para adaptarse. Con esa orden pendiente a inicio de 2026, la fecha estimada más realista es **2028**. No confundas esto con las fechas de Verifactu (1 enero 2027 para sociedades, 1 julio 2027 para autónomos), que sí son firmes.
 
 </AccordionGroupItem>
 
@@ -170,17 +167,17 @@ Si eres un autónomo que factura exclusivamente a particulares —un electricist
 
 <AccordionGroupItem title="¿Qué pasa si no cumplo con la factura electrónica B2B?" value="faq-4">
 
-La Ley Crea y Crece establece un régimen sancionador en dos niveles. **Multas de hasta €10.000** para empresas que no ofrezcan a sus clientes empresariales la posibilidad de recibir facturas electrónicas. Y multas de entre **€300 y €6.000 por trimestre** para quienes rechacen facturas electrónicas de proveedores que tienen obligación de emitirlas.
+La Ley Crea y Crece establece **multas de hasta €10.000** para empresas que no cumplan con sus obligaciones de emisión o aceptación de facturas electrónicas. El reglamento pendiente de desarrollo podría introducir un régimen sancionador más detallado.
 
-Estas sanciones son independientes de las que contempla Verifactu (hasta €50.000 por uso de software no certificado). En teoría, un mismo negocio podría ser sancionado simultáneamente bajo ambos regímenes si incumple las dos normativas.
+Estas sanciones son independientes de las que contempla Verifactu (hasta €50.000 por uso de software no certificado). Un mismo negocio podría ser sancionado bajo ambos regímenes si incumple las dos normativas.
 
 </AccordionGroupItem>
 
 <AccordionGroupItem title="¿Los autónomos en módulos están obligados a la factura electrónica B2B?" value="faq-5">
 
-No. **Los autónomos en estimación objetiva (módulos) están expresamente excluidos** de la obligación de factura electrónica B2B según la Ley Crea y Crece.
+No, en general. **Los autónomos en estimación objetiva (módulos) están excluidos** de la obligación de factura electrónica B2B según la Ley Crea y Crece. Conviene verificarlo con tu gestoría si estás cerca de los límites que obligan a abandonar el régimen (€125.000 en operaciones a empresarios, €250.000 de volumen total), ya que al salir de módulos pasarías a estar obligado.
 
-Si tributas en módulos, esta normativa no te alcanza. Sí te sigue afectando Verifactu en cuanto a los requisitos de tu software de facturación, aunque las implicaciones prácticas son menores porque muchos autónomos en módulos emiten pocas facturas B2B.
+Si tributas en módulos, esta normativa generalmente no te alcanza. Sí te sigue afectando Verifactu en cuanto a los requisitos de tu software de facturación, aunque las implicaciones prácticas son menores porque muchos autónomos en módulos emiten pocas facturas B2B.
 
 </AccordionGroupItem>
 
@@ -188,8 +185,12 @@ Si tributas en módulos, esta normativa no te alcanza. Sí te sigue afectando Ve
 
 ---
 
-**¿Quieres estar preparado para la factura electrónica sin complicaciones?**
+*Este artículo tiene finalidad exclusivamente informativa y no constituye asesoramiento fiscal o jurídico. La normativa sobre factura electrónica B2B está en proceso de desarrollo reglamentario. Consulta con tu gestoría o asesor fiscal para determinar tus obligaciones concretas.*
 
-Invoo cumple con Verifactu desde el primer día y se prepara para la factura electrónica B2B. Facturación simple, tu gestoría conectada y todas las normativas cubiertas. €10.90/mes para autónomos, gratis para gestorías.
+---
 
-**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
+**¿Buscas un software que cumpla con Verifactu y esté preparado para lo que viene?**
+
+Invoo es facturación para autónomos y pymes españolas: €10,90/mes, gestoría conectada de serie, y preparado para Verifactu.
+
+**[Únete a la lista de espera de Invoo](https://invoo.es)**

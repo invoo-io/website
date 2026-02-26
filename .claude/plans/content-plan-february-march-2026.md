@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 22/30 articles completed (Days 1-20 & 22 published, Day 21 drafted/uncommitted)
+> **Progress:** 23/30 articles completed (Days 1-22 published)
 
 ---
 
@@ -421,7 +421,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 21 — Feb 26 (Thursday)
+#### Day 21 — Feb 26 (Thursday) ✅ PUBLISHED
 **Category:** análisis
 **File:** `content/blog/analisis/factura-electronica-b2b-obligatoria-2026-2027.md`
 **Title:** "Factura Electrónica B2B Obligatoria: Calendario, Requisitos y Diferencias con Verifactu"
