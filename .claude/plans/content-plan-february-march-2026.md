@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 23/30 articles completed (Days 1-22 published)
+> **Progress:** 23/30 articles completed (Days 1-23 published)
 
 ---
 
@@ -461,7 +461,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 23 — Feb 27 (Friday)
+#### Day 23 — Feb 27 (Friday) ✅ PUBLISHED
 **Category:** guías
 **File:** `content/blog/guias/cambiar-epigrafe-iae-autonomo-cuando-como.md`
 **Title:** "Cómo Cambiar el Epígrafe IAE como Autónomo: Cuándo y Trámite"
@@ -499,7 +499,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 25 — Mar 1 (Sunday)
+#### Day 25 — Mar 2 (Monday)
 **Category:** guías
 **File:** `content/blog/guias/modelo-349-operaciones-intracomunitarias-autonomos.md`
 **Title:** "Modelo 349: Guía para Autónomos con Clientes en la UE (2026)"
@@ -518,7 +518,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 26 — Mar 2 (Monday)
+#### Day 26 — Mar 3 (Tuesday)
 **Category:** formación
 **File:** `content/blog/formacion/amortizacion-bienes-inversion-autonomos-tabla.md`
 **Title:** "Amortización de Bienes de Inversión: Tabla Oficial y Ejemplos para Autónomos"
@@ -537,7 +537,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 27 — Mar 3 (Tuesday)
+#### Day 27 — Mar 4 (Wednesday)
 **Category:** consejos
 **File:** `content/blog/consejos/seguro-responsabilidad-civil-autonomos-obligatorio.md`
 **Title:** "Seguro de Responsabilidad Civil para Autónomos: ¿Obligatorio o No?"
@@ -556,7 +556,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 28 — Mar 4 (Wednesday)
+#### Day 28 — Mar 5 (Thursday)
 **Category:** guías
 **File:** `content/blog/guias/baja-autonomo-como-cuando-prestacion-cese.md`
 **Title:** "Cómo Darse de Baja como Autónomo: Trámites, Plazos y Prestación por Cese"
@@ -577,7 +577,7 @@ Already published (29 articles). Key topics covered:
 
 ### Week 5: March Push (Mar 5-6)
 
-#### Day 29 — Mar 5 (Thursday)
+#### Day 29 — Mar 6 (Friday)
 **Category:** análisis
 **File:** `content/blog/analisis/inteligencia-artificial-facturacion-autonomos-2026.md`
 **Title:** "IA y Facturación: Lo Que Puede Hacer por Ti (y Lo Que No) en 2026"
@@ -596,7 +596,7 @@ Already published (29 articles). Key topics covered:
 
 ---
 
-#### Day 30 — Mar 6 (Friday)
+#### Day 30 — Mar 7 (Saturday)
 **Category:** guías
 **File:** `content/blog/guias/autonomo-colaborador-familiar-requisitos-cuota.md`
 **Title:** "Autónomo Colaborador Familiar: Requisitos, Cuota y Bonificaciones 2026"
