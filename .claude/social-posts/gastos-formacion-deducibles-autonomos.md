@@ -1,8 +1,8 @@
 # Social Posts: Gastos de Formación Deducibles
 
-**Article**: Gastos de Formación Deducibles: Cuánto Puedes Deducir como Autónomo
+**Article**: Gastos de Formación Deducibles para Autónomos (2026)
 **URL**: https://invoo.es/es/blog/consejos/gastos-formacion-deducibles-autonomos-2026/
-**Created**: 2026-03-01
+**Created**: 2026-03-06
 
 ---
 
@@ -11,29 +11,29 @@
 **Format**: Type A — Article Promotion
 **Target persona**: David (autónomo tech que compra cursos online), Carmen (autónoma que se plantea un máster)
 **Suggested time**: Martes-jueves, 9-11 AM CET
-**Character count**: ~1.450 (dentro de 1.200-1.800)
+**Character count**: ~1.400 (dentro de 1.200-1.800)
 
 ---
 
 ```
-💡 Ese curso de 1.000€ puede costarte 490€. Hacienda pone el resto.
+💡 Un curso de 605€ puede costarte 350€. Hacienda pone el resto.
 
 La mayoría de autónomos no deduce su formación. No porque no puedan, sino porque no saben cómo justificarla correctamente.
 
 Lo que vas a encontrar en nuestra guía:
 
 1️⃣ "¿Qué formación es deducible exactamente?"
-→ Cursos online, másteres, suscripciones a plataformas, libros técnicos y congresos. Si está vinculado a tu actividad, es deducible.
+→ Cursos online, másteres, suscripciones a plataformas, libros técnicos y congresos. Si está vinculado a tu actividad, es deducible. Sin límite de importe.
 
 2️⃣ "¿Y los cursos de idiomas?"
 → Zona gris. Son deducibles si puedes demostrar conexión profesional directa. Sin documentación, Hacienda los rechaza.
 
 3️⃣ "¿Cuánto me ahorro realmente?"
-→ Entre el 30% y el 47% solo en IRPF. Si el curso lleva IVA al 21%, el ahorro sube hasta el 66%. Depende de tu tipo marginal combinado (estatal + autonómico).
+→ Con un ejemplo real: curso de 500€ + IVA = 605€. Recuperas 105€ de IVA + 150€ en IRPF (al 30%). Coste real: 350€. Hacienda financia el 42%.
 
 ✅ Tres requisitos para que no te la rechacen
 ✅ Cómo registrar el IVA de plataformas extranjeras (Udemy, Coursera)
-✅ Ejemplo de cálculo real con números
+✅ Qué pasa con ChatGPT Plus y herramientas de IA
 
 Lee la guía completa:
 🔗 https://invoo.es/es/blog/consejos/gastos-formacion-deducibles-autonomos-2026/?utm_source=linkedin&utm_medium=social&utm_campaign=gastos-formacion-deducibles
@@ -46,15 +46,15 @@ Lee la guía completa:
 ---
 
 **Checklist LinkedIn:**
-- [x] Hook bajo 140 chars: "💡 Ese curso de 1.000€ puede costarte 490€. Hacienda pone el resto." (70 chars)
+- [x] Hook bajo 140 chars: "💡 Un curso de 605€ puede costarte 350€. Hacienda pone el resto." (66 chars)
 - [x] Sin lenguaje de prueba gratuita
 - [x] Forma "tú" (tuteo)
 - [x] Pregunta de engagement al final
 - [x] Hashtags en PascalCase: 5 hashtags
 - [x] Estructura: Hook → Expansión → Pain points numerados con → → Benefits → Link con UTM → Pregunta → Hashtags
-- [x] Hook informativo, no alarmista — se parte del ahorro real como gancho útil
-- [x] Números formateados correctamente: 1.000€, 490€
-- [x] TIER 1 claims: porcentajes de ahorro verificados, zona gris idiomas, inversión sujeto pasivo plataformas extranjeras
+- [x] Hook informativo, no alarmista
+- [x] Números formateados correctamente: 605€, 350€, 500€, 105€, 150€
+- [x] Claims verificados contra el artículo: 42% financiado al 30% marginal
 
 ---
 
@@ -69,9 +69,9 @@ Lee la guía completa:
 ### Main Tweet
 
 ```
-💡 Un curso de 1.000€ puede costarte 490€ como #autónomo.
+💡 Un curso de 605€ puede costarte 350€ como #autónomo.
 
-Hacienda financia hasta el 66% de tu formación si sabes justificarla. La clave: tres documentos que la mayoría olvida 👇
+Hacienda financia el 42% de tu formación si sabes justificarla. La clave: factura con NIF, libro de gastos y evidencia de vinculación 👇
 ```
 
 ---
@@ -90,7 +90,7 @@ Hacienda financia hasta el 66% de tu formación si sabes justificarla. La clave:
 - [x] Sin lenguaje de lista de espera en el tweet
 - [x] Hook directo y útil, sin alarmismo
 - [x] Forma "tú"
-- [x] Tweet completo ~195 chars (dentro de 280)
+- [x] Tweet completo ~200 chars (dentro de 280)
 
 ---
 
@@ -106,13 +106,14 @@ Hacienda financia hasta el 66% de tu formación si sabes justificarla. La clave:
 ```
 💡 ¿Cuánto cuesta realmente ese curso que quieres hacer?
 
-Si eres autónomo en estimación directa, menos de lo que piensas. Hacienda te devuelve entre el 30% y el 66% de tu formación.
+Si eres autónomo en estimación directa, menos de lo que piensas. Un curso de 500€ + IVA te cuesta en realidad 350€ tras deducir IRPF e IVA.
 
 → Cursos online, másteres, libros, suscripciones: todo deducible si está vinculado a tu actividad
 → Los cursos de idiomas son zona gris — te explicamos cuándo sí y cuándo no
+→ ChatGPT Plus y herramientas de IA: también deducibles
 
-✅ Tres requisitos para una deducción sólida
-✅ Ejemplo de cálculo real
+✅ Sin límite de importe
+✅ Ejemplo de cálculo real con números
 
 🔗 https://invoo.es/es/blog/consejos/gastos-formacion-deducibles-autonomos-2026/?utm_source=facebook&utm_medium=social&utm_campaign=gastos-formacion-deducibles
 
@@ -147,14 +148,16 @@ Si eres autónomo en estimación directa, menos de lo que piensas. Hacienda te d
 - Facebook: `?utm_source=facebook&utm_medium=social&utm_campaign=gastos-formacion-deducibles`
 
 **Ángulo diferenciador por plataforma:**
-- LinkedIn: Ahorro concreto con números (1.000€ → 490€). Audiencia profesional que valora datos específicos y el desglose IRPF + IVA.
-- X: Dato impactante (66% de financiación) + curiosidad sobre los tres documentos clave. Conciso y directo.
-- Facebook: Pregunta relatable (cuánto cuesta ese curso). Lenguaje accesible con foco en qué puedes deducir y qué no.
+- LinkedIn: Ahorro concreto con números (605€ → 350€). Audiencia profesional que valora datos específicos y el desglose IRPF + IVA. Mención de herramientas de IA como diferenciador.
+- X: Dato impactante (42% financiado) + los tres elementos de justificación. Conciso y directo.
+- Facebook: Pregunta relatable (cuánto cuesta ese curso). Lenguaje accesible con foco en qué puedes deducir y qué no. Mención de IA para engagement.
 
-**Claims TIER 1 cubiertos en los tres posts:**
-- Ahorro entre 30%-47% IRPF, hasta 66% con IVA deducible (verificado con cálculo en artículo)
-- Cursos de idiomas = zona gris (posición consistente de la DGT)
-- Tres requisitos: factura con NIF, registro en libro de gastos, certificado de finalización
-- Plataformas extranjeras requieren inversión del sujeto pasivo
+**Claims verificados contra el artículo:**
+- 605€ coste total (500€ + 21% IVA) → 350€ coste real (al 30% marginal IRPF)
+- 42% financiado por Hacienda (al 30% marginal), hasta 55% al 45% marginal
+- Cursos de idiomas = zona gris (posición consistente DGT)
+- Tres requisitos: factura con NIF, registro en libro de gastos, evidencia de vinculación
+- Plataformas extranjeras: inversión del sujeto pasivo en Modelo 303
+- Sin límite cuantitativo de deducción
 
 **Engagement:** Responder comentarios dentro de las primeras 24 horas. Ante preguntas sobre si un gasto concreto es deducible, redirigir al artículo y recomendar consultar con un asesor fiscal para su caso específico. No dar asesoramiento fiscal en comentarios.
