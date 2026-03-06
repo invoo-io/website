@@ -1,150 +1,162 @@
 ---
-title: "Gastos de Formación Deducibles: Cuánto Puedes Deducir como Autónomo"
-excerpt: "Cursos, másteres y libros: qué formación es deducible en 2026, cuánto recuperas en IRPF e IVA, y los errores que hacen que te los rechacen."
+title: "Gastos de Formación Deducibles para Autónomos (2026)"
+excerpt: "Los cursos son 100% deducibles sin límite si están vinculados a tu actividad. Aprende qué acepta Hacienda, cómo justificarlo y cuánto ahorras en IRPF e IVA."
 publishedAt: "2026-02-28"
 author: "Equipo Invoo"
-tags: ["gastos deducibles", "formacion autonomos", "cursos deducibles", "irpf", "autonomos"]
-readingTime: 10
+tags: ["gastos-deducibles", "formacion-autonomos", "irpf", "cursos-deducibles", "hacienda"]
+readingTime: 7
 featured: false
 editorPick: true
-coverImage: "/blog/gastos-formacion-deducibles-autonomos-2026.webp"
+coverImage: "/blog/gastos-formacion-deducibles-autonomos.webp"
 keyTakeaways:
-  - "No hay límite máximo para deducir formación, pero debe estar vinculada a tu actividad actual"
-  - "Los cursos de idiomas son zona gris: deducibles solo si justificas conexión profesional directa"
-  - "Una factura con tu NIF, una anotación en el libro de gastos y el certificado del curso son la defensa perfecta ante Hacienda"
-  - "Los autónomos sin empleados no acceden a FUNDAE, pero sí a cursos gratuitos del SEPE y Cámaras de Comercio"
-sources:
-  - name: "BOE - Ley 35/2006 del IRPF (Art. 28)"
-    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
-  - name: "AEAT - Gastos fiscalmente deducibles del titular de la actividad"
-    url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c07-rendimientos-actividades-economicas-estimacion-directa/fase-1-determinacion-rendimiento-neto/gastos-fiscalmente-deducibles/gastos-titular-actividad.html"
-  - name: "AEAT - Exenciones IVA en actividades educativas"
-    url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2021/capitulo-3-entregas-bienes-servicios-profesionales/entregas-bienes-servic-realizadas-empresarios-profesionales/operaciones-exentas/exenciones-operaciones-interiores/exenciones-relativas-actividades-educativas.html"
-  - name: "AEAT - Obligación de conservar facturas"
-    url: "https://sede.agenciatributaria.gob.es/Sede/iva/facturacion-registro/facturacion-iva/obligacion-conservar-facturas.html"
-lastVerified: "Febrero 2026"
+  - "No existe límite cuantitativo: puedes deducir el 100% de tus gastos de formación si acreditas la vinculación con tu actividad económica"
+  - "El IVA del 21% en cursos privados no reglados es recuperable en el Modelo 303, mientras que la formación reglada está exenta de IVA"
+  - "La carga de la prueba recae sobre el autónomo: Hacienda puede rechazar la deducción si no demuestras la vinculación con tu actividad"
+  - "Un curso de €500 puede ahorrarte hasta €255 combinando recuperación de IVA (€105) y reducción del IRPF (€150) al tipo marginal del 30%"
 faq:
-  - question: "¿Puedo deducirme un máster si estoy trabajando como autónomo?"
-    answer: "Sí, si el máster está directamente relacionado con tu actividad actual como autónomo y puedes justificarlo. Hacienda aplica el principio de correlación con los ingresos: la formación debe servir para mejorar o ampliar tu actividad presente, no para iniciar una completamente nueva."
-  - question: "¿Los cursos de inglés son deducibles para autónomos?"
-    answer: "Es zona gris. Son deducibles si puedes demostrar conexión profesional directa: tienes clientes internacionales, la actividad requiere comunicación en inglés, o el curso es parte de un programa profesional concreto. Sin esa justificación documental, Hacienda tiende a rechazarlos."
-  - question: "¿Puedo deducir Udemy, Coursera o LinkedIn Learning?"
-    answer: "Sí, si el curso está relacionado con tu actividad. Ten en cuenta que estas plataformas son extranjeras: el IVA soportado activa la inversión del sujeto pasivo (debes auto-liquidarlo en el Modelo 303). Guarda el certificado de finalización y pide factura con tu NIF como justificante."
-  - question: "¿Cuánto me puedo deducir en formación como autónomo?"
-    answer: "No hay límite máximo. Todo el gasto de formación vinculado a tu actividad es deducible en estimación directa. En la práctica, el límite lo pone la proporcionalidad: si tu facturación anual es de €20.000 y deduces €15.000 en formación, Hacienda puede cuestionarlo."
-  - question: "¿Los autónomos pueden acceder a formación gratuita a través de FUNDAE?"
-    answer: "Solo los autónomos con trabajadores a su cargo pueden acceder a FUNDAE (antes Tripartita). Los autónomos sin empleados no tienen esa opción — la regulación para su inclusión sigue pendiente de desarrollo normativo. Pueden acceder a formación gratuita a través del SEPE y de las Cámaras de Comercio, que ofrecen programas específicos para autónomos."
+  - question: "¿Los cursos de formación son deducibles para autónomos?"
+    answer: "Sí. Los gastos de formación son deducibles en el IRPF siempre que estén vinculados a tu actividad económica. No hay límite porcentual: puedes deducir el importe total del curso si tienes factura completa y puedes demostrar la relación con tu trabajo."
+  - question: "¿Cuánto puedo deducir en formación como autónomo?"
+    answer: "No existe un límite cuantitativo. Hacienda permite deducir el 100% del gasto de formación siempre que el curso esté relacionado con tu actividad y dispongas de factura válida a tu nombre y NIF."
+  - question: "¿Son deducibles los cursos de idiomas para autónomos?"
+    answer: "Depende. Un curso de inglés es deducible si puedes demostrar que lo usas en tu actividad profesional: por ejemplo, si facturas a clientes extranjeros o asistes a conferencias internacionales. Sin vinculación demostrable, Hacienda puede rechazarlo."
+  - question: "¿El IVA de los cursos de formación es deducible?"
+    answer: "Depende del tipo de formación. La formación reglada (universidades, centros oficiales) está exenta de IVA, así que no hay IVA que recuperar. Los cursos privados no reglados sí llevan IVA al 21%, y ese IVA es deducible en tu Modelo 303 trimestral."
+sources:
+  - name: "AEAT - Art. 28 y 30 Ley 35/2006 del IRPF (correlación de gastos)"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764"
+  - name: "BOE - Ley 37/1992 del IVA, Art. 20 Uno 9 (exención formación reglada)"
+    url: "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740"
+  - name: "DGT - Consulta Vinculante V1473-25 (disponible en el buscador PETETE)"
+    url: "https://petete.tributos.hacienda.gob.es/"
+  - name: "AEAT - Gastos deducibles en estimación directa"
+    url: "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2024/c07-rendimientos-actividades-economicas-estimacion-directa/fase-1-determinacion-rendimiento-neto/gastos-fiscalmente-deducibles/gastos-titular-actividad.html"
+  - name: "BOE - Real Decreto 439/2007, Reglamento del IRPF"
+    url: "https://www.boe.es/buscar/doc.php?id=BOE-A-2007-6820"
+lastVerified: "Febrero 2026"
 ---
 
-Has terminado un curso online de €300, has comprado dos libros técnicos y estás pensando en un máster de €4.000. Te preguntas si Hacienda te va a dejar deducir algo de todo eso, o si solo cuenta como gasto si tienes suerte.
+Pagas cursos, suscripciones a plataformas, libros técnicos, asistencia a conferencias. Y cada año, cuando llega la declaración, te preguntas si algo de eso te lo puede descontar Hacienda.
 
-La buena noticia: **Hacienda financia entre el 30% y el 47% de tu formación solo en IRPF, o hasta el 66% si el curso lleva IVA deducible al 21%**. Pero la mayoría de autónomos no lo deduce correctamente, no porque les falte el derecho, sino porque no conocen los tres elementos que separan una deducción sólida de una que te rechazan en inspección.
+La buena noticia: **sí, y sin límite de importe**. La mala: la mayoría de autónomos no lo justifica correctamente y pierde la deducción si llega una inspección. Este artículo te explica exactamente qué acepta Hacienda, qué no, cómo documentarlo y cuánto dinero real te puede ahorrar.
 
----
-
-## Qué requisitos debe cumplir un gasto de formación para ser deducible
-
-La [Ley 35/2006 del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764) no tiene un artículo específico para la formación. La deducibilidad se rige por el principio general de correlación con los ingresos: **un gasto es deducible si está directamente relacionado con la obtención de los ingresos de tu actividad**. Es el mismo principio que aplica a cualquier otro gasto del negocio.
-
-Para la formación, esto se traduce en tres requisitos concretos.
-
-El primero es la vinculación con tu actividad actual. El curso, máster o suscripción debe servir para mantener, mejorar o ampliar la actividad que ya ejerces como autónomo. No es deducible la formación orientada a iniciar una actividad completamente nueva o diferente a la que declaras ante Hacienda. Si eres diseñador gráfico y haces un curso de Illustrator avanzado, la vinculación es evidente. Si haces un curso de fontanería mientras trabajas como consultor de marketing, **Hacienda no lo aceptará**.
-
-El segundo requisito es la justificación documental. Necesitas factura a tu nombre con tu NIF, emitida por el proveedor del curso. Un ticket de compra o un resguardo de pago no son suficientes. Para plataformas digitales extranjeras como Udemy o Coursera, esto implica configurar tu cuenta con tus datos fiscales antes de comprar, porque después ya no pueden modificar la factura.
-
-El tercero es el registro contable. El gasto debe estar anotado en tu libro de registro de gastos, en el período en que se produjo, conforme al [Art. 68 del RD 439/2007](https://www.boe.es/buscar/doc.php?id=BOE-A-2007-6820), desarrollado por la [Orden HAC/773/2019](https://www.boe.es/buscar/act.php?id=BOE-A-2019-10487). Sin ese registro, el gasto no existe para Hacienda. Si llevas el libro actualizado y bien organizado, esta parte es trivial. Si lo llevas mal o lo pones al día solo en enero para la declaración anual, es donde aparecen los problemas.
-
-<TipCard title="Solo en estimación directa">
-Esta deducción aplica únicamente a autónomos en estimación directa (normal o simplificada). Los autónomos en estimación objetiva (módulos) no pueden deducir gastos de formación individualmente: sus rendimientos se calculan por signos, índices y módulos, no por ingresos y gastos reales. Si tienes dudas sobre tu régimen, consulta tu última declaración de IRPF o revisa nuestra guía sobre [estimación directa vs. objetiva](/es/blog/formacion/estimacion-directa-vs-objetiva-modulos/).
-</TipCard>
+> Este artículo aplica exclusivamente a autónomos en **estimación directa** (normal o simplificada). Si tributas en módulos, tu base imponible es predeterminada y no puedes deducir gastos reales de formación.
 
 ---
 
-## Qué puedes deducir: cursos, másteres, suscripciones y más
+## ¿Son deducibles los cursos de formación para autónomos?
 
-La formación deducible abarca más de lo que la mayoría de autónomos imagina. No se limita a cursos presenciales con diploma; incluye prácticamente cualquier formato de aprendizaje profesional.
+Sí, sin límite de importe. Los gastos de formación son deducibles en el IRPF para autónomos en estimación directa, siempre que el curso esté **vinculado a la actividad económica que desarrollas**. La base legal es el Art. 28.1 de la [Ley 35/2006 del IRPF](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764), que remite a las normas del Impuesto sobre Sociedades para calcular el rendimiento neto, y el Art. 30, que regula las normas especiales de estimación directa. No existe un artículo específico para formación: la deducibilidad viene del principio general de correlación entre gastos e ingresos.
 
-**Los cursos presenciales y online** son el caso más claro. Formación en plataformas como Domestika, Udemy, Coursera o LinkedIn Learning es deducible si el contenido está relacionado con tu actividad. Guarda siempre el certificado de finalización junto a la factura: el certificado no es obligatorio para la deducción, pero es el primer documento que te pedirán en una inspección para acreditar la finalidad profesional del gasto.
+Lo que esto significa en la práctica: si eres diseñador gráfico y haces un curso de Figma, es deducible. Si eres programador y pagas una suscripción a Udemy con cursos de tu stack tecnológico, también. **El vínculo entre la formación y tu actividad debe ser demostrable**, y la carga de la prueba recae sobre ti, no sobre Hacienda.
 
-Los **másteres y posgrados** son deducibles cuando amplían o profundizan en tu actividad actual. Una consulta vinculante de la DGT de agosto de 2025 (V1473-25) analizó el caso de una agente inmobiliaria que realizaba un máster en Derecho y Abogacía para ampliar sus servicios. La DGT confirmó que la deducibilidad en IRPF depende de que el autónomo pueda demostrar la vinculación directa con su actividad — sin garantía automática — y denegó la deducción del IVA soportado al no apreciar afectación exclusiva a la actividad económica. La clave es poder documentar que la formación es una extensión de lo que ya haces, no una reconversión profesional. Para importes elevados — un máster de €4.000 o más — conviene consultar con tu asesor fiscal y preparar un breve escrito explicando la vinculación con tu actividad, que podrías presentar ante Hacienda si lo requiriesen.
-
-**Las suscripciones a plataformas de aprendizaje** también son deducibles: O'Reilly para programadores, LinkedIn Learning para profesionales del marketing o la gestión, Skillshare para creativos. Si pagas €25/mes por una suscripción que usas habitualmente para formarte en tu área, es un gasto deducible. Estas suscripciones tributan al 21% de IVA (o inversión del sujeto pasivo si la plataforma es extranjera). Lo mismo aplica a **libros y manuales técnicos** relacionados con tu actividad, que tienen un tipo diferente: el IVA superreducido del 4% (equiparado entre formato físico y digital desde abril de 2020, por el RD-ley 15/2020).
-
-Los **congresos, conferencias y eventos profesionales** también entran en esta categoría, incluyendo la inscripción y los materiales. Si además viajas para asistir, los gastos de desplazamiento y las [dietas al asistir a cursos o eventos](/es/blog/consejos/dietas-manutencion-autonomos-deducibles-2026/) siguen sus propias reglas de deducción.
+La Consulta Vinculante V1473-25 de la DGT (2025) ilustra bien este criterio: en ese caso, la DGT denegó la deducción del IVA de un máster en derecho cursado por una agente inmobiliaria al no existir vinculación directa y exclusiva con su actividad. En IRPF, la DGT dejó la determinación a una valoración caso por caso. **La lección: la deducibilidad nunca es automática** y depende de poder acreditar la relación con tu trabajo.
 
 ---
 
-## La zona gris: cuándo Hacienda puede no aceptarlo
+## Qué gastos de formación acepta Hacienda
 
-No todo lo que aprendes es automáticamente deducible. Hay cuatro situaciones frecuentes donde la deducción es discutible o directamente indefendible.
+La lista es más amplia de lo que muchos autónomos creen. No se limita a cursos formales: incluye cualquier gasto orientado a mantener o mejorar competencias para tu actividad profesional.
 
-### Los cursos de idiomas
+Estos son los gastos que Hacienda acepta con mayor facilidad cuando están vinculados a tu actividad:
 
-Esta es la zona gris más habitual. Un curso de inglés puede ser perfectamente deducible si tienes clientes en el extranjero, si tu actividad requiere comunicar en inglés habitualmente, o si el aprendizaje está vinculado a un proyecto profesional concreto. Pero si no puedes justificar esa conexión, Hacienda lo rechaza.
+- **Cursos y talleres presenciales u online** (formación no reglada de academias y plataformas privadas)
+- **Másteres y posgrados** relacionados con tu sector profesional
+- **Congresos, jornadas y seminarios**, incluida la inscripción
+- **Libros, manuales y material técnico** en papel o digital
+- **Suscripciones a plataformas de formación** (Udemy, Coursera, LinkedIn Learning, Domestika…)
+- **Suscripciones a publicaciones sectoriales** y revistas especializadas
+- **Desplazamiento y alojamiento** para asistir a formación fuera de tu ciudad
 
-La DGT ha sido consistente en este punto: **el idioma no justifica por sí solo la deducción**. Lo que la sostiene es la demostración de que ese conocimiento es necesario para tu actividad. Si tienes clientes internacionales, guarda los contratos. Si necesitas el inglés para leer documentación técnica de tu sector, anótalo por escrito. Si haces el curso sin ese contexto, es mejor no deducirlo.
+Sobre los desplazamientos, aplican los mismos límites de [dietas y manutención](/es/blog/consejos/dietas-manutencion-autonomos-deducibles-2026/): €26,67/día en España sin pernocta y €53,34/día con pernocta. Para formación en el extranjero, los límites son más altos: €48,08/día sin pernocta y €91,35/día con pernocta. El transporte y el alojamiento son deducibles al 100% con factura.
 
-### Los másteres genéricos y el coaching
+### El caso de las herramientas de IA
 
-Un MBA genérico, sin documentar cómo amplía específicamente tu actividad como autónomo, es difícil de defender. Lo mismo pasa con la formación en habilidades blandas —comunicación, liderazgo, gestión del tiempo— que no tenga un anclaje directo con tu trabajo. Estas formaciones no son imposibles de deducir, pero requieren una justificación más elaborada que un curso técnico.
+Este es el punto que más preguntas genera en 2025 y 2026. ChatGPT Plus (€20/mes), Midjourney, Perplexity Pro: ¿son gastos de formación o herramientas de trabajo? La distinción importa menos de lo que parece, porque **en ambos casos son deducibles** si los usas en tu actividad. Si los declaras como herramientas digitales o como formación, el resultado fiscal es el mismo. Eso sí, como son proveedores extranjeros, aplica la misma lógica que con Udemy: inversión del sujeto pasivo en el Modelo 303.
 
-El coaching personal o ejecutivo entra en la misma categoría de riesgo. Si tu coach te factura como formación profesional y la sesión tiene un contenido claramente orientado a mejorar tu rendimiento en la actividad económica, existe margen para defenderlo. Si es un proceso genérico de desarrollo personal, la deducción es muy vulnerable ante una inspección.
+### Udemy y plataformas de fuera de España
 
-### La formación para una actividad nueva o la formación previa al alta
-
-Si todavía no eres autónomo y te formas para serlo, **Hacienda no acepta esa formación como deducible** porque en ese momento no hay actividad económica que correlacione el gasto. Una vez dado de alta, la postura oficial de la AEAT es que solo son deducibles los gastos vinculados a la actividad ya iniciada. Existe alguna jurisprudencia favorable en casos concretos, pero la posición conservadora es no deducir formación previa al alta.
+Udemy es una empresa estadounidense. Cuando compras un curso como autónomo, la factura no incluye IVA español. Pero eso no significa que no haya obligación: como empresario que adquiere servicios digitales de un proveedor no establecido en la UE, **aplica la inversión del sujeto pasivo**. Debes autorepercutirte el 21% de IVA y declararlo en el Modelo 303 (como IVA devengado e IVA deducible simultáneamente). El efecto neto es cero, pero la obligación de declarar existe. El gasto es deducible en IRPF con la factura a tu nombre y NIF. Domestika, al ser española, sí emite facturas con IVA al 21% directamente.
 
 ---
 
-## Cómo registrar los gastos de formación correctamente
+## Qué formación NO acepta Hacienda
 
-El registro correcto no es solo burocracia: es tu defensa ante Hacienda. Una deducción con documentación sólida es prácticamente inatacable. Una deducción sin registro es una multa potencial.
+El criterio de Hacienda es claro: la formación debe estar relacionada con **tu actividad actual**, no con una futura actividad diferente. Aquí es donde muchos autónomos se equivocan.
+
+No son deducibles como gastos de actividad:
+
+- **Formación para cambiar de actividad**: si eres consultor y haces un máster de medicina, no hay vinculación posible
+- **Titulaciones habilitantes para otra profesión**: un grado en derecho para un autónomo de marketing no es un gasto de su actividad
+- **Cursos de idiomas sin justificación profesional**: el inglés es el caso más frecuente de rechazo (más abajo te explico cómo documentarlo si te aplica)
+- **Formación personal sin vínculo demostrable**: yoga, cocina, fotografía personal, aunque los hayas pagado con la cuenta profesional
+
+La diferencia entre deducible y no deducible a veces es delgada. **El criterio práctico es preguntarte: ¿este conocimiento me sirve para hacer mejor mi trabajo actual y facturar más?** Si la respuesta es sí y puedes argumentarlo, suele ser deducible.
+
+### El caso de los idiomas
+
+Los cursos de idiomas están en zona gris. Hacienda los ha rechazado sistemáticamente cuando no hay vinculación clara. Sin embargo, son deducibles cuando puedes justificar el uso profesional de ese idioma: si facturas a clientes extranjeros, si participas en proyectos internacionales, si asistes a conferencias en inglés. **La clave no es el idioma, es la evidencia de uso profesional**. Guarda contratos con clientes extranjeros, correos en inglés o el programa de eventos internacionales a los que asistas.
+
+---
+
+## Cómo justificar los gastos de formación ante Hacienda
+
+Aquí está el error que cometen casi todos los autónomos: guardan la factura y asumen que es suficiente. No lo es. Hacienda puede pedirte que demuestres la relación entre el curso y tu actividad, y sin esa prueba la deducción puede ser rechazada.
 
 Para cada gasto de formación, necesitas tener estos tres elementos:
 
-- **Factura completa a tu nombre con tu NIF**: emisor, destinatario, descripción del servicio, base imponible, tipo de IVA y cuota. Si la plataforma no te la envía automáticamente, descárgala desde tu cuenta de usuario antes de que archive el período.
-- **Registro en el libro de gastos**: fecha de la factura, concepto, importe base, IVA y total. Anótalo en el trimestre en que recibes la factura, no cuando terminas el curso.
-- **Certificado de finalización o documentación adicional**: no es legalmente obligatorio, pero en una inspección es el elemento que cierra la cadena de prueba. Guárdalo junto a la factura en tu archivo de gastos.
+1. **Factura completa** (no simplificada) con tu nombre, NIF y la descripción del servicio. El ticket o recibo de compra no es suficiente. Para plataformas extranjeras como Udemy, configura tu cuenta con tus datos fiscales antes de comprar.
+2. **Registro en el [libro de ingresos y gastos](/es/blog/guias/libro-ingresos-gastos-autonomos-obligatorio/)**, con la fecha, el proveedor y el importe. El concepto debe ser específico: "Curso de Excel avanzado para análisis de datos de clientes" es mejor que "formación".
+3. **Evidencia de vinculación con tu actividad**: puede ser tan sencillo como conservar el programa del curso y una nota breve sobre por qué lo hiciste y cómo lo aplicas en tu trabajo. Esto no es obligatorio legalmente, pero es el elemento que cierra la cadena de prueba en una inspección.
 
-Conserva toda la documentación durante **6 años**. Este plazo cubre tanto la prescripción fiscal de 4 años de la Ley General Tributaria como el plazo de 6 años del Código de Comercio. Para la [lista completa de gastos deducibles](/es/blog/guias/gastos-deducibles-autonomos-2026-lista-completa/) y cómo registrarlos en el libro de gastos, consulta nuestra guía completa.
+Conserva toda la documentación durante **al menos 4 años** desde que presentas la declaración (plazo de prescripción fiscal de la Ley General Tributaria). Para documentos contables, el Código de Comercio establece 6 años — lo más seguro es usar ese plazo para todo.
 
-### El IVA de la formación: exento o al 21%
+Si usas un software de facturación que comparte tu actividad con tu gestoría en tiempo real, tu asesor puede alertarte antes de cada trimestre si falta documentación — sin que tengas que enviar nada por email.
 
-Este es el punto que más artículos ignoran y más confunde a los autónomos. No toda la formación tiene el mismo tratamiento de IVA.
-
-La formación reglada — titulaciones universitarias, formación profesional oficial, centros autorizados por la Administración — está **exenta de IVA** según el Art. 20.Uno.9-10 de la Ley 37/1992. Esto significa que no hay IVA en la factura y, por tanto, nada que deducir en el Modelo 303. Pero el gasto sigue siendo completamente deducible en IRPF por su importe total.
-
-La formación no reglada — cursos privados, plataformas online, academias sin acreditación oficial — **sí lleva IVA al 21%**. Ese IVA es deducible en tu Modelo 303 trimestral, reduciendo la cuota que pagas a Hacienda.
-
-Las plataformas extranjeras como Udemy o Coursera tienen una particularidad adicional: **no cobran IVA en la factura**, pero eso no significa que no exista. Aplica la inversión del sujeto pasivo (Arts. 69 y 84.Uno.2 de la Ley 37/1992): tú debes auto-liquidar ese IVA en tu Modelo 303, declarándolo tanto como IVA devengado (cuota a ingresar) como IVA soportado (cuota a deducir). Si tu actividad es íntegramente sujeta y no exenta al IVA, el resultado neto es cero — pero la operación debes declararla igualmente. Si tienes actividad mixta (parcialmente exenta), aplica la regla de prorrata y no recuperarás el 100%.
-
-Si eres autónomo en recargo de equivalencia, no puedes deducir ningún IVA de formación.
+<WarningCard title="Formación antes del alta en el RETA">
+Los gastos de formación incurridos antes de darte de alta como autónomo no son deducibles en el IRPF. No existe actividad económica a la que correlacionar el gasto. En cuanto al IVA, existe un mecanismo para recuperarlo: la casilla 504 del Modelo 036 permite declarar actos preparatorios antes del inicio de actividad, pero debe presentarse antes o en el momento de la primera adquisición, no después de haber incurrido ya en los gastos. Para formación específicamente, la AEAT aplica un criterio restrictivo. Consulta a tu gestoría antes de intentarlo.
+</WarningCard>
 
 ---
 
-## Cuánto ahorras realmente: el cálculo que nadie te hace
+## ¿Hay un límite de cuánto puedes deducir en formación?
 
-Los porcentajes fiscales abstractos son difíciles de visualizar. Un ejemplo concreto lo aclara todo.
+No. **No existe ningún límite cuantitativo** para los gastos de formación en el IRPF de autónomos. A diferencia de otros gastos como las dietas (que tienen topes diarios reglamentarios fijados en el Real Decreto 439/2007), la formación no tiene ningún máximo legal.
 
-Imagina que Laura es diseñadora UX freelance y se apunta a un máster online de diseño de producto de €1.000. Tiene un tipo marginal de IRPF del 30% y está en estimación directa.
+El único límite real es probatorio. Puedes deducir €10.000 en formación al año si tienes las facturas y puedes justificar que esa formación está relacionada con tu actividad. Ahora bien, **cuanto mayor es el importe respecto a tu facturación, más probable es que Hacienda lo revise** con atención en caso de inspección. Con una documentación sólida, no hay problema — pero la proporcionalidad importa.
 
-El ahorro fiscal funciona así: el €1.000 del curso reduce su base imponible de IRPF en €1.000. A un tipo marginal del 30%, eso equivale a **€300 de IRPF que no paga**. Si el curso llevaba IVA al 21% (€210), ese IVA también lo recupera en su Modelo 303. El coste real del máster para Laura es €1.000 − €300 de IRPF − €210 de IVA = **€490 de coste efectivo**.
+Para entender cómo estos gastos afectan a tus [rendimientos netos](/es/blog/formacion/rendimientos-netos-autonomos-como-calcular/) y a tu pago trimestral en el [Modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/), recuerda que los gastos deducibles reducen directamente la base sobre la que calculas el 20% de pago fraccionado. Cada euro de formación deducible te ahorra impuestos tanto en el trimestre como en la declaración anual.
 
-Hacienda financia €510 de los €1.000 del máster. Más de la mitad.
+---
 
-Si Laura estuviera en el tramo del 45%, el ahorro en IRPF sería de €450. Sumando los €210 del IVA, el coste efectivo bajaría a **€340 sobre €1.000**. Hacienda financiaría el 66% del curso.
+## IVA de cursos de formación: ¿es deducible?
 
-Puedes aplicar el mismo cálculo a cualquier gasto de formación:
+Aquí hay dos escenarios completamente distintos que muchos autónomos confunden.
 
-1. Multiplica el importe base (sin IVA) por tu tipo marginal de IRPF → ese es tu ahorro en la declaración anual.
-2. Si el curso lleva IVA al 21%, súmalo al ahorro anterior.
-3. El resultado es lo que Hacienda "pone" de tu formación.
+**Formación reglada** (universidades, ciclos formativos, centros reconocidos por el Ministerio de Educación): está **exenta de IVA** según el [Art. 20 Uno 9 de la Ley 37/1992 del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740). La exención también aplica a academias y centros privados oficialmente autorizados por las autoridades educativas. No hay IVA en la factura, así que no hay nada que recuperar en el Modelo 303. Pero el gasto sigue siendo completamente deducible en IRPF por su importe total.
 
-Este cálculo funciona en estimación directa. Para saber qué [deducciones fiscales que muchos autónomos olvidan](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana/) pueden sumar al efecto de la formación, te recomendamos ese artículo.
+**Formación no reglada** (cursos privados no autorizados, talleres, plataformas online): sujeta a **IVA al 21%**. Ese IVA es deducible en tu Modelo 303 trimestral, exactamente igual que el IVA de cualquier otro gasto profesional.
 
-<PullQuote>
-Solo en IRPF, Hacienda financia entre el 30% y el 47% de tu formación. Si el curso lleva IVA al 21%, el ahorro sube hasta el 66%. El porcentaje exacto depende de tu tipo marginal combinado (estatal + autonómico, que varía por comunidad autónoma).
-</PullQuote>
+La diferencia práctica es significativa. Un curso de €500 en una academia privada tiene un coste total de €605 con IVA. Recuperas €105 en el Modelo 303. Además, los €500 de base imponible reducen tu IRPF. **El beneficio fiscal es doble**: recuperación de IVA más ahorro en renta.
+
+---
+
+## Ejemplo práctico: cuánto ahorras realmente
+
+Números concretos lo aclaran todo. Imagina que eres autónomo en estimación directa cuya actividad está sujeta a IVA, con un tipo marginal de IRPF del 30%, y haces un curso privado de €500 (más IVA) en una academia española.
+
+La factura que recibes es de €500 + €105 de IVA = €605 en total.
+
+El beneficio fiscal que obtienes:
+
+- **Recuperación de IVA** en el Modelo 303 del trimestre: **€105**
+- **Ahorro en IRPF**: los €500 de base reducen tu rendimiento neto, lo que a un tipo marginal del 30% supone **€150 menos de renta**
+
+**Ahorro total: €255 sobre un gasto bruto de €605**. El coste real del curso para tu bolsillo es de €350, no €605. Hacienda financia el 42% del curso.
+
+Si tu tipo marginal fuera del 45%, el ahorro en IRPF subiría a €225. Sumando los €105 del IVA, el coste efectivo bajaría a **€275 sobre €605**. Hacienda financiaría el 55%. Si tu actividad está exenta de IVA (sanidad, educación, servicios financieros), no puedes recuperar los €105 — pero el ahorro en IRPF sigue aplicando.
+
+Para ver cómo combinar este ahorro con otras partidas deducibles, consulta la [lista completa de gastos deducibles](/es/blog/guias/gastos-deducibles-autonomos-2026-lista-completa/) y el artículo sobre [15 deducciones que olvidan los autónomos](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana/).
 
 ---
 
@@ -152,33 +164,27 @@ Solo en IRPF, Hacienda financia entre el 30% y el 47% de tu formación. Si el cu
 
 <AccordionGroup>
 
-<AccordionGroupItem title="¿Puedo deducirme un máster si estoy trabajando como autónomo?" value="faq-1">
+<AccordionGroupItem title="¿Los cursos de formación son deducibles para autónomos?" value="faq-1">
 
-Sí, si el máster está directamente relacionado con tu actividad actual. Hacienda aplica el principio de correlación con los ingresos: **la formación debe servir para mejorar o ampliar lo que ya haces**, no para comenzar desde cero en una actividad diferente. Para importes elevados, consulta con tu asesor fiscal, prepara una justificación escrita de la vinculación y guárdala junto a la factura y el certificado del máster.
-
-</AccordionGroupItem>
-
-<AccordionGroupItem title="¿Los cursos de inglés son deducibles para autónomos?" value="faq-2">
-
-Es zona gris. Son deducibles si puedes demostrar conexión profesional directa: clientes internacionales, necesidad de leer documentación técnica en inglés, o comunicación habitual con el extranjero en tu actividad. **Sin esa justificación documental**, Hacienda tiende a rechazarlos porque el idioma no justifica por sí solo la deducción. Si tu situación lo justifica, anótalo por escrito y guarda los contratos o comunicaciones que demuestren el uso profesional.
+Sí. Los gastos de formación son deducibles en el IRPF para autónomos en estimación directa, siempre que estén vinculados a tu actividad económica. No hay límite porcentual: puedes deducir el importe total si tienes factura completa con tu NIF y puedes demostrar la relación con tu trabajo profesional. La carga de la prueba recae sobre el autónomo — Hacienda puede rechazar la deducción si no acreditas la vinculación.
 
 </AccordionGroupItem>
 
-<AccordionGroupItem title="¿Puedo deducir Udemy, Coursera o LinkedIn Learning?" value="faq-3">
+<AccordionGroupItem title="¿Cuánto puedo deducir en formación como autónomo?" value="faq-2">
 
-Sí, si el curso está relacionado con tu actividad. Configura tu cuenta con tus datos fiscales (nombre y NIF) antes de comprar para que la factura sea correcta. Ten en cuenta que estas plataformas son extranjeras: debes **auto-liquidar el IVA por inversión del sujeto pasivo** en tu Modelo 303, declarándolo tanto como devengado como soportado. Guarda el certificado de finalización junto a la factura como documentación adicional.
-
-</AccordionGroupItem>
-
-<AccordionGroupItem title="¿Cuánto me puedo deducir en formación como autónomo?" value="faq-4">
-
-No hay límite máximo. Todo el gasto de formación vinculado a tu actividad es deducible en estimación directa. El límite práctico lo pone la proporcionalidad: si tu facturación anual es de €20.000 y deduces €15.000 en formación, **Hacienda puede cuestionar la razonabilidad**. Los gastos de formación habituales para un autónomo — cursos, suscripciones, libros, algún congreso — raramente generan este problema.
+No existe un límite cuantitativo. Hacienda permite deducir el 100% del gasto de formación vinculado a tu actividad con factura válida a tu nombre y NIF. A diferencia de las dietas, la formación no tiene ningún tope reglamentario. El límite práctico es la proporcionalidad: gastos de formación muy elevados respecto a tu facturación pueden llamar la atención en una inspección, pero con documentación sólida son perfectamente defendibles.
 
 </AccordionGroupItem>
 
-<AccordionGroupItem title="¿Los autónomos pueden acceder a formación gratuita a través de FUNDAE?" value="faq-5">
+<AccordionGroupItem title="¿Son deducibles los cursos de idiomas para autónomos?" value="faq-3">
 
-Solo los autónomos con trabajadores a su cargo pueden acceder a FUNDAE (antes Fundación Tripartita). Los autónomos sin empleados **no tienen acceso a estos créditos formativos** — la regulación para su inclusión sigue pendiente de desarrollo normativo. Sin embargo, sí pueden acceder a formación gratuita a través del SEPE (cursos del catálogo de formación para el empleo) y de las Cámaras de Comercio, que ofrecen programas específicos para autónomos y pymes en todas las provincias.
+Depende de si puedes demostrar el uso profesional. Son deducibles si facturas a clientes extranjeros, participas en proyectos internacionales o necesitas el idioma para leer documentación técnica de tu sector. Sin vinculación demostrable, Hacienda los rechaza porque el idioma no justifica por sí solo la deducción. Guarda contratos con clientes extranjeros o comunicaciones que evidencien el uso profesional del idioma.
+
+</AccordionGroupItem>
+
+<AccordionGroupItem title="¿El IVA de los cursos de formación es deducible?" value="faq-4">
+
+Depende del tipo de formación. La formación reglada (universidades, centros oficiales reconocidos por el Ministerio de Educación) está exenta de IVA según el Art. 20 Uno 9 de la Ley del IVA, así que no hay IVA que recuperar. Los cursos privados no reglados (academias, plataformas, talleres) sí llevan IVA al 21%, que es deducible en tu Modelo 303 trimestral. Para plataformas extranjeras como Udemy (proveedor no establecido en la UE), aplica la inversión del sujeto pasivo: debes autorepercutirte el 21% en el Modelo 303 (devengado y deducible simultáneamente, efecto neto cero). El gasto sigue siendo deducible en IRPF.
 
 </AccordionGroupItem>
 
@@ -186,8 +192,8 @@ Solo los autónomos con trabajadores a su cargo pueden acceder a FUNDAE (antes F
 
 ---
 
-**¿Llevas tus gastos de formación registrados y listos para tu gestoría?**
+**¿No quieres perder ninguna deducción de formación por falta de documentación?**
 
-Con Invoo, tu gestoría podrá ver tus facturas y gastos en tiempo real — sin reenviar archivos, sin esperas. Facturas en segundos, gastos organizados, y tu asesor siempre al día. €10,90/mes para autónomos, gratis para gestorías.
+Invoo lleva el registro automáticamente y tu gestoría lo ve en tiempo real — sin hojas de cálculo, sin olvidar facturas. €10,90/mes para autónomos, gratis para gestorías.
 
-**[Únete a la lista de espera de Invoo](https://invoo.es)** - Los primeros 100 usuarios ahorran 50% para siempre.
+**[Únete a la lista de espera de Invoo](https://invoo.es)** — los primeros en entrar acceden al precio de lanzamiento.
