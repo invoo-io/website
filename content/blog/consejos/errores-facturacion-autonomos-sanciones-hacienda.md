@@ -64,6 +64,19 @@ Desde 2027, con [Verifactu obligatorio](/es/blog/guias/verifactu-2025-2026-guia-
 
 Estos son los errores de facturación que disparan las sanciones de Hacienda, ordenados por frecuencia según datos de inspecciones fiscales 2024. Para cada uno te indico la sanción exacta, si Verifactu lo previene, y cómo evitarlo.
 
+| Error | Sanción | Verifactu lo previene |
+|-------|---------|----------------------|
+| 1. No emitir factura | 2% del importe o **300€/factura** | No |
+| 2. Numeración no correlativa | **1%** del importe afectado | Sí, completamente |
+| 3. Datos obligatorios omitidos (NIF, domicilio) | **1%** del importe afectado | Parcialmente |
+| 4. IVA mal calculado o tipo incorrecto | **50-100%** del IVA no declarado | No |
+| 5. Falta de retención IRPF en B2B | **50-150%** de la retención no ingresada | No |
+| 6. Descripción genérica | **1%** del importe afectado | No |
+| 7. Fecha errónea o fuera de plazo | **1%** del importe o 300€/factura | Parcialmente |
+| 8. Sin desglose de IVA | **1%** del importe afectado | Parcialmente |
+| 9. No conservar facturas 4 años | **2%** de operaciones o 300€/factura | Sí, completamente |
+| 10. Software no conforme con Verifactu | **50.000€ anuales** (sanción fija) | No aplica |
+
 ### Error 1: No emitir factura cuando corresponde
 
 **La sanción:** 2% del importe total de las operaciones o 300€ por factura, lo que sea mayor.

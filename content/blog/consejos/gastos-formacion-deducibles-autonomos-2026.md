@@ -133,9 +133,11 @@ Para entender cómo estos gastos afectan a tus [rendimientos netos](/es/blog/for
 
 Aquí hay dos escenarios completamente distintos que muchos autónomos confunden.
 
-**Formación reglada** (universidades, ciclos formativos, centros reconocidos por el Ministerio de Educación): está **exenta de IVA** según el [Art. 20 Uno 9 de la Ley 37/1992 del IVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740). La exención también aplica a academias y centros privados oficialmente autorizados por las autoridades educativas. No hay IVA en la factura, así que no hay nada que recuperar en el Modelo 303. Pero el gasto sigue siendo completamente deducible en IRPF por su importe total.
-
-**Formación no reglada** (cursos privados no autorizados, talleres, plataformas online): sujeta a **IVA al 21%**. Ese IVA es deducible en tu Modelo 303 trimestral, exactamente igual que el IVA de cualquier otro gasto profesional.
+| Tipo de formación | IVA en factura | IVA deducible en Modelo 303 | Deducible en IRPF |
+|---|---|---|---|
+| **Reglada** (universidades, centros oficiales autorizados por el Ministerio) | Exenta (Art. 20 Uno 9 LIVA) | No (no hay IVA) | **Sí**, importe íntegro |
+| **No reglada** (academias privadas, plataformas online, talleres) | 21% | **Sí** | **Sí**, base imponible |
+| **Plataformas extranjeras** (Udemy, Coursera…) | Sin IVA español | Inversión del sujeto pasivo (efecto neto 0) | **Sí**, con factura a tu nombre |
 
 La diferencia práctica es significativa. Un curso de €500 en una academia privada tiene un coste total de €605 con IVA. Recuperas €105 en el Modelo 303. Además, los €500 de base imponible reducen tu IRPF. **El beneficio fiscal es doble**: recuperación de IVA más ahorro en renta.
 
@@ -147,14 +149,16 @@ Números concretos lo aclaran todo. Imagina que eres autónomo en estimación di
 
 La factura que recibes es de €500 + €105 de IVA = €605 en total.
 
-El beneficio fiscal que obtienes:
+| Concepto | Importe |
+|---|---|
+| Precio del curso (base imponible) | €500 |
+| IVA al 21% | €105 |
+| **Factura total pagada** | **€605** |
+| Recuperación de IVA en Modelo 303 | −€105 |
+| Ahorro en IRPF al 30% marginal (sobre €500) | −€150 |
+| **Coste real para tu bolsillo** | **€350** |
 
-- **Recuperación de IVA** en el Modelo 303 del trimestre: **€105**
-- **Ahorro en IRPF**: los €500 de base reducen tu rendimiento neto, lo que a un tipo marginal del 30% supone **€150 menos de renta**
-
-**Ahorro total: €255 sobre un gasto bruto de €605**. El coste real del curso para tu bolsillo es de €350, no €605. Hacienda financia el 42% del curso.
-
-Si tu tipo marginal fuera del 45%, el ahorro en IRPF subiría a €225. Sumando los €105 del IVA, el coste efectivo bajaría a **€275 sobre €605**. Hacienda financiaría el 55%. Si tu actividad está exenta de IVA (sanidad, educación, servicios financieros), no puedes recuperar los €105 — pero el ahorro en IRPF sigue aplicando.
+**Hacienda financia el 42% del curso** (tipo marginal 30%). Si tu tipo marginal fuera del 45%, el ahorro en IRPF subiría a €225 y el coste efectivo bajaría a **€275**, con Hacienda financiando el 55%. Si tu actividad está exenta de IVA (sanidad, educación, servicios financieros), no recuperas los €105 — pero el ahorro en IRPF sigue aplicando.
 
 Para ver cómo combinar este ahorro con otras partidas deducibles, consulta la [lista completa de gastos deducibles](/es/blog/guias/gastos-deducibles-autonomos-2026-lista-completa/) y el artículo sobre [15 deducciones que olvidan los autónomos](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana/).
 

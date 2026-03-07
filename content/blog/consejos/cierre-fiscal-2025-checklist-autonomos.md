@@ -103,13 +103,13 @@ Anticipa tu cuota de autónomo para 2026. A partir de enero, tu cuota mensual pu
 
 El calendario fiscal no perdona. Apunta estas fechas en rojo:
 
-**20 de enero de 2026** es el plazo límite para presentar los modelos 111 y 115 (retenciones e ingresos a cuenta) del cuarto trimestre de 2025.
-
-**30 de enero de 2026** es el plazo límite para presentar el modelo 130 o 131 (IRPF trimestral) y el modelo 303 (IVA trimestral) del cuarto trimestre. El Q4 tiene un plazo extendido respecto a otros trimestres. **Presentar fuera de plazo implica sanciones que pueden alcanzar los 200€** si Hacienda te requiere primero (100€ si presentas voluntariamente antes del requerimiento).
-
-**30 de enero de 2026** es también el plazo límite para presentar el modelo 390 (resumen anual de IVA). Este modelo no implica pago adicional, pero es obligatorio para todos los autónomos que presentan el 303. **Olvidarlo tiene una sanción mínima de 150€** si presentas voluntariamente, o 300€ si Hacienda te requiere primero.
-
-**31 de enero de 2026** es cuando recibirás el primer recibo de cuota de autónomo bajo tu tramo de cotización actualizado para el nuevo año. Si tus ingresos de 2025 han sido más altos que los de 2024, **prepara la tesorería porque el incremento puede ser notable**.
+| Fecha | Modelo | Qué declaras | Sanción por retraso |
+|-------|--------|--------------|---------------------|
+| **20 enero 2026** | 111 y 115 | Retenciones e ingresos a cuenta del Q4 | 100€ voluntario / 200€ si Hacienda requiere |
+| **30 enero 2026** | 130 / 131 | IRPF trimestral del Q4 (plazo extendido) | 100€ voluntario / 200€ si Hacienda requiere |
+| **30 enero 2026** | 303 | IVA trimestral del Q4 | 100€ voluntario / 200€ si Hacienda requiere |
+| **30 enero 2026** | 390 | Resumen anual de IVA (no implica pago) | 150€ voluntario / 300€ si Hacienda requiere |
+| **31 enero 2026** | — | Primer recibo cuota autónomo tramo 2026 | Cargo automático en cuenta |
 
 ---
 

@@ -28,7 +28,7 @@
 | Type definitions | `src/types/blog.ts` |
 | Blog loader | `src/lib/blog.ts` |
 | Supported format | Markdown (`.md`) or MDX (`.mdx`) for components |
-| MDX components | PullQuote, InfoCard, AccordionGroup (see Section 6.5) |
+| MDX components | PullQuote, InfoCard, AccordionGroup, Tables (see Section 6.5) |
 
 ---
 
@@ -970,13 +970,25 @@ More content
 - Don't stack components back-to-back
 - If file extension is `.md`, rename to `.mdx` to use components
 
+### Tables (Markdown)
+
+Tables are fully styled and mobile-responsive (horizontal scroll). Use them when data is genuinely tabular — comparisons, schedules, rate tables, tramos. **Don't use tables for simple lists** that would read better as bullet points.
+
+```markdown
+| Concepto | Deducible | Límite |
+|----------|-----------|--------|
+| Material oficina | Sí | 100% |
+| Teléfono móvil | Parcial | 50% |
+```
+
+**Table rules:**
+- Use tables for structured data with 2+ columns that benefit from side-by-side comparison
+- Keep tables concise — if a table has 1 column of data, use a list instead
+- Bold key values in cells for scannability
+- Standard markdown table syntax — no custom components needed
+
 ### ❌ DO NOT USE
 
-- **Tables** - Don't render well on mobile. Use structured lists instead:
-  ```markdown
-  **Primer trimestre (Q1):** Enero - Marzo → Presentación del **1 al 20 de abril**
-  **Segundo trimestre (Q2):** Abril - Junio → Presentación del **1 al 20 de julio**
-  ```
 - Custom React/JSX components (only approved MDX components above)
 - Advanced code syntax highlighting
 - Multiple components stacked together
@@ -1409,7 +1421,7 @@ Ya conoces los X consejos que marcan la diferencia. Ahora el siguiente paso es i
 - [ ] **Components used sparingly** (max 1 per H2 section)
 - [ ] **No component stacking** (separate with prose)
 - [ ] Components add real value (not decoration)
-- [ ] No tables (use structured lists)
+- [ ] Tables used only for genuinely tabular data (not simple lists)
 - [ ] Images optimized (WebP, < 200KB)
 - [ ] Technical terms explained
 - [ ] No grammar/spelling errors
@@ -1506,7 +1518,7 @@ See these published articles as quality references for readability patterns:
 | **Over-bolding** (whole sentences bolded) | Bold only the key 3-6 words per paragraph that convey the insight |
 | **Under-bolding** (no bold text) | Every paragraph should have one bolded phrase for skimmers |
 | **Generic content without examples** | Add specific Spanish examples, real numbers, relatable stories |
-| **Using tables** | Convert to structured lists with bold labels (tables don't work on mobile) |
+| **Using tables for simple lists** | Tables are for structured data with 2+ comparable columns. Single-column data → use a list |
 | **Component overload** (multiple per section) | Max 1 component per H2 section |
 | **Stacking components** (back-to-back without prose) | Separate components with at least 1-2 paragraphs |
 | **Components as decoration** (not adding value) | Only use components when they enhance understanding |

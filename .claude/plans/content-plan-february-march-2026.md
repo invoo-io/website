@@ -6,7 +6,7 @@
 > **Categories:** guías, formación, consejos, análisis (NO comparaciones until product launch in Q2)
 > **Goal:** Build topical authority, capture seasonal search traffic, fill content gaps
 >
-> **Progress:** 23/30 articles completed (Days 1-23 published)
+> **Progress:** DONE — 28/30 articles published (Days 1-28). Days 29-30 skipped (IA article too risky, autónomo colaborador deprioritized). Plan closed 2026-03-07.
 
 ---
 

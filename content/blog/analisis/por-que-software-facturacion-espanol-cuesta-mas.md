@@ -51,16 +51,15 @@ Esta pregunta la hacen miles de autónomos españoles cada mes. Y tiene una resp
 
 La diferencia de precio entre España y el resto de Europa no es marginal. **Es brutal**.
 
-**En España:**
-- **[Holded](https://www.holded.com)**: €35-99/mes (Facturación + CRM + Inventario + Contabilidad)
-- **[Quipu](https://getquipu.com)**: €40-80/mes (Facturación + Gastos + Contabilidad)
-- **[Billin](https://www.billin.net)**: €29-89/mes (Facturación + Inventario + TPV)
-
-**En el resto de Europa:**
-- **[Lexoffice](https://www.lexoffice.de)** (Alemania): €8.90-19.90/mes (Facturación + Contabilidad básica)
-- **[Zervant](https://www.zervant.com)** (Francia): €0-24/mes (gratis hasta 10 facturas/mes)
-- **[FreeAgent](https://www.freeagent.com)** (UK): €16-34/mes (Facturación + Contabilidad + Nóminas)
-- **[Moneybird](https://www.moneybird.com)** (Holanda): €9-29/mes (Facturación + Contabilidad)
+| Software | País | Precio mensual | Incluye |
+|----------|------|---------------|---------|
+| **[Holded](https://www.holded.com)** | España | €35-99/mes | Facturación + CRM + Inventario + Contabilidad |
+| **[Quipu](https://getquipu.com)** | España | €40-80/mes | Facturación + Gastos + Contabilidad |
+| **[Billin](https://www.billin.net)** | España | €29-89/mes | Facturación + Inventario + TPV |
+| **[Lexoffice](https://www.lexoffice.de)** | Alemania | €8.90-19.90/mes | Facturación + Contabilidad básica |
+| **[Zervant](https://www.zervant.com)** | Francia | €0-24/mes | Gratis hasta 10 facturas/mes |
+| **[FreeAgent](https://www.freeagent.com)** | UK | €16-34/mes | Facturación + Contabilidad + Nóminas |
+| **[Moneybird](https://www.moneybird.com)** | Holanda | €9-29/mes | Facturación + Contabilidad |
 
 El patrón es claro: en España pagas **€30-100/mes de entrada**. En Europa, entre €0-15/mes.
 
@@ -112,12 +111,14 @@ El bundling permite justificar precios altos ("mira todo lo que incluye") cuando
 
 Hagamos ingeniería inversa del precio real de un software de facturación español sin rent-seeking:
 
-- **Infraestructura** (hosting, CDN, DB): €1-2
-- **Verifactu** (firma digital, hash, envío AEAT): €3-5
-- **Desarrollo y mantenimiento** (amortizado): €4-6
-- **Soporte al cliente**: €2-3
-- **Marketing y adquisición** (amortizado): €2-3
-- **Total razonable: €12-19/mes**
+| Concepto | Coste mensual por usuario |
+|----------|--------------------------|
+| **Infraestructura** (hosting, CDN, DB) | €1-2 |
+| **Verifactu** (firma digital, hash, envío AEAT) | €3-5 |
+| **Desarrollo y mantenimiento** (amortizado) | €4-6 |
+| **Soporte al cliente** | €2-3 |
+| **Marketing y adquisición** (amortizado) | €2-3 |
+| **Total razonable** | **€12-19/mes** |
 
 Todo lo que pagas por encima de €19/mes es beneficio corporativo inflado (legítimo hasta cierto punto), features bundled que no usas (cuestionable), o sobreprecio por consolidación de mercado (rent-seeking puro).
 

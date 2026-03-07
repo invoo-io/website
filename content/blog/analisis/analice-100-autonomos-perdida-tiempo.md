@@ -62,12 +62,14 @@ Después de entrevistar a 100+ autónomos de seis sectores diferentes, emergió 
 
 **Desglose del tiempo perdido (promedio mensual):**
 
-- **3.2 horas** creando y enviando facturas (91% lo hace manualmente)
-- **1.8 horas** buscando facturas antiguas (85% de los entrevistados)
-- **1.5 horas** gestionando recordatorios de pago (78% de autónomos)
-- **2.1 horas** preparando documentación para la gestoría (88%)
-- **1.9 horas** organizando archivos contables (82%)
-- **1.3 horas** controlando cobros e impagos (74%)
+| Tarea | Horas/mes | % que la hace manualmente |
+|-------|-----------|--------------------------|
+| Crear y enviar facturas | **3.2 h** | 91% |
+| Buscar facturas antiguas | **1.8 h** | 85% |
+| Gestionar recordatorios de pago | **1.5 h** | 78% |
+| Preparar documentación para la gestoría | **2.1 h** | 88% |
+| Organizar archivos contables | **1.9 h** | 82% |
+| Controlar cobros e impagos | **1.3 h** | 74% |
 
 **Total: 11.8 horas mensuales de media.** Casi día y medio de trabajo perdido cada mes en tareas que, con las herramientas adecuadas, podrían automatizarse completamente.
 

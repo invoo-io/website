@@ -38,11 +38,11 @@ export interface ArticleReference {
  * Order: first item = first slide
  */
 export const featuredArticles: ArticleReference[] = [
+  { category: "guias", slug: "tramos-cuota-autonomos-2026-tabla-completa" },
   { category: "guias", slug: "tarifa-plana-autonomos-2026-guia-completa" },
-  { category: "comparaciones", slug: "invoo-vs-holded-comparativa-2026" },
-  { category: "guias", slug: "como-emitir-factura-rectificativa-guia" },
+  { category: "guias", slug: "como-darse-alta-autonomo-2026-guia-paso-paso" },
   { category: "guias", slug: "cuota-cero-autonomos-2026-comunidades-requisitos" },
-  { category: "comparaciones", slug: "invoo-vs-quipu-comparativa-2026" },
+  { category: "guias", slug: "gastos-deducibles-autonomos-2026-lista-completa" },
 ];
 
 /**
@@ -54,7 +54,7 @@ export const featuredArticles: ArticleReference[] = [
  */
 export const editorPickArticles: ArticleReference[] = [
   { category: "guias", slug: "modelo-303-vs-modelo-130-guia-autonomos" },
-  { category: "guias", slug: "tramos-cuota-autonomos-2026-tabla-completa" },
+  { category: "consejos", slug: "cuenta-bancaria-autonomos-obligatoria-separada" },
   { category: "guias", slug: "retencion-irpf-factura-7-o-15-guia-autonomos" },
-  { category: "guias", slug: "elegir-base-cotizacion-autonomos-2026" },
+  { category: "consejos", slug: "15-deducciones-fiscales-autonomos-espana" },
 ];

@@ -88,11 +88,11 @@ Pero aquí hay una trampa que casi nadie explica bien: **la cuota reducida por p
 
 ### Descuentos según tu jornada laboral
 
-Si trabajas **a tiempo completo** (jornada igual o superior al 100% de la ordinaria en tu sector), la reducción es del **50% sobre la base mínima de cotización durante los primeros 18 meses**, y del **25% durante los meses 19 a 36**.
-
-Si trabajas **a tiempo parcial pero más del 50% de jornada**, la reducción es del **25% durante los primeros 18 meses**, y del **15% durante los meses 19 a 36**.
-
-Si trabajas menos del 50% de jornada, **no tienes derecho a esta reducción**. En ese caso, evalúa si te conviene más la tarifa plana estándar.
+| Tipo de jornada | Meses 1–18 | Meses 19–36 |
+|-----------------|-----------|------------|
+| **Tiempo completo** (≥ 100% de la jornada ordinaria) | **50% de descuento** sobre base mínima | **25% de descuento** |
+| **Tiempo parcial** (> 50% de jornada) | **25% de descuento** | **15% de descuento** |
+| **Tiempo parcial** (≤ 50% de jornada) | Sin derecho a reducción | Sin derecho a reducción |
 
 ### Cálculo real de ahorro en 2026
 
@@ -226,10 +226,13 @@ Si tu actividad autónoma está sujeta a IRPF y NO te retienen el 15% o 7% en tu
 El Modelo 130 es una **declaración trimestral donde pagas el 20% de tus rendimientos netos** (ingresos menos gastos deducibles). Si en el primer trimestre has facturado 3.000€ y has tenido 1.000€ de gastos, pagas el 20% de 2.000€ = 400€.
 
 Los plazos de presentación son:
-- **Primer trimestre (enero-marzo):** Del 1 al 20 de abril
-- **Segundo trimestre (abril-junio):** Del 1 al 20 de julio
-- **Tercer trimestre (julio-septiembre):** Del 1 al 20 de octubre
-- **Cuarto trimestre (octubre-diciembre):** Del 1 al 30 de enero del año siguiente
+
+| Trimestre | Periodo | Plazo |
+|-----------|---------|-------|
+| **Q1** | Enero - Marzo | 1 al 20 de abril |
+| **Q2** | Abril - Junio | 1 al 20 de julio |
+| **Q3** | Julio - Septiembre | 1 al 20 de octubre |
+| **Q4** | Octubre - Diciembre | 1 al 30 de enero del año siguiente |
 
 Si no presentas el Modelo 130 en plazo, la sanción **puede llegar hasta 200€ por cada trimestre omitido** (con posibles reducciones por presentación voluntaria), más recargos sobre las cantidades no ingresadas.
 

@@ -88,12 +88,14 @@ Cuando facturas como autónomo, tus [rendimientos netos](/es/blog/formacion/rend
 
 **Tramos IRPF 2026:**
 
-- **€0 – €12.450:** 19%
-- **€12.450 – €20.200:** 24%
-- **€20.200 – €35.200:** 30%
-- **€35.200 – €60.000:** 37%
-- **€60.000 – €300.000:** 45%
-- **Más de €300.000:** 47%
+| Tramo de renta | Tipo |
+|----------------|------|
+| €0 – €12.450 | 19% |
+| €12.450 – €20.200 | 24% |
+| €20.200 – €35.200 | 30% |
+| €35.200 – €60.000 | 37% |
+| €60.000 – €300.000 | 45% |
+| Más de €300.000 | 47% |
 
 Estos son tipos estatales. A eso se suma el tipo autonómico que varía según tu comunidad. En total, el tipo marginal efectivo en tramos altos puede superar el 50%.
 
@@ -109,10 +111,12 @@ Una SL tributa sobre su beneficio antes de impuestos. Los tipos para 2026 son:
 
 **Tipos IS 2026:**
 
-- **Microempresas** (facturación < €1M): Primeros €50.000 al **19%**, resto al **21%**
-- **Empresas ERD** (facturación €1M-€10M): **23%**
-- **Empresas grandes** (facturación > €10M): **25%**
-- **Empresas de nueva creación** (2 primeros ejercicios con beneficios): **15%**
+| Perfil | Facturación | Tipo |
+|--------|-------------|------|
+| **Microempresas** | Menos de €1M | 19% (primeros €50.000) + 21% (resto) |
+| **Empresas ERD** | €1M – €10M | 23% |
+| **Empresas grandes** | Más de €10M | 25% |
+| **Empresas de nueva creación** | — (2 primeros ejercicios con beneficios) | 15% |
 
 Estos tipos para 2026 se basan en el calendario de reducción progresiva de la Ley 7/2024 (Disposición Transitoria 44ª LIS). Consulta siempre con tu gestoría los tipos vigentes en tu ejercicio fiscal.
 
@@ -132,11 +136,13 @@ Los dividendos NO son gasto deducible. La empresa paga IS sobre beneficios, y lu
 
 **Tramos de tributación de dividendos (Base del Ahorro):**
 
-- **€0-6.000:** 19%
-- **€6.000-50.000:** 21%
-- **€50.000-200.000:** 23%
-- **€200.000-300.000:** 27%
-- **Más de €300.000:** 28%
+| Tramo | Tipo |
+|-------|------|
+| €0 – €6.000 | 19% |
+| €6.000 – €50.000 | 21% |
+| €50.000 – €200.000 | 23% |
+| €200.000 – €300.000 | 27% |
+| Más de €300.000 | 28% |
 
 **Ejemplo con €60.000 de beneficio en SL:**
 
@@ -248,11 +254,13 @@ Servicios puntuales adicionales: modificación de estatutos (€300-600), amplia
 
 ### Resumen de costes anuales recurrentes
 
-- **Autónomo societario:** €3.768-7.080
-- **Gestoría:** €1.200-2.400
-- **Registro Mercantil:** €100-300
-- **Notaría (actas):** €100-200
-- **Imprevistos:** €200-500
+| Concepto | Coste anual |
+|----------|-------------|
+| **Autónomo societario** | €3.768 – €7.080 |
+| **Gestoría** | €1.200 – €2.400 |
+| **Registro Mercantil** | €100 – €300 |
+| **Notaría (actas)** | €100 – €200 |
+| **Imprevistos** | €200 – €500 |
 
 **Total mantenimiento anual: €4.000-5.000 como mínimo.** Si tu SL tiene operaciones complejas, contratas empleados, o necesitas asesoría frecuente, puede llegar a €6.000-8.000 anuales.
 

@@ -93,13 +93,12 @@ Los porcentajes del recargo de equivalencia dependen del tipo de IVA que aplique
 
 ### Los cuatro tipos vigentes en 2026
 
-**IVA general (21%) → Recargo del 5,2%.** Aplica a la mayoría de productos de consumo: ropa, calzado, electrónica, mobiliario, artículos de ferretería, juguetes, cosméticos. Es el tipo que más frecuentemente verás en tus facturas de proveedor.
-
-**IVA reducido (10%) → Recargo del 1,4%.** Aplica a productos como alimentos en general (los no incluidos en superreducido), flores y plantas ornamentales, gafas y lentillas, servicios de hostelería.
-
-**IVA superreducido (4%) → Recargo del 0,5%.** Aplica a alimentos de primera necesidad (pan, leche, huevos, frutas, verduras, cereales), libros, periódicos y medicamentos.
-
-**Tabaco → Recargo del 1,75%.** Tipo específico para labores del tabaco.
+| Tipo de IVA | **IVA** | **Recargo** | Productos habituales |
+|-------------|---------|-------------|----------------------|
+| General | 21% | **5,2%** | Ropa, calzado, electrónica, mobiliario, ferretería, juguetes, cosméticos |
+| Reducido | 10% | **1,4%** | Alimentos en general, flores y plantas ornamentales, gafas y lentillas, hostelería |
+| Superreducido | 4% | **0,5%** | Alimentos de primera necesidad (pan, leche, huevos, frutas, verduras), libros, periódicos, medicamentos |
+| Tabaco | — | **1,75%** | Labores del tabaco |
 
 Una nota importante: entre 2022 y 2024 existieron tipos transitorios reducidos para compensar la inflación en alimentación. **Esos tipos fueron expirando a lo largo de 2024 y ninguno está en vigor desde el 1 de enero de 2025.** Si encuentras contenido online que menciona recargos del 0%, 0,62%, 0,26% o 1%, está desactualizado. Los tipos actuales son los cuatro indicados arriba.
 

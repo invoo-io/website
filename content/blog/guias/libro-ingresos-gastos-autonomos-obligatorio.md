@@ -50,40 +50,18 @@ Este artículo te explica exactamente qué libros debes llevar, qué informació
 
 **Depende de tu régimen fiscal.** No todos los autónomos tienen las mismas obligaciones. Aquí está la respuesta clara por régimen.
 
-### Si estás en estimación directa simplificada (la mayoría)
+| Régimen | Perfil | Libros obligatorios |
+|---------|--------|---------------------|
+| **Estimación directa simplificada — Empresario** | Venta de productos | Ventas e ingresos · Compras y gastos · Bienes de inversión |
+| **Estimación directa simplificada — Profesional** | Servicios (consultor, diseñador, abogado...) | Ingresos · Gastos · Provisiones y suplidos · Bienes de inversión |
+| **Estimación objetiva (módulos)** | Actividades por módulos | Solo bienes de inversión (si aplicas amortizaciones) + conservar facturas |
+| **Todos los sujetos pasivos de IVA** | Cualquier autónomo que facture con IVA | Facturas expedidas · Facturas recibidas · Bienes de inversión (IVA) |
 
-Debes llevar **tres libros de registro obligatorios** según la Orden HAC/773/2019:
+La diferencia entre empresario y profesional está en que los profesionales (consultores, diseñadores, abogados) no "venden" sino que cobran honorarios. Pero la lógica es la misma: **registrar todas tus operaciones económicas antes del plazo de presentación trimestral.**
 
-**Si eres empresario:**
-- Libro de ventas e ingresos
-- Libro de compras y gastos
-- Libro de bienes de inversión
+Aunque estés en módulos y no lleves libros formales, **debes conservar todas las facturas.** Hacienda puede pedírtelas en cualquier inspección.
 
-**Si eres profesional:**
-- Libro de ingresos
-- Libro de gastos
-- Libro de provisiones de fondos y suplidos
-- Libro de bienes de inversión
-
-La diferencia está en que los profesionales (consultores, diseñadores, abogados) no "venden" sino que cobran honorarios. Pero la lógica es la misma: **registrar todas tus operaciones económicas antes del plazo de presentación trimestral.**
-
-### Si estás en estimación objetiva (módulos)
-
-Aquí las obligaciones se reducen. Solo necesitas:
-- **Libro de bienes de inversión** (si aplicas amortizaciones y quieres deducirlas)
-- **Conservar facturas emitidas y recibidas** durante 6 años
-
-Eso sí: aunque no lleves libros formales, **debes conservar todas las facturas.** Hacienda puede pedírtelas en cualquier inspección.
-
-### Todos los sujetos pasivos de IVA (esto te incluye)
-
-Si facturas con IVA (la inmensa mayoría de autónomos), **estás obligado a llevar libros registro de IVA** según el Reglamento del IVA (Art. 62-66 del RD 1624/1992):
-
-- Libro registro de facturas expedidas
-- Libro registro de facturas recibidas
-- Libro registro de bienes de inversión
-
-Esto es **independiente de si llevas los libros de IRPF.** El IVA tiene sus propias normas, y son obligatorias para todos. No importa si facturas €1,000 o €100,000 al año.
+Los libros de IVA son **independientes de los libros de IRPF.** El IVA tiene sus propias normas obligatorias para todos. No importa si facturas €1,000 o €100,000 al año.
 
 **En resumen:** Si estás en estimación directa simplificada, llevas libros de IRPF + libros de IVA. Si estás en módulos, solo libros de IVA y conservación de facturas. No hay excepciones por volumen.
 
@@ -396,7 +374,11 @@ Nuestra recomendación: 6 años mínimo. Hacienda puede inspeccionar los último
 
 Según el Art. 200 de la Ley General Tributaria, las sanciones son:
 
-**Retraso superior a 4 meses:** €300 fijos (sanción leve). **Inexactitud u omisión de datos:** 1% de las cantidades omitidas, con mínimo de €150 y máximo de €6,000 (sanción grave). **SII (grandes empresas):** 0.5% del importe por factura no presentada en plazo, mínimo €300/trimestre y máximo €6,000/trimestre.
+| Infracción | Sanción | Rango |
+|------------|---------|-------|
+| Retraso superior a 4 meses | €300 fijos | Sanción leve |
+| Inexactitud u omisión de datos | 1% de cantidades omitidas | Mín. €150 — Máx. €6.000 |
+| SII: factura no presentada en plazo | 0,5% del importe por factura | Mín. €300/trimestre — Máx. €6.000/trimestre |
 
 En casos de ocultación intencionada, Hacienda puede abrir inspección completa de los últimos 4 años con recargos del 50-150% de las cuotas defraudadas. La mayoría de sanciones a autónomos derivan de errores en libros — mantenerlos al día es tu primera línea de defensa ante inspecciones.
 

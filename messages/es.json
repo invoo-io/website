@@ -1506,6 +1506,27 @@
       "description": "La herramienta de confianza de autónomos, pymes y gestorías que colaboran en tiempo real y recuperan horas cada semana con la plataforma de facturación más intuitiva de España.",
       "cta": "Únete a la lista de espera"
     },
+    "resources": {
+      "title": "Recursos gratuitos",
+      "titleHighlight": "para autónomos",
+      "description": "Guías prácticas y herramientas de cálculo para gestionar tu actividad sin complicaciones",
+      "articlesHeading": "Guías más consultadas",
+      "calculatorsHeading": "Calculadoras gratuitas",
+      "viewAllArticles": "Ver todas las guías",
+      "viewAllCalculators": "Ver todas las calculadoras",
+      "calc1": {
+        "title": "Calculadora de Cuota de Autónomos",
+        "description": "Calcula tu cuota mensual según tus rendimientos netos reales"
+      },
+      "calc2": {
+        "title": "Calculadora de IRPF Autónomos",
+        "description": "Estima tu pago fraccionado trimestral del modelo 130"
+      },
+      "calc3": {
+        "title": "Calculadora de IVA",
+        "description": "Calcula el IVA de tus facturas al 4%, 10% o 21%"
+      }
+    },
     "footer": {
       "description": "Invoo ayuda a autónomos, PYMES y gestorías a trabajar más rápido juntos: listo para Verifactu y TicketBAI, UX intuitiva, flujo de presupuesto a factura, módulo de descuentos y dashboard en vivo para tu gestoría",
       "invooTitle": "Invoo",

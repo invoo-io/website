@@ -89,23 +89,26 @@ El precio es donde las diferencias son imposibles de ignorar. **Especialmente co
 
 ### Planes de Quipu 2026
 
-**Plan Starter a €17/mes** (€14/mes anual): 1 usuario, 30 escaneos OCR, 3 bancos sincronizados, conciliación manual. Suficiente solo para volumen muy bajo. **Si tienes más de 30 gastos mensuales**, pagarás €10 adicionales por cada 50 escaneos o los registrarás manualmente.
+| Plan | Precio mensual | Precio anual | Usuarios | OCR/mes | Bancos | Conciliación |
+|------|---------------|--------------|----------|---------|--------|--------------|
+| **Starter** | €17/mes | €14/mes | 1 | 30 | 3 | Manual |
+| **Solution** | €30/mes | €25/mes | 1 | 250 | 10 | Automática |
+| **Premium** | €59/mes | €49/mes | 3 | 350 | Ilimitados | Automática |
 
-**Plan Solution a €30/mes** (€25/mes anual): 1 usuario, 250 escaneos OCR, 10 bancos, conciliación automática, integración AEAT. **Este es el plan que la mayoría necesitan**, no el Starter. La diferencia de €13/mes representa **€156 anuales adicionales** que muchos terminan pagando.
-
-**Plan Premium a €59/mes** (€49/mes anual): 3 usuarios, 350 escaneos OCR, dashboard tesorería avanzado, reportes premium. Para sociedades con varios empleados.
+El Plan Starter es suficiente solo para volumen muy bajo. **Si tienes más de 30 gastos mensuales**, pagarás €10 adicionales por cada 50 escaneos o los registrarás manualmente. **El Plan Solution es el mínimo realista** para autónomos con volumen medio — la diferencia de €13/mes representa €156 anuales adicionales que muchos terminan pagando.
 
 **Coste oculto importante:** Si tu gestoría necesita acceso, pagas **€5/mes adicionales**. Para autónomo en Plan Solution (€30) + gestoría (€5), el total es **€35/mes = €420 anuales**.
 
 ### Planes de Invoo 2026
 
-**Plan Free a €0/mes permanente**: 3 facturas mensuales con Verifactu completo. Útil para autónomos ultra-ocasionales.
+| Plan | Precio/mes | Usuarios | Facturas | OCR gastos | Dashboard gestoría | Verifactu |
+|------|-----------|----------|----------|------------|-------------------|-----------|
+| **Free** | €0 | 1 | 3/mes | No | No | Completo |
+| **Pro Autónomos** | €10.90 (€5.45 con dto.) | 1 | Ilimitadas | Ilimitado | Gratis siempre | Completo |
+| **Pro PYMES** | €20.90 | 2 | Ilimitadas | Ilimitado | Gratis siempre | Completo |
+| **Premium PYMES** | €40.90 | 4 | Ilimitadas | Ilimitado | Gratis siempre | Completo |
 
-**Plan Pro Autónomos a €10.90/mes** (actualmente €5.45 con 50% descuento): facturas ilimitadas, gestión gastos con OCR móvil, **auto-relleno modelos 303/130/390**, dashboard 100% gratuito para gestoría, app móvil, soporte email prioritario, Verifactu completo. **No hay cobros por usuarios adicionales de gestoría**.
-
-**Plan Pro PYMES a €20.90/mes**: 2 usuarios con todo lo anterior más gestión multiempresa.
-
-**Plan Premium PYMES a €40.90/mes**: 4 usuarios con colaboración avanzada.
+**No hay cobros por usuarios adicionales de gestoría** en ningún plan de pago. El Plan Pro Autónomos incluye auto-relleno de modelos 303/130/390, app móvil, y soporte email prioritario.
 
 Lo más distintivo: **Dashboard para Gestorías completamente gratuito siempre**. Tu gestoría obtiene acceso en tiempo real a todos sus clientes sin límite, sin costes ocultos. Como explicamos en [del caos de WhatsApp a la colaboración real con tu gestoría](/es/blog/consejos/del-caos-whatsapp-colaboracion-gestoria-cliente/), este acceso elimina el intercambio caótico de PDFs.
 
@@ -123,18 +126,14 @@ Para autónomo que factura €3,000/mes, este ahorro equivale a recuperar el 0.8
 
 ### Comparación a 3 años
 
-**Quipu total 3 años:**
-- Plan Solution: €30/mes × 36 = €1,080
-- Usuario gestoría: €5/mes × 36 = €180
-- OCR adicional estimado: €5/mes × 36 = €180
-- **Total: €1,440**
-
-**Invoo total 3 años:**
-- Plan Pro Autónomos: €10.90/mes × 36 = €392.40
-- Auto-relleno modelos: €0 (incluido)
-- Dashboard gestoría: €0 (incluido)
-- Gestión gastos OCR: €0 (incluido)
-- **Total: €392.40**
+| Concepto | Quipu (Solution) | Invoo (Pro Autónomos) |
+|----------|-----------------|----------------------|
+| Plan base (36 meses) | €30/mes × 36 = **€1,080** | €10.90/mes × 36 = **€392.40** |
+| Usuario gestoría | €5/mes × 36 = **€180** | **€0** (incluido) |
+| OCR adicional estimado | €5/mes × 36 = **€180** | **€0** (incluido) |
+| Auto-relleno modelos | **€0** (incluido) | **€0** (incluido) |
+| **Total 3 años** | **€1,440** | **€392.40** |
+| **Con descuento lanzamiento Invoo** | — | **€196.20** |
 
 **Ahorro con Invoo: €1,047.60 en 3 años (73% más económico)**. Con descuento actual (€5.45/mes), **ahorro de €1,347.60 (78% más económico)**.
 

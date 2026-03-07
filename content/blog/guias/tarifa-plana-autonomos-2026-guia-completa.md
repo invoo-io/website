@@ -75,13 +75,12 @@ Cuando termine tu tarifa plana, pasarás al [sistema de tramos por ingresos real
 
 ### Lo que SÍ y lo que NO pagas durante la tarifa plana
 
-**Lo que SÍ estás exento de pagar:**
-- Cese de actividad (la prestación por cierre de negocio)
-- Formación profesional
-
-**Lo que SÍ pagas:**
-- MEI (obligatorio para todos)
-- Contingencias comunes y profesionales (incluidas en el 80€ base)
+| **Concepto** | **Durante la tarifa plana** |
+|--------------|-----------------------------|
+| Contingencias comunes y profesionales | **Sí** (incluidas en los 80€ base) |
+| MEI (Mecanismo de Equidad Intergeneracional) | **Sí** (obligatorio para todos) |
+| Cese de actividad | **No** (exento) |
+| Formación profesional | **No** (exento) |
 
 Cuando termine tu periodo de tarifa plana, estas cotizaciones adicionales se activarán automáticamente. **Tu cuota subirá hasta el tramo que te corresponda** según tus ingresos reales.
 

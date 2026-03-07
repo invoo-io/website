@@ -57,6 +57,24 @@ El problema no es la complejidad de las deducciones. Es que nadie te enseña a i
 
 ## Las 15 deducciones que olvidas
 
+| # | Gasto | Deducibilidad | Importe orientativo/año |
+|---|-------|--------------|------------------------|
+| 1 | Cuota de autónomos | **100%** | €2.400 – €18.500 |
+| 2 | Gestoría | **100%** | €600 – €1.800 |
+| 3 | Suministros del hogar (luz, agua, gas, internet) | **30% de la proporción** | Variable |
+| 4 | Vehículo (combustible, seguros, reparaciones) | **100%** uso exclusivo / proporcional mixto | Variable |
+| 5 | Comidas de negocio y dietas | **Hasta €26,67/día** España | Hasta €3.840/año |
+| 6 | Formación y cursos profesionales | **100%** | €200 – €2.000+ |
+| 7 | Material de oficina y consumibles | **100%** | €300 – €600 |
+| 8 | Software, apps y servicios digitales | **100%** | €600 – €1.500 |
+| 9 | Teléfono móvil e internet | **Proporcional** al uso profesional | Variable |
+| 10 | Publicidad y marketing | **100%** | Variable |
+| 11 | Seguros profesionales | **100%** | Variable |
+| 12 | Alquiler de oficina o coworking | **100%** con contrato/factura | Variable |
+| 13 | Equipamiento informático y mobiliario | **Por amortización** (4-10 años) | Variable |
+| 14 | Gastos bancarios y financieros | **100%** cuenta profesional | Variable |
+| 15 | Gastos de constitución (solo año 1) | **100%** el primer ejercicio | Variable |
+
 ### 1. Cuota de autónomos: €2.400 - 18.500€ al año
 
 **Deducibilidad:** 100%

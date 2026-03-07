@@ -104,9 +104,12 @@ María debe pagar 324 euros en la regularización. Si hubiera cotizado por bases
 ### Paso 5: Aplican recargos o procesan devolución
 
 Si debes pagar (como María), tienes un plazo para hacerlo sin recargo:
-- **Sin recargo** si pagas antes del último día del mes siguiente a la notificación (plazo voluntario)
-- **10% de recargo** si pagas después de ese plazo pero dentro del mes natural siguiente
-- **20% de recargo** si pagas más tarde
+
+| Momento del pago | Recargo |
+|------------------|---------|
+| Antes del último día del mes siguiente a la notificación | **Sin recargo** (plazo voluntario) |
+| Dentro del mes natural siguiente al plazo voluntario | **10%** |
+| Después de ese mes | **20%** |
 
 Si te devuelven dinero, el importe llega automáticamente a tu cuenta bancaria antes del 30 de abril. No hay que hacer nada, no hay que solicitarlo, ni hay intereses a favor (básicamente, le hiciste un préstamo sin intereses a la Seguridad Social durante dos años).
 
@@ -261,12 +264,15 @@ Ese número te dice si estás en el tramo correcto o si deberías ajustar tu bas
 ### Ajusta tu base cada dos meses si hace falta
 
 Puedes cambiar tu base hasta **6 veces al año**, cada dos meses. Las ventanas son:
-- Enero-febrero → Cambio efectivo 1 de marzo
-- Marzo-abril → Cambio efectivo 1 de mayo
-- Mayo-junio → Cambio efectivo 1 de julio
-- Julio-agosto → Cambio efectivo 1 de septiembre
-- Septiembre-octubre → Cambio efectivo 1 de noviembre
-- Noviembre-diciembre → Cambio efectivo 1 de enero siguiente
+
+| Solicitud en... | Cambio efectivo desde |
+|-----------------|-----------------------|
+| Enero - Febrero | 1 de marzo |
+| Marzo - Abril | 1 de mayo |
+| Mayo - Junio | 1 de julio |
+| Julio - Agosto | 1 de septiembre |
+| Septiembre - Octubre | 1 de noviembre |
+| Noviembre - Diciembre | 1 de enero (año siguiente) |
 
 Si tu actividad tiene estacionalidad (meses flojos y meses fuertes), usa este calendario para optimizar tus cuotas. Ejemplo: si eres comercial y agosto es flojo, solicita base más baja en junio. Si septiembre-diciembre son fuertes, súbela de nuevo en octubre.
 

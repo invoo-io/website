@@ -106,10 +106,12 @@ Si tienes clientes que te aplican retención en sus facturas —el 15% estándar
 
 Hay una casilla que casi nadie conoce y que puede reducir tu pago. Si tus ingresos netos del año anterior fueron bajos, tienes derecho a esta deducción:
 
-- Rendimiento neto hasta €9.000: **€100 por trimestre**
-- Entre €9.001 y €10.000: **€75 por trimestre**
-- Entre €10.001 y €11.000: **€50 por trimestre**
-- Entre €11.001 y €12.000: **€25 por trimestre**
+| Rendimiento neto del año anterior | Deducción por trimestre |
+|---|---|
+| Hasta €9.000 | **€100** |
+| €9.001 – €10.000 | **€75** |
+| €10.001 – €11.000 | **€50** |
+| €11.001 – €12.000 | **€25** |
 
 Si es tu primer año de actividad, el rendimiento del año anterior es cero, por lo que **aplicas automáticamente la deducción de €100 por trimestre**.
 
@@ -241,10 +243,12 @@ La Declaración de la Renta al año siguiente es el verdadero cierre de cuentas.
 
 Los cuatro plazos del ejercicio 2026 son:
 
-- **Q1**: del 1 al 20 de abril de 2026 (domiciliación hasta el 15 de abril)
-- **Q2**: del 1 al 20 de julio de 2026 (domiciliación hasta el 15 de julio)
-- **Q3**: del 1 al 20 de octubre de 2026 (domiciliación hasta el 15 de octubre)
-- **Q4**: del 1 al 30 de enero de 2027 (domiciliación hasta el 25 de enero — el cuarto trimestre tiene 10 días extra)
+| Trimestre | Periodo de presentación | Domiciliación hasta |
+|---|---|---|
+| **Q1** | 1 – 20 de abril de 2026 | 15 de abril |
+| **Q2** | 1 – 20 de julio de 2026 | 15 de julio |
+| **Q3** | 1 – 20 de octubre de 2026 | 15 de octubre |
+| **Q4** | 1 – 30 de enero de 2027 | 25 de enero |
 
 Si te pasa el plazo, presenta cuanto antes de forma voluntaria. El recargo por presentación extemporánea voluntaria es del **1% por cada mes de retraso** acumulado; pasado un año, sube al 15% fijo más intereses de demora. Eso sí: si Hacienda te detecta antes de que presentes tú, el régimen cambia completamente — ya no es recargo sino sanción: **50%** en infracciones leves, hasta **150%** en infracciones muy graves con ocultación o medios fraudulentos.
 

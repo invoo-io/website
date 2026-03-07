@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound, redirect } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import KeyTakeaways from "@/components/blog/KeyTakeaways";
@@ -146,6 +147,18 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
         </h2>
       );
     },
+    // Wrap tables in a scrollable container for mobile responsiveness
+    table: ({
+      children,
+      ...props
+    }: {
+      children?: ReactNode;
+      [key: string]: unknown;
+    }) => (
+      <div className="table-wrapper">
+        <table {...props}>{children}</table>
+      </div>
+    ),
     // Content components for better article readability
     Accordion,
     AccordionGroup,
@@ -227,7 +240,11 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
               {/* Article Content - MDX Rendering with Custom Components */}
               <div className="blog-content">
-                <MDXRemote source={post.content} components={mdxComponents} />
+                <MDXRemote
+                  source={post.content}
+                  components={mdxComponents}
+                  options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+                />
               </div>
 
               {/* Tags */}

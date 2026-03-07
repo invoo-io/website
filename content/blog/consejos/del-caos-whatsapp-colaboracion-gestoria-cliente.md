@@ -57,6 +57,14 @@ Los problemas reportados muestran un patrón claro. **El 67% reporta documentos 
 
 El coste anual por autónomo es brutal: **44.4 horas anuales perdidas**. A €35 por hora de valor de tiempo, son **€1,554 en pérdidas**. Y esto es solo el autónomo—el coste para la gestoría es aún mayor.
 
+| Causa de pérdida de tiempo | Horas/mes |
+|---|---|
+| Buscar facturas y documentos en chats | 1,4 h |
+| Responder a "me falta X documento" | 0,9 h |
+| Explicar contexto perdido en conversación | 0,8 h |
+| Resolver malentendidos por falta de trazabilidad | 0,6 h |
+| **Total** | **3,7 h** |
+
 ### Cómo llegamos aquí: breve historia de un fracaso anunciado
 
 Entre 2010 y 2015, la era del email, el flujo era caótico. El gestor pedía facturas en PDF por email, el autónomo adjuntaba 15 archivos con nombres tipo "Factura_cliente_final_v2.pdf", el gestor preguntaba "¿Este PDF es de marzo o abril?", y el autónomo volvía a abrir todos los PDFs para comprobarlo. **Los problemas clave:** hilos de email imposibles de seguir, archivos con nombres inconsistentes, respuestas cada 24-48 horas, y cero estructura.
@@ -233,13 +241,20 @@ Miedo: "Si me obligan a usar software certificado, me van a clavar €50/mes."
 
 Realidad del mercado en enero 2026: hemos analizado en detalle [por qué el software de facturación español cuesta más](/es/blog/analisis/por-que-software-facturacion-espanol-cuesta-mas) que en otros países de Europa.
 
-Software Verifactu con colaboración con gestoría: Invoo a €10.90/mes con dashboard gestoría incluido, Quipu entre €40-80/mes con acceso colaboradores incluido en tier medio, Holded entre €35-99/mes con acceso gestoría incluido en tier alto, Billin entre €29-89/mes con acceso gestoría según tier.
+| Software | Precio/mes | Colaboración gestoría |
+|---|---|---|
+| **Invoo** | €10,90 | Dashboard gestoría incluido |
+| **Quipu** | €40–80 | Acceso colaboradores (tier medio) |
+| **Holded** | €35–99 | Acceso gestoría (tier alto) |
+| **Billin** | €29–89 | Según tier |
+| **App AEAT** | Gratis | Sin colaboración (exportación manual) |
 
-Alternativa gratuita: la app de la AEAT es gratis pero sin features de colaboración con gestoría, tendrás que exportar y mandar manualmente.
+Análisis coste-beneficio real:
 
-Análisis coste-beneficio real: si pagas €10.90/mes como ejemplo Invoo, el coste anual es €130.80. El ahorro en tiempo es 2.5 horas mensuales por €35/hora por 12 meses equivalentes a **€1,050 anuales**. **Beneficio neto: +€919 anuales.**
-
-Si usas app gratuita AEAT, el coste es €0 pero el ahorro en tiempo es solo 0.5 horas mensuales por €35/hora por 12 meses equivalentes a **€210 anuales** porque solo ganas rapidez versus Excel pero sigues perdiendo tiempo en comunicación con gestoría. Beneficio neto: +€210 anuales.
+| Opción | Coste anual | Ahorro en tiempo | Beneficio neto |
+|---|---|---|---|
+| Software con colaboración (ej. Invoo) | €130,80 | 2,5 h/mes × €35 × 12 = €1.050 | **+€919/año** |
+| App gratuita AEAT | €0 | 0,5 h/mes × €35 × 12 = €210 | **+€210/año** |
 
 **Conclusión:** Incluso el software de pago se paga solo en tiempo ahorrado. La clave es elegir software con **features de colaboración**, no solo cumplimiento de Verifactu.
 

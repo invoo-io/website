@@ -93,31 +93,34 @@ El precio es donde las diferencias se vuelven imposibles de ignorar. **Analicemo
 
 ### Billin: Estructura de precios 2026
 
-El **Plan Gratuito a €0/mes permanente** incluye 3 clientes máximo, 5 productos, sin OCR para gastos, sin facturación internacional, sin API. Funciona para autónomos ultra-ocasionales con volumen mínimo. **Si tienes 4 clientes, necesitas upgrade inmediatamente.**
+| Plan | Precio/mes | Clientes | Productos | OCR/mes | Internacional | API |
+|------|-----------|----------|-----------|---------|--------------|-----|
+| **Gratuito** | €0 | 3 | 5 | 0 | No | No |
+| **Básico** | €6.60 | 5 | 10 | 5 | No | No |
+| **Pro** | €12.50 | 50 | 50 | 50 | Verificar | No |
+| **Ilimitado** | €20 | Ilimitados | Ilimitados | 250 | Verificar | Sí |
+| **Ilimitado Plus** | €83.30 | Ilimitados | Ilimitados | Ilimitado | Verificar | Sí |
 
-El límite de 3 clientes es especialmente restrictivo. Autónomo típico que empieza facturando a 2-3 clientes crece rápidamente a 5-7 cuando el negocio despega. **Descubres el límite exactamente cuando menos quieres pensar en cambiar de software.**
+El límite de 3 clientes en el plan gratuito es especialmente restrictivo. Autónomo típico que empieza con 2-3 clientes crece a 5-7 cuando el negocio despega — **descubres el límite exactamente cuando menos quieres pensar en cambiar de software.**
 
-El **Plan Básico a €6.60/mes** amplía a 5 clientes, 10 productos, 5 escaneos OCR mensuales. **Este es el verdadero punto de entrada para autónomos profesionales**, no el gratuito. Si tienes 6 clientes, subes a Pro. Si escaneas 6 tickets de gastos mensuales, superas el límite OCR.
+**El Plan Básico (€6.60/mes) es el verdadero punto de entrada para autónomos profesionales**, no el gratuito. Pero la restricción de 5 OCR mensuales se agota rápido: si registras software (€50), móvil (€40), internet (€35), comidas (€80), formación (€100), ya llevas 5 gastos — y estamos solo en la primera semana del mes. Como explicamos en [15 deducciones fiscales que autónomos desaprovechan](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana/), no registrar gastos puede costarte €1,200-1,800 anuales.
 
-La restricción de 5 OCR mensuales puede parecer suficiente hasta que empiezas a rastrear gastos deducibles seriamente. **Como explicamos en [15 deducciones fiscales que autónomos desaprovechan](/es/blog/consejos/15-deducciones-fiscales-autonomos-espana/)**, no registrar gastos puede costarte €1,200-1,800 anuales. Pero si registras software (€50), móvil (€40), internet (€35), comidas (€80), formación (€100), ya llevas 5 gastos—y estamos solo en la primera semana del mes.
+**A €12.50/mes el Plan Pro, la comparación con Invoo (€10.90/mes sin límites) se vuelve muy interesante.** El Ilimitado Plus (€83.30/mes) está diseñado para pymes, no autónomos.
 
-El **Plan Pro a €12.50/mes** incluye 50 clientes, 50 productos, 50 OCR mensuales. Para autónomos con volumen medio-alto, este plan elimina la ansiedad de límites. **Pero a €12.50/mes, la comparación con Invoo (€10.90/mes sin límites) se vuelve interesante.**
-
-Los planes superiores: **Ilimitado a €20/mes** (clientes y productos ilimitados, 250 OCR), **Ilimitado Plus a €83.30/mes** (todo anterior más soporte prioritario). Este último está diseñado para pymes pequeñas, no autónomos.
-
-**Costes ocultos importantes:** Kit Digital. Algunos usuarios reportan en Trustpilot que el precio con Kit Digital es **€1,000/año versus €240 estándar**—una diferencia significativa que no está clara hasta después de contratar. Una reseña verificada dice literalmente: "Es una auténtica estafa cuando intentas acceder mediante Kit Digital."
+**Costes ocultos importantes:** Kit Digital. Algunos usuarios reportan en Trustpilot que el precio con Kit Digital es **€1,000/año versus €240 estándar** — una diferencia significativa que no está clara hasta después de contratar. Una reseña verificada dice literalmente: "Es una auténtica estafa cuando intentas acceder mediante Kit Digital."
 
 ### Invoo: Estructura de precios 2026
 
 La estructura de Invoo es deliberadamente simple y transparente. Sin letra pequeña.
 
-El **Plan Free a €0/mes permanente** ofrece 3 facturas mensuales—útil para probar la plataforma o autónomos ultra-ocasionales. Sin límites artificiales de clientes o productos—solo 3 facturas/mes. **Importante: el plan gratuito no incluye Verifactu** (el coste de la API de AEAT hace inviable ofrecerlo gratis). Si necesitas cumplimiento Verifactu, necesitas Plan Pro.
+| Plan | Precio/mes | Usuarios | Facturas | OCR gastos | Internacional | Verifactu | Dashboard gestoría |
+|------|-----------|----------|----------|------------|--------------|-----------|-------------------|
+| **Free** | €0 | 1 | 3/mes | No | Sí | No | No |
+| **Pro Autónomos** | €10.90 (€5.45 con dto.) | 1 | Ilimitadas | Ilimitado | Sí | Completo | Gratis siempre |
+| **Pro PYMES** | €20.90 | 2 | Ilimitadas | Ilimitado | Sí | Completo | Gratis siempre |
+| **Premium PYMES** | €40.90 | 4 | Ilimitadas | Ilimitado | Sí | Completo | Gratis siempre |
 
-El **Plan Pro Autónomos a €10.90/mes** (actualmente €5.45 con 50% descuento de lanzamiento) es donde está el valor real. **Incluye facturas ilimitadas, clientes ilimitados, productos ilimitados, gastos ilimitados con OCR móvil, dashboard gratuito para tu gestoría, facturación internacional completa, app móvil, soporte humano incluido, cumplimiento Verifactu completo.**
-
-No hay asteriscos. No hay límites por plan. No hay "paquetes OCR adicionales". Un precio, todo incluido.
-
-Para pequeñas sociedades, el **Plan Pro PYMES a €20.90/mes** incluye 2 usuarios. El **Plan Premium PYMES a €40.90/mes** amplía a 4 usuarios. Lo distintivo: **Dashboard para Gestorías completamente gratuito siempre** sin importar cuántos clientes gestionen.
+**Importante: el plan gratuito no incluye Verifactu** (el coste de la API de AEAT hace inviable ofrecerlo gratis). Si necesitas cumplimiento Verifactu, necesitas Plan Pro. No hay asteriscos. No hay límites por plan. No hay "paquetes OCR adicionales". Un precio, todo incluido.
 
 ### Comparación directa: Autónomo típico
 
@@ -150,20 +153,18 @@ El ahorro de **€19.20 anuales es modesto**. Pero lo importante no es el ahorro
 
 Autónomo que empieza con 3 clientes y crece a 15 en 3 años (crecimiento normal).
 
-**Billin total 3 años:**
-- Año 1 (3-5 clientes): Plan Básico €6.60/mes × 12 = €79.20
-- Año 2 (5-12 clientes): Plan Pro €12.50/mes × 12 = €150
-- Año 3 (12-15 clientes): Plan Pro €12.50/mes × 12 = €150
-- **Total: €379.20**
+| Periodo | Billin | Invoo |
+|---------|--------|-------|
+| Año 1 (3-5 clientes) | Plan Básico: €6.60/mes × 12 = **€79.20** | Plan Pro: €10.90/mes × 12 = **€130.80** |
+| Año 2 (5-12 clientes) | Plan Pro: €12.50/mes × 12 = **€150** | Plan Pro: €10.90/mes × 12 = **€130.80** |
+| Año 3 (12-15 clientes) | Plan Pro: €12.50/mes × 12 = **€150** | Plan Pro: €10.90/mes × 12 = **€130.80** |
+| **Total 3 años** | **€379.20** | **€392.40** |
+| Dashboard gestoría | No incluido | **€0** (incluido) |
+| OCR ilimitado | No (límite 50/mes en Pro) | **€0** (incluido) |
+| Facturación internacional | Limitada (verificar) | **€0** (incluido) |
+| **Con descuento lanzamiento Invoo** | — | €5.45/mes × 36 = **€196.20** |
 
-**Invoo total 3 años:**
-- Plan Pro Autónomos: €10.90/mes × 36 = **€392.40**
-- Sin cambios de plan necesarios independiente de crecimiento
-- Dashboard gestoría: €0 (incluido)
-- OCR ilimitado: €0 (incluido)
-- Facturación internacional: €0 (incluido)
-
-**Con precio estándar, Billin es €13 más barato en 3 años.** Pero con descuento lanzamiento Invoo (€5.45/mes × 36 = €196.20), **ahorro de €183 con Invoo más todas las funcionalidades sin restricciones.**
+**Con precio estándar, Billin es €13 más barato en 3 años.** Pero con descuento lanzamiento Invoo (€196.20 total), **ahorro de €183 con Invoo más todas las funcionalidades sin restricciones.**
 
 La diferencia real no está solo en precio, sino en **tranquilidad operativa**. Con Invoo no piensas "¿he superado mi límite de clientes?", "¿he gastado mis 50 OCR este mes?", "¿puedo facturar a este cliente suizo?". Simplemente facturas.
 

@@ -100,19 +100,21 @@ Si multiplicas esto por luz, agua, gas, internet y teléfono, llegas a €200-30
 
 La ley enumera específicamente qué suministros de vivienda son deducibles para autónomos. **No todos los gastos de tu casa entran en esta regla**.
 
-### Suministros deducibles con el 30%
-
-Estos gastos aplican la fórmula completa (proporción × 30% × factura):
-
-**Electricidad (luz):** Factura mensual del suministro eléctrico. Requisito: contrato a tu nombre.
-
-**Agua:** Factura del suministro de agua. Incluye canon de saneamiento y basuras si viene en la misma factura.
-
-**Gas:** Gas natural o butano si lo usas en tu vivienda. Debe ser suministro regular, no bombonas esporádicas sin factura.
-
-**Internet:** Conexión de fibra, ADSL o similar. Solo el servicio básico de datos, no paquetes de televisión o contenidos de entretenimiento.
-
-**Teléfono fijo:** Si tienes línea fija de teléfono en tu domicilio. Importante: solo si es uso profesional demostrable.
+| Gasto | Fórmula de deducción | Notas |
+|-------|----------------------|-------|
+| **Electricidad** | Proporción × 30% × base | Contrato a tu nombre obligatorio |
+| **Agua** | Proporción × 30% × base | Incluye canon saneamiento si va en la misma factura |
+| **Gas** | Proporción × 30% × base | Suministro regular; bombonas sin factura no válidas |
+| **Internet** | Proporción × 30% × base | Solo datos; no paquetes de TV o entretenimiento |
+| **Teléfono fijo** | Proporción × 30% × base | Solo si hay uso profesional demostrable |
+| **IBI** | Proporción directa (sin 30%) | Solo propietarios |
+| **Gastos de comunidad** | Proporción directa (sin 30%) | Coste fijo de propiedad |
+| **Seguro de hogar** | Proporción directa (sin 30%) | Proporción de la prima anual |
+| **IVA de suministros** | Solo proporción (sin 30%) | Novedad Tribunal Supremo julio 2025 |
+| Capital de hipoteca | **No deducible** | No es gasto, es pago de deuda |
+| Reformas generales | **No deducible** | Salvo que sean exclusivamente del espacio profesional |
+| Muebles personales, electrodomésticos | **No deducible** | Sofá, cama, televisión, nevera, lavadora... |
+| Limpieza doméstica | **No deducible** | Salvo que sea solo del espacio profesional |
 
 ### El problema del teléfono móvil
 
@@ -122,27 +124,7 @@ Si usas tu móvil personal también para trabajo, puedes deducir una proporción
 
 **Requisito crítico:** Hacienda exige demostrar el uso profesional. Si solo tienes un móvil y lo usas para todo, **la proporción del 50% genera conflictos en inspección**. La DGT acepta deducción con una sola línea si demuestras que el uso personal es "accesorio e irrelevante", pero la recomendación práctica de la mayoría de gestorías sigue siendo tener dos contratos diferenciados.
 
-### Gastos de vivienda SIN el coeficiente del 30%
-
-Estos se deducen a proporción simple (sin multiplicar por 30%):
-
-**IBI (Impuesto de Bienes Inmuebles):** Si eres propietario, deduces (m² despacho / m² totales) × IBI anual. Ejemplo: 20% de vivienda afecta, IBI de €500 → deduces €100.
-
-**Gastos de comunidad:** Igual que el IBI. Proporción directa sin el 30%. Ejemplo: 20% de vivienda, comunidad €600 anuales → deduces €120.
-
-**Seguro de hogar:** Proporción de la prima anual. 20% de €300 = €60 deducibles.
-
-Estos gastos no tienen el coeficiente del 30% porque **no son suministros variables por uso**, sino costes fijos de la propiedad. La lógica es diferente.
-
-### Qué NO puedes deducir
-
-Aunque trabajes desde casa, estos gastos NO son deducibles bajo ningún concepto:
-
-- Cuota de la hipoteca (capital): no es gasto, es pago de deuda. Los intereses hipotecarios SÍ son deducibles proporcionalmente si tu vivienda está declarada como afecta en el modelo 036
-- Reformas o mejoras del inmueble (salvo que sean exclusivamente del espacio profesional)
-- Muebles de uso personal (sofá, cama, televisión)
-- Electrodomésticos generales (nevera, lavadora)
-- Limpieza doméstica (salvo que demuestres que es solo del espacio profesional)
+Los gastos de IBI, comunidad y seguro no tienen el coeficiente del 30% porque **no son suministros variables por uso**, sino costes fijos de la propiedad. Los intereses hipotecarios SÍ son deducibles proporcionalmente si tu vivienda está declarada como afecta en el modelo 036.
 
 ---
 

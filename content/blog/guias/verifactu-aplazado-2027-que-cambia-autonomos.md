@@ -57,9 +57,10 @@ Ahora, apenas unos meses después, el Gobierno anuncia un segundo retraso. **Ver
 
 El nuevo calendario establece dos fechas clave:
 
-**1 de enero de 2027 para sociedades mercantiles.** Esto incluye SL, SA y otras formas jurídicas societarias. Si tu negocio está constituido como sociedad, tendrás que tener Verifactu implementado para empezar 2027.
-
-**1 de julio de 2027 para autónomos** (trabajadores por cuenta propia). Si facturas como autónomo persona física, **tienes seis meses más de margen** respecto a las sociedades.
+| Tipo de negocio | Fecha límite | Plazo adicional |
+|-----------------|--------------|-----------------|
+| **Sociedades mercantiles** (SL, SA y otras formas jurídicas societarias) | **1 de enero de 2027** | — |
+| **Autónomos** (trabajadores por cuenta propia) | **1 de julio de 2027** | 6 meses más que las sociedades |
 
 Este calendario escalonado busca facilitar la transición y evitar el colapso que supondría que todos los negocios de España adoptaran el sistema simultáneamente.
 

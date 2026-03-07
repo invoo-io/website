@@ -9,6 +9,7 @@ import { ProcessSection } from "@/components/sections/ProcessSection";
 import PricingSection from "@/components/sections/PricingSection";
 import { AudienceSegmentationSection } from "@/components/sections/AudienceSegmentationSection";
 import { FinalCTASection } from "@/components/sections/FinalCTASection";
+import { ResourcesSection } from "@/components/sections/ResourcesSection";
 import Footer from "@/components/layout/Footer";
 import GradientText from "@/components/ui/GradientText";
 import { JsonLd } from "@/components/utilities/JsonLd";
@@ -165,7 +166,10 @@ export default async function Home({
       {/* Section 7: Pricing */}
       <PricingSection variant="section" />
 
-      {/* Section 8: Final CTA */}
+      {/* Section 8: Resources (Articles + Calculators) */}
+      <ResourcesSection locale={locale} />
+
+      {/* Section 9: Final CTA */}
       <FinalCTASection locale={locale} />
 
       <Footer locale={locale} />

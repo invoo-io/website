@@ -173,25 +173,14 @@ Base imponible + IVA - Retención IRPF:
 
 ### Tres ejemplos comparativos
 
-**Ejemplo A: Miguel, arquitecto veterano (15%)**
-- Base imponible: 1.000€
-- IVA 21%: +210€
-- Retención IRPF 15%: -150€
-- **Total a cobrar: 1.060€**
-
-**Ejemplo B: Ana, diseñadora nueva (7% comunicado)**
-- Base imponible: 1.000€
-- IVA 21%: +210€
-- Retención IRPF 7%: -70€
-- **Total a cobrar: 1.140€**
+| | **Miguel** (veterano, 15%) | **Ana** (nueva, 7%) | **Javier** (particular, 0%) |
+|---|---|---|---|
+| Base imponible | 1.000€ | 1.000€ | 1.000€ |
+| IVA 21% | +210€ | +210€ | +210€ |
+| Retención IRPF | −150€ | −70€ | 0€ |
+| **Total a cobrar** | **1.060€** | **1.140€** | **1.210€** |
 
 Ana cobra 80€ más que Miguel por el mismo trabajo. **No es que pague menos impuestos**; simplemente adelanta menos a Hacienda durante el año.
-
-**Ejemplo C: Javier, programador con cliente particular (sin retención)**
-- Base imponible: 1.000€
-- IVA 21%: +210€
-- Retención IRPF: 0€
-- **Total a cobrar: 1.210€**
 
 Javier cobra el importe íntegro, pero deberá declarar estos ingresos en su [Modelo 130 trimestral](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos/) y realizar el pago fraccionado correspondiente.
 

@@ -91,15 +91,17 @@ El precio es donde las diferencias se vuelven imposibles de ignorar. **Analicemo
 
 ### Holded: Estructura de precios 2026
 
-El **Plan Plus a €15/mes** incluye 1 usuario y 250 facturas anuales (unas 20-21 mensuales), con un único banco sincronizado. Este plan puede funcionar para autónomos con volumen muy bajo, aunque la mayoría probablemente necesitarán planes superiores.
+| Plan | Precio/mes | Usuarios | Facturas/año | Bancos |
+|------|-----------|----------|-------------|--------|
+| **Plus** | €15 | 1 | 250 (~21/mes) | 1 |
+| **Basic** | €29 | 2 | 1,000 (~83/mes) | 5 |
+| **Standard** | €59 | 4 | 3,000 | Ilimitados |
+| **Advanced** | €99 | 7 | 10,000 | Ilimitados |
+| **Premium** | €199 | 15 | Ilimitadas | Ilimitados |
 
-El **Plan Basic a €29/mes** es donde realmente empieza la propuesta seria. Incluye 2 usuarios, 1,000 facturas al año (83 mensuales), 5 bancos sincronizados, y acceso a los módulos principales. **Para la mayoría de autónomos serios, este es el verdadero punto de entrada**, no el Plus destacado en marketing.
+**Para la mayoría de autónomos serios, el Plan Basic (€29/mes) es el verdadero punto de entrada**, no el Plus destacado en marketing. La diferencia de €14 mensuales representa **€168 anuales** que muchos terminan pagando cuando descubren las limitaciones del plan inicial.
 
-La diferencia de €14 mensuales entre Plus y Basic representa **€168 anuales** que muchos terminan pagando cuando descubren las limitaciones del plan inicial.
-
-Los planes superiores escalan rápidamente. El **Plan Standard a €59/mes** amplía a 4 usuarios y 3,000 facturas anuales—necesario cuando creces a equipo pequeño. El **Plan Advanced a €99/mes** ofrece 7 usuarios y 10,000 facturas anuales. El **Plan Premium a €199/mes** incluye 15 usuarios y facturas ilimitadas.
-
-**Módulos adicionales** que incrementan el coste base: Inventario Avanzado (€25/mes adicionales), Punto de Venta TPV (€25/mes por ubicación), Módulo SII para grandes facturadores (€30-50/mes), y **Soporte Premium (€50/mes adicionales)** con tiempos de respuesta garantizados.
+**Módulos adicionales** que incrementan el coste base: Inventario Avanzado (€25/mes), Punto de Venta TPV (€25/mes por ubicación), Módulo SII (€30-50/mes), y **Soporte Premium (€50/mes)** con tiempos de respuesta garantizados.
 
 Un autónomo que necesite el plan Basic más soporte premium pagaría **€79/mes = €948 anuales**. Si añades inventario avanzado, llegas a **€104/mes = €1,248 anuales**.
 
@@ -107,13 +109,14 @@ Un autónomo que necesite el plan Basic más soporte premium pagaría **€79/me
 
 La estructura de Invoo es deliberadamente simple y transparente.
 
-El **Plan Free a €0/mes permanente** ofrece 3 facturas mensuales—genuinamente útil para autónomos muy ocasionales.
+| Plan | Precio/mes | Usuarios | Facturas | OCR gastos | Dashboard gestoría |
+|------|-----------|----------|----------|------------|-------------------|
+| **Free** | €0 | 1 | 3/mes | No | No |
+| **Pro Autónomos** | €10.90 (€5.45 con dto.) | 1 | Ilimitadas | Ilimitado | Gratis siempre |
+| **Pro PYMES** | €20.90 | 2 | Ilimitadas | Ilimitado | Gratis siempre |
+| **Premium PYMES** | €40.90 | 4 | Ilimitadas | Ilimitado | Gratis siempre |
 
-El **Plan Pro Autónomos a €10.90/mes** (actualmente €5.45 con 50% de descuento de lanzamiento) es donde está el valor real para el 90% de autónomos profesionales. **Incluye facturas ilimitadas, gastos ilimitados con OCR móvil, dashboard gratuito para tu gestoría en tiempo real, app móvil completa, soporte humano incluido, y cumplimiento Verifactu completo.**
-
-No hay asteriscos. No hay módulos extra que comprar. No hay letra pequeña.
-
-Para pequeñas sociedades y equipos, el **Plan Pro PYMES a €20.90/mes** incluye 2 usuarios, mientras que el **Plan Premium PYMES a €40.90/mes** amplía a 4 usuarios. Lo más distintivo: **Dashboard para Gestorías completamente gratuito siempre**. Tu gestoría obtiene acceso en tiempo real sin límite, sin costes ocultos, sin necesidad de que pagues más.
+No hay asteriscos. No hay módulos extra que comprar. No hay letra pequeña. **Dashboard para Gestorías completamente gratuito siempre**: tu gestoría obtiene acceso en tiempo real sin límite, sin costes ocultos, sin necesidad de que pagues más.
 
 ### Comparación directa: Autónomo típico
 

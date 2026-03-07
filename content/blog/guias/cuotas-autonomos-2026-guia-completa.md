@@ -61,35 +61,27 @@ El resultado es un sistema de 15 tramos donde la cuota mensual oscila entre 200�
 
 El sistema de cotización por ingresos reales agrupa a los autónomos en 15 tramos según sus rendimientos netos mensuales. **Estos son los importes propuestos para 2026**.
 
-### Tramos de ingresos bajos (cuota congelada respecto a 2025)
+| Rendimiento neto mensual | Cuota mensual | Variación vs 2025 |
+|--------------------------|---------------|-------------------|
+| Hasta 670€ | **200€** | Sin cambios |
+| De 670€ a 900€ | **220€** | Sin cambios |
+| De 900€ a 1.166,70€ | **260€** | Sin cambios |
+| De 1.166,70€ a 1.300€ | **291€** | +3-15€ |
+| De 1.300€ a 1.500€ | **294€** | +3-15€ |
+| De 1.500€ a 1.700€ | **294€** | +3-15€ |
+| De 1.700€ a 1.850€ | **310€** | +3-15€ |
+| De 1.850€ a 2.030€ | **315€** | +3-15€ |
+| De 2.030€ a 2.330€ | **320€** | +3-15€ |
+| De 2.330€ a 2.760€ | **340€** | Subida significativa |
+| De 2.760€ a 3.190€ | **370€** | Subida significativa |
+| De 3.190€ a 3.620€ | **390€** | Subida significativa |
+| De 3.620€ a 4.050€ | **420€** | Subida significativa |
+| De 4.050€ a 6.000€ | **500€** | Subida significativa |
+| Más de 6.000€ | **605€** | Subida significativa |
 
-- **Hasta 670€/mes de rendimiento neto:** Cuota de 200€/mes
-- **De 670€ a 900€/mes:** Cuota de 220€/mes
-- **De 900€ a 1.166,70€/mes:** Cuota de 260€/mes
+A todas estas cuotas base se añade el MEI (0,9%), que suma entre 9€ y 40€ mensuales según tu tramo.
 
 Si tus ingresos netos están por debajo de 1.166,70€ mensuales, **tu cuota no subirá respecto a 2025**. Esta ha sido la principal concesión del Gobierno tras las protestas.
-
-El objetivo es proteger a los autónomos con menores ingresos del incremento.
-
-### Tramos de ingresos medios (subidas moderadas de 3€-15€)
-
-- **De 1.166,70€ a 1.300€/mes:** Cuota de 291€/mes
-- **De 1.300€ a 1.500€/mes:** Cuota de 294€/mes
-- **De 1.500€ a 1.700€/mes:** Cuota de 294€/mes
-- **De 1.700€ a 1.850€/mes:** Cuota de 310€/mes
-- **De 1.850€ a 2.030€/mes:** Cuota de 315€/mes
-- **De 2.030€ a 2.330€/mes:** Cuota de 320€/mes
-
-En estos tramos intermedios, **las subidas oscilan entre 3€ y 15€ mensuales** respecto a 2025. No es una congelación, pero tampoco son los incrementos dramáticos que proponía el plan original.
-
-### Tramos de ingresos altos (subidas más significativas)
-
-- **De 2.330€ a 2.760€/mes:** Cuota de 340€/mes
-- **De 2.760€ a 3.190€/mes:** Cuota de 370€/mes
-- **De 3.190€ a 3.620€/mes:** Cuota de 390€/mes
-- **De 3.620€ a 4.050€/mes:** Cuota de 420€/mes
-- **De 4.050€ a 6.000€/mes:** Cuota de 500€/mes
-- **Más de 6.000€/mes:** Cuota de 605€/mes
 
 Los autónomos con ingresos más altos asumen las mayores subidas en este nuevo sistema. **La lógica es que quien más gana, más aporta al sistema de pensiones**.
 

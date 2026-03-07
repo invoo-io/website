@@ -68,42 +68,26 @@ Además, en estimación directa simplificada, la amortización es obligatoria, n
 
 La tabla que deben usar los autónomos en estimación directa simplificada está aprobada por la [Orden de 27 de marzo de 1998](https://www.boe.es/buscar/doc.php?id=BOE-A-1998-7200). Tiene 10 grupos, aunque los más relevantes para autónomos son los primeros siete. El coeficiente máximo es el porcentaje más alto que puedes aplicar cada año; el período máximo es el plazo más largo que puedes tardar en amortizarlo completamente.
 
-**Grupo 1 - Edificios y otras construcciones**
-Coeficiente máximo: 3% / Período máximo: 68 años. Aplica a locales en propiedad, naves, oficinas compradas. La amortización de inmuebles es lenta precisamente porque duran décadas.
-
-**Grupo 2 - Instalaciones, mobiliario, enseres y resto de inmovilizado material**
-Coeficiente máximo: 10% / Período máximo: 20 años. Aquí entra el mobiliario de oficina (mesas, sillas, estanterías), instalaciones eléctricas, climatización, estanterías o cualquier elemento que no encaje en grupos específicos.
-
-**Grupo 3 - Maquinaria**
-Coeficiente máximo: 12% / Período máximo: 18 años. Aplica a equipos de producción, maquinaria industrial, equipos fotográficos profesionales, impresoras de gran formato.
-
-**Grupo 4 - Elementos de transporte**
-Coeficiente máximo: 16% / Período máximo: 14 años. Vehículos, furgonetas, motocicletas usadas para la actividad. Atención especial a los vehículos, hay una trampa importante que explicamos más adelante.
-
-**Grupo 5 - Equipos informáticos y sistemas y programas informáticos**
-Coeficiente máximo: 26% / Período máximo: 10 años. El grupo más relevante para la mayoría de autónomos: ordenadores, portátiles, tablets, smartphones profesionales y software con vida útil prolongada.
-
-**Grupo 6 - Útiles y herramientas**
-Coeficiente máximo: 30% / Período máximo: 8 años. Herramientas manuales, útiles de trabajo de corta vida útil pero superior a un año.
-
-**Grupos 7 al 10 - Ganadería, frutales, viñedos y cultivos**
-Aplican exclusivamente a actividades agrícolas y ganaderas. Coeficientes entre el 2% y el 16% según el tipo de explotación. Si eres autónomo en estos sectores, consulta la tabla completa porque hay particularidades importantes.
+| Grupo | Descripción | **Coeficiente máximo** | **Período máximo** | Ejemplos típicos |
+|---|---|---|---|---|
+| **1** | Edificios y otras construcciones | 3% | 68 años | Locales en propiedad, naves, oficinas compradas |
+| **2** | Instalaciones, mobiliario, enseres y resto de inmovilizado material | 10% | 20 años | Mobiliario de oficina, instalaciones eléctricas, climatización |
+| **3** | Maquinaria | 12% | 18 años | Equipos de producción, maquinaria industrial, impresoras de gran formato |
+| **4** | Elementos de transporte | 16% | 14 años | Vehículos, furgonetas, motocicletas *(ver trampa del IRPF más adelante)* |
+| **5** | Equipos informáticos y sistemas y programas informáticos | 26% | 10 años | Ordenadores, portátiles, tablets, smartphones profesionales, software |
+| **6** | Útiles y herramientas | 30% | 8 años | Herramientas manuales, útiles de trabajo |
+| **7–10** | Ganadería, frutales, viñedos y cultivos | 2%–16% | Variable | Solo actividades agrícolas y ganaderas |
 
 ### Ejemplos prácticos con euros reales
 
 Vamos a ver cuatro casos concretos para que entiendas cómo funciona en la práctica.
 
-**Portátil €1.500 (Grupo 5, coeficiente máximo 26%)**
-Amortización anual máxima: €1.500 × 26% = **€390 al año**. En cuatro años habrás deducido los €1.500 completos. Si lo compras en octubre, ese año solo deduces 3 meses: €390 × 3/12 = €97,50.
-
-**Vehículo €25.000 (Grupo 4, coeficiente máximo 16%)**
-Amortización anual máxima: €25.000 × 16% = **€4.000 al año**. En unos seis años habrás amortizado el valor completo. Pero aquí hay una trampa que debes conocer antes de declararlo (lo explicamos en el siguiente apartado).
-
-**Mobiliario de oficina €900 (Grupo 2, coeficiente máximo 10%)**
-Amortización anual máxima: €900 × 10% = **€90 al año**. Deduces €90 cada año durante un mínimo de 10 años.
-
-**Software de diseño €600 con licencia perpetua (Grupo 5, coeficiente máximo 26%)**
-Amortización anual máxima: €600 × 26% = **€156 al año**. En unos cuatro años tienes el software completamente amortizado. Las suscripciones anuales de software (Adobe, por ejemplo), en cambio, son gastos corrientes deducibles en el año de pago.
+| Activo | Valor | Grupo | Coeficiente | **Deducción anual máxima** | Nota |
+|---|---|---|---|---|---|
+| **Portátil** | 1.500 € | 5 | 26% | **390 €/año** | Comprado en octubre: solo 3/12 ese año (97,50 €) |
+| **Vehículo profesional** | 25.000 € | 4 | 16% | **4.000 €/año** | Ver trampa del IRPF en el apartado siguiente |
+| **Mobiliario de oficina** | 900 € | 2 | 10% | **90 €/año** | Mínimo 10 años hasta amortización completa |
+| **Software licencia perpetua** | 600 € | 5 | 26% | **156 €/año** | Las suscripciones anuales son gasto corriente, no se amortizan |
 
 ---
 

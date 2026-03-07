@@ -82,88 +82,37 @@ Aquí está la tabla definitiva de los 15 tramos de cotización para 2026, con l
 
 **Tramos bajos (cuotas congeladas respecto a 2025):**
 
-**Tramo 1: Hasta 670€/mes de rendimientos netos**
-- Cuota base: 200€/mes
-- Con MEI 0,9%: ~205,88€/mes
-- Base de cotización: 653,79€ a 816,98€
-
-**Tramo 2: De 670€ a 900€/mes de rendimientos netos**
-- Cuota base: 220€/mes
-- Con MEI 0,9%: ~226,47€/mes
-- Base de cotización: 816,99€ a 900€
-
-**Tramo 3: De 900€ a 1.166,70€/mes de rendimientos netos**
-- Cuota base: 260€/mes
-- Con MEI 0,9%: ~267,64€/mes
-- Base de cotización: 900,01€ a 1.166,70€
+| Tramo | Rendimientos netos/mes | Cuota base | Con MEI 0,9% | Base de cotización |
+|-------|----------------------|------------|--------------|-------------------|
+| **1** | Hasta 670€ | 200€ | ~205,88€ | 653,79€ – 816,98€ |
+| **2** | 670€ – 900€ | 220€ | ~226,47€ | 816,99€ – 900€ |
+| **3** | 900€ – 1.166,70€ | 260€ | ~267,64€ | 900,01€ – 1.166,70€ |
 
 Todas las cuotas se mantienen exactamente igual que en 2025, salvo el pequeño incremento del MEI. Esta congelación total fue una victoria de las asociaciones de autónomos tras las manifestaciones del 30 de noviembre de 2025, que forzaron al Gobierno a abandonar su propuesta inicial de subidas.
 
 **Tramos medios (congelados respecto a 2025):**
 
-**Tramo 4: De 1.166,70€ a 1.300€/mes**
-- Cuota base: 291€/mes
-- Con MEI 0,9%: ~299,64€/mes
-- Base de cotización: 1.166,71€ a 1.300€
-
-**Tramo 5: De 1.300€ a 1.500€/mes**
-- Cuota base: 294€/mes
-- Con MEI 0,9%: ~302,64€/mes
-- Base de cotización: 1.300,01€ a 1.500€
-
-**Tramo 6: De 1.500€ a 1.700€/mes**
-- Cuota base: 294€/mes
-- Con MEI 0,9%: ~302,64€/mes
-- Base de cotización: 1.500,01€ a 1.700€
-
-**Tramo 7: De 1.700€ a 1.850€/mes**
-- Cuota base: 310€/mes
-- Con MEI 0,9%: ~319,12€/mes
-- Base de cotización: 1.700,01€ a 1.850€
-
-**Tramo 8: De 1.850€ a 2.030€/mes**
-- Cuota base: 315€/mes
-- Con MEI 0,9%: ~324,26€/mes
-- Base de cotización: 1.850,01€ a 2.030€
-
-**Tramo 9: De 2.030€ a 2.330€/mes**
-- Cuota base: 320€/mes
-- Con MEI 0,9%: ~329,41€/mes
-- Base de cotización: 2.030,01€ a 2.330€
+| Tramo | Rendimientos netos/mes | Cuota base | Con MEI 0,9% | Base de cotización |
+|-------|----------------------|------------|--------------|-------------------|
+| **4** | 1.166,70€ – 1.300€ | 291€ | ~299,64€ | 1.166,71€ – 1.300€ |
+| **5** | 1.300€ – 1.500€ | 294€ | ~302,64€ | 1.300,01€ – 1.500€ |
+| **6** | 1.500€ – 1.700€ | 294€ | ~302,64€ | 1.500,01€ – 1.700€ |
+| **7** | 1.700€ – 1.850€ | 310€ | ~319,12€ | 1.700,01€ – 1.850€ |
+| **8** | 1.850€ – 2.030€ | 315€ | ~324,26€ | 1.850,01€ – 2.030€ |
+| **9** | 2.030€ – 2.330€ | 320€ | ~329,41€ | 2.030,01€ – 2.330€ |
 
 Estos tramos intermedios también quedan congelados respecto a 2025 gracias a la rectificación del Gobierno, que abandonó su propuesta inicial de subidas de hasta 50€ mensuales en algunos tramos.
 
 **Tramos altos (congelados respecto a 2025):**
 
-**Tramo 10: De 2.330€ a 2.760€/mes**
-- Cuota base: 340€/mes
-- Con MEI 0,9%: ~349,98€/mes
-- Base de cotización: 2.330,01€ a 2.760€
-
-**Tramo 11: De 2.760€ a 3.190€/mes**
-- Cuota base: 370€/mes
-- Con MEI 0,9%: ~380,85€/mes
-- Base de cotización: 2.760,01€ a 3.190€
-
-**Tramo 12: De 3.190€ a 3.620€/mes**
-- Cuota base: 390€/mes
-- Con MEI 0,9%: ~401,43€/mes
-- Base de cotización: 3.190,01€ a 3.620€
-
-**Tramo 13: De 3.620€ a 4.050€/mes**
-- Cuota base: 420€/mes
-- Con MEI 0,9%: ~432,29€/mes
-- Base de cotización: 3.620,01€ a 4.050€
-
-**Tramo 14: De 4.050€ a 6.000€/mes**
-- Cuota base: 500€/mes
-- Con MEI 0,9%: ~514,61€/mes
-- Base de cotización: 4.050,01€ a 6.000€
-
-**Tramo 15: Más de 6.000€/mes**
-- Cuota base: 590€/mes
-- Con MEI 0,9%: ~607,31€/mes
-- Base de cotización: Máximo 5.101,20€ (tope máximo de cotización)
+| Tramo | Rendimientos netos/mes | Cuota base | Con MEI 0,9% | Base de cotización |
+|-------|----------------------|------------|--------------|-------------------|
+| **10** | 2.330€ – 2.760€ | 340€ | ~349,98€ | 2.330,01€ – 2.760€ |
+| **11** | 2.760€ – 3.190€ | 370€ | ~380,85€ | 2.760,01€ – 3.190€ |
+| **12** | 3.190€ – 3.620€ | 390€ | ~401,43€ | 3.190,01€ – 3.620€ |
+| **13** | 3.620€ – 4.050€ | 420€ | ~432,29€ | 3.620,01€ – 4.050€ |
+| **14** | 4.050€ – 6.000€ | 500€ | ~514,61€ | 4.050,01€ – 6.000€ |
+| **15** | Más de 6.000€ | 590€ | ~607,31€ | Máx. 5.101,20€ |
 
 Los autónomos con ingresos más altos asumen las cuotas más elevadas del sistema. La lógica es redistributiva: quien más gana, más aporta. Sin embargo, existe un techo: aunque ganes 10.000€ al mes, la base máxima de cotización está limitada a 5.101,20€, lo que resulta en una cuota máxima de aproximadamente 607€ mensuales.
 

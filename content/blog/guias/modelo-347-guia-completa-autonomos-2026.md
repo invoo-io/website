@@ -162,15 +162,10 @@ Si llegas tarde al plazo, preséntalo igualmente cuanto antes de forma voluntari
 
 <WarningCard title="Sanciones por no presentar o presentar mal">
 
-**Presentación voluntaria fuera de plazo:**
-- 10€ por cada dato o conjunto omitido
-- Mínimo: 150€
-- Máximo: 10.000€
-
-**Presentación tras requerimiento de Hacienda:**
-- 20€ por cada dato o conjunto omitido
-- Mínimo: 300€
-- Máximo: 20.000€
+| Situación | Por dato omitido | Mínimo | Máximo |
+|-----------|-----------------|--------|--------|
+| **Presentación voluntaria** fuera de plazo | 10€ | 150€ | 10.000€ |
+| **Presentación tras requerimiento** de Hacienda | 20€ | 300€ | 20.000€ |
 
 **Ejemplo:** Olvidaste declarar 50 operaciones y te das cuenta en abril. Si presentas voluntariamente: 50 × 10€ = 500€. Si esperas al requerimiento: 50 × 20€ = 1.000€.
 

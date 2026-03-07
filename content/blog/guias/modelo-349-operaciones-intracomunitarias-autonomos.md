@@ -108,11 +108,13 @@ Un ejemplo que genera mucha confusión: algunas plataformas de freelancers factu
 
 El Modelo 349 usa códigos de operación para clasificar cada tipo de transacción. Conocerlos te evita errores al rellenar el formulario:
 
-- **E** — Entregas intracomunitarias de bienes (tú vendes bienes a empresa de la UE)
-- **A** — Adquisiciones intracomunitarias de bienes (tú compras bienes a empresa de la UE)
-- **S** — Servicios prestados a empresas de la UE (tú facturas servicios a cliente europeo)
-- **I** — Servicios adquiridos de empresas de la UE (tú recibes servicios de proveedor europeo)
-- **T** — Operaciones triangulares (intermedias en cadenas de suministro)
+| Código | Tipo de operación |
+|---|---|
+| **E** | Entregas intracomunitarias de bienes (tú vendes bienes a empresa de la UE) |
+| **A** | Adquisiciones intracomunitarias de bienes (tú compras bienes a empresa de la UE) |
+| **S** | Servicios prestados a empresas de la UE (tú facturas servicios a cliente europeo) |
+| **I** | Servicios adquiridos de empresas de la UE (tú recibes servicios de proveedor europeo) |
+| **T** | Operaciones triangulares (intermedias en cadenas de suministro) |
 
 Para la mayoría de autónomos de servicios, el código relevante es **S** para lo que facturas y **I** para lo que recibes de proveedores europeos. Un freelance de diseño que cobra de empresas alemanas y paga a un hosting holandés usa ambos códigos.
 
@@ -132,10 +134,12 @@ Los plazos del Modelo 349 se articulan en dos periodicidades. El umbral para det
 
 Si el importe total de tus entregas y servicios prestados a empresas de la UE no supera **50.000 euros** en el trimestre en curso ni en ninguno de los cuatro trimestres anteriores, presentas el Modelo 349 trimestralmente. Los plazos coinciden exactamente con los del [Modelo 303](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos/):
 
-- Primer trimestre: del 1 al 20 de abril
-- Segundo trimestre: del 1 al 20 de julio
-- Tercer trimestre: del 1 al 20 de octubre
-- Cuarto trimestre: del 1 al 30 de enero del año siguiente
+| Trimestre | Plazo de presentación |
+|---|---|
+| Primer trimestre | 1 – 20 de abril |
+| Segundo trimestre | 1 – 20 de julio |
+| Tercer trimestre | 1 – 20 de octubre |
+| Cuarto trimestre | 1 – 30 de enero del año siguiente |
 
 ### Periodicidad mensual
 

@@ -199,11 +199,11 @@ Una vez completado el alta en Hacienda, el siguiente paso es darte de alta en el
 
 El RETA es el sistema de Seguridad Social específico para trabajadores autónomos. Cotizar en el RETA te da derecho a prestaciones sociales y construye tu pensión futura. El formulario para inscribirte en el RETA es el **Modelo TA.0521**, que tiene varias versiones según tu situación:
 
-**TA.0521-1:** Autónomos generales (la versión más común si eres persona física trabajando por cuenta propia)
-
-**TA.0521-5:** Autónomos societarios (administradores de sociedades limitadas u otras formas jurídicas)
-
-**TA.0521-2:** Autónomos colaboradores (familiares que trabajan en el negocio de otro autónomo)
+| Formulario | Para quién |
+|------------|-----------|
+| **TA.0521-1** | Autónomos generales — la versión más común para personas físicas que trabajan por cuenta propia |
+| **TA.0521-5** | Autónomos societarios — administradores de SL u otras formas jurídicas |
+| **TA.0521-2** | Autónomos colaboradores — familiares que trabajan en el negocio de otro autónomo |
 
 Si eres un freelance o profesional que se da de alta por primera vez, usarás la versión TA.0521-1.
 

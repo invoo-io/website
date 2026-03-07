@@ -146,6 +146,12 @@ Si quieres profundizar en cómo funciona exactamente el sistema de reporte de Bi
 
 Si decides abrir una cuenta separada—que es lo recomendable—estas son las opciones más interesantes en 2026 para autónomos. Hemos filtrado por **cuentas sin comisiones o con condiciones alcanzables** y beneficios específicos para autónomos.
 
+| Banco | Rentabilidad | Condiciones | Ideal para |
+|-------|-------------|-------------|------------|
+| **Bankinter** | **5% TAE año 1**, 2% TAE desde año 2 (hasta €10.000) | Ingresos ≥€800/mes, 3 recibos/trimestre, 3 pagos tarjeta/trimestre | Rentabilizar el colchón fiscal acumulado |
+| **Sabadell** | **2% TIN 12 meses**, sin comisiones con vinculación | Nuevo cliente + domiciliar nómina o saldo medio €5.000 | Autónomos nuevos que buscan reducir costes el primer año |
+| **Openbank** | **2,27% TAE 6 meses** (hasta €100.000) — cuenta de ahorro | Nuevo cliente. Sin vinculación ni domiciliación | Acumular colchón fiscal con rentabilidad (necesita cuenta corriente aparte) |
+
 ### Bankinter Cuenta Nómina Autónomos
 
 **Rentabilidad destacada:**
@@ -190,9 +196,10 @@ Ser nuevo cliente. Sin requisitos de vinculación ni domiciliación.
 
 N26 y Revolut son populares entre autónomos por su app intuitiva y gestión digital. Sin embargo, su compatibilidad con el sistema fiscal español difiere:
 
-**Revolut** ya es entidad colaboradora de la AEAT desde 2025, por lo que **sí permite domiciliar el pago de impuestos** (IVA trimestral, pagos fraccionados, etc.). Es una opción viable como cuenta profesional principal si prefieres banca digital.
-
-**N26**, en cambio, **no es entidad colaboradora de la AEAT** para domiciliaciones bancarias. Esto significa que no puedes domiciliar el pago de impuestos directamente desde tu cuenta N26. Necesitarás una cuenta en banco español tradicional para la relación con Hacienda.
+| Banco | Entidad colaboradora AEAT | Domiciliar impuestos | Uso recomendado |
+|-------|--------------------------|----------------------|-----------------|
+| **Revolut** | Sí (desde 2025) | Sí | Cuenta profesional principal viable |
+| **N26** | No | No | Solo cuenta complementaria |
 
 Si usas N26, mantenla como cuenta complementaria. Con Revolut, verifica que tu cuenta cumple los requisitos para domiciliaciones fiscales antes de configurarla como cuenta principal.
 

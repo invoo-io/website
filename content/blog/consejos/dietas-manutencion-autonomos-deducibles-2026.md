@@ -48,10 +48,12 @@ La [Ley 6/2017 de Reformas Urgentes del Trabajo Autónomo](https://www.boe.es/di
 
 Estos son los cuatro límites vigentes para 2026:
 
-- **España sin pernocta:** €26,67 por día
-- **España con pernocta:** €53,34 por día
-- **Extranjero sin pernocta:** €48,08 por día
-- **Extranjero con pernocta:** €91,35 por día
+| Situación | Límite diario |
+|-----------|--------------|
+| **España sin pernocta** | €26,67 |
+| **España con pernocta** | €53,34 |
+| **Extranjero sin pernocta** | €48,08 |
+| **Extranjero con pernocta** | €91,35 |
 
 Estos importes son límites máximos, no cantidades fijas. Si comes por €18, deduces €18. Si comes por €35 en España sin pernocta, deduces solo €26,67. **El límite actúa como techo, no como base**.
 

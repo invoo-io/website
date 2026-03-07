@@ -142,11 +142,14 @@ Las herramientas digitales también entran aquí: Adobe Creative Cloud, Microsof
 Cuando compras un bien que durará varios años, no puedes deducir el 100% el primer año. **Se deduce poco a poco según tablas oficiales de amortización**.
 
 **Coeficientes de amortización más comunes:**
-- **Equipos informáticos:** 25% anual (se amortiza en 4 años al coeficiente máximo)
-- **Mobiliario de oficina:** 10% anual (periodo máximo: 20 años)
-- **Maquinaria general:** 12% anual (periodo máximo: 18 años)
-- **Vehículos de transporte:** 16% anual (periodo máximo: 14 años)
-- **Instalaciones:** 10% anual (periodo máximo: 20 años)
+
+| Tipo de bien | Coeficiente máximo | Periodo máximo |
+|---|---|---|
+| Equipos informáticos | 25% anual | 8 años |
+| Mobiliario de oficina | 10% anual | 20 años |
+| Maquinaria general | 12% anual | 18 años |
+| Vehículos de transporte | 16% anual | 14 años |
+| Instalaciones | 10% anual | 20 años |
 
 **Ejemplo práctico:**
 Compras un portátil por €1,200 en febrero de 2026. Coeficiente máximo: 25% anual. Deducción anual: €1,200 × 25% = €300 cada año durante 4 años.
@@ -215,13 +218,10 @@ Para un desglose completo con ejemplos paso a paso y la novedad del IVA deducibl
 
 Este es el gasto que más confusión genera. **IVA y IRPF tienen reglas diferentes para vehículos**, y mezclarlas es la causa principal de rechazos en inspección.
 
-**IVA (presunción general):**
-- 50% deducible para turismos (Art. 95.3 Ley IVA)
-- 100% deducible si: transporte de mercancías, taxi/VTC, autoescuela, representante comercial
-
-**IRPF:**
-- Normalmente **0% deducible** salvo que demuestres uso exclusivo profesional
-- O usa el método de **€0,26 por kilómetro** profesional (requiere registro detallado de desplazamientos)
+| Impuesto | Deducción general | Excepciones / alternativa |
+|---|---|---|
+| **IVA** | 50% para turismos (Art. 95.3 Ley IVA) | 100% si transporte de mercancías, taxi/VTC, autoescuela o representante comercial |
+| **IRPF** | 0% salvo uso exclusivo profesional | Método de €0,26/km profesional (requiere registro detallado de desplazamientos) |
 
 **Ejemplo con método kilometraje:**
 - Kilómetros profesionales en 2026: 8,000 km
@@ -244,10 +244,10 @@ Las dietas son uno de los gastos más vigilados por Hacienda. **Si las haces bie
 
 **Límites oficiales de dietas 2026 (Reglamento IRPF, Art. 9):**
 
-**España sin pernocta:** €26,67/día
-**España con pernocta:** €53,34/día
-**Extranjero sin pernocta:** €48,08/día
-**Extranjero con pernocta:** €91,35/día
+| Destino | Sin pernocta | Con pernocta |
+|---|---|---|
+| España | €26,67/día | €53,34/día |
+| Extranjero | €48,08/día | €91,35/día |
 
 **Requisitos obligatorios:**
 1. Desplazamiento a otro municipio (comer en tu ciudad no vale)

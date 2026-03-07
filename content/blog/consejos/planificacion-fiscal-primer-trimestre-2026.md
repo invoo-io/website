@@ -156,12 +156,15 @@ El modelo 130 es tu declaración trimestral de pago fraccionado de IRPF. La fór
 Si el resultado es positivo, pagas. Si es negativo, no pagas pero arrastras ese saldo negativo al siguiente trimestre.
 
 **Ejemplo práctico para Q1 2026:**
-- Ingresos enero-marzo: 12.000€
-- Gastos enero-marzo: 4.500€ (cuota autónomos, software, formación, suministros, material)
-- Rendimiento neto: 7.500€
-- 20% del rendimiento: 1.500€
-- Retenciones aplicadas en facturas: 300€
-- Resultado: 1.500€ - 300€ = **1.200€ a pagar**
+
+| Concepto | Importe |
+|---|---|
+| Ingresos enero–marzo | €12.000 |
+| Gastos enero–marzo (cuota autónomos, software, formación, suministros, material) | −€4.500 |
+| **Rendimiento neto** | **€7.500** |
+| 20% del rendimiento | €1.500 |
+| Retenciones aplicadas en facturas | −€300 |
+| **Resultado a pagar** | **€1.200** |
 
 Si en Q1 pagas 1.200€, en Q2 calcularás enero-junio y restarás esos 1.200€ ya pagados. **El sistema es acumulativo**. Por eso cada gasto que registres en Q1 reduce no solo el pago de abril, sino también el de julio, octubre y enero 2027. Para ver cómo funciona este cálculo con números reales, consulta la [guía completa del Modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/).
 
@@ -236,17 +239,20 @@ Si tienes ingresos por Bizum, PayPal o transferencias sin factura, emite las fac
 ### Compila todos los gastos deducibles con facturas
 
 Lista todos los gastos de enero-marzo que sean deducibles:
-- Cuota de autónomos (enero, febrero, marzo)
-- Gestoría (honorarios del trimestre)
-- Suministros proporcionales (luz, agua, internet)
-- Formación profesional (cursos, certificaciones, libros)
-- Software y herramientas digitales
-- Material de oficina y equipos
-- Gastos de vehículo proporcionales
-- Dietas (comidas de negocio con pago electrónico)
-- Alquiler de local (si lo tienes)
-- Seguros profesionales
-- Gastos bancarios vinculados a tu actividad
+
+| Categoría de gasto | Requisito clave |
+|---|---|
+| Cuota de autónomos (enero, febrero, marzo) | Recibos bancarios coincidentes con el tramo declarado |
+| Gestoría (honorarios del trimestre) | Factura completa con tu NIF |
+| Suministros proporcionales (luz, agua, internet) | Facturas a tu nombre; aplicar proporción de espacio × 30% |
+| Formación profesional (cursos, libros, certificaciones) | Vinculación demostrable con tu actividad |
+| Software y herramientas digitales | Suscripciones anuales deducibles íntegras en el trimestre de pago |
+| Material de oficina y equipos | Factura completa; equipos grandes sujetos a amortización |
+| Gastos de vehículo proporcionales | Registro de desplazamientos; IVA al 50% |
+| Dietas (comidas de negocio) | Pago electrónico obligatorio; factura con NIF; límite 26,67 €/día |
+| Alquiler de local (si lo tienes) | Contrato y factura del propietario |
+| Seguros profesionales | Recibo de prima; sin IVA (exento), íntegro deducible en IRPF |
+| Gastos bancarios vinculados a tu actividad | Extracto bancario de cuenta profesional |
 
 **Crítico**: Cada gasto debe tener factura completa con tu NIF. Los tickets de compra no sirven para gastos superiores a 3.000€. Si compraste un ordenador de 1.500€ y solo tienes ticket, solicita factura completa a la tienda antes del 20 de abril.
 

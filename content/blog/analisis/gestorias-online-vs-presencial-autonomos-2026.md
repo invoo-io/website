@@ -64,10 +64,12 @@ Algunos servicios más premium incluyen videollamadas puntuales con tu asesor. P
 
 Los datos reales del mercado español:
 
-- **TaxDown**: Desde €30/mes
-- **InfoAutónomos**: €24.95/mes
-- **Solo-Autónomos**: €20/mes
-- **Mi Gestoría Online**: €29.95/mes
+| Servicio | Precio mensual |
+|----------|----------------|
+| **TaxDown** | Desde €30/mes |
+| **InfoAutónomos** | €24.95/mes |
+| **Solo-Autónomos** | €20/mes |
+| **Mi Gestoría Online** | €29.95/mes |
 
 **Rango medio: €25-35/mes para servicios básicos.** Esto incluye presentación trimestral de modelos 130/303 y declaración anual de IRPF.
 
@@ -109,10 +111,12 @@ El vínculo personal genera confianza. Muchos autónomos mantienen la misma gest
 
 Los datos de mercado españoles:
 
-- **Rango general**: €80-150/mes
-- **Media nacional**: €100/mes para autónomos con facturación simple
-- **Servicios incluidos**: Presentación trimestral, IRPF anual, consultas telefónicas ilimitadas
-- **Extras comunes**: Modelo 347 (€50-80), libros contables (€30-60), constitución de sociedad (€600-1,200)
+| Concepto | Detalle |
+|----------|---------|
+| **Rango general** | €80-150/mes |
+| **Media nacional** | €100/mes para autónomos con facturación simple |
+| **Servicios incluidos** | Presentación trimestral, IRPF anual, consultas telefónicas ilimitadas |
+| **Extras comunes** | Modelo 347 (€50-80), libros contables (€30-60), constitución de sociedad (€600-1,200) |
 
 **Un autónomo paga entre €960-1,800 anuales** solo en cuota mensual, sin contar extras.
 
@@ -136,45 +140,24 @@ La calidad varía enormemente entre despachos. Algunas gestorías tradicionales 
 
 ## Comparativa directa: Online vs Presencial
 
-### Precio
-
-**Gestoría online**: €25-35/mes (€300-420/año)
-**Gestoría presencial**: €80-150/mes (€960-1,800/año)
+| Criterio | Gestoría online | Gestoría presencial |
+|----------|-----------------|---------------------|
+| **Precio** | €25-35/mes (€300-420/año) | €80-150/mes (€960-1,800/año) |
+| **Comunicación** | Ticket de soporte, email, respuestas en 24-72h | Teléfono directo, respuestas inmediatas o mismo día |
+| **Asesoría proactiva** | Limitada o inexistente | Variable; las buenas gestorías llaman proactivamente |
+| **Accesibilidad** | 24/7 para subir documentos; soporte en horario laboral | Horario comercial (9:00-18:00 típicamente) |
+| **Complejidad que manejan bien** | Facturación simple, pocos clientes, autónomos estándar | Situaciones complejas: ROI, exportaciones, constitución de sociedades |
+| **Tecnología** | Plataformas digitales, dashboards, procesos automatizados | Variable; algunas aún piden facturas por WhatsApp o email |
 
 Ahorro potencial con online: **€640-1,380 anuales**. Para un autónomo que factura €30,000/año, esto representa entre 2-4.6% de ingresos brutos ahorrados.
 
-### Comunicación
-
-**Gestoría online**: Ticket de soporte, email, respuestas en 24-72h
-**Gestoría presencial**: Teléfono directo, respuestas inmediatas o mismo día
-
 **El punto crítico según investigación de mercado:** La falta de comunicación es una de las principales razones por las que los autónomos cambian de gestoría, independientemente del tipo.
-
-### Asesoría proactiva
-
-**Gestoría online**: Limitada o inexistente. Procesas lo que envías.
-**Gestoría presencial**: Variable según el despacho. Las buenas gestorías llaman proactivamente.
 
 Algunos autónomos descubren deducciones perdidas años después porque su gestoría online nunca les avisó de opciones fiscales aplicables.
 
-### Accesibilidad
-
-**Gestoría online**: 24/7 para subir documentos. Soporte en horario laboral.
-**Gestoría presencial**: Horario comercial (9:00-18:00 típicamente).
-
 Para autónomos nocturnos o con horarios irregulares, la gestoría online elimina la fricción de coordinar citas.
 
-### Complejidad que manejan bien
-
-**Gestoría online**: Facturación simple, pocos clientes, autónomos estándar.
-**Gestoría presencial**: Situaciones complejas (ROI, exportaciones, constitución de sociedades, planificación patrimonial).
-
 Si facturas internacionalmente, gestionas varios NIFs o planeas crear una SL, **la gestoría presencial ofrece más profundidad estratégica**.
-
-### Tecnología
-
-**Gestoría online**: Plataformas digitales, dashboards, procesos automatizados.
-**Gestoría presencial**: Variable. Algunas aún piden facturas por WhatsApp o email sin plataforma.
 
 Irónicamente, muchas gestorías tradicionales operan con menos tecnología que las online. Esto genera caos documental y pérdida de información.
 

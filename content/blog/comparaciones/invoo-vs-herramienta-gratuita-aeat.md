@@ -153,35 +153,17 @@ Si Invoo te ahorra más de 26 minutos al mes (y los datos muestran consistenteme
 
 ## Comparación directa + Decisión
 
-**Precio real:**
-- AEAT: €0 mensuales
-- Invoo: €10.90 mensuales (36 céntimos diarios)
-
-**Cumplimiento Verifactu:** Ambas herramientas cumplen perfectamente con toda la normativa Verifactu obligatoria desde julio 2027 (autónomos) y enero 2027 (sociedades). En cumplimiento legal están al mismo nivel—ambas son 100% conformes.
-
-**Rastreo de gastos deducibles:**
-- AEAT: No tiene esta funcionalidad. Gastos dispersos en tickets físicos, emails, archivos de Drive.
-- Invoo: Fotografías el ticket desde móvil, registro automático con OCR, categorización inteligente, informe trimestral en dos clics.
-
-**Dashboard compartido con gestoría:**
-- AEAT: No existe. Descargar PDFs manualmente y enviar por email.
-- Invoo: Acceso en vivo a todas tus facturas y gastos. Cero emails, cero fricción.
-
-**Acceso móvil:**
-- AEAT: Solo escritorio con certificado digital. Imposible desde móvil.
-- Invoo: App móvil completa más versión web. Facturas desde cualquier lugar en 30 segundos.
-
-**Catálogo de clientes y servicios:**
-- AEAT: No existe. Escribes todo desde cero cada vez.
-- Invoo: Guardas clientes y servicios una vez. Después: tres clics y factura lista sin errores.
-
-**Facturas recurrentes y recordatorios de pago:**
-- AEAT: No soporta automatización. Escribes todo de nuevo cada mes. No envía recordatorios.
-- Invoo: Configuras una vez y se repite automáticamente cada periodo. Recordatorios automáticos configurables.
-
-**Tiempo real por factura:**
-- AEAT: 10-15 minutos contando todo el proceso
-- Invoo: 30 segundos a 2 minutos
+| Funcionalidad | Herramienta AEAT | Invoo |
+|---------------|-----------------|-------|
+| **Precio** | €0/mes | €10.90/mes (36 céntimos/día) |
+| **Cumplimiento Verifactu** | Completo (julio 2027 autónomos) | Completo (julio 2027 autónomos) |
+| **Rastreo de gastos deducibles** | No existe — tickets dispersos en Gmail, Drive, cajones | OCR desde móvil, categorización automática, informe trimestral en 2 clics |
+| **Dashboard con gestoría** | No existe — descarga PDFs y envía por email | Acceso en vivo a facturas y gastos. Cero emails, cero fricción |
+| **Acceso móvil** | Solo escritorio con certificado digital | App móvil completa + versión web. 30 segundos desde cualquier lugar |
+| **Catálogo de clientes** | No existe — escribes todo desde cero cada vez | Guardas clientes una vez, después 3 clics y factura lista sin errores |
+| **Facturas recurrentes** | No — escribes todo de nuevo cada mes | Configuras una vez, se repite automáticamente cada periodo |
+| **Recordatorios de pago** | No | Automáticos y configurables |
+| **Tiempo por factura** | 10-15 minutos | 30 segundos a 2 minutos |
 
 ### La decisión final simplificada
 

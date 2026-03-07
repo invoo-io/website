@@ -90,19 +90,13 @@ Pero aquí viene la trampa que pocos te cuentan. **Si tus gastos reales son alto
 
 ### Resumen rápido: directa vs módulos
 
-**Estimación directa simplificada**:
-- Quién puede: todos los autónomos con facturación inferior a €600.000/año
-- Gastos deducibles: sí, 100% justificados + 5% adicional (máx. €2.000)
-- Modelo trimestral: 130
-- Ventaja principal: deduces gastos reales—cuanto más gastes en tu actividad, menos pagas
-- Desventaja: necesitas justificar cada gasto con factura
-
-**Estimación objetiva (módulos)**:
-- Quién puede: solo actividades listadas (hostelería, retail, transporte, peluquerías...)
-- Gastos deducibles: no—pagas cuota fija según indicadores (m², empleados, etc.)
-- Modelo trimestral: 131
-- Ventaja principal: cuota predecible, sin necesidad de justificar gastos
-- Desventaja: pagas lo mismo aunque tengas un mal mes o gastos elevados
+| | **Estimación directa simplificada** | **Estimación objetiva (módulos)** |
+|---|---|---|
+| **Quién puede** | Todos los autónomos con facturación inferior a €600.000/año | Solo actividades listadas (hostelería, retail, transporte, peluquerías...) |
+| **Gastos deducibles** | Sí, 100% justificados + 5% adicional (máx. €2.000) | No — pagas cuota fija según indicadores (m², empleados, etc.) |
+| **Modelo trimestral** | 130 | 131 |
+| **Ventaja principal** | Deduces gastos reales — cuanto más gastes en tu actividad, menos pagas | Cuota predecible, sin necesidad de justificar gastos |
+| **Desventaja** | Necesitas justificar cada gasto con factura | Pagas lo mismo aunque tengas un mal mes o gastos elevados |
 
 ---
 
@@ -365,12 +359,11 @@ Sin embargo, la exclusión te vincula durante 3 años mínimos en estimación di
 
 ### Plazos y deadlines críticos
 
-**Para cambios efectivos en 2026**:
-- Modelo 036 de renuncia/revocación: presentado hasta el 31 de enero de 2026 (plazo extendido)
-- Renuncia tácita: presentar modelo 130 (en vez de 131) en Q1 de 2026 (del 1 al 20 de abril)
-
-**Para cambios efectivos en 2027**:
-- Modelo 036: presentar en diciembre de 2026
+| Cambio efectivo | Acción requerida | Plazo |
+|---|---|---|
+| **Desde enero 2026** | Modelo 036 de renuncia/revocación | Hasta el 31 de enero de 2026 (plazo extendido) |
+| **Desde enero 2026** | Renuncia tácita (presentar modelo 130 en vez de 131) | Q1 de 2026 — del 1 al 20 de abril |
+| **Desde enero 2027** | Modelo 036 de renuncia/revocación | Diciembre de 2026 |
 
 Si tienes dudas sobre cuándo cambiar, habla con tu gestoría en octubre-noviembre. Con software que comparta tus datos en tiempo real, tu asesor puede calcular ambos escenarios en minutos—no en días. Así tienes margen para decidir y presentar el modelo 036 en diciembre sin prisas.
 

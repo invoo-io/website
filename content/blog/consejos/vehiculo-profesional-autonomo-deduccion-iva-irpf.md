@@ -56,6 +56,11 @@ El **IRPF funciona al revés**: la Ley 35/2006 (Art. 29) y el Reglamento del IRP
 Deducir el 50% del IVA de tu coche y asumir que también tienes derecho al 50% en IRPF son dos cosas distintas. El IVA tiene la presunción del 50% a tu favor. El IRPF no. Confundir esto puede provocar un ajuste en inspección con recargo de demora incluido.
 </WarningCard>
 
+| Impuesto | Regla para turismos | Carga de la prueba |
+|---|---|---|
+| **IVA** | 50% sin demostrar nada (Art. 95.3 Ley IVA); 100% para actividades de la lista cerrada | Si Hacienda quiere reducirte del 50%, debe ella probarlo |
+| **IRPF** | 0% salvo uso **exclusivo** profesional; sin porcentaje intermedio para uso mixto | El autónomo debe demostrar la exclusividad |
+
 Esta diferencia tiene un origen histórico: el IVA es un impuesto comunitario armonizado (Directiva IVA) y la presunción del 50% existe en prácticamente toda la Unión Europea. El IRPF es estrictamente nacional y España optó por un criterio más estricto de "todo o nada" para los vehículos en estimación directa.
 
 ---
@@ -70,14 +75,15 @@ Este 50% se aplica también a todos los gastos relacionados con ese vehículo: c
 
 Existe una lista cerrada de actividades donde la deducción del IVA asciende al 100%. Son las únicas excepciones reconocidas y la jurisprudencia confirma que esta lista es numerus clausus: no se pueden añadir supuestos por analogía.
 
-Las actividades con derecho al 100% son:
-
-- Transporte de mercancías (transportistas autónomos)
-- Transporte de personas: taxi y VTC
-- Enseñanza de conductores (autoescuelas)
-- Vehículos de fabricantes para pruebas, ensayos, demostraciones o promoción de ventas
-- Agentes o representantes comerciales
-- Servicios de vigilancia
+| Actividad | Deducción IVA |
+|---|---|
+| Transporte de mercancías (transportistas autónomos) | **100%** |
+| Transporte de personas: taxi y VTC | **100%** |
+| Enseñanza de conductores (autoescuelas) | **100%** |
+| Fabricantes: pruebas, ensayos, demostraciones o promoción | **100%** |
+| Agentes o representantes comerciales | **100%** |
+| Servicios de vigilancia | **100%** |
+| Resto de autónomos | **50%** (presunción legal) |
 
 Un detalle relevante sobre los agentes comerciales: en el ámbito del IVA, la deducción al 100% aplica a cualquier agente o representante comercial sin más requisitos. En IRPF, la presunción de afectación del Art. 22.4.d del Reglamento del IRPF beneficia específicamente a los "representantes o agentes comerciales" como categoría legal. El Tribunal Supremo (STS 1872/2024) precisó que un agente de seguros no equivale a un agente comercial a estos efectos, por lo que los agentes de seguros no pueden acogerse a esa presunción automática en IRPF y deben acreditar uso exclusivo.
 
@@ -139,7 +145,12 @@ El renting es un alquiler operativo: pagas una cuota mensual y el vehículo no e
 
 En IRPF, **la cuota mensual completa del renting es un gasto corriente deducible**, siempre que el vehículo cumpla el requisito de afectación exclusiva. No hay amortización; la cuota es gasto del ejercicio directamente.
 
-La diferencia en términos de deducción anual es significativa: con un renting de €400/mes (€4.800/año) y afectación exclusiva, deduces €4.800 al año. Comprando ese mismo vehículo por €24.000, el primer año solo deduces €3.840. Los últimos años de vida del vehículo, cuando ya está completamente amortizado, no hay nada que deducir.
+La diferencia en términos de deducción anual es significativa:
+
+| Modalidad | Coste / año | Deducción IRPF / año | Observación |
+|---|---|---|---|
+| **Renting** (€400/mes) | €4.800 | €4.800 (gasto corriente íntegro) | Cuando se amortiza, sigue deduciéndose |
+| **Compra** (€24.000) | — | €3.840 (16% de €24.000) | Al agotarse el coste, cero deducción |
 
 El renting también incluye habitualmente el mantenimiento, el seguro y el cambio de neumáticos, cuyos costes separados también serían deducibles. La cuota global suele ser fiscalmente más eficiente para autónomos que califican para la deducción en IRPF.
 

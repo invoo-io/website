@@ -89,55 +89,22 @@ Esto está regulado en el artículo 80.Cuatro de la Ley del IVA. Requiere que ha
 
 Con Verifactu, todas las facturas rectificativas deben identificarse con un código específico que indica el motivo de la rectificación. **Esto es obligatorio desde enero 2026 para sociedades y desde julio 2026 para autónomos**.
 
-Aquí te explico cada código con claridad:
-
-### R1 - Errores fundados en derecho
-
-**Este es el código más común y el que vas a usar el 80% de las veces.** Se aplica cuando hay un error material en la factura original o cuando se produce una modificación de la base imponible por las causas principales del artículo 80 de la Ley del IVA.
-
-Úsalo cuando:
-- Te equivocaste en el importe o pusiste mal el IVA
-- Aplicaste un tipo impositivo incorrecto
-- Olvidaste incluir un concepto o calculaste mal un descuento
-- Pusiste datos fiscales erróneos
-- Aplicas descuentos posteriores acordados o devuelven envases
-
-### R2 - Concurso de acreedores
-
-Este código se usa cuando tu cliente entra en concurso de acreedores (quiebra, suspensión de pagos, administración concursal).
-
-Puedes emitir una rectificativa R2 para modificar la base imponible de las facturas impagadas dentro de ese proceso. **Esto te permite recuperar el IVA correspondiente** según el convenio concursal.
-
-### R3 - Créditos incobrables
-
-Este es el código para recuperar el IVA de facturas que no te han pagado después de intentar cobrarlas por la vía legal.
-
-Requiere que:
-- Hayan pasado al menos 6 meses desde que emitiste la factura (1 año para grandes empresas)
-- Hayas reclamado el cobro de forma fehaciente (requerimiento notarial o reclamación judicial)
-- Cumplas todos los requisitos del artículo 80.Cuatro de la Ley del IVA
-
-### R4 - Otras causas
-
-R4 es el código "cajón de sastre" para todas las rectificaciones que no encajan en R1, R2 o R3.
-
-Úsalo para:
-- Errores en datos no monetarios que no afectan a la base imponible (descripción errónea, dirección incorrecta)
-- Correcciones administrativas que te requiere Hacienda
-- Cualquier situación que requiera rectificativa pero no tenga código específico
-
-### R5 - Rectificativa de factura simplificada
-
-Si la factura original era una factura simplificada (ticket), **su rectificativa siempre será R5**, independientemente del motivo.
-
-Esta es una regla fija: factura original simplificada = código R5.
+| **Código** | **Nombre** | **Cuándo usarlo** |
+|------------|------------|-------------------|
+| **R1** | Errores fundados en derecho | **El más común (80% de los casos).** Importe incorrecto, IVA mal aplicado, tipo impositivo erróneo, datos fiscales erróneos, descuentos posteriores acordados, devolución de envases |
+| **R2** | Concurso de acreedores | Tu cliente entra en concurso de acreedores (quiebra, suspensión de pagos). Permite recuperar el IVA de facturas impagadas dentro del proceso concursal |
+| **R3** | Créditos incobrables | Factura sin cobrar tras reclamación legal fehaciente. Requiere 6 meses desde emisión (1 año para grandes empresas) y haber reclamado por vía notarial o judicial |
+| **R4** | Otras causas | Cajón de sastre: errores en datos no monetarios (descripción, dirección), correcciones que requiere Hacienda, cualquier caso sin código específico |
+| **R5** | Rectificativa de factura simplificada | **Regla fija:** si la factura original era simplificada (ticket), su rectificativa siempre es R5, independientemente del motivo |
 
 ### Sustitución vs diferencias
 
-Además del código de tipo (R1-R5), debes indicar si la rectificación es:
+Además del código de tipo (R1–R5), debes indicar si la rectificación es:
 
-- **Por sustitución** (clave "S"): Reemplaza completamente los datos de la original
-- **Por diferencias** (clave "I"): Solo indica el ajuste a aplicar sobre la original
+| **Clave** | **Tipo** | **Cuándo usarla** |
+|-----------|----------|-------------------|
+| **S** | Por sustitución | Reemplaza completamente los datos de la original. Usa cuando el error afecta a múltiples campos |
+| **I** | Por diferencias | Solo indica el ajuste a aplicar sobre la original. Usa cuando hay un único error puntual de importe |
 
 ---
 

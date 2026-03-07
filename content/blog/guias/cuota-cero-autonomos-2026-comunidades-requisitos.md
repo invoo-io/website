@@ -83,6 +83,15 @@ Cada comunidad tiene sus propios requisitos, plazos de solicitud y duración de 
 
 No todas las comunidades autónomas ofrecen la Cuota Cero, y las que lo hacen tienen programas con características muy diferentes. Aquí está el mapa actualizado para 2026 con los detalles de cada región.
 
+| Comunidad | Duración | Bonifica MEI | Plazo solicitud | Observaciones |
+|-----------|----------|--------------|-----------------|---------------|
+| **Madrid** | 12-36 meses | No | 3 meses tras cumplir el año | Ampliada a mayores de 52 años en 2026 |
+| **Andalucía** | 12-24 meses | **Sí** (única) | 2 meses tras cumplir el año | La más completa; bonifica cuota íntegra |
+| **Galicia** | 12 meses | No | Convocatoria anual (DOG) | Fechas variables cada año |
+| **Canarias** | 12 meses | No | Convocatoria anual (BOC) | Exige 3 años sin alta (más restrictivo) |
+| **Castilla-La Mancha** | 24 meses automáticos | No | Sin requisito de ingresos para año 2 | No exige superar umbral del SMI |
+| **Cataluña / País Vasco / Navarra** | — | — | — | Sin Cuota Cero (tienen otras ayudas) |
+
 ### Madrid: Cuota Cero con ampliación para mayores de 52 años
 
 La Comunidad de Madrid mantiene y amplía su programa de Cuota Cero en 2026, con un presupuesto que aumenta un 17,7% hasta alcanzar los 37,1 millones de euros. La ayuda cubre el 100% de las cotizaciones a la Seguridad Social durante el primer año de actividad, y puede extenderse hasta 24 o incluso 36 meses en determinados casos.

@@ -236,13 +236,12 @@ Por eso se llama "pago fraccionado". No es un nuevo impuesto, es fraccionar el I
 
 Ambos modelos se presentan **trimestralmente** y comparten los mismos plazos:
 
-**Primer trimestre (Q1):** Enero - Marzo → Presentación del **1 al 20 de abril**
-
-**Segundo trimestre (Q2):** Abril - Junio → Presentación del **1 al 20 de julio**
-
-**Tercer trimestre (Q3):** Julio - Septiembre → Presentación del **1 al 20 de octubre**
-
-**Cuarto trimestre (Q4):** Octubre - Diciembre → Presentación del **1 al 30 de enero** (año siguiente)
+| Trimestre | Periodo | Plazo de presentación |
+|-----------|---------|----------------------|
+| **Q1** | Enero - Marzo | 1 al 20 de abril |
+| **Q2** | Abril - Junio | 1 al 20 de julio |
+| **Q3** | Julio - Septiembre | 1 al 20 de octubre |
+| **Q4** | Octubre - Diciembre | 1 al 30 de enero (año siguiente) |
 
 **Notas importantes sobre los plazos:**
 - El cuarto trimestre tiene plazo hasta el **30 de enero** (10 días extra respecto a otros trimestres)
@@ -399,19 +398,12 @@ Ejemplo: Te diste de alta el 15 de febrero. En abril presentas el 303 del Q1, pe
 
 ### Resumen rápido
 
-**Modelo 303 (IVA):**
-
-- **¿Quién?** Todos los autónomos con IVA
-- **¿Qué?** IVA cobrado menos IVA pagado
-- **¿Cuándo?** 1-20 abril, julio, octubre | 1-30 enero
-- **Truco mental:** Dinero que nunca fue tuyo
-
-**Modelo 130 (IRPF):**
-
-- **¿Quién?** Solo si estás en estimación directa Y menos del 70% de ingresos tienen retención
-- **¿Qué?** 20% de beneficios acumulados menos pagos anteriores
-- **¿Cuándo?** 1-20 abril, julio, octubre | 1-30 enero
-- **Truco mental:** Adelanto de TUS impuestos
+| | **Modelo 303 (IVA)** | **Modelo 130 (IRPF)** |
+|---|---|---|
+| **¿Quién?** | Todos los autónomos con IVA | Solo en estimación directa Y menos del 70% de ingresos con retención |
+| **¿Qué?** | IVA cobrado menos IVA pagado | 20% de beneficios acumulados menos pagos anteriores |
+| **¿Cuándo?** | 1-20 abril, julio, octubre \| 1-30 enero | 1-20 abril, julio, octubre \| 1-30 enero |
+| **Truco mental** | Dinero que nunca fue tuyo | Adelanto de TUS impuestos |
 
 **Checklist trimestral (antes del día 15 de cada mes de presentación):**
 

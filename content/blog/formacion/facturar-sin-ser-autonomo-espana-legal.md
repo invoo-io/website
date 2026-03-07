@@ -96,9 +96,11 @@ El razonamiento histórico era sencillo: si tus ingresos de la actividad no supe
 
 El SMI en 2026, fijado por el [Real Decreto 126/2026](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-3815), de 18 de febrero, con efectos retroactivos desde el 1 de enero de 2026, es:
 
-- **40,70€ al día**
-- **1.221€ al mes** (en 14 pagas: 12 mensualidades + 2 pagas extraordinarias)
-- **17.094€ al año** (cómputo anual total)
+| Período | Importe | Nota |
+|---|---|---|
+| **Diario** | 40,70 € | |
+| **Mensual** | 1.221 € | En 14 pagas (12 mensualidades + 2 extraordinarias) |
+| **Anual** | 17.094 € | Cómputo anual total |
 
 <WarningCard title="El SMI no te protege automáticamente">
 La Sentencia del Tribunal Supremo 941/2025 confirmó expresamente que superar o no superar el SMI es "un indicio apto" entre varios, no un derecho. Puedes ganar menos del SMI y tener la obligación de alta si la actividad es habitual. No uses el SMI como escudo legal.

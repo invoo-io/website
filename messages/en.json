@@ -1506,6 +1506,27 @@
       "description": "Trusted by autónomos, pymes, and gestorías who collaborate in real-time and reclaim hours every week with Spain's most intuitive invoicing tool.",
       "cta": "Join the waiting list"
     },
+    "resources": {
+      "title": "Free resources",
+      "titleHighlight": "for freelancers",
+      "description": "Practical guides and calculators to manage your business without complications",
+      "articlesHeading": "Most popular guides",
+      "calculatorsHeading": "Free calculators",
+      "viewAllArticles": "View all guides",
+      "viewAllCalculators": "View all calculators",
+      "calc1": {
+        "title": "Self-Employed Quota Calculator",
+        "description": "Calculate your monthly quota based on your actual net income"
+      },
+      "calc2": {
+        "title": "Freelancer Income Tax Calculator",
+        "description": "Estimate your quarterly tax payment for Form 130"
+      },
+      "calc3": {
+        "title": "VAT Calculator",
+        "description": "Calculate VAT on your invoices at 4%, 10%, or 21%"
+      }
+    },
     "footer": {
       "description": "Invoo helps freelancers, SMBs and gestorías work faster together: Verifactu and TicketBAI ready, intuitive UX, quote-to-invoice flow, discount module, and live dashboard for your accountant.",
       "invooTitle": "Invoo",

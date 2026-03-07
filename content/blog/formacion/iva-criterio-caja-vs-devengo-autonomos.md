@@ -239,21 +239,13 @@ Estas son orientaciones generales. Consulta con tu gestoría para analizar tu si
 
 ### Tabla de decisión rápida
 
-**Criterio de caja es para ti si:**
-
-- Clientes: Principalmente B2C o pymes pequeñas
-- Plazos de cobro: Lentos (60-90 días)
-- Gastos: Bajos o con pago al contado
-- Volumen: Bajo €2M, sin clientes individuales sobre €100K
-- Sector: Servicios con morosidad alta
-
-**Devengo es para ti si:**
-
-- Clientes: Grandes empresas B2B
-- Plazos de cobro: Rápidos (30 días o menos)
-- Gastos: Altos con pago aplazado
-- Volumen: Cerca de €2M o crecimiento rápido
-- Sector: Comercio, operaciones internacionales
+| Criterio | **Criterio de caja** | **Devengo** |
+|----------|----------------------|-------------|
+| Clientes | Principalmente B2C o pymes pequeñas | Grandes empresas B2B |
+| Plazos de cobro | Lentos (60-90 días) | Rápidos (30 días o menos) |
+| Gastos | Bajos o con pago al contado | Altos con pago aplazado |
+| Volumen | Bajo €2M, sin clientes individuales sobre €100K | Cerca de €2M o crecimiento rápido |
+| Sector | Servicios con morosidad alta | Comercio, operaciones internacionales |
 
 ---
 

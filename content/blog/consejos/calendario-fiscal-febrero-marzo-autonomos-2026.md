@@ -50,14 +50,11 @@ La diferencia entre informativos y liquidaciones es clave. En los modelos inform
 
 ### Modelos que vencen en febrero 2026
 
-**Modelo 347** (declaración anual de operaciones con terceros)
-**Plazo**: Del 1 de febrero al 2 de marzo de 2026. Este es el más importante y el más complejo. Declaras todas las operaciones con un mismo cliente o proveedor que superen **3.005,06€ anuales** (IVA incluido). Desde 2026, debes incluir el número de referencia BDNS si la operación corresponde a una ayuda o subvención pública (clave de operación "E" en el modelo 347).
-
-**Modelos 180, 190, 193, 184** (resúmenes anuales de retenciones y pagos)
-**Plazo**: Del 1 de enero al 2 de febrero de 2026 (extendido porque el 31 de enero es sábado). Estos modelos resumen retenciones de IRPF que aplicaste a profesionales, empleados o alquileres durante 2025. Si no aplicaste retenciones a nadie en 2025, no tienes que presentarlos.
-
-**Modelo 720/721** (bienes y derechos en el extranjero)
-**Plazo**: Del 1 de enero al 31 de marzo de 2026. Solo si tienes cuentas bancarias, inmuebles o inversiones fuera de España que superen 50.000€ por categoría. No aplica a la mayoría de autónomos.
+| Modelo | Qué declara | Plazo | Aplica si... |
+|--------|-------------|-------|--------------|
+| **347** | Operaciones con terceros >€3.005,06 anuales | 1 feb – 2 mar 2026 | Algún cliente o proveedor superó el umbral en 2025 |
+| **180, 190, 193, 184** | Resúmenes anuales de retenciones de IRPF | Hasta el 2 feb 2026 (extendido por sábado) | Aplicaste retenciones a profesionales, empleados o alquileres en 2025 |
+| **720 / 721** | Bienes y derechos en el extranjero | 1 ene – 31 mar 2026 | Cuentas, inmuebles o inversiones fuera de España >€50.000 por categoría |
 
 ### Lo que NO presentas en febrero
 
@@ -94,12 +91,13 @@ Marzo es un mes relativamente calmado en el calendario fiscal. **Solo el modelo 
 
 Aunque abril aún está lejos, **es el mes más complejo del año fiscal**. Coinciden los modelos trimestrales del Q1 con el inicio de la campaña de la Renta 2025. Por eso febrero y marzo son clave para prepararte.
 
-**Modelos trimestrales del Q1 (1-20 de abril):**
-- Modelo 303 (IVA del primer trimestre)
-- Modelo 130 (pago fraccionado de IRPF si estás en estimación directa)
-- Modelo 131 (pago fraccionado si estás en módulos)
+**Modelos trimestrales del Q1:**
 
-**Domiciliación bancaria: hasta el 15 de abril**. Si domicilias el pago, el plazo se reduce 5 días.
+| Modelo | Qué declara | Plazo presentación | Plazo domiciliación |
+|--------|-------------|-------------------|---------------------|
+| **303** | IVA del primer trimestre | 1–20 abril | Hasta el 15 de abril |
+| **130** | Pago fraccionado IRPF (estimación directa) | 1–20 abril | Hasta el 15 de abril |
+| **131** | Pago fraccionado IRPF (módulos) | 1–20 abril | Hasta el 15 de abril |
 
 **Campaña de la Renta 2025: desde principios de abril**. Aunque el plazo de presentación dura hasta junio, la mayoría empieza en abril con su gestoría.
 
@@ -183,8 +181,12 @@ El problema no es tu gestoría — es el proceso. Mientras sigas enviando PDFs y
 
 Muchos autónomos confunden el 303 con el 130. Son complementarios, pero cada uno declara cosas diferentes.
 
-- **Modelo 303**: IVA trimestral. Declaras el IVA que has cobrado (repercutido) y el IVA que has pagado (soportado). La diferencia es lo que pagas o te devuelve Hacienda.
-- **Modelo 130**: Pago fraccionado de IRPF. Declaras tus ingresos menos gastos deducibles. Pagas el 20% del beneficio trimestral. Esto es un adelanto del IRPF que ajustarás en la Renta. Si quieres ver el cálculo paso a paso con ejemplos, lee la [guía del Modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/).
+| Modelo | Impuesto | Qué declaras | Resultado |
+|--------|----------|--------------|-----------|
+| **303** | IVA | IVA cobrado (repercutido) – IVA pagado (soportado) | Pagas la diferencia o Hacienda te devuelve |
+| **130** | IRPF | Ingresos – gastos deducibles × 20% | Adelanto del IRPF que ajustarás en la Renta anual |
+
+Si quieres ver el cálculo del 130 paso a paso con ejemplos, lee la [guía del Modelo 130](/es/blog/guias/pago-fraccionado-irpf-modelo-130-2026/).
 
 Si quieres profundizar en las diferencias, lee nuestra guía completa sobre [Modelo 303 vs Modelo 130 para autónomos](/es/blog/guias/modelo-303-vs-modelo-130-guia-autonomos).
 

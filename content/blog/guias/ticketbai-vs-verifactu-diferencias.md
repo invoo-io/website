@@ -97,135 +97,35 @@ Por eso:
 
 **La diferencia principal entre TicketBAI y Verifactu es territorial:** TicketBAI aplica en el País Vasco (obligatorio desde 2022-2023) mientras que Verifactu aplica en el resto de España (obligatorio desde enero/julio 2027). Técnicamente, TicketBAI requiere firma electrónica obligatoria y envío inmediato a Hacienda Foral; Verifactu permite operar en modo verificable sin firma (solo hash) y con envío opcional.
 
-### 1. Territorio: dónde aplica cada uno
+| **Característica** | **TicketBAI** | **Verifactu** |
+|--------------------|---------------|---------------|
+| **Territorio** | Álava, Bizkaia, Gipuzkoa | Resto de España (excepto Navarra) |
+| **Determina la obligación** | Tu domicilio fiscal (no el cliente) | Tu domicilio fiscal (no el cliente) |
+| **Firma electrónica** | **Obligatoria** con certificado digital | **Opcional** en modo verificable (solo hash) |
+| **Envío a Hacienda** | **Obligatorio** e inmediato (Álava/Gipuzkoa) o hasta 4 días (Bizkaia/Batuz) | **Opcional** — puedes elegir modo online u offline |
+| **Formato del archivo** | XML-TBAI (definido por Gobierno Vasco) | JSON o XML-Verifactu (definido por AEAT) |
+| **Encadenamiento QR** | Obligatorio — incluye huella de la factura anterior | No obligatorio |
+| **Multa por software no inscrito** | Hasta 20% de facturación (mínimo €20.000) | **€50.000 fijos** por ejercicio (sin proporcionalidad) |
+| **Multa por operación incorrecta** | €2.000 por factura | N/A (multa global fija) |
+| **Multa para proveedores de software** | Variable | Hasta €150.000 |
+| **Compatibilidad** | Certificación separada del Gobierno Vasco | Certificación separada de la AEAT |
 
-Esta es la diferencia más importante para la facturación en el País Vasco y el resto de España. **Tu domicilio fiscal determina qué sistema te aplica**, no dónde están tus clientes.
+**Tu domicilio fiscal determina qué sistema te aplica**, no dónde están tus clientes. "Facturo a un cliente de San Sebastián desde Madrid, ¿necesito TicketBAI?" **No.** Tu obligación depende de tu domicilio fiscal (Madrid = Verifactu), no del cliente. Navarra tiene régimen foral propio y desarrolla su sistema **NaTicket** (sin fecha confirmada en 2026).
 
-**TicketBAI aplica si:**
-- Tu domicilio fiscal está en **Álava, Bizkaia o Gipuzkoa**
-- Da igual que tus clientes estén en Madrid, Barcelona o Londres
-- Solo importa dónde tributas
-
-En cambio, si tributas fuera del País Vasco, tu obligación es diferente.
-
-**Verifactu aplica si:**
-- Tu domicilio fiscal está en **cualquier otra comunidad autónoma** (excepto Navarra)
-- Madrid, Cataluña, Valencia, Andalucía, etc.
-- Da igual que vendas a clientes vascos
-
-Y luego está el caso especial de Navarra, que tiene régimen foral propio.
-
-**Navarra:**
-- **Exenta de Verifactu** por ser territorio foral
-- Desarrolla su propio sistema llamado **NaTicket** (sin fecha confirmada en 2026)
-
-Lo que confunde a muchos: "Facturo a un cliente de San Sebastián desde Madrid, ¿necesito TicketBAI?" **No.** Tu obligación depende de tu domicilio fiscal (Madrid = Verifactu), no del cliente.
-
-### 2. Obligatoriedad de firma electrónica
-
-**TicketBAI:**
-- La firma electrónica es **OBLIGATORIA**
-- Cada factura debe firmarse digitalmente con certificado válido
-- El software necesita integración con certificado digital
-
-**Verifactu:**
-- La firma electrónica es **OPCIONAL en modo Verifactu** (Art. 16.3 RD 1007/2023)
-- En modo Verifactu, basta con calcular el hash (huella digital) de cada factura
-- En sistemas conformes que NO usan modo Verifactu, la firma sí es obligatoria (Art. 12)
-
-**Impacto práctico:** TicketBAI es técnicamente más exigente. Si usas TicketBAI, necesitas certificado digital activo. Con Verifactu en modo verificable, el hash es suficiente sin certificado.
-
-### 3. Envío de datos a la administración
-
-**TicketBAI:**
-- Envío **OBLIGATORIO** a la Hacienda Foral
-- En Álava y Gipuzkoa: transmisión **inmediata** al crear la factura
-- En Bizkaia (Batuz): plazo de hasta **4 días** para grandes empresas y sujetos en devolución mensual de IVA (SII)
-- El software hace esto automáticamente (tú no haces nada)
-
-**Verifactu:**
-- Envío **OPCIONAL**
-- Puedes elegir entre dos modos:
-  - **Modo online:** envío inmediato a AEAT (voluntario)
-  - **Modo offline:** envío posterior cuando Hacienda lo requiera
-- La mayoría de software implementa modo offline para simplificar
-
-**Impacto práctico:** Con TicketBAI, Hacienda ve tus facturas al instante. Con Verifactu, puedes elegir cuándo enviarlas (o no enviarlas salvo requerimiento).
-
-### 4. Formato técnico del archivo
-
-**TicketBAI:**
-- Formato: **XML-TBAI** (específico de TicketBAI)
-- Estructura definida por Gobierno Vasco
-- Los tres territorios forales usan el mismo XML
-
-**Verifactu:**
-- Formato: **JSON o XML-Verifactu** (definido por AEAT)
-- Estructura diferente al TicketBAI
-- Más flexible técnicamente
-
-**Impacto práctico:** Son formatos incompatibles. Un software certificado para TicketBAI NO sirve automáticamente para Verifactu (necesita certificación separada).
-
-### 5. QR, sanciones y otras diferencias
-
-Ambos sistemas generan un **código QR** en cada factura con datos fiscales (NIF, número, fecha, importe, hash). La diferencia: el QR de TicketBAI incluye la huella digital de la factura anterior (encadenamiento obligatorio), mientras que el de Verifactu no necesariamente encadena. Tus clientes no notarán diferencia visual — ambos QR se escanean y verifican online.
-
-Donde sí hay diferencia importante es en las **sanciones por incumplimiento**:
-
-**TicketBAI:**
-- **Multa por no usar software inscrito:** hasta 20% de la cifra de negocios (mínimo €20,000)
-- **Multa por operación incorrecta:** €2,000 por cada factura mal registrada
-
-**Verifactu:**
-- **Multa por software no conforme:** €50,000 **fijos** por ejercicio fiscal (NO proporcional a facturación)
-- **Multa para proveedores de software:** hasta €150,000
-- **Sin periodo de gracia para sociedades** (desde enero 2027)
-- Algunas fuentes mencionan un **periodo de adaptación de 180 días** para autónomos, pero esto no está confirmado en normativa oficial (BOE/AEAT). Consulta con tu gestoría
-
-**Impacto práctico:** Las multas de Verifactu son más altas y fijas (sin proporcionalidad a tu facturación). TicketBAI tiene multas variables pero puede acumular rápido si tienes muchas facturas incorrectas.
+Las multas de Verifactu son más altas y fijas (sin proporcionalidad a tu facturación). TicketBAI tiene multas variables pero puede acumular rápido si tienes muchas facturas incorrectas. Para Verifactu, algunas fuentes mencionan un **periodo de adaptación de 180 días** para autónomos, pero esto no está confirmado en normativa oficial (BOE/AEAT). Consulta con tu gestoría.
 
 ---
 
 ## ¿TicketBAI o Verifactu? Qué sistema te aplica según tu territorio
 
-### Caso 1: Autónomo en Madrid facturando a clientes de todo España
-
-**Domicilio fiscal:** Madrid (territorio común)
-**Clientes:** Madrid, Barcelona, Bilbao, Valencia, Londres
-**Sistema obligatorio:** Verifactu
-**Fecha límite:** 1 julio 2027
-**TicketBAI:** NO necesitas
-
-### Caso 2: Autónomo en San Sebastián facturando a clientes nacionales
-
-**Domicilio fiscal:** Gipuzkoa (territorio foral vasco)
-**Clientes:** Madrid, Barcelona, París
-**Sistema obligatorio:** TicketBAI
-**Fecha límite:** Ya en vigor (completamente obligatorio desde 1 junio 2023)
-**Verifactu:** NO necesitas
-
-### Caso 3: Pyme con sede en Valencia y tienda física en Bilbao
-
-**Domicilio fiscal:** Valencia (territorio común)
-**Presencia física:** Bilbao (territorio foral)
-**Sistema obligatorio:** **AMBOS** (Verifactu + TicketBAI)
-**Razón:** La tienda en Bilbao tributa localmente a Hacienda Foral de Bizkaia
-**Complejidad:** Alta — necesitas software dual certificado
-
-### Caso 4: Autónomo en Navarra facturando a clientes nacionales
-
-**Domicilio fiscal:** Navarra (territorio foral)
-**Sistema obligatorio:** **Ninguno por ahora**
-**Razón:** Navarra está exenta de Verifactu por régimen foral, y NaTicket aún no tiene fecha oficial
-**Situación 2026:** Sigue las indicaciones de Hacienda Foral de Navarra (probable NaTicket en 2027-2028)
-
-### Caso 5: Otros escenarios frecuentes
-
-**Freelancer en Barcelona facturando solo a clientes internacionales:**
-**Sistema obligatorio:** Verifactu (1 julio 2027). Aplica a TODOS los que emiten facturas con software en territorio común, **sin importar dónde estén los clientes**.
-
-**Sociedad con dos oficinas (Madrid + Vitoria):**
-**Sistema obligatorio:** **AMBOS** — Verifactu para la actividad de Madrid, TicketBAI para la actividad de Vitoria. Necesitas contabilidad separada por territorio y software dual certificado.
+| **Situación** | **Sistema obligatorio** | **Fecha límite** | **Nota** |
+|---------------|------------------------|------------------|----------|
+| Autónomo en Madrid, clientes en toda España | **Verifactu** | 1 julio 2027 | TicketBAI no necesario |
+| Autónomo en San Sebastián (Gipuzkoa), clientes nacionales | **TicketBAI** | Ya en vigor (desde 1 junio 2023) | Verifactu no necesario |
+| Pyme con sede en Valencia y tienda física en Bilbao | **AMBOS** | TicketBAI ya; Verifactu enero 2027 | Software dual certificado obligatorio |
+| Autónomo en Navarra | **Ninguno por ahora** | Sin fecha | NaTicket en desarrollo (probable 2027-2028) |
+| Freelancer en Barcelona facturando a clientes internacionales | **Verifactu** | 1 julio 2027 | Aplica aunque todos los clientes sean extranjeros |
+| Sociedad con oficinas en Madrid y Vitoria | **AMBOS** | TicketBAI ya; Verifactu enero 2027 | Contabilidad separada por territorio |
 
 **Regla general:** Si tienes presencia física (establecimiento permanente) en territorio foral Y en territorio común, cumples ambos sistemas. Si solo tienes domicilio fiscal en uno, cumples solo el de ese territorio.
 
@@ -284,42 +184,23 @@ Donde sí hay diferencia importante es en las **sanciones por incumplimiento**:
 
 ### TicketBAI: fechas por territorio
 
-**Álava:**
-- **1 diciembre 2022:** Obligatorio para TODOS los sectores
-- Estado actual: **Plenamente operativo**
-- No hay aplazamientos
-
-**Gipuzkoa:**
-- Implantación progresiva desde **julio 2022**
-- **1 junio 2023:** Obligatorio para TODOS los sectores restantes
-- Estado actual: **Plenamente operativo**
-- No hay aplazamientos
-
-**Bizkaia (Batuz):**
-- **1 enero 2026:** Última fase de implantación
-- Sectores restantes: entidades exentas, agricultura, ganadería, pesca, educación, cultura
-- Estado actual: **Deadline inminente**
-- No hay aplazamientos confirmados
+| **Territorio** | **Fecha de obligación** | **Estado** |
+|----------------|------------------------|------------|
+| Álava | 1 diciembre 2022 | Plenamente operativo — sin aplazamientos |
+| Gipuzkoa | 1 junio 2023 (progresivo desde julio 2022) | Plenamente operativo — sin aplazamientos |
+| Bizkaia (Batuz) | 1 enero 2026 (última fase) | En vigor — afecta entidades exentas, agricultura, pesca, educación, cultura |
 
 **Si estás en País Vasco y aún no cumples TicketBAI, tienes semanas (Bizkaia) o ya deberías estar cumpliendo (Álava/Gipuzkoa).**
 
 ### Verifactu: fechas tras el aplazamiento
 
-**29 julio 2025:**
-- Proveedores de software deben tener sistemas listos
-- Certificación AEAT publicada
-- Software comercial debe estar disponible
+| **Fecha** | **Quién debe cumplir** | **Nota** |
+|-----------|------------------------|----------|
+| 29 julio 2025 | Proveedores de software | Sistemas listos y certificación AEAT publicada |
+| 1 enero 2027 | **Sociedades** (Impuesto de Sociedades) | Sin periodo de gracia — multa desde el primer día |
+| 1 julio 2027 | **Autónomos** (IRPF) | Posible periodo de adaptación de 180 días (no confirmado en BOE/AEAT — consulta con tu gestoría) |
 
-**1 enero 2027:**
-- **Sociedades (Impuesto de Sociedades)** deben cumplir
-- Sin periodo de gracia
-- Multa desde el primer día de incumplimiento
-
-**1 julio 2027:**
-- **Autónomos (IRPF)** deben cumplir
-- Algunas fuentes mencionan un **periodo de adaptación de 180 días**, pero esto no aparece en normativa oficial (BOE/AEAT). Consulta con tu gestoría antes de asumir margen extra
-
-**Estado actual:** Verifactu ha sido aplazado dos veces. Pero **NO te confíes**: las multas no han cambiado (€50,000 fijos). El aplazamiento solo te da más tiempo para prepararte. Si quieres entender en detalle qué cambió con [el aplazamiento de Verifactu a 2027](/es/blog/guias/verifactu-aplazado-2027-que-cambia-autonomos), tenemos una guía completa.
+**Estado actual:** Verifactu ha sido aplazado dos veces. Pero **NO te confíes**: las multas no han cambiado (€50.000 fijos). El aplazamiento solo te da más tiempo para prepararte. Si quieres entender en detalle qué cambió con [el aplazamiento de Verifactu a 2027](/es/blog/guias/verifactu-aplazado-2027-que-cambia-autonomos), tenemos una guía completa.
 
 ### Tu plan de acción según tu situación
 

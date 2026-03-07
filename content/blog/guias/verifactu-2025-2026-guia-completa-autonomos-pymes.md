@@ -167,22 +167,18 @@ Los fabricantes de software DEBEN tener sus programas adaptados. **Si tu softwar
 
 ### ¿Te aplica Verifactu? Guía rápida
 
-**SÍ estás obligado si:**
-
-- Usas software de facturación ([Quipu](https://getquipu.com), [Holded](https://www.holded.com), [Billin](https://www.billin.net), [Invoo](https://invoo.es)) → **Obligado desde julio 2026 (autónomos) o enero 2026 (sociedades)**
-- Usas Excel/Word CON fórmulas (aunque sea `=A1*1.21` para calcular IVA) → **Obligado desde julio 2026**
-- Tienes TPV informatizado o software conectado
-
-**NO estás obligado si:**
-
-- Excel/Word SIN fórmulas (100% manual, como máquina de escribir) → **No te aplica**
-- Facturas manuscritas en papel o talonarios → **No te aplica**
-- Ya usas el [SII de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) → **Ya estás cubierto**
-- País Vasco o Navarra con [TicketBAI](https://www.batuz.eus/es/ticketbai) → **Sistema propio, Verifactu no aplica**
-- Particular que alquila vivienda → **No te aplica**
-
-**Régimen de módulos (depende):**
-Si solo emites tickets simplificados a consumidor final y todo es manual → probablemente exento. **Si usas TPV o software → obligado.** Consulta con tu gestoría para tu caso específico.
+| Situación | ¿Obligado? | Fecha límite |
+|-----------|-----------|--------------|
+| Software de facturación (Quipu, Holded, Billin, Invoo…) | **SÍ** | Autónomos: 1 jul 2026 · Sociedades: 1 ene 2026 |
+| Excel/Word CON fórmulas (aunque sea `=A1*1.21`) | **SÍ** | 1 jul 2026 |
+| TPV informatizado o software conectado | **SÍ** | Según tipo (sociedad o autónomo) |
+| Excel/Word SIN fórmulas (100% manual) | **NO** | — |
+| Facturas manuscritas o talonarios en papel | **NO** | — |
+| Ya usa el [SII de la AEAT](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) | **NO** (ya cubierto) | — |
+| País Vasco o Navarra con [TicketBAI](https://www.batuz.eus/es/ticketbai) | **NO** (sistema propio) | — |
+| Particular que alquila vivienda | **NO** | — |
+| Régimen de módulos con TPV o software | **SÍ** | Consulta tu gestoría |
+| Régimen de módulos solo con tickets manuales | **Probablemente NO** | Consulta tu gestoría |
 
 ### La trampa de Excel/Word (LEE ESTO ANTES DE SEGUIR)
 
@@ -254,10 +250,11 @@ No juegues con fuego. Asume que si usas Excel con fórmulas, **estás obligado**
 https://www2.aeat.es/wlpl/TIKE-CONT/ValidarQR?nif=89890001K&numserie=12345678&G33&fecha=01-01-2026&importe=1210.00
 ```
 
-**Especificaciones:**
-- **Tamaño:** Entre 30×30 mm y 40×40 mm (como un sello de correos)
-- **Estándar:** ISO/IEC 18004 con nivel M de corrección de errores
-- **Ubicación:** Al principio de la factura, antes del contenido principal
+| Parámetro | Valor |
+|-----------|-------|
+| **Tamaño** | Entre 30×30 mm y 40×40 mm |
+| **Estándar** | ISO/IEC 18004, nivel M de corrección de errores |
+| **Ubicación** | Al principio de la factura, antes del contenido principal |
 
 ### Para qué sirve el QR
 

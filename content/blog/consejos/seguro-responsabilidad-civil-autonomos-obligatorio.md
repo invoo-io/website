@@ -86,23 +86,17 @@ Estas son las profesiones con obligación legal o colegial más clara, con la no
 
 El coste varía mucho según la profesión y la cobertura. Estos son los rangos reales del mercado en 2026:
 
-**Freelances digitales** (diseño, marketing, consultoría) — **€70 a €150** al año. Es el segmento más barato porque el riesgo es bajo y las coberturas son amplias para ese nivel de prima.
-
-**Programadores e IT** — **€100 a €200** al año. Algo más que los creativos porque los errores de software pueden tener impacto económico elevado en el cliente.
-
-**Psicólogos** — Alrededor de **€156** al año para una facturación media de referencia (datos de corredores como Orus). La Ley 44/2003 los obliga y el mercado tiene productos específicos para ellos.
-
-**Peluqueros y esteticistas** — Alrededor de **€168** al año para un negocio tipo (datos orientativos de Orus). La licencia municipal de apertura suele requerirlo.
-
-**Electricistas y fontaneros** — **€102 a €336** al año según cobertura. El RD 298/2021 marca los mínimos para instaladores eléctricos.
-
-**Abogados** — **€250 a €1.500** al año. Rango amplio porque depende de las áreas de práctica y los capitales asegurados.
-
-**Arquitectos y aparejadores** — **€300 a €2.000** al año. Las obras de edificación implican responsabilidades que pueden extenderse 10 años.
-
-**Médicos privados** — **€500 a €2.500** al año. El riesgo de mala praxis médica es el más elevado del mercado.
-
-**Bares y restaurantes** — **€250 a €600** al año, dependiendo del aforo y la superficie.
+| Perfil profesional | Prima anual orientativa | Notas |
+|---|---|---|
+| **Freelances digitales** (diseño, marketing, consultoría) | €70 – €150 | Riesgo bajo; coberturas amplias para ese nivel de prima |
+| **Programadores e IT** | €100 – €200 | Los errores de software pueden tener impacto económico elevado |
+| **Psicólogos** | ~€156 | Obligatorio por Ley 44/2003; mercado con productos específicos |
+| **Peluqueros y esteticistas** | ~€168 | La licencia municipal de apertura suele requerirlo |
+| **Electricistas y fontaneros** | €102 – €336 | Mínimos fijados por RD 298/2021 (€600.000 cobertura básica) |
+| **Abogados** | €250 – €1.500 | Varía según área de práctica y capitales asegurados |
+| **Arquitectos y aparejadores** | €300 – €2.000 | Responsabilidades que pueden extenderse 10 años |
+| **Médicos privados** | €500 – €2.500 | El riesgo de mala praxis más elevado del mercado |
+| **Bares y restaurantes** | €250 – €600 | Depende del aforo y la superficie |
 
 ---
 
@@ -118,11 +112,11 @@ Esta deducción solo aplica en **estimación directa** (normal o simplificada). 
 
 El efecto del IRPF hace que el seguro cueste bastante menos de lo que figura en el recibo. Tres ejemplos concretos:
 
-El peluquero que paga **€168 al año** y tributa al 24% de marginal ahorra €40 en su declaración. Su coste real es **€128 al año, €10,70 al mes**.
-
-El consultor que paga **€300 al año** y tributa al 30% ahorra €90. Su coste real es **€210 al año, €17,50 al mes**.
-
-Ese mismo consultor, si está en el tramo del 37%, ahorra €111. Su coste real baja a **€189 al año, €15,75 al mes**.
+| Perfil | Prima/año | Tipo marginal | Ahorro IRPF | **Coste real/año** | Coste real/mes |
+|---|---|---|---|---|---|
+| Peluquero | €168 | 24% | €40 | **€128** | €10,70 |
+| Consultor | €300 | 30% | €90 | **€210** | €17,50 |
+| Consultor | €300 | 37% | €111 | **€189** | €15,75 |
 
 Para registrarlo correctamente: anota el gasto en tu libro de gastos en el trimestre en que recibes el recibo, guarda el documento de pago y asegúrate de que el recibo identifique claramente el concepto. Para ver todos los gastos deducibles disponibles, consulta nuestra [lista completa de gastos deducibles para autónomos](/es/blog/guias/gastos-deducibles-autonomos-2026-lista-completa/).
 

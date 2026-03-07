@@ -119,13 +119,15 @@ El importe es el **70% de la base reguladora**, calculada como la media de las b
 
 La duración de la prestación depende de los meses cotizados acumulados:
 
-- 12 a 17 meses cotizados → 4 meses de prestación
-- 18 a 23 meses → 6 meses
-- 24 a 29 meses → 8 meses
-- 30 a 35 meses → 10 meses
-- 36 a 42 meses → 12 meses
-- 43 a 47 meses → 16 meses
-- 48 o más meses → 24 meses (el máximo)
+| **Meses cotizados** | **Duración de la prestación** |
+|---------------------|-------------------------------|
+| 12 a 17 meses | 4 meses |
+| 18 a 23 meses | 6 meses |
+| 24 a 29 meses | 8 meses |
+| 30 a 35 meses | 10 meses |
+| 36 a 42 meses | 12 meses |
+| 43 a 47 meses | 16 meses |
+| 48 o más meses | **24 meses (máximo)** |
 
 ### Quién gestiona la solicitud y cuál es el plazo
 
