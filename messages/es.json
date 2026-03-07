@@ -1987,8 +1987,8 @@
     },
     "cuotaAutonomos": {
       "meta": {
-        "title": "Calculadora Cuota Autónomos por Tramos",
-        "description": "Calcula tu cuota de autónomo 2026 por ingresos reales. Sistema de tramos actualizado. Tarifa Plana 80€. Cuota Cero disponible. Gratis, sin registro. Resultados al instante."
+        "title": "Calculadora Cuota Autónomos 2026 - Gratis y Sin Registro",
+        "description": "Calcula tu cuota de autónomo 2026 en segundos. Introduce tus ingresos y descubre tu tramo, cuota mensual y si te aplica Tarifa Plana o Cuota Cero. 100% gratis, sin registro. Datos oficiales BOE."
       },
       "hero": {
         "titleHighlight": "Calculadora Cuota de Autónomos",
@@ -2172,6 +2172,14 @@
         "q6": {
           "question": "¿Qué incluye la cuota de autónomo?",
           "answer": "La cuota cubre: contingencias comunes (asistencia sanitaria, baja por enfermedad), contingencias profesionales (accidentes laborales), cese de actividad (paro del autónomo) y formación profesional. Todo está incluido en el tipo del 31,30-31,50%."
+        },
+        "q7": {
+          "question": "¿Cómo se calcula el IRPF de un autónomo en 2026?",
+          "answer": "El IRPF de un autónomo se calcula sobre tus rendimientos netos (ingresos menos gastos deducibles). Se aplican los tramos generales del IRPF: 19% hasta 12.450€, 24% hasta 20.200€, 30% hasta 35.200€, 37% hasta 60.000€ y 47% para rentas superiores. Usa nuestra calculadora de IRPF autónomos para un cálculo exacto."
+        },
+        "q8": {
+          "question": "¿Cuánto paga un autónomo que factura 2.000€ al mes en 2026?",
+          "answer": "Un autónomo con ingresos netos de 2.000€/mes se sitúa en el tramo 7 y paga aproximadamente 294€/mes de cuota (base de 960,78€ + tipo del 31,30% + MEI 0,9%). Si es nuevo autónomo con Tarifa Plana, pagaría solo 80€/mes durante los primeros 12 meses."
         }
       }
     },

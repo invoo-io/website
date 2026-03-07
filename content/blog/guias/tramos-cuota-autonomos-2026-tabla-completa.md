@@ -1,6 +1,6 @@
 ---
-title: "Cuotas Autónomos 2026: Tabla de 15 Tramos"
-excerpt: "Los 15 tramos de cuota 2026: desde 200€/mes (hasta 670€ de ingresos) hasta 590€/mes (más de 6.000€). Elige tu tramo correcto y evita regularizaciones con recargo del 20%."
+title: "Cuotas Autónomos 2026: Tabla Completa de Tramos (200€ a 590€/mes)"
+excerpt: "Tabla oficial con los 15 tramos de cotización de autónomos 2026. Cuotas desde 200€ hasta 590€/mes según ingresos reales. Incluye MEI 0,9%, casos prácticos y calculadora gratuita."
 publishedAt: "2026-01-13"
 author: "Equipo Invoo"
 tags: ["tramos autonomos 2026", "cuota autonomos", "base cotizacion", "seguridad social", "tabla cuotas"]
@@ -38,6 +38,10 @@ faq:
     answer: "Sí, pero solo dentro del rango de tu tramo de ingresos. Si tus rendimientos te sitúan en el tramo 6 (1.500€ a 1.700€/mes), puedes elegir cotizar por una base superior dentro de ese rango, pero no puedes saltar al tramo 10 si tus ingresos no lo justifican."
   - question: "¿Los autónomos societarios tienen tramos diferentes?"
     answer: "No, los tramos son los mismos para todos los autónomos. La diferencia es que los autónomos societarios (administradores de SL) tienen una base mínima obligatoria de 1.000€/mes, lo que les coloca automáticamente con una cuota mínima de aproximadamente 315€/mes (incluyendo MEI)."
+  - question: "¿Cuánto es la cuota mínima de autónomos en 2026?"
+    answer: "La cuota mínima de autónomos en 2026 es de aproximadamente 205€/mes (200€ base + MEI del 0,9%). Corresponde al tramo 1, para rendimientos netos mensuales de hasta 670€. Los nuevos autónomos pueden pagar solo 80€/mes con Tarifa Plana durante los primeros 12 meses."
+  - question: "¿Cuál es la tabla de cotización de autónomos en 2026?"
+    answer: "La tabla de cotización de autónomos 2026 tiene 15 tramos basados en rendimientos netos mensuales. Va desde 200€/mes (rendimientos hasta 670€) hasta 590€/mes (rendimientos superiores a 6.000€). Todos los tramos se mantienen congelados respecto a 2025 por el Real Decreto-ley 16/2025."
 ---
 
 
@@ -72,7 +76,7 @@ Si quieres entender todos los detalles del sistema de cuotas 2026, consulta nues
 
 ---
 
-## Tabla completa: 15 tramos con rendimientos netos y cuotas
+## Tabla de cotización autónomos 2026: los 15 tramos con cuotas
 
 Aquí está la tabla definitiva de los 15 tramos de cotización para 2026, con los rendimientos netos mensuales que determinan cada tramo, la cuota base mensual, y la cuota real aproximada que pagarás incluyendo el MEI del 0,9%. Ten en cuenta que estas cuotas se refieren a la base mínima de cada tramo; dentro de cada tramo puedes elegir cotizar por bases superiores si quieres mejorar tus prestaciones futuras.
 

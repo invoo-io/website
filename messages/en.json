@@ -2172,6 +2172,14 @@
         "q6": {
           "question": "What does the self-employed quota cover?",
           "answer": "The quota covers: common contingencies (healthcare, sick leave), professional contingencies (work accidents), business cessation (unemployment for self-employed) and professional training. Everything is included in the 31.30-31.50% rate."
+        },
+        "q7": {
+          "question": "How is IRPF calculated for a self-employed worker in 2026?",
+          "answer": "IRPF for self-employed is calculated on your net income (revenue minus deductible expenses). General IRPF brackets apply: 19% up to €12,450, 24% up to €20,200, 30% up to €35,200, 37% up to €60,000, and 47% for higher income. Use our self-employed IRPF calculator for an exact calculation."
+        },
+        "q8": {
+          "question": "How much does a self-employed person invoicing €2,000/month pay in 2026?",
+          "answer": "A self-employed worker with net income of €2,000/month falls in bracket 7 and pays approximately €294/month (contribution base of €960.78 + 31.30% rate + 0.9% MEI). New self-employed workers with the Flat Rate would pay only €80/month for the first 12 months."
         }
       }
     },

@@ -1,6 +1,6 @@
 ---
-title: "Tarifa Plana Autónomos 2026: Guía y Requisitos"
-excerpt: "Paga solo 88,72€/mes durante 12-24 meses como nuevo autónomo. Requisitos exactos, cómo solicitarla en el momento del alta y prórrogas según tus ingresos."
+title: "Tarifa Plana Autónomos 2026: Cuota de 80€, Requisitos y Cómo Solicitarla"
+excerpt: "La Tarifa Plana 2026 reduce tu cuota a 80€/mes (88,72€ con MEI) durante 12 meses. Requisitos, cómo solicitarla paso a paso y los errores que te hacen perderla. Actualizado enero 2026."
 publishedAt: "2026-01-08"
 author: "Equipo Invoo"
 tags: ["tarifa-plana", "autonomos", "seguridad-social", "cuotas", "nuevos-autonomos"]
@@ -22,6 +22,10 @@ faq:
     answer: "Sí. Desde las sentencias del Tribunal Supremo de 2019-2020, los autónomos societarios (administradores de sociedades) tienen el mismo derecho a la tarifa plana que cualquier otro autónomo, siempre que cumplan los requisitos generales de tiempo sin alta y estar al corriente de pago."
   - question: "¿Qué pasa si olvido marcar la casilla de Tarifa Plana al darme de alta?"
     answer: "Pierdes el beneficio para siempre. La tarifa plana debe solicitarse expresamente al darte de alta en el modelo TA.0521 de la Seguridad Social. No se puede solicitar después ni hay periodo de gracia. Este es el error más grave y más común que cometen los nuevos autónomos."
+  - question: "¿Cuánto es la cuota de autónomo con Tarifa Plana en 2026?"
+    answer: "Con Tarifa Plana en 2026 pagas 80€/mes de cuota base más el MEI del 0,9%, lo que suma aproximadamente 88,72€/mes reales. Esta cuota se mantiene fija los primeros 12 meses independientemente de tus ingresos. Después, si tus rendimientos netos no superan el SMI, puedes prorrogarla otros 12 meses más."
+  - question: "¿La Tarifa Plana es compatible con la Cuota Cero?"
+    answer: "Sí. En comunidades como Madrid, Andalucía o Murcia puedes combinar la Tarifa Plana con la Cuota Cero autonómica. La comunidad bonifica el 100% de los 80€ que pagas de tarifa plana, resultando en 0€ de cuota durante los primeros 12-24 meses según tu comunidad."
 sources:
   - name: "Seguridad Social - Tarifa plana autónomos"
     url: "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C%2Bbajas%2By%2Bmodificaciones/Afiliacion%2C%2Baltas%2By%2Bbajas/Tarifa_plana_autonomos"
@@ -55,7 +59,7 @@ Desde 2023, los autónomos cotizamos según nuestros rendimientos netos reales. 
 
 El sistema actual fue establecido por el Real Decreto-ley 13/2022. Para 2026, el importe base de 80€/mes se mantiene, aunque **la cuota real será algo mayor por el MEI** (Mecanismo de Equidad Intergeneracional).
 
-### Los números exactos que verás en tu cuenta bancaria
+### Cuota con Tarifa Plana en 2026: los números exactos
 
 El titular dice 80€/mes, pero la realidad incluye algunos matices. **Aquí están los números reales:**
 

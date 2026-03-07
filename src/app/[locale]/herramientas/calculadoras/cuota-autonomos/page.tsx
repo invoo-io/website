@@ -98,10 +98,12 @@ export async function generateMetadata({
     keywords: [
       'cuota autónomos 2026',
       'calculadora cuota autónomos',
+      'calculadora cuota autónomos 2026',
       'tarifa plana autónomos',
       'cuota cero',
       'tramos autónomos',
       'cotización autónomos',
+      'calculadora irpf autónomo 2026',
     ],
   };
 }
@@ -130,6 +132,8 @@ export default async function CuotaAutonomosCalculatorPage({
     { question: t('faq.q4.question'), answer: t('faq.q4.answer') },
     { question: t('faq.q5.question'), answer: t('faq.q5.answer') },
     { question: t('faq.q6.question'), answer: t('faq.q6.answer') },
+    { question: t('faq.q7.question'), answer: t('faq.q7.answer') },
+    { question: t('faq.q8.question'), answer: t('faq.q8.answer') },
   ];
 
   // Schema data
